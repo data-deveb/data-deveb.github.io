@@ -12,14 +12,127 @@
 [class~="kap"]{
   display: flex;
   flex-flow: row wrap;
+  box-sizing: border-box;
 }
-[class*="kap-"][class*="-orta"] {
+/* === KAPLAMA YARDIMCI === */
+
+[class*="kap-"][class*="-merkez"] {
   justify-content: center; }
 
-[class*="kap"][class*="-3"] > [class*="dik"]{
-  flex-basis: 33.33333%;
-  max-width: 33.33333%;
-}
+[class*="kap-"][class*="-sağ"] {
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin-left: auto; }
+
+[class*="kap-"][class*="-üst"] {
+  align-items: flex-start; }
+
+[class*="kap-"][class*="-orta"] {
+  align-items: center; }
+
+[class*="kap-"][class*="-alt"] {
+  align-items: flex-end; }
+
+/* ======================= */
+
+/* === KAPLAMA ÖLÇEKLERİ === */
+[class*="kap"][class*="-1"] > [class*="direk"]{
+  flex-basis: 100%;
+  max-width: 100%;}
+
+[class*="kap"][class*="-2"] > [class*="direk"]{
+  flex-basis: 50%;
+  max-width: 50%;}
+
+[class*="kap"][class*="-3"] > [class*="direk"]{
+  flex-basis: 33.3333333333%;
+  max-width: 33.3333333333%;}
+
+[class*="kap"][class*="-4"] > [class*="direk"]{
+  flex-basis: 25%;
+  max-width: 25%;}
+
+[class*="kap"][class*="-5"] > [class*="direk"]{
+  flex-basis: 20%;
+  max-width: 20%;}
+
+[class*="kap"][class*="-6"] > [class*="direk"]{
+  flex-basis: 16.6666666667%;
+  max-width: 16.6666666667%;}
+
+[class*="kap"][class*="-7"] > [class*="direk"]{
+  flex-basis: 14.2857142857%;
+  max-width: 14.2857142857%;}
+
+[class*="kap"][class*="-8"] > [class*="direk"]{
+  flex-basis: 12.5%;
+  max-width: 12.5%;}
+
+[class*="kap"][class*="-9"] > [class*="direk"]{
+  flex-basis: 11.1111111111%;
+  max-width: 11.1111111111%;}
+
+[class*="kap"][class*="-10"] > [class*="direk"]{
+  flex-basis: 10%;
+  max-width: 10%;}
+
+[class*="kap"][class*="-11"] > [class*="direk"]{
+  flex-basis: 9.09090909091%;
+  max-width: 9.09090909091%;}
+
+[class*="kap"][class*="-12"] > [class*="direk"]{
+  flex-basis: 8.33333333333%;
+  max-width: 8.33333333333%;}
+
+[class*="kap"][class*="-13"] > [class*="direk"]{
+  flex-basis: 7.69230769231%;
+  max-width: 7.69230769231%;}
+
+[class*="kap"][class*="-14"] > [class*="direk"]{
+  flex-basis: 7.14285714286%;
+  max-width: 7.14285714286%;}
+
+[class*="kap"][class*="-15"] > [class*="direk"]{
+  flex-basis: 6.66666666667%;
+  max-width: 6.66666666667%;}
+
+[class*="kap"][class*="-16"] > [class*="direk"]{
+  flex-basis: 6.25%;
+  max-width: 6.25%;}
+
+[class*="kap"][class*="-17"] > [class*="direk"]{
+  flex-basis: 5.88235294118%;
+  max-width: 5.88235294118%;}
+
+[class*="kap"][class*="-18"] > [class*="direk"]{
+  flex-basis: 5.55555555556%;
+  max-width: 5.55555555556%;}
+
+[class*="kap"][class*="-19"] > [class*="direk"]{
+  flex-basis: 5.26315789474%;
+  max-width: 5.26315789474%;}
+
+[class*="kap"][class*="-20"] > [class*="direk"]{
+  flex-basis: 5%;
+  max-width: 5%;}
+
+[class*="kap"][class*="-21"] > [class*="direk"]{
+  flex-basis: 4.7619047619%;
+  max-width: 4.7619047619%;}
+
+[class*="kap"][class*="-22"] > [class*="direk"]{
+  flex-basis: 4.54545454545%;
+  max-width: 4.54545454545%;}
+
+[class*="kap"][class*="-23"] > [class*="direk"]{
+  flex-basis: 4.34782608696%;
+  max-width: 4.34782608696%;}
+
+[class*="kap"][class*="-24"] > [class*="direk"]{
+  flex-basis: 4.16666666667%;
+  max-width: 4.16666666667%;}
+
+/* ======================= */
 /* ==========================================================================
     GRIDLEX
     Just a Flexbox Grid System - v. 2.4.0
