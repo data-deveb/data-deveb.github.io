@@ -9,8 +9,17 @@
     KAPLAMA
     Display:Flexbox yöntemiyle geliştirilen örgü.
 ========================================================================== */
+[class~="kap"]{
+  display: flex;
+  flex-flow: row wrap;
+}
+[class*="kap-"][class*="-orta"] {
+  justify-content: center; }
 
-
+[class*="kap"][class*="-3"] > [class*="dik"]{
+  flex-basis: 33.33333%;
+  max-width: 33.33333%;
+}
 /* ==========================================================================
     GRIDLEX
     Just a Flexbox Grid System - v. 2.4.0
