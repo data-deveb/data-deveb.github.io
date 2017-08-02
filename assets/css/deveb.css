@@ -9,7 +9,9 @@
     KAPLAMA
     Display:Flexbox yöntemiyle geliştirilen örgü.
 ========================================================================== */
-[class~="kap"]{
+[class~="kap"],
+[class*="kap-"],
+[class*="kap_"]{
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
