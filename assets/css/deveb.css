@@ -18,21 +18,21 @@
 
 /* === KAPLAMA YARDIMCI === */
 
-[class^="kap"][class*="-merkez"] {
+[class*="kap-"][class*="-merkez"] {
   justify-content: center; }
 
-[class^="kap"][class*="-sağ"] {
+[class*="kap-"][class*="-sağ"] {
   justify-content: flex-end;
   align-self: flex-end;
   margin-left: auto; }
 
-[class^="kap"][class*="-üst"] {
+[class*="kap-"][class*="-üst"] {
   align-items: flex-start; }
 
-[class^="kap"][class*="-orta"] {
+[class*="kap-"][class*="-orta"] {
   align-items: center; }
 
-[class^="kap"][class*="-alt"] {
+[class*="kap-"][class*="-alt"] {
   align-items: flex-end; }
 
 /* ======================= */
