@@ -189,6 +189,590 @@
 	flex-basis: 4.16666666667%;
 	max-width: 4.16666666667%;
 }
+@media screen and (max-width: 80em) {
+  [class*="kap-"][class*="_lg-1"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-1"] {
+  	flex-basis: 100%;
+  	max-width: 100%;
+  }
+
+  [class*="kap-"][class*="_lg-2"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-2"] {
+  	flex-basis: 50%;
+  	max-width: 50%;
+  }
+
+  [class*="kap-"][class*="_lg-3"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-3"] {
+  	flex-basis: 33.3333333333%;
+  	max-width: 33.3333333333%;
+  }
+
+  [class*="kap-"][class*="_lg-4"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-4"] {
+  	flex-basis: 25%;
+  	max-width: 25%;
+  }
+
+  [class*="kap-"][class*="_lg-5"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-5"] {
+  	flex-basis: 20%;
+  	max-width: 20%;
+  }
+
+  [class*="kap-"][class*="_lg-6"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-6"] {
+  	flex-basis: 16.6666666667%;
+  	max-width: 16.6666666667%;
+  }
+
+  [class*="kap-"][class*="_lg-7"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-7"] {
+  	flex-basis: 14.2857142857%;
+  	max-width: 14.2857142857%;
+  }
+
+  [class*="kap-"][class*="_lg-8"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-8"] {
+  	flex-basis: 12.5%;
+  	max-width: 12.5%;
+  }
+
+  [class*="kap-"][class*="_lg-9"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-9"] {
+  	flex-basis: 11.1111111111%;
+  	max-width: 11.1111111111%;
+  }
+
+  [class*="kap-"][class*="_lg-10"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-10"] {
+  	flex-basis: 10%;
+  	max-width: 10%;
+  }
+
+  [class*="kap-"][class*="_lg-11"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-11"] {
+  	flex-basis: 9.09090909091%;
+  	max-width: 9.09090909091%;
+  }
+
+  [class*="kap-"][class*="_lg-12"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-12"] {
+  	flex-basis: 8.33333333333%;
+  	max-width: 8.33333333333%;
+  }
+
+  [class*="kap-"][class*="_lg-13"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-13"] {
+  	flex-basis: 7.69230769231%;
+  	max-width: 7.69230769231%;
+  }
+
+  [class*="kap-"][class*="_lg-14"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-14"] {
+  	flex-basis: 7.14285714286%;
+  	max-width: 7.14285714286%;
+  }
+
+  [class*="kap-"][class*="_lg-15"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-15"] {
+  	flex-basis: 6.66666666667%;
+  	max-width: 6.66666666667%;
+  }
+
+  [class*="kap-"][class*="_lg-16"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-16"] {
+  	flex-basis: 6.25%;
+  	max-width: 6.25%;
+  }
+
+  [class*="kap-"][class*="_lg-17"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-17"] {
+  	flex-basis: 5.88235294118%;
+  	max-width: 5.88235294118%;
+  }
+
+  [class*="kap-"][class*="_lg-18"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-18"] {
+  	flex-basis: 5.55555555556%;
+  	max-width: 5.55555555556%;
+  }
+
+  [class*="kap-"][class*="_lg-19"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-19"] {
+  	flex-basis: 5.26315789474%;
+  	max-width: 5.26315789474%;
+  }
+
+  [class*="kap-"][class*="_lg-20"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-20"] {
+  	flex-basis: 5%;
+  	max-width: 5%;
+  }
+
+  [class*="kap-"][class*="_lg-21"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-21"] {
+  	flex-basis: 4.7619047619%;
+  	max-width: 4.7619047619%;
+  }
+
+  [class*="kap-"][class*="_lg-22"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-22"] {
+  	flex-basis: 4.54545454545%;
+  	max-width: 4.54545454545%;
+  }
+
+  [class*="kap-"][class*="_lg-23"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-23"] {
+  	flex-basis: 4.34782608696%;
+  	max-width: 4.34782608696%;
+  }
+
+  [class*="kap-"][class*="_lg-24"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_lg-24"] {
+  	flex-basis: 4.16666666667%;
+  	max-width: 4.16666666667%;
+  }
+
+}
+@media screen and (max-width: 64em) {
+  [class*="kap-"][class*="_md-1"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-1"] {
+  	flex-basis: 100%;
+  	max-width: 100%;
+  }
+
+  [class*="kap-"][class*="_md-2"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-2"] {
+  	flex-basis: 50%;
+  	max-width: 50%;
+  }
+
+  [class*="kap-"][class*="_md-3"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-3"] {
+  	flex-basis: 33.3333333333%;
+  	max-width: 33.3333333333%;
+  }
+
+  [class*="kap-"][class*="_md-4"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-4"] {
+  	flex-basis: 25%;
+  	max-width: 25%;
+  }
+
+  [class*="kap-"][class*="_md-5"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-5"] {
+  	flex-basis: 20%;
+  	max-width: 20%;
+  }
+
+  [class*="kap-"][class*="_md-6"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-6"] {
+  	flex-basis: 16.6666666667%;
+  	max-width: 16.6666666667%;
+  }
+
+  [class*="kap-"][class*="_md-7"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-7"] {
+  	flex-basis: 14.2857142857%;
+  	max-width: 14.2857142857%;
+  }
+
+  [class*="kap-"][class*="_md-8"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-8"] {
+  	flex-basis: 12.5%;
+  	max-width: 12.5%;
+  }
+
+  [class*="kap-"][class*="_md-9"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-9"] {
+  	flex-basis: 11.1111111111%;
+  	max-width: 11.1111111111%;
+  }
+
+  [class*="kap-"][class*="_md-10"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-10"] {
+  	flex-basis: 10%;
+  	max-width: 10%;
+  }
+
+  [class*="kap-"][class*="_md-11"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-11"] {
+  	flex-basis: 9.09090909091%;
+  	max-width: 9.09090909091%;
+  }
+
+  [class*="kap-"][class*="_md-12"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-12"] {
+  	flex-basis: 8.33333333333%;
+  	max-width: 8.33333333333%;
+  }
+
+  [class*="kap-"][class*="_md-13"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-13"] {
+  	flex-basis: 7.69230769231%;
+  	max-width: 7.69230769231%;
+  }
+
+  [class*="kap-"][class*="_md-14"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-14"] {
+  	flex-basis: 7.14285714286%;
+  	max-width: 7.14285714286%;
+  }
+
+  [class*="kap-"][class*="_md-15"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-15"] {
+  	flex-basis: 6.66666666667%;
+  	max-width: 6.66666666667%;
+  }
+
+  [class*="kap-"][class*="_md-16"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-16"] {
+  	flex-basis: 6.25%;
+  	max-width: 6.25%;
+  }
+
+  [class*="kap-"][class*="_md-17"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-17"] {
+  	flex-basis: 5.88235294118%;
+  	max-width: 5.88235294118%;
+  }
+
+  [class*="kap-"][class*="_md-18"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-18"] {
+  	flex-basis: 5.55555555556%;
+  	max-width: 5.55555555556%;
+  }
+
+  [class*="kap-"][class*="_md-19"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-19"] {
+  	flex-basis: 5.26315789474%;
+  	max-width: 5.26315789474%;
+  }
+
+  [class*="kap-"][class*="_md-20"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-20"] {
+  	flex-basis: 5%;
+  	max-width: 5%;
+  }
+
+  [class*="kap-"][class*="_md-21"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-21"] {
+  	flex-basis: 4.7619047619%;
+  	max-width: 4.7619047619%;
+  }
+
+  [class*="kap-"][class*="_md-22"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-22"] {
+  	flex-basis: 4.54545454545%;
+  	max-width: 4.54545454545%;
+  }
+
+  [class*="kap-"][class*="_md-23"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-23"] {
+  	flex-basis: 4.34782608696%;
+  	max-width: 4.34782608696%;
+  }
+
+  [class*="kap-"][class*="_md-24"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_md-24"] {
+  	flex-basis: 4.16666666667%;
+  	max-width: 4.16666666667%;
+  }
+
+}
+@media screen and (max-width: 48em) {
+  [class*="kap-"][class*="_sm-1"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-1"] {
+  	flex-basis: 100%;
+  	max-width: 100%;
+  }
+
+  [class*="kap-"][class*="_sm-2"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-2"] {
+  	flex-basis: 50%;
+  	max-width: 50%;
+  }
+
+  [class*="kap-"][class*="_sm-3"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-3"] {
+  	flex-basis: 33.3333333333%;
+  	max-width: 33.3333333333%;
+  }
+
+  [class*="kap-"][class*="_sm-4"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-4"] {
+  	flex-basis: 25%;
+  	max-width: 25%;
+  }
+
+  [class*="kap-"][class*="_sm-5"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-5"] {
+  	flex-basis: 20%;
+  	max-width: 20%;
+  }
+
+  [class*="kap-"][class*="_sm-6"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-6"] {
+  	flex-basis: 16.6666666667%;
+  	max-width: 16.6666666667%;
+  }
+
+  [class*="kap-"][class*="_sm-7"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-7"] {
+  	flex-basis: 14.2857142857%;
+  	max-width: 14.2857142857%;
+  }
+
+  [class*="kap-"][class*="_sm-8"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-8"] {
+  	flex-basis: 12.5%;
+  	max-width: 12.5%;
+  }
+
+  [class*="kap-"][class*="_sm-9"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-9"] {
+  	flex-basis: 11.1111111111%;
+  	max-width: 11.1111111111%;
+  }
+
+  [class*="kap-"][class*="_sm-10"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-10"] {
+  	flex-basis: 10%;
+  	max-width: 10%;
+  }
+
+  [class*="kap-"][class*="_sm-11"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-11"] {
+  	flex-basis: 9.09090909091%;
+  	max-width: 9.09090909091%;
+  }
+
+  [class*="kap-"][class*="_sm-12"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-12"] {
+  	flex-basis: 8.33333333333%;
+  	max-width: 8.33333333333%;
+  }
+
+  [class*="kap-"][class*="_sm-13"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-13"] {
+  	flex-basis: 7.69230769231%;
+  	max-width: 7.69230769231%;
+  }
+
+  [class*="kap-"][class*="_sm-14"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-14"] {
+  	flex-basis: 7.14285714286%;
+  	max-width: 7.14285714286%;
+  }
+
+  [class*="kap-"][class*="_sm-15"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-15"] {
+  	flex-basis: 6.66666666667%;
+  	max-width: 6.66666666667%;
+  }
+
+  [class*="kap-"][class*="_sm-16"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-16"] {
+  	flex-basis: 6.25%;
+  	max-width: 6.25%;
+  }
+
+  [class*="kap-"][class*="_sm-17"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-17"] {
+  	flex-basis: 5.88235294118%;
+  	max-width: 5.88235294118%;
+  }
+
+  [class*="kap-"][class*="_sm-18"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-18"] {
+  	flex-basis: 5.55555555556%;
+  	max-width: 5.55555555556%;
+  }
+
+  [class*="kap-"][class*="_sm-19"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-19"] {
+  	flex-basis: 5.26315789474%;
+  	max-width: 5.26315789474%;
+  }
+
+  [class*="kap-"][class*="_sm-20"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-20"] {
+  	flex-basis: 5%;
+  	max-width: 5%;
+  }
+
+  [class*="kap-"][class*="_sm-21"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-21"] {
+  	flex-basis: 4.7619047619%;
+  	max-width: 4.7619047619%;
+  }
+
+  [class*="kap-"][class*="_sm-22"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-22"] {
+  	flex-basis: 4.54545454545%;
+  	max-width: 4.54545454545%;
+  }
+
+  [class*="kap-"][class*="_sm-23"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-23"] {
+  	flex-basis: 4.34782608696%;
+  	max-width: 4.34782608696%;
+  }
+
+  [class*="kap-"][class*="_sm-24"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_sm-24"] {
+  	flex-basis: 4.16666666667%;
+  	max-width: 4.16666666667%;
+  }
+
+}
+@media screen and (max-width: 35.5em) {
+  [class*="kap-"][class*="_xs-1"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-1"] {
+  	flex-basis: 100%;
+  	max-width: 100%;
+  }
+
+  [class*="kap-"][class*="_xs-2"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-2"] {
+  	flex-basis: 50%;
+  	max-width: 50%;
+  }
+
+  [class*="kap-"][class*="_xs-3"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-3"] {
+  	flex-basis: 33.3333333333%;
+  	max-width: 33.3333333333%;
+  }
+
+  [class*="kap-"][class*="_xs-4"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-4"] {
+  	flex-basis: 25%;
+  	max-width: 25%;
+  }
+
+  [class*="kap-"][class*="_xs-5"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-5"] {
+  	flex-basis: 20%;
+  	max-width: 20%;
+  }
+
+  [class*="kap-"][class*="_xs-6"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-6"] {
+  	flex-basis: 16.6666666667%;
+  	max-width: 16.6666666667%;
+  }
+
+  [class*="kap-"][class*="_xs-7"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-7"] {
+  	flex-basis: 14.2857142857%;
+  	max-width: 14.2857142857%;
+  }
+
+  [class*="kap-"][class*="_xs-8"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-8"] {
+  	flex-basis: 12.5%;
+  	max-width: 12.5%;
+  }
+
+  [class*="kap-"][class*="_xs-9"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-9"] {
+  	flex-basis: 11.1111111111%;
+  	max-width: 11.1111111111%;
+  }
+
+  [class*="kap-"][class*="_xs-10"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-10"] {
+  	flex-basis: 10%;
+  	max-width: 10%;
+  }
+
+  [class*="kap-"][class*="_xs-11"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-11"] {
+  	flex-basis: 9.09090909091%;
+  	max-width: 9.09090909091%;
+  }
+
+  [class*="kap-"][class*="_xs-12"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-12"] {
+  	flex-basis: 8.33333333333%;
+  	max-width: 8.33333333333%;
+  }
+
+  [class*="kap-"][class*="_xs-13"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-13"] {
+  	flex-basis: 7.69230769231%;
+  	max-width: 7.69230769231%;
+  }
+
+  [class*="kap-"][class*="_xs-14"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-14"] {
+  	flex-basis: 7.14285714286%;
+  	max-width: 7.14285714286%;
+  }
+
+  [class*="kap-"][class*="_xs-15"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-15"] {
+  	flex-basis: 6.66666666667%;
+  	max-width: 6.66666666667%;
+  }
+
+  [class*="kap-"][class*="_xs-16"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-16"] {
+  	flex-basis: 6.25%;
+  	max-width: 6.25%;
+  }
+
+  [class*="kap-"][class*="_xs-17"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-17"] {
+  	flex-basis: 5.88235294118%;
+  	max-width: 5.88235294118%;
+  }
+
+  [class*="kap-"][class*="_xs-18"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-18"] {
+  	flex-basis: 5.55555555556%;
+  	max-width: 5.55555555556%;
+  }
+
+  [class*="kap-"][class*="_xs-19"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-19"] {
+  	flex-basis: 5.26315789474%;
+  	max-width: 5.26315789474%;
+  }
+
+  [class*="kap-"][class*="_xs-20"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-20"] {
+  	flex-basis: 5%;
+  	max-width: 5%;
+  }
+
+  [class*="kap-"][class*="_xs-21"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-21"] {
+  	flex-basis: 4.7619047619%;
+  	max-width: 4.7619047619%;
+  }
+
+  [class*="kap-"][class*="_xs-22"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-22"] {
+  	flex-basis: 4.54545454545%;
+  	max-width: 4.54545454545%;
+  }
+
+  [class*="kap-"][class*="_xs-23"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-23"] {
+  	flex-basis: 4.34782608696%;
+  	max-width: 4.34782608696%;
+  }
+
+  [class*="kap-"][class*="_xs-24"] > [class*="kap-0"],
+  [class*="kap-"] > [class*="kap-"][class*="_xs-24"] {
+  	flex-basis: 4.16666666667%;
+  	max-width: 4.16666666667%;
+  }
+
+}
 
 /* ======================= */
 
@@ -206,6 +790,9 @@
     BURADAN SONRASINI GELECEKTE SİLECEĞİZ
     BURADAN SONRASINI GELECEKTE SİLECEĞİZ
 ========================================================================== */
+[class*="kap-"]{
+  border: 1px dotted gray;
+}
 /* ==========================================================================
     GRIDLEX
     Just a Flexbox Grid System - v. 2.4.0
