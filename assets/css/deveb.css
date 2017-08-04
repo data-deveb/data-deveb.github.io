@@ -16,6 +16,7 @@
 	display: flex;
 	flex-flow: row wrap;
 	box-sizing: border-box;
+
 }
 
 /* === KAPLAMA YARDIMCI === */
@@ -40,6 +41,9 @@
 
 [class*="kap-"][class*="-alt"] {
 	align-items: flex-end;
+}
+[class*="kap-"][class*="-doldur"]{
+flex: 1 1 0%;
 }
 
 /* ======================= */
@@ -888,6 +892,7 @@
 ========================================================================== */
 [class*="kap-"]{
   border: 1px dotted gray;
+  color: purple;
 }
 /* ==========================================================================
     GRIDLEX
