@@ -24,12 +24,4 @@ p: Parça kelimesinin baş harfini temsil eder. "Kap-" sınıfı kullanılarak y
 
 ## Örnekler
 
-Her şartlarda 4 sütunlu bir düzen istiyoruz. Yalnız ufak ekranlarda 2 sütunlu bir düzen olsun. Bunun için HTML dosyasında şöyle bir hazırlık yaparız.
-
-<div class="kap-4b_xs-2b">
-  <div class="kap-0p">KAP ALANI</div>
-  .
-  .
-  .
-  <div class="kap-0p">KAP ALANI</div>
-</div>
+Her şartlarda 4 sütunlu bir düzen istiyoruz. Yalnız ufak ekranlarda 2 sütunlu bir düzen olsun. Bunun için HTML dosyasında şöyle bir hazırlık yaparız. DEMO: https://jsfiddle.net/epu3cra3/
