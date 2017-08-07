@@ -252,7 +252,7 @@ flex: 1 1 0%;
 [class*="kap-23-24p"]
 	{	flex-basis: 95.8333333333333%;	max-width: 95.8333333333333%;	}
 
-[class*="kap--24-24p"],[class*="kap-20-20p"],[class*="kap-18-18p"],[class*="kap-16-16p"],[class*="kap-12-12p"],[class*="kap-10-10p"],[class*="kap-9p9"],[class*="kap-8-8p"],[class*="kap-6-6p"],[class*="kap-5-5p"]
+[class*="kap-24-24p"],[class*="kap-20-20p"],[class*="kap-18-18p"],[class*="kap-16-16p"],[class*="kap-12-12p"],[class*="kap-10-10p"],[class*="kap-9p9"],[class*="kap-8-8p"],[class*="kap-6-6p"],[class*="kap-5-5p"]
 	{	flex-basis: 100%;								max-width: 100%;							}
 
 @media screen and (max-width: 80em) {
