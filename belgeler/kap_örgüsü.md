@@ -10,7 +10,9 @@ Kap örgüsü iki ana yapının birleşimiyle ortaya çıkan bir örgüdür. Bu 
 
 Birinci yapımızın adı "bölme". Bölme anıldığında bir genişliği verilen değere bölerek içindeki kaplara aynı genişliği vermesi işlemidir. Örneğin eşit genişliğe sahip 4 sütunlu bir diziliş istiyorsam eğer bunu deveb kap örgüsü ile yapabiliriz.
 
-İkinci yapımızın adı "parça". Parça anıldığında bir genişlik içinde istenilen miktarda parça oranını kendi genişliği yapması işlemidir. Örneğin bir genişliği 24 eşit parçaya bölüm 3 parçalık alanın genişliğini kullanmak istiyorsanız bu yöntemle yapabilirsiniz. Kullanabileceğiniz parça ölçekleri 5, 6, 8, 9, 10, 12, 16, 18, 20, 24 olmak üzere toplam 10 tanedir.
+İkinci yapımızın adı "parça". Parça anıldığında bir genişlik içinde istenilen miktarda parça oranını kendi genişliği yapması işlemidir. Örneğin bir genişliği 24 eşit parçaya bölüm 3 parçalık alanın genişliğini kullanmak istiyorsanız bu yöntemle yapabilirsiniz.
+
+#### Kullanabileceğiniz parça ölçekleri 5, 6, 8, 9, 10, 12, 16, 18, 20, 24 olmak üzere toplam 10 tanedir. Bir güzelliği bu parça ölçeklerini aynı anda kullanabiliyor olmanızdır. Örneğin bir yerde 24lü parçayı "kap-12-24p" şeklinde yazarken hemen başka bir html etiketinde "kap-4-6p" şeklinde kullanım yapabilirsiniz.
 
 ## Kap Örgüsü Duyarlı Yapısı
 
@@ -24,4 +26,4 @@ p: Parça kelimesinin baş harfini temsil eder. "Kap-" sınıfı kullanılarak y
 
 ## Örnekler
 
-Her şartlarda 4 sütunlu bir düzen istiyoruz. Yalnız ufak ekranlarda 2 sütunlu bir düzen olsun. Bunun için HTML dosyasında şöyle bir hazırlık yaparız. DEMO: https://jsfiddle.net/epu3cra3/
+Her şartlarda 5 sütunlu bir düzen istiyoruz. Yalnız ufak ekranlarda 3 sütunlu bir düzen olsun. Bunun için HTML dosyasında şöyle bir hazırlık yaparız. DEMO: https://jsfiddle.net/epu3cra3/
