@@ -12,7 +12,7 @@ Birinci yapımızın adı "bölme". Bölme anıldığında bir genişliği veril
 
 İkinci yapımızın adı "parça". Parça anıldığında bir genişlik içinde istenilen miktarda parça oranını kendi genişliği yapması işlemidir. Örneğin bir genişliği 24 eşit parçaya bölüm 3 parçalık alanın genişliğini kullanmak istiyorsanız bu yöntemle yapabilirsiniz.
 
-#### Kullanabileceğiniz parça ölçekleri 5, 6, 8, 9, 10, 12, 16, 18, 20, 24 olmak üzere toplam 10 tanedir. Bir güzelliği bu parça ölçeklerini aynı anda kullanabiliyor olmanızdır. Örneğin bir yerde 24lü parçayı "kap-12-24p" şeklinde yazarken hemen başka bir html etiketinde "kap-4-6p" şeklinde kullanım yapabilirsiniz.
+#### Kullanabileceğiniz parça ölçekleri 5, 6, 8, 9, 10, 12, 16, 18, 20, 24 olmak üzere toplam 10 tanedir. Bir güzelliği bu parça ölçeklerini aynı anda kullanabiliyor olmanızdır. Örneğin bir yerde 24lü parçayı "kap-12-24p" şeklinde yazarken hemen başka bir html etiketinde "kap-4-6p" şeklinde kullanım yapabilirsiniz. DEMO: https://jsfiddle.net/h267nkxa/
 
 ## Kap Örgüsü Duyarlı Yapısı
 
