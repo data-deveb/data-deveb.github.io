@@ -26,6 +26,25 @@
 	margin: 0;
 	padding: 0;
 }
+h1, h2, h3, h4, h5, h6{width: 100%;}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/* ==========================================================================
+    TABLO
+    Tablo görünümleri
+========================================================================== */
+table{
+	border-collapse: collapse;
+}
+.tablo{
+	border:1px solid #ddd;
+	padding: 0;
+}
+.tablo th, .tablo td{
+	border:1px solid #ddd;
+	padding:5px;
+}
 /* ==========================================================================
     KAPLAMA
     Display:Flexbox yöntemiyle geliştirilen örgü.
@@ -108,219 +127,219 @@ flex: 1 1 0%;
 [class*="kap-"][class*="-9o"]{	flex: 9;	}
 [class*="kap-"][class*="-10o"]{	flex: 10;	}
 
-[class*="kap-25b"] > [class*="kap-0p"]
+[class*="kap_gnl-25b"] > [class*="kap_gnl-0p"]
 	{ flex-basis: 4%;max-width: 4%; }
 
-[class*="kap-24b"] > [class*="kap-0p"],[class*="kap-1-24p"]
+[class*="kap_gnl-24b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-1-24p"]
 	{	flex-basis: 4.16666666666667%;max-width: 4.16666666666667%;	}
 
-[class*="kap-23b"] > [class*="kap-0p"]
+[class*="kap_gnl-23b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 4.34782608696%;max-width: 4.34782608696%;	}
 
-[class*="kap-22b"] > [class*="kap-0p"]
+[class*="kap_gnl-22b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 4.54545454545%;max-width: 4.54545454545%; }
 
-[class*="kap-21b"] > [class*="kap-0p"]
+[class*="kap_gnl-21b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 4.7619047619%;max-width: 4.7619047619%;		}
 
-[class*="kap-20b"] > [class*="kap-0p"],[class*="kap-1-20p"]
+[class*="kap_gnl-20b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-1-20p"]
 	{	flex-basis: 5%;max-width: 5%;	}
 
-[class*="kap-19b"] > [class*="kap-0p"]
+[class*="kap_gnl-19b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 5.26315789474%;max-width: 5.26315789474%;	}
 
-[class*="kap-18b"] > [class*="kap-0p"],[class*="kap-1-18p"]
+[class*="kap_gnl-18b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-1-18p"]
 	{	flex-basis: 5.55555555555556%;max-width: 5.55555555555556%;	}
 
-[class*="kap-17b"] > [class*="kap-0p"]
+[class*="kap_gnl-17b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 5.88235294118%;max-width: 5.88235294118%;	}
 
-[class*="kap-16b"] > [class*="kap-0p"],[class*="kap-1-16p"]
+[class*="kap_gnl-16b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-1-16p"]
 	{	flex-basis: 6.25%;max-width: 6.25%;	}
 
-[class*="kap-15b"] > [class*="kap-0p"]
+[class*="kap_gnl-15b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 6.66666666667%;max-width: 6.66666666667%;	}
 
-[class*="kap-14b"] > [class*="kap-0p"]
+[class*="kap_gnl-14b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 7.14285714286%;max-width: 7.14285714286%;	}
 
-[class*="kap-13b"] > [class*="kap-0p"]
+[class*="kap_gnl-13b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 7.69230769231%;max-width: 7.69230769231%;	}
 
-[class*="kap-12b"] > [class*="kap-0p"],[class*="kap-2-24p"],[class*="kap-1-12p"]
+[class*="kap_gnl-12b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-2-24p"],[class*="kap_gnl-1-12p"]
 	{	flex-basis: 8.33333333333333%;max-width: 8.33333333333333%;	}
 
-[class*="kap-11b"] > [class*="kap-0p"]
+[class*="kap_gnl-11b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 9.09090909091%;max-width: 9.09090909091%;	}
 
-[class*="kap-10b"] > [class*="kap-0p"],[class*="kap-2-20p"],[class*="kap-1-10p"]
+[class*="kap_gnl-10b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-2-20p"],[class*="kap_gnl-1-10p"]
 	{	flex-basis: 10%;max-width: 10%;	}
 
-[class*="kap-9b"] > [class*="kap-0p"],[class*="kap-2-18p"],[class*="kap-1-9p"]
+[class*="kap_gnl-9b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-2-18p"],[class*="kap_gnl-1-9p"]
 	{	flex-basis: 11.1111111111111%;max-width: 11.1111111111111%;	}
 
-[class*="kap-8b"] > [class*="kap-0p"],[class*="kap-3-24p"],[class*="kap-2-16p"],[class*="kap-1-8p"]
+[class*="kap_gnl-8b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-3-24p"],[class*="kap_gnl-2-16p"],[class*="kap_gnl-1-8p"]
 	{	flex-basis: 12.5%;max-width: 12.5%; }
 
-[class*="kap-7b"] > [class*="kap-0p"]
+[class*="kap_gnl-7b"] > [class*="kap_gnl-0p"]
 	{	flex-basis: 14.2857142857%;max-width: 14.2857142857%;	}
 
-[class*="kap-3-20p"]
+[class*="kap_gnl-3-20p"]
 	{	flex-basis: 15%;max-width: 15%;	}
 
-[class*="kap-6b"] > [class*="kap-0p"],[class*="kap-4-24p"],[class*="kap-3-18p"],[class*="kap-2-12p"],[class*="kap-1-6p"]
+[class*="kap_gnl-6b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-4-24p"],[class*="kap_gnl-3-18p"],[class*="kap_gnl-2-12p"],[class*="kap_gnl-1-6p"]
 	{	flex-basis: 16.6666666666667%;max-width: 16.6666666666667%;	}
 
-[class*="kap-3-16p"]
+[class*="kap_gnl-3-16p"]
 	{	flex-basis: 18.75%;max-width: 18.75%;	}
 
-[class*="kap-5b"] > [class*="kap-0p"],[class*="kap-4-20p"],[class*="kap-2-10p"],[class*="kap-1-5p"]
+[class*="kap_gnl-5b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-4-20p"],[class*="kap_gnl-2-10p"],[class*="kap_gnl-1-5p"]
 	{	flex-basis: 20%;max-width: 20%;	}
 
-[class*="kap-5-24p"]
+[class*="kap_gnl-5-24p"]
 	{	flex-basis: 20.8333333333333%;max-width: 20.8333333333333%;	}
 
-[class*="kap-4-18p"],[class*="kap-2-9p"]
+[class*="kap_gnl-4-18p"],[class*="kap_gnl-2-9p"]
 	{	flex-basis: 22.2222222222222%;max-width: 22.2222222222222%;	}
 
-[class*="kap-4b"] > [class*="kap-0p"],[class*="kap-6-24p"],[class*="kap-5-20p"],[class*="kap-4-16p"],[class*="kap-3-12p"],[class*="kap-2-8p"]
+[class*="kap_gnl-4b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-6-24p"],[class*="kap_gnl-5-20p"],[class*="kap_gnl-4-16p"],[class*="kap_gnl-3-12p"],[class*="kap_gnl-2-8p"]
 	{	flex-basis: 25%;max-width: 25%;								}
 
-[class*="kap-5-18p"]
+[class*="kap_gnl-5-18p"]
 	{	flex-basis: 27.7777777777778%;max-width: 27.7777777777778%;	}
 
-[class*="kap-7-24p"]
+[class*="kap_gnl-7-24p"]
 	{	flex-basis: 29.1666666666667%;max-width: 29.1666666666667%;	}
 
-[class*="kap-6-20p"],[class*="kap-3-10p"]
+[class*="kap_gnl-6-20p"],[class*="kap_gnl-3-10p"]
 	{	flex-basis: 30%;max-width: 30%;	}
 
-[class*="kap-5-16p"]
+[class*="kap_gnl-5-16p"]
 	{	flex-basis: 31.25%;max-width: 31.25%;	}
 
-[class*="kap-3b"] > [class*="kap-0p"],[class*="kap-8-24p"],[class*="kap-6-18p"],[class*="kap-4-12p"],[class*="kap-3-9p"],[class*="kap-2-6p"]
+[class*="kap_gnl-3b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-8-24p"],[class*="kap_gnl-6-18p"],[class*="kap_gnl-4-12p"],[class*="kap_gnl-3-9p"],[class*="kap_gnl-2-6p"]
 	{	flex-basis: 33.3333333333333%;max-width: 33.3333333333333%;	}
 
-[class*="kap-7-20p"]
+[class*="kap_gnl-7-20p"]
 	{	flex-basis: 35%;max-width: 35%;	}
 
-[class*="kap-9-24p"],[class*="kap-6-16p"],[class*="kap-3-8p"]
+[class*="kap_gnl-9-24p"],[class*="kap_gnl-6-16p"],[class*="kap_gnl-3-8p"]
 	{	flex-basis: 37.5%;max-width: 37.5%;	}
 
-[class*="kap-7-18p"]
+[class*="kap_gnl-7-18p"]
 	{	flex-basis: 38.8888888888889%;max-width: 38.8888888888889%;	}
 
-[class*="kap-8-20p"],[class*="kap-4-10p"],[class*="kap-2-5p"]
+[class*="kap_gnl-8-20p"],[class*="kap_gnl-4-10p"],[class*="kap_gnl-2-5p"]
 	{	flex-basis: 40%;max-width: 40%;	}
 
-[class*="kap-10-24p"],[class*="kap-5-12p"]
+[class*="kap_gnl-10-24p"],[class*="kap_gnl-5-12p"]
 	{	flex-basis: 41.6666666666667%;max-width: 41.6666666666667%;	}
 
-[class*="kap-7-16p"]
+[class*="kap_gnl-7-16p"]
 	{	flex-basis: 43.75%;max-width: 43.75%;	}
 
-[class*="kap-8-18p"],[class*="kap-4-9p"]
+[class*="kap_gnl-8-18p"],[class*="kap_gnl-4-9p"]
 		{	flex-basis: 44.4444444444444%;max-width: 44.4444444444444%;	}
 
-[class*="kap-9-20p"]
+[class*="kap_gnl-9-20p"]
 	{	flex-basis: 45%;max-width: 45%;	}
 
-[class*="kap-11-24p"]
+[class*="kap_gnl-11-24p"]
 	{	flex-basis: 45.8333333333333%;max-width: 45.8333333333333%;	}
 
-[class*="kap-2b"] > [class*="kap-0p"],[class*="kap-12-24p"],[class*="kap-10-20p"],[class*="kap-9-18p"],[class*="kap-8-16p"],[class*="kap-6-12p"],[class*="kap-5-10p"],[class*="kap-4-8p"],[class*="kap-3-6p"]
+[class*="kap_gnl-2b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-12-24p"],[class*="kap_gnl-10-20p"],[class*="kap_gnl-9-18p"],[class*="kap_gnl-8-16p"],[class*="kap_gnl-6-12p"],[class*="kap_gnl-5-10p"],[class*="kap_gnl-4-8p"],[class*="kap_gnl-3-6p"]
 	{	flex-basis: 50%;max-width: 50%;	}
 
-[class*="kap-13-24p"]
+[class*="kap_gnl-13-24p"]
 	{	flex-basis: 54.1666666666667%;max-width: 54.1666666666667%;	}
 
-[class*="kap-11-20p"]
+[class*="kap_gnl-11-20p"]
 	{	flex-basis: 55%;max-width: 55%;	}
 
-[class*="kap-10-18p"],[class*="kap-5-9p"]
+[class*="kap_gnl-10-18p"],[class*="kap_gnl-5-9p"]
 	{	flex-basis: 55.5555555555556%;max-width: 55.5555555555556%;	}
 
-[class*="kap-9-16p"]
+[class*="kap_gnl-9-16p"]
 	{	flex-basis: 56.25%;max-width: 56.25%;	}
 
-[class*="kap-14-24p"],[class*="kap-7-12p"]
+[class*="kap_gnl-14-24p"],[class*="kap_gnl-7-12p"]
 	{	flex-basis: 58.3333333333333%;max-width: 58.3333333333333%;	}
 
-[class*="kap-12-20p"],[class*="kap-6-10p"],[class*="kap-3-5p"]
+[class*="kap_gnl-12-20p"],[class*="kap_gnl-6-10p"],[class*="kap_gnl-3-5p"]
 	{	flex-basis: 60%;max-width: 60%;	}
 
-[class*="kap-11-18p"]
+[class*="kap_gnl-11-18p"]
 	{	flex-basis: 61.1111111111111%;max-width: 61.1111111111111%;	}
 
-[class*="kap-15-24p"],[class*="kap-10-16p"],[class*="kap-5-8p"]
+[class*="kap_gnl-15-24p"],[class*="kap_gnl-10-16p"],[class*="kap_gnl-5-8p"]
 	{	flex-basis: 62.5%;max-width: 62.5%;	}
 
-[class*="kap-13-20p"]
+[class*="kap_gnl-13-20p"]
 	{	flex-basis: 65%;max-width: 65%;	}
 
-[class*="kap-16-24p"],[class*="kap-12-18p"],[class*="kap-8-12p"],[class*="kap-6-9p"],[class*="kap-4-6p"]
+[class*="kap_gnl-16-24p"],[class*="kap_gnl-12-18p"],[class*="kap_gnl-8-12p"],[class*="kap_gnl-6-9p"],[class*="kap_gnl-4-6p"]
 	{	flex-basis: 66.6666666666667%;max-width: 66.6666666666667%;	}
 
-[class*="kap-11-16p"]
+[class*="kap_gnl-11-16p"]
 	{	flex-basis: 68.75%;max-width: 68.75%;	}
 
-[class*="kap-14-20p"],[class*="kap-7-10p"]
+[class*="kap_gnl-14-20p"],[class*="kap_gnl-7-10p"]
 	{	flex-basis: 70%;max-width: 70%;	}
 
-[class*="kap-17-24p"]
+[class*="kap_gnl-17-24p"]
 	{	flex-basis: 70.8333333333333%;max-width: 70.8333333333333%;	}
 
-[class*="kap-13-18p"]
+[class*="kap_gnl-13-18p"]
 	{	flex-basis: 72.2222222222222%;max-width: 72.2222222222222%;	}
 
-[class*="kap-18-24p"],[class*="kap-15-20p"],[class*="kap-12-16p"],[class*="kap-9-12p"],[class*="kap-6-8p"]
+[class*="kap_gnl-18-24p"],[class*="kap_gnl-15-20p"],[class*="kap_gnl-12-16p"],[class*="kap_gnl-9-12p"],[class*="kap_gnl-6-8p"]
 	{	flex-basis: 75%;max-width: 75%;	}
 
-[class*="kap-14-18p"],[class*="kap-7-9p"]
+[class*="kap_gnl-14-18p"],[class*="kap_gnl-7-9p"]
 	{	flex-basis: 77.7777777777778%;max-width: 77.7777777777778%;	}
 
-[class*="kap-19-24p"]
+[class*="kap_gnl-19-24p"]
 	{	flex-basis: 79.1666666666667%;max-width: 79.1666666666667%;	}
 
-[class*="kap-16-20p"],[class*="kap-8-10p"],[class*="kap-4-5p"]
+[class*="kap_gnl-16-20p"],[class*="kap_gnl-8-10p"],[class*="kap_gnl-4-5p"]
 	{	flex-basis: 80%;max-width: 80%;	}
 
-[class*="kap-13-16p"]
+[class*="kap_gnl-13-16p"]
 	{	flex-basis: 81.25%;max-width: 81.25%;	}
 
-[class*="kap-20-24p"],[class*="kap-15-18p"],[class*="kap-10-12p"],[class*="kap-5-6p"]
+[class*="kap_gnl-20-24p"],[class*="kap_gnl-15-18p"],[class*="kap_gnl-10-12p"],[class*="kap_gnl-5-6p"]
 	{	flex-basis: 83.3333333333333%;max-width: 83.3333333333333%;	}
 
-[class*="kap-17-20p"]
+[class*="kap_gnl-17-20p"]
 	{	flex-basis: 85%;max-width: 85%;	}
 
-[class*="kap-21-24p"],[class*="kap-14-16p"],[class*="kap-7-8p"]
+[class*="kap_gnl-21-24p"],[class*="kap_gnl-14-16p"],[class*="kap_gnl-7-8p"]
 	{	flex-basis: 87.5%;max-width: 87.5%;	}
 
-[class*="kap-16-18p"],[class*="kap-8-9p"]
+[class*="kap_gnl-16-18p"],[class*="kap_gnl-8-9p"]
 	{	flex-basis: 88.8888888888889%;max-width: 88.8888888888889%;	}
 
-[class*="kap-18-20p"],[class*="kap-9-10p"]
+[class*="kap_gnl-18-20p"],[class*="kap_gnl-9-10p"]
 	{	flex-basis: 90%;max-width: 90%;	}
 
-[class*="kap-22-24p"],[class*="kap-11-12p"]
+[class*="kap_gnl-22-24p"],[class*="kap_gnl-11-12p"]
 	{	flex-basis: 91.6666666666667%;max-width: 91.6666666666667%;	}
 
-[class*="kap-15-16p"]
+[class*="kap_gnl-15-16p"]
 	{	flex-basis: 93.75%;max-width: 93.75%;	}
 
-[class*="kap-17-18p"]
+[class*="kap_gnl-17-18p"]
 	{	flex-basis: 94.4444444444444%;max-width: 94.4444444444444%;	}
 
-[class*="kap-19-20p"]
+[class*="kap_gnl-19-20p"]
 	{	flex-basis: 95%;max-width: 95%;	}
 
-[class*="kap-23-24p"]
+[class*="kap_gnl-23-24p"]
 	{	flex-basis: 95.8333333333333%;max-width: 95.8333333333333%;	}
 
-[class*="kap-1b"] > [class*="kap-0p"],[class*="kap-24-24p"],[class*="kap-20-20p"],[class*="kap-18-18p"],
-[class*="kap-16-16p"],[class*="kap-12-12p"],[class*="kap-10-10p"],[class*="kap-9-9p"],[class*="kap-8-8p"],
-[class*="kap-6-6p"],[class*="kap-5-5p"]
+[class*="kap_gnl-1b"] > [class*="kap_gnl-0p"],[class*="kap_gnl-24-24p"],[class*="kap_gnl-20-20p"],[class*="kap_gnl-18-18p"],
+[class*="kap_gnl-16-16p"],[class*="kap_gnl-12-12p"],[class*="kap_gnl-10-10p"],[class*="kap_gnl-9-9p"],[class*="kap_gnl-8-8p"],
+[class*="kap_gnl-6-6p"],[class*="kap_gnl-5-5p"]
 	{	flex-basis: 100%;max-width: 100%;	}
 
 @media screen and (max-width: 80em) {
