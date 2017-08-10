@@ -26,9 +26,35 @@
 	margin: 0;
 	padding: 0;
 }
-h1, h2, h3, h4, h5, h6{width: 100%;}
+h1, h2, h3, h4, h5, h6{
+	width: 100%;
+}
 body{
 	font-family: 'Roboto', sans-serif;
+}
+/* ==========================================================================
+    MENÜLER
+    Menü görünümleri
+========================================================================== */
+.menü-genel{ padding: 5px;}
+	.menü-genel li{display: inline-block;padding:8px;margin-right: 5px;background-color: blue; font-size: 10pt;border-radius: 3px;}
+	.menü-genel li a{text-decoration: none; color: white;}
+	.menü-genel li a:hover{color:yellow;}
+/* ==========================================================================
+    METİN
+    Metin görünümleri
+========================================================================== */
+.metin-olumlu{
+	color: green;
+}
+.metin-olumsuz{
+	color: gray;
+}
+.metin-hata{
+	color:	red;
+}
+.metin-tehlike{
+	color: #c70000;
 }
 /* ==========================================================================
     TABLO

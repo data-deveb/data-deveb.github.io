@@ -1,4 +1,16 @@
 <?php include '../toprak/head.html';?>
+<div id="header" class="kap_gnl-5-5p">
+  <div class="kap_gnl-1o kap-merkez">
+    <ul class="menü-genel">
+      <li><a href="/deveb/belgeler/kap-orgusu.php">Kap Örgüsü</a></li>
+      <li><a href="#">Boş menü</a></li>
+      <li><a href="#">Boş menü</a></li>
+      <li><a href="#">Boş menü</a></li>
+      <li><a href="#">Boş menü</a></li>
+      <li><a href="#">Boş menü</a></li>
+    </ul>
+  </div>
+</div>
 <div class="">
 <div class="kap_gnl-8-12p">
   <h1>Kap Örgüsü</h1>
@@ -39,14 +51,14 @@ Her bir ismin kısaltılmış yazılışları vardır.</p>
     </tr>
     <tr>
       <th>Sınıf önekleri</th>
-      <td>_gnl-<br> açık</td>
-      <td>_kcm-<br> kapalı</td>
-      <td>_dev-<br> kapalı</td>
-      <td>_byk-<br> açık</td>
-      <td>_ort-<br> açık</td>
-      <td>_kçk-<br> açık</td>
-      <td>_ufk-<br> açık</td>
-      <td>_mnk-<br> kapalı</td>
+      <td>gnl<br> <span class="metin-olumlu">açık</span> </td>
+      <td>kcm<br> <span class="metin-olumsuz">kapalı</span></td>
+      <td>dev<br> <span class="metin-olumsuz">kapalı</span></td>
+      <td>byk<br> <span class="metin-olumlu">açık</span></td>
+      <td>ort<br> <span class="metin-olumlu">açık</span></td>
+      <td>kçk<br> <span class="metin-olumlu">açık</span></td>
+      <td>ufk<br> <span class="metin-olumlu">açık</span></td>
+      <td>mnk<br> <span class="metin-olumsuz">kapalı</span></td>
     </tr>
     <tr>
       <th>Oran Ölçekleri</th>
