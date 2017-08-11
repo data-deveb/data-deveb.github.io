@@ -46,8 +46,7 @@
 Her bir ismin kısaltılmış yazılışları vardır.</p>
 
 
-
-<table class="tablo">
+<table class="tablo gnl-5-5p">
   <thead>
     <tr>
       <th>Ekran Çeşitleri</th>
