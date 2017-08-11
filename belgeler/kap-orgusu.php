@@ -24,11 +24,28 @@
     <li>Bilinmesi Gerekenler</li>
     <li>Örnekler</li>
   </ul>
+
+<div class="">
+  <div class="kap_gnl-5-5p">
+  <h2>Ana Yapı</h2>
+  <p>Kap örgüsünün ana yapısı üç ana uygulamadan oluşmaktadır. Bölme uygulaması, oranlama uygulaması, parça uygulaması olarak isimlendirdiğimiz bu uygulamaları ayrıntılarıyla aşağıda öğrenebilirsiniz.</p>
+  </div>
+  <div class="kap_gnl-5-5p">
+    <h3>Bölme Uygulamasını Anlamak</h3>
+    <p>Bir genişliği eşit ölçülerde bölmek istiyorsak bölme işlemini uygularız. Aşağıdaki örnekte 5 bölümden oluşan bir kap yapısı oluşturuldu. Bunun için kap örgüsünde şu sınıf yazılır; "<span class="metin-olumlu">kap_gnl-5b</span>".</p>
+    <p>Eğer yavru sınıflarda "<span class="metin-olumlu">0p</span>" doğru şekilde tanımlandıysa bu sınıfın olduğu etiket ana etikette belirtilen bölme değerine göre genişlik değeri alacaktır. Örnekte görüldüğü gibi.</p>
+    <script class="kap_gnl-5-5p" async src="//jsfiddle.net/deveb/5cd4kvqr/embed/html,result/"></script>
+  </div>
+
+</div>
+
   <h2>Kavramlar</h2>
   <h3>Ekran Çeşitleri</h3>
   <p>Ekran çeşitleri denildiğinde aklınıza gelmesi gereken ekranın fiziksel ölçeklerine uygun çözünürlük değerleridir.
   Bu değerler belli başlı isimlerle sınıflandırılmış ve isimlendirilmiştir. Bu isimleri şöyle sıralayabiliriz; genel, kocaman, dev, büyük, orta, küçük, ufak, minik. Ancak Deveb Önyüz İskeleti genel, büyük, orta, küçük, ufak isimlerini varsayılan ayarlarında destekleyerek gelir.
 Her bir ismin kısaltılmış yazılışları vardır.</p>
+
+
 
 <table class="tablo">
   <thead>

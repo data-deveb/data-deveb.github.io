@@ -1318,9 +1318,3 @@ flex: 1 1 0%;
     BURADAN SONRASINI GELECEKTE SİLECEĞİZ
     BURADAN SONRASINI GELECEKTE SİLECEĞİZ
 ========================================================================== */
-[class*="kap_"]>[class*="kap_"] {
-  background-color: #ddd;
-}
-[class*="kap_"]>[class*="kap_"]:nth-child(2n+0) {
-  background-color: #aaa;
-}
