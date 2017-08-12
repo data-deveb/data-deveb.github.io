@@ -43,7 +43,7 @@
   <div class="kap_gnl-0p beri-üst-1 beri-alt-1">
     <h3>Oran Yöntemi</h3>
     <p>Bir genişlikte birbirlerinin katları olacak şekilde oranlar kurabilirsiniz. Örneğin 1 3 1 oranında bir düzen yazabilirsiniz. Oran yöntemini "kap_gnl-1o" şeklinde yazarak kullanabilrisiniz</p>
-<iframe width="100%" height="300" src="//jsfiddle.net/deveb/hsr989pz/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>  </div>
+    <iframe width="100%" height="300" src="//jsfiddle.net/deveb/hsr989pz/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>  </div>
 
 </div>
 
