@@ -12,7 +12,7 @@
   </div>
 </div>
 <div class="">
-<div class="kap_gnl-8-12p beri-alt-10">
+<div class="kap_gnl-12-12p dolgu-1 beri-alt-1">
   <h1>Kap Örgüsü</h1>
   <p>Kap kelimesi genelde bir şeyi bir arada tutan fiziksel nesneler için kullanılır. Buradan yola çıkarak anlamını kodlama dünyasına yansıtabilirsiniz. Kap örgüsü İngilizce dilinde "grid system" diye anılır. Deveb çatısı altında bu örgü kendine özgü kullanımı ile diğer önyüz iskeletlerindeki kap örgülerinden farklıdır ve benzer yönleride kapsamaktadır. Çok amaçlı yönleri vardır.</p>
   <h2>Konular</h2>
@@ -30,12 +30,12 @@
   <h2>Ana Yapı</h2>
   <p>Kap örgüsünün ana yapısı üç ana uygulamadan oluşmaktadır. Bölme uygulaması, oranlama uygulaması, parça uygulaması olarak isimlendirdiğimiz bu uygulamaları ayrıntılarıyla aşağıda öğrenebilirsiniz.</p>
   </div>
-  <div class="kap_gnl-0p beri-üst-10 beri-alt-10">
+  <div class="kap_gnl-0p beri-üst-1 beri-alt-1">
     <h3>Bölme Yöntemi</h3>
     <p>Bir genişliği eşit ölçülerde bölmek istiyorsak bölme işlemini uygularız. Aşağıdaki örnekte 5 bölmeden oluşan bir kap yapısı oluşturuldu. Bunun için kap örgüsünde şu sınıf yazılır; "<span class="metin-olumlu">kap_gnl-5b</span>".<br><br>Eğer yavru sınıflarda "<span class="metin-olumlu">0p</span>" doğru şekilde tanımlandıysa bu sınıfın olduğu etiket ana etikette belirtilen bölme değerine göre genişlik değeri alacaktır. Örnekte görüldüğü gibi.</p>
     <iframe width="100%" height="300" src="//jsfiddle.net/deveb/5cd4kvqr/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   </div>
-  <div class="kap_gnl-0p beri-üst-10 beri-alt-10">
+  <div class="kap_gnl-0p beri-üst-1 beri-alt-1">
     <h3>Parça Yöntemi</h3>
     <p>Bir genişliği 5, 6, 8, 9, 10, 12, 16, 18, 20, 24 olmak üzere 10 farklı parça grubu halinde kullanabilirsiniz. Aynı HTML içinde dilediğiniz parça gruplarını dilediğiniz yerde kullanabilirsiniz. Sadece bir tane grubu kullanacaksınız diye bir kural yok. Örneğin bir genişliğin 24'de 2'si (2/24) kadar genişlik istiyorsanız şöyle yazmanız gerekecektir "kap_gnl-2-24p". Sınıfın sonunda yazılan "p" harfi parça kelimesini temsil etmektedir. </p>
     <iframe width="100%" height="300" src="//jsfiddle.net/deveb/2wa4s4jf/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
