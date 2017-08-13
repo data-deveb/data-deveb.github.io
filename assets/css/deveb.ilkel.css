@@ -58,10 +58,7 @@ body{
 
 .taşma-gizli {	overflow:hidden;	}
 
-[class*="kap"].arala-1 > [class*="kap"]{
-	padding: 7.5px;
-}
-
+[class*="kap"].arala-1 > [class*="kap"]{	padding: 7.5px;}
 .sonkenar-1  	{	margin:-7.5px;	}
 
 /* ==========================================================================
