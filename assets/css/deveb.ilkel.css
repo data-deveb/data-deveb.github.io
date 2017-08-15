@@ -118,11 +118,30 @@ table{
 	flex-flow: column wrap;
 }
 
-[class*="kap"][class*="gnl-4m"] { /* Masonry container */
-		display: block;
-		column-count: 4;
+.masonry { /* Masonry container */
+    column-count: 3;
     column-gap: 1em;
 }
+
+.item { /* Masonry bricks or child elements */
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+}
+.item:nth-child(3n+1) {
+    order: 3;
+}
+
+.item:nth-child(3n+2) {
+    order: 1;
+}
+
+.item:nth-child(3n) {
+    order: 2;
+}
+
+
 
 [class*="kap"][class*="-merkez"] {
 	justify-content: center;
@@ -147,7 +166,7 @@ flex: 1 1 0%;
 /* ======================= */
 
 /* === KAPLAMA ÖLÇEKLERİ === */
-[class*="kap_eb"] > [class*="kap"][class*="-0p"]{
+[class*="kap"][class*="gnl-eb"] > [class*="kap"][class*="-0p"]{
 	flex:1 1 0%;
 	overflow: hidden;
 }
@@ -1329,8 +1348,7 @@ flex: 1 1 0%;
     BURADAN SONRASINI GELECEKTE SİLECEĞİZ
     BURADAN SONRASINI GELECEKTE SİLECEĞİZ
 ========================================================================== */
-.deneme-kutu{
+.kutu-tipi{
 	border:1px solid green;
 	background-color: #eee;
-	width:100%;
 }

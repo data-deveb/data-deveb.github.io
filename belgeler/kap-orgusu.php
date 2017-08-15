@@ -3,7 +3,7 @@
   <div class="kap_gnl-1o kap-merkez">
     <ul class="menü-genel">
       <li><a href="/deveb/belgeler/kap-orgusu.php">Kap Örgüsü</a></li>
-      <li><a href="#">Boş menü</a></li>
+      <li><a href="/deveb/belgeler/kap-orgusu/ornekler.php">Örnekler</a></li>
       <li><a href="#">Boş menü</a></li>
       <li><a href="#">Boş menü</a></li>
       <li><a href="#">Boş menü</a></li>
@@ -44,7 +44,6 @@
     <h3>Oran Yöntemi</h3>
     <p>Bir genişlikte birbirlerinin katları olacak şekilde oranlar kurabilirsiniz. Örneğin 1 3 1 oranında bir düzen yazabilirsiniz. Oran yöntemini "kap_gnl-1o" şeklinde yazarak kullanabilrisiniz</p>
     <iframe width="100%" height="300" src="//jsfiddle.net/deveb/hsr989pz/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>  </div>
-
 </div>
 
   <h2>Kavramlar</h2>
