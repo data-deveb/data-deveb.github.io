@@ -1,18 +1,7 @@
 <?php include '../toprak/head.html';?>
-<div id="header" class="kap_gnl-5-5p">
-  <div class="kap_gnl-1o kap-merkez">
-    <ul class="menü-genel">
-      <li><a href="/deveb/belgeler/kap-orgusu.php">Kap Örgüsü</a></li>
-      <li><a href="/deveb/belgeler/kap-orgusu/ornekler.php">Örnekler</a></li>
-      <li><a href="#">Boş menü</a></li>
-      <li><a href="#">Boş menü</a></li>
-      <li><a href="#">Boş menü</a></li>
-      <li><a href="#">Boş menü</a></li>
-    </ul>
-  </div>
-</div>
-<div class="">
-<div class="kap_gnl-12-12p dolgu-1 beri-alt-1">
+<?php include '../toprak/header.html';?>
+<div class="kap-merkez">
+<div class="kap_gnl-11-12p beri-alt-1">
   <h1>Kap Örgüsü</h1>
   <p>Kap kelimesi genelde bir şeyi bir arada tutan fiziksel nesneler için kullanılır. Buradan yola çıkarak anlamını kodlama dünyasına yansıtabilirsiniz. Kap örgüsü İngilizce dilinde "grid system" diye anılır. Deveb çatısı altında bu örgü kendine özgü kullanımı ile diğer önyüz iskeletlerindeki kap örgülerinden farklıdır ve benzer yönleride kapsamaktadır. Çok amaçlı yönleri vardır.</p>
   <h2>Konular</h2>

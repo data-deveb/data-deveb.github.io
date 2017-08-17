@@ -1,4 +1,6 @@
 <?php include '../../toprak/head.html';?>
+<?php include '../../toprak/header.html';?>
+
 <div class="kap-merkez">
   <div class="kap_gnl-11-12p">
     <div class="kap_gnl-3b_ort-1b arala-1 dışkenar-0">
@@ -17,7 +19,7 @@
         <iframe width="100%" height="300" src="//jsfiddle.net/deveb/z0q6zdsr/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
       </div>
       <div class="kap_gnl-0p">
-        <h2>Oranla</h2>
+        <h2>Oran</h2>
         <p>Bir genişliğe sığacak şekilde birbirleri arasında oranlama yapma yöntemidir. Aynı satırda oranlanırlar.</p>
         <iframe width="100%" height="300" src="//jsfiddle.net/deveb/j5o2wpt2/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
       </div>

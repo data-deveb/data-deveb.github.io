@@ -57,6 +57,10 @@ body{
 .beri-üst-2{ margin-top:		30px}
 .beri-alt-2{ margin-bottom:	30px}
 
+.ap-kara	{background-color:#222;}
+.ap-deniz	{background-color: #17C4BB;}
+.ap-deveb	{background-color: #990044;}
+
 .taşma-gizli {	overflow:hidden;	}
 
 [class*="kap"][class*="arala-1"] > [class*="kap"]{	padding: 7.5px;}
@@ -67,25 +71,22 @@ body{
     Menü görünümleri
 ========================================================================== */
 .menü-genel{ padding: 5px;}
-	.menü-genel li{display: inline-block;padding:8px;margin-right: 5px;background-color: blue; font-size: 10pt;border-radius: 3px;}
-	.menü-genel li a{text-decoration: none; color: white;}
-	.menü-genel li a:hover{color:yellow;}
+	.menü-genel li{display: inline-block;padding:8px;margin-right: 5px;background-color: white; font-size: 10pt;border-radius: 3px;}
+	.menü-genel li a{text-decoration: none; color: #704;}
+	.menü-genel li a:hover{font-weight: bold;}
 /* ==========================================================================
     METİN
     Metin görünümleri
 ========================================================================== */
-.metin-olumlu{
-	color: green;
-}
-.metin-olumsuz{
-	color: gray;
-}
-.metin-hata{
-	color:	red;
-}
-.metin-tehlike{
-	color: #c70000;
-}
+.metin-orta{text-align: center;}
+.metin-sol{text-align: left;}
+.metin-olumlu{	color: green;}
+.metin-olumsuz{	color: gray;}
+.metin-hata{	color:	red;}
+.metin-tehlike{	color: #c70000;}
+.metin-beyaz{	color:#fff;}
+.metin-deveb{ color:#904;}
+.metin-gri-3{ color:#999;}
 /* ==========================================================================
     TABLO
     Tablo görünümleri
