@@ -2,8 +2,8 @@
 		TANIMLAMALAR
 		beri: CSS > margin          		dolgu: CSS > padding
 
-		byk: (g)enel                		kcm: (k)o(c)a(m)an
-		dev: dev                    		byk: (b)ü(y)ü(k)
+		gnl: (g)enel                		dev: dev
+		byk: (b)ü(y)ü(k)             		kcm: (k)o(c)a(m)an
 		ort: (ort)a                 		kçk: (k)ü(ç)ü(k)
 		ufk: (uf)a(k)               		mnk: (m)i(n)i(k)
 
@@ -27,6 +27,20 @@ h1, h2, h3, h4, h5, h6{
 
 body{
 	font-family: 'Roboto', sans-serif;
+  font-size:10pt;
+}
+/* ==========================================================================
+    PANEL DÜZENİ
+    Varsayılan bir panel görünümüyle ayırt edici bir görsel için
+========================================================================== */
+.kutu{
+  display: inherit;
+}
+.kutu-genel{
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  margin:5px;
 }
 
 /* ==========================================================================
@@ -40,16 +54,28 @@ body{
 }
 
 /* KAP HİZALAMA */
-.kap.sarkıt { align-items: flex-start;        }
-.kap.dikit  { align-items: flex-end;          }
-.kap.merkez { align-items: center;            }
-.kap.direk  { align-items: stretch;           }
-.kap.denge  { align-items: baseline;          }
-.kap.ortala { justify-content: center;        }
-.kap.yanla  { justify-content: flex-end;      }
-.kap.solla  { justify-content: flex-start;    }
-.kap.yayma  { justify-content: space-around;  }
-.kap.germe  { justify-content: space-between; }
+.kap.sarkıt,
+.kap.sarkıtlat .kap { align-items: flex-start;        }
+.kap.dikit,
+.kap.dikitlet .kap  { align-items: flex-end;          }
+.kap.merkez,
+.kap.merkezlet .kap { align-items: center;            }
+.kap.direk,
+.kap.direklet .kap  { align-items: stretch;           }
+.kap.denge,
+.kap.dengelet .kap  { align-items: baseline;          }
+.kap.ortala,
+.kap.ortalat .kap   { justify-content: center;        }
+.kap.yanla,
+.kap.yanlat .kap    { justify-content: flex-end;      }
+.kap.solla,
+.kap.sollat .kap    { justify-content: flex-start;    }
+.kap.yay,
+.kap.yaylat .kap    { justify-content: space-around;  }
+.kap.ger,
+.kap.gerlet .kap    { justify-content: space-between; }
+.kap.tersle,
+.kap.terslet .kap   { flex-direction: row-reverse;    }
 
 /* KAP ÖLÇEKLEME */
 /* gnl - Tüm ekran genişliklerinde */
@@ -1617,3 +1643,4 @@ body{
   overflow: hidden;
 }
 }
+/* Buradan sonrası haricidir */
