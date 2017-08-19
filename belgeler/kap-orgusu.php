@@ -17,7 +17,7 @@
 <div class="kap_gnl-1b">
   <div class="kap_gnl-0p beri-üst-1 beri-alt-1">
   <h2>Ana Yapı</h2>
-  <p>Kap örgüsünün ana yapısı üç ana uygulamadan oluşmaktadır. Bölme uygulaması, oranlama uygulaması, parça uygulaması olarak isimlendirdiğimiz bu uygulamaları ayrıntılarıyla aşağıda öğrenebilirsiniz.</p>
+  <p>Kap örgüsünün ana yapısı üç ana uygulamadan oluşmaktadır. Bölme uygulaması, parça uygulaması, oran uygulaması olarak isimlendirdiğimiz bu uygulamaları ayrıntılarıyla aşağıda öğrenebilirsiniz.</p>
   </div>
   <div class="kap_gnl-0p beri-üst-1 beri-alt-1">
     <h3>Bölme Yöntemi</h3>
@@ -25,8 +25,12 @@
     <iframe width="100%" height="300" src="//jsfiddle.net/deveb/5cd4kvqr/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   </div>
   <div class="kap_gnl-0p beri-üst-1 beri-alt-1">
-    <h3>Parça Yöntemi</h3>
-    <p>Bir genişliği 5, 6, 8, 9, 10, 12, 16, 18, 20, 24 olmak üzere 10 farklı parça grubu halinde kullanabilirsiniz. Aynı HTML içinde dilediğiniz parça gruplarını dilediğiniz yerde kullanabilirsiniz. Sadece bir tane grubu kullanacaksınız diye bir kural yok. Örneğin bir genişliğin 24'de 2'si (2/24) kadar genişlik istiyorsanız şöyle yazmanız gerekecektir "kap_gnl-2-24p". Sınıfın sonunda yazılan "p" harfi parça kelimesini temsil etmektedir. </p>
+    <h3 class="beri-alt-1">Parça Yöntemi</h3>
+    <p>Bulunduğu genişliği parçalara ayırarak kullanma yöntemidir. 10 farklı parça aralığı varsayılan olarak ayarlanmıştır. 5p, 6p, 8p, 9p, 10p, 12p, 16p, 18p, 20p, 24p olarak istediğiniz ekran ölçeğinde (gnl, byk, ort, kçk, ufk, mnk) kullanabilirsiniz. Örneğin 10p parça aralığını kullanacaksanız genişliği 10 eşit parçaya bölmek istediğinizi anlarız. Bununla birlikte farklı parça aralıklarını bir arada kullanabilme özelliği vardır. Buradan anlamanızı beklediğimiz, HTML dosyasının bir bölümünde 10p kullanıyorken, diğer bir bölümünde 16p kullanabilirsiniz.</p>
+    <h4 class="beri-alt-1 beri-üst-1">Kullanımı</h4>
+    <p>Kap örgüsü ile ilgili bir işlem yapacağınız zaman "kap" sınıfı her zaman yazılmalıdır. Bir genişliği tüm ekran ölçeklerinde 24 parçaya ayırarak kullanmak için sınıfı şöyle yazmalısınız; "kap gnl-24-24p". Böyle yazdığınız zaman bulunduğu genişliği baştan sonra kadar kaplayacaktır. Eğer 24 parçanın yarısı kadar kaplamak istiyorsanız; "kap gnl-12-24p" şeklinde yazmanız gerekmektedir. Buradan yola çıkarak diğer parça aralıklarını kullanabilirsiniz.</p>
+    <h4 class="beri-alt-1 beri-üst-1">0p nedir?</h4>
+    <p>"0p" kap örgüsü için boş değer anlamına gelir. Bu değer HTML'de üst sınıftan değer alma özelliğine sahiptir. Yani "boş parça" yazıldığı yerde bir kaynak sınıftan değer alabilir. Buna şöyle örnek verebiliriz "kap gnl-2b" > "kap gnl-0p". Bu durumda "2b" bölme değeri "0p" boş değerine 2li sütun görünümünde olması için 50% genişlik tanımlaması yapmış olacaksınız.</p>
     <iframe width="100%" height="300" src="//jsfiddle.net/deveb/2wa4s4jf/embedded/result,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   </div>
   <div class="kap_gnl-0p beri-üst-1 beri-alt-1">

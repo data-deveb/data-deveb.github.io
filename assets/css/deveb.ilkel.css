@@ -61,6 +61,10 @@ body{
 .ap-deniz	{background-color: #17C4BB;}
 .ap-deveb	{background-color: #990044;}
 
+.kenar-alt{border-bottom:1px solid #eceeef;-webkit-box-shadow: 0 2px 0 hsla(200,9%,93%,.25);
+box-shadow: 0 2px 0 hsla(200,9%,93%,.25);
+}
+
 .taşma-gizli {	overflow:hidden;	}
 
 [class*="kap"][class*="arala-1"] > [class*="kap"]{	padding: 7.5px;}
@@ -71,9 +75,9 @@ body{
     Menü görünümleri
 ========================================================================== */
 .menü-genel{ padding: 5px;}
-	.menü-genel li{display: inline-block;padding:8px;margin-right: 5px;background-color: white; font-size: 10pt;border-radius: 3px;}
-	.menü-genel li a{text-decoration: none; color: #704;}
-	.menü-genel li a:hover{font-weight: bold;}
+	.menü-genel li{display: inline-block;margin-right: 5px;font-size: 11pt;}
+	.menü-genel li a{display: inline-block; text-decoration: none; padding:8px; color: #4f545c; font-weight: bold;}
+	.menü-genel li a:hover{color:black;}
 /* ==========================================================================
     METİN
     Metin görünümleri
@@ -147,18 +151,18 @@ table{
 [class*="kap"][class*="-merkez"] {
 	justify-content: center;
 }
-[class*="kap"][class*="-sağ"] {
+[class*="kap"][class*="-sağyan"] {
 	justify-content: flex-end;
 	align-self: flex-end;
 	margin-left: auto;
 }
-[class*="kap"][class*="-üst"] {
+[class*="kap"][class*="-sarkıt"] {
 	align-items: flex-start;
 }
-[class*="kap"][class*="-orta"] {
+[class*="kap"][class*="-ortalan"] {
 	align-items: center;
 }
-[class*="kap"][class*="-alt"] {
+[class*="kap"][class*="-dikit"] {
 	align-items: flex-end;
 }
 [class*="kap"][class*="-doldur"]{
@@ -187,7 +191,8 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-25b"] > [class*="kap"][class*="gnl-0p"]
 	{ flex-basis: 4%;max-width: 4%; }
 
-[class*="kap"][class*="gnl-24b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-1-24p"]
+[class*="kap"][class*="gnl-24b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-1-24p"]
 	{	flex-basis: 4.16666666666667%;max-width: 4.16666666666667%;	}
 
 [class*="kap"][class*="gnl-23b"] > [class*="kap"][class*="gnl-0p"]
@@ -199,19 +204,22 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-21b"] > [class*="kap"][class*="gnl-0p"]
 	{	flex-basis: 4.7619047619%;max-width: 4.7619047619%;		}
 
-[class*="kap"][class*="gnl-20b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-1-20p"]
+[class*="kap"][class*="gnl-20b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-1-20p"]
 	{	flex-basis: 5%;max-width: 5%;	}
 
 [class*="kap"][class*="gnl-19b"] > [class*="kap"][class*="gnl-0p"]
 	{	flex-basis: 5.26315789474%;max-width: 5.26315789474%;	}
 
-[class*="kap"][class*="gnl-18b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-1-18p"]
+[class*="kap"][class*="gnl-18b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-1-18p"]
 	{	flex-basis: 5.55555555555556%;max-width: 5.55555555555556%;	}
 
 [class*="kap"][class*="gnl-17b"] > [class*="kap"][class*="gnl-0p"]
 	{	flex-basis: 5.88235294118%;max-width: 5.88235294118%;	}
 
-[class*="kap"][class*="gnl-16b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-1-16p"]
+[class*="kap"][class*="gnl-16b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-1-16p"]
 	{	flex-basis: 6.25%;max-width: 6.25%;	}
 
 [class*="kap"][class*="gnl-15b"] > [class*="kap"][class*="gnl-0p"]
@@ -223,19 +231,28 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-13b"] > [class*="kap"][class*="gnl-0p"]
 	{	flex-basis: 7.69230769231%;max-width: 7.69230769231%;	}
 
-[class*="kap"][class*="gnl-12b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-2-24p"],[class*="kap"][class*="gnl-1-12p"]
+[class*="kap"][class*="gnl-12b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-2-24p"],
+[class*="kap"][class*="gnl-1-12p"]
 	{	flex-basis: 8.33333333333333%;max-width: 8.33333333333333%;	}
 
 [class*="kap"][class*="gnl-11b"] > [class*="kap"][class*="gnl-0p"]
 	{	flex-basis: 9.09090909091%;max-width: 9.09090909091%;	}
 
-[class*="kap"][class*="gnl-10b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-2-20p"],[class*="kap"][class*="gnl-1-10p"]
+[class*="kap"][class*="gnl-10b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-2-20p"],
+[class*="kap"][class*="gnl-1-10p"]
 	{	flex-basis: 10%;max-width: 10%;	}
 
-[class*="kap"][class*="gnl-9b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-2-18p"],[class*="kap"][class*="gnl-1-9p"]
+[class*="kap"][class*="gnl-9b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-2-18p"],
+[class*="kap"][class*="gnl-1-9p"]
 	{	flex-basis: 11.1111111111111%;max-width: 11.1111111111111%;	}
 
-[class*="kap"][class*="gnl-8b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-3-24p"],[class*="kap"][class*="gnl-2-16p"],[class*="kap"][class*="gnl-1-8p"]
+[class*="kap"][class*="gnl-8b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-3-24p"],
+[class*="kap"][class*="gnl-2-16p"],
+[class*="kap"][class*="gnl-1-8p"]
 	{	flex-basis: 12.5%;max-width: 12.5%; }
 
 [class*="kap"][class*="gnl-7b"] > [class*="kap"][class*="gnl-0p"]
@@ -244,13 +261,20 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-3-20p"]
 	{	flex-basis: 15%;max-width: 15%;	}
 
-[class*="kap"][class*="gnl-6b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-4-24p"],[class*="kap"][class*="gnl-3-18p"],[class*="kap"][class*="gnl-2-12p"],[class*="kap"][class*="gnl-1-6p"]
+[class*="kap"][class*="gnl-6b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-4-24p"],
+[class*="kap"][class*="gnl-3-18p"],
+[class*="kap"][class*="gnl-2-12p"],
+[class*="kap"][class*="gnl-1-6p"]
 	{	flex-basis: 16.6666666666667%;max-width: 16.6666666666667%;	}
 
 [class*="kap"][class*="gnl-3-16p"]
 	{	flex-basis: 18.75%;max-width: 18.75%;	}
 
-[class*="kap"][class*="gnl-5b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-4-20p"],[class*="kap"][class*="gnl-2-10p"],[class*="kap"][class*="gnl-1-5p"]
+[class*="kap"][class*="gnl-5b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-4-20p"],
+[class*="kap"][class*="gnl-2-10p"],
+[class*="kap"][class*="gnl-1-5p"]
 	{	flex-basis: 20%;max-width: 20%;	}
 
 [class*="kap"][class*="gnl-5-24p"]
@@ -259,7 +283,12 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-4-18p"],[class*="kap"][class*="gnl-2-9p"]
 	{	flex-basis: 22.2222222222222%;max-width: 22.2222222222222%;	}
 
-[class*="kap"][class*="gnl-4b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-6-24p"],[class*="kap"][class*="gnl-5-20p"],[class*="kap"][class*="gnl-4-16p"],[class*="kap"][class*="gnl-3-12p"],[class*="kap"][class*="gnl-2-8p"]
+[class*="kap"][class*="gnl-4b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-6-24p"],
+[class*="kap"][class*="gnl-5-20p"],
+[class*="kap"][class*="gnl-4-16p"],
+[class*="kap"][class*="gnl-3-12p"],
+[class*="kap"][class*="gnl-2-8p"]
 	{	flex-basis: 25%;max-width: 25%;								}
 
 [class*="kap"][class*="gnl-5-18p"]
@@ -268,34 +297,46 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-7-24p"]
 	{	flex-basis: 29.1666666666667%;max-width: 29.1666666666667%;	}
 
-[class*="kap"][class*="gnl-6-20p"],[class*="kap"][class*="gnl-3-10p"]
+[class*="kap"][class*="gnl-6-20p"],
+[class*="kap"][class*="gnl-3-10p"]
 	{	flex-basis: 30%;max-width: 30%;	}
 
 [class*="kap"][class*="gnl-5-16p"]
 	{	flex-basis: 31.25%;max-width: 31.25%;	}
 
-[class*="kap"][class*="gnl-3b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-8-24p"],[class*="kap"][class*="gnl-6-18p"],[class*="kap"][class*="gnl-4-12p"],[class*="kap"][class*="gnl-3-9p"],[class*="kap"][class*="gnl-2-6p"]
+[class*="kap"][class*="gnl-3b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-8-24p"],
+[class*="kap"][class*="gnl-6-18p"],
+[class*="kap"][class*="gnl-4-12p"],
+[class*="kap"][class*="gnl-3-9p"],
+[class*="kap"][class*="gnl-2-6p"]
 	{	flex-basis: 33.3333333333333%;max-width: 33.3333333333333%;	}
 
 [class*="kap"][class*="gnl-7-20p"]
 	{	flex-basis: 35%;max-width: 35%;	}
 
-[class*="kap"][class*="gnl-9-24p"],[class*="kap"][class*="gnl-6-16p"],[class*="kap"][class*="gnl-3-8p"]
+[class*="kap"][class*="gnl-9-24p"],
+[class*="kap"][class*="gnl-6-16p"],
+[class*="kap"][class*="gnl-3-8p"]
 	{	flex-basis: 37.5%;max-width: 37.5%;	}
 
 [class*="kap"][class*="gnl-7-18p"]
 	{	flex-basis: 38.8888888888889%;max-width: 38.8888888888889%;	}
 
-[class*="kap"][class*="gnl-8-20p"],[class*="kap"][class*="gnl-4-10p"],[class*="kap"][class*="gnl-2-5p"]
+[class*="kap"][class*="gnl-8-20p"],
+[class*="kap"][class*="gnl-4-10p"],
+[class*="kap"][class*="gnl-2-5p"]
 	{	flex-basis: 40%;max-width: 40%;	}
 
-[class*="kap"][class*="gnl-10-24p"],[class*="kap"][class*="gnl-5-12p"]
+[class*="kap"][class*="gnl-10-24p"],
+[class*="kap"][class*="gnl-5-12p"]
 	{	flex-basis: 41.6666666666667%;max-width: 41.6666666666667%;	}
 
 [class*="kap"][class*="gnl-7-16p"]
 	{	flex-basis: 43.75%;max-width: 43.75%;	}
 
-[class*="kap"][class*="gnl-8-18p"],[class*="kap"][class*="gnl-4-9p"]
+[class*="kap"][class*="gnl-8-18p"],
+[class*="kap"][class*="gnl-4-9p"]
 		{	flex-basis: 44.4444444444444%;max-width: 44.4444444444444%;	}
 
 [class*="kap"][class*="gnl-9-20p"]
@@ -304,7 +345,15 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-11-24p"]
 	{	flex-basis: 45.8333333333333%;max-width: 45.8333333333333%;	}
 
-[class*="kap"][class*="gnl-2b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-12-24p"],[class*="kap"][class*="gnl-10-20p"],[class*="kap"][class*="gnl-9-18p"],[class*="kap"][class*="gnl-8-16p"],[class*="kap"][class*="gnl-6-12p"],[class*="kap"][class*="gnl-5-10p"],[class*="kap"][class*="gnl-4-8p"],[class*="kap"][class*="gnl-3-6p"]
+[class*="kap"][class*="gnl-2b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-12-24p"],
+[class*="kap"][class*="gnl-10-20p"],
+[class*="kap"][class*="gnl-9-18p"],
+[class*="kap"][class*="gnl-8-16p"],
+[class*="kap"][class*="gnl-6-12p"],
+[class*="kap"][class*="gnl-5-10p"],
+[class*="kap"][class*="gnl-4-8p"],
+[class*="kap"][class*="gnl-3-6p"]
 	{	flex-basis: 50%;max-width: 50%;	}
 
 [class*="kap"][class*="gnl-13-24p"]
@@ -313,13 +362,15 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-11-20p"]
 	{	flex-basis: 55%;max-width: 55%;	}
 
-[class*="kap"][class*="gnl-10-18p"],[class*="kap"][class*="gnl-5-9p"]
+[class*="kap"][class*="gnl-10-18p"],
+[class*="kap"][class*="gnl-5-9p"]
 	{	flex-basis: 55.5555555555556%;max-width: 55.5555555555556%;	}
 
 [class*="kap"][class*="gnl-9-16p"]
 	{	flex-basis: 56.25%;max-width: 56.25%;	}
 
-[class*="kap"][class*="gnl-14-24p"],[class*="kap"][class*="gnl-7-12p"]
+[class*="kap"][class*="gnl-14-24p"],
+[class*="kap"][class*="gnl-7-12p"]
 	{	flex-basis: 58.3333333333333%;max-width: 58.3333333333333%;	}
 
 [class*="kap"][class*="gnl-12-20p"],[class*="kap"][class*="gnl-6-10p"],[class*="kap"][class*="gnl-3-5p"]
@@ -328,19 +379,25 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-11-18p"]
 	{	flex-basis: 61.1111111111111%;max-width: 61.1111111111111%;	}
 
-[class*="kap"][class*="gnl-15-24p"],[class*="kap"][class*="gnl-10-16p"],[class*="kap"][class*="gnl-5-8p"]
+[class*="kap"][class*="gnl-15-24p"],
+[class*="kap"][class*="gnl-10-16p"],[class*="kap"][class*="gnl-5-8p"]
 	{	flex-basis: 62.5%;max-width: 62.5%;	}
 
 [class*="kap"][class*="gnl-13-20p"]
 	{	flex-basis: 65%;max-width: 65%;	}
 
-[class*="kap"][class*="gnl-16-24p"],[class*="kap"][class*="gnl-12-18p"],[class*="kap"][class*="gnl-8-12p"],[class*="kap"][class*="gnl-6-9p"],[class*="kap"][class*="gnl-4-6p"]
+[class*="kap"][class*="gnl-16-24p"],
+[class*="kap"][class*="gnl-12-18p"],
+[class*="kap"][class*="gnl-8-12p"],
+[class*="kap"][class*="gnl-6-9p"],
+[class*="kap"][class*="gnl-4-6p"]
 	{	flex-basis: 66.6666666666667%;max-width: 66.6666666666667%;	}
 
 [class*="kap"][class*="gnl-11-16p"]
 	{	flex-basis: 68.75%;max-width: 68.75%;	}
 
-[class*="kap"][class*="gnl-14-20p"],[class*="kap"][class*="gnl-7-10p"]
+[class*="kap"][class*="gnl-14-20p"],
+[class*="kap"][class*="gnl-7-10p"]
 	{	flex-basis: 70%;max-width: 70%;	}
 
 [class*="kap"][class*="gnl-17-24p"]
@@ -349,37 +406,52 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-13-18p"]
 	{	flex-basis: 72.2222222222222%;max-width: 72.2222222222222%;	}
 
-[class*="kap"][class*="gnl-18-24p"],[class*="kap"][class*="gnl-15-20p"],[class*="kap"][class*="gnl-12-16p"],[class*="kap"][class*="gnl-9-12p"],[class*="kap"][class*="gnl-6-8p"]
+[class*="kap"][class*="gnl-18-24p"],
+[class*="kap"][class*="gnl-15-20p"],
+[class*="kap"][class*="gnl-12-16p"],
+[class*="kap"][class*="gnl-9-12p"],
+[class*="kap"][class*="gnl-6-8p"]
 	{	flex-basis: 75%;max-width: 75%;	}
 
-[class*="kap"][class*="gnl-14-18p"],[class*="kap"][class*="gnl-7-9p"]
+[class*="kap"][class*="gnl-14-18p"],
+[class*="kap"][class*="gnl-7-9p"]
 	{	flex-basis: 77.7777777777778%;max-width: 77.7777777777778%;	}
 
 [class*="kap"][class*="gnl-19-24p"]
 	{	flex-basis: 79.1666666666667%;max-width: 79.1666666666667%;	}
 
-[class*="kap"][class*="gnl-16-20p"],[class*="kap"][class*="gnl-8-10p"],[class*="kap"][class*="gnl-4-5p"]
+[class*="kap"][class*="gnl-16-20p"],
+[class*="kap"][class*="gnl-8-10p"],
+[class*="kap"][class*="gnl-4-5p"]
 	{	flex-basis: 80%;max-width: 80%;	}
 
 [class*="kap"][class*="gnl-13-16p"]
 	{	flex-basis: 81.25%;max-width: 81.25%;	}
 
-[class*="kap"][class*="gnl-20-24p"],[class*="kap"][class*="gnl-15-18p"],[class*="kap"][class*="gnl-10-12p"],[class*="kap"][class*="gnl-5-6p"]
+[class*="kap"][class*="gnl-20-24p"],
+[class*="kap"][class*="gnl-15-18p"],
+[class*="kap"][class*="gnl-10-12p"],
+[class*="kap"][class*="gnl-5-6p"]
 	{	flex-basis: 83.3333333333333%;max-width: 83.3333333333333%;	}
 
 [class*="kap"][class*="gnl-17-20p"]
 	{	flex-basis: 85%;max-width: 85%;	}
 
-[class*="kap"][class*="gnl-21-24p"],[class*="kap"][class*="gnl-14-16p"],[class*="kap"][class*="gnl-7-8p"]
+[class*="kap"][class*="gnl-21-24p"],
+[class*="kap"][class*="gnl-14-16p"],
+[class*="kap"][class*="gnl-7-8p"]
 	{	flex-basis: 87.5%;max-width: 87.5%;	}
 
-[class*="kap"][class*="gnl-16-18p"],[class*="kap"][class*="gnl-8-9p"]
+[class*="kap"][class*="gnl-16-18p"],
+[class*="kap"][class*="gnl-8-9p"]
 	{	flex-basis: 88.8888888888889%;max-width: 88.8888888888889%;	}
 
-[class*="kap"][class*="gnl-18-20p"],[class*="kap"][class*="gnl-9-10p"]
+[class*="kap"][class*="gnl-18-20p"],
+[class*="kap"][class*="gnl-9-10p"]
 	{	flex-basis: 90%;max-width: 90%;	}
 
-[class*="kap"][class*="gnl-22-24p"],[class*="kap"][class*="gnl-11-12p"]
+[class*="kap"][class*="gnl-22-24p"],
+[class*="kap"][class*="gnl-11-12p"]
 	{	flex-basis: 91.6666666666667%;max-width: 91.6666666666667%;	}
 
 [class*="kap"][class*="gnl-15-16p"]
@@ -394,9 +466,17 @@ flex: 1 1 0%;
 [class*="kap"][class*="gnl-23-24p"]
 	{	flex-basis: 95.8333333333333%;max-width: 95.8333333333333%;	}
 
-[class*="kap"][class*="gnl-1b"] > [class*="kap"][class*="gnl-0p"],[class*="kap"][class*="gnl-24-24p"],[class*="kap"][class*="gnl-20-20p"],[class*="kap"][class*="gnl-18-18p"],
-[class*="kap"][class*="gnl-16-16p"],[class*="kap"][class*="gnl-12-12p"],[class*="kap"][class*="gnl-10-10p"],[class*="kap"][class*="gnl-9-9p"],[class*="kap"][class*="gnl-8-8p"],
-[class*="kap"][class*="gnl-6-6p"],[class*="kap"][class*="gnl-5-5p"]
+[class*="kap"][class*="gnl-1b"] > [class*="kap"][class*="gnl-0p"],
+[class*="kap"][class*="gnl-24-24p"],
+[class*="kap"][class*="gnl-20-20p"],
+[class*="kap"][class*="gnl-18-18p"],
+[class*="kap"][class*="gnl-16-16p"],
+[class*="kap"][class*="gnl-12-12p"],
+[class*="kap"][class*="gnl-10-10p"],
+[class*="kap"][class*="gnl-9-9p"],
+[class*="kap"][class*="gnl-8-8p"],
+[class*="kap"][class*="gnl-6-6p"],
+[class*="kap"][class*="gnl-5-5p"]
 	{	flex-basis: 100%;max-width: 100%;	}
 
 @media screen and (max-width: 80em) {
@@ -405,7 +485,8 @@ flex: 1 1 0%;
 [class*="byk-25b"] > [class*="kap"][class*="-0p"]
 	{	flex-basis: 4%;max-width: 4%;	}
 
-[class*="byk-24b"] > [class*="kap"][class*="-0p"],[class*="kap"] > [class*="kap"][class*="byk-1-24p"]
+[class*="byk-24b"] > [class*="kap"][class*="-0p"],
+[class*="kap"] > [class*="kap"][class*="byk-1-24p"]
 	{	flex-basis: 4.16666666666667%;max-width: 4.16666666666667%;	}
 
 [class*="byk-23b"] > [class*="kap"][class*="-0p"]
@@ -445,22 +526,27 @@ flex: 1 1 0%;
 	{	flex-basis: 7.69230769231%;max-width: 7.69230769231%;	}
 
 [class*="byk-12b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-2-24p"],[class*="kap"] > [class*="kap"][class*="byk-1-12p"]
+[class*="kap"] > [class*="kap"][class*="byk-2-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-1-12p"]
 	{	flex-basis: 8.33333333333333%;max-width: 8.33333333333333%;	}
 
 [class*="byk-11b"] > [class*="kap"][class*="-0p"]
 	{	flex-basis: 9.09090909091%;max-width: 9.09090909091%;	}
 
 [class*="byk-10b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-2-20p"],[class*="kap"] > [class*="kap"][class*="byk-1-10p"]
+[class*="kap"] > [class*="kap"][class*="byk-2-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-1-10p"]
 	{	flex-basis: 10%;max-width: 10%;	}
 
 [class*="byk-9b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-2-18p"],[class*="kap"] > [class*="kap"][class*="byk-1-9p"]
+[class*="kap"] > [class*="kap"][class*="byk-2-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-1-9p"]
 	{	flex-basis: 11.1111111111111%;max-width: 11.1111111111111%;	}
 
 [class*="byk-8b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-3-24p"],[class*="kap"] > [class*="kap"][class*="byk-2-16p"],[class*="kap"] > [class*="kap"][class*="byk-1-8p"]
+[class*="kap"] > [class*="kap"][class*="byk-3-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-2-16p"],
+[class*="kap"] > [class*="kap"][class*="byk-1-8p"]
 	{	flex-basis: 12.5%;max-width: 12.5%;	}
 
 [class*="byk-7b"] > [class*="kap"][class*="-0p"]
@@ -470,24 +556,34 @@ flex: 1 1 0%;
 	{	flex-basis: 15%;max-width: 15%;	}
 
 [class*="byk-6b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-4-24p"],[class*="kap"] > [class*="kap"][class*="byk-3-18p"],[class*="kap"] > [class*="kap"][class*="byk-2-12p"],[class*="kap"] > [class*="kap"][class*="byk-1-6p"]
+[class*="kap"] > [class*="kap"][class*="byk-4-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-3-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-2-12p"],
+[class*="kap"] > [class*="kap"][class*="byk-1-6p"]
 	{	flex-basis: 16.6666666666667%;max-width: 16.6666666666667%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-3-16p"]
 	{	flex-basis: 18.75%;max-width: 18.75%;	}
 
 [class*="byk-5b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-4-20p"],[class*="kap"] > [class*="kap"][class*="byk-2-10p"],[class*="kap"] > [class*="kap"][class*="byk-1-5p"]
+[class*="kap"] > [class*="kap"][class*="byk-4-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-2-10p"],
+[class*="kap"] > [class*="kap"][class*="byk-1-5p"]
 	{	flex-basis: 20%;max-width: 20%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-5-24p"]
 	{	flex-basis: 20.8333333333333%;max-width: 20.8333333333333%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-4-18p"],[class*="kap"] > [class*="kap"][class*="byk-2-9p"]
+[class*="kap"] > [class*="kap"][class*="byk-4-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-2-9p"]
 	{	flex-basis: 22.2222222222222%;max-width: 22.2222222222222%;	}
 
 [class*="byk-4b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-6-24p"],[class*="kap"] > [class*="kap"][class*="byk-5-20p"],[class*="kap"] > [class*="kap"][class*="byk-4-16p"],[class*="kap"] > [class*="kap"][class*="byk-3-12p"],[class*="kap"] > [class*="kap"][class*="byk-2-8p"]
+[class*="kap"] > [class*="kap"][class*="byk-6-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-5-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-4-16p"],
+[class*="kap"] > [class*="kap"][class*="byk-3-12p"],
+[class*="kap"] > [class*="kap"][class*="byk-2-8p"]
 	{	flex-basis: 25%;								max-width: 25%;								}
 
 [class*="kap"] > [class*="kap"][class*="byk-5-18p"]
@@ -496,35 +592,46 @@ flex: 1 1 0%;
 [class*="kap"] > [class*="kap"][class*="byk-7-24p"]
 	{	flex-basis: 29.1666666666667%;	max-width: 29.1666666666667%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-6-20p"],[class*="kap"] > [class*="kap"][class*="byk-3-10p"]
+[class*="kap"] > [class*="kap"][class*="byk-6-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-3-10p"]
 	{	flex-basis: 30%;	max-width: 30%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-5-16p"]
 	{	flex-basis: 31.25%;	max-width: 31.25%;	}
 
 [class*="byk-3b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-8-24p"],[class*="kap"] > [class*="kap"][class*="byk-6-18p"],[class*="kap"] > [class*="kap"][class*="byk-4-12p"],[class*="kap"] > [class*="kap"][class*="byk-3-9p"],[class*="kap"] > [class*="kap"][class*="byk-2-6p"]
+[class*="kap"] > [class*="kap"][class*="byk-8-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-6-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-4-12p"],
+[class*="kap"] > [class*="kap"][class*="byk-3-9p"],
+[class*="kap"] > [class*="kap"][class*="byk-2-6p"]
 	{	flex-basis: 33.3333333333333%;	max-width: 33.3333333333333%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-7-20p"]
 	{	flex-basis: 35%;	max-width: 35%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-9-24p"],[class*="kap"] > [class*="kap"][class*="byk-6-16p"],[class*="kap"] > [class*="kap"][class*="byk-3-8p"]
+[class*="kap"] > [class*="kap"][class*="byk-9-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-6-16p"],
+[class*="kap"] > [class*="kap"][class*="byk-3-8p"]
 	{	flex-basis: 37.5%;							max-width: 37.5%;							}
 
 [class*="kap"] > [class*="kap"][class*="byk-7-18p"]
 	{	flex-basis: 38.8888888888889%;	max-width: 38.8888888888889%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-8-20p"],[class*="kap"] > [class*="kap"][class*="byk-4-10p"],[class*="kap"] > [class*="kap"][class*="byk-2-5p"]
+[class*="kap"] > [class*="kap"][class*="byk-8-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-4-10p"],
+[class*="kap"] > [class*="kap"][class*="byk-2-5p"]
 	{	flex-basis: 40%;	max-width: 40%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-10-24p"],[class*="kap"] > [class*="kap"][class*="byk-5-12p"]
+[class*="kap"] > [class*="kap"][class*="byk-10-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-5-12p"]
 	{	flex-basis: 41.6666666666667%;	max-width: 41.6666666666667%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-7-16p"]
 	{	flex-basis: 43.75%;	max-width: 43.75%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-8-18p"],[class*="kap"] > [class*="kap"][class*="byk-4-9p"]
+[class*="kap"] > [class*="kap"][class*="byk-8-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-4-9p"]
 		{	flex-basis: 44.4444444444444%;	max-width: 44.4444444444444%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-9-20p"]
@@ -534,7 +641,14 @@ flex: 1 1 0%;
 	{	flex-basis: 45.8333333333333%;	max-width: 45.8333333333333%;	}
 
 [class*="byk-2b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-12-24p"],[class*="kap"] > [class*="kap"][class*="byk-10-20p"],[class*="kap"] > [class*="kap"][class*="byk-9-18p"],[class*="kap"] > [class*="kap"][class*="byk-8-16p"],[class*="kap"] > [class*="kap"][class*="byk-6-12p"],[class*="kap"] > [class*="kap"][class*="byk-5-10p"],[class*="kap"] > [class*="kap"][class*="byk-4-8p"],[class*="kap"] > [class*="kap"][class*="byk-3-6p"]
+[class*="kap"] > [class*="kap"][class*="byk-12-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-10-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-9-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-8-16p"],
+[class*="kap"] > [class*="kap"][class*="byk-6-12p"],
+[class*="kap"] > [class*="kap"][class*="byk-5-10p"],
+[class*="kap"] > [class*="kap"][class*="byk-4-8p"],
+[class*="kap"] > [class*="kap"][class*="byk-3-6p"]
 	{	flex-basis: 50%;								max-width: 50%;								}
 
 [class*="kap"] > [class*="kap"][class*="byk-13-24p"]
@@ -543,34 +657,45 @@ flex: 1 1 0%;
 [class*="kap"] > [class*="kap"][class*="byk-11-20p"]
 	{	flex-basis: 55%;	max-width: 55%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-10-18p"],[class*="kap"] > [class*="kap"][class*="byk-5-9p"]
+[class*="kap"] > [class*="kap"][class*="byk-10-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-5-9p"]
 	{	flex-basis: 55.5555555555556%;	max-width: 55.5555555555556%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-9-16p"]
 	{	flex-basis: 56.25%;	max-width: 56.25%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-14-24p"],[class*="kap"] > [class*="kap"][class*="byk-7-12p"]
+[class*="kap"] > [class*="kap"][class*="byk-14-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-7-12p"]
 	{	flex-basis: 58.3333333333333%;	max-width: 58.3333333333333%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-12-20p"],[class*="kap"] > [class*="kap"][class*="byk-6-10p"],[class*="kap"] > [class*="kap"][class*="byk-3-5p"]
+[class*="kap"] > [class*="kap"][class*="byk-12-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-6-10p"],
+[class*="kap"] > [class*="kap"][class*="byk-3-5p"]
 	{	flex-basis: 60%;	max-width: 60%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-11-18p"]
 	{	flex-basis: 61.1111111111111%;	max-width: 61.1111111111111%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-15-24p"],[class*="kap"] > [class*="kap"][class*="byk-10-16p"],[class*="kap"] > [class*="kap"][class*="byk-5-8p"]
+[class*="kap"] > [class*="kap"][class*="byk-15-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-10-16p"],
+[class*="kap"] > [class*="kap"][class*="byk-5-8p"]
 	{	flex-basis: 62.5%;							max-width: 62.5%;							}
 
 [class*="kap"] > [class*="kap"][class*="byk-13-20p"]
 	{	flex-basis: 65%;	max-width: 65%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-16-24p"],[class*="kap"] > [class*="kap"][class*="byk-12-18p"],[class*="kap"] > [class*="kap"][class*="byk-8-12p"],[class*="kap"] > [class*="kap"][class*="byk-6-9p"],[class*="kap"] > [class*="kap"][class*="byk-4-6p"]
+[class*="kap"] > [class*="kap"][class*="byk-16-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-12-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-8-12p"],
+[class*="kap"] > [class*="kap"][class*="byk-6-9p"],
+[class*="kap"] > [class*="kap"][class*="byk-4-6p"]
 	{	flex-basis: 66.6666666666667%;	max-width: 66.6666666666667%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-11-16p"]
 	{	flex-basis: 68.75%;	max-width: 68.75%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-14-20p"],[class*="kap"] > [class*="kap"][class*="byk-7-10p"]
+[class*="kap"] > [class*="kap"][class*="byk-14-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-7-10p"]
 	{	flex-basis: 70%;	max-width: 70%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-17-24p"]
@@ -579,37 +704,52 @@ flex: 1 1 0%;
 [class*="kap"] > [class*="kap"][class*="byk-13-18p"]
 	{	flex-basis: 72.2222222222222%;	max-width: 72.2222222222222%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-18-24p"],[class*="kap"] > [class*="kap"][class*="byk-15-20p"],[class*="kap"] > [class*="kap"][class*="byk-12-16p"],[class*="kap"] > [class*="kap"][class*="byk-9-12p"],[class*="kap"] > [class*="kap"][class*="byk-6-8p"]
+[class*="kap"] > [class*="kap"][class*="byk-18-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-15-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-12-16p"],
+[class*="kap"] > [class*="kap"][class*="byk-9-12p"],
+[class*="kap"] > [class*="kap"][class*="byk-6-8p"]
 	{	flex-basis: 75%;								max-width: 75%;								}
 
-[class*="kap"] > [class*="kap"][class*="byk-14-18p"],[class*="kap"] > [class*="kap"][class*="byk-7-9p"]
+[class*="kap"] > [class*="kap"][class*="byk-14-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-7-9p"]
 	{	flex-basis: 77.7777777777778%;	max-width: 77.7777777777778%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-19-24p"]
 	{	flex-basis: 79.1666666666667%;	max-width: 79.1666666666667%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-16-20p"],[class*="kap"] > [class*="kap"][class*="byk-8-10p"],[class*="kap"] > [class*="kap"][class*="byk-4-5p"]
+[class*="kap"] > [class*="kap"][class*="byk-16-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-8-10p"],
+[class*="kap"] > [class*="kap"][class*="byk-4-5p"]
 	{	flex-basis: 80%;	max-width: 80%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-13-16p"]
 	{	flex-basis: 81.25%;	max-width: 81.25%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-20-24p"],[class*="kap"] > [class*="kap"][class*="byk-15-18p"],[class*="kap"] > [class*="kap"][class*="byk-10-12p"],[class*="kap"] > [class*="kap"][class*="byk-5-6p"]
+[class*="kap"] > [class*="kap"][class*="byk-20-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-15-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-10-12p"],
+[class*="kap"] > [class*="kap"][class*="byk-5-6p"]
 	{	flex-basis: 83.3333333333333%;	max-width: 83.3333333333333%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-17-20p"]
 	{	flex-basis: 85%;	max-width: 85%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-21-24p"],[class*="kap"] > [class*="kap"][class*="byk-14-16p"],[class*="kap"] > [class*="kap"][class*="byk-7-8p"]
+[class*="kap"] > [class*="kap"][class*="byk-21-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-14-16p"],
+[class*="kap"] > [class*="kap"][class*="byk-7-8p"]
 	{	flex-basis: 87.5%;							max-width: 87.5%;							}
 
-[class*="kap"] > [class*="kap"][class*="byk-16-18p"],[class*="kap"] > [class*="kap"][class*="byk-8-9p"]
+[class*="kap"] > [class*="kap"][class*="byk-16-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-8-9p"]
 	{	flex-basis: 88.8888888888889%;	max-width: 88.8888888888889%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-18-20p"],[class*="kap"] > [class*="kap"][class*="byk-9-10p"]
+[class*="kap"] > [class*="kap"][class*="byk-18-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-9-10p"]
 	{	flex-basis: 90%;	max-width: 90%;	}
 
-[class*="kap"] > [class*="kap"][class*="byk-22-24p"],[class*="kap"] > [class*="kap"][class*="byk-11-12p"]
+[class*="kap"] > [class*="kap"][class*="byk-22-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-11-12p"]
 	{	flex-basis: 91.6666666666667%;	max-width: 91.6666666666667%;	}
 
 [class*="kap"] > [class*="kap"][class*="byk-15-16p"]
@@ -625,11 +765,16 @@ flex: 1 1 0%;
 	{	flex-basis: 95.8333333333333%;	max-width: 95.8333333333333%;	}
 
 [class*="byk-1b"] > [class*="kap"][class*="-0p"],
-[class*="kap"] > [class*="kap"][class*="byk-24-24p"],[class*="kap"] > [class*="kap"][class*="byk-20-20p"],
-[class*="kap"] > [class*="kap"][class*="byk-18-18p"],[class*="kap"] > [class*="kap"][class*="byk-16-16p"],
-[class*="kap"] > [class*="kap"][class*="byk-12-12p"],[class*="kap"] > [class*="kap"][class*="byk-10-10p"],
-[class*="kap"] > [class*="kap"][class*="byk-9-9p"],[class*="kap"] > [class*="kap"][class*="byk-8-8p"],
-[class*="kap"] > [class*="kap"][class*="byk-6-6p"],[class*="kap"] > [class*="kap"][class*="byk-5-5p"]
+[class*="kap"] > [class*="kap"][class*="byk-24-24p"],
+[class*="kap"] > [class*="kap"][class*="byk-20-20p"],
+[class*="kap"] > [class*="kap"][class*="byk-18-18p"],
+[class*="kap"] > [class*="kap"][class*="byk-16-16p"],
+[class*="kap"] > [class*="kap"][class*="byk-12-12p"],
+[class*="kap"] > [class*="kap"][class*="byk-10-10p"],
+[class*="kap"] > [class*="kap"][class*="byk-9-9p"],
+[class*="kap"] > [class*="kap"][class*="byk-8-8p"],
+[class*="kap"] > [class*="kap"][class*="byk-6-6p"],
+[class*="kap"] > [class*="kap"][class*="byk-5-5p"]
 	{	flex-basis: 100%;								max-width: 100%;							}
 
 }

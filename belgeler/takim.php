@@ -30,22 +30,22 @@
     <div class="kap_gnl-0p">
       <p>
         <i class="fa fa-microchip beri-2" style="font-size:60pt;"></i> <br>
-        <span class="metin-olumlu">Örgü Takımı</span> <br>
-        Deveb iskeletini geliştirmek üzere bir araya gelerek tüm grupları etkileyen işler yaparlar
+        <span class="metin-olumlu">Görüş Takımı</span> <br>
+        Deveb hakkında izlenimlerini, fikirlerini, beklentilerini ortaya koymak için bir araya gelirler
       </p>
     </div>
     <div class="kap_gnl-0p">
       <p>
         <i class="fa fa-briefcase beri-2" style="font-size:60pt;"></i> <br>
-        <span class="metin-olumlu">Örnek Takımı</span> <br>
-        Deveb kullanarak yapılabilecek her şeye basit bir örnek çıkarmak için bir araya gelirler
+        <span class="metin-olumlu">Belge Takımı</span> <br>
+        Deveb hakkında gerek duyulacak her türlü belgeyi oluşturmak için bir araya gelirler
       </p>
     </div>
     <div class="kap_gnl-0p">
       <p>
         <i class="fa fa-star beri-2" style="font-size:60pt;"></i> <br>
-        <span class="metin-olumlu">Başarım Takımı</span> <br>
-        Deveb kullanımı sırasında yolunda gitmeyen şeyleri çözmek için bir araya gelirler
+        <span class="metin-olumlu">Yardım Takımı</span> <br>
+        Deveb kullanımı konusunda yardıma ihtiyaç duyulan herhangi bir noktada çözüm için bir araya gelirler
       </p>
     </div>
   </div>

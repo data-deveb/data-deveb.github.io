@@ -1,14 +1,5 @@
 <?php include 'toprak/head.html';?>
-<div id="header" class="kap_gnl-5-5p-merkez ap-deveb dolgu-2 beri-alt-1">
-    <ul class="menü-genel kap_gnl-23-24p">
-      <li><a href="/deveb/belgeler/kap-orgusu.php">Kap Örgüsü</a></li>
-      <li><a href="/deveb/belgeler/kap-orgusu/ornekler.php">Örnekler</a></li>
-      <li><a href="#">Boş menü</a></li>
-      <li><a href="#">Boş menü</a></li>
-      <li><a href="#">Boş menü</a></li>
-      <li><a href="#">Boş menü</a></li>
-    </ul>
-</div>
+<?php include 'toprak/header.html';?>
 <div class="kap_5-5p-merkez">
     <div class="kap_gnl-4-8p_kçk-8-8p-orta">
       <div class="dolgu-2" style="overflow:hidden;">
