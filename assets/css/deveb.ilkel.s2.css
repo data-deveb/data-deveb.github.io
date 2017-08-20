@@ -30,6 +30,145 @@ body{
   font-size:10pt;
 }
 /* ==========================================================================
+    YARDIM
+    İhtiyaç halinde kullanılan yardım sınıfları
+========================================================================== */
+.kap.gnl-son-1n > .kap:nth-child(1n),
+.kap.gnl-son-2n > .kap:nth-child(2n),
+.kap.gnl-son-3n > .kap:nth-child(3n),
+.kap.gnl-son-4n > .kap:nth-child(4n),
+.kap.gnl-son-5n > .kap:nth-child(5n),
+.kap.gnl-son-6n > .kap:nth-child(6n),
+.kap.gnl-son-7n > .kap:nth-child(7n),
+.kap.gnl-son-8n > .kap:nth-child(8n),
+.kap.gnl-son-9n > .kap:nth-child(9n),
+.kap.gnl-son-10n > .kap:nth-child(10n),
+.kap.gnl-son-11n > .kap:nth-child(11n),
+.kap.gnl-son-12n > .kap:nth-child(12n),
+.kap.gnl-son-13n > .kap:nth-child(13n),
+.kap.gnl-son-14n > .kap:nth-child(14n),
+.kap.gnl-son-15n > .kap:nth-child(15n),
+.kap.gnl-son-16n > .kap:nth-child(16n),
+.kap.gnl-son-17n > .kap:nth-child(17n),
+.kap.gnl-son-18n > .kap:nth-child(18n),
+.kap.gnl-son-19n > .kap:nth-child(19n),
+.kap.gnl-son-20n > .kap:nth-child(20n),
+.kap.gnl-son-21n > .kap:nth-child(21n),
+.kap.gnl-son-22n > .kap:nth-child(22n),
+.kap.gnl-son-23n > .kap:nth-child(23n),
+.kap.gnl-son-24n > .kap:nth-child(24n)  {  page-break-after: always;  }
+
+@media screen and (max-width: 80em){
+.kap[class*="byk-son-"] > .kap:nth-child(1n) {page-break-after:unset;}
+.kap.byk-son-1n > .kap:nth-child(1n),
+.kap.byk-son-2n > .kap:nth-child(2n),
+.kap.byk-son-3n > .kap:nth-child(3n),
+.kap.byk-son-4n > .kap:nth-child(4n),
+.kap.byk-son-5n > .kap:nth-child(5n),
+.kap.byk-son-6n > .kap:nth-child(6n),
+.kap.byk-son-7n > .kap:nth-child(7n),
+.kap.byk-son-8n > .kap:nth-child(8n),
+.kap.byk-son-9n > .kap:nth-child(9n),
+.kap.byk-son-10n > .kap:nth-child(10n),
+.kap.byk-son-11n > .kap:nth-child(11n),
+.kap.byk-son-12n > .kap:nth-child(12n),
+.kap.byk-son-13n > .kap:nth-child(13n),
+.kap.byk-son-14n > .kap:nth-child(14n),
+.kap.byk-son-15n > .kap:nth-child(15n),
+.kap.byk-son-16n > .kap:nth-child(16n),
+.kap.byk-son-17n > .kap:nth-child(17n),
+.kap.byk-son-18n > .kap:nth-child(18n),
+.kap.byk-son-19n > .kap:nth-child(19n),
+.kap.byk-son-20n > .kap:nth-child(20n),
+.kap.byk-son-21n > .kap:nth-child(21n),
+.kap.byk-son-22n > .kap:nth-child(22n),
+.kap.byk-son-23n > .kap:nth-child(23n),
+.kap.byk-son-24n > .kap:nth-child(24n)  {  page-break-after: always;  }
+}
+
+@media screen and (max-width: 64em){
+.kap[class*="ort-son-"] > .kap:nth-child(1n) {page-break-after:unset;}
+.kap.ort-son-1n > .kap:nth-child(1n),
+.kap.ort-son-2n > .kap:nth-child(2n),
+.kap.ort-son-3n > .kap:nth-child(3n),
+.kap.ort-son-4n > .kap:nth-child(4n),
+.kap.ort-son-5n > .kap:nth-child(5n),
+.kap.ort-son-6n > .kap:nth-child(6n),
+.kap.ort-son-7n > .kap:nth-child(7n),
+.kap.ort-son-8n > .kap:nth-child(8n),
+.kap.ort-son-9n > .kap:nth-child(9n),
+.kap.ort-son-10n > .kap:nth-child(10n),
+.kap.ort-son-11n > .kap:nth-child(11n),
+.kap.ort-son-12n > .kap:nth-child(12n),
+.kap.ort-son-13n > .kap:nth-child(13n),
+.kap.ort-son-14n > .kap:nth-child(14n),
+.kap.ort-son-15n > .kap:nth-child(15n),
+.kap.ort-son-16n > .kap:nth-child(16n),
+.kap.ort-son-17n > .kap:nth-child(17n),
+.kap.ort-son-18n > .kap:nth-child(18n),
+.kap.ort-son-19n > .kap:nth-child(19n),
+.kap.ort-son-20n > .kap:nth-child(20n),
+.kap.ort-son-21n > .kap:nth-child(21n),
+.kap.ort-son-22n > .kap:nth-child(22n),
+.kap.ort-son-23n > .kap:nth-child(23n),
+.kap.ort-son-24n > .kap:nth-child(24n)  {  page-break-after: always;  }
+}
+
+@media screen and (max-width: 48em){
+.kap[class*="kçk-son-"] > .kap:nth-child(1n) {page-break-after:unset;}
+.kap.kçk-son-1n > .kap:nth-child(1n),
+.kap.kçk-son-2n > .kap:nth-child(2n),
+.kap.kçk-son-3n > .kap:nth-child(3n),
+.kap.kçk-son-4n > .kap:nth-child(4n),
+.kap.kçk-son-5n > .kap:nth-child(5n),
+.kap.kçk-son-6n > .kap:nth-child(6n),
+.kap.kçk-son-7n > .kap:nth-child(7n),
+.kap.kçk-son-8n > .kap:nth-child(8n),
+.kap.kçk-son-9n > .kap:nth-child(9n),
+.kap.kçk-son-10n > .kap:nth-child(10n),
+.kap.kçk-son-11n > .kap:nth-child(11n),
+.kap.kçk-son-12n > .kap:nth-child(12n),
+.kap.kçk-son-13n > .kap:nth-child(13n),
+.kap.kçk-son-14n > .kap:nth-child(14n),
+.kap.kçk-son-15n > .kap:nth-child(15n),
+.kap.kçk-son-16n > .kap:nth-child(16n),
+.kap.kçk-son-17n > .kap:nth-child(17n),
+.kap.kçk-son-18n > .kap:nth-child(18n),
+.kap.kçk-son-19n > .kap:nth-child(19n),
+.kap.kçk-son-20n > .kap:nth-child(20n),
+.kap.kçk-son-21n > .kap:nth-child(21n),
+.kap.kçk-son-22n > .kap:nth-child(22n),
+.kap.kçk-son-23n > .kap:nth-child(23n),
+.kap.kçk-son-24n > .kap:nth-child(24n)  {  page-break-after: always;  }
+}
+@media screen and (max-width: 35.5em){
+.kap[class*="ufk-son-"] > .kap:nth-child(1n) {page-break-after:unset;}
+.kap.ufk-son-1n > .kap:nth-child(1n),
+.kap.ufk-son-2n > .kap:nth-child(2n),
+.kap.ufk-son-3n > .kap:nth-child(3n),
+.kap.ufk-son-4n > .kap:nth-child(4n),
+.kap.ufk-son-5n > .kap:nth-child(5n),
+.kap.ufk-son-6n > .kap:nth-child(6n),
+.kap.ufk-son-7n > .kap:nth-child(7n),
+.kap.ufk-son-8n > .kap:nth-child(8n),
+.kap.ufk-son-9n > .kap:nth-child(9n),
+.kap.ufk-son-10n > .kap:nth-child(10n),
+.kap.ufk-son-11n > .kap:nth-child(11n),
+.kap.ufk-son-12n > .kap:nth-child(12n),
+.kap.ufk-son-13n > .kap:nth-child(13n),
+.kap.ufk-son-14n > .kap:nth-child(14n),
+.kap.ufk-son-15n > .kap:nth-child(15n),
+.kap.ufk-son-16n > .kap:nth-child(16n),
+.kap.ufk-son-17n > .kap:nth-child(17n),
+.kap.ufk-son-18n > .kap:nth-child(18n),
+.kap.ufk-son-19n > .kap:nth-child(19n),
+.kap.ufk-son-20n > .kap:nth-child(20n),
+.kap.ufk-son-21n > .kap:nth-child(21n),
+.kap.ufk-son-22n > .kap:nth-child(22n),
+.kap.ufk-son-23n > .kap:nth-child(23n),
+.kap.ufk-son-24n > .kap:nth-child(24n)  {  page-break-after: always;  }
+}
+/* ==========================================================================
     PANEL DÜZENİ
     Varsayılan bir panel görünümüyle ayırt edici bir görsel için
 ========================================================================== */
@@ -54,28 +193,28 @@ body{
 }
 
 /* KAP HİZALAMA */
-.kap.sarkıt,
-.kap.sarkıtlat .kap { align-items: flex-start;        }
-.kap.dikit,
-.kap.dikitlet .kap  { align-items: flex-end;          }
-.kap.merkez,
-.kap.merkezlet .kap { align-items: center;            }
-.kap.direk,
-.kap.direklet .kap  { align-items: stretch;           }
-.kap.denge,
-.kap.dengelet .kap  { align-items: baseline;          }
-.kap.ortala,
-.kap.ortalat .kap   { justify-content: center;        }
-.kap.yanla,
-.kap.yanlat .kap    { justify-content: flex-end;      }
-.kap.solla,
-.kap.sollat .kap    { justify-content: flex-start;    }
-.kap.yay,
-.kap.yaylat .kap    { justify-content: space-around;  }
-.kap.ger,
-.kap.gerlet .kap    { justify-content: space-between; }
-.kap.tersle,
-.kap.terslet .kap   { flex-direction: row-reverse;    }
+.kap.sarkıtlat .kap { align-items: flex-start             }
+.kap.sarkıt         { align-items: flex-start !important  }
+.kap.dikitlet .kap  { align-items: flex-end               }
+.kap.dikit          { align-items: flex-end !important    }
+.kap.merkezlet .kap { align-items: center                 }
+.kap.merkez         { align-items: center !important      }
+.kap.direklet .kap  { align-items: stretch                }
+.kap.direk          { align-items: stretch !important     }
+.kap.dengelet .kap  { align-items: baseline               }
+.kap.denge          { align-items: baseline !important    }
+.kap.ortalat .kap   { justify-content: center             }
+.kap.ortala         { justify-content: center !important  }
+.kap.yanlat .kap    { justify-content: flex-end           }
+.kap.yanla          { justify-content: flex-end !important}
+.kap.sollat .kap    { justify-content: flex-start         }
+.kap.solla          { justify-content: flex-start !important}
+.kap.yaylat .kap    { justify-content: space-around       }
+.kap.yay            { justify-content: space-around !important}
+.kap.gerlet .kap    { justify-content: space-between      }
+.kap.ger            { justify-content: space-between !important}
+.kap.terslet .kap   { flex-direction: row-reverse         }
+.kap.tersle         { flex-direction: row-reverse !important}
 
 /* KAP ÖLÇEKLEME */
 /* gnl - Tüm ekran genişliklerinde */
