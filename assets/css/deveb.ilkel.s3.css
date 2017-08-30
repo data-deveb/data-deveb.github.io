@@ -50,16 +50,16 @@ body{
     SEKME ÖRGÜSÜ
     Sadece css yöntemiyle kurulmuş sekme örgüsü
 ========================================================================== */
-.yatay-sekmeler{
+.yan-sekmeler{
   display:flex;
   flex-flow: row wrap;
 }
 
-.yatay-sekmeler input[type="radio"]{
+.yan-sekmeler input[type="radio"]{
   display: none;
 }
 
-.yatay-sekmeler .sekme {
+.yan-sekmeler .sekme {
   position: relative;
   z-index: 999;
   white-space: nowrap;
@@ -68,7 +68,7 @@ body{
   align-content: flex-start;
 }
 
-.yatay-sekmeler .sekme label {
+.yan-sekmeler .sekme label {
   display: inline-block;
   width: 100%;
   font-size: 12pt;
@@ -81,26 +81,26 @@ body{
   overflow: hidden;
 }
 
-.yatay-sekmeler .sekme label:hover {
+.yan-sekmeler .sekme label:hover {
   background-color: #3c3181;
 }
 
-.yatay-sekmeler input:nth-child(1):checked ~ .sekme label:nth-child(1),
-.yatay-sekmeler input:nth-child(2):checked ~ .sekme label:nth-child(2),
-.yatay-sekmeler input:nth-child(3):checked ~ .sekme label:nth-child(3),
-.yatay-sekmeler input:nth-child(4):checked ~ .sekme label:nth-child(4),
-.yatay-sekmeler input:nth-child(5):checked ~ .sekme label:nth-child(5),
-.yatay-sekmeler input:nth-child(6):checked ~ .sekme label:nth-child(6),
-.yatay-sekmeler input:nth-child(7):checked ~ .sekme label:nth-child(7),
-.yatay-sekmeler input:nth-child(8):checked ~ .sekme label:nth-child(8),
-.yatay-sekmeler input:nth-child(9):checked ~ .sekme label:nth-child(9),
-.yatay-sekmeler input:nth-child(10):checked ~ .sekme label:nth-child(10),
-.yatay-sekmeler input:nth-child(11):checked ~ .sekme label:nth-child(11),
-.yatay-sekmeler input:nth-child(12):checked ~ .sekme label:nth-child(12),
-.yatay-sekmeler input:nth-child(13):checked ~ .sekme label:nth-child(13),
-.yatay-sekmeler input:nth-child(14):checked ~ .sekme label:nth-child(14),
-.yatay-sekmeler input:nth-child(15):checked ~ .sekme label:nth-child(15),
-.yatay-sekmeler input:nth-child(16):checked ~ .sekme label:nth-child(16) {
+.yan-sekmeler input:nth-child(1):checked ~ .sekme label:nth-child(1),
+.yan-sekmeler input:nth-child(2):checked ~ .sekme label:nth-child(2),
+.yan-sekmeler input:nth-child(3):checked ~ .sekme label:nth-child(3),
+.yan-sekmeler input:nth-child(4):checked ~ .sekme label:nth-child(4),
+.yan-sekmeler input:nth-child(5):checked ~ .sekme label:nth-child(5),
+.yan-sekmeler input:nth-child(6):checked ~ .sekme label:nth-child(6),
+.yan-sekmeler input:nth-child(7):checked ~ .sekme label:nth-child(7),
+.yan-sekmeler input:nth-child(8):checked ~ .sekme label:nth-child(8),
+.yan-sekmeler input:nth-child(9):checked ~ .sekme label:nth-child(9),
+.yan-sekmeler input:nth-child(10):checked ~ .sekme label:nth-child(10),
+.yan-sekmeler input:nth-child(11):checked ~ .sekme label:nth-child(11),
+.yan-sekmeler input:nth-child(12):checked ~ .sekme label:nth-child(12),
+.yan-sekmeler input:nth-child(13):checked ~ .sekme label:nth-child(13),
+.yan-sekmeler input:nth-child(14):checked ~ .sekme label:nth-child(14),
+.yan-sekmeler input:nth-child(15):checked ~ .sekme label:nth-child(15),
+.yan-sekmeler input:nth-child(16):checked ~ .sekme label:nth-child(16) {
   background-color: #fff;
   color: #2c2171;
 }
@@ -113,22 +113,22 @@ body{
   align-content: flex-start;
 }
 
-.yatay-sekmeler input:nth-child(1):checked ~ .icerik > div:nth-child(1),
-.yatay-sekmeler input:nth-child(2):checked ~ .icerik > div:nth-child(2),
-.yatay-sekmeler input:nth-child(3):checked ~ .icerik > div:nth-child(3),
-.yatay-sekmeler input:nth-child(4):checked ~ .icerik > div:nth-child(4),
-.yatay-sekmeler input:nth-child(5):checked ~ .icerik > div:nth-child(5),
-.yatay-sekmeler input:nth-child(6):checked ~ .icerik > div:nth-child(6),
-.yatay-sekmeler input:nth-child(7):checked ~ .icerik > div:nth-child(7),
-.yatay-sekmeler input:nth-child(8):checked ~ .icerik > div:nth-child(8),
-.yatay-sekmeler input:nth-child(9):checked ~ .icerik > div:nth-child(9),
-.yatay-sekmeler input:nth-child(10):checked ~ .icerik > div:nth-child(10),
-.yatay-sekmeler input:nth-child(11):checked ~ .icerik > div:nth-child(11),
-.yatay-sekmeler input:nth-child(12):checked ~ .icerik > div:nth-child(12),
-.yatay-sekmeler input:nth-child(13):checked ~ .icerik > div:nth-child(13),
-.yatay-sekmeler input:nth-child(14):checked ~ .icerik > div:nth-child(14),
-.yatay-sekmeler input:nth-child(15):checked ~ .icerik > div:nth-child(15),
-.yatay-sekmeler input:nth-child(16):checked ~ .icerik > div:nth-child(16) {
+.yan-sekmeler input:nth-child(1):checked ~ .icerik > div:nth-child(1),
+.yan-sekmeler input:nth-child(2):checked ~ .icerik > div:nth-child(2),
+.yan-sekmeler input:nth-child(3):checked ~ .icerik > div:nth-child(3),
+.yan-sekmeler input:nth-child(4):checked ~ .icerik > div:nth-child(4),
+.yan-sekmeler input:nth-child(5):checked ~ .icerik > div:nth-child(5),
+.yan-sekmeler input:nth-child(6):checked ~ .icerik > div:nth-child(6),
+.yan-sekmeler input:nth-child(7):checked ~ .icerik > div:nth-child(7),
+.yan-sekmeler input:nth-child(8):checked ~ .icerik > div:nth-child(8),
+.yan-sekmeler input:nth-child(9):checked ~ .icerik > div:nth-child(9),
+.yan-sekmeler input:nth-child(10):checked ~ .icerik > div:nth-child(10),
+.yan-sekmeler input:nth-child(11):checked ~ .icerik > div:nth-child(11),
+.yan-sekmeler input:nth-child(12):checked ~ .icerik > div:nth-child(12),
+.yan-sekmeler input:nth-child(13):checked ~ .icerik > div:nth-child(13),
+.yan-sekmeler input:nth-child(14):checked ~ .icerik > div:nth-child(14),
+.yan-sekmeler input:nth-child(15):checked ~ .icerik > div:nth-child(15),
+.yan-sekmeler input:nth-child(16):checked ~ .icerik > div:nth-child(16) {
   position: relative;
   opacity: 1;
   visibility: visible;

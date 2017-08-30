@@ -111,7 +111,7 @@
       </div>
     </div>
 
-    <div class="yatay-sekmeler" gnl="23">
+    <div class="yan-sekmeler" gnl="23">
       <input type="radio" name="ys" id="ys1" checked>
       <input type="radio" name="ys" id="ys2">
       <input type="radio" name="ys" id="ys3">
@@ -150,7 +150,7 @@
         </div>
       </div>
     </div>
-    <div class="yatay-sekmeler tersle" gnl="23">
+    <div class="yan-sekmeler tersle" gnl="23">
       <input type="radio" name="ys2" id="ys2-1" checked>
       <input type="radio" name="ys2" id="ys2-2">
       <input type="radio" name="ys2" id="ys2-3">
