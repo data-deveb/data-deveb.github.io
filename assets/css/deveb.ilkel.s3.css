@@ -104,13 +104,14 @@ body{
   background-color: #fff;
   color: #2c2171;
 }
-.icerik > div{
+.yan-sekmeler .icerik > div{
   position: absolute;
   opacity: 0;
   visibility: hidden;
   z-index: -1;
   padding: 0.4rem 1rem;
   align-content: flex-start;
+  width:0;
 }
 
 .yan-sekmeler input:nth-child(1):checked ~ .icerik > div:nth-child(1),
@@ -133,7 +134,8 @@ body{
   opacity: 1;
   visibility: visible;
   z-index: 1;
-  transition: all ease 1s;
+  width:auto;
+  transition: opacity ease 1s;
 }
 
 
