@@ -111,7 +111,7 @@ body{
   z-index: -1;
   padding: 0.4rem 1rem;
   align-content: flex-start;
-  width:0;
+  width:auto;
 }
 
 .yan-sekmeler input:nth-child(1):checked ~ .icerik > div:nth-child(1),
