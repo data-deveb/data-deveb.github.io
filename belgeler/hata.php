@@ -3,7 +3,7 @@
 
 
 
-<div class="dikey-sekmeler" gnl="23">
+<div class="yan-sekmeler" gnl="23">
   <input type="radio" name="ys" id="t3ss4a" checked>
   <input type="radio" name="ys" id="c1veza">
   <input type="radio" name="ys" id="er2fda">

@@ -2,6 +2,32 @@
 <?php include '../toprak/header.html';?>
 <div class="ortala" gnl="24p">
   <div class="" gnl="23">
+    <div class="beri-alt-2" gnl="2 2p">
+      <div class="" gnl="1">
+        <div class="kutu kutu-genel">          SOL ÜST SEKME        </div>
+      </div>
+      <div class="" gnl="1">
+        <div class="kutu kutu-genel">          SAĞ ÜST SEKME    </div>
+      </div>
+      <div class="" gnl="1">
+        <div class="kutu kutu-genel">          ORTA ÜST SEKME        </div>
+      </div>
+      <div class="" gnl="1">
+        <div class="kutu kutu-genel">          ORTA ALT SEKME    </div>
+      </div>
+      <div class="" gnl="1">
+        <div class="kutu kutu-genel">          SOL ALT SEKME    </div>
+      </div>
+      <div class="" gnl="1">
+        <div class="kutu kutu-genel">          SAĞ ALT SEKME    </div>
+      </div>
+      <div class="" gnl="1">
+        <div class="kutu kutu-genel">          SOL YAN SEKME        </div>
+      </div>
+      <div class="" gnl="1">
+        <div class="kutu kutu-genel">          SAĞ YAN SEKME    </div>
+      </div>
+    </div>
 
     <div class="sekmeler" gnl="24" >
 
