@@ -21,6 +21,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  overflow-y: scroll;
+}
 a{
   text-decoration: none;
 }
@@ -47,12 +50,98 @@ body{
     SEKME ÖRGÜSÜ
     Sadece css yöntemiyle kurulmuş sekme örgüsü
 ========================================================================== */
+.yatay-sekmeler{
+  display:flex;
+  flex-flow: row wrap;
+}
+
+.yatay-sekmeler input[type="radio"]{
+  display: none;
+}
+
+.yatay-sekmeler .sekme {
+  position: relative;
+  z-index: 999;
+  white-space: nowrap;
+  display: flex;
+  flex-flow: row wrap !important;
+  align-content: flex-start;
+}
+
+.yatay-sekmeler .sekme label {
+  display: inline-block;
+  width: 100%;
+  font-size: 12pt;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background: #2c2171;
+  color:#fff;
+  -webkit-transition: background ease 0.3s;
+  transition: background ease 0.3s;
+  overflow: hidden;
+}
+
+.yatay-sekmeler .sekme label:hover {
+  background-color: #3c3181;
+}
+
+.yatay-sekmeler input:nth-child(1):checked ~ .sekme label:nth-child(1),
+.yatay-sekmeler input:nth-child(2):checked ~ .sekme label:nth-child(2),
+.yatay-sekmeler input:nth-child(3):checked ~ .sekme label:nth-child(3),
+.yatay-sekmeler input:nth-child(4):checked ~ .sekme label:nth-child(4),
+.yatay-sekmeler input:nth-child(5):checked ~ .sekme label:nth-child(5),
+.yatay-sekmeler input:nth-child(6):checked ~ .sekme label:nth-child(6),
+.yatay-sekmeler input:nth-child(7):checked ~ .sekme label:nth-child(7),
+.yatay-sekmeler input:nth-child(8):checked ~ .sekme label:nth-child(8),
+.yatay-sekmeler input:nth-child(9):checked ~ .sekme label:nth-child(9),
+.yatay-sekmeler input:nth-child(10):checked ~ .sekme label:nth-child(10),
+.yatay-sekmeler input:nth-child(11):checked ~ .sekme label:nth-child(11),
+.yatay-sekmeler input:nth-child(12):checked ~ .sekme label:nth-child(12),
+.yatay-sekmeler input:nth-child(13):checked ~ .sekme label:nth-child(13),
+.yatay-sekmeler input:nth-child(14):checked ~ .sekme label:nth-child(14),
+.yatay-sekmeler input:nth-child(15):checked ~ .sekme label:nth-child(15),
+.yatay-sekmeler input:nth-child(16):checked ~ .sekme label:nth-child(16) {
+  background-color: #fff;
+  color: #2c2171;
+}
+.icerik > div{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  padding: 0.4rem 1rem;
+  align-content: flex-start;
+}
+
+.yatay-sekmeler input:nth-child(1):checked ~ .icerik > div:nth-child(1),
+.yatay-sekmeler input:nth-child(2):checked ~ .icerik > div:nth-child(2),
+.yatay-sekmeler input:nth-child(3):checked ~ .icerik > div:nth-child(3),
+.yatay-sekmeler input:nth-child(4):checked ~ .icerik > div:nth-child(4),
+.yatay-sekmeler input:nth-child(5):checked ~ .icerik > div:nth-child(5),
+.yatay-sekmeler input:nth-child(6):checked ~ .icerik > div:nth-child(6),
+.yatay-sekmeler input:nth-child(7):checked ~ .icerik > div:nth-child(7),
+.yatay-sekmeler input:nth-child(8):checked ~ .icerik > div:nth-child(8),
+.yatay-sekmeler input:nth-child(9):checked ~ .icerik > div:nth-child(9),
+.yatay-sekmeler input:nth-child(10):checked ~ .icerik > div:nth-child(10),
+.yatay-sekmeler input:nth-child(11):checked ~ .icerik > div:nth-child(11),
+.yatay-sekmeler input:nth-child(12):checked ~ .icerik > div:nth-child(12),
+.yatay-sekmeler input:nth-child(13):checked ~ .icerik > div:nth-child(13),
+.yatay-sekmeler input:nth-child(14):checked ~ .icerik > div:nth-child(14),
+.yatay-sekmeler input:nth-child(15):checked ~ .icerik > div:nth-child(15),
+.yatay-sekmeler input:nth-child(16):checked ~ .icerik > div:nth-child(16) {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+  transition: all ease 1s;
+}
+
+
 .sekmeler         { display: flex; flex-wrap: wrap;  height: auto;  }
 .sekmeler.ters    { flex-wrap: wrap-reverse !important; }
 
 
-.sekmeler > input[type="radio"],
-.sekmeler-yan > input[type="radio"]
+.sekmeler > input[type="radio"]
   { display: none; }
 
 .sekmeler input[type="radio"]:checked + label{
@@ -94,61 +183,6 @@ body{
   transition: opacity ease 1s;
   padding: 1rem 0.2rem;
 }
-
-.sekmeler-temiz{
-  display: block;
-  position: relative;
-}
-.sekmeler-yan	{
-  display: flex;
-	flex-flow: column wrap !important;
-	position: relative !important;
-  flex-basis: auto !important;
-	}
-
-.sekmeler-yan.ters{
-	flex-wrap: wrap-reverse !important;
-}
-
-.sekmeler-yan label{
-  order:1;
-  z-index: 2;
-  box-sizing: border-box;
-	/* özelleştirme +() */
-	padding: 1rem 2rem;
-	cursor: pointer;
-	background: #2c2171;
-	color:#fff;
-	-webkit-transition: background ease 0.6s;
-	transition: background ease 0.6s;
-  flex-basis:auto !important;
-}
-
-.sekmeler-yan input[type="radio"]:checked + label {
-  /* özelleştirme +() */
-  background: #fff;
-  color:#2c2171;
-}
-.sekmeler-yan .sekme{
-  position: absolute;
-  padding: 0 1rem;
-  z-index: -1;
-	opacity: 0;
-	-webkit-box-ordinal-group: 2;
-		-ms-flex-order: 2;
-			order:2;
-}
-.sekmeler-yan input[type="radio"]:checked + label + .sekme {
-  display: block;
-  opacity: 1;
-  z-index: 1;
-  padding: 0 1rem;
-  position: relative !important;
-  transition: all ease 1s;
-  page-break-before: always;
-
-}
-
 
 @media (max-width: 45em) {
   .sekmeler .sekme,
