@@ -50,16 +50,44 @@ body{
     SEKME ÖRGÜSÜ
     Sadece css yöntemiyle kurulmuş sekme örgüsü
 ========================================================================== */
-.yan-sekmeler{
+.sekmeler, .yan-sekmeler{
   display:flex;
   flex-flow: row wrap;
 }
 
-.yan-sekmeler input[type="radio"]{
+.sekmeler > input[type="radio"], .yan-sekmeler > input[type="radio"]{
   display: none;
 }
 
-.yan-sekmeler .sekme {
+
+
+.sekmeler input[type="radio"]:checked + label{
+  /* özelleştirme +() */
+  background: #fff;
+  color:#2c2171;
+}
+
+.yan-sekmeler .sekme label, .sekmeler label{
+    box-sizing: border-box;
+    z-index: 2;
+    /* özelleştirme +() */
+    background: #2c2171;
+    color:#fff;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    -webkit-transition: background ease 0.6s;
+    transition: background ease 0.6s;
+}
+.sekmeler label{
+  -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+      order: 1;
+  display:block;
+  /* özelleştirme +() */
+  margin-right: 0.2rem;
+}
+
+.yan-sekmeler > .sekme {
   position: relative;
   z-index: 999;
   white-space: nowrap;
@@ -68,20 +96,12 @@ body{
   align-content: flex-start;
 }
 
-.yan-sekmeler .sekme label {
-  display: inline-block;
+.yan-sekmeler > .sekme label {
   width: 100%;
-  font-size: 12pt;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  background: #2c2171;
-  color:#fff;
-  -webkit-transition: background ease 0.3s;
-  transition: background ease 0.3s;
   overflow: hidden;
 }
 
-.yan-sekmeler .sekme label:hover {
+.yan-sekmeler > .sekme label:hover {
   background-color: #3c3181;
 }
 
@@ -139,34 +159,9 @@ body{
 }
 
 
-.sekmeler         { display: flex; flex-wrap: wrap;  height: auto;  }
 .sekmeler.ters    { flex-wrap: wrap-reverse !important; }
 
 
-.sekmeler > input[type="radio"]
-  { display: none; }
-
-.sekmeler input[type="radio"]:checked + label{
-  /* özelleştirme +() */
-  background: #fff;
-  color:#2c2171;
-}
-.sekmeler label{
-  box-sizing: border-box;
-  z-index: 2;
-  -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-      order: 1;
-  display:block;
-  /* özelleştirme +() */
-  margin-right: 0.2rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  background: #2c2171;
-  color:#fff;
-  -webkit-transition: background ease 0.6s;
-  transition: background ease 0.6s;
-}
 
 .sekmeler .sekme{
   height:0;
@@ -207,7 +202,12 @@ body{
     KAP ÖRGÜSÜ
     Display:Flexbox yöntemiyle geliştirilen örgü.
 ========================================================================== */
-
+.taşmadan{
+  overflow: hidden;
+}
+.kaymadan{
+  flex-wrap: nowrap;
+}
 /* KAP HİZALAMA */
 .sarkıtlat > [gnl]
   { align-items: flex-start             }
@@ -280,6 +280,9 @@ body{
 
   [gnl]{  flex-basis: calc(100% / var(--par) * var(--parca));      width: calc(100% / var(--par) * var(--parca));     }
 
+  [gnl~="0p"]{flex-basis: auto;}
+
+  [gnl~="0o"]  {  flex: 0; }
   [gnl~="1o"]  {  flex: 1; }  [gnl~="2o"]  {  flex: 2; }  [gnl~="3o"]  {  flex: 3; }  [gnl~="4o"]  {  flex: 4; }
   [gnl~="5o"]  {  flex: 5; }  [gnl~="6o"]  {  flex: 6; }  [gnl~="7o"]  {  flex: 7; }  [gnl~="8o"]  {  flex: 8; }
   [gnl~="9o"]  {  flex: 9; }  [gnl~="10o"]  {  flex: 10; }  [gnl~="11o"]  {  flex: 11; }  [gnl~="12o"]  {  flex: 12; }
