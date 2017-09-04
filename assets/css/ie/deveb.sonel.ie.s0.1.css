@@ -1,0 +1,178 @@
+/* ==========================================================================
+  KAP ÖRGÜSÜ
+  Display:Flexbox yöntemiyle geliştirilen örgü.
+========================================================================== */
+.taşmadan{
+overflow: hidden;
+}
+.kaymadan{
+flex-wrap: nowrap;
+}
+/* KAP HİZALAMA */
+.sarkıtlat > [gnl]
+{ align-items: flex-start             }
+.sarkıt
+{ align-items: flex-start !important  }
+.dikitlet > [gnl]
+{ align-items: flex-end               }
+.dikit
+{ align-items: flex-end !important    }
+.merkezlet > [gnl]
+{ align-items: center                 }
+.merkez
+{ align-items: center !important      }
+.direklet > [gnl]
+{ align-items: stretch                }
+.direk
+{ align-items: stretch !important     }
+.dengelet > [gnl]
+{ align-items: baseline               }
+.denge
+{ align-items: baseline !important    }
+.ortalat > [gnl]
+{ justify-content: center             }
+.ortala
+{ justify-content: center !important  }
+.yanlat > [gnl]
+{ justify-content: flex-end           }
+.yanla
+{ justify-content: flex-end !important}
+.sollat > [gnl]
+{ justify-content: flex-start         }
+.solla
+{ justify-content: flex-start !important}
+.yaylat > [gnl]
+{ justify-content: space-around       }
+.yay
+{ justify-content: space-around !important}
+.gerlet > [gnl]
+{ justify-content: space-between      }
+.ger
+{ justify-content: space-between !important}
+.terslet > [gnl]
+{ flex-direction: row-reverse         }
+.tersle
+{ flex-direction: row-reverse !important}
+
+/* KAP ÖLÇEKLEMELER */
+/* KAP PARÇA YÖNTEMİ */
+/* gnl, byk, ort, kçk, ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
+.kap,[gnl],[byk],[ort],[kçk],[ufk]{
+display: flex;
+flex-flow: row wrap;
+box-sizing: border-box;}
+
+
+/* gnl - tüm ekranlar */
+
+[gnl~="1"]{--parca:1;}[gnl~="2"]{--parca:2;}[gnl~="3"]{--parca:3;}[gnl~="4"]{--parca:4;}
+[gnl~="5"]{--parca:5;}[gnl~="6"]{--parca:6;}[gnl~="7"]{--parca:7;}[gnl~="8"]{--parca:8;}
+[gnl~="9"]{--parca:9;}[gnl~="10"]{--parca:10;}[gnl~="11"]{--parca:11;}[gnl~="12"]{--parca:12;}
+[gnl~="13"]{--parca:13;}[gnl~="14"]{--parca:14;}[gnl~="15"]{--parca:15;}[gnl~="16"]{--parca:16;}
+[gnl~="17"]{--parca:17;}[gnl~="18"]{--parca:18;}[gnl~="19"]{--parca:19;}[gnl~="20"]{--parca:20;}
+[gnl~="21"]{--parca:21;}[gnl~="22"]{--parca:22;}[gnl~="23"]{--parca:23;}[gnl~="24"]{--parca:24;}
+
+[gnl~="1p"]{--par:1;}[gnl~="2p"]{--par:2;}[gnl~="3p"]{--par:3;}[gnl~="4p"]{--par:4;}[gnl~="5p"]{--par:5;}
+[gnl~="6p"]{--par:6;}[gnl~="7p"]{--par:7;}[gnl~="8p"]{--par:8;}[gnl~="9p"]{--par:9;}[gnl~="10p"]{--par:10;}
+[gnl~="11p"]{--par:11;}[gnl~="12p"]{--par:12;}[gnl~="13p"]{--par:13;}[gnl~="14p"]{--par:14;}[gnl~="15p"]{--par:15;}
+[gnl~="16p"]{--par:16;}[gnl~="17p"]{--par:17;}[gnl~="18p"]{--par:18;}[gnl~="19p"]{--par:19;}[gnl~="20p"]{--par:20;}
+[gnl~="21p"]{--par:21;}[gnl~="22p"]{--par:22;}[gnl~="23p"]{--par:23;}[gnl~="24p"]{--par:24;}
+
+[gnl]{  flex-basis: calc(100% / var(--par) * var(--parca));      width: calc(100% / var(--par) * var(--parca));     }
+
+[gnl~="0p"]{flex-basis: auto;}
+
+[gnl~="0o"]  {  flex: 0; }
+[gnl~="1o"]  {  flex: 1; }  [gnl~="2o"]  {  flex: 2; }  [gnl~="3o"]  {  flex: 3; }  [gnl~="4o"]  {  flex: 4; }
+[gnl~="5o"]  {  flex: 5; }  [gnl~="6o"]  {  flex: 6; }  [gnl~="7o"]  {  flex: 7; }  [gnl~="8o"]  {  flex: 8; }
+[gnl~="9o"]  {  flex: 9; }  [gnl~="10o"]  {  flex: 10; }  [gnl~="11o"]  {  flex: 11; }  [gnl~="12o"]  {  flex: 12; }
+[gnl~="13o"]  {  flex: 13; }  [gnl~="14o"]  {  flex: 14; }  [gnl~="15o"]  {  flex: 15; }  [gnl~="16o"]  {  flex: 16; }
+[gnl~="17o"]  {  flex: 17; }  [gnl~="18o"]  {  flex: 18; }  [gnl~="19o"]  {  flex: 19; }  [gnl~="20o"]  {  flex: 20; }
+[gnl~="21o"]  {  flex: 21; }  [gnl~="22o"]  {  flex: 22; }  [gnl~="23o"]  {  flex: 23; }  [gnl~="24o"]  {  flex: 24; }
+
+@media screen and (min-width: 35.5em){
+/* UFAK: ufk+ */
+
+[ufk~="1"]{--u-parca:1;}[ufk~="2"]{--u-parca:2;}[ufk~="3"]{--u-parca:3;}[ufk~="4"]{--u-parca:4;}
+[ufk~="5"]{--u-parca:5;}[ufk~="6"]{--u-parca:6;}[ufk~="7"]{--u-parca:7;}[ufk~="8"]{--u-parca:8;}
+[ufk~="9"]{--u-parca:9;}[ufk~="10"]{--u-parca:10;}[ufk~="11"]{--u-parca:11;}[ufk~="12"]{--u-parca:12;}
+[ufk~="13"]{--u-parca:13;}[ufk~="14"]{--u-parca:14;}[ufk~="15"]{--u-parca:15;}[ufk~="16"]{--u-parca:16;}
+[ufk~="17"]{--u-parca:17;}[ufk~="18"]{--u-parca:18;}[ufk~="19"]{--u-parca:19;}[ufk~="20"]{--u-parca:20;}
+[ufk~="21"]{--u-parca:21;}[ufk~="22"]{--u-parca:22;}[ufk~="23"]{--u-parca:23;}[ufk~="24"]{--u-parca:24;}
+
+[ufk~="1p"]{--u-par:1;}[ufk~="2p"]{--u-par:2;}[ufk~="3p"]{--u-par:3;}[ufk~="4p"]{--u-par:4;}
+[ufk~="5p"]{--u-par:5;}[ufk~="6p"]{--u-par:6;}[ufk~="7p"]{--u-par:7;}[ufk~="8p"]{--u-par:8;}
+[ufk~="9p"]{--u-par:9;}[ufk~="10p"]{--u-par:10;}[ufk~="11p"]{--u-par:11;}[ufk~="12p"]{--u-par:12;}
+[ufk~="13p"]{--u-par:13;}[ufk~="14p"]{--u-par:14;}[ufk~="15p"]{--u-par:15;}[ufk~="16p"]{--u-par:16;}
+[ufk~="17p"]{--u-par:17;}[ufk~="18p"]{--u-par:18;}[ufk~="19p"]{--u-par:19;}[ufk~="20p"]{--u-par:20;}
+[ufk~="21p"]{--u-par:21;}[ufk~="22p"]{--u-par:22;}[ufk~="23p"]{--u-par:23;}[ufk~="24p"]{--u-par:24;}
+
+[ufk]{  flex-basis: calc(100% / var(--u-par) * var(--u-parca));  width: calc(100% / var(--u-par) * var(--u-parca)); }
+
+[ufk~="0p"]{flex-basis: auto;}
+
+[ufk~="0o"]  {  flex: 0; }
+[ufk~="1o"]  { flex: 1; } [ufk~="2o"]  { flex: 2; } [ufk~="3o"]  { flex: 3; } [ufk~="4o"]  { flex: 4; }
+[ufk~="5o"]  { flex: 5; } [ufk~="6o"]  { flex: 6; } [ufk~="7o"]  { flex: 7; } [ufk~="8o"]  { flex: 8; }
+[ufk~="9o"]  { flex: 9; } [ufk~="10o"]  { flex: 10; } [ufk~="11o"]  { flex: 11; } [ufk~="12o"]  { flex: 12; }
+[ufk~="13o"]  { flex: 13; } [ufk~="14o"]  { flex: 14; } [ufk~="15o"]  { flex: 15; } [ufk~="16o"]  { flex: 16; }
+[ufk~="17o"]  { flex: 17; } [ufk~="18o"]  { flex: 18; } [ufk~="19o"]  { flex: 19; } [ufk~="20o"]  { flex: 20; }
+[ufk~="21o"]  { flex: 21; } [ufk~="22o"]  { flex: 22; } [ufk~="23o"]  { flex: 23; } [ufk~="24o"]  { flex: 24; }
+
+}
+@media screen and (min-width: 48em){
+ /* Dizüstü ve büyük: ort + */
+[ort~="1"]{--o-parca:1;}[ort~="2"]{--o-parca:2;}[ort~="3"]{--o-parca:3;}[ort~="4"]{--o-parca:4;}
+[ort~="5"]{--o-parca:5;}[ort~="6"]{--o-parca:6;}[ort~="7"]{--o-parca:7;}[ort~="8"]{--o-parca:8;}
+[ort~="9"]{--o-parca:9;}[ort~="10"]{--o-parca:10;}[ort~="11"]{--o-parca:11;}[ort~="12"]{--o-parca:12;}
+[ort~="13"]{--o-parca:13;}[ort~="14"]{--o-parca:14;}[ort~="15"]{--o-parca:15;}[ort~="16"]{--o-parca:16;}
+[ort~="17"]{--o-parca:17;}[ort~="18"]{--o-parca:18;}[ort~="19"]{--o-parca:19;}[ort~="20"]{--o-parca:20;}
+[ort~="21"]{--o-parca:21;}[ort~="22"]{--o-parca:22;}[ort~="23"]{--o-parca:23;}[ort~="24"]{--o-parca:24;}
+
+[ort~="1p"]{--o-par:1;}[ort~="2p"]{--o-par:2;}[ort~="3p"]{--o-par:3;}[ort~="4p"]{--o-par:4;}
+[ort~="5p"]{--o-par:5;}[ort~="6p"]{--o-par:6;}[ort~="7p"]{--o-par:7;}[ort~="8p"]{--o-par:8;}
+[ort~="9p"]{--o-par:9;}[ort~="10p"]{--o-par:10;}[ort~="11p"]{--o-par:11;}[ort~="12p"]{--o-par:12;}
+[ort~="13p"]{--o-par:13;}[ort~="14p"]{--o-par:14;}[ort~="15p"]{--o-par:15;}[ort~="16p"]{--o-par:16;}
+[ort~="17p"]{--o-par:17;}[ort~="18p"]{--o-par:18;}[ort~="19p"]{--o-par:19;}[ort~="20p"]{--o-par:20;}
+[ort~="21p"]{--o-par:21;}[ort~="22p"]{--o-par:22;}[ort~="23p"]{--o-par:23;}[ort~="24p"]{--o-par:24;}
+
+[ort]{  flex-basis: calc(100% / var(--o-par) * var(--o-parca));  width: calc(100% / var(--o-par) * var(--o-parca)); }
+
+[ort~="0p"]{flex-basis: auto;}
+
+[ort~="0o"]  {  flex: 0; }
+[ort~="1o"]  { flex: 1; }  [ort~="2o"]  { flex: 2; }  [ort~="3o"]  { flex: 3; }  [ort~="4o"]  { flex: 4; }
+[ort~="5o"]  { flex: 5; }  [ort~="6o"]  { flex: 6; }  [ort~="7o"]  { flex: 7; }  [ort~="8o"]  { flex: 8; }
+[ort~="9o"]  { flex: 9; }  [ort~="10o"]  { flex: 10; }  [ort~="11o"]  { flex: 11; }  [ort~="12o"]  { flex: 12; }
+[ort~="13o"]  { flex: 13; }  [ort~="14o"]  { flex: 14; }  [ort~="15o"]  { flex: 15; }  [ort~="16o"]  { flex: 16; }
+[ort~="17o"]  { flex: 17; }  [ort~="18o"]  { flex: 18; }  [ort~="19o"]  { flex: 19; }  [ort~="20o"]  { flex: 20; }
+[ort~="21o"]  { flex: 21; }  [ort~="22o"]  { flex: 22; }  [ort~="23o"]  { flex: 23; }  [ort~="24o"]  { flex: 24; }
+}
+
+@media screen and (min-width: 64em){
+/* Büyükler: byk + */
+[byk~="1"]{--b-parca:1;}[byk~="2"]{--b-parca:2;}[byk~="3"]{--b-parca:3;}[byk~="4"]{--b-parca:4;}
+[byk~="5"]{--b-parca:5;}[byk~="6"]{--b-parca:6;}[byk~="7"]{--b-parca:7;}[byk~="8"]{--b-parca:8;}
+[byk~="9"]{--b-parca:9;}[byk~="10"]{--b-parca:10;}[byk~="11"]{--b-parca:11;}[byk~="12"]{--b-parca:12;}
+[byk~="13"]{--b-parca:13;}[byk~="14"]{--b-parca:14;}[byk~="15"]{--b-parca:15;}[byk~="16"]{--b-parca:16;}
+[byk~="17"]{--b-parca:17;}[byk~="18"]{--b-parca:18;}[byk~="19"]{--b-parca:19;}[byk~="20"]{--b-parca:20;}
+[byk~="21"]{--b-parca:21;}[byk~="22"]{--b-parca:22;}[byk~="23"]{--b-parca:23;}[byk~="24"]{--b-parca:24;}
+
+[byk~="1p"]{--b-par:1;}[byk~="2p"]{--b-par:2;}[byk~="3p"]{--b-par:3;}[byk~="4p"]{--b-par:4;}
+[byk~="5p"]{--b-par:5;}[byk~="6p"]{--b-par:6;}[byk~="7p"]{--b-par:7;}[byk~="8p"]{--b-par:8;}
+[byk~="9p"]{--b-par:9;}[byk~="10p"]{--b-par:10;}[byk~="11p"]{--b-par:11;}[byk~="12p"]{--b-par:12;}
+[byk~="13p"]{--b-par:13;}[byk~="14p"]{--b-par:14;}[byk~="15p"]{--b-par:15;}[byk~="16p"]{--b-par:16;}
+[byk~="17p"]{--b-par:17;}[byk~="18p"]{--b-par:18;}[byk~="19p"]{--b-par:19;}[byk~="20p"]{--b-par:20;}
+[byk~="21p"]{--b-par:21;}[byk~="22p"]{--b-par:22;}[byk~="23p"]{--b-par:23;}[byk~="24p"]{--b-par:24;}
+
+[byk]{  flex-basis: calc(100% / var(--b-par) * var(--b-parca));  width: calc(100% / var(--b-par) * var(--b-parca)); }
+[byk~="0p"]{flex-basis: auto;}
+
+[byk~="0o"]  {  flex: 0; }
+[byk~="1o"]  { flex: 1; }  [byk~="2o"]  { flex: 2; }  [byk~="3o"]  { flex: 3; }  [byk~="4o"]  { flex: 4; }
+[byk~="5o"]  { flex: 5; }  [byk~="6o"]  { flex: 6; }  [byk~="7o"]  { flex: 7; }  [byk~="8o"]  { flex: 8; }
+[byk~="9o"]  { flex: 9; }  [byk~="10o"]  { flex: 10; }  [byk~="11o"]  { flex: 11; }  [byk~="12o"]  { flex: 12; }
+[byk~="13o"]  { flex: 13; }  [byk~="14o"]  { flex: 14; }  [byk~="15o"]  { flex: 15; }  [byk~="16o"]  { flex: 16; }
+[byk~="17o"]  { flex: 17; }  [byk~="18o"]  { flex: 18; }  [byk~="19o"]  { flex: 19; }  [byk~="20o"]  { flex: 20; }
+[byk~="21o"]  { flex: 21; }  [byk~="22o"]  { flex: 22; }  [byk~="23o"]  { flex: 23; }  [byk~="24o"]  { flex: 24; }
+}
