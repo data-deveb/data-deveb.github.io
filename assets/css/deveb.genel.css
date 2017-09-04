@@ -1,9 +1,9 @@
-#primary_nav_wrap
+.menu
 {
 	margin-top:15px
 }
 
-#primary_nav_wrap ul
+.menu ul
 {
 	list-style:none;
 	position:relative;
@@ -12,7 +12,7 @@
 	padding:0
 }
 
-#primary_nav_wrap ul a
+.menu ul a
 {
 	display:block;
 	color:#333;
@@ -20,29 +20,31 @@
 	font-weight:700;
 	font-size:12px;
 	line-height:32px;
-	padding:0 15px;
+	padding:0.6rem 1rem;
+	color:#fff;
 	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
-#primary_nav_wrap ul li
+.menu ul li
 {
 	position:relative;
 	float:left;
+	background: #2c2171;
 	margin:0;
 	padding:0
 }
 
-#primary_nav_wrap ul li.current-menu-item
+.menu ul li.menu-etkin
 {
-	background:#ddd
+	background: #3c3181;
 }
 
-#primary_nav_wrap ul li:hover
+.menu ul li:hover
 {
-	background:#f6f6f6
+	background: #3c3181;
 }
 
-#primary_nav_wrap ul ul
+.menu ul ul
 {
 	display:none;
 	position:absolute;
@@ -52,25 +54,25 @@
 	padding:0
 }
 
-#primary_nav_wrap ul ul li
+.menu ul ul li
 {
 	float:none;
 	width:200px
 }
 
-#primary_nav_wrap ul ul a
+.menu ul ul a
 {
 	line-height:120%;
 	padding:10px 15px
 }
 
-#primary_nav_wrap ul ul ul
+.menu ul ul ul
 {
 	top:0;
 	left:100%
 }
 
-#primary_nav_wrap ul li:hover > ul
+.menu ul li:hover > ul
 {
 	display:block
 }

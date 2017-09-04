@@ -1,5 +1,8 @@
 /* ==========================================================================
-		TANIMLAMALAR
+
+    deveb (ilkel-sürüm 3.0)
+
+    TANIMLAMALAR
 		beri: CSS > margin          		dolgu: CSS > padding
 
 		gnl: (g)enel                		kçk: (k)ü(ç)ü(k)
@@ -20,9 +23,6 @@
 *{
   margin: 0;
   padding: 0;
-}
-html{
-  overflow-y: scroll;
 }
 a{
   text-decoration: none;
@@ -309,6 +309,9 @@ body{
 
  [ufk]{  flex-basis: calc(100% / var(--u-par) * var(--u-parca));  width: calc(100% / var(--u-par) * var(--u-parca)); }
 
+ [ufk~="0p"]{flex-basis: auto;}
+
+ [ufk~="0o"]  {  flex: 0; }
  [ufk~="1o"]  { flex: 1; } [ufk~="2o"]  { flex: 2; } [ufk~="3o"]  { flex: 3; } [ufk~="4o"]  { flex: 4; }
  [ufk~="5o"]  { flex: 5; } [ufk~="6o"]  { flex: 6; } [ufk~="7o"]  { flex: 7; } [ufk~="8o"]  { flex: 8; }
  [ufk~="9o"]  { flex: 9; } [ufk~="10o"]  { flex: 10; } [ufk~="11o"]  { flex: 11; } [ufk~="12o"]  { flex: 12; }
@@ -335,6 +338,9 @@ body{
 
   [ort]{  flex-basis: calc(100% / var(--o-par) * var(--o-parca));  width: calc(100% / var(--o-par) * var(--o-parca)); }
 
+  [ort~="0p"]{flex-basis: auto;}
+
+  [ort~="0o"]  {  flex: 0; }
   [ort~="1o"]  { flex: 1; }  [ort~="2o"]  { flex: 2; }  [ort~="3o"]  { flex: 3; }  [ort~="4o"]  { flex: 4; }
   [ort~="5o"]  { flex: 5; }  [ort~="6o"]  { flex: 6; }  [ort~="7o"]  { flex: 7; }  [ort~="8o"]  { flex: 8; }
   [ort~="9o"]  { flex: 9; }  [ort~="10o"]  { flex: 10; }  [ort~="11o"]  { flex: 11; }  [ort~="12o"]  { flex: 12; }
@@ -360,7 +366,9 @@ body{
   [byk~="21p"]{--b-par:21;}[byk~="22p"]{--b-par:22;}[byk~="23p"]{--b-par:23;}[byk~="24p"]{--b-par:24;}
 
   [byk]{  flex-basis: calc(100% / var(--b-par) * var(--b-parca));  width: calc(100% / var(--b-par) * var(--b-parca)); }
+  [byk~="0p"]{flex-basis: auto;}
 
+  [byk~="0o"]  {  flex: 0; }
   [byk~="1o"]  { flex: 1; }  [byk~="2o"]  { flex: 2; }  [byk~="3o"]  { flex: 3; }  [byk~="4o"]  { flex: 4; }
   [byk~="5o"]  { flex: 5; }  [byk~="6o"]  { flex: 6; }  [byk~="7o"]  { flex: 7; }  [byk~="8o"]  { flex: 8; }
   [byk~="9o"]  { flex: 9; }  [byk~="10o"]  { flex: 10; }  [byk~="11o"]  { flex: 11; }  [byk~="12o"]  { flex: 12; }

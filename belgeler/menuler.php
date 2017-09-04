@@ -28,9 +28,9 @@
     </ul>
 
     <h1>Simple Pure CSS Drop Down Menu</h1>
-    <nav id="primary_nav_wrap">
+    <nav class="menu">
     <ul>
-      <li class="current-menu-item"><a href="#">Home</a></li>
+      <li class="menu-etkin"><a href="#">Home</a></li>
       <li><a href="#">Menu 1</a>
         <ul>
           <li><a href="#">Sub Menu 1</a></li>
