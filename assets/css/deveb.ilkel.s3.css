@@ -280,6 +280,12 @@ body{
 
   [gnl]{  flex-basis: calc(100% / var(--par) * var(--parca));      width: calc(100% / var(--par) * var(--parca));     }
 
+  [gnl~="kolon"]{display:block; width: 100%; column-count: var(--parca);}
+
+  .ortala[gnl~="kolon"] > [gnl]{
+    margin-left: auto;
+    margin-right: auto;}
+
   [gnl~="0p"]{flex-basis: auto;}
 
   [gnl~="0o"]  {  flex: 0; }
