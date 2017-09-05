@@ -1,7 +1,7 @@
 <?php include '../../toprak/head.html';?>
 <?php include '../../toprak/header.html';?>
-<div class="kap ortala" gnl="24 24p">
-  <div class="" gnl="23">
+<div class="ortala" gnl="24 24p">
+  <div class="kaplama" gnl="23">
     <div gnl="24">
       <h1>Kap Ölçekleri</h1>
     </div>

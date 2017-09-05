@@ -168,9 +168,6 @@ table{
     Liste
     Temiz Liste
 ========================================================================== */
-ul li{
-	margin-left:15px;
-}
 ul.liste-temiz li{
 	list-style: none;
 	margin-left: 0;

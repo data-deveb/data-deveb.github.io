@@ -1,6 +1,6 @@
 <?php include '../toprak/head.html';?>
 <?php include '../toprak/header.html';?>
-<div class="ortala" gnl="24p">
+<div class="kaplama ortala" gnl="24p" >
   <div class="" gnl="23">
     <div class="beri-alt-2" gnl="2 2p">
       <div class="" gnl="1">

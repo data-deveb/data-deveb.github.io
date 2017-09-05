@@ -1,7 +1,7 @@
 <?php include '../toprak/head.html';?>
 <?php include '../toprak/header.html';?>
 <div class="ortala" gnl="24p">
-<div class="beri-alt-1" gnl="23">
+<div class="kaplama beri-alt-1" gnl="23">
   <h1>Kap Örgüsü</h1>
   <h2>Kap Örgüsü Nedir?</h2>
   <p>Bir sayfanın içinde genişlikler belirleme örgüsüne kap örgüsü denir. Kap kelimesi genelde bir şeyi bir arada tutmaya yarayan fiziksel nesneler için kullanılır. Buradan yola çıkarak anlamını kodlama dünyasına yansıtabilirsiniz. Kap örgüsü İngilizce dilinde "grid system" diye anılmaktadır. Deveb çatısı altında bu örgü kendine özgü kullanımı ile diğer önyüz iskeletlerindeki kap örgülerinden farklıdır ve benzer yönleri de kapsamaktadır. Ayrıntılarıyla öğrenmenizi tavsiye ederiz.</p>

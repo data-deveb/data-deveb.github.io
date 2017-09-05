@@ -8,6 +8,7 @@
           Ağ sayfalarında kullanılması için Türkçe olarak geliştirilen bir önyüz iskeletidir. İngilizce'de frontend framework diye anılmaktadır.
 Kap örgüsünün sahip olduğu özellikleri bir kere kullandıktan sonra ne kadar yeterli olduğunu görmenizle birlikte belki de uzun süreler kullanacaksınız.
         </p>
+        <p class="metin-gri-3 beri-2 ortala" gnl="1 1p"><a href="/deveb/belgeler/kap-orgusu.php" style="border:1px solid #2c2171; border-radius:5px; padding:15px 50px;">BAŞLA</a><a href="" style="border:1px solid #2c2171; border-radius:5px; padding:15px 50px; margin-left:15px;">GÖM</a></p>
       </div>
     </div>
     <div class="kap merkez direk" gnl="8" ort="4">
