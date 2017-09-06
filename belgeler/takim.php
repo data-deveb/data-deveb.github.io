@@ -1,6 +1,6 @@
 <?php include '../toprak/head.html';?>
 <?php include '../toprak/header.html';?>
-<div class="kap ortala" gnl="24p">
+<div class="kaplama ortala" gnl="24p">
   <div gnl="23">
     <h1>Takımlar</h1>
     <p>Her takımın kendine ait bir görevi vardır. Bu takımlara istenildiği zaman katılabilir ve ayrılabilirsiniz. Takımlar bir işi çözmek için anlık olarak iş süreçleri oluştururlar. Sadık kalınan bir iş gidişatları yoktur.</p>

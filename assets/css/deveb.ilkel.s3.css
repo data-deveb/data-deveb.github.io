@@ -12,6 +12,7 @@
 		p: (p)arça
 
     • TEMİZLEME
+    • SEKME ÖRGÜSÜ
     • KUTU DÜZENİ
     • KAP ÖRGÜSÜ
     • KAP ÖRGÜSÜ: SATIR SONU
@@ -26,6 +27,9 @@
 }
 a{
   text-decoration: none;
+}
+a, button, input, textarea {
+    outline: 0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -45,7 +49,170 @@ body{
 	font-family: 'Roboto', sans-serif;
     font-size: 11pt;
 }
+/* ==========================================================================
+    RENK ÖRGÜSÜ
+    Ayırt etmek için önceden belirlenmiş renk grupları.
+    arka- | kenar- | metin-
 
+    renkler-birincil-serbest-engelli-uygun-uygunsuz-olumlu-olumsuz-tehlikeli-bilgi-belirsiz-yasak-uyarı
+    Pembe: Pink, Violet, Purple, Indigo, Mavi: Blue, Teal, Yeşil: Green, Turuncu: Orange, Kahverengi: Brown, Gri: Grey, Slate
+
+    dolgular: 800-700-600-değersiz-400-300
+    tonlar: mat-değersiz-parlak
+-------------------------------------------------------------------------- */
+[class*="arka-"],[arka]{--arka-tonu:50%; --arka-dolgu:50%;}
+[class*="metin-"],[metin]{--metin-tonu:50%; --metin-dolgu:50%;}
+[class*="kenar-"],[kenar]{--kenar-tonu:50%; --kenar-dolgu:50%;}
+
+.arka-ana,[arka~="ana"]{--arka:0;}
+.metin-ana,[metin~="ana"]{--metin:0;}
+.kenar-tam-ana,[kenar~="tam"][kenar~="ana"]{--kenar-tam:0;}
+.kenar-sol-ana,[kenar~="sol"][kenar~="ana"]{--kenar-sol:0;}
+.kenar-sağ-ana,[kenar~="sağ"][kenar~="ana"]{--kenar-sağ:0;}
+.kenar-üst-ana,[kenar~="üst"][kenar~="ana"]{--kenar-üst:0;}
+.kenar-alt-ana,[kenar~="alt"][kenar~="ana"]{--kenar-alt:0;}
+
+.arka-ara,[arka~="ara"]{--arka:34;}
+.metin-ara,[metin~="ara"]{--metin:34;}
+.kenar-tam-ara,[kenar~="tam"][kenar~="ara"]{--kenar-tam:34;}
+.kenar-sol-ara,[kenar~="sol"][kenar~="ara"]{--kenar-sol:34;}
+.kenar-sağ-ara,[kenar~="sağ"][kenar~="ara"]{--kenar-sağ:34;}
+.kenar-üst-ara,[kenar~="üst"][kenar~="ara"]{--kenar-üst:34;}
+.kenar-alt-ara,[kenar~="alt"][kenar~="ara"]{--kenar-alt:34;}
+
+.arka-birincil,[arka~="birincil"]{--arka:207;}
+.metin-birincil,[metin~="birincil"]{--metin:207;}
+.kenar-tam-birincil,[kenar~="tam"][kenar~="birincil"]{--kenar-tam:207;}
+.kenar-sol-birincil,[kenar~="sol"][kenar~="birincil"]{--kenar-sol:207;}
+.kenar-sağ-birincil,[kenar~="sağ"][kenar~="birincil"]{--kenar-sağ:207;}
+.kenar-üst-birincil,[kenar~="üst"][kenar~="birincil"]{--kenar-üst:207;}
+.kenar-alt-birincil,[kenar~="alt"][kenar~="birincil"]{--kenar-alt:207;}
+
+.arka-ikincil,[arka~="ikincil"]{--arka:260;}
+.metin-ikincil,[metin~="ikincil"]{--metin:260;}
+.kenar-tam-ikincil,[kenar~="tam"][kenar~="ikincil"]{--kenar-tam:260;}
+.kenar-sol-ikincil,[kenar~="sol"][kenar~="ikincil"]{--kenar-sol:260;}
+.kenar-sağ-ikincil,[kenar~="sağ"][kenar~="ikincil"]{--kenar-sağ:260;}
+.kenar-üst-ikincil,[kenar~="üst"][kenar~="ikincil"]{--kenar-üst:260;}
+.kenar-alt-ikincil,[kenar~="alt"][kenar~="ikincil"]{--kenar-alt:260;}
+
+.arka-olumlu,[arka~="olumlu"]{--arka:122;}
+.metin-olumlu,[metin~="olumlu"]{--metin:122;}
+.kenar-tam-olumlu,[kenar~="tam"][kenar~="olumlu"]{--kenar-tam:122;}
+.kenar-sol-olumlu,[kenar~="sol"][kenar~="olumlu"]{--kenar-sol:122;}
+.kenar-sağ-olumlu,[kenar~="sağ"][kenar~="olumlu"]{--kenar-sağ:122;}
+.kenar-üst-olumlu,[kenar~="üst"][kenar~="olumlu"]{--kenar-üst:122;}
+.kenar-alt-olumlu,[kenar~="alt"][kenar~="olumlu"]{--kenar-alt:122;}
+
+.arka-olumsuz,[arka~="olumsuz"]{--arka:150;}
+.metin-olumsuz,[metin~="olumsuz"]{--metin:150;}
+.kenar-tam-olumsuz,[kenar~="tam"][kenar~="olumsuz"]{--kenar-tam:150;}
+.kenar-sol-olumsuz,[kenar~="sol"][kenar~="olumsuz"]{--kenar-sol:150;}
+.kenar-sağ-olumsuz,[kenar~="sağ"][kenar~="olumsuz"]{--kenar-sağ:150;}
+.kenar-üst-olumsuz,[kenar~="üst"][kenar~="olumsuz"]{--kenar-üst:150;}
+.kenar-alt-olumsuz,[kenar~="alt"][kenar~="olumsuz"]{--kenar-alt:150;}
+
+.arka-tehlike,[arka~="tehlike"]{--arka:4;}
+.metin-tehlike,[metin~="tehlike"]{--metin:4;}
+.kenar-tam-tehlike,[kenar~="tam"][kenar~="tehlike"]{--kenar-tam:4;}
+.kenar-sol-tehlike,[kenar~="sol"][kenar~="tehlike"]{--kenar-sol:4;}
+.kenar-sağ-tehlike,[kenar~="sağ"][kenar~="tehlike"]{--kenar-sağ:4;}
+.kenar-üst-tehlike,[kenar~="üst"][kenar~="tehlike"]{--kenar-üst:4;}
+.kenar-alt-tehlike,[kenar~="alt"][kenar~="tehlike"]{--kenar-alt:4;}
+
+
+[class*="-danger"]{--renk:4;}
+[class*="-success"]{--renk:122;}
+[class*="-warning"]{--renk:14;}
+[class*="-info"]{--renk:187;}
+[class*="-pink"]{--renk:340;}
+[class*="-violet"]{--renk:291;}
+[class*="-purple"]{--renk:262;}
+[class*="-indigo"]{--renk:231;}
+[class*="-blue"]{--renk:199;}
+[class*="-teal"]{--renk:174;}
+[class*="-green"]{--renk:88;}
+[class*="-orange"]{--renk:36;}
+[class*="-brown"]{--renk:16;}
+[class*="-grey"]{--renk:0;}
+
+[kenar~="300"],.kenar-300{--kenar-dolgu:70%;}
+[metin~="300"],.metin-300{--metin-dolgu:70%;}
+[arka~="300"],.arka-300{--arka-dolgu:70%;}
+[kenar~="400"],.kenar-400{--kenar-dolgu:60%;}
+[metin~="400"],.metin-400{--metin-dolgu:60%;}
+[arka~="400"],.arka-400{--arka-dolgu:60%;}
+[kenar~="500"],.kenar-500{--kenar-dolgu:50%;}
+[metin~="500"],.metin-500{--metin-dolgu:50%;}
+[arka~="500"],.arka-500{--arka-dolgu:50%;}
+[kenar~="600"],.kenar-600{--kenar-dolgu:43%;}
+[metin~="600"],.metin-600{--metin-dolgu:43%;}
+[arka~="600"],.arka-600{--arka-dolgu:43%;}
+[kenar~="700"],.kenar-700{--kenar-dolgu:35%;}
+[metin~="700"],.metin-700{--metin-dolgu:35%;}
+[arka~="700"],.arka-700{--arka-dolgu:35%;}
+[kenar~="800"],.kenar-800{--kenar-dolgu:30%;}
+[metin~="800"],.metin-800{--metin-dolgu:30%;}
+[arka~="800"],.arka-800{--arka-dolgu:30%;}
+
+/* Parlaklık ve matlık oranları */
+[kenar~="mat"],.kenar-mat{--kenar-tonu:30%;}
+[metin~="mat"],.metin-mat{--metin-tonu:30%;}
+[arka~="mat"],.arka-mat{--arka-tonu:30%;}
+[kenar~="parlak"],.kenar-parlak{--kenar-tonu:70%;}
+[metin~="parlak"],.metin-parlak{--metin-tonu:70%;}
+[arka~="parlak"],.arka-parlak{--arka-tonu:70%;}
+
+[class*="arka-"]{background-color:hsl(var(--arka),var(--arka-tonu),var(--arka-dolgu)) !important;}
+
+[class*="metin-"]{color:hsl(var(--metin),var(--metin-tonu),var(--metin-dolgu)) !important;}
+
+[class*="kenar-tam-"],[kenar~="tam"]{border-color:hsl(var(--kenar-tam),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
+[class*="kenar-sol-"],[kenar~="sol"]{border-left-color:hsl(var(--kenar-sol),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
+[class*="kenar-sağ-"],[kenar~="sağ"]{border-right-color:hsl(var(--kenar-sağ),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
+[class*="kenar-üst-"],[kenar~="üst"]{border-top-color:hsl(var(--kenar-üst),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
+[class*="kenar-alt-"],[kenar~="alt"]{border-bottom-color:hsl(var(--kenar-alt),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
+
+/* ==========================================================================
+    Butonlar
+    Butonların nasıl görünmesiyle ilgili örgü.
+-------------------------------------------------------------------------- */
+.btn{
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  white-space: nowrap;
+  padding: 7px 12px;
+  font-size: 13px;
+  line-height: 1.5384616;
+  border-radius: 3px;
+}
+.btn > i:first-child{
+  margin-right: 5px;
+}
+.btn > i:last-child{
+  margin-left: 5px;
+}
+.btn-genel{
+  color: #333;
+  background-color: #fcfcfc;
+  border-color: #ddd;
+}
+.btn-birincil{
+  color: #fff;
+  background-color: #0c7cd5;
+  border-color: #08528d;
+}
 /* ==========================================================================
     SEKME ÖRGÜSÜ
     Sadece css yöntemiyle kurulmuş sekme örgüsü

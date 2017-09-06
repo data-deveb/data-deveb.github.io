@@ -1,8 +1,8 @@
 <?php include '../toprak/head.html';?>
 <?php include '../toprak/header.html';?>
 
-<div class="kap ortala" gnl="24p">
-  <div class="kap" gnl="23 24p">
+<div class="kaplama ortala" gnl="24p">
+  <div gnl="23 24p">
     <div gnl="24">
       <h1>Tarayıcı Desteği</h1>
       <p class="beri-alt-2">Deveb önyüz iskeletini destekleyen tarayıcılar</p>
@@ -65,7 +65,7 @@
         <div class="kap" gnl="1 6p" kçk="6 6p">
           <div gnl="6" kçk="3">
             <div class="kutu kutu-genel">
-              <i class="fa fa-internet-explorer" aria-hidden="true"></i> Internet Explorer 10+
+              <i class="fa fa-internet-explorer" aria-hidden="true"></i> IE 10+
             </div>
           </div>
           <div gnl="6" kçk="3">
