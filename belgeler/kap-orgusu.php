@@ -7,7 +7,7 @@
   <p>Bir sayfanın içinde genişlikler belirleme örgüsüne kap örgüsü denir. Kap kelimesi genelde bir şeyi bir arada tutmaya yarayan fiziksel nesneler için kullanılır. Buradan yola çıkarak anlamını kodlama dünyasına yansıtabilirsiniz. Kap örgüsü İngilizce dilinde "grid system" diye anılmaktadır. Deveb çatısı altında bu örgü kendine özgü kullanımı ile diğer önyüz iskeletlerindeki kap örgülerinden farklıdır ve benzer yönleri de kapsamaktadır. Ayrıntılarıyla öğrenmenizi tavsiye ederiz.</p>
 
   <h2>Konular</h2>
-  <div class="kap" data-gnl="24">
+  <div data-gnl="24">
     <div data-gnl="1o">    <div class="kutu kutu-genel metin-olumlu">      Ana Yapı    </div>  </div>
     <div data-gnl="1o">    <div class="kutu kutu-genel metin-olumlu">      Kavramlar    </div>  </div>
     <div data-gnl="1o">    <div class="kutu kutu-genel metin-olumlu">      Özellikler    </div>  </div>
@@ -16,7 +16,7 @@
   </div>
 
 
-<div class="">
+<div>
   <div class="beri-üst-1 beri-alt-1">
   <h2>Ana Yapı</h2>
   <p>Kap örgüsünün ana yapısı üç ana yöntemden oluşmaktadır. Bölme yöntemi, parça yöntemi, oran yöntemi isimleriyle ayırdığımız bu yöntemler hakkında ayrıntılı bilgiyi bu belgede okuyabilirsiniz.</p>

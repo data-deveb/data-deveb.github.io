@@ -9,9 +9,9 @@
       <h2>Parça Yöntemi Ölçekleri</h2>
       <p>Aşağıdaki tabloda 24 parçalı gruba kadar belirlenmiş parça gruplarını görmektesiniz. Bir genişlikte tablodaki değerlere göre düzen kurmak istiyorsanız tip="değer" kuralı üzerinden sınıf yazarsınız. Örnek: data-gnl="4 8p" yani tüm ekranlarda içinde bulunduğu genişliğin 8'e bölünmüş eşit parçasından 4 tanesinin toplamı kadar genişlik kullanılacağını belirtir. </p>
     </div>
-    <div class="kap ortalat beri-üst-1" data-gnl="24" >
-      <div class="kap sollat beri-alt-1" data-gnl="24">
-        <div class="kap kutu kutu-genel" data-gnl="24">
+    <div class="ortalat beri-üst-1" data-gnl="24" >
+      <div class="sollat beri-alt-1" data-gnl="24">
+        <div class="kutu kutu-genel" data-gnl="24">
           <ul class="liste-temiz">
             <li><span class="metin-tehlike"><i class="fa fa-info"></i> Bilgi:</span> Tabloda görülen değerler html etiketlerinde tip="değer" şeklinde yazılarak data-gnl="", data-byk="", data-ort="", kçk="", data-ufk="" ekran tipleriyle kullanılır.</li>
             <li><span class="metin-tehlike"><i class="fa fa-info"></i> Bilgi:</span> En dış etikette belirlediğiniz parça grubunu sürekli kullanacaksanız iç tiplerde tekrar belirtmenize gerek yoktur. Örnek "24p" > "8 24p" "8 24p" "8 24p" yerine "24p" > "8" "8" "8" yazabilirsiniz.</li>
@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <div class="kap sarkıt beri-alt-1" data-gnl="24" style="background-color:#eee; padding:5px; border-radius:3px;">
+      <div class="sarkıt beri-alt-1" data-gnl="24" style="background-color:#eee; padding:5px; border-radius:3px;">
         <div data-gnl="1"><div class="kap kutu kutu-genel"><a href="/deveb/belgeler/kap-olcekleri/1p.php">1p</a></div></div>
         <div data-gnl="23">
           <div data-gnl="24"><div class="kap kutu kutu-genel" data-gnl="1 1p"><span class="metin-olumlu">data-gnl="</span><span class="metin-belirsiz">1 1p</span><span class="metin-olumlu">"</span></div></div>
