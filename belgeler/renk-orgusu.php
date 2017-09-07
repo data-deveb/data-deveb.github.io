@@ -30,7 +30,7 @@
       <span data-arka="siyah" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>siyah -
       <span data-arka="gri" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>gri -
       <span data-arka="beyaz" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:1px; border-style:solid;margin-right:3px;"></span>beyaz<br>
-    <b>Kullanım tipi:</b><br>< metin="birincil" data-arka="ikincil" kenar="tam siyah" ><br> < class="metin-birincil data-arka-ikincil kenar-tam-siyah" ><br><br></p>
+    <b>Kullanım tipi:</b><br>( data-metin="birincil" data-arka="ikincil" data-kenar="tam siyah" )<br> ( class="metin-birincil data-arka-ikincil kenar-tam-siyah" )<br><br></p>
   </div>
   <div class="" data-gnl="1" style="font-size:13px;">
     <p><b>Renk Tonları:</b><br>100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900<br>
