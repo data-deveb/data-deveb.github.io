@@ -11,7 +11,7 @@
   <div class="" data-gnl="1" style="font-size:13px;">
     <p><b>Renklendirme Alanları:</b><br> metin - data-arka - kenar<br>
     Belirtilen 3 alana renklendirmeler yapabilirsiniz.<br><br>
-    <b>Kullanım tipi:</b><br>< data-metin=" " data-arka=" " data-kenar=" " ><br> < class="metin- data-arka- kenar-" ><br><br></p>
+    <b>Kullanım tipi:</b><br>( data-metin=" " data-arka=" " data-kenar=" " )<br> ( class="metin- data-arka- kenar-" )<br><br></p>
   </div>
   <div class="" data-gnl="1" style="font-size:13px;">
     <p><b>Renk Grubu:</b><br>
@@ -35,16 +35,16 @@
   <div class="" data-gnl="1" style="font-size:13px;">
     <p><b>Renk Tonları:</b><br>100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900<br>
       <b>Renk Aydınlığı:</b><br>soluk - parlak<br>
-    <b>Kullanım tipi:</b><br>< data-metin="birincil 300 soluk" data-arka="ikincil 600 parlak" data-kenar="tam siyah 800" ><br> < class="metin-birincil metin-300 metin-soluk data-arka-ikincil data-arka-600 data-arka-parlak kenar-tam-siyah kenar-800" ><br><br></p>
+    <b>Kullanım tipi:</b><br>( data-metin="birincil 300 soluk" data-arka="ikincil 600 parlak" data-kenar="tam siyah 800" )<br> ( class="metin-birincil metin-300 metin-soluk data-arka-ikincil data-arka-600 data-arka-parlak kenar-tam-siyah kenar-800" )<br><br></p>
   </div>
   <div class="" data-gnl="3">
     <h2>Örnek</h2>
   </div>
   <div class="" data-gnl="1 2p">
-    <iframe width="100%" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <iframe data-gnl="2" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/html/" allowfullscreen="allowfullscreen" style="border:0 solid red;"></iframe>
   </div>
   <div class="" data-gnl="1 2p">
-    <iframe width="100%" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <iframe data-gnl="2" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/result/" allowfullscreen="allowfullscreen" style="border:0 solid red;"></iframe>
   </div>
 </div>
 <?php include '../toprak/foot0.html';?>
