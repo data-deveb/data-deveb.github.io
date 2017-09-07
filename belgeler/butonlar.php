@@ -9,7 +9,7 @@
     </div>
   </div>
   <div gnl="1" ufk="1">
-    <div class="kutu kutu-genel beri-1 metin-orta" kenar="tam tehlike 300 mat">
+    <div class="kutu kutu-genel beri-1 metin-orta" kenar="tam tehlike 300 soluk" arka="ara 300 soluk" metin="birincil 400">
       <h2>İmgeli Genel Buton</h2>
       <p class="metin-gri-3 ">Sıradan amaçlarla kullanılmak için</p>
       <button class="btn btn-genel beri-1" type="button" name="button"><i class="fa fa-asterisk" aria-hidden="true"></i> Buton</button>
