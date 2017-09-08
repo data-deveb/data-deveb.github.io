@@ -52,6 +52,17 @@ ul{
   padding:0;
   margin:0;
 }
+/* ==========================================================================
+    RESİM ÖRGÜSÜ
+    Katkıda Bulunanlar
+    {Ramazan Kapar Facebook>ramazankadir.kapan}
+-------------------------------------------------------------------------- */
+[data-resim~="daire"]{border-radius: 50%;}
+[data-resim~="kare"]{border-radius: 0;}
+[data-resim~="yuvarlak"]{border-radius:3px;}
+[data-resim~="yuvarlak-1"]{border-radius:5px;}
+[data-resim~="yuvarlak-2"]{border-radius:8px;}
+[data-resim~="yuvarlak-3"]{border-radius:10px;}
 
 /* ==========================================================================
     RENK ÖRGÜSÜ
@@ -61,8 +72,8 @@ ul{
     renkler-birincil-serbest-engelli-uygun-uygunsuz-olumlu-olumsuz-tehlikeli-bilgi-belirsiz-yasak-uyarı
     Pembe: Pink, Violet, Purple, Indigo, Mavi: Blue, Teal, Yeşil: Green, Turuncu: Orange, Kahverengi: Brown, Gri: Grey, Slate
 
-    dolgular: 800-700-600-değersiz-400-300
-    tonlar: mat-değersiz-parlak
+    dolgular: 900-800-700-600-500-400-300-200-100
+    tonlar: en-parlak çok-parlak parlak az-parlak normal az-soluk soluk çok-soluk en-soluk
 -------------------------------------------------------------------------- */
 :root{
   /* 0 ile 360 değeri arasında değerleri kullanarak renklerinizi belirtin. hsl yapısı kullanılmaktadır. */
@@ -495,15 +506,12 @@ ul{
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;}
-
-/* Ekranlar ne kadar büyük olursa olsun sabit genişlikte kalması için kaplama sınıfı kullanılır. */
 .kaplama{
-  max-width:980px !important;
-  width: auto;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
-
+/* Ekranlar ne kadar büyük olursa olsun sabit genişlikte kalması için kaplama sınıfı kullanılır. */
   /* gnl - tüm ekranlar */
 
   [data-gnl~="1"]{--parca:1;}[data-gnl~="2"]{--parca:2;}[data-gnl~="3"]{--parca:3;}[data-gnl~="4"]{--parca:4;}
@@ -573,6 +581,9 @@ ul{
 }
 @media screen and (min-width: 48em){
    /* Dizüstü ve büyük: ort + */
+  .kaplama{
+     max-width:980px !important;
+   }
   [data-ort]{display:flex;}
   [data-ort~="gizle"]{display:none;}
   [data-ort~="1"]{--o-parca:1;}[data-ort~="2"]{--o-parca:2;}[data-ort~="3"]{--o-parca:3;}[data-ort~="4"]{--o-parca:4;}

@@ -1,5 +1,6 @@
 <?php include '../toprak/head.html';?>
 <?php include '../toprak/header.html';?>
+<div  class="ortala" data-gnl="23 24p">
 <div class="kaplama" data-gnl="3p" data-ufk="3p">
 
   <div class="" data-gnl="3">
@@ -8,12 +9,12 @@
   <div class="" data-gnl="3">
     <h2>Tanımlamalar</h2>
   </div>
-  <div class="" data-gnl="1" style="font-size:13px;">
+  <div data-gnl="3" data-ufk="1" style="font-size:13px;">
     <p><b>Renklendirme Alanları:</b><br> metin - data-arka - kenar<br>
     Belirtilen 3 alana renklendirmeler yapabilirsiniz.<br><br>
     <b>Kullanım tipi:</b><br>( data-metin=" " data-arka=" " data-kenar=" " )<br> ( class="metin- data-arka- kenar-" )<br><br></p>
   </div>
-  <div class="" data-gnl="1" style="font-size:13px;">
+  <div data-gnl="3" data-ufk="1" style="font-size:13px;">
     <p><b>Renk Grubu:</b><br>
       <span data-arka="ana" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0; margin-right:3px;"></span>ana -
       <span data-arka="ara" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>ara -
@@ -32,9 +33,9 @@
       <span data-arka="beyaz" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:1px; border-style:solid;margin-right:3px;"></span>beyaz<br>
     <b>Kullanım tipi:</b><br>( data-metin="birincil" data-arka="ikincil" data-kenar="tam siyah" )<br> ( class="metin-birincil data-arka-ikincil kenar-tam-siyah" )<br><br></p>
   </div>
-  <div class="" data-gnl="1" style="font-size:13px;">
+  <div data-gnl="3" data-ufk="1" style="font-size:13px;">
     <p><b>Renk Tonları:</b><br>100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900<br>
-      <b>Renk Aydınlığı:</b><br>soluk - parlak<br>
+      <b>Renk Aydınlığı:</b><br>en-soluk -  çok-soluk - soluk - az-soluk - normal - az-parlak - parlak - çok-parlak - en-parlak<br>
     <b>Kullanım tipi:</b><br>( data-metin="birincil 300 soluk" data-arka="ikincil 600 parlak" data-kenar="tam siyah 800" )<br> ( class="metin-birincil metin-300 metin-soluk data-arka-ikincil data-arka-600 data-arka-parlak kenar-tam-siyah kenar-800" )<br><br></p>
   </div>
   <div class="" data-gnl="3">
@@ -46,5 +47,7 @@
   <div class="" data-gnl="1 2p">
     <iframe data-gnl="2" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/result/" allowfullscreen="allowfullscreen" style="border:0 solid red;"></iframe>
   </div>
+</div>
+
 </div>
 <?php include '../toprak/foot0.html';?>
