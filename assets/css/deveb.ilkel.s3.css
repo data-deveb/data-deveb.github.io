@@ -86,7 +86,7 @@ ul{
   --metin-tonu:50%;       --metin-dolgu:50%;
 
   --kenar-ana-renk:0;     --kenar-ara-renk:34;       --kenar-birincil-renk:207;  --kenar-ikincil-renk:260;
-  --kenar-dikkat-renk: 0; --kenar-tehlike-renk: 34; --kenar-bilgi-renk: 190;  --kenar-olumlu-renk: 260; --kenar-olumsuz-renk: 260;
+  --kenar-dikkat-renk: 0; --kenar-tehlike-renk: 10; --kenar-bilgi-renk: 190;  --kenar-olumlu-renk: 260; --kenar-olumsuz-renk: 260;
   --kenar-tonu:50%;       --kenar-dolgu:50%;
 }
 /* Renk tonu oranları */

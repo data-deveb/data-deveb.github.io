@@ -7,3 +7,9 @@ Deveb CSS'nin farklı özelliklerini kullanarak geliştirilen yeni nesil bir ça
 Bu özelliklerin yanında fark edilen bir özelliği ise sadece CSS desteği ile bütün bu özellikleri sunmasıdır. Deveb'i şu an kullanmak isteseniz hiçbir javascript dosyasına ihtiyaç duymadan çalışabilirsiniz.
 
 Kap Örgüsü ve Renk Örgüsü yine dikkat çeken özellikleri arasındadır. Alışılmamış kullanımı olabilir fakat öğrendikten sonra kolaylığı vazgeçilmez yöntemler arasına girmeye adaydır. Sekme örgüsü ve diğer örgüler ise olgunlaşma sürecinde olduğu için henüz yeni sayılırlar.
+
+## Aramıza Katılın
+
+İçinizden katkıda bulunmak mı geliyor? Ya da yeni oluşturulan çalışmaları denemek mi istiyorsunuz? Belki de eleştirilerinizi bize iletmek için bir yol arıyorsunuz...
+
+https://www.facebook.com/groups/1818283228485179/
