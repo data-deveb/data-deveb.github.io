@@ -10,6 +10,6 @@ Kap Örgüsü ve Renk Örgüsü yine dikkat çeken özellikleri arasındadır. A
 
 ## Aramıza Katılın
 
-İçinizden katkıda bulunmak mı geliyor? Ya da yeni oluşturulan çalışmaları denemek mi istiyorsunuz? Belki de eleştirilerinizi bize iletmek için bir yol arıyorsunuz...
+İçinizden katkıda bulunmak mı geliyor? Ya da yeni oluşturulan çalışmaları denemek mi istiyorsunuz? Belki de eleştirilerinizi bize iletmek için bir yol arıyorsunuz... Facebook gruplarda sizi bekliyoruz.
 
 https://www.facebook.com/groups/1818283228485179/
