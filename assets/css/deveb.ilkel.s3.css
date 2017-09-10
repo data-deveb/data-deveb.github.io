@@ -53,7 +53,18 @@ ul{
   margin:0;
 }
 /* ==========================================================================
-    RESİM ÖRGÜSÜ
+    GENEL DEVEB ETKİLERİ
+-------------------------------------------------------------------------- */
+[data-deveb~="daire"]{border-radius: 50%}
+[data-deveb~="kare"]{border-radius: 0%}
+[data-deveb~="yuvarlak"]{border-radius:3px;}
+[data-deveb~="yuvarlak-1"]{border-radius:5px;}
+[data-deveb~="yuvarlak-2"]{border-radius:8px;}
+[data-deveb~="yuvarlak-3"]{border-radius:10px;}
+
+
+/* ==========================================================================
+    RESİM ÖRGÜSÜ s0.1
     Katkıda Bulunanlar
     {Ramazan Kapar Facebook>ramazankadir.kapan}
 -------------------------------------------------------------------------- */
@@ -65,7 +76,7 @@ ul{
 [data-resim~="yuvarlak-3"]{border-radius:10px;}
 
 /* ==========================================================================
-    RENK ÖRGÜSÜ
+    RENK ÖRGÜSÜ s0.4
     Ayırt etmek için önceden belirlenmiş renk grupları.
     arka- | kenar- | metin-
 
@@ -235,7 +246,7 @@ ul{
 [data-kenar~="olumsuz"][data-kenar~="alt"]{ border-bottom-color: hsl(var(--kenar-olumsuz-renk),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
 
 /* ==========================================================================
-    Butonlar
+    Butonlar s0.1
     Butonların nasıl görünmesiyle ilgili örgü.
 -------------------------------------------------------------------------- */
 .btn{
@@ -275,7 +286,7 @@ ul{
   border-color: #08528d;
 }
 /* ==========================================================================
-    SEKME ÖRGÜSÜ
+    SEKME ÖRGÜSÜ s0.7
     Sadece css yöntemiyle kurulmuş sekme örgüsü
 ========================================================================== */
 .sekmeler, .yan-sekmeler{
@@ -427,7 +438,7 @@ ul{
 
 
 /* ==========================================================================
-    KAP ÖRGÜSÜ
+    KAP ÖRGÜSÜ s0.9
     Display:Flexbox yöntemiyle geliştirilen örgü.
 ========================================================================== */
 .taşmadan{
