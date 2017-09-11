@@ -28,6 +28,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
     font-size: 11pt;
+    font-weight: 300;
 }
 a{
   text-decoration: none;
@@ -43,7 +44,6 @@ h1, h2, h3, h4, h5, h6{
       -webkit-margin-after: 0;
       -webkit-margin-start: 0px;
       -webkit-margin-end: 0px;
-  font-weight: lighter;
   margin:1rem 0 0.5rem 0;
   color:#111;
 }
