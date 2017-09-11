@@ -43,11 +43,13 @@ h1, h2, h3, h4, h5, h6{
       -webkit-margin-after: 0;
       -webkit-margin-start: 0px;
       -webkit-margin-end: 0px;
-  font-weight: bold;
+  font-weight: lighter;
+  margin:1rem 0 0.5rem 0;
+  color:#111;
 }
-h1{
-  font-size: 2em;
-}
+h1{font-size: 2.4rem;}
+h2{font-size: 1.6rem;}
+p+p{margin-top:1rem;}
 ul{
   padding:0;
   margin:0;
@@ -62,6 +64,10 @@ ul{
 [data-deveb~="yuvarlak-2"]{border-radius:8px;}
 [data-deveb~="yuvarlak-3"]{border-radius:10px;}
 
+ul[data-deveb]{
+  padding:0 0 0 2rem;
+  margin:1rem;
+}
 
 /* ==========================================================================
     RESİM ÖRGÜSÜ s0.1
