@@ -27,7 +27,7 @@
 }
 body{
 	font-family: 'Roboto', sans-serif;
-    font-size: 11pt;
+    font-size: 12pt;
     font-weight: 300;
 }
 a{
@@ -513,7 +513,12 @@ ul[data-deveb]{
 }
 /* Ekranlar ne kadar büyük olursa olsun sabit genişlikte kalması için kaplama sınıfı kullanılır. */
   /* gnl - tüm ekranlar */
-
+:root{
+  --par:24;
+  --u-par:24;
+  --o-par:24;
+  --b-par:24;
+}
   [data-gnl~="1"]{--parca:1;}[data-gnl~="2"]{--parca:2;}[data-gnl~="3"]{--parca:3;}[data-gnl~="4"]{--parca:4;}
   [data-gnl~="5"]{--parca:5;}[data-gnl~="6"]{--parca:6;}[data-gnl~="7"]{--parca:7;}[data-gnl~="8"]{--parca:8;}
   [data-gnl~="9"]{--parca:9;}[data-gnl~="10"]{--parca:10;}[data-gnl~="11"]{--parca:11;}[data-gnl~="12"]{--parca:12;}
