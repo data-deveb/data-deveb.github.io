@@ -454,10 +454,10 @@ ul[data-deveb]{
 .aynala{flex-wrap: wrap-reverse}
 .tersle{flex-direction: row-reverse}
 .solda{align-content: flex-start}
-.ortada{align-content:center}
+.ortada{justify-content:center}
 .sağda{align-content: flex-end}
-.ger{align-content: space-around}
-.yay{align-content: space-between}
+.ger{justify-content: space-between}
+.yay{justify-content: space-around}
 .uza{align-items: stretch}
 .başta{align-items: flex-start}
 .arada{align-items: center}
