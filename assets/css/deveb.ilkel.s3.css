@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{font-size: 2.4rem;}
 h2{font-size: 1.6rem;}
+h3{font-size: 1.2rem;}
 p+p{margin-top:1rem;}
 ul{
   padding:0;
@@ -447,59 +448,22 @@ ul[data-deveb]{
     KAP ÖRGÜSÜ s0.9
     Display:Flexbox yöntemiyle geliştirilen örgü.
 ========================================================================== */
-.taşmadan{
-  overflow: hidden;
-}
-.kaymadan{
-  flex-wrap: nowrap;
-}
 /* KAP HİZALAMA */
-.sarkıtlat > [data-gnl]
-  { align-items: flex-start             }
-.sarkıt
-  { align-items: flex-start !important  }
-.dikitlet > [data-gnl]
-  { align-items: flex-end               }
-.dikit
-  { align-items: flex-end !important    }
-.merkezlet > [data-gnl]
-  { align-items: center                 }
-.merkez
-  { align-items: center !important      }
-.direklet > [data-gnl]
-  { align-items: stretch                }
-.direk
-  { align-items: stretch !important     }
-.dengelet > [data-gnl]
-  { align-items: baseline               }
-.denge
-  { align-items: baseline !important    }
-.ortalat > [data-gnl]
-  { justify-content: center             }
-.ortala
-  { justify-content: center !important  }
-.yanlat > [data-gnl]
-  { justify-content: flex-end           }
-.yanla
-  { justify-content: flex-end !important}
-.sollat > [data-gnl]
-  { justify-content: flex-start         }
-.solla
-  { justify-content: flex-start !important}
-.yaylat > [data-gnl]
-  { justify-content: space-around       }
-.yay
-  { justify-content: space-around !important}
-.gerlet > [data-gnl]
-  { justify-content: space-between      }
-.ger
-  { justify-content: space-between !important}
-.terslet > [data-gnl]
-  { flex-direction: row-reverse         }
-.tersle
-  { flex-direction: row-reverse !important}
+.taşma{overflow:hidden}
+.kayma{flex-wrap: nowrap}
+.aynala{flex-wrap: wrap-reverse}
+.tersle{flex-direction: row-reverse}
+.solda{align-content: flex-start}
+.ortada{align-content:center}
+.sağda{align-content: flex-end}
+.ger{align-content: space-around}
+.yay{align-content: space-between}
+.uza{align-items: stretch}
+.başta{align-items: flex-start}
+.arada{align-items: center}
+.sonda{align-items: flex-start}
+.çizgide{align-items: baseline}
 
-/* KAP ÖLÇEKLEMELER */
 /* KAP PARÇA YÖNTEMİ */
 /* gnl, byk, ort, kçk, ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
 .kap,[data-gnl],[data-byk],[data-ort],[kçk],[data-ufk]{
@@ -514,10 +478,10 @@ ul[data-deveb]{
 /* Ekranlar ne kadar büyük olursa olsun sabit genişlikte kalması için kaplama sınıfı kullanılır. */
   /* gnl - tüm ekranlar */
 :root{
-  --par:24;
-  --u-par:24;
-  --o-par:24;
-  --b-par:24;
+  --par:12;
+  --u-par:12;
+  --o-par:12;
+  --b-par:12;
 }
   [data-gnl~="1"]{--parca:1;}[data-gnl~="2"]{--parca:2;}[data-gnl~="3"]{--parca:3;}[data-gnl~="4"]{--parca:4;}
   [data-gnl~="5"]{--parca:5;}[data-gnl~="6"]{--parca:6;}[data-gnl~="7"]{--parca:7;}[data-gnl~="8"]{--parca:8;}

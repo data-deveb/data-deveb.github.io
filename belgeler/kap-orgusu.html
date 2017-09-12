@@ -25,10 +25,10 @@
 </head>
 <body>
 <div class="header" data-gnl="1 1p" w3-include-html="https://data-deveb.github.io/temel/header.html"></div>
-<div class="ortala" data-gnl="24p">
+<div class="ortada" data-gnl="24p">
   <div class="kaplama" data-gnl="12">
 
-    <h1>Kap Örgüsü</h1>
+    <h1>Kap Örgüsü <span data-metin="dikkat gri">(s0.9)</span></h1>
 
     <p>İşte bu! 1'den 24'e kadar olan sütun düzenlerini aynı anda kullanabilmek artık hayal değil. Deveb kap örgüsü bunu en hızlı şekilde yepyeni özelliklerle birlikte kullanımınıza sunuyor. Beğendiniz mi? O zaman kap örgüsünü öğrenerek bir başlangıç yapın. Unutmadan, artık öncelik küçük ekranlara ait.</p>
 
@@ -54,23 +54,41 @@
 
     <p>Kap örgüsünde parça miktarı ve parça düzeni kavramları ana kavramlardır. Parça miktarı dahil olduğu parça düzeninde kaç parçanın toplam genişliğini kullanmak istediğinizi belirtmek için kullanırsınız. Parça düzeni ise bir genişliği kaç eşit parçaya bölerek kullanmak istediğinizi belirtmek için kullanırsınız. Parça miktarı "SAYI" ile ifade edilir. Parça düzeni ise "SAYIp" ile ifade edilir. "p" harfi burada düzen mi yoksa miktar mı belirttiğinizi ayırt etmek amacıyla kullanılır. Parça kelimesinin ilk harfidir. Şimdi ayrıntılara değinelim.</p>
 
-    <h2>"SAYI SAYIp" Kullanımında Ne Olur?</h2>
+    <h3>"SAYI SAYIp" Kullanımında Ne Olur?</h3>
 
     <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcılara şunu dersiniz; "Ben bu html etiketini SAYIp düzeninde SAYI kadar parçanın toplam genişliğini kullanacağım."</p>
 
     <p>Örneğin siz bulunduğunuz genişliğin yarısı kadar bir genişlik kullanmak istiyorsanız "1 2p", "2 4p", "3 6p", "4 8p", "5 10p", "6 12p", "7 14p", "8 16p", "9 18p", "10 20p", "11 22p" veya "12 24p" değerlerinden dilediğiniz bir tanesini kullanmanız gerekmektedir. Kullandığınız parça düzeni yavru html etiketleri için varsayılan kap parçası düzeni haline gelecektir.</p>
 
-    <h2>"SAYIp" >> "SAYI" Kullanımında Ne Olur?</h2>
+    <h3>"SAYIp" >> "SAYI" Kullanımında Ne Olur?</h3>
 
     <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim."</p>
 
-    <h2>"SAYI SAYIp" >> "SAYI" Kullanımında Ne Olur?</h2>
+    <h3>"SAYI SAYIp" >> "SAYI" Kullanımında Ne Olur?</h3>
 
     <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Aynı zamanda ana html etiketinde belirttiğim SAYI ana html etiketimin genişliğidir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim."</p>
 
-    <h2>"SAYI SAYIp" >> "SAYI SAYIp" Kullanımında Ne Olur?</h2>
+    <h3>"SAYI SAYIp" >> "SAYI SAYIp" Kullanımında Ne Olur?</h3>
 
     <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Aynı zamanda ana html etiketinde belirttiğim SAYI ana html etiketimin genişliğidir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim. Eğer yavru etiketlerden en az birinde SAYIp belirttiysem, bu belirttiğim etiketin parça düzeni olurken SAYI değeride ana HTML etiketiyle ilişkisini kesip bu etiketteki parça düzenine göre genişliği etkileyecektir. Ve bu HTML etiketin yavru etiketleri varsa onların varsayılan parça düzeni olacaktır."</p>
+
+    <h2>Kap Örgüsü Hizalama</h2>
+
+    <p>Deveb kap örgüsünün hizalama özellikleri taşma, kayma, aynala, tersle, solda, ortada, sağda, ger,
+    yay, uza, başta, arada, sonda, çizgide sınıflarıyla kullanılır. İsterseniz tek tek bu sınıfları inceleyelim</p>
+
+    <h3>Hizalama: <span data-metin="dikkat">taşma</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">kayma</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">solda</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">ortada</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">sağda</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">ger</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">yay</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">uza</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">başta</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">arada</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">sonda</span></h3>
+    <h3>Hizalama: <span data-metin="dikkat">çizgide</span></h3>
 
     <h2>Konular</h2>
     <div data-gnl="24">
