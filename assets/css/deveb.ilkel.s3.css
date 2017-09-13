@@ -451,8 +451,9 @@ ul[data-deveb]{
 /* KAP HİZALAMA */
 .taşma{overflow:hidden}
 .kayma{flex-wrap: nowrap}
-.aynala{flex-wrap: wrap-reverse}
-.tersle{flex-direction: row-reverse}
+.ters-dizi{flex-wrap: wrap-reverse}
+.ters-satır{flex-direction: row-reverse}
+.ters-sütun{flex-direction: column-reverse;}
 .solda{align-content: flex-start}
 .ortada{justify-content:center}
 .sağda{align-content: flex-end}
