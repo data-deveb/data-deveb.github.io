@@ -448,7 +448,7 @@ ul[data-deveb]{
     KAP ÖRGÜSÜ s0.9
     Display:Flexbox yöntemiyle geliştirilen örgü.
 ========================================================================== */
-/* KAP HİZALAMA */
+/* KAP KONUMLAMA */
 .taşma{overflow:hidden}
 .kayma{flex-wrap: nowrap}
 .ters-dizi{flex-wrap: wrap-reverse}
