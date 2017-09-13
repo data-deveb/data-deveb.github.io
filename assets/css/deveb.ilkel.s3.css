@@ -468,7 +468,7 @@ ul[data-deveb]{
 .göbekte-ol{align-self: center}
 .yerde-ol{align-self: flex-end}
 .çizgide{align-items: baseline}
-.çizgide-ol{align-self: baseline;}
+.çizgiye{align-self: baseline;}
 .merkezde{align-items:center; justify-content: center;}
 
 /* KAP PARÇA YÖNTEMİ */
