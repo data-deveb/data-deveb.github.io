@@ -460,10 +460,15 @@ ul[data-deveb]{
 .ger{justify-content: space-between}
 .yay{justify-content: space-around}
 .uza{align-items: stretch}
+.uzun-ol{align-self: stretch}
 .başta{align-items: flex-start}
 .göbekte{align-items: center}
-.ayakta{align-items: flex-end}
+.yerde{align-items: flex-end}
+.başta-ol{align-self: flex-start}
+.göbekte-ol{align-self: center}
+.yerde-ol{align-self: flex-end}
 .çizgide{align-items: baseline}
+.çizgide-ol{align-self: baseline;}
 .merkezde{align-items:center; justify-content: center;}
 
 /* KAP PARÇA YÖNTEMİ */
