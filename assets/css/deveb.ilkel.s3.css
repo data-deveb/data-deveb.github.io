@@ -1,6 +1,6 @@
 /* ==========================================================================
 
-    deveb (ilkel-sürüm 3.0.12)
+    deveb (ilkel-sürüm 3.0.18)
 
     TANIMLAMALAR
 		beri: CSS > margin          		dolgu: CSS > padding
@@ -463,12 +463,12 @@ ul[data-deveb]{
 .uzun-ol{align-self: stretch}
 .başta{align-items: flex-start}
 .göbekte{align-items: center}
-.yerde{align-items: flex-end}
+.sonda{align-items: flex-end}
 .başta-ol{align-self: flex-start}
 .göbekte-ol{align-self: center}
-.yerde-ol{align-self: flex-end}
+.sonda-ol{align-self: flex-end}
 .çizgide{align-items: baseline}
-.çizgiye{align-self: baseline;}
+.çizgide-ol{align-self: baseline;}
 .merkezde{align-items:center; justify-content: center;}
 
 /* KAP PARÇA YÖNTEMİ */
