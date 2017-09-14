@@ -454,9 +454,9 @@ ul[data-deveb]{
 .ters-dizi{flex-wrap: wrap-reverse}
 .ters-satır{flex-direction: row-reverse}
 .ters-sütun{flex-direction: column-reverse;}
-.solda{align-content: flex-start}
+.solda{justify-content: flex-start}
 .ortada{justify-content:center}
-.sağda{align-content: flex-end}
+.sağda{justify-content: flex-end}
 .ger{justify-content: space-between}
 .yay{justify-content: space-around}
 .uza{align-items: stretch}
