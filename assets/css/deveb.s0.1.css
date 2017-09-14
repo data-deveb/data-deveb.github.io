@@ -19,6 +19,13 @@
     Temizleme
     Kap Örgüsü
 */
+/*  AYARLAR
+    ==========================================================================*/
+    
+:root{
+  --yazı-biçimi:'Roboto', sans-serif;
+  --yazı-boyutu:11pt;
+}
 
 /*  Temizleme
     ==========================================================================*/
@@ -49,12 +56,14 @@ a{
   text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6{
+  /* Her durumda satır genişliğinide olması ayarı */
 	width: 100%;
   display: block;
   -webkit-margin-before: 0;
       -webkit-margin-after: 0;
       -webkit-margin-start: 0px;
       -webkit-margin-end: 0px;
+  /* Başlıkları varsayılan olarak kalın yapma ayarı */
   font-weight: bold;
 }
 img {
@@ -63,13 +72,16 @@ img {
 
 /* Deveb Varsayılan */
 body{
-	font-family: 'Roboto', sans-serif;
-    font-size: 11pt;
+  /* Her yerde varsayılan yazı biçimi */
+	font-family: var(--yazı-biçimi);
+  /* Her yerde varsayılan yazı boyutu */
+    font-size: var(--yazı-boyutu);
 }
 
 /* ==========================================================================
     KAP ÖRGÜSÜ
     'Display:flex' yöntemiyle geliştirilen kap örgüsü.
+    * data-gnl, data-byk, data-ort, data-ufk ekran genişlikleri için kullanılan özel nitelikler.
 ========================================================================== */
 
 /* Konumlama */
@@ -103,12 +115,15 @@ body{
 
 /* KAP ÖLÇEKLEMELER */
 .kap,[data-gnl],[data-byk],[data-ort],[data-ufk]{
+  /* Her durumda esnek görünüm tanımlama ayarı */
   display: flex;
+  /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
   flex-flow: row wrap;
+  /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
   box-sizing: border-box;
 }
 
-/* data-gnl, data-byk, data-ort, data-ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
+
 /* TÜM EKRANLAR [data-gnl] */
 /* KAP ÖRGÜSÜ : Parça Yöntemi */
 [data-gnl~="gizli"]{display: none;}
