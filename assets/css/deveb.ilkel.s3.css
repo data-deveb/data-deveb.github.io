@@ -59,14 +59,14 @@ ul{
 /* ==========================================================================
     GENEL DEVEB ETKİLERİ
 -------------------------------------------------------------------------- */
-[data-dvb~="daire"]{border-radius: 50%}
-[data-dvb~="kare"]{border-radius: 0%}
-[data-dvb~="yuvarlak"]{border-radius:3px;}
-[data-dvb~="yuvarlak-1"]{border-radius:5px;}
-[data-dvb~="yuvarlak-2"]{border-radius:8px;}
-[data-dvb~="yuvarlak-3"]{border-radius:10px;}
+[data-deveb~="daire"]{border-radius: 50%}
+[data-deveb~="kare"]{border-radius: 0%}
+[data-deveb~="yuvarlak"]{border-radius:3px;}
+[data-deveb~="yuvarlak-1"]{border-radius:5px;}
+[data-deveb~="yuvarlak-2"]{border-radius:8px;}
+[data-deveb~="yuvarlak-3"]{border-radius:10px;}
 
-ul[data-dvb]{
+ul[data-deveb]{
   padding:0 0 0 2rem;
   margin:1rem;
 }
@@ -450,31 +450,31 @@ ul[data-dvb]{
     Display:Flexbox yöntemiyle geliştirilen örgü.
 ========================================================================== */
 /* KAP KONUMLAMA */
-[data-dvb~="taşma"]{overflow: hidden;}
-[data-dvb~="kayma"]{flex-wrap: nowrap;}
+[data-deveb~="taşma"]{overflow: hidden;}
+[data-deveb~="kayma"]{flex-wrap: nowrap;}
 
-[data-dvb~="ters-dizi"]{flex-wrap: wrap-reverse;}
-[data-dvb~="ters-satır"]{flex-direction: row-reverse;}
-[data-dvb~="ters-sütun"]{flex-direction: column-reverse;}
+[data-deveb~="ters-dizi"]{flex-wrap: wrap-reverse;}
+[data-deveb~="ters-satır"]{flex-direction: row-reverse;}
+[data-deveb~="ters-sütun"]{flex-direction: column-reverse;}
 
-[data-dvb~="solda"]{justify-content: flex-start;}
-[data-dvb~="ortada"]{justify-content:center;}
-[data-dvb~="sağda"]{justify-content: flex-end;}
-[data-dvb~="merkezde"]{align-items:center; justify-content: center;}
-[data-dvb~="üstte"]{align-items: flex-start;}
-[data-dvb~="göbekte"]{align-items: center;}
-[data-dvb~="altta"]{align-items: flex-end;}
-[data-dvb~="üstte-ol"]{align-self: flex-end;}
-[data-dvb~="göbekte-ol"]{align-self: flex-end;}
-[data-dvb~="altta-ol"]{align-self: flex-end;}
+[data-deveb~="solda"]{justify-content: flex-start;}
+[data-deveb~="ortada"]{justify-content:center;}
+[data-deveb~="sağda"]{justify-content: flex-end;}
+[data-deveb~="merkezde"]{align-items:center; justify-content: center;}
+[data-deveb~="üstte"]{align-items: flex-start;}
+[data-deveb~="göbekte"]{align-items: center;}
+[data-deveb~="altta"]{align-items: flex-end;}
+[data-deveb~="üstte-ol"]{align-self: flex-end;}
+[data-deveb~="göbekte-ol"]{align-self: flex-end;}
+[data-deveb~="altta-ol"]{align-self: flex-end;}
 
-[data-dvb~="ger"]{justify-content: space-between;}
-[data-dvb~="yay"]{justify-content: space-around;}
-[data-dvb~="uza"]{align-items: stretch;}
-[data-dvb~="uzun-ol"]{align-self: stretch;}
+[data-deveb~="ger"]{justify-content: space-between;}
+[data-deveb~="yay"]{justify-content: space-around;}
+[data-deveb~="uza"]{align-items: stretch;}
+[data-deveb~="uzun-ol"]{align-self: stretch;}
 
-[data-dvb~="çizgide"]{align-items: baseline;}
-[data-dvb~="çizgide-ol"]{align-self: baseline;}
+[data-deveb~="çizgide"]{align-items: baseline;}
+[data-deveb~="çizgide-ol"]{align-self: baseline;}
 
 /* KAP PARÇA YÖNTEMİ */
 /* gnl, byk, ort, kçk, ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
