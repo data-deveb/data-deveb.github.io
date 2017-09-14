@@ -69,8 +69,10 @@ body{
 
 /* ==========================================================================
     KAP ÖRGÜSÜ
-    Display:Flexbox yöntemiyle geliştirilen örgü.
+    'Display:flex' yöntemiyle geliştirilen kap örgüsü.
 ========================================================================== */
+
+/* Konumlama */
 [data-deveb~="taşma"]{overflow: hidden;}
 [data-deveb~="kayma"]{flex-wrap: nowrap;}
 
@@ -100,15 +102,15 @@ body{
 [data-deveb~="gizli"]{display: none !important;}
 
 /* KAP ÖLÇEKLEMELER */
-/* KAP PARÇA YÖNTEMİ */
-/* data-gnl, data-byk, data-ort, data-ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
 .kap,[data-gnl],[data-byk],[data-ort],[data-ufk]{
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
 }
 
-/* data-gnl - tüm ekranlar */
+/* data-gnl, data-byk, data-ort, data-ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
+/* TÜM EKRANLAR [data-gnl] */
+/* KAP ÖRGÜSÜ : Parça Yöntemi */
 [data-gnl~="gizli"]{display: none;}
 [data-gnl~="1"]{--parca:1;}[data-gnl~="2"]{--parca:2;}[data-gnl~="3"]{--parca:3;}[data-gnl~="4"]{--parca:4;}
 [data-gnl~="5"]{--parca:5;}[data-gnl~="6"]{--parca:6;}[data-gnl~="7"]{--parca:7;}[data-gnl~="8"]{--parca:8;}
@@ -126,7 +128,7 @@ body{
 [data-gnl]{  flex-basis: calc(100% / var(--par) * var(--parca));      width: calc(100% / var(--par) * var(--parca));     }
 
 [data-gnl~="0p"]{flex-basis: auto;}
-
+/* KAP ÖRGÜSÜ : Oran Yöntemi */
 [data-gnl~="0o"]  {  flex: 0; }
 [data-gnl~="1o"]  {  flex: 1; }  [data-gnl~="2o"]  {  flex: 2; }  [data-gnl~="3o"]  {  flex: 3; }  [data-gnl~="4o"]  {  flex: 4; }
 [data-gnl~="5o"]  {  flex: 5; }  [data-gnl~="6o"]  {  flex: 6; }  [data-gnl~="7o"]  {  flex: 7; }  [data-gnl~="8o"]  {  flex: 8; }
@@ -138,7 +140,7 @@ body{
 @media screen and (min-width: 35.5em){
 /* UFAK: data-ufk+ */
 [data-ufk~="gizli"]{display: none;}
-:not([data-ufk~="gizli"]){display: flex;}
+[data-ufk]:not([data-ufk~="gizli"]){display: flex;}
 [data-ufk~="1"]{--u-parca:1;}[data-ufk~="2"]{--u-parca:2;}[data-ufk~="3"]{--u-parca:3;}[data-ufk~="4"]{--u-parca:4;}
 [data-ufk~="5"]{--u-parca:5;}[data-ufk~="6"]{--u-parca:6;}[data-ufk~="7"]{--u-parca:7;}[data-ufk~="8"]{--u-parca:8;}
 [data-ufk~="9"]{--u-parca:9;}[data-ufk~="10"]{--u-parca:10;}[data-ufk~="11"]{--u-parca:11;}[data-ufk~="12"]{--u-parca:12;}
@@ -169,7 +171,7 @@ body{
 @media screen and (min-width: 48em){
 /* Dizüstü ve büyük: data-ort + */
 [data-ort~="gizli"]{display: none;}
-:not([data-ort~="gizli"]){display: flex;}
+[data-ort]:not([data-ort~="gizli"]){display: flex;}
 [data-ort~="1"]{--o-parca:1;}[data-ort~="2"]{--o-parca:2;}[data-ort~="3"]{--o-parca:3;}[data-ort~="4"]{--o-parca:4;}
 [data-ort~="5"]{--o-parca:5;}[data-ort~="6"]{--o-parca:6;}[data-ort~="7"]{--o-parca:7;}[data-ort~="8"]{--o-parca:8;}
 [data-ort~="9"]{--o-parca:9;}[data-ort~="10"]{--o-parca:10;}[data-ort~="11"]{--o-parca:11;}[data-ort~="12"]{--o-parca:12;}
@@ -200,7 +202,7 @@ body{
 @media screen and (min-width: 64em){
 /* Büyükler: data-byk + */
 [data-byk~="gizli"]{display: none;}
-:not([data-byk~="gizli"]){display: flex;}
+[data-byk]:not([data-byk~="gizli"]){display: flex;}
 [data-byk~="1"]{--b-parca:1;}[data-byk~="2"]{--b-parca:2;}[data-byk~="3"]{--b-parca:3;}[data-byk~="4"]{--b-parca:4;}
 [data-byk~="5"]{--b-parca:5;}[data-byk~="6"]{--b-parca:6;}[data-byk~="7"]{--b-parca:7;}[data-byk~="8"]{--b-parca:8;}
 [data-byk~="9"]{--b-parca:9;}[data-byk~="10"]{--b-parca:10;}[data-byk~="11"]{--b-parca:11;}[data-byk~="12"]{--b-parca:12;}
