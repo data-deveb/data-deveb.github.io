@@ -98,17 +98,17 @@ ul[data-deveb]{
   /* 0 ile 360 değeri arasında değerleri kullanarak renklerinizi belirtin. hsl yapısı kullanılmaktadır. */
   --arka-ana-renk: 0;     --arka-ara-renk: 34;    --arka-birincil-renk: 207;  --arka-ikincil-renk: 260;
   --arka-dikkat-renk: 60; --arka-tehlike-renk: 0; --arka-bilgi-renk: 190;     --arka-olumlu-renk: 85;  --arka-olumsuz-renk: 260;
-  --arka-tonu: 50%;       --arka-dolgu: 50%;      --arka-metin-dolgu:100%;
 
   --metin-ana-renk:0;     --metin-ara-renk:34;     --metin-birincil-renk:207;    --metin-ikincil-renk:260;
   --metin-dikkat-renk: 0; --metin-tehlike-renk: 34;--metin-bilgi-renk: 190;   --metin-olumlu-renk: 260; --metin-olumsuz-renk: 260;
-  --metin-tonu:50%;       --metin-dolgu:50%;
 
   --kenar-ana-renk:0;     --kenar-ara-renk:34;       --kenar-birincil-renk:207;  --kenar-ikincil-renk:260;
   --kenar-dikkat-renk: 0; --kenar-tehlike-renk: 10; --kenar-bilgi-renk: 190;  --kenar-olumlu-renk: 260; --kenar-olumsuz-renk: 260;
-  --kenar-tonu:50%;       --kenar-dolgu:50%;
 }
 /* Renk tonu oranları */
+[data-kenar]{--kenar-tonu:50%;       --kenar-dolgu:50%;}
+[data-metin]{--metin-tonu:50%;       --metin-dolgu:50%;}
+[data-arka]{--arka-tonu: 50%;       --arka-dolgu: 50%;      --arka-metin-dolgu:100%;}
 [data-kenar~="beyaz"]{--kenar-tonu:0%; --kenar-dolgu:100%;}
 [data-metin~="beyaz"]{--metin-tonu:0%; --metin-dolgu:100%;}
 [data-arka~="beyaz"]{--arka-tonu:0%; --arka-dolgu:100%;--arka-metin-dolgu:0%;}
