@@ -59,14 +59,14 @@ ul{
 /* ==========================================================================
     GENEL DEVEB ETKİLERİ
 -------------------------------------------------------------------------- */
-[data-deveb~="daire"]{border-radius: 50%}
-[data-deveb~="kare"]{border-radius: 0%}
-[data-deveb~="yuvarlak"]{border-radius:3px;}
-[data-deveb~="yuvarlak-1"]{border-radius:5px;}
-[data-deveb~="yuvarlak-2"]{border-radius:8px;}
-[data-deveb~="yuvarlak-3"]{border-radius:10px;}
+[data-dvb~="daire"]{border-radius: 50%}
+[data-dvb~="kare"]{border-radius: 0%}
+[data-dvb~="yuvarlak"]{border-radius:3px;}
+[data-dvb~="yuvarlak-1"]{border-radius:5px;}
+[data-dvb~="yuvarlak-2"]{border-radius:8px;}
+[data-dvb~="yuvarlak-3"]{border-radius:10px;}
 
-ul[data-deveb]{
+ul[data-dvb]{
   padding:0 0 0 2rem;
   margin:1rem;
 }
@@ -450,27 +450,31 @@ ul[data-deveb]{
     Display:Flexbox yöntemiyle geliştirilen örgü.
 ========================================================================== */
 /* KAP KONUMLAMA */
-.taşma{overflow:hidden}
-.kayma{flex-wrap: nowrap}
-.ters-dizi{flex-wrap: wrap-reverse}
-.ters-satır{flex-direction: row-reverse}
-.ters-sütun{flex-direction: column-reverse;}
-.solda{justify-content: flex-start}
-.ortada{justify-content:center}
-.sağda{justify-content: flex-end}
-.ger{justify-content: space-between}
-.yay{justify-content: space-around}
-.uza{align-items: stretch}
-.uzun-ol{align-self: stretch}
-.başta{align-items: flex-start}
-.göbekte{align-items: center}
-.sonda{align-items: flex-end}
-.başta-ol{align-self: flex-start}
-.göbekte-ol{align-self: center}
-.sonda-ol{align-self: flex-end}
-.çizgide{align-items: baseline}
-.çizgide-ol{align-self: baseline;}
-.merkezde{align-items:center; justify-content: center;}
+[data-dvb~="taşma"]{overflow: hidden;}
+[data-dvb~="kayma"]{flex-wrap: nowrap;}
+
+[data-dvb~="ters-dizi"]{flex-wrap: wrap-reverse;}
+[data-dvb~="ters-satır"]{flex-direction: row-reverse;}
+[data-dvb~="ters-sütun"]{flex-direction: column-reverse;}
+
+[data-dvb~="solda"]{justify-content: flex-start;}
+[data-dvb~="ortada"]{justify-content:center;}
+[data-dvb~="sağda"]{justify-content: flex-end;}
+[data-dvb~="merkezde"]{align-items:center; justify-content: center;}
+[data-dvb~="üstte"]{align-items: flex-start;}
+[data-dvb~="göbekte"]{align-items: center;}
+[data-dvb~="altta"]{align-items: flex-end;}
+[data-dvb~="üstte-ol"]{align-self: flex-end;}
+[data-dvb~="göbekte-ol"]{align-self: flex-end;}
+[data-dvb~="altta-ol"]{align-self: flex-end;}
+
+[data-dvb~="ger"]{justify-content: space-between;}
+[data-dvb~="yay"]{justify-content: space-around;}
+[data-dvb~="uza"]{align-items: stretch;}
+[data-dvb~="uzun-ol"]{align-self: stretch;}
+
+[data-dvb~="çizgide"]{align-items: baseline;}
+[data-dvb~="çizgide-ol"]{align-self: baseline;}
 
 /* KAP PARÇA YÖNTEMİ */
 /* gnl, byk, ort, kçk, ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
