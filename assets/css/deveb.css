@@ -1,4 +1,4 @@
-/*! [DEVEB SÜRÜM 0.11] | dosya:: "deveb.s0.1.css" */
+/*! [DEVEB SÜRÜM 0.11] | dosya:: "deveb.css" */
 
 /*
   TANIMLAMALAR
@@ -99,7 +99,7 @@ body{
 [data-deveb~="ters-sütun"]{flex-direction: column-reverse;}
 
 [data-deveb~="solda"]{justify-content: flex-start;}
-[data-deveb~="data-ortada"]{justify-content:center;}
+[data-deveb~="ortada"]{justify-content:center;}
 [data-deveb~="sağda"]{justify-content: flex-end;}
 [data-deveb~="merkezde"]{align-items:center; justify-content: center;}
 [data-deveb~="üstte"]{align-items: flex-start;}
