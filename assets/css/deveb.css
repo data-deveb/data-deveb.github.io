@@ -39,8 +39,6 @@
     ==========================================================================*/
 /** Varsayılan değiştirgeleri temizleme eylemi. */
 html {
-  /* Tüm tarayıcılar için uygun satır yüksekliği (line-height) ayarı. */
-  line-height: 1.15;
   /* Metin boyutlarında ayarlamaları doğallaştırma. */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
