@@ -115,7 +115,7 @@ body{
 [data-deveb~="gizli"]{display: none !important;}
 
 /* KAP ÖLÇEKLEMELER */
-.kap,[data-gnl],[data-byk],[data-ort],[data-ufk]{
+[data-deveb~="kap"],[data-gnl],[data-byk],[data-ort],[data-ufk]{
   /* Her durumda esnek görünüm tanımlama ayarı */
   display: flex;
   /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
@@ -147,7 +147,14 @@ body{
 [data-gnl~="21p"]{--par:21;}[data-gnl~="22p"]{--par:22;}[data-gnl~="23p"]{--par:23;}[data-gnl~="24p"]{--par:24;}
 
 /* Kap alanının genişliğini hesaplama */
-[data-gnl]{flex-basis: calc(100% / var(--par) * var(--parca));      width: calc(100% / var(--par) * var(--parca));     }
+[data-gnl]{flex-basis: calc(100% / var(--par) * var(--parca));      width: calc(100% / var(--par) * var(--parca));}
+/* Kap alanının sütunlara bölme */
+[data-gnl~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
+[data-deveb~="ortada"][data-gnl~="sütun"] > [data-gnl]{
+  margin-left: auto;
+  margin-right: auto;}
+
+[data-gnl~="0p"]{flex-basis: auto;}
 
 /* Kap alanı genişliğini esnek yapmak */
 [data-gnl~="0p"] {flex-basis: auto;}
