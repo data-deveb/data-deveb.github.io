@@ -96,7 +96,7 @@ img {
 /* Deveb Varsayılan */
 body{
   /* Her yerde varsayılan yazı biçimi */
-	font-family: var(--yazı-biçimi);
+  font-family: var(--yazı-biçimi);
   /* Her yerde varsayılan yazı boyutu ve tipi */
     font-size: var(--yazı-boyutu);
     font-weight: 300;
