@@ -194,6 +194,11 @@ body{
 
 /* Kap alanının genişliğini hesaplama */
 [data-ufk]{flex-basis: calc(100% / var(--u-par) * var(--u-parca));  width: calc(100% / var(--u-par) * var(--u-parca));}
+/* Kap alanının sütunlara bölme */
+[data-ufk~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
+[data-deveb~="ortada"][data-ufk~="sütun"] > [data-ufk]{
+  margin-left: auto;
+  margin-right: auto;}
 
 /* Kap alanı genişliğini esnek yapmak */
 [data-ufk~="0p"]{flex-basis: auto;}
@@ -208,9 +213,13 @@ body{
 [data-ufk~="21o"]{flex: 21;}[data-ufk~="22o"]{flex: 22;}[data-ufk~="23o"]{flex: 23;}[data-ufk~="24o"]{flex: 24;}
 
 }
-@media screen and (min-width: 48em){
-/* Dizüstü ve büyük: data-ort + */
 
+/* Dizüstü ve büyük: data-ort + */
+@media screen and (min-width: 48em){
+/* Kap alanının en fazla genişlik ölçüsünü sabitler */
+[data-deveb~="kaplama"]{
+   max-width:980px !important;
+ }
 /* Kap alanını gizleme sınıfı */
 [data-ort~="gizli"]{display: none;}
 /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
@@ -234,6 +243,11 @@ body{
 
 /* Kap alanının genişliğini hesaplama */
 [data-ort]{flex-basis: calc(100% / var(--o-par) * var(--o-parca));  width: calc(100% / var(--o-par) * var(--o-parca));}
+/* Kap alanının sütunlara bölme */
+[data-ort~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
+[data-deveb~="ortada"][data-ort~="sütun"] > [data-ort]{
+  margin-left: auto;
+  margin-right: auto;}
 
 /* Kap alanı genişliğini esnek yapmak */
 [data-ort~="0p"]{flex-basis: auto;}
@@ -248,8 +262,8 @@ body{
 [data-ort~="21o"]{flex: 21;}[data-ort~="22o"]{flex: 22;}[data-ort~="23o"]{flex: 23;}[data-ort~="24o"]{flex: 24;}
 }
 
-@media screen and (min-width: 64em){
 /* Büyükler: data-byk + */
+@media screen and (min-width: 64em){
 
 /* Kap alanını gizleme sınıfı */
 [data-byk~="gizli"]{display: none;}
@@ -274,6 +288,11 @@ body{
 
 /* Kap alanının genişliğini hesaplama */
 [data-byk]{flex-basis: calc(100% / var(--b-par) * var(--b-parca));  width: calc(100% / var(--b-par) * var(--b-parca));}
+/* Kap alanının sütunlara bölme */
+[data-byk~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
+[data-deveb~="ortada"][data-byk~="sütun"] > [data-byk]{
+  margin-left: auto;
+  margin-right: auto;}
 
 /* Kap alanı genişliğini esnek yapmak */
 [data-byk~="0p"]{flex-basis: auto;}

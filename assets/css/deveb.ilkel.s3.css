@@ -473,7 +473,7 @@ ul{
 
 /* KAP PARÇA YÖNTEMİ */
 /* gnl, byk, ort, kçk, ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
-[data-deveb~="kap"],[data-gnl],[data-byk],[data-ort],[kçk],[data-ufk]{
+[data-deveb~="kap"],[data-gnl],[data-byk],[data-ort],[data-ufk]{
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;}
@@ -506,9 +506,9 @@ ul{
 
   [data-gnl]{  flex-basis: calc(100% / var(--par) * var(--parca));      max-width: calc(100% / var(--par) * var(--parca));     }
 
-  [data-gnl~="kolon"]{display:block; width: 100%; column-count: var(--parca);}
-
-  .ortala[data-gnl~="kolon"] > [data-gnl]{
+  /* Kap alanının sütunlara bölme */
+  [data-gnl~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
+  [data-deveb~="ortada"][data-gnl~="sütun"] > [data-gnl]{
     margin-left: auto;
     margin-right: auto;}
 
