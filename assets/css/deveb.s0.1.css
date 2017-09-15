@@ -21,7 +21,7 @@
 */
 /*  AYARLAR
     ==========================================================================*/
-    
+
 :root{
   --yazı-biçimi:'Roboto', sans-serif;
   --yazı-boyutu:11pt;
@@ -123,10 +123,13 @@ body{
   box-sizing: border-box;
 }
 
-
 /* TÜM EKRANLAR [data-gnl] */
 /* KAP ÖRGÜSÜ : Parça Yöntemi */
+
+/* Kap alanını gizleme sınıfı */
 [data-gnl~="gizli"]{display: none;}
+
+/* Kap alanını parça değerlerini aktarma */
 [data-gnl~="1"]{--parca:1;}[data-gnl~="2"]{--parca:2;}[data-gnl~="3"]{--parca:3;}[data-gnl~="4"]{--parca:4;}
 [data-gnl~="5"]{--parca:5;}[data-gnl~="6"]{--parca:6;}[data-gnl~="7"]{--parca:7;}[data-gnl~="8"]{--parca:8;}
 [data-gnl~="9"]{--parca:9;}[data-gnl~="10"]{--parca:10;}[data-gnl~="11"]{--parca:11;}[data-gnl~="12"]{--parca:12;}
@@ -134,15 +137,19 @@ body{
 [data-gnl~="17"]{--parca:17;}[data-gnl~="18"]{--parca:18;}[data-gnl~="19"]{--parca:19;}[data-gnl~="20"]{--parca:20;}
 [data-gnl~="21"]{--parca:21;}[data-gnl~="22"]{--parca:22;}[data-gnl~="23"]{--parca:23;}[data-gnl~="24"]{--parca:24;}
 
+/* Kap alanını parça düzeni değerlerini aktarma */
 [data-gnl~="1p"]{--par:1;}[data-gnl~="2p"]{--par:2;}[data-gnl~="3p"]{--par:3;}[data-gnl~="4p"]{--par:4;}[data-gnl~="5p"]{--par:5;}
 [data-gnl~="6p"]{--par:6;}[data-gnl~="7p"]{--par:7;}[data-gnl~="8p"]{--par:8;}[data-gnl~="9p"]{--par:9;}[data-gnl~="10p"]{--par:10;}
 [data-gnl~="11p"]{--par:11;}[data-gnl~="12p"]{--par:12;}[data-gnl~="13p"]{--par:13;}[data-gnl~="14p"]{--par:14;}[data-gnl~="15p"]{--par:15;}
 [data-gnl~="16p"]{--par:16;}[data-gnl~="17p"]{--par:17;}[data-gnl~="18p"]{--par:18;}[data-gnl~="19p"]{--par:19;}[data-gnl~="20p"]{--par:20;}
 [data-gnl~="21p"]{--par:21;}[data-gnl~="22p"]{--par:22;}[data-gnl~="23p"]{--par:23;}[data-gnl~="24p"]{--par:24;}
 
+/* Kap alanının genişliğini hesaplama */
 [data-gnl]{  flex-basis: calc(100% / var(--par) * var(--parca));      width: calc(100% / var(--par) * var(--parca));     }
 
+/* Kap alanı genişliğini esnek yapmak */
 [data-gnl~="0p"]{flex-basis: auto;}
+
 /* KAP ÖRGÜSÜ : Oran Yöntemi */
 [data-gnl~="0o"]  {  flex: 0; }
 [data-gnl~="1o"]  {  flex: 1; }  [data-gnl~="2o"]  {  flex: 2; }  [data-gnl~="3o"]  {  flex: 3; }  [data-gnl~="4o"]  {  flex: 4; }
@@ -154,8 +161,13 @@ body{
 
 @media screen and (min-width: 35.5em){
 /* UFAK: data-ufk+ */
+
+/* Kap alanını gizleme sınıfı */
 [data-ufk~="gizli"]{display: none;}
+/* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
 [data-ufk]:not([data-ufk~="gizli"]){display: flex;}
+
+/* Kap alanını parça değerlerini aktarma */
 [data-ufk~="1"]{--u-parca:1;}[data-ufk~="2"]{--u-parca:2;}[data-ufk~="3"]{--u-parca:3;}[data-ufk~="4"]{--u-parca:4;}
 [data-ufk~="5"]{--u-parca:5;}[data-ufk~="6"]{--u-parca:6;}[data-ufk~="7"]{--u-parca:7;}[data-ufk~="8"]{--u-parca:8;}
 [data-ufk~="9"]{--u-parca:9;}[data-ufk~="10"]{--u-parca:10;}[data-ufk~="11"]{--u-parca:11;}[data-ufk~="12"]{--u-parca:12;}
@@ -163,6 +175,7 @@ body{
 [data-ufk~="17"]{--u-parca:17;}[data-ufk~="18"]{--u-parca:18;}[data-ufk~="19"]{--u-parca:19;}[data-ufk~="20"]{--u-parca:20;}
 [data-ufk~="21"]{--u-parca:21;}[data-ufk~="22"]{--u-parca:22;}[data-ufk~="23"]{--u-parca:23;}[data-ufk~="24"]{--u-parca:24;}
 
+/* Kap alanını parça düzeni değerlerini aktarma */
 [data-ufk~="1p"]{--u-par:1;}[data-ufk~="2p"]{--u-par:2;}[data-ufk~="3p"]{--u-par:3;}[data-ufk~="4p"]{--u-par:4;}
 [data-ufk~="5p"]{--u-par:5;}[data-ufk~="6p"]{--u-par:6;}[data-ufk~="7p"]{--u-par:7;}[data-ufk~="8p"]{--u-par:8;}
 [data-ufk~="9p"]{--u-par:9;}[data-ufk~="10p"]{--u-par:10;}[data-ufk~="11p"]{--u-par:11;}[data-ufk~="12p"]{--u-par:12;}
@@ -170,10 +183,13 @@ body{
 [data-ufk~="17p"]{--u-par:17;}[data-ufk~="18p"]{--u-par:18;}[data-ufk~="19p"]{--u-par:19;}[data-ufk~="20p"]{--u-par:20;}
 [data-ufk~="21p"]{--u-par:21;}[data-ufk~="22p"]{--u-par:22;}[data-ufk~="23p"]{--u-par:23;}[data-ufk~="24p"]{--u-par:24;}
 
+/* Kap alanının genişliğini hesaplama */
 [data-ufk]{  flex-basis: calc(100% / var(--u-par) * var(--u-parca));  width: calc(100% / var(--u-par) * var(--u-parca)); }
 
+/* Kap alanı genişliğini esnek yapmak */
 [data-ufk~="0p"]{flex-basis: auto;}
 
+/* Kap alanı genişliğini esnek oran yöntemiyle kullanmak */
 [data-ufk~="0o"]  {  flex: 0; }
 [data-ufk~="1o"]  { flex: 1; } [data-ufk~="2o"]  { flex: 2; } [data-ufk~="3o"]  { flex: 3; } [data-ufk~="4o"]  { flex: 4; }
 [data-ufk~="5o"]  { flex: 5; } [data-ufk~="6o"]  { flex: 6; } [data-ufk~="7o"]  { flex: 7; } [data-ufk~="8o"]  { flex: 8; }
@@ -185,8 +201,13 @@ body{
 }
 @media screen and (min-width: 48em){
 /* Dizüstü ve büyük: data-ort + */
+
+/* Kap alanını gizleme sınıfı */
 [data-ort~="gizli"]{display: none;}
+/* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
 [data-ort]:not([data-ort~="gizli"]){display: flex;}
+
+/* Kap alanını parça değerlerini aktarma */
 [data-ort~="1"]{--o-parca:1;}[data-ort~="2"]{--o-parca:2;}[data-ort~="3"]{--o-parca:3;}[data-ort~="4"]{--o-parca:4;}
 [data-ort~="5"]{--o-parca:5;}[data-ort~="6"]{--o-parca:6;}[data-ort~="7"]{--o-parca:7;}[data-ort~="8"]{--o-parca:8;}
 [data-ort~="9"]{--o-parca:9;}[data-ort~="10"]{--o-parca:10;}[data-ort~="11"]{--o-parca:11;}[data-ort~="12"]{--o-parca:12;}
@@ -194,6 +215,7 @@ body{
 [data-ort~="17"]{--o-parca:17;}[data-ort~="18"]{--o-parca:18;}[data-ort~="19"]{--o-parca:19;}[data-ort~="20"]{--o-parca:20;}
 [data-ort~="21"]{--o-parca:21;}[data-ort~="22"]{--o-parca:22;}[data-ort~="23"]{--o-parca:23;}[data-ort~="24"]{--o-parca:24;}
 
+/* Kap alanını parça düzeni değerlerini aktarma */
 [data-ort~="1p"]{--o-par:1;}[data-ort~="2p"]{--o-par:2;}[data-ort~="3p"]{--o-par:3;}[data-ort~="4p"]{--o-par:4;}
 [data-ort~="5p"]{--o-par:5;}[data-ort~="6p"]{--o-par:6;}[data-ort~="7p"]{--o-par:7;}[data-ort~="8p"]{--o-par:8;}
 [data-ort~="9p"]{--o-par:9;}[data-ort~="10p"]{--o-par:10;}[data-ort~="11p"]{--o-par:11;}[data-ort~="12p"]{--o-par:12;}
@@ -201,10 +223,13 @@ body{
 [data-ort~="17p"]{--o-par:17;}[data-ort~="18p"]{--o-par:18;}[data-ort~="19p"]{--o-par:19;}[data-ort~="20p"]{--o-par:20;}
 [data-ort~="21p"]{--o-par:21;}[data-ort~="22p"]{--o-par:22;}[data-ort~="23p"]{--o-par:23;}[data-ort~="24p"]{--o-par:24;}
 
+/* Kap alanının genişliğini hesaplama */
 [data-ort]{  flex-basis: calc(100% / var(--o-par) * var(--o-parca));  width: calc(100% / var(--o-par) * var(--o-parca)); }
 
+/* Kap alanı genişliğini esnek yapmak */
 [data-ort~="0p"]{flex-basis: auto;}
 
+/* Kap alanı genişliğini esnek oran yöntemiyle kullanmak */
 [data-ort~="0o"]  {  flex: 0; }
 [data-ort~="1o"]  { flex: 1; }  [data-ort~="2o"]  { flex: 2; }  [data-ort~="3o"]  { flex: 3; }  [data-ort~="4o"]  { flex: 4; }
 [data-ort~="5o"]  { flex: 5; }  [data-ort~="6o"]  { flex: 6; }  [data-ort~="7o"]  { flex: 7; }  [data-ort~="8o"]  { flex: 8; }
@@ -216,8 +241,13 @@ body{
 
 @media screen and (min-width: 64em){
 /* Büyükler: data-byk + */
+
+/* Kap alanını gizleme sınıfı */
 [data-byk~="gizli"]{display: none;}
+/* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
 [data-byk]:not([data-byk~="gizli"]){display: flex;}
+
+/* Kap alanını parça değerlerini aktarma */
 [data-byk~="1"]{--b-parca:1;}[data-byk~="2"]{--b-parca:2;}[data-byk~="3"]{--b-parca:3;}[data-byk~="4"]{--b-parca:4;}
 [data-byk~="5"]{--b-parca:5;}[data-byk~="6"]{--b-parca:6;}[data-byk~="7"]{--b-parca:7;}[data-byk~="8"]{--b-parca:8;}
 [data-byk~="9"]{--b-parca:9;}[data-byk~="10"]{--b-parca:10;}[data-byk~="11"]{--b-parca:11;}[data-byk~="12"]{--b-parca:12;}
@@ -225,6 +255,7 @@ body{
 [data-byk~="17"]{--b-parca:17;}[data-byk~="18"]{--b-parca:18;}[data-byk~="19"]{--b-parca:19;}[data-byk~="20"]{--b-parca:20;}
 [data-byk~="21"]{--b-parca:21;}[data-byk~="22"]{--b-parca:22;}[data-byk~="23"]{--b-parca:23;}[data-byk~="24"]{--b-parca:24;}
 
+/* Kap alanını parça düzeni değerlerini aktarma */
 [data-byk~="1p"]{--b-par:1;}[data-byk~="2p"]{--b-par:2;}[data-byk~="3p"]{--b-par:3;}[data-byk~="4p"]{--b-par:4;}
 [data-byk~="5p"]{--b-par:5;}[data-byk~="6p"]{--b-par:6;}[data-byk~="7p"]{--b-par:7;}[data-byk~="8p"]{--b-par:8;}
 [data-byk~="9p"]{--b-par:9;}[data-byk~="10p"]{--b-par:10;}[data-byk~="11p"]{--b-par:11;}[data-byk~="12p"]{--b-par:12;}
@@ -232,9 +263,13 @@ body{
 [data-byk~="17p"]{--b-par:17;}[data-byk~="18p"]{--b-par:18;}[data-byk~="19p"]{--b-par:19;}[data-byk~="20p"]{--b-par:20;}
 [data-byk~="21p"]{--b-par:21;}[data-byk~="22p"]{--b-par:22;}[data-byk~="23p"]{--b-par:23;}[data-byk~="24p"]{--b-par:24;}
 
+/* Kap alanının genişliğini hesaplama */
 [data-byk]{  flex-basis: calc(100% / var(--b-par) * var(--b-parca));  width: calc(100% / var(--b-par) * var(--b-parca)); }
+
+/* Kap alanı genişliğini esnek yapmak */
 [data-byk~="0p"]{flex-basis: auto;}
 
+/* Kap alanı genişliğini esnek oran yöntemiyle kullanmak */
 [data-byk~="0o"]  {  flex: 0; }
 [data-byk~="1o"]  { flex: 1; }  [data-byk~="2o"]  { flex: 2; }  [data-byk~="3o"]  { flex: 3; }  [data-byk~="4o"]  { flex: 4; }
 [data-byk~="5o"]  { flex: 5; }  [data-byk~="6o"]  { flex: 6; }  [data-byk~="7o"]  { flex: 7; }  [data-byk~="8o"]  { flex: 8; }
