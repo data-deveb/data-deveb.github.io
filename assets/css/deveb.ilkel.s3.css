@@ -558,7 +558,7 @@ ul{
 }
 @media screen and (min-width: 48em){
    /* Dizüstü ve büyük: ort + */
-  .kaplama{
+  [data-deveb~="kaplama"]{
      max-width:980px !important;
    }
   [data-ort]{display:flex;}
