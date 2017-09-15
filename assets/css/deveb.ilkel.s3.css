@@ -478,11 +478,12 @@ ul[data-deveb]{
 
 /* KAP PARÇA YÖNTEMİ */
 /* gnl, byk, ort, kçk, ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
-.kap,[data-gnl],[data-byk],[data-ort],[kçk],[data-ufk]{
+[data-deveb~="kap"],[data-gnl],[data-byk],[data-ort],[kçk],[data-ufk]{
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;}
-.kaplama{
+  
+[data-deveb~="kaplama"]{
   width: 100%;
   margin-right: auto;
   margin-left: auto;
