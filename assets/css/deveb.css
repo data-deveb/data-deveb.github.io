@@ -27,6 +27,8 @@
   --yazı-biçimi:'Roboto', sans-serif;
   --yazı-boyutu:11pt;
 
+  --kaplama:980px !important;
+
   /* Kap örgüsü varsayılan genişlik */
   --par:12;--parça:1;
   --u-par:12;--u-parça:1;
@@ -62,6 +64,13 @@ a{
   /* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
   text-decoration: none;
 }
+
+a, button, input, textarea {
+  /* Sınır çizgilerini sıfırlama ayarı */
+    outline: 0;
+}
+
+/* Başlık ayarları */
 h1, h2, h3, h4, h5, h6{
   /* Her bulunduğu yerin genişliğinde olması ayarı */
   width: 100%;
@@ -72,19 +81,40 @@ h1, h2, h3, h4, h5, h6{
     -webkit-margin-end: 0px;
   /* Başlıkları varsayılan olarak kalın yapma ayarı */
   font-weight: bold;
+  margin:1rem 0 0.5rem 0;
+  color:#111;
 }
+h1{font-size: 2.4rem;}
+h2{font-size: 1.6rem;}
+h3{font-size: 1.2rem;}
+
 img {
-    border: 0;
+  /* Kenarlıkları sıfırlama */
+  border: 0;
 }
 
 /* Deveb Varsayılan */
 body{
   /* Her yerde varsayılan yazı biçimi */
 	font-family: var(--yazı-biçimi);
-  /* Her yerde varsayılan yazı boyutu */
+  /* Her yerde varsayılan yazı boyutu ve tipi */
     font-size: var(--yazı-boyutu);
+    font-weight: 300;
 }
+/* Paragraf ayarları */
+p{display: block; width:100%;}
+  /* İki paragraf arasına mesafe verme ayarı */
+  p+p{margin-top:1rem;}
 
+/* Liste ayarları */
+ul{
+  padding:0;
+  margin:0;
+}
+  /* Liste tipini temizleme ayarı */
+  ul li{
+    list-style-type: none;
+  }
 /* ==========================================================================
     KAP ÖRGÜSÜ
     'Display:flex' yöntemiyle geliştirilen kap örgüsü.
@@ -234,7 +264,7 @@ body{
 @media screen and (min-width: 48em){
 /* Kap alanının en fazla genişlik ölçüsünü sabitler */
 [data-deveb~="kaplama"]{
-   max-width:980px !important;
+   max-width:var(--kaplama);
  }
 /* Kap alanını gizleme sınıfı */
 [data-ort~="gizli"]{display: none;}
