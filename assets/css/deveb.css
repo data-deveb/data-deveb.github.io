@@ -193,7 +193,7 @@ ul{
 [data-gnl~="21p"]{--par:21;}[data-gnl~="22p"]{--par:22;}[data-gnl~="23p"]{--par:23;}[data-gnl~="24p"]{--par:24;}
 
 /* Kap alanının genişliğini hesaplama */
-[data-gnl]{flex-basis: calc(100% / var(--par) * var(--parca));      width: calc(100% / var(--par) * var(--parca));}
+[data-gnl]{flex-basis: calc(100% / var(--par) * var(--parca));      max-width: calc(100% / var(--par) * var(--parca));}
 /* Kap alanının sütunlara bölme */
 [data-gnl~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
 [data-deveb~="ortada"][data-gnl~="sütun"] > [data-gnl]{
@@ -239,7 +239,7 @@ ul{
 [data-ufk~="21p"]{--u-par:21;}[data-ufk~="22p"]{--u-par:22;}[data-ufk~="23p"]{--u-par:23;}[data-ufk~="24p"]{--u-par:24;}
 
 /* Kap alanının genişliğini hesaplama */
-[data-ufk]{flex-basis: calc(100% / var(--u-par) * var(--u-parca));  width: calc(100% / var(--u-par) * var(--u-parca));}
+[data-ufk]{flex-basis: calc(100% / var(--u-par) * var(--u-parca));  max-width: calc(100% / var(--u-par) * var(--u-parca));}
 /* Kap alanının sütunlara bölme */
 [data-ufk~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
 [data-deveb~="ortada"][data-ufk~="sütun"] > [data-ufk]{
@@ -288,7 +288,7 @@ ul{
 [data-ort~="21p"]{--o-par:21;}[data-ort~="22p"]{--o-par:22;}[data-ort~="23p"]{--o-par:23;}[data-ort~="24p"]{--o-par:24;}
 
 /* Kap alanının genişliğini hesaplama */
-[data-ort]{flex-basis: calc(100% / var(--o-par) * var(--o-parca));  width: calc(100% / var(--o-par) * var(--o-parca));}
+[data-ort]{flex-basis: calc(100% / var(--o-par) * var(--o-parca));  max-width: calc(100% / var(--o-par) * var(--o-parca));}
 /* Kap alanının sütunlara bölme */
 [data-ort~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
 [data-deveb~="ortada"][data-ort~="sütun"] > [data-ort]{
@@ -333,7 +333,7 @@ ul{
 [data-byk~="21p"]{--b-par:21;}[data-byk~="22p"]{--b-par:22;}[data-byk~="23p"]{--b-par:23;}[data-byk~="24p"]{--b-par:24;}
 
 /* Kap alanının genişliğini hesaplama */
-[data-byk]{flex-basis: calc(100% / var(--b-par) * var(--b-parca));  width: calc(100% / var(--b-par) * var(--b-parca));}
+[data-byk]{flex-basis: calc(100% / var(--b-par) * var(--b-parca));  max-width: calc(100% / var(--b-par) * var(--b-parca));}
 /* Kap alanının sütunlara bölme */
 [data-byk~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
 [data-deveb~="ortada"][data-byk~="sütun"] > [data-byk]{
