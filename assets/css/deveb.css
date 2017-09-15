@@ -105,8 +105,8 @@ body{
 [data-deveb~="üstte"]{align-items: flex-start;}
 [data-deveb~="göbekte"]{align-items: center;}
 [data-deveb~="altta"]{align-items: flex-end;}
-[data-deveb~="üstte-ol"]{align-self: flex-end;}
-[data-deveb~="göbekte-ol"]{align-self: flex-end;}
+[data-deveb~="üstte-ol"]{align-self: flex-start;}
+[data-deveb~="göbekte-ol"]{align-self: center;}
 [data-deveb~="altta-ol"]{align-self: flex-end;}
 
 [data-deveb~="ger"]{justify-content: space-between;}
