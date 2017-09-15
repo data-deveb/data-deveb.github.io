@@ -1,4 +1,4 @@
-/*! [DEVEB SÜRÜM 0.1] | dosya:: "deveb.s0.11.css" */
+/*! [DEVEB SÜRÜM 0.11] | dosya:: "deveb.s0.1.css" */
 
 /*
   TANIMLAMALAR
@@ -53,16 +53,17 @@ menu,main,nav{
   display: block;
 }
 a{
+  /* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
   text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6{
   /* Her durumda satır genişliğinide olması ayarı */
-	width: 100%;
+  width: 100%;
   display: block;
   -webkit-margin-before: 0;
-      -webkit-margin-after: 0;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
   /* Başlıkları varsayılan olarak kalın yapma ayarı */
   font-weight: bold;
 }
