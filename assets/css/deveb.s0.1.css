@@ -25,8 +25,13 @@
 :root{
   --yazı-biçimi:'Roboto', sans-serif;
   --yazı-boyutu:11pt;
-}
 
+  /* Kap örgüsü varsayılan genişlik */
+  --par:12;--parça:12;
+  --u-par:12;--u-parça:12;
+  --o-par:12;--o-parça:12;
+  --b-par:12;--b-parça:12;
+}
 /*  Temizleme
     ==========================================================================*/
 /** Varsayılan değiştirgeleri temizleme eylemi. */
@@ -122,6 +127,11 @@ body{
   flex-flow: row wrap;
   /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
   box-sizing: border-box;
+}
+[data-deveb~="kaplama"]{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* TÜM EKRANLAR [data-gnl] */
