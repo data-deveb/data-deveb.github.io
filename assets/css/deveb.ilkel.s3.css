@@ -66,11 +66,6 @@ ul{
 [data-deveb~="yuvarlak-2"]{border-radius:8px;}
 [data-deveb~="yuvarlak-3"]{border-radius:10px;}
 
-ul[data-deveb]{
-  padding:0 0 0 2rem;
-  margin:1rem;
-}
-
 /* ==========================================================================
     RESİM ÖRGÜSÜ s0.1
     Katkıda Bulunanlar
@@ -482,7 +477,7 @@ ul[data-deveb]{
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;}
-  
+
 [data-deveb~="kaplama"]{
   width: 100%;
   margin-right: auto;
