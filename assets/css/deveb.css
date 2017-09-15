@@ -326,13 +326,11 @@ body{
 /* ==========================================================================
     RENK ÖRGÜSÜ s0.4
     Ayırt etmek için önceden belirlenmiş renk grupları.
-    arka- | kenar- | metin-
+    data-arka | data-metin | data-kenar
 
-    renkler-birincil-serbest-engelli-uygun-uygunsuz-olumlu-olumsuz-tehlikeli-bilgi-belirsiz-yasak-uyarı
-    Pembe: Pink, Violet, Purple, Indigo, Mavi: Blue, Teal, Yeşil: Green, Turuncu: Orange, Kahverengi: Brown, Gri: Grey, Slate
-
-    dolgular: 900-800-700-600-500-400-300-200-100
-    tonlar: en-parlak çok-parlak parlak az-parlak normal az-soluk soluk çok-soluk en-soluk
+    RENKLER: ana | ara | birincil | ikincil
+    DOLGULAR: 900-800-700-600-500-400-300-200-100
+    TONLAR: en-parlak çok-parlak parlak az-parlak normal az-soluk soluk çok-soluk en-soluk
 -------------------------------------------------------------------------- */
 :root{
   /* 0 ile 360 değeri arasında değerleri kullanarak renklerinizi belirtin. hsl yapısı kullanılmaktadır. */
