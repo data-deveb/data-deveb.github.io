@@ -108,9 +108,12 @@ body{
 [data-deveb~="üstte"]{align-items: flex-start;}
 [data-deveb~="göbekte"]{align-items: center;}
 [data-deveb~="altta"]{align-items: flex-end;}
-[data-deveb~="üstte-ol"]{align-self: flex-start;}
-[data-deveb~="göbekte-ol"]{align-self: center;}
-[data-deveb~="altta-ol"]{align-self: flex-end;}
+[data-deveb~="üstte-ol"]{align-self: flex-start !important;}
+[data-deveb~="göbekte-ol"]{align-self: center !important;}
+[data-deveb~="altta-ol"]{align-self: flex-end !important;}
+[data-deveb~="sağda-ol"]{margin-left:auto; align-self:flex-start;}
+[data-deveb~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+[data-deveb~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
 
 [data-deveb~="ger"]{justify-content: space-between;}
 [data-deveb~="yay"]{justify-content: space-around;}
