@@ -27,7 +27,7 @@
   --yazı-biçimi:'Roboto', sans-serif;
   --yazı-boyutu:11pt;
 
-  --kaplama:980px !important;
+  --kaplama:980px;
 
   /* Kap örgüsü varsayılan genişlik */
   --par:12;--parça:1;
@@ -262,7 +262,7 @@ ul{
 @media screen and (min-width: 48em){
 /* Kap alanının en fazla genişlik ölçüsünü sabitler */
 [data-deveb~="kaplama"]{
-   max-width:var(--kaplama);
+   max-width:var(--kaplama) !important;
  }
 /* Kap alanını gizleme sınıfı */
 [data-deveb~="ort-gizli"]{display: none;}
