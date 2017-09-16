@@ -5,6 +5,7 @@ pre{
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	width: 100%;
+	overflow-x: auto;
 }
 .header{min-height: 75px;}
 .menu
