@@ -237,7 +237,7 @@ ul{
 [data-deveb~="ufk-21p"]{--u-par:21;}[data-deveb~="ufk-22p"]{--u-par:22;}[data-deveb~="ufk-23p"]{--u-par:23;}[data-deveb~="ufk-24p"]{--u-par:24;}
 
 /* Kap alanının genişliğini hesaplama */
-[data-deveb]{flex-basis: calc(100% / var(--u-par) * var(--u-parca));  max-width: calc(100% / var(--u-par) * var(--u-parca));}
+[data-deveb*="ufk-"]{flex-basis: calc(100% / var(--u-par) * var(--u-parca));  max-width: calc(100% / var(--u-par) * var(--u-parca));}
 /* Kap alanının sütunlara bölme */
 [data-deveb~="ufk-sütun"]{display:block; width: 100%; column-count: var(--parca);}
 [data-deveb~="ortada"][data-deveb~="ufk-sütun"] > [data-ufk]{
@@ -286,7 +286,7 @@ ul{
 [data-deveb~="ort-21p"]{--o-par:21;}[data-deveb~="ort-22p"]{--o-par:22;}[data-deveb~="ort-23p"]{--o-par:23;}[data-deveb~="ort-24p"]{--o-par:24;}
 
 /* Kap alanının genişliğini hesaplama */
-[data-deveb]{flex-basis: calc(100% / var(--o-par) * var(--o-parca));  max-width: calc(100% / var(--o-par) * var(--o-parca));}
+[data-deveb*="ort-"]{flex-basis: calc(100% / var(--o-par) * var(--o-parca));  max-width: calc(100% / var(--o-par) * var(--o-parca));}
 /* Kap alanının sütunlara bölme */
 [data-deveb~="ort-sütun"]{display:block; width: 100%; column-count: var(--parca);}
 [data-deveb~="ortada"][data-deveb~="ort-sütun"] > [data-ort]{
@@ -331,7 +331,7 @@ ul{
 [data-deveb~="byk-21p"]{--b-par:21;}[data-deveb~="byk-22p"]{--b-par:22;}[data-deveb~="byk-23p"]{--b-par:23;}[data-deveb~="byk-24p"]{--b-par:24;}
 
 /* Kap alanının genişliğini hesaplama */
-[data-deveb]{flex-basis: calc(100% / var(--b-par) * var(--b-parca));  max-width: calc(100% / var(--b-par) * var(--b-parca));}
+[data-deveb*="byk-"]{flex-basis: calc(100% / var(--b-par) * var(--b-parca));  max-width: calc(100% / var(--b-par) * var(--b-parca));}
 /* Kap alanının sütunlara bölme */
 [data-deveb~="byk-sütun"]{display:block; width: 100%; column-count: var(--parca);}
 [data-deveb~="ortada"][data-deveb~="byk-sütun"] > [data-byk]{
