@@ -29,6 +29,11 @@
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
+[data-btn~="metin"]{
+  padding:0;
+  border-radius: 0;
+  border:0;
+}
 [data-btn~="genel"]{}
 [href][data-btn~="genel"]{
 	border:1px solid #ddd;
@@ -37,7 +42,7 @@
 [data-btn~="engelli"]{
   pointer-events: none;
   opacity: 0.6;
-  background-color:#efefef !important;
+  color:#aaa;
 }
 /* ==========================================================================
     GENEL DEVEB ETKİLERİ
