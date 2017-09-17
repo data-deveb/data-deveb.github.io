@@ -34,12 +34,19 @@
   border-radius: 0;
   border:0;
 }
-[data-btn~="genel"]{}
+[data-btn~="genel"]{
+  background-color:#0275d8;
+  color:#fff;
+}
+[data-btn~="genel"]:hover{
+  background-color: #025aa5;
+}
 [href][data-btn~="genel"]{
 	border:1px solid #ddd;
 	background-color: #fff;
+  color:#0275d8;
 }
-[data-btn~="engelli"]{
+[href][data-btn~="engelli"]{
   pointer-events: none;
   opacity: 0.6;
   color:#aaa;
