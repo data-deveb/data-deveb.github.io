@@ -5,6 +5,40 @@
     Yeni gelen özellikler bu css dosyasında bulunmakta ve geliştirilmektedir.
 ========================================================================== */
 
+/* ==========================================================================
+    Butonlar
+-------------------------------------------------------------------------- */
+[data-btn]{
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	    border-top-color: transparent;
+	    border-right-color: transparent;
+	    border-bottom-color: transparent;
+	    border-left-color: transparent;
+	padding: .5rem 1rem;
+	font-size: 1rem;
+	border-radius: .25rem;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+[data-btn~="genel"]{}
+[href][data-btn~="genel"]{
+	border:1px solid #2c1166;
+	background-color: #2c2171;
+	color:#fff;
+}
+[href][data-btn~="genel"]:hover{
+	background-color: #2c1166;
+}
+
 
 /* ==========================================================================
     GENEL DEVEB ETKİLERİ
