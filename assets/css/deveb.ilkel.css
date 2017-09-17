@@ -34,10 +34,6 @@
 	border:1px solid #ddd;
 	background-color: #fff;
 }
-[href][data-btn~="genel"]:hover{
-	background-color: #2c1166;
-}
-
 
 /* ==========================================================================
     GENEL DEVEB ETKİLERİ
