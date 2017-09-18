@@ -126,7 +126,6 @@ ul{
   flex-flow: row wrap;
   /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
   box-sizing: border-box;
-  align-items: flex-start;
 }
 
 /* Konumlama */
