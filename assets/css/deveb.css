@@ -118,6 +118,16 @@ ul{
     'Display:flex' yöntemiyle geliştirilen kap örgüsü.
     * data-gnl, data-byk, data-ort, data-ufk ekran genişlikleri için kullanılan özel nitelikler.
 ========================================================================== */
+/* Genel Ayarlar */
+[data-deveb~="kap"],[data-gnl],[data-byk],[data-ort],[data-ufk]{
+  /* Her durumda esnek görünüm tanımlama ayarı */
+  display: flex;
+  /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+  flex-flow: row wrap;
+  /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+  box-sizing: border-box;
+  align-items: flex-start;
+}
 
 /* Konumlama */
 [data-deveb~="taşma"]{overflow: hidden;}
@@ -153,16 +163,7 @@ ul{
 
 [data-deveb~="gizli"]{display: none !important;}
 
-/* KAP ÖLÇEKLEMELER */
-[data-deveb~="kap"],[data-gnl],[data-byk],[data-ort],[data-ufk]{
-  /* Her durumda esnek görünüm tanımlama ayarı */
-  display: flex;
-  /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-  flex-flow: row wrap;
-  /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
-  box-sizing: border-box;
-  align-items: flex-start;
-}
+
 [data-deveb~="kaplama"]{
   width: 100%;
   margin-right: auto;

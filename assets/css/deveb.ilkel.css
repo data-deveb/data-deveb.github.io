@@ -51,8 +51,23 @@
   opacity: 0.6;
   color:#aaa;
 }
+[data-btn~="dev"]{
+  padding: 1rem 3rem;
+  font-size:16pt;
+}
 [data-btn~="byk"]{
+  padding: 1rem 3rem;
+}
+[data-btn~="ort"]{
   padding: .8rem 2rem;
+}
+[data-btn~="ufk"]{
+  padding: .3rem .7rem;
+  font-size:10pt;
+}
+[data-btn~="mnk"]{
+  padding: .15rem .5rem;
+  font-size:9pt;
 }
 /* ==========================================================================
     GENEL DEVEB ETKİLERİ
