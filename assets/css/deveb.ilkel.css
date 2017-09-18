@@ -69,6 +69,9 @@
   padding: .15rem .5rem;
   font-size:9pt;
 }
+[data-btn]:not([data-btn~="engelli"]),[data-btn]:not(:disabled){
+  cursor: pointer;
+}
 /* ==========================================================================
     GENEL DEVEB ETKİLERİ
 -------------------------------------------------------------------------- */
