@@ -8,7 +8,7 @@
 /* ==========================================================================
     Butonlar
 -------------------------------------------------------------------------- */
-[data-btn]{
+[data-tuş]{
 	display: inline-block;
 	text-align: center;
 	white-space: nowrap;
@@ -29,47 +29,47 @@
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
-[data-btn~="metin"]{
+[data-tuş~="metin"]{
   padding:0;
   border-radius: 0;
   border:0;
 }
-[data-btn~="genel"]{
+[data-tuş~="genel"]{
   background-color:#0275d8;
   color:#fff;
 }
-[data-btn~="genel"]:hover{
+[data-tuş~="genel"]:hover{
   background-color: #025aa5;
 }
-[href][data-btn~="genel"]{
+[href][data-tuş~="genel"]{
 	border:1px solid #ddd;
 	background-color: #fff;
   color:#0275d8;
 }
-[data-btn~="engelli"]{
+[data-tuş~="engelli"]{
   pointer-events: none;
   opacity: 0.6;
   color:#aaa;
 }
-[data-btn~="dev"]{
+[data-tuş~="dev"]{
   padding: 1rem 3rem;
   font-size:16pt;
 }
-[data-btn~="byk"]{
+[data-tuş~="byk"]{
   padding: 1rem 3rem;
 }
-[data-btn~="ort"]{
+[data-tuş~="ort"]{
   padding: .8rem 2rem;
 }
-[data-btn~="ufk"]{
+[data-tuş~="ufk"]{
   padding: .3rem .7rem;
   font-size:10pt;
 }
-[data-btn~="mnk"]{
+[data-tuş~="mnk"]{
   padding: .15rem .5rem;
   font-size:9pt;
 }
-[data-btn]:not([data-btn~="engelli"]),[data-btn]:not(:disabled){
+[data-tuş]:not([data-tuş~="engelli"]),[data-tuş]:not(:disabled){
   cursor: pointer;
 }
 /* ==========================================================================
