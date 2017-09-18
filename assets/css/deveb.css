@@ -161,7 +161,7 @@ ul{
   flex-flow: row wrap;
   /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
   box-sizing: border-box;
-  justify-content: flex-start;
+  align-items: flex-start;
 }
 [data-deveb~="kaplama"]{
   width: 100%;
