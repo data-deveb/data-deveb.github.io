@@ -90,7 +90,9 @@ img {
   /* Kenarlıkları sıfırlama */
   border: 0;
 }
-
+table{
+  display: table !important;
+}
 /* Deveb Varsayılan */
 body{
   /* Her yerde varsayılan yazı biçimi */
