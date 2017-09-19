@@ -250,6 +250,7 @@ ul{
 
 /* Kap alanı genişliğini esnek yapmak */
 [data-ufk~="0p"]{flex-basis: auto;}
+[data-ufk~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
 /* Kap alanı genişliğini esnek oran yöntemiyle kullanmak */
 [data-ufk~="0o"] {flex: 0;}
@@ -299,6 +300,7 @@ ul{
 
 /* Kap alanı genişliğini esnek yapmak */
 [data-ort~="0p"]{flex-basis: auto;}
+[data-ort~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
 /* Kap alanı genişliğini esnek oran yöntemiyle kullanmak */
 [data-ort~="0o"] {flex: 0;}
@@ -344,6 +346,7 @@ ul{
 
 /* Kap alanı genişliğini esnek yapmak */
 [data-byk~="0p"]{flex-basis: auto;}
+[data-byk~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
 /* Kap alanı genişliğini esnek oran yöntemiyle kullanmak */
 [data-byk~="0o"]{flex: 0;}
