@@ -171,7 +171,7 @@ ul{
   margin-left: auto;
 }
 
-/* TÜM EKRANLAR [data-gnl] */
+/* TÜM EKRANLAR: 0px < data-gnl + */
 /* KAP ÖRGÜSÜ : Parça Yöntemi */
 
 /* Kap alanını gizleme sınıfı */
@@ -217,7 +217,7 @@ ul{
 [data-gnl~="21o"]{flex: 21;}[data-gnl~="22o"]{flex: 22;}[data-gnl~="23o"]{flex: 23;}[data-gnl~="24o"]{flex: 24;}
 
 @media screen and (min-width: 35.5em){
-/* UFAK: data-ufk+ */
+/* UFAK: 568px <= data-ufk+ */
 
 /* Kap alanını gizleme sınıfı */
 [data-ufk~="gizli"]{display: none;}
@@ -263,7 +263,7 @@ ul{
 
 }
 
-/* Dizüstü ve büyük: data-ort + */
+/* Dizüstü ve büyük: 768px <= data-ort + */
 @media screen and (min-width: 48em){
 /* Kap alanının en fazla genişlik ölçüsünü sabitler */
 [data-deveb~="kaplama"]{
@@ -312,7 +312,7 @@ ul{
 [data-ort~="21o"]{flex: 21;}[data-ort~="22o"]{flex: 22;}[data-ort~="23o"]{flex: 23;}[data-ort~="24o"]{flex: 24;}
 }
 
-/* Büyükler: data-byk + */
+/* Büyükler: 1024px <= data-byk + */
 @media screen and (min-width: 64em){
 
 /* Kap alanını gizleme sınıfı */

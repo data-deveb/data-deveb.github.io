@@ -1,9 +1,17 @@
+
 /* ==========================================================================
 
     deveb (ilkel-sürüm 3.0.18)
 
     Yeni gelen özellikler bu css dosyasında bulunmakta ve geliştirilmektedir.
 ========================================================================== */
+
+@media screen and (max-width: 567px){}
+@media screen and (min-width: 568px) and (max-width:767px){}
+@media screen and (min-width: 768px) and (max-width:1023px){}
+@media screen and (min-width: 1024px){}
+
+
 
 /* ==========================================================================
     Butonlar
