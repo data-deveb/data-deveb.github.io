@@ -28,22 +28,22 @@
   <div data-deveb="kaplama ortada" data-gnl="24 24p" data-ort="24 24p">
 
     <div data-gnl="23">
-      <h1>Metin Bağı</h1>
+      <h2>Metin Bağı</h2>
       <a data-bağ="metin" href="#">BAĞ</a>&nbsp;
       <a data-bağ="metin engelli" href="#">BAĞ engelli</a>
     </div>
     <div data-gnl="23">
-      <h1>Basmalı Metin Bağı</h1>
+      <h2>Basmalı Metin Bağı</h2>
       <a data-bağ="genel" href="#">BAĞ</a>&nbsp;
       <a data-bağ="genel engelli" href="#">BAĞ engelli</a>
     </div>
     <div data-gnl="23">
-      <h1>Basma Bağ - Tekil</h1>
+      <h2>Basma Bağ - Tekil</h2>
       <button data-bağ="genel" type="button" name="button">genel</button>&nbsp;
       <button data-bağ="genel engelli" type="button" name="button">genel engelli</button>
     </div>
     <div data-deveb="göbekte" data-gnl="23">
-      <h1>Boyutlarına Göre Basmalar</h1>
+      <h2>Boyutlarına Göre Basma Bağları</h2>
       <button data-bağ="genel mnk" type="button" name="button">data-bağ="genel mnk"</button>&nbsp;
       <button data-bağ="genel ufk" type="button" name="button">data-bağ="genel ufk"</button>&nbsp;
       <button data-bağ="genel" type="button" name="button">data-bağ="genel"</button>&nbsp;
@@ -52,6 +52,36 @@
       <button data-bağ="genel dev" type="button" name="button">data-bağ="genel dev"</button>&nbsp;
     </div>
 
+    <div data-gnl="23">
+      <h2>Basmal Bağlar</h2>
+      <ul class="tg-list">
+        <li class="tg-list-item">
+          <h4>Hafif</h4>
+          <input class="tgl tgl-light" id="cb1" type="checkbox"/>
+          <label class="tgl-btn" for="cb1"></label>
+        </li>
+        <li class="tg-list-item">
+          <h4>Yumuşak</h4>
+          <input class="tgl tgl-ios" id="cb2" type="checkbox"/>
+          <label class="tgl-btn" for="cb2"></label>
+        </li>
+        <li class="tg-list-item">
+          <h4>Eğri</h4>
+          <input class="tgl tgl-skewed" id="cb3" type="checkbox"/>
+          <label class="tgl-btn" data-tg-off="KAPALI" data-tg-on="AÇIK" for="cb3"></label>
+        </li>
+        <li class="tg-list-item">
+          <h4>Yassı</h4>
+          <input class="tgl tgl-flat" id="cb4" type="checkbox"/>
+          <label class="tgl-btn" for="cb4"></label>
+        </li>
+        <li class="tg-list-item">
+          <h4>Çevrik</h4>
+          <input class="tgl tgl-flip" id="cb5" type="checkbox"/>
+          <label class="tgl-btn" data-tg-off="Hayır" data-tg-on="Evet" for="cb5"></label>
+        </li>
+      </ul>
+    </div>
   </div>
   <div data-gnl="1 1p" w3-include-html="/temel/foot.html"></div>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
