@@ -323,7 +323,7 @@ input[data-bağ~="çevrik"][data-bağ~="dev"]+label{	 font-size: 16pt;	width:6em
 
 input[data-bağ~="simge"] + label{
 	border-radius: 50%;
-	background-color: #d2d2d2;
+	background-color: #fff;
 	height:30px;
 	width: 30px;
 	display: flex;
@@ -331,7 +331,8 @@ input[data-bağ~="simge"] + label{
 	justify-content: center;
 	-webkit-transition: all .2s ease;
 	transition: all .2s ease;
-	border:1px solid #555;
+	border:3px solid #d2d2d2;
+	color:#d2d2d2;
 }
 input[data-bağ~="simge"] + label::after{
 display: none;
@@ -339,6 +340,7 @@ display: none;
 input[data-bağ~="simge"]:checked + label{
 background-color: green;
 color:#fff;
+border-color: #0B610B;
 }
 input[data-bağ~="simge"][data-bağ~="çapraz"]:checked + label *:first-child,
 input[data-bağ~="simge"][data-bağ~="çapraz"] + label *:last-child{
@@ -348,8 +350,8 @@ input[data-bağ~="simge"][data-bağ~="çapraz"] + label *:first-child,
 input[data-bağ~="simge"][data-bağ~="çapraz"]:checked + label *:last-child{
 	display: inline-block;
 }
-input[data-bağ~="simge"][data-bağ~="mnk"]+label{  font-size: 10pt;	width:2em;	height: 2em;}
-input[data-bağ~="simge"][data-bağ~="ufk"]+label{  font-size: 12pt;	width:2em;	height: 2em;}
+input[data-bağ~="simge"][data-bağ~="mnk"]+label{  border-width: 2px; font-size: 10pt;	width:2em;	height: 2em;}
+input[data-bağ~="simge"][data-bağ~="ufk"]+label{ border-width: 2px; font-size: 12pt;	width:2em;	height: 2em;}
 input[data-bağ~="simge"]+label{  font-size: 14pt;	width:2em;	height: 2em;}
 input[data-bağ~="simge"][data-bağ~="ort"]+label{	 font-size: 16pt;	width:2em;	height: 2em;}
 input[data-bağ~="simge"][data-bağ~="byk"]+label{  font-size: 20pt;	width:2em;	height: 2em;}
