@@ -103,12 +103,15 @@ input[data-bağ]+label{
 			-ms-user-select: none;
 					user-select: none;
 }
+input[data-bağ] + label:after {left: 0;}
+input[data-bağ]:checked + label:after {left: 50%;}
+
 input[data-bağ~="mnk"]+label{	width: 2em;	height: 1em;}
 input[data-bağ~="ufk"]+label{	width: 3em;	height: 1.5em;}
 input[data-bağ~="ort"]+label{	width: 5em;	height: 2.5em;}
 input[data-bağ~="byk"]+label{	width: 6em;	height: 3em;}
 input[data-bağ~="dev"]+label{	width: 8em;	height: 4em;}
-input[data-bağ]+label:after{
+input[data-bağ~="hafif"]+label:after{
 	position: relative;
 	display: block;
 	content: "";
@@ -122,8 +125,7 @@ input[data-bağ~="hafif"] + label{
 	-webkit-transition: all .4s ease;
 	transition: all .4s ease;
 }
-input[data-bağ~="hafif"] + label:after {left: 0;}
-input[data-bağ~="hafif"]:checked + label:after {left: 50%;}
+
 
 input[data-bağ~="hafif"] + label:after{
 	border-radius: 50%;
@@ -135,6 +137,39 @@ input[data-bağ~="hafif"]:checked + label {
   background-color: green;
 }
 
+input[data-bağ~="yumuşak"] + label {
+  background: #fbfbfb;
+  border-radius: 2em;
+  padding: 2px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border: 1px solid #e8eae9;
+}
+input[data-bağ~="yumuşak"] + label:after {
+  border-radius: 2em;
+  background: #fbfbfb;
+  -webkit-transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+input[data-bağ~="yumuşak"] + label:hover:after {
+  will-change: padding;
+}
+input[data-bağ~="yumuşak"] + label:active {
+  box-shadow: inset 0 0 0 2em #e8eae9;
+}
+input[data-bağ~="yumuşak"] + label:active:after {
+  padding-right: .8em;
+}
+input[data-bağ~="yumuşak"]:checked + label {
+  background: #86d993;
+}
+input[data-bağ~="yumuşak"]:checked + label:active {
+  box-shadow: none;
+}
+input[data-bağ~="yumuşak"]:checked + label:active:after {
+  margin-left: -.8em;
+}
 
 
 .tgl {
