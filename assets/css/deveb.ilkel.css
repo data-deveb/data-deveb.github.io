@@ -103,15 +103,12 @@ input[data-bağ]+label{
 			-ms-user-select: none;
 					user-select: none;
 }
-input[data-bağ] + label:after {left: 0;}
-input[data-bağ]:checked + label:after {left: 50%;}
-
 input[data-bağ~="mnk"]+label{	width: 2em;	height: 1em;}
 input[data-bağ~="ufk"]+label{	width: 3em;	height: 1.5em;}
 input[data-bağ~="ort"]+label{	width: 5em;	height: 2.5em;}
 input[data-bağ~="byk"]+label{	width: 6em;	height: 3em;}
 input[data-bağ~="dev"]+label{	width: 8em;	height: 4em;}
-input[data-bağ~="hafif"]+label:after{
+input[data-bağ]+label:after{
 	position: relative;
 	display: block;
 	content: "";
@@ -125,6 +122,9 @@ input[data-bağ~="hafif"] + label{
 	-webkit-transition: all .4s ease;
 	transition: all .4s ease;
 }
+input[data-bağ~="hafif"] + label:after {left: 0;}
+input[data-bağ~="hafif"]:checked + label:after {left: 50%;}
+
 input[data-bağ~="hafif"] + label:after{
 	border-radius: 50%;
   background: #fff;
