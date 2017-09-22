@@ -254,11 +254,12 @@ input[data-bağ~="yassı"]:checked + label:after {
   left: 50%;
   background: green;
 }
-input[data-bağ~="yassı"][data-bağ~="mnk"]+label{ border-width: 2px; font-size: 7pt;	width:4em;	height: 1.8em;}
-input[data-bağ~="yassı"][data-bağ~="ufk"]+label{ border-width: 3px; font-size: 9pt;	width:4.5em;	height: 1.8em;}
-input[data-bağ~="yassı"][data-bağ~="ort"]+label{	border-width: 4px; font-size: 12pt;	width:6em;	height: 1.8em;}
-input[data-bağ~="yassı"][data-bağ~="byk"]+label{ border-width: 5px; 	font-size: 14pt;	width:7em;	height: 1.8em;}
-input[data-bağ~="yassı"][data-bağ~="dev"]+label{	border-width: 6px; font-size: 16pt;	width:8em;	height: 1.8em;}
+input[data-bağ~="yassı"][data-bağ~="mnk"]+label{ border-width: 2px; font-size: 7pt;	width:3em;	height: 1.7em;}
+input[data-bağ~="yassı"][data-bağ~="ufk"]+label{ border-width: 3px; font-size: 9pt;	width:3.5em;	height: 1.8em;}
+input[data-bağ~="yassı"]+label{	border-width: 4px; font-size: 10pt;	width:4em;	height: 1.9em;}
+input[data-bağ~="yassı"][data-bağ~="ort"]+label{	border-width: 4px; font-size: 11pt;	width:4.5em;	height: 2em;}
+input[data-bağ~="yassı"][data-bağ~="byk"]+label{ border-width: 5px; 	font-size: 14pt;	width:5em;	height: 2.1em;}
+input[data-bağ~="yassı"][data-bağ~="dev"]+label{	border-width: 6px; font-size: 16pt;	width:5.5em;	height: 2.2em;}
 
 input[data-bağ~="çevrik"] + label {
   padding: 2px;
@@ -320,6 +321,39 @@ input[data-bağ~="çevrik"][data-bağ~="ort"]+label{	 font-size: 12pt;	width:5em
 input[data-bağ~="çevrik"][data-bağ~="byk"]+label{  	font-size: 14pt;	width:5em;	height: 1.8em;}
 input[data-bağ~="çevrik"][data-bağ~="dev"]+label{	 font-size: 16pt;	width:6em;	height: 1.8em;}
 
+input[data-bağ~="simge"] + label{
+	border-radius: 50%;
+	background-color: #d2d2d2;
+	height:30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	border:1px solid #555;
+}
+input[data-bağ~="simge"] + label::after{
+display: none;
+}
+input[data-bağ~="simge"]:checked + label{
+background-color: green;
+color:#fff;
+}
+input[data-bağ~="simge"][data-bağ~="çapraz"]:checked + label *:first-child,
+input[data-bağ~="simge"][data-bağ~="çapraz"] + label *:last-child{
+	display: none;
+}
+input[data-bağ~="simge"][data-bağ~="çapraz"] + label *:first-child,
+input[data-bağ~="simge"][data-bağ~="çapraz"]:checked + label *:last-child{
+	display: inline-block;
+}
+input[data-bağ~="simge"][data-bağ~="mnk"]+label{  font-size: 10pt;	width:2em;	height: 2em;}
+input[data-bağ~="simge"][data-bağ~="ufk"]+label{  font-size: 12pt;	width:2em;	height: 2em;}
+input[data-bağ~="simge"]+label{  font-size: 14pt;	width:2em;	height: 2em;}
+input[data-bağ~="simge"][data-bağ~="ort"]+label{	 font-size: 16pt;	width:2em;	height: 2em;}
+input[data-bağ~="simge"][data-bağ~="byk"]+label{  font-size: 20pt;	width:2em;	height: 2em;}
+input[data-bağ~="simge"][data-bağ~="dev"]+label{	 font-size: 24pt; width:2em;	height: 2em;}
 
 
 
