@@ -86,19 +86,56 @@
 }
 
 
-.tg-list {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+input[data-bağ]{
+	display: none;
+}
+input[data-bağ]+label{
+	outline: 0;
+	display: block;
+	width: 4em;
+	height: 2em;
+	padding:0;
+	margin:0;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+		 -moz-user-select: none;
+			-ms-user-select: none;
+					user-select: none;
+}
+input[data-bağ~="mnk"]+label{	width: 2em;	height: 1em;}
+input[data-bağ~="ufk"]+label{	width: 3em;	height: 1.5em;}
+input[data-bağ~="ort"]+label{	width: 5em;	height: 2.5em;}
+input[data-bağ~="byk"]+label{	width: 6em;	height: 3em;}
+input[data-bağ~="dev"]+label{	width: 8em;	height: 4em;}
+input[data-bağ]+label:after{
+	position: relative;
+	display: block;
+	content: "";
+	width: 50%;
+	height: 100%;
+}
+input[data-bağ~="hafif"] + label{
+	background: #ccc;
+	border-radius: 2em;
+	padding: 2px;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+input[data-bağ~="hafif"] + label:after {left: 0;}
+input[data-bağ~="hafif"]:checked + label:after {left: 50%;}
+
+input[data-bağ~="hafif"] + label:after{
+	border-radius: 50%;
+  background: #fff;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+input[data-bağ~="hafif"]:checked + label {
+  background-color: green;
 }
 
-.tg-list-item {
-  margin: 0 2em;
-}
+
 
 .tgl {
   display: none;
