@@ -125,8 +125,6 @@ input[data-bağ~="hafif"] + label{
 	-webkit-transition: all .4s ease;
 	transition: all .4s ease;
 }
-
-
 input[data-bağ~="hafif"] + label:after{
 	border-radius: 50%;
   background: #fff;
@@ -136,7 +134,6 @@ input[data-bağ~="hafif"] + label:after{
 input[data-bağ~="hafif"]:checked + label {
   background-color: green;
 }
-
 input[data-bağ~="yumuşak"] + label {
   background: #fbfbfb;
   border-radius: 2em;
