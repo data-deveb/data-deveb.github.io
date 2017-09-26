@@ -40,16 +40,16 @@ a{
 }
 
 h1, h2, h3, h4, h5, h6{
-	width: 100%;
+  width: 100%;
   display: block;
-  -webkit-margin-before: 0;
-      -webkit-margin-after: 0;
-      -webkit-margin-start: 0px;
-      -webkit-margin-end: 0px;
   font-weight: bold;
+  -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 body{
-	font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
     font-size: 11pt;
 }
 
@@ -377,13 +377,3 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     @media screen and (min-width:1200px;) and (max-width:1899.99px;) {
 
     }
-
-
-/* KAP ÖLÇEKLEMELER */
-/* KAP PARÇA YÖNTEMİ */
-/* gnl, byk, ort, ufk ekran genişliklerinde parça yöntemiyle düzen oluşturma örgüsü */
-.kap,[gnl],[lg],[md],[kçk],[sm]{
-  display: flex;
-  flex-flow: row wrap;
-  box-sizing: border-box;
-}
