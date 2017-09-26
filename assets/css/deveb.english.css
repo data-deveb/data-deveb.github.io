@@ -16,14 +16,15 @@
     p: (p)art
 
     • DEFAULT
-    • GRID SYSTEM -> Line-tag: G00
-      • GENERAL -> Line-tag: G01
-      • EXTRA-SMALL START -> Line-tag: G02
-      • SMALL START -> Line-tag: G03
-      • MEDIUM START -> Line-tag: G04
-      • LARGE START -> Line-tag: G05
-      • EXTRA-LARGE START -> Line-tag: G06
-      • HUGE START -> Line-tag: G07
+    • GRID SYSTEM         -> Line-tag: G00
+    • SCREEN CONTROL      -> Line-tag: none
+      • GENERAL           -> Line-tag: S01
+      • EXTRA-SMALL START -> Line-tag: S02
+      • SMALL START       -> Line-tag: S03
+      • MEDIUM START      -> Line-tag: S04
+      • LARGE START       -> Line-tag: S05
+      • EXTRA-LARGE START -> Line-tag: S06
+      • HUGE START        -> Line-tag: S07
 ========================================================================== */
 
 /* ==========================================================================
@@ -134,7 +135,7 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
 
 /*  RESPONSIVE TYPE START * >> ∞  */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-G01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
+S01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px;) {
       [data-xs~="1"]{--piece:1;}   [data-xs~="2"]{--piece:2;}   [data-xs~="3"]{--piece:3;}   [data-xs~="4"]{--piece:4;}
@@ -168,7 +169,7 @@ G01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
       [data-xs~="21o"]{flex:21;} [data-xs~="22o"]{flex:22;} [data-xs~="23o"]{flex:23;} [data-xs~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-G02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
+S02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px;) {
       [data-sm~="1"]{--piece:1;}   [data-sm~="2"]{--piece:2;}   [data-sm~="3"]{--piece:3;}   [data-sm~="4"]{--piece:4;}
@@ -202,7 +203,7 @@ G02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
       [data-sm~="21o"]{flex:21;}  [data-sm~="22o"]{flex:22;} [data-sm~="23o"]{flex:23;}  [data-sm~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-G03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
+S03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px;) {
       [data-md~="1"]{--piece:1;}   [data-md~="2"]{--piece:2;}   [data-md~="3"]{--piece:3;}   [data-md~="4"]{--piece:4;}
@@ -236,7 +237,7 @@ G03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
       [data-md~="21o"]{flex:21;}  [data-md~="22o"]{flex:22;} [data-md~="23o"]{flex:23;}  [data-md~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-G04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
+S04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px;) {
       [data-lg~="1"]{--piece:1;}   [data-lg~="2"]{--piece:2;}   [data-lg~="3"]{--piece:3;}   [data-lg~="4"]{--piece:4;}
@@ -270,7 +271,7 @@ G04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
       [data-lg~="21o"]{flex:21;}  [data-lg~="22o"]{flex:22;} [data-lg~="23o"]{flex:23;}  [data-lg~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-G05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
+S05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px;) {
       [data-xl~="1"]{--piece:1;}   [data-xl~="2"]{--piece:2;}   [data-xl~="3"]{--piece:3;}   [data-xl~="4"]{--piece:4;}
@@ -304,7 +305,7 @@ G05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
       [data-xl~="21o"]{flex:21;}  [data-xl~="22o"]{flex:22;} [data-xl~="23o"]{flex:23;}  [data-xl~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-G06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
+S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1900px;) {
       [data-hg~="1"]{--piece:1;}   [data-hg~="2"]{--piece:2;}   [data-hg~="3"]{--piece:3;}   [data-hg~="4"]{--piece:4;}
