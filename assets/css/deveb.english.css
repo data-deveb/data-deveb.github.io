@@ -108,6 +108,37 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
     [data-gnl~="17o"]{flex:17;} [data-gnl~="18o"]{flex:18;} [data-gnl~="19o"]{flex:19;} [data-gnl~="20o"]{flex:20;}
     [data-gnl~="21o"]{flex:21;} [data-gnl~="22o"]{flex:22;} [data-gnl~="23o"]{flex:23;} [data-gnl~="24o"]{flex:24;}
 
+    /* Position Settings */
+    [data-gnl~="hidden-overflow"]{overflow: hidden;}
+    [data-gnl~="nowrap"]{flex-wrap: nowrap;}
+
+    [data-gnl~="wrap-reverse"]{flex-wrap: wrap-reverse;}
+    [data-gnl~="row-reverse"]{flex-direction: row-reverse;}
+    [data-gnl~="column-reverse"]{flex-direction: column-reverse;}
+
+    [data-gnl~="left"]{justify-content: flex-start;}
+    [data-gnl~="center"]{justify-content:center;}
+    [data-gnl~="right"]{justify-content: flex-end;}
+
+    [data-gnl~="center-vh"]{align-items:center; justify-content: center;}
+    [data-gnl~="top"]{align-items: flex-start;}
+    [data-gnl~="middle"]{align-items: center;}
+    [data-gnl~="bottom"]{align-items: flex-end;}
+    [data-gnl~="top-this"]{align-self: flex-start !important;}
+    [data-gnl~="middle-this"]{align-self: center !important;}
+    [data-gnl~="bottom-this"]{align-self: flex-end !important;}
+    [data-gnl~="right-this"]{margin-left:auto; align-self:flex-start;}
+    [data-gnl~="left-this"]{margin-right:auto; align-self:flex-start;}
+    [data-gnl~="center-this"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+
+    [data-gnl~="space-between"]{justify-content: space-between;}
+    [data-gnl~="space-around"]{justify-content: space-around;}
+    [data-gnl~="stretch"]{align-items: stretch;}
+    [data-gnl~="stretch-this"]{align-self: stretch;}
+
+    [data-gnl~="baseline"]{align-items: baseline;}
+    [data-gnl~="baseline-this"]{align-self: baseline;}
+
 /*  RESPONSIVE TYPE 0 >> ∞ */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-LARGE-END (xl) or (xle) | Screen size: * < 1900px
