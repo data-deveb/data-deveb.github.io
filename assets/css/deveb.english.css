@@ -7,10 +7,13 @@
     mr: CSS > margin          		pd: CSS > padding
 
     SCREEN SCALE
-    hg: (h)u(g)e: min-screen size huge
-    lg: (l)ar(g)e: min-screen size large
-    md: (m)i(d)dle: min-screen size middle
-    sm: (s)(m)all: min-screen size small
+    hg: (h)u(g)e
+    xl: (e)xtra (l)arge
+    lg: (l)ar(g)e
+    md: (m)i(d)dle
+    sm: (s)(m)all
+    xs: (e)xtra (s)mall
+    ty: (t)in(y)
     gnl: (g)e(n)era(l): min-screen size 0
 
     p: (p)art
