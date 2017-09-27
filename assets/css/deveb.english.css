@@ -149,31 +149,31 @@ GS1 | GRID SYSTEM
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-LARGE-END (xl) or (xle) | Screen size: * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:1899.99px;) {
+    @media screen and (max-width:1899.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     LARGE-END (lg) or (lge) | Screen size: * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:1199.99px;) {
+    @media screen and (max-width:1199.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MIDDLE-END (md) or (mde) | Screen size: * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:992.99px;) {
+    @media screen and (max-width:992.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     SMALL-END (sm) or (sme) | Screen size: * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:767.99px;) {
+    @media screen and (max-width:767.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-SMALL-END (xs) or (xse) | Screen size: * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:575.99px;) {
+    @media screen and (max-width:575.99px) {
 
     }
 
@@ -181,7 +181,7 @@ GS1 | GRID SYSTEM
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:300px;) {
+    @media screen and (min-width:300px) {
       [data-xs~="1"]{--piece:1;}   [data-xs~="2"]{--piece:2;}   [data-xs~="3"]{--piece:3;}   [data-xs~="4"]{--piece:4;}
       [data-xs~="5"]{--piece:5;}   [data-xs~="6"]{--piece:6;}   [data-xs~="7"]{--piece:7;}   [data-xs~="8"]{--piece:8;}
       [data-xs~="9"]{--piece:9;}   [data-xs~="10"]{--piece:10;} [data-xs~="11"]{--piece:11;} [data-xs~="12"]{--piece:12;}
@@ -215,7 +215,7 @@ S01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:576px;) {
+    @media screen and (min-width:576px) {
       [data-sm~="1"]{--piece:1;}   [data-sm~="2"]{--piece:2;}   [data-sm~="3"]{--piece:3;}   [data-sm~="4"]{--piece:4;}
       [data-sm~="5"]{--piece:5;}   [data-sm~="6"]{--piece:6;}   [data-sm~="7"]{--piece:7;}   [data-sm~="8"]{--piece:8;}
       [data-sm~="9"]{--piece:9;}   [data-sm~="10"]{--piece:10;} [data-sm~="11"]{--piece:11;} [data-sm~="12"]{--piece:12;}
@@ -249,7 +249,7 @@ S02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:768px;) {
+    @media screen and (min-width:768px) {
       [data-md~="1"]{--piece:1;}   [data-md~="2"]{--piece:2;}   [data-md~="3"]{--piece:3;}   [data-md~="4"]{--piece:4;}
       [data-md~="5"]{--piece:5;}   [data-md~="6"]{--piece:6;}   [data-md~="7"]{--piece:7;}   [data-md~="8"]{--piece:8;}
       [data-md~="9"]{--piece:9;}   [data-md~="10"]{--piece:10;} [data-md~="11"]{--piece:11;} [data-md~="12"]{--piece:12;}
@@ -283,7 +283,7 @@ S03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:992px;) {
+    @media screen and (min-width:992px) {
       [data-lg~="1"]{--piece:1;}   [data-lg~="2"]{--piece:2;}   [data-lg~="3"]{--piece:3;}   [data-lg~="4"]{--piece:4;}
       [data-lg~="5"]{--piece:5;}   [data-lg~="6"]{--piece:6;}   [data-lg~="7"]{--piece:7;}   [data-lg~="8"]{--piece:8;}
       [data-lg~="9"]{--piece:9;}   [data-lg~="10"]{--piece:10;} [data-lg~="11"]{--piece:11;} [data-lg~="12"]{--piece:12;}
@@ -317,7 +317,7 @@ S04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:1200px;) {
+    @media screen and (min-width:1200px) {
       [data-xl~="1"]{--piece:1;}   [data-xl~="2"]{--piece:2;}   [data-xl~="3"]{--piece:3;}   [data-xl~="4"]{--piece:4;}
       [data-xl~="5"]{--piece:5;}   [data-xl~="6"]{--piece:6;}   [data-xl~="7"]{--piece:7;}   [data-xl~="8"]{--piece:8;}
       [data-xl~="9"]{--piece:9;}   [data-xl~="10"]{--piece:10;} [data-xl~="11"]{--piece:11;} [data-xl~="12"]{--piece:12;}
@@ -351,7 +351,7 @@ S05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:1900px;) {
+    @media screen and (min-width:1900px) {
       [data-hg~="1"]{--piece:1;}   [data-hg~="2"]{--piece:2;}   [data-hg~="3"]{--piece:3;}   [data-hg~="4"]{--piece:4;}
       [data-hg~="5"]{--piece:5;}   [data-hg~="6"]{--piece:6;}   [data-hg~="7"]{--piece:7;}   [data-hg~="8"]{--piece:8;}
       [data-hg~="9"]{--piece:9;}   [data-hg~="10"]{--piece:10;} [data-hg~="11"]{--piece:11;} [data-hg~="12"]{--piece:12;}
@@ -387,37 +387,37 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     TINY-ONLY (ti) or (tio) | Screen size: 0 ≤ * < 300px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:299.99px;) {
+    @media screen and (max-width:299.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-SMALL-ONLY (xs) or (xso) | Screen size: 300px ≤ * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:300px;) and (max-width:575.99px;) {
+    @media screen and (min-width:300px) and (max-width:575.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     SMALL-ONLY (sm) or (smo) | Screen size: 576px ≤ * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:576px;) and (max-width:767.99px;) {
+    @media screen and (min-width:576px) and (max-width:767.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MIDDLE-ONLY (md) or (mdo)
     Screen size: 768px ≤ * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:768px;) and (max-width:991.99px;) {
+    @media screen and (min-width:768px) and (max-width:991.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     LARGE-ONLY (lg) or (lgo) | Screen size: 992px ≤ * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:992px;) and (max-width:1199.99px;) {
+    @media screen and (min-width:992px) and (max-width:1199.99px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-LARGE-ONLY (xl) or (xlo) | Screen size: 1200px ≤ * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:1200px;) and (max-width:1899.99px;) {
+    @media screen and (min-width:1200px) and (max-width:1899.99px) {
 
     }
