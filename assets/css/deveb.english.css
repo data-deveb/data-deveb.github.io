@@ -62,17 +62,14 @@ h1{font-size:2.6em}
         h5{font-size:1.2em}
           h6{font-size:1.0em}
 
-
-
-
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 G00 GENERAL | Screen size: 0 ≤ * < ∞
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/*
-GS1 | GRID SYSTEM
-    | Flexbox
-*/
+    /*
+    GS1 | GRID SYSTEM
+        | Flexbox
+    */
 
     [data-gnl]{
       display: flex;
