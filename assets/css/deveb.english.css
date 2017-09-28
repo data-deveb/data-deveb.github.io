@@ -113,7 +113,7 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
         padding-left: var(--gutter);
         padding-right: var(--gutter);
       }
-      [data-gnl~="no-gutter"] > [data-gnl]{
+      [data-gnl~="gutter-zero"] > [data-gnl]{
         padding:0;
       }
     /* Free grid piece */
