@@ -70,7 +70,10 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
     GS1 | GRID SYSTEM
         | Flexbox
     */
-
+:root{
+  --gutter:10px;
+  --gap:10px;
+}
     [data-gnl]{
       display: flex;
       flex-flow: wrap;
@@ -98,6 +101,21 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
       max-width:  calc(100% / var(--part) * var(--piece));
     }
 
+      [data-gnl~="gap"] > [data-gnl]{
+        margin: var(--gap);
+        flex-basis: calc(100% / var(--part) * var(--piece) - var(--gap) - var(--gap));
+        max-width:  calc(100% / var(--part) * var(--piece) - var(--gap) - var(--gap));
+      }
+      [data-gnl~="gutter-around"] > [data-gnl]{
+        padding: var(--gutter);
+      }
+      [data-gnl~="gutter"] > [data-gnl]{
+        padding-left: var(--gutter);
+        padding-right: var(--gutter);
+      }
+      [data-gnl~="no-gutter"] > [data-gnl]{
+        padding:0;
+      }
     /* Free grid piece */
     [data-gnl~="0p"]{
       flex-basis: auto;
