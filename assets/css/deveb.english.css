@@ -71,8 +71,11 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
         | Flexbox
     */
 :root{
-  --gutter:10px;
-  --gap:10px;
+  --gutter:5px;
+  --gap:5px;
+
+  --piece:24;
+  --part:24;
 }
     [data-gnl]{
       display: flex;
@@ -197,6 +200,11 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
 S01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) {
+      :root{
+        --gutter:10px;
+        --gap:10px;
+      }
+
       [data-xs~="1"]{--piece:1;}   [data-xs~="2"]{--piece:2;}   [data-xs~="3"]{--piece:3;}   [data-xs~="4"]{--piece:4;}
       [data-xs~="5"]{--piece:5;}   [data-xs~="6"]{--piece:6;}   [data-xs~="7"]{--piece:7;}   [data-xs~="8"]{--piece:8;}
       [data-xs~="9"]{--piece:9;}   [data-xs~="10"]{--piece:10;} [data-xs~="11"]{--piece:11;} [data-xs~="12"]{--piece:12;}
