@@ -1,7 +1,7 @@
 /* ==========================================================================
 
-    [DEVEB FINAL VERSION 0.1]
-    file:: "deveb.final.v0.1.css"
+    [DEVEB ENGLISH 0.1]
+    file:: "deveb.english.css"
 
     DEFINITIONS
     mr: CSS > margin          		pd: CSS > padding
@@ -70,13 +70,14 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
     GS1 | GRID SYSTEM
         | Flexbox
     */
-:root{
-  --gutter:5px;
-  --gap:5px;
+    :root{
+      --gutter:5px;
+      --gap:5px;
 
-  --piece:24;
-  --part:24;
-}
+      --piece:24;
+      --part:24;
+    }
+
     [data-gnl]{
       display: flex;
       flex-flow: wrap;
