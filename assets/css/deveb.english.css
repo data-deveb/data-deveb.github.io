@@ -124,6 +124,11 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
     [data-gnl~="0p"]{
       flex-basis: auto;
     }
+    [data-gnl~="container"]{
+      width: auto;
+      margin-left:auto;
+      margin-right:auto;
+    }
 
     /* Grid ratio settings */
     [data-gnl~="1o"]{flex:1;}   [data-gnl~="2o"]{flex:2;}   [data-gnl~="3o"]{flex:3;}   [data-gnl~="4o"]{flex:4;}
@@ -168,31 +173,31 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-LARGE-END (xl) or (xle) | Screen size: * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:1899.99px) {
+    @media screen and (max-width:1900px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     LARGE-END (lg) or (lge) | Screen size: * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:1199.99px) {
+    @media screen and (max-width:1200px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MIDDLE-END (md) or (mde) | Screen size: * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:992.99px) {
+    @media screen and (max-width:993px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     SMALL-END (sm) or (sme) | Screen size: * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:767.99px) {
+    @media screen and (max-width:768px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-SMALL-END (xs) or (xse) | Screen size: * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:575.99px) {
+    @media screen and (max-width:576px) {
 
     }
 
@@ -405,43 +410,67 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
       [data-hg~="13o"]{flex:13;}  [data-hg~="14o"]{flex:14;} [data-hg~="15o"]{flex:15;}  [data-hg~="16o"]{flex:16;}
       [data-hg~="17o"]{flex:17;}  [data-hg~="18o"]{flex:18;} [data-hg~="19o"]{flex:19;}  [data-hg~="20o"]{flex:20;}
       [data-hg~="21o"]{flex:21;}  [data-hg~="22o"]{flex:22;} [data-hg~="23o"]{flex:23;}  [data-hg~="24o"]{flex:24;}
+
+      [data-gnl~="container"],[data-hg~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+        flex-basis: 1890px;
+        width: 1890px;
+      }
+
     }
 
 /*  RESPONSIVE TYPE ONLY |< * >| */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     TINY-ONLY (ti) or (tio) | Screen size: 0 ≤ * < 300px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (max-width:299.99px) {
-
+    @media screen and (max-width:300px) {
+      [data-gnl~="container"],[data-ti~="container"]{
+        flex-basis: 100%;
+        width: 100%;
+      }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-SMALL-ONLY (xs) or (xso) | Screen size: 300px ≤ * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:300px) and (max-width:575.99px) {
-
+    @media screen and (min-width:300px) and (max-width:576px) {
+      [data-gnl~="container"],[data-xs~="container"],[data-ti~="container"]{
+        flex-basis: calc(100% - 20px);
+        width: calc(100% - 20px);
+      }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     SMALL-ONLY (sm) or (smo) | Screen size: 576px ≤ * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:576px) and (max-width:767.99px) {
-
+    @media screen and (min-width:576px) and (max-width:768px) {
+      [data-gnl~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+        flex-basis: 566px;
+        width: 566px;
+      }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MIDDLE-ONLY (md) or (mdo)
     Screen size: 768px ≤ * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:768px) and (max-width:991.99px) {
-
+    @media screen and (min-width:768px) and (max-width:992px) {
+      [data-gnl~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+        flex-basis: 760px;
+        width: 760px;
+      }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     LARGE-ONLY (lg) or (lgo) | Screen size: 992px ≤ * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:992px) and (max-width:1199.99px) {
-
+    @media screen and (min-width:992px) and (max-width:1200px) {
+      [data-gnl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+        flex-basis: 960px;
+        width: 960px;
+      }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-LARGE-ONLY (xl) or (xlo) | Screen size: 1200px ≤ * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    @media screen and (min-width:1200px) and (max-width:1899.99px) {
-
+    @media screen and (min-width:1200px) and (max-width:1900px) {
+      [data-gnl~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+        flex-basis: 1140px;
+        width: 1140px;
+      }
     }
