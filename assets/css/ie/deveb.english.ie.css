@@ -47,218 +47,202 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
     /* Grid pieces settings */
 
     /* Grid pieces calc */
-    [data-gnl~="24p"] [data-gnl~="1"], [data-gnl~="24p"][data-gnl~="1"]
+    [data-gnl~="24p"] [data-gnl~="1"]
     {flex-basis:	4.16667%; max-width:	4.16667%;}
 
-    [data-gnl~="23p"] [data-gnl~="1"], [data-gnl~="23p"][data-gnl~="1"]
+    [data-gnl~="23p"] [data-gnl~="1"]
     {flex-basis:	4.34783%; max-width:	4.34783%;}
 
-    [data-gnl~="22p"] [data-gnl~="1"], [data-gnl~="22p"][data-gnl~="1"]
+    [data-gnl~="22p"] [data-gnl~="1"]
     {flex-basis:	4.54545%; max-width:	4.54545%;}
 
-    [data-gnl~="21p"] [data-gnl~="1"], [data-gnl~="21p"][data-gnl~="1"]
+    [data-gnl~="21p"] [data-gnl~="1"]
     {flex-basis:	4.76190%; max-width:	4.76190%;}
 
-    [data-gnl~="20p"] [data-gnl~="1"], [data-gnl~="20p"][data-gnl~="1"]
+    [data-gnl~="20p"] [data-gnl~="1"]
     {flex-basis:	5%; max-width:	5%;}
 
-    [data-gnl~="19p"] [data-gnl~="1"], [data-gnl~="19p"][data-gnl~="1"]
+    [data-gnl~="19p"] [data-gnl~="1"]
     {flex-basis:	5.26316%; max-width:	5.26316%;}
 
-    [data-gnl~="18p"] [data-gnl~="1"], [data-gnl~="18p"][data-gnl~="1"]
+    [data-gnl~="18p"] [data-gnl~="1"]
     {flex-basis:	5.55556%; max-width:	5.55556%;}
 
-    [data-gnl~="17p"] [data-gnl~="1"], [data-gnl~="17p"][data-gnl~="1"]
+    [data-gnl~="17p"] [data-gnl~="1"]
     {flex-basis:	5.88235%; max-width:	5.88235%;}
 
-    [data-gnl~="16p"] [data-gnl~="1"], [data-gnl~="16p"][data-gnl~="1"]
+    [data-gnl~="16p"] [data-gnl~="1"]
     {flex-basis:	6.25%; max-width:	6.25%;}
 
-    [data-gnl~="15p"] [data-gnl~="1"], [data-gnl~="15p"][data-gnl~="1"]
+    [data-gnl~="15p"] [data-gnl~="1"]
     {flex-basis:	6.66667%; max-width:	6.66667%;}
 
-    [data-gnl~="14p"] [data-gnl~="1"], [data-gnl~="14p"][data-gnl~="1"]
+    [data-gnl~="14p"] [data-gnl~="1"]
     {flex-basis:	7.14286%; max-width:	7.14286%;}
 
-    [data-gnl~="13p"] [data-gnl~="1"], [data-gnl~="13p"][data-gnl~="1"]
+    [data-gnl~="13p"] [data-gnl~="1"]
     {flex-basis:	7.69231%; max-width:	7.69231%;}
 
-    [data-gnl~="12p"] [data-gnl~="1"],[data-gnl~="24p"] [data-gnl~="2"],
-    [data-gnl~="12p"][data-gnl~="1"], [data-gnl~="24p"][data-gnl~="2"]
+    [data-gnl~="12p"] [data-gnl~="1"],[data-gnl~="24p"] [data-gnl~="2"]
     {flex-basis:	8.33333%; max-width:	8.33333%;}
 
-    [data-gnl~="23p"] [data-gnl~="2"], [data-gnl~="23p"][data-gnl~="2"]
+    [data-gnl~="23p"] [data-gnl~="2"]
     {flex-basis:	8.69565%; max-width:	8.69565%;}
 
-    [data-gnl~="11p"] [data-gnl~="1"],[data-gnl~="22p"] [data-gnl~="2"],
-    [data-gnl~="11p"][data-gnl~="1"], [data-gnl~="22p"][data-gnl~="2"]
+    [data-gnl~="11p"] [data-gnl~="1"],[data-gnl~="22p"] [data-gnl~="2"]
     {flex-basis:	9.09091%; max-width:	9.09091%;}
 
-    [data-gnl~="21p"] [data-gnl~="2"], [data-gnl~="21p"][data-gnl~="2"]
+    [data-gnl~="21p"] [data-gnl~="2"]
     {flex-basis:	9.52381%; max-width:	9.52381%;}
 
-    [data-gnl~="10p"] [data-gnl~="1"],[data-gnl~="20p"] [data-gnl~="2"],
-    [data-gnl~="10p"][data-gnl~="1"], [data-gnl~="20p"][data-gnl~="2"]
+    [data-gnl~="10p"] [data-gnl~="1"],[data-gnl~="20p"] [data-gnl~="2"]
     {flex-basis:	10%; max-width:	10%;}
 
     [data-gnl~="19p"] [data-gnl~="2"], [data-gnl~="19p"][data-gnl~="2"]
     {flex-basis:	10.52632%; max-width:	10.52632%;}
 
-    [data-gnl~="9p"] [data-gnl~="1"],[data-gnl~="18p"] [data-gnl~="2"],
-    [data-gnl~="9p"][data-gnl~="1"], [data-gnl~="18p"][data-gnl~="2"]
+    [data-gnl~="9p"] [data-gnl~="1"],[data-gnl~="18p"] [data-gnl~="2"]
     {flex-basis:	11.11111%; max-width:	11.11111%;}
 
-    [data-gnl~="17p"] [data-gnl~="2"], [data-gnl~="17p"][data-gnl~="2"]
+    [data-gnl~="17p"] [data-gnl~="2"]
     {flex-basis:	11.76471%; max-width:	11.76471%;}
 
-    [data-gnl~="8p"] [data-gnl~="1"],[data-gnl~="16p"] [data-gnl~="2"],[data-gnl~="24p"] [data-gnl~="3"],
-    [data-gnl~="8p"][data-gnl~="1"], [data-gnl~="16p"][data-gnl~="2"], [data-gnl~="24p"][data-gnl~="3"]
+    [data-gnl~="8p"] [data-gnl~="1"],[data-gnl~="16p"] [data-gnl~="2"],[data-gnl~="24p"] [data-gnl~="3"]
     {flex-basis:	12.5%; max-width:	12.5%;}
 
-    [data-gnl~="23p"] [data-gnl~="3"], [data-gnl~="23p"][data-gnl~="3"]
+    [data-gnl~="23p"] [data-gnl~="3"]
     {flex-basis:	13.04348%; max-width:	13.04348%;}
 
-    [data-gnl~="15p"] [data-gnl~="2"], [data-gnl~="15p"][data-gnl~="2"]
+    [data-gnl~="15p"] [data-gnl~="2"]
     {flex-basis:	13.33333%; max-width:	13.33333%;}
 
-    [data-gnl~="22p"] [data-gnl~="3"], [data-gnl~="22p"][data-gnl~="3"]
+    [data-gnl~="22p"] [data-gnl~="3"]
     {flex-basis:	13.63636%; max-width:	13.63636%;}
 
-    [data-gnl~="7p"] [data-gnl~="1"],[data-gnl~="14p"] [data-gnl~="2"],[data-gnl~="21p"] [data-gnl~="3"],
-    [data-gnl~="7p"][data-gnl~="1"], [data-gnl~="14p"][data-gnl~="2"], [data-gnl~="21p"][data-gnl~="3"]
+    [data-gnl~="7p"] [data-gnl~="1"],[data-gnl~="14p"] [data-gnl~="2"],[data-gnl~="21p"] [data-gnl~="3"]
     {flex-basis:	14.28571%; max-width:	14.28571%;}
 
-    [data-gnl~="20p"] [data-gnl~="3"], [data-gnl~="20p"][data-gnl~="3"]
+    [data-gnl~="20p"] [data-gnl~="3"]
     {flex-basis:	15%; max-width:	15%;}
 
-    [data-gnl~="13p"] [data-gnl~="2"], [data-gnl~="13p"][data-gnl~="2"]
+    [data-gnl~="13p"] [data-gnl~="2"]
     {flex-basis:	15.38462%; max-width:	15.38462%;}
 
-    [data-gnl~="19p"] [data-gnl~="3"], [data-gnl~="19p"][data-gnl~="3"]
+    [data-gnl~="19p"] [data-gnl~="3"]
     {flex-basis:	15.78947%; max-width:	15.78947%;}
 
-    [data-gnl~="6p"] [data-gnl~="1"],[data-gnl~="12p"] [data-gnl~="2"],[data-gnl~="18p"] [data-gnl~="1"],[data-gnl~="24p"] [data-gnl~="4"],
-    [data-gnl~="6p"][data-gnl~="1"],[data-gnl~="12p"][data-gnl~="2"], [data-gnl~="18p"][data-gnl~="1"], [data-gnl~="24p"][data-gnl~="4"]
+    [data-gnl~="6p"] [data-gnl~="1"],[data-gnl~="12p"] [data-gnl~="2"],[data-gnl~="18p"] [data-gnl~="1"],[data-gnl~="24p"] [data-gnl~="4"]
     {flex-basis:	16.66667%; max-width:	16.66667%;}
 
-    [data-gnl~="23p"] [data-gnl~="4"], [data-gnl~="23p"][data-gnl~="4"]
+    [data-gnl~="23p"] [data-gnl~="4"]
     {flex-basis:	17.39130%; max-width:	17.39130%;}
 
-    [data-gnl~="17p"] [data-gnl~="3"], [data-gnl~="17p"][data-gnl~="3"]
+    [data-gnl~="17p"] [data-gnl~="3"]
     {flex-basis:	17.64706%; max-width:	17.64706%;}
 
-    [data-gnl~="11p"] [data-gnl~="2"],[data-gnl~="22p"] [data-gnl~="4"],
-    [data-gnl~="11p"][data-gnl~="2"], [data-gnl~="22p"][data-gnl~="4"]
+    [data-gnl~="11p"] [data-gnl~="2"],[data-gnl~="22p"] [data-gnl~="4"]
     {flex-basis:	18.18182%; max-width:	18.18182%;}
 
-    [data-gnl~="16p"] [data-gnl~="3"], [data-gnl~="16p"][data-gnl~="3"]
+    [data-gnl~="16p"] [data-gnl~="3"]
     {flex-basis:	18.75%; max-width:	18.75%;}
 
-    [data-gnl~="21p"] [data-gnl~="4"], [data-gnl~="21p"][data-gnl~="4"]
+    [data-gnl~="21p"] [data-gnl~="4"]
     {flex-basis:	19.04762%; max-width:	19.04762%;}
 
-    [data-gnl~="5p"] [data-gnl~="1"],[data-gnl~="10p"] [data-gnl~="2"],[data-gnl~="15p"] [data-gnl~="3"],[data-gnl~="20p"] [data-gnl~="4"],
-    [data-gnl~="5p"][data-gnl~="1"], [data-gnl~="10p"][data-gnl~="2"], [data-gnl~="15p"][data-gnl~="3"], [data-gnl~="20p"][data-gnl~="4"]
+    [data-gnl~="5p"] [data-gnl~="1"],[data-gnl~="10p"] [data-gnl~="2"],[data-gnl~="15p"] [data-gnl~="3"],[data-gnl~="20p"] [data-gnl~="4"]
     {flex-basis:	20%; max-width:	20%;}
 
-    [data-gnl~="24p"] [data-gnl~="5"], [data-gnl~="24p"][data-gnl~="5"]
+    [data-gnl~="24p"] [data-gnl~="5"]
     {flex-basis:	20.83333%; max-width:	20.83333%;}
 
-    [data-gnl~="19p"] [data-gnl~="4"], [data-gnl~="19p"][data-gnl~="4"]
+    [data-gnl~="19p"] [data-gnl~="4"]
     {flex-basis:	21.05263%; max-width:	21.05263%;}
 
-    [data-gnl~="14p"] [data-gnl~="3"], [data-gnl~="14p"][data-gnl~="3"]
+    [data-gnl~="14p"] [data-gnl~="3"]
     {flex-basis:	21.42857%; max-width:	21.42857%;}
 
-    [data-gnl~="23p"] [data-gnl~="5"], [data-gnl~="23p"][data-gnl~="5"]
+    [data-gnl~="23p"] [data-gnl~="5"]
     {flex-basis:	21.73913%; max-width:	21.73913%;}
 
-    [data-gnl~="9p"] [data-gnl~="2"],[data-gnl~="18p"] [data-gnl~="4"],
-    [data-gnl~="9p"][data-gnl~="2"], [data-gnl~="18p"][data-gnl~="4"]
+    [data-gnl~="9p"] [data-gnl~="2"],[data-gnl~="18p"] [data-gnl~="4"]
     {flex-basis:	22.22222%; max-width:	22.22222%;}
 
-    [data-gnl~="22p"] [data-gnl~="5"], [data-gnl~="22p"][data-gnl~="5"]
+    [data-gnl~="22p"] [data-gnl~="5"]
     {flex-basis:	22.72727%; max-width:	22.72727%;}
 
-    [data-gnl~="13p"] [data-gnl~="3"], [data-gnl~="13p"][data-gnl~="3"]
+    [data-gnl~="13p"] [data-gnl~="3"]
     {flex-basis:	23.07692%; max-width:	23.07692%;}
 
-    [data-gnl~="17p"] [data-gnl~="4"], [data-gnl~="17p"][data-gnl~="4"]
+    [data-gnl~="17p"] [data-gnl~="4"]
     {flex-basis:	23.52941%; max-width:	23.52941%;}
 
-    [data-gnl~="21p"] [data-gnl~="5"], [data-gnl~="21p"][data-gnl~="5"]
+    [data-gnl~="21p"] [data-gnl~="5"]
     {flex-basis:	23.80952%; max-width:	23.80952%;}
 
-    [data-gnl~="4p"] [data-gnl~="1"],[data-gnl~="8p"] [data-gnl~="2"],[data-gnl~="12p"] [data-gnl~="3"],[data-gnl~="16p"] [data-gnl~="4"],[data-gnl~="20p"] [data-gnl~="5"],[data-gnl~="24p"] [data-gnl~="6"],
-    [data-gnl~="4p"][data-gnl~="1"], [data-gnl~="8p"][data-gnl~="2"], [data-gnl~="12p"][data-gnl~="3"], [data-gnl~="16p"][data-gnl~="4"], [data-gnl~="20p"][data-gnl~="5"], [data-gnl~="24p"][data-gnl~="6"]
+    [data-gnl~="4p"] [data-gnl~="1"],[data-gnl~="8p"] [data-gnl~="2"],[data-gnl~="12p"] [data-gnl~="3"],[data-gnl~="16p"] [data-gnl~="4"],[data-gnl~="20p"] [data-gnl~="5"],[data-gnl~="24p"] [data-gnl~="6"]
     {flex-basis:	25%; max-width:	25%;}
 
-    [data-gnl~="23p"] [data-gnl~="6"], [data-gnl~="23p"][data-gnl~="6"]
+    [data-gnl~="23p"] [data-gnl~="6"]
     {flex-basis:	26.08696%; max-width:	26.08696%;}
 
-    [data-gnl~="19p"] [data-gnl~="5"], [data-gnl~="19p"][data-gnl~="5"]
+    [data-gnl~="19p"] [data-gnl~="5"]
     {flex-basis:	26.31579%; max-width:	26.31579%;}
 
-    [data-gnl~="15p"] [data-gnl~="4"],[data-gnl~="15p"][data-gnl~="4"]
+    [data-gnl~="15p"] [data-gnl~="4"]
     {flex-basis:	26.66667%; max-width:	26.66667%;}
 
-    [data-gnl~="11p"] [data-gnl~="3"],[data-gnl~="22p"] [data-gnl~="6"],
-    [data-gnl~="11p"][data-gnl~="3"], [data-gnl~="22p"][data-gnl~="6"]
+    [data-gnl~="11p"] [data-gnl~="3"],[data-gnl~="22p"] [data-gnl~="6"]
     {flex-basis:	27.27273%; max-width:	27.27273%;}
 
-    [data-gnl~="18p"] [data-gnl~="5"], [data-gnl~="18p"][data-gnl~="5"]
+    [data-gnl~="18p"] [data-gnl~="5"]
     {flex-basis:	27.77778%; max-width:	27.77778%;}
 
-    [data-gnl~="7p"] [data-gnl~="2"],[data-gnl~="14p"] [data-gnl~="4"],[data-gnl~="21p"] [data-gnl~="6"],
-    [data-gnl~="7p"][data-gnl~="2"], [data-gnl~="14p"][data-gnl~="4"], [data-gnl~="21p"][data-gnl~="6"]
+    [data-gnl~="7p"] [data-gnl~="2"],[data-gnl~="14p"] [data-gnl~="4"],[data-gnl~="21p"] [data-gnl~="6"]
     {flex-basis:	28.57143%; max-width:	28.57143%;}
 
-    [data-gnl~="24p"] [data-gnl~="7"], [data-gnl~="24p"][data-gnl~="7"]
+    [data-gnl~="24p"] [data-gnl~="7"]
     {flex-basis:	29.16667%; max-width:	29.16667%;}
 
-    [data-gnl~="17p"] [data-gnl~="5"], [data-gnl~="17p"][data-gnl~="5"]
+    [data-gnl~="17p"] [data-gnl~="5"]
     {flex-basis:	29.41176%; max-width:	29.41176%;}
 
-    [data-gnl~="10p"] [data-gnl~="3"],[data-gnl~="20p"] [data-gnl~="6"],
-    [data-gnl~="10p"][data-gnl~="3"], [data-gnl~="20p"][data-gnl~="6"]
+    [data-gnl~="10p"] [data-gnl~="3"],[data-gnl~="20p"] [data-gnl~="6"]
     {flex-basis:	30%; max-width:	30%;}
 
-    [data-gnl~="23p"] [data-gnl~="7"], [data-gnl~="23p"][data-gnl~="7"]
+    [data-gnl~="23p"] [data-gnl~="7"]
     {flex-basis:	30.43478%; max-width:	30.43478%;}
 
-    [data-gnl~="13p"] [data-gnl~="4"], [data-gnl~="13p"][data-gnl~="4"]
+    [data-gnl~="13p"] [data-gnl~="4"]
     {flex-basis:	30.76923%; max-width:	30.76923%;}
 
-    [data-gnl~="16p"] [data-gnl~="5"], [data-gnl~="16p"][data-gnl~="5"]
+    [data-gnl~="16p"] [data-gnl~="5"]
     {flex-basis:	31.25%; max-width:	31.25%;}
 
-    [data-gnl~="19p"] [data-gnl~="6"], [data-gnl~="19p"][data-gnl~="6"]
+    [data-gnl~="19p"] [data-gnl~="6"]
     {flex-basis:	31.57895%; max-width:	31.57895%;}
 
-    [data-gnl~="22p"] [data-gnl~="7"], [data-gnl~="22p"][data-gnl~="7"]
+    [data-gnl~="22p"] [data-gnl~="7"]
     {flex-basis:	31.81818%; max-width:	31.81818%;}
 
-    [data-gnl~="3p"] [data-gnl~="1"],[data-gnl~="6p"] [data-gnl~="2"],[data-gnl~="9p"] [data-gnl~="3"],[data-gnl~="12p"] [data-gnl~="4"],[data-gnl~="15p"] [data-gnl~="5"],[data-gnl~="18p"] [data-gnl~="6"],[data-gnl~="21p"] [data-gnl~="7"],[data-gnl~="24p"] [data-gnl~="8"],
-    [data-gnl~="3p"][data-gnl~="1"], [data-gnl~="6p"][data-gnl~="2"], [data-gnl~="9p"][data-gnl~="3"], [data-gnl~="12p"][data-gnl~="4"], [data-gnl~="15p"][data-gnl~="5"], [data-gnl~="18p"][data-gnl~="6"], [data-gnl~="21p"][data-gnl~="7"], [data-gnl~="24p"][data-gnl~="8"]
+    [data-gnl~="3p"] [data-gnl~="1"],[data-gnl~="6p"] [data-gnl~="2"],[data-gnl~="9p"] [data-gnl~="3"],[data-gnl~="12p"] [data-gnl~="4"],[data-gnl~="15p"] [data-gnl~="5"],[data-gnl~="18p"] [data-gnl~="6"],[data-gnl~="21p"] [data-gnl~="7"],[data-gnl~="24p"] [data-gnl~="8"]
     {flex-basis:	33.33333%; max-width:	33.33333%;}
 
-    [data-gnl~="23p"] [data-gnl~="8"], [data-gnl~="23p"][data-gnl~="8"]
+    [data-gnl~="23p"] [data-gnl~="8"]
     {flex-basis:	34.78261%; max-width:	34.78261%;}
 
-    [data-gnl~="20p"] [data-gnl~="7"], [data-gnl~="20p"][data-gnl~="7"]
+    [data-gnl~="20p"] [data-gnl~="7"]
     {flex-basis:	35%; max-width:	35%;}
 
-    [data-gnl~="17p"] [data-gnl~="6"], [data-gnl~="17p"][data-gnl~="6"]
+    [data-gnl~="17p"] [data-gnl~="6"]
     {flex-basis:	35.29412%; max-width:	35.29412%;}
 
-    [data-gnl~="14p"] [data-gnl~="5"], [data-gnl~="14p"][data-gnl~="5"]
+    [data-gnl~="14p"] [data-gnl~="5"]
     {flex-basis:	35.71429%; max-width:	35.71429%;}
 
-    [data-gnl~="11p"] [data-gnl~="4"],[data-gnl~="22p"] [data-gnl~="8"],
-    [data-gnl~="11p"][data-gnl~="4"], [data-gnl~="22p"][data-gnl~="8"]
+    [data-gnl~="11p"] [data-gnl~="4"],[data-gnl~="22p"] [data-gnl~="8"]
     {flex-basis:	36.36364%; max-width:	36.36364%;}
 
-    [data-gnl~="19p"] [data-gnl~="7"], [data-gnl~="19p"][data-gnl~="7"]
+    [data-gnl~="19p"] [data-gnl~="7"]
     {flex-basis:	36.84211%; max-width:	36.84211%;}
 
     [data-gnl~="8p"] [data-gnl~="3"],[data-gnl~="16p"] [data-gnl~="6"],[data-gnl~="24p"] [data-gnl~="9"]
