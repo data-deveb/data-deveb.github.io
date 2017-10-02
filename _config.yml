@@ -1,0 +1,11 @@
+# basic options
+title: Deveb 0.1
+author: deveb
+email: your-email@domain.com
+description: Bu proje CSS'nin tüm imkanlarını zorlayarak daha gelişmiş bir önyüz iskeleti oluşturmak için geliştirilmektedir.
+twitter_username: datadeveb
+github_username:  data-deveb
+
+# Build settings
+markdown: kramdown
+theme: minima
