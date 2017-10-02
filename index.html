@@ -1,18 +1,74 @@
----
-layout: default
----
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Deveb Önyüz İskeleti</title>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <!-- Kök -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://data-deveb.github.io/assets/css/font-awesome.min.css">
+  <link href="https://data-deveb.github.io/assets/css/deveb.css" rel="stylesheet"><link href="https://data-deveb.github.io/assets/css/deveb.ilkel.css" rel="stylesheet">
+  <link href="https://data-deveb.github.io/assets/css/ie/deveb.ilkel.ie.s1.css" rel="stylesheet">
+  <link href="https://data-deveb.github.io/assets/css/deveb.genel.css" rel="stylesheet">
+  <link href="./assets/css/deveb.ilkel.css" rel="stylesheet">
 
-      <div class="entry">
-        {{ post.excerpt }}
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div data-gnl="1 1p" class="header" w3-include-html="/temel/header.html"></div>
+  <div data-gnl="8 8p" data-ort="8p">
+      <div data-gnl="8" data-ort="4">
+        <div style="overflow:hidden;" data-gnl="1 1p">
+          <h1 class="metin-deveb  beri-2" style="font-size:80pt; font-family: 'Comfortaa', cursive; color:#2c2171 !important; align-items:center; justify-content:center; display:flex;">deveb</h1>
+          <p class="metin-gri-3 beri-2">
+            Ağ sayfalarında kullanılması için Türkçe olarak geliştirilen bir önyüz iskeletidir. İngilizce'de frontend framework diye anılmaktadır.
+  Kap örgüsünün sahip olduğu özellikleri bir kere kullandıktan sonra ne kadar yeterli olduğunu görmenizle birlikte belki de uzun süreler kullanacaksınız.
+          </p>
+          <p class="metin-gri-3 beri-2" data-deveb="ortada göbekte" data-gnl="1 1p">
+            <a data-bağ="genel" href="/belgeler/kap-orgusu.html">BAŞLA</a>&nbsp;
+            <a data-bağ="genel" href="https://www.facebook.com/groups/1818283228485179/">KATIL</a>
+          </p>
+          <p style="font-size:16pt; text-align:center; color:#ccc;">
+            <i class="fa fa-html5" aria-hidden="true"></i>
+            <i class="fa fa-html5" aria-hidden="true"></i>.
+            <i class="fa fa-css3" aria-hidden="true"></i>
+          </p>
+        </div>
       </div>
+      <div class="merkez direk" data-gnl="8" data-ort="4">
+        <div data-gnl="6">
+          <div data-gnl="8" style="padding-left:2%">
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+            <div class="beri-alt-1" data-deveb="göbekte yay" data-gnl="8" style="font-size:500%;background-color:#ccc; height:200px;">
+            </div>
+            <div class="ap-deveb beri-alt-1" data-gnl="8" style="height:60px;"></div>
+            <div class="ap-deveb beri-alt-1" data-gnl="1 5p" style="height:80px;"></div>
+
+            <div data-gnl="4 5p">
+              <div class="beri-sol-1 beri-alt-1" data-gnl="5" style="background-color:#ccc;"></div>
+            </div>
+
+            <div class="ap-deveb" data-gnl="8" style="height:60px;"></div>
+
+          </div>
+        </div>
+        <div data-gnl="2">
+          <div class="beri-sol-2 ap-deveb" data-gnl="6"></div>
+        </div>
+      </div>
+  </div>
+  <div data-gnl="1 1p" w3-include-html="/temel/foot.html"></div>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script>w3.includeHTML();</script>
+</body>
+</html>
 
