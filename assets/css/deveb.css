@@ -142,37 +142,6 @@ ul{
   box-sizing: border-box;
 }
 
-/* Konumlama */
-[data-deveb~="taşma"]{overflow: hidden;}
-[data-deveb~="kayma"]{flex-wrap: nowrap;}
-
-[data-deveb~="ters-dizi"]{flex-wrap: wrap-reverse;}
-[data-deveb~="ters-satır"]{flex-direction: row-reverse;}
-[data-deveb~="ters-sütun"]{flex-direction: column-reverse;}
-
-[data-deveb~="solda"]{justify-content: flex-BAŞ;}
-[data-deveb~="ortada"]{justify-content:center;}
-[data-deveb~="sağda"]{justify-content: flex-end;}
-[data-deveb~="ortada-ol"]{align-items: center;}
-
-[data-deveb~="merkezde"]{align-items:center; justify-content: center;}
-[data-deveb~="üstte"]{align-items: flex-BAŞ;}
-[data-deveb~="göbekte"]{align-items: center;}
-[data-deveb~="altta"]{align-items: flex-end;}
-[data-deveb~="üstte-ol"]{align-self: flex-BAŞ !important;}
-[data-deveb~="göbekte-ol"]{align-self: center !important;}
-[data-deveb~="altta-ol"]{align-self: flex-end !important;}
-[data-deveb~="sağda-ol"]{margin-left:auto; align-self:flex-BAŞ;}
-[data-deveb~="solda-ol"]{margin-right:auto; align-self:flex-BAŞ;}
-[data-deveb~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:flex-BAŞ;}
-
-[data-deveb~="ger"]{justify-content: space-between;}
-[data-deveb~="yay"]{justify-content: space-around;}
-[data-deveb~="uza"]{align-items: stretch;}
-[data-deveb~="uzun-ol"]{align-self: stretch;}
-
-[data-deveb~="çizgide"]{align-items: baseline;}
-[data-deveb~="çizgide-ol"]{align-self: baseline;}
 
 [data-deveb~="gizli"]{display: none !important;}
 
@@ -345,35 +314,36 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-gnl~="21o"]{flex:21;} [data-gnl~="22o"]{flex:22;} [data-gnl~="23o"]{flex:23;} [data-gnl~="24o"]{flex:24;}
 
     /* Konum Ayarları */
-    [data-gnl~="hidden-overflow"]{overflow: hidden;}
-    [data-gnl~="nowrap"]{flex-wrap: nowrap;}
+    [data-gnl~="taşma-gizle"]{overflow: hidden;}
+    [data-gnl~="taşma-"]{overflow-x: auto;}
+    [data-gnl~="dürümsüz"]{flex-wrap: nowrap;}
 
-    [data-gnl~="wrap-reverse"]{flex-wrap: wrap-reverse;}
-    [data-gnl~="row-reverse"]{flex-direction: row-reverse;}
-    [data-gnl~="column-reverse"]{flex-direction: column-reverse;}
+    [data-gnl~="dürüm-çevir"]{flex-wrap: wrap-reverse;}
+    [data-gnl~="satır-çevir"]{flex-direction: row-reverse;}
+    [data-gnl~="sütun-çevir"]{flex-direction: column-reverse;}
 
-    [data-gnl~="left"]{justify-content: flex-BAŞ;}
-    [data-gnl~="center"]{justify-content:center;}
-    [data-gnl~="right"]{justify-content: flex-end;}
+    [data-gnl~="solda"]{justify-content: flex-start;}
+    [data-gnl~="ortada"]{justify-content:center;}
+    [data-gnl~="sağda"]{justify-content: flex-end;}
 
-    [data-gnl~="center-vh"]{align-items:center; justify-content: center;}
-    [data-gnl~="top"]{align-items: flex-BAŞ;}
-    [data-gnl~="middle"]{align-items: center;}
-    [data-gnl~="bottom"]{align-items: flex-end;}
-    [data-gnl~="top-this"]{align-self: flex-BAŞ !important;}
-    [data-gnl~="middle-this"]{align-self: center !important;}
-    [data-gnl~="bottom-this"]{align-self: flex-end !important;}
-    [data-gnl~="right-this"]{margin-left:auto; align-self:flex-BAŞ;}
-    [data-gnl~="left-this"]{margin-right:auto; align-self:flex-BAŞ;}
-    [data-gnl~="center-this"]{margin-left:auto; margin-right:auto; align-self:flex-BAŞ;}
+    [data-gnl~="merkezde"]{align-items:center; justify-content: center;}
+    [data-gnl~="üstte"]{align-items: flex-start;}
+    [data-gnl~="göbekte"]{align-items: center;}
+    [data-gnl~="altta"]{align-items: flex-end;}
+    [data-gnl~="üstte-ol"]{align-self: flex-start !important;}
+    [data-gnl~="ortada-ol"]{align-self: center !important;}
+    [data-gnl~="altta-ol"]{align-self: flex-end !important;}
+    [data-gnl~="sağda-ol"]{margin-left:auto; align-self:flex-start;}
+    [data-gnl~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+    [data-gnl~="göbekte-ol"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
 
-    [data-gnl~="space-between"]{justify-content: space-between;}
-    [data-gnl~="space-around"]{justify-content: space-around;}
-    [data-gnl~="stretch"]{align-items: stretch;}
-    [data-gnl~="stretch-this"]{align-self: stretch;}
+    [data-gnl~="ger"]{justify-content: space-between;}
+    [data-gnl~="yay"]{justify-content: space-around;}
+    [data-gnl~="uzat"]{align-items: stretch;}
+    [data-gnl~="uzun-ol"]{align-self: stretch;}
 
-    [data-gnl~="baseline"]{align-items: baseline;}
-    [data-gnl~="baseline-this"]{align-self: baseline;}
+    [data-gnl~="satırda"]{align-items: baseline;}
+    [data-gnl~="satırda-ol"]{align-self: baseline;}
 
 /*  DUYARLI TİP -SON ( 0 >> ∞ ) */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
