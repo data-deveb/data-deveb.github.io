@@ -1,167 +1,133 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Deveb Önyüz İskeleti</title>
+---
+layout: default
+---
+<h1>Renk Örgüsü</h1>
+<p>Renk örgüsü varsayılan olarak tanımlanmış bazı renk etiketleriyle kullanılmaktadır. "ana", "ara", "birincil", "ikincil" etiketleri kullanıcılar tarafından özelleştirilebilir renk grubudur. Bunların yanında özelleştirilebilen "dikkat", "tehlike", "bilgi", "olumlu", "olumsuz" renk etiketleri de kullanıcılar tarafından özelleştirilebilmektedir. Aşağıda renk örgüsünü kullanmak yönünde açıklamaları okuyunuz.</p>
+<h2>Tanımlamalar</h2>
+<div data-gnl="24" data-ufk="8" style="font-size:13px;">
+  <p><b>Renklendirme Alanları:</b><br> metin - data-arka - kenar<br>
+  Belirtilen 3 alana renklendirmeler yapabilirsiniz.<br><br>
+  <b>Kullanım tipi:</b><br>( data-deveb="metin- " data-arka=" " data-kenar=" " )<br> ( class="metin- data-arka- kenar-" )<br><br></p>
+</div>
+<div data-gnl="24" data-ufk="8" style="font-size:13px;">
+  <p><b>Renk Grubu:</b><br>
+    <span data-arka="ana" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0; margin-right:3px;"></span>ana -
+    <span data-arka="ara" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>ara -
+    <span data-arka="birincil" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>birincil -
+    <span data-arka="ikincil" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>ikincil<br>
 
-  <!-- Kök -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=latin-ext" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://data-deveb.github.io/assets/css/font-awesome.min.css">
-  <link href="https://data-deveb.github.io/assets/css/deveb.css" rel="stylesheet"><link href="https://data-deveb.github.io/assets/css/deveb.ilkel.css" rel="stylesheet">
-  <link href="https://data-deveb.github.io/assets/css/ie/deveb.ilkel.ie.css" rel="stylesheet">
-  <link href="https://data-deveb.github.io/assets/css/deveb.genel.css" rel="stylesheet">
-
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
-  <div class="header" data-gnl="1 1p" w3-include-html="https://data-deveb.github.io/temel/header.html"></div>
-<div data-deveb="kaplama ortada" data-gnl="24 24p">
-<div data-gnl="23" data-ufk="23 24p">
-    <h1>Renk Örgüsü</h1>
-    <p>Renk örgüsü varsayılan olarak tanımlanmış bazı renk etiketleriyle kullanılmaktadır. "ana", "ara", "birincil", "ikincil" etiketleri kullanıcılar tarafından özelleştirilebilir renk grubudur. Bunların yanında özelleştirilebilen "dikkat", "tehlike", "bilgi", "olumlu", "olumsuz" renk etiketleri de kullanıcılar tarafından özelleştirilebilmektedir. Aşağıda renk örgüsünü kullanmak yönünde açıklamaları okuyunuz.</p>
-    <h2>Tanımlamalar</h2>
-  <div data-gnl="24" data-ufk="8" style="font-size:13px;">
-    <p><b>Renklendirme Alanları:</b><br> metin - data-arka - kenar<br>
-    Belirtilen 3 alana renklendirmeler yapabilirsiniz.<br><br>
-    <b>Kullanım tipi:</b><br>( data-deveb="metin- " data-arka=" " data-kenar=" " )<br> ( class="metin- data-arka- kenar-" )<br><br></p>
+  <b>Durum Renkleri:</b><br>
+    <span data-arka="dikkat" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>dikkat -
+    <span data-arka="tehlike" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>tehlike -
+    <span data-arka="bilgi" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>bilgi -
+    <span data-arka="olumlu" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>olumlu -
+    <span data-arka="olumsuz" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>olumsuz<br>
+  <b>Diğer Renkler:</b><br>
+    <span data-arka="siyah" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>siyah -
+    <span data-arka="gri" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>gri -
+    <span data-arka="beyaz" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:1px; border-style:solid;margin-right:3px;"></span>beyaz<br>
+  <b>Kullanım tipi:</b><br>data-deveb="metin-birincil" data-arka="ikincil" data-kenar="tam siyah"<br><br><br></p>
+</div>
+<div data-gnl="24" data-ufk="8" style="font-size:13px;">
+  <p><b>Renk Tonları:</b><br>100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900<br>
+    <b>Renk Aydınlığı:</b><br>en-soluk -  çok-soluk - soluk - az-soluk - normal - az-parlak - parlak - çok-parlak - en-parlak<br>
+  <b>Kullanım tipi:</b><br>data-deveb="metin-birincil 300 soluk" data-arka="ikincil 600 parlak" data-kenar="tam siyah 800"</p>
+</div>
+<div class="" data-gnl="4 4p" data-ort="4 4p">
+  <div data-gnl="4">
+    <h1>Renk Tablosu Örneği</h1>
   </div>
-  <div data-gnl="24" data-ufk="8" style="font-size:13px;">
-    <p><b>Renk Grubu:</b><br>
-      <span data-arka="ana" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0; margin-right:3px;"></span>ana -
-      <span data-arka="ara" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>ara -
-      <span data-arka="birincil" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>birincil -
-      <span data-arka="ikincil" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>ikincil<br>
-
-    <b>Durum Renkleri:</b><br>
-      <span data-arka="dikkat" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>dikkat -
-      <span data-arka="tehlike" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>tehlike -
-      <span data-arka="bilgi" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>bilgi -
-      <span data-arka="olumlu" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>olumlu -
-      <span data-arka="olumsuz" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>olumsuz<br>
-    <b>Diğer Renkler:</b><br>
-      <span data-arka="siyah" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>siyah -
-      <span data-arka="gri" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:0;margin-right:3px;"></span>gri -
-      <span data-arka="beyaz" style="display:inline-block; height:10px; width:10px; border-radius:50%; border-width:1px; border-style:solid;margin-right:3px;"></span>beyaz<br>
-    <b>Kullanım tipi:</b><br>data-deveb="metin-birincil" data-arka="ikincil" data-kenar="tam siyah"<br><br><br></p>
+  <div data-gnl="2" data-ort="1">
+    <div data-gnl="1 1p" data-arka="ana">data-arka="ana"</div>
+    <div data-gnl="1 1p" data-arka="ana 100">data-arka="ana 100"</div>
+    <div data-gnl="1 1p" data-arka="ana 200">data-arka="ana 200"</div>
+    <div data-gnl="1 1p" data-arka="ana 300">data-arka="ana 300"</div>
+    <div data-gnl="1 1p" data-arka="ana 400">data-arka="ana 400"</div>
+    <div data-gnl="1 1p" data-arka="ana 500">data-arka="ana 500"</div>
+    <div data-gnl="1 1p" data-arka="ana 600">data-arka="ana 600"</div>
+    <div data-gnl="1 1p" data-arka="ana 700">data-arka="ana 700"</div>
+    <div data-gnl="1 1p" data-arka="ana 800">data-arka="ana 800"</div>
+    <div data-gnl="1 1p" data-arka="ana 900">data-arka="ana 900"</div>
+    <div data-gnl="1 1p" data-arka="ana en-soluk">data-arka="ana en-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ana çok-soluk">data-arka="ana çok-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ana soluk">data-arka="ana soluk"</div>
+    <div data-gnl="1 1p" data-arka="ana az-soluk">data-arka="ana az-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ana normal">data-arka="ana normal"</div>
+    <div data-gnl="1 1p" data-arka="ana az-parlak">data-arka="ana az-parlak"</div>
+    <div data-gnl="1 1p" data-arka="ana parlak">data-arka="ana parlak"</div>
+    <div data-gnl="1 1p" data-arka="ana çok-parlak">data-arka="ana çok-parlak"</div>
+    <div data-gnl="1 1p" data-arka="ana en-parlak">data-arka="ana en-parlak"</div>
   </div>
-  <div data-gnl="24" data-ufk="8" style="font-size:13px;">
-    <p><b>Renk Tonları:</b><br>100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900<br>
-      <b>Renk Aydınlığı:</b><br>en-soluk -  çok-soluk - soluk - az-soluk - normal - az-parlak - parlak - çok-parlak - en-parlak<br>
-    <b>Kullanım tipi:</b><br>data-deveb="metin-birincil 300 soluk" data-arka="ikincil 600 parlak" data-kenar="tam siyah 800"</p>
+  <div data-gnl="2" data-ort="1">
+    <div data-gnl="1 1p" data-arka="ara">data-arka="ara"</div>
+    <div data-gnl="1 1p" data-arka="ara 100">data-arka="ara 100"</div>
+    <div data-gnl="1 1p" data-arka="ara 200">data-arka="ara 200"</div>
+    <div data-gnl="1 1p" data-arka="ara 300">data-arka="ara 300"</div>
+    <div data-gnl="1 1p" data-arka="ara 400">data-arka="ara 400"</div>
+    <div data-gnl="1 1p" data-arka="ara 500">data-arka="ara 500"</div>
+    <div data-gnl="1 1p" data-arka="ara 600">data-arka="ara 600"</div>
+    <div data-gnl="1 1p" data-arka="ara 700">data-arka="ara 700"</div>
+    <div data-gnl="1 1p" data-arka="ara 800">data-arka="ara 800"</div>
+    <div data-gnl="1 1p" data-arka="ara 900">data-arka="ara 900"</div>
+    <div data-gnl="1 1p" data-arka="ara en-soluk">data-arka="ara en-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ara çok-soluk">data-arka="ara çok-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ara soluk">data-arka="ara soluk"</div>
+    <div data-gnl="1 1p" data-arka="ara az-soluk">data-arka="ara az-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ara normal">data-arka="ara normal"</div>
+    <div data-gnl="1 1p" data-arka="ara az-parlak">data-arka="ara az-parlak"</div>
+    <div data-gnl="1 1p" data-arka="ara parlak">data-arka="ara parlak"</div>
+    <div data-gnl="1 1p" data-arka="ara çok-parlak">data-arka="ara çok-parlak"</div>
+    <div data-gnl="1 1p" data-arka="ara en-parlak">data-arka="ara en-parlak"</div>
   </div>
-  <div class="" data-gnl="4 4p" data-ort="4 4p">
-    <div data-gnl="4">
-      <h1>Renk Tablosu Örneği</h1>
-    </div>
-    <div data-gnl="2" data-ort="1">
-      <div data-gnl="1 1p" data-arka="ana">data-arka="ana"</div>
-      <div data-gnl="1 1p" data-arka="ana 100">data-arka="ana 100"</div>
-      <div data-gnl="1 1p" data-arka="ana 200">data-arka="ana 200"</div>
-      <div data-gnl="1 1p" data-arka="ana 300">data-arka="ana 300"</div>
-      <div data-gnl="1 1p" data-arka="ana 400">data-arka="ana 400"</div>
-      <div data-gnl="1 1p" data-arka="ana 500">data-arka="ana 500"</div>
-      <div data-gnl="1 1p" data-arka="ana 600">data-arka="ana 600"</div>
-      <div data-gnl="1 1p" data-arka="ana 700">data-arka="ana 700"</div>
-      <div data-gnl="1 1p" data-arka="ana 800">data-arka="ana 800"</div>
-      <div data-gnl="1 1p" data-arka="ana 900">data-arka="ana 900"</div>
-      <div data-gnl="1 1p" data-arka="ana en-soluk">data-arka="ana en-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ana çok-soluk">data-arka="ana çok-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ana soluk">data-arka="ana soluk"</div>
-      <div data-gnl="1 1p" data-arka="ana az-soluk">data-arka="ana az-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ana normal">data-arka="ana normal"</div>
-      <div data-gnl="1 1p" data-arka="ana az-parlak">data-arka="ana az-parlak"</div>
-      <div data-gnl="1 1p" data-arka="ana parlak">data-arka="ana parlak"</div>
-      <div data-gnl="1 1p" data-arka="ana çok-parlak">data-arka="ana çok-parlak"</div>
-      <div data-gnl="1 1p" data-arka="ana en-parlak">data-arka="ana en-parlak"</div>
-    </div>
-    <div data-gnl="2" data-ort="1">
-      <div data-gnl="1 1p" data-arka="ara">data-arka="ara"</div>
-      <div data-gnl="1 1p" data-arka="ara 100">data-arka="ara 100"</div>
-      <div data-gnl="1 1p" data-arka="ara 200">data-arka="ara 200"</div>
-      <div data-gnl="1 1p" data-arka="ara 300">data-arka="ara 300"</div>
-      <div data-gnl="1 1p" data-arka="ara 400">data-arka="ara 400"</div>
-      <div data-gnl="1 1p" data-arka="ara 500">data-arka="ara 500"</div>
-      <div data-gnl="1 1p" data-arka="ara 600">data-arka="ara 600"</div>
-      <div data-gnl="1 1p" data-arka="ara 700">data-arka="ara 700"</div>
-      <div data-gnl="1 1p" data-arka="ara 800">data-arka="ara 800"</div>
-      <div data-gnl="1 1p" data-arka="ara 900">data-arka="ara 900"</div>
-      <div data-gnl="1 1p" data-arka="ara en-soluk">data-arka="ara en-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ara çok-soluk">data-arka="ara çok-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ara soluk">data-arka="ara soluk"</div>
-      <div data-gnl="1 1p" data-arka="ara az-soluk">data-arka="ara az-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ara normal">data-arka="ara normal"</div>
-      <div data-gnl="1 1p" data-arka="ara az-parlak">data-arka="ara az-parlak"</div>
-      <div data-gnl="1 1p" data-arka="ara parlak">data-arka="ara parlak"</div>
-      <div data-gnl="1 1p" data-arka="ara çok-parlak">data-arka="ara çok-parlak"</div>
-      <div data-gnl="1 1p" data-arka="ara en-parlak">data-arka="ara en-parlak"</div>
-    </div>
-    <div data-gnl="2" data-ort="1">
-      <div data-gnl="1 1p" data-arka="birincil">data-arka="birincil"</div>
-      <div data-gnl="1 1p" data-arka="birincil 100">data-arka="birincil 100"</div>
-      <div data-gnl="1 1p" data-arka="birincil 200">data-arka="birincil 200"</div>
-      <div data-gnl="1 1p" data-arka="birincil 300">data-arka="birincil 300"</div>
-      <div data-gnl="1 1p" data-arka="birincil 400">data-arka="birincil 400"</div>
-      <div data-gnl="1 1p" data-arka="birincil 500">data-arka="birincil 500"</div>
-      <div data-gnl="1 1p" data-arka="birincil 600">data-arka="birincil 600"</div>
-      <div data-gnl="1 1p" data-arka="birincil 700">data-arka="birincil 700"</div>
-      <div data-gnl="1 1p" data-arka="birincil 800">data-arka="birincil 800"</div>
-      <div data-gnl="1 1p" data-arka="birincil 900">data-arka="birincil 900"</div>
-      <div data-gnl="1 1p" data-arka="birincil en-soluk">data-arka="birincil en-soluk"</div>
-      <div data-gnl="1 1p" data-arka="birincil çok-soluk">data-arka="birincil çok-soluk"</div>
-      <div data-gnl="1 1p" data-arka="birincil soluk">data-arka="birincil soluk"</div>
-      <div data-gnl="1 1p" data-arka="birincil az-soluk">data-arka="birincil az-soluk"</div>
-      <div data-gnl="1 1p" data-arka="birincil normal">data-arka="birincil normal"</div>
-      <div data-gnl="1 1p" data-arka="birincil az-parlak">data-arka="birincil az-parlak"</div>
-      <div data-gnl="1 1p" data-arka="birincil parlak">data-arka="birincil parlak"</div>
-      <div data-gnl="1 1p" data-arka="birincil çok-parlak">data-arka="birincil çok-parlak"</div>
-      <div data-gnl="1 1p" data-arka="birincil en-parlak">data-arka="birincil en-parlak"</div>
-    </div>
-    <div data-gnl="2" data-ort="1">
-      <div data-gnl="1 1p" data-arka="ikincil">data-arka="ikincil"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 100">data-arka="ikincil 100"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 200">data-arka="ikincil 200"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 300">data-arka="ikincil 300"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 400">data-arka="ikincil 400"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 500">data-arka="ikincil 500"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 600">data-arka="ikincil 600"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 700">data-arka="ikincil 700"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 800">data-arka="ikincil 800"</div>
-      <div data-gnl="1 1p" data-arka="ikincil 900">data-arka="ikincil 900"</div>
-      <div data-gnl="1 1p" data-arka="ikincil en-soluk">data-arka="ikincil en-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ikincil çok-soluk">data-arka="ikincil çok-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ikincil soluk">data-arka="ikincil soluk"</div>
-      <div data-gnl="1 1p" data-arka="ikincil az-soluk">data-arka="ikincil az-soluk"</div>
-      <div data-gnl="1 1p" data-arka="ikincil normal">data-arka="ikincil normal"</div>
-      <div data-gnl="1 1p" data-arka="ikincil az-parlak">data-arka="ikincil az-parlak"</div>
-      <div data-gnl="1 1p" data-arka="ikincil parlak">data-arka="ikincil parlak"</div>
-      <div data-gnl="1 1p" data-arka="ikincil çok-parlak">data-arka="ikincil çok-parlak"</div>
-      <div data-gnl="1 1p" data-arka="ikincil en-parlak">data-arka="ikincil en-parlak"</div>
-    </div>
+  <div data-gnl="2" data-ort="1">
+    <div data-gnl="1 1p" data-arka="birincil">data-arka="birincil"</div>
+    <div data-gnl="1 1p" data-arka="birincil 100">data-arka="birincil 100"</div>
+    <div data-gnl="1 1p" data-arka="birincil 200">data-arka="birincil 200"</div>
+    <div data-gnl="1 1p" data-arka="birincil 300">data-arka="birincil 300"</div>
+    <div data-gnl="1 1p" data-arka="birincil 400">data-arka="birincil 400"</div>
+    <div data-gnl="1 1p" data-arka="birincil 500">data-arka="birincil 500"</div>
+    <div data-gnl="1 1p" data-arka="birincil 600">data-arka="birincil 600"</div>
+    <div data-gnl="1 1p" data-arka="birincil 700">data-arka="birincil 700"</div>
+    <div data-gnl="1 1p" data-arka="birincil 800">data-arka="birincil 800"</div>
+    <div data-gnl="1 1p" data-arka="birincil 900">data-arka="birincil 900"</div>
+    <div data-gnl="1 1p" data-arka="birincil en-soluk">data-arka="birincil en-soluk"</div>
+    <div data-gnl="1 1p" data-arka="birincil çok-soluk">data-arka="birincil çok-soluk"</div>
+    <div data-gnl="1 1p" data-arka="birincil soluk">data-arka="birincil soluk"</div>
+    <div data-gnl="1 1p" data-arka="birincil az-soluk">data-arka="birincil az-soluk"</div>
+    <div data-gnl="1 1p" data-arka="birincil normal">data-arka="birincil normal"</div>
+    <div data-gnl="1 1p" data-arka="birincil az-parlak">data-arka="birincil az-parlak"</div>
+    <div data-gnl="1 1p" data-arka="birincil parlak">data-arka="birincil parlak"</div>
+    <div data-gnl="1 1p" data-arka="birincil çok-parlak">data-arka="birincil çok-parlak"</div>
+    <div data-gnl="1 1p" data-arka="birincil en-parlak">data-arka="birincil en-parlak"</div>
   </div>
-  <div data-gnl="24">
-    <h2>Örnek</h2>
-  </div>
-  <div data-gnl="1 2p">
-    <iframe data-gnl="2" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/html/" allowfullscreen="allowfullscreen" style="border:0 solid red;"></iframe>
-  </div>
-  <div data-gnl="1 2p">
-    <iframe data-gnl="2" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/result/" allowfullscreen="allowfullscreen" style="border:0 solid red;"></iframe>
+  <div data-gnl="2" data-ort="1">
+    <div data-gnl="1 1p" data-arka="ikincil">data-arka="ikincil"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 100">data-arka="ikincil 100"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 200">data-arka="ikincil 200"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 300">data-arka="ikincil 300"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 400">data-arka="ikincil 400"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 500">data-arka="ikincil 500"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 600">data-arka="ikincil 600"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 700">data-arka="ikincil 700"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 800">data-arka="ikincil 800"</div>
+    <div data-gnl="1 1p" data-arka="ikincil 900">data-arka="ikincil 900"</div>
+    <div data-gnl="1 1p" data-arka="ikincil en-soluk">data-arka="ikincil en-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ikincil çok-soluk">data-arka="ikincil çok-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ikincil soluk">data-arka="ikincil soluk"</div>
+    <div data-gnl="1 1p" data-arka="ikincil az-soluk">data-arka="ikincil az-soluk"</div>
+    <div data-gnl="1 1p" data-arka="ikincil normal">data-arka="ikincil normal"</div>
+    <div data-gnl="1 1p" data-arka="ikincil az-parlak">data-arka="ikincil az-parlak"</div>
+    <div data-gnl="1 1p" data-arka="ikincil parlak">data-arka="ikincil parlak"</div>
+    <div data-gnl="1 1p" data-arka="ikincil çok-parlak">data-arka="ikincil çok-parlak"</div>
+    <div data-gnl="1 1p" data-arka="ikincil en-parlak">data-arka="ikincil en-parlak"</div>
   </div>
 </div>
-
+<div data-gnl="24">
+  <h2>Örnek</h2>
 </div>
-<div data-gnl="1 1p" w3-include-html="https://data-deveb.github.io/temel/foot.html"></div>
-<script src="https://data-deveb.github.io/assets/js/not-for-deveb-w3.js"></script>
-<script>w3.includeHTML();</script>
-</body>
-</html>
+<div data-gnl="1 2p">
+  <iframe data-gnl="2" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/html/" allowfullscreen="allowfullscreen" style="border:0 solid red;"></iframe>
+</div>
+<div data-gnl="1 2p">
+  <iframe data-gnl="2" height="300" src="//jsfiddle.net/deveb/yzfd5edf/embedded/result/" allowfullscreen="allowfullscreen" style="border:0 solid red;"></iframe>
+</div>
