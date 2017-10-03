@@ -298,9 +298,10 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     /* Esnek Kap Örgüsü Genişliği */
     [data-gnl~="0"]{
       flex-basis: auto;
+      max-width: auto;
+      width: auto;
     }
     [data-gnl~="kaplama"]{
-      width: auto;
       margin-left:auto;
       margin-right:auto;
     }
@@ -589,7 +590,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
       [data-gnl~="kaplama"],[data-dev~="kaplama"],[data-kcm~="kaplama"],[data-byk~="kaplama"],[data-ort~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
         flex-basis: 1890px;
-        width: 1890px;
+        max-width: 1890px;
       }
 
     }
@@ -601,7 +602,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     @media screen and (max-width:300px) {
       [data-gnl~="kaplama"],[data-mnk~="kaplama"]{
         flex-basis: 100%;
-        width: 100%;
+        max-width: 100%;
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -610,7 +611,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     @media screen and (min-width:300px) and (max-width:576px) {
       [data-gnl~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
         flex-basis: calc(100% - 20px);
-        width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -619,7 +620,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     @media screen and (min-width:576px) and (max-width:768px) {
       [data-gnl~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
         flex-basis: 566px;
-        width: 566px;
+        max-width: 566px;
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -629,7 +630,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     @media screen and (min-width:768px) and (max-width:992px) {
       [data-gnl~="kaplama"],[data-ort~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
         flex-basis: 760px;
-        width: 760px;
+        max-width: 760px;
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -638,7 +639,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     @media screen and (min-width:992px) and (max-width:1200px) {
       [data-gnl~="kaplama"],[data-byk~="kaplama"],[data-ort~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
         flex-basis: 960px;
-        width: 960px;
+        max-width: 960px;
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -647,7 +648,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     @media screen and (min-width:1200px) and (max-width:1900px) {
       [data-gnl~="kaplama"],[data-kcm~="kaplama"],[data-byk~="kaplama"],[data-ort~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
         flex-basis: 1140px;
-        width: 1140px;
+        max-width: 1140px;
       }
     }
 

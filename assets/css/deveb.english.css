@@ -121,8 +121,10 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
         padding:0;
       }
     /* Free grid piece */
-    [data-gnl~="0p"]{
+    [data-gnl~="0"]{
       flex-basis: auto;
+      max-width: auto;
+      width: auto;
     }
     [data-gnl~="container"]{
       width: auto;
@@ -230,8 +232,10 @@ S01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
         max-width:  calc(100% / var(--part) * var(--piece));
       }
 
-      [data-xs~="0p"]{
+      [data-xs~="0"]{
         flex-basis: auto;
+        max-width: auto;
+        width: auto;
       }
 
       [data-xs~="1o"]{flex:1;}   [data-xs~="2o"]{flex:2;}   [data-xs~="3o"]{flex:3;}   [data-xs~="4o"]{flex:4;}
@@ -264,8 +268,10 @@ S02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
         max-width:  calc(100% / var(--part) * var(--piece));
       }
 
-      [data-sm~="0p"]{
+      [data-sm~="0"]{
         flex-basis: auto;
+        max-width: auto;
+        width: auto;
       }
 
       [data-sm~="1o"]{flex:1;}    [data-sm~="2o"]{flex:2;}   [data-sm~="3o"]{flex:3;}    [data-sm~="4o"]{flex:4;}
@@ -298,8 +304,10 @@ S03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
         max-width:  calc(100% / var(--part) * var(--piece));
       }
 
-      [data-md~="0p"]{
+      [data-md~="0"]{
         flex-basis: auto;
+        max-width: auto;
+        width: auto;
       }
 
       [data-md~="1o"]{flex:1;}    [data-md~="2o"]{flex:2;}   [data-md~="3o"]{flex:3;}    [data-md~="4o"]{flex:4;}
@@ -332,8 +340,10 @@ S04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
         max-width:  calc(100% / var(--part) * var(--piece));
       }
 
-      [data-lg~="0p"]{
+      [data-lg~="0"]{
         flex-basis: auto;
+        max-width: auto;
+        width: auto;
       }
 
       [data-lg~="1o"]{flex:1;}    [data-lg~="2o"]{flex:2;}   [data-lg~="3o"]{flex:3;}    [data-lg~="4o"]{flex:4;}
@@ -366,8 +376,10 @@ S05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
         max-width:  calc(100% / var(--part) * var(--piece));
       }
 
-      [data-xl~="0p"]{
+      [data-xl~="0"]{
         flex-basis: auto;
+        max-width: auto;
+        width: auto;
       }
 
       [data-xl~="1o"]{flex:1;}    [data-xl~="2o"]{flex:2;}   [data-xl~="3o"]{flex:3;}    [data-xl~="4o"]{flex:4;}
@@ -400,8 +412,10 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
         max-width:  calc(100% / var(--part) * var(--piece));
       }
 
-      [data-hg~="0p"]{
+      [data-hg~="0"]{
         flex-basis: auto;
+        max-width: auto;
+        width: auto;
       }
 
       [data-hg~="1o"]{flex:1;}    [data-hg~="2o"]{flex:2;}   [data-hg~="3o"]{flex:3;}    [data-hg~="4o"]{flex:4;}
@@ -413,7 +427,7 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
 
       [data-gnl~="container"],[data-hg~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
         flex-basis: 1890px;
-        width: 1890px;
+        max-width: 1890px;
       }
 
     }
@@ -425,7 +439,7 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     @media screen and (max-width:300px) {
       [data-gnl~="container"],[data-ti~="container"]{
         flex-basis: 100%;
-        width: 100%;
+        max-width: 100%;
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -434,7 +448,7 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     @media screen and (min-width:300px) and (max-width:576px) {
       [data-gnl~="container"],[data-xs~="container"],[data-ti~="container"]{
         flex-basis: calc(100% - 20px);
-        width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -443,7 +457,7 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     @media screen and (min-width:576px) and (max-width:768px) {
       [data-gnl~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
         flex-basis: 566px;
-        width: 566px;
+        max-width: 566px;
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -453,7 +467,7 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     @media screen and (min-width:768px) and (max-width:992px) {
       [data-gnl~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
         flex-basis: 760px;
-        width: 760px;
+        max-width: 760px;
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -462,7 +476,7 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     @media screen and (min-width:992px) and (max-width:1200px) {
       [data-gnl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
         flex-basis: 960px;
-        width: 960px;
+        max-width: 960px;
       }
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -471,6 +485,6 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     @media screen and (min-width:1200px) and (max-width:1900px) {
       [data-gnl~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
         flex-basis: 1140px;
-        width: 1140px;
+        max-width: 1140px;
       }
     }
