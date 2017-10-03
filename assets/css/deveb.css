@@ -164,11 +164,11 @@ ul{
   margin-left: auto;
   margin-right: auto;}
 
-[data-gnl~="0p"]{flex-basis: auto;}
+[data-gnl~="0"]{flex-basis: auto;}
 [data-gnl~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
 /* Kap alanı genişliğini esnek yapmak */
-[data-gnl~="0p"] {flex-basis: auto;}
+[data-gnl~="0"] {flex-basis: auto;}
 
 
 @media screen and (min-width: 35.5em){
@@ -186,7 +186,7 @@ ul{
   margin-right: auto;}
 
 /* Kap alanı genişliğini esnek yapmak */
-[data-ufk~="0p"]{flex-basis: auto;}
+[data-ufk~="0"]{flex-basis: auto;}
 [data-ufk~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
 }
@@ -209,7 +209,7 @@ ul{
   margin-right: auto;}
 
 /* Kap alanı genişliğini esnek yapmak */
-[data-ort~="0p"]{flex-basis: auto;}
+[data-ort~="0"]{flex-basis: auto;}
 [data-ort~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
 }
@@ -229,7 +229,7 @@ ul{
   margin-right: auto;}
 
 /* Kap alanı genişliğini esnek yapmak */
-[data-byk~="0p"]{flex-basis: auto;}
+[data-byk~="0"]{flex-basis: auto;}
 [data-byk~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
 }
@@ -296,7 +296,7 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
         padding:0;
       }
     /* Esnek Kap Örgüsü Genişliği */
-    [data-gnl~="0p"]{
+    [data-gnl~="0"]{
       flex-basis: auto;
     }
     [data-gnl~="kaplama"]{
@@ -406,7 +406,7 @@ S01 UFAK-BAŞ (ufk) veya (ufk-son) | Ekran ölçeği: 300px ≤ *
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
-      [data-ufk~="0p"]{
+      [data-ufk~="0"]{
         flex-basis: auto;
       }
 
@@ -440,7 +440,7 @@ S02 KÇK-BAŞ (kçk) veya (kçk-baş) | Ekran ölçeği: 576px ≤ *
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
-      [data-kçk~="0p"]{
+      [data-kçk~="0"]{
         flex-basis: auto;
       }
 
@@ -474,7 +474,7 @@ S03 ORTA-BAŞ (ort) veya (ort-baş) | Ekran ölçeği: 768px ≤ *
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
-      [data-ort~="0p"]{
+      [data-ort~="0"]{
         flex-basis: auto;
       }
 
@@ -508,7 +508,7 @@ S04 BÜYÜK-BAŞ (byk) veya (byk-baş) | Ekran ölçeği: 992px ≤ *
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
-      [data-byk~="0p"]{
+      [data-byk~="0"]{
         flex-basis: auto;
       }
 
@@ -542,7 +542,7 @@ S05 KOCAMAN-BAŞ (kcm) veya (kcm-baş) | Ekran ölçeği: 1200px ≤ *
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
-      [data-kcm~="0p"]{
+      [data-kcm~="0"]{
         flex-basis: auto;
       }
 
@@ -576,7 +576,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
-      [data-dev~="0p"]{
+      [data-dev~="0"]{
         flex-basis: auto;
       }
 
