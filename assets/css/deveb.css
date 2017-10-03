@@ -1,26 +1,37 @@
 @charset "UTF-8";
-/*! [DEVEB SÜRÜM 0.11] | dosya:: "deveb.css" */
+/* ==========================================================================
 
-/*
-  TANIMLAMALAR
-  ==========================================================================
-:: Yardımcılar
+    [DEVEB 0.1]
+    dosya:: "deveb.css"
+
+    TANIMLAR
     beri: CSS > margin          		dolgu: CSS > padding
 
-:: Ekran Ölçekleri
-    data-byk: (b)ü(y)ü(k): en büyük ekran ve daha büyükleri
-    data-ort: (data-ort)a: data-orta ekran ve daha büyükleri
-    data-ufk: (uf)a(k): ufak ekran ve daha büyükleri
-    data-gnl: (g)enel: en küçük ekran ve daha büyükleri.
+    EKRAN ÖLÇEKLERİ
+    dev: (dev)
+    kcm: (k)o(c)a(m)an
+    byk: (b)ü(y)ü(k)
+    ort: (o)(r)(t)a
+    kçk: (k)ü(ç)ü(k)
+    ufk: (u)(f)a(k)
+    mnk: (m)i(n)i(k)
+    gnl: (g)e(n)e(l)
 
-:: Kap Örgüsü
     p: (p)arça
 
-:: Özellikler
-    Temizleme
-    Kap Örgüsü
-    Renk Örgüsü
-*/
+    • VARSAYILAN
+    • KAP ÖRGÜSÜ        -> Satır-imi: G00
+    • EKRAN YÖNETİMİ    -> Satır-imi: yok
+      • GENEL           -> Satır-imi: S01
+      • UFAK BAŞLAR     -> Satır-imi: S02
+      • KÜÇÜK BAŞLAR    -> Satır-imi: S03
+      • ORTA BAŞLAR     -> Satır-imi: S04
+      • BÜYÜK BAŞLAR    -> Satır-imi: S05
+      • KOCAMAN BAŞLAR  -> Satır-imi: S06
+      • DEV BAŞLAR      -> Satır-imi: S07
+    • RENK ÖRGÜSÜ       -> Satır-imi: yok
+========================================================================== */
+
 /*  AYARLAR
     ==========================================================================*/
 
