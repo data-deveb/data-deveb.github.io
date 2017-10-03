@@ -1,8 +1,3 @@
----
-layout: page
-title: About
----
-
 # deveb
 Web siteleri için hazırlanan bir frontend framework çalışmasıdır.
 
