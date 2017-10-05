@@ -127,6 +127,9 @@ ul{
   ul li{
     list-style-type: none;
   }
+ul ul{
+  margin-left:15px;
+}
 /* ==========================================================================
     KAP ÖRGÜSÜ
     'Display:flex' yöntemiyle geliştirilen kap örgüsü.
