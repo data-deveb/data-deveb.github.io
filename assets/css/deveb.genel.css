@@ -206,7 +206,7 @@ ul.liste-temiz li{
 	display: flex;
 	flex-wrap: wrap;
 	border-radius: 4px;
-	padding-bottom:8px;
+	padding-bottom:4px;
 	margin:15px;
 	border:1px solid rgba(0,0,0,0.1);
 }
@@ -223,4 +223,5 @@ ul.liste-temiz li{
 [data-kart~="haber"] > h1{
 	font-size:1.4em;
 	color:#444;
+	padding:5px;
 }
