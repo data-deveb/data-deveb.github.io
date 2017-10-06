@@ -208,6 +208,7 @@ ul.liste-temiz li{
 	border-radius: 4px;
 	padding-bottom:8px;
 	margin:15px;
+	border:1px solid rgba(0,0,0,0.1);
 }
 [data-kart~="haber"] > *:first-child{
 	border-radius: 4px 4px 0 0;
