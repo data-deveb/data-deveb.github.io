@@ -205,7 +205,17 @@ ul.liste-temiz li{
 [data-kart~="haber"]{
 	display: flex;
 	flex-wrap: wrap;
+	border-radius: 4px;
+	padding-bottom:8px;
+	margin:15px;
 }
+[data-kart~="haber"] > *:first-child{
+	border-radius: 4px 4px 0 0;
+}
+[data-kart~="haber"] > *:last-child{
+	border-radius: 0 0 4px 4px;
+}
+
 [data-kart~="haber"] > img{
 	width:100%;
 }
