@@ -202,3 +202,14 @@ ul.liste-temiz li{
   padding:5px;
   background-color: #fff;
 }
+[data-kart~="haber"]{
+	display: flex;
+	flex-wrap: wrap;
+}
+[data-kart~="haber"] > img{
+	width:100%;
+}
+[data-kart~="haber"] > h1{
+	font-size:1.4em;
+	color:#444;
+}
