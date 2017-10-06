@@ -82,21 +82,20 @@ a, button, input, textarea {
 
 /* Başlık ayarları */
 h1, h2, h3, h4, h5, h6{
-  /* Her bulunduğu yerin genişliğinde olması ayarı */
   width: 100%;
   display: block;
+  font-weight: bold;
   -webkit-margin-before: 0;
     -webkit-margin-after: 0;
-    -webkit-margin-BAŞ: 0px;
+    -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-  /* Başlıkları varsayılan olarak kalın yapma ayarı */
-  font-weight: bold;
-  margin:1rem 0 0.5rem 0;
-  color:#111;
 }
-h1{font-size: 2.4rem;}
-h2{font-size: 1.6rem;}
-h3{font-size: 1.2rem;}
+h1{font-size:2.6em}
+  h2{font-size:2.2em}
+    h3{font-size:1.8em}
+      h4{font-size:1.4em}
+        h5{font-size:1.2em}
+          h6{font-size:1.0em}
 
 img {
   /* Kenarlıkları sıfırlama */
