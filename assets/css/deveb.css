@@ -143,6 +143,8 @@ ul ul{
   flex-flow: row wrap;
   /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
   box-sizing: border-box;
+  /* Varsayılan olarak üstte ol */
+  align-items: flex-start;
 }
 
 
