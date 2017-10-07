@@ -834,3 +834,16 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 [data-kenar~="olumsuz"][data-kenar~="sağ"]{ border-right-color: hsl(var(--kenar-olumsuz-renk),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
 [data-kenar~="olumsuz"][data-kenar~="üst"]{ border-top-color: hsl(var(--kenar-olumsuz-renk),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
 [data-kenar~="olumsuz"][data-kenar~="alt"]{ border-bottom-color: hsl(var(--kenar-olumsuz-renk),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
+
+
+/* ==========================================================================
+    RESİM ÖRGÜSÜ s0.1
+    Katkıda Bulunanlar
+    {Ramazan Kapar Facebook>ramazankadir.kapan}
+-------------------------------------------------------------------------- */
+[data-resim~="daire"]{border-radius: 50%;}
+[data-resim~="kare"]{border-radius: 0;}
+[data-resim~="yuvarlak"]{border-radius:3px;}
+[data-resim~="yuvarlak-1"]{border-radius:5px;}
+[data-resim~="yuvarlak-2"]{border-radius:8px;}
+[data-resim~="yuvarlak-3"]{border-radius:10px;}
