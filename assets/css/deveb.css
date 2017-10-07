@@ -39,28 +39,31 @@
   --yazı-biçimi:'Roboto', sans-serif;
   --yazı-boyutu:11pt;
 
-  --kaplama:980px;
-
   /* Kap örgüsü varsayılan genişlik */
-  --par:12;--parça:1;
-  --u-par:12;--u-parça:1;
-  --o-par:12;--o-parça:1;
-  --b-par:12;--b-parça:1;
+  --par:24;--parça:24;
 }
 /*  Temizleme
     ==========================================================================*/
 /** Varsayılan değiştirgeleri temizleme eylemi. */
+*{
+  /* Tüm tarayıcılar için her şeyin beri (margin) değerini sıfırlama. */
+  margin: 0;
+  /* Tüm tarayıcılar için her şeyin dolgu (padding) değerini sıfırlama. */
+  padding: 0;
+}
+
 html {
   /* Metin boyutlarında ayarlamaları doğallaştırma. */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-*{
-  /* Tüm tarayıcılar için her şeyin beri (margin) değerini sıfırlama. */
-  margin: 0;
-  /* Tüm tarayıcılar için her şeyin dolgu (padding) değerini sıfırlama. */
-  padding: 0;
+body{
+  /* Her yerde varsayılan yazı biçimi */
+  font-family: var(--yazı-biçimi);
+  /* Her yerde varsayılan yazı boyutu ve tipi */
+    font-size: var(--yazı-boyutu);
+    font-weight: 300;
 }
 
 article,aside,details,
@@ -101,121 +104,62 @@ img {
   /* Kenarlıkları sıfırlama */
   border: 0;
 }
+
 table{
   display: table !important;
 }
+
 /* Deveb Varsayılan */
-body{
-  /* Her yerde varsayılan yazı biçimi */
-  font-family: var(--yazı-biçimi);
-  /* Her yerde varsayılan yazı boyutu ve tipi */
-    font-size: var(--yazı-boyutu);
-    font-weight: 300;
-}
+
 /* Paragraf ayarları */
 p{display: block; width:100%;}
   /* İki paragraf arasına mesafe verme ayarı */
   p+p{margin-top:1rem;}
 
 /* Liste ayarları */
-ul{
-  padding:0;
-  margin:0;
-}
+ul{padding:0; margin: 0;}
   /* Liste tipini temizleme ayarı */
-  ul li{
-    list-style-type: none;
-  }
-ul ul{
-  margin-left:15px;
-}
+  ul li{list-style-type: none;}
+    ul ul{margin-left: 15px;}
 /* ==========================================================================
     KAP ÖRGÜSÜ
     'Display:flex' yöntemiyle geliştirilen kap örgüsü.
     * data-gnl, data-byk, data-ort, data-ufk ekran genişlikleri için kullanılan özel nitelikler.
 ========================================================================== */
 /* Genel Ayarlar */
-[data-deveb~="kap"],[data-gnl],[data-byk],[data-ort],[data-ufk]{
+[data-gnl],[data-byk],[data-ort],[data-ufk]{
   /* Her durumda esnek görünüm tanımlama ayarı */
   display: flex;
   /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
   box-sizing: border-box;
   /* Varsayılan olarak üstte ol */
   align-items: flex-start;
 }
-
-
-[data-deveb~="gizli"]{display: none !important;}
-
-
-[data-deveb~="kaplama"]{
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 /* TÜM EKRANLAR: 0px < data-gnl + */
-/* KAP ÖRGÜSÜ : Parça Yöntemi */
-
 /* Kap alanını gizleme sınıfı */
 [data-gnl~="gizli"]{display: none;}
 
-/* Kap alanının sütunlara bölme */
-[data-gnl~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
-[data-deveb~="ortada"][data-gnl~="sütun"] > [data-gnl]{
-  margin-left: auto;
-  margin-right: auto;}
-
-[data-gnl~="0"]{flex-basis: auto;}
 [data-gnl~="tam-kaplama"]{width: 100%; max-width: 100%;}
-
-/* Kap alanı genişliğini esnek yapmak */
-[data-gnl~="0"] {flex-basis: auto;}
-
 
 @media screen and (min-width: 35.5em){
 /* UFAK: 568px <= data-ufk+ */
-
 /* Kap alanını gizleme sınıfı */
 [data-ufk~="gizli"]{display: none;}
 /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
 [data-ufk]:not([data-ufk~="gizli"]){display: flex;}
-
-/* Kap alanının sütunlara bölme */
-[data-ufk~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
-[data-deveb~="ortada"][data-ufk~="sütun"] > [data-ufk]{
-  margin-left: auto;
-  margin-right: auto;}
-
-/* Kap alanı genişliğini esnek yapmak */
-[data-ufk~="0"]{flex-basis: auto;}
 [data-ufk~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
 }
 
 /* Dizüstü ve büyük: 768px <= data-ort + */
 @media screen and (min-width: 48em){
-/* Kap alanının en fazla genişlik ölçüsünü sabitler */
-[data-deveb~="kaplama"]{
-   max-width:var(--kaplama) !important;
- }
 /* Kap alanını gizleme sınıfı */
 [data-ort~="gizli"]{display: none;}
 /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
 [data-ort]:not([data-ort~="gizli"]){display: flex;}
-
-/* Kap alanının sütunlara bölme */
-[data-ort~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
-[data-deveb~="ortada"][data-ort~="sütun"] > [data-ort]{
-  margin-left: auto;
-  margin-right: auto;}
-
-/* Kap alanı genişliğini esnek yapmak */
-[data-ort~="0"]{flex-basis: auto;}
 [data-ort~="tam-kaplama"]{width: 100%; max-width: 100%;}
-
 }
 
 /* Büyükler: 1024px <= data-byk + */
@@ -225,17 +169,7 @@ ul ul{
 [data-byk~="gizli"]{display: none;}
 /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
 [data-byk]:not([data-byk~="gizli"]){display: flex;}
-
-/* Kap alanının sütunlara bölme */
-[data-byk~="sütun"]{display:block; width: 100%; column-count: var(--parca);}
-[data-deveb~="ortada"][data-byk~="sütun"] > [data-byk]{
-  margin-left: auto;
-  margin-right: auto;}
-
-/* Kap alanı genişliğini esnek yapmak */
-[data-byk~="0"]{flex-basis: auto;}
 [data-byk~="tam-kaplama"]{width: 100%; max-width: 100%;}
-
 }
 
 
