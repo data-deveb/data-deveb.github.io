@@ -262,6 +262,9 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
       flex-flow: wrap;
       box-sizing: border-box;
     }
+    [data-gnl~="sütun"]{
+      flex-direction: column;
+    }
 
     /* Kap Örgüsü Parça Ayarları */
     [data-gnl~="1"]{--parça:1;}   [data-gnl~="2"]{--parça:2;}   [data-gnl~="3"]{--parça:3;}   [data-gnl~="4"]{--parça:4;}
@@ -337,10 +340,10 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-gnl~="altta"]{align-items: flex-end;}
     [data-gnl~="üstte-ol"]{align-self: flex-start !important;}
     [data-gnl~="ortada-ol"]{align-self: center !important;}
-    [data-gnl~="altta-ol"]{align-self: flex-end !important;}
-    [data-gnl~="sağda-ol"]{margin-left:auto; align-self:flex-start;}
+    [data-gnl~="altta-ol"]{margin-top:auto;}
+    [data-gnl~="sağda-ol"]{margin-left:auto; align-self:flex-end;}
     [data-gnl~="solda-ol"]{margin-right:auto; align-self:flex-start;}
-    [data-gnl~="göbekte-ol"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+    [data-gnl~="göbekte-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
 
     [data-gnl~="ger"]{justify-content: space-between;}
     [data-gnl~="yay"]{justify-content: space-around;}
