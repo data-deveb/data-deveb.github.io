@@ -205,15 +205,16 @@ ul.liste-temiz li{
 [data-kart~="haber"]{
 	display: flex;
 	flex-wrap: wrap;
-	border-radius: 4px;
-	padding-bottom:4px;
+	border-radius: 10px;
 	margin:15px;
 	border:1px solid rgba(0,0,0,0.1);
 	width: 100%;
 	max-width: 300px;
+	padding:5px;
+
 }
 [data-kart~="haber"] > *:first-child{
-	border-radius: 4px 4px 0 0;
+	border-radius: 6px 6px 0 0;
 }
 [data-kart~="haber"] > *:last-child{
 	border-radius: 0 0 4px 4px;
