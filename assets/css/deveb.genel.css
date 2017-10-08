@@ -104,7 +104,7 @@ pre{
 	font-family: 'Comfortaa', cursive;
 	font-size: 26px;
 	color:#2c2171 !important;
-	font-weight: bold;
+	font-weight: bold !important;
 }
 .ap-kara	{background-color:#222;}
 .ap-deniz	{background-color: #17C4BB;}
@@ -148,7 +148,7 @@ box-shadow: 0 2px 0 hsla(200,9%,93%,.25);
 	.menü-genel li a:hover{
 		color: #fff !important;
 		background: #2c2171;
-		border-radius: 50%;
+		border-radius: 40px;
 	}
 /* ==========================================================================
     METİN
