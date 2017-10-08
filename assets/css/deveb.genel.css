@@ -151,6 +151,9 @@ transition: .3s all;}
 		color: #fff !important;
 		background: #2c2171;
 		border-radius: 40px;
+		-webkit-transition: .3s all;
+-o-transition: .3s all;
+transition: .3s all;
 	}
 /* ==========================================================================
     METİN
