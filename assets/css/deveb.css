@@ -19,6 +19,7 @@
 
     p: (p)arça
 
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
     • VARSAYILAN
     • KAP ÖRGÜSÜ        -> Satır-imi: G00
       • ARALIK VERME    -> Satır-imi: G01
@@ -26,14 +27,23 @@
       • PARÇALAMA       -> Satır-imi: G03
       • ORANLAMA        -> Satır-imi: G04
       • KAPLAMALAR      -> Satır-imi: G05
+
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
     • EKRAN YÖNETİMİ    -> Satır-imi: yok
-      • GENEL           -> Satır-imi: S01
-      • UFAK BAŞLAR     -> Satır-imi: S02
+      • GENEL           -> Satır-imi: S00
+      • MİNİK BAŞLAR    -> Satır-imi: S010
+      • MİNİK (SADECE)  -> Satır-imi: S011
+      • MİNİK BİTER     -> Satır-imi: S012
+      • UFAK BAŞLAR     -> Satır-imi: S020
+      • UFAK (SADECE)   -> Satır-imi: S021
+      • UFAK BİTER      -> Satır-imi: S022
       • KÜÇÜK BAŞLAR    -> Satır-imi: S03
       • ORTA BAŞLAR     -> Satır-imi: S04
       • BÜYÜK BAŞLAR    -> Satır-imi: S05
       • KOCAMAN BAŞLAR  -> Satır-imi: S06
       • DEV BAŞLAR      -> Satır-imi: S07
+
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
     • RENK ÖRGÜSÜ       -> Satır-imi: yok
 ========================================================================== */
 
@@ -288,6 +298,7 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
 
     [data-gnl~="satırda"]{align-items: baseline;}
     [data-gnl~="satırda-ol"]{align-self: baseline;}
+
 
 /*  DUYARLI TİP -SON ( 0 >> ∞ ) */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
