@@ -145,7 +145,11 @@ box-shadow: 0 2px 0 hsla(200,9%,93%,.25);
 .menü-genel{ padding: 5px;}
 	.menü-genel li{display: inline-block;margin-right: 5px;font-size: 11pt;}
 	.menü-genel li a{display: inline-block; text-decoration: none; padding:8px; color: #4f545c; font-weight: 300;}
-	.menü-genel li a:hover{color:black;}
+	.menü-genel li a:hover{
+		color: #fff !important;
+		background: #2c2171;
+		border-radius: 50%;
+	}
 /* ==========================================================================
     METİN
     Metin görünümleri
