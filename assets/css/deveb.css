@@ -41,6 +41,7 @@
 
     • EKRAN YÖNETİMİ    -> Satır-imi: yok
       • GENEL           -> Satır-imi: S00
+      ◘ İLKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ TEKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ SONER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
       • MİNİK » ∞       -> Satır-imi: S010      • MİNİK     -> Satır-imi: S011      • 0 » MİNİK     -> Satır-imi: S012
       • UFAK » ∞        -> Satır-imi: S020      • UFAK      -> Satır-imi: S021      • 0 » UFAK      -> Satır-imi: S022
       • KÜÇÜK » ∞       -> Satır-imi: S030      • KÜÇÜK     -> Satır-imi: S031      • 0 » KÜÇÜK     -> Satır-imi: S032
@@ -285,41 +286,41 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-gnl~="satırda-ol"]{align-self: baseline;}
 
 
-/*  DUYARLI TİP -SON ( 0 >> ∞ ) */
+/*  DUYARLI TİP -soner ( 0 >> ∞ ) */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    KOCAMAN-SON (kcm) veya (kcm-son) | Ekran ölçeği: * < 1900px
+    KOCAMAN-soner (kcm) veya (kcm-soner) | Ekran ölçeği: * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:1900px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    BÜYÜK-SON (byk) veya (byk-son) | Ekran ölçeği: * < 1200px
+    BÜYÜK-soner (byk) veya (byk-soner) | Ekran ölçeği: * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:1200px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ORTA-SON (ort) veya (ort-son) | Ekran ölçeği: * < 992px
+    ORTA-soner (ort) veya (ort-soner) | Ekran ölçeği: * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:993px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    KÜÇÜK-SON (kçk) veya (kçk-son) | Ekran ölçeği: * < 768px
+    KÜÇÜK-soner (kçk) veya (kçk-soner) | Ekran ölçeği: * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:768px) {
 
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    UFAK-SON (ufk) veya (ufk-son) | Ekran ölçeği: * < 576px
+    UFAK-soner (ufk) veya (ufk-soner) | Ekran ölçeği: * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:576px) {
 
     }
 
-/*  DUYARLI TİP -BAŞ ( * >> ∞ )  */
+/*  DUYARLI TİP -ilker ( * >> ∞ )  */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S01 UFAK-BAŞ (ufk) veya (ufk-son) | Ekran ölçeği: 300px ≤ *
+S01 UFAK-ilker (ufk) veya (ufk-soner) | Ekran ölçeği: 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) {
       :root{
@@ -364,7 +365,7 @@ S01 UFAK-BAŞ (ufk) veya (ufk-son) | Ekran ölçeği: 300px ≤ *
       [data-ufk~="21o"]{flex:21;} [data-ufk~="22o"]{flex:22;} [data-ufk~="23o"]{flex:23;} [data-ufk~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S02 KÇK-BAŞ (kçk) veya (kçk-baş) | Ekran ölçeği: 576px ≤ *
+S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) {
 
@@ -405,7 +406,7 @@ S02 KÇK-BAŞ (kçk) veya (kçk-baş) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="21o"]{flex:21;}  [data-kçk~="22o"]{flex:22;} [data-kçk~="23o"]{flex:23;}  [data-kçk~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S03 ORTA-BAŞ (ort) veya (ort-baş) | Ekran ölçeği: 768px ≤ *
+S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) {
 
@@ -446,7 +447,7 @@ S03 ORTA-BAŞ (ort) veya (ort-baş) | Ekran ölçeği: 768px ≤ *
       [data-ort~="21o"]{flex:21;}  [data-ort~="22o"]{flex:22;} [data-ort~="23o"]{flex:23;}  [data-ort~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S04 BÜYÜK-BAŞ (byk) veya (byk-baş) | Ekran ölçeği: 992px ≤ *
+S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) {
 
@@ -487,7 +488,7 @@ S04 BÜYÜK-BAŞ (byk) veya (byk-baş) | Ekran ölçeği: 992px ≤ *
       [data-byk~="21o"]{flex:21;}  [data-byk~="22o"]{flex:22;} [data-byk~="23o"]{flex:23;}  [data-byk~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S05 KOCAMAN-BAŞ (kcm) veya (kcm-baş) | Ekran ölçeği: 1200px ≤ *
+S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) {
 
@@ -528,7 +529,7 @@ S05 KOCAMAN-BAŞ (kcm) veya (kcm-baş) | Ekran ölçeği: 1200px ≤ *
       [data-kcm~="21o"]{flex:21;}  [data-kcm~="22o"]{flex:22;} [data-kcm~="23o"]{flex:23;}  [data-kcm~="24o"]{flex:24;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
+S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1900px) {
 
@@ -575,7 +576,7 @@ S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
     }
 
-/*  DUYARLI TİP YALIN |< * >| */
+/*  DUYARLI TİP - YALIN |< * >| */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MİNİK-YALIN (mnk) veya (mnk-yalın) | Ekran ölçeği: 0 ≤ * < 300px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
