@@ -19,10 +19,10 @@
 
     p: (p)arça
 
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
     • VARSAYILAN
 
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
     • KAP ÖRGÜSÜ        -> Satır-imi: G00
       • ARALIK VERME    -> Satır-imi: G01
       • OLUK AÇMA       -> Satır-imi: G02
@@ -30,22 +30,18 @@
       • ORANLAMA        -> Satır-imi: G04
       • KAPLAMALAR      -> Satır-imi: G05
 
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
     • EKRAN YÖNETİMİ    -> Satır-imi: yok
       • GENEL           -> Satır-imi: S00
-      • MİNİK BAŞLAR    -> Satır-imi: S010
-      • MİNİK (SADECE)  -> Satır-imi: S011
-      • MİNİK BİTER     -> Satır-imi: S012
-      • UFAK BAŞLAR     -> Satır-imi: S020
-      • UFAK (SADECE)   -> Satır-imi: S021
-      • UFAK BİTER      -> Satır-imi: S022
-      • KÜÇÜK BAŞLAR    -> Satır-imi: S03
-      • ORTA BAŞLAR     -> Satır-imi: S04
-      • BÜYÜK BAŞLAR    -> Satır-imi: S05
-      • KOCAMAN BAŞLAR  -> Satır-imi: S06
-      • DEV BAŞLAR      -> Satır-imi: S07
+      • MİNİK BAŞLAR    -> Satır-imi: S010      • MİNİK (SADECE)  -> Satır-imi: S011      • MİNİK BİTER     -> Satır-imi: S012
+      • UFAK BAŞLAR     -> Satır-imi: S020      • UFAK (SADECE)   -> Satır-imi: S021      • UFAK BİTER      -> Satır-imi: S022
+      • KÜÇÜK BAŞLAR    -> Satır-imi: S030      • KÜÇÜK (SADECE)  -> Satır-imi: S031      • KÜÇÜK BİTER     -> Satır-imi: S032
+      • ORTA BAŞLAR     -> Satır-imi: S040      • ORTA (SADECE)   -> Satır-imi: S041      • ORTA BİTER      -> Satır-imi: S042
+      • BÜYÜK BAŞLAR    -> Satır-imi: S050      • BÜYÜK (SADECE)  -> Satır-imi: S051      • BÜYÜK BİTER     -> Satır-imi: S052
+      • KOCAMAN BAŞLAR  -> Satır-imi: S060      • KOCAMAN (SADECE)-> Satır-imi: S061      • KOCAMAN BİTER   -> Satır-imi: S062
+      • DEV BAŞLAR      -> Satır-imi: S070      • DEV (SADECE)    -> Satır-imi: S071      • DEV BİTER       -> Satır-imi: S072
 
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
     • RENK ÖRGÜSÜ       -> Satır-imi: yok
 ========================================================================== */
 
