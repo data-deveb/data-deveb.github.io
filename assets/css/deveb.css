@@ -21,6 +21,11 @@
 
     • VARSAYILAN
     • KAP ÖRGÜSÜ        -> Satır-imi: G00
+      • ARALIK VERME    -> Satır-imi: G01
+      • OLUK AÇMA       -> Satır-imi: G02
+      • PARÇALAMA       -> Satır-imi: G03
+      • ORANLAMA        -> Satır-imi: G04
+      • KAPLAMALAR      -> Satır-imi: G05
     • EKRAN YÖNETİMİ    -> Satır-imi: yok
       • GENEL           -> Satır-imi: S01
       • UFAK BAŞLAR     -> Satır-imi: S02
@@ -172,9 +177,6 @@ ul{padding:0; margin: 0;}
 [data-byk~="tam-kaplama"]{width: 100%; max-width: 100%;}
 }
 
-
-
-
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -185,7 +187,7 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     */
     :root{
       --oluk:5px;
-      --ara:5px;
+      --aralık:5px;
 
       --parça:24; /* parça: par içinde kullanılabilecek parçalardır. */
       --par:24;   /* par: parçaların toplamı sonucu oluşabilecek bütündür. */
@@ -221,8 +223,8 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
       max-width:  calc(100% / var(--par) * var(--parça));
     }
     /* Kap Örgüsü Ek Etkiler */
-      [data-gnl~="ara"] > [data-gnl]{
-        margin: var(--ara);
+      [data-gnl~="aralık"] > [data-gnl]{
+        margin: var(--aralık);
         flex-basis: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
         max-width:  calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
       }
