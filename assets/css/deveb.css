@@ -62,34 +62,27 @@
       --yazı-biçimi:'Roboto', sans-serif;
       --yazı-boyutu:11pt;
 
-      /* Kap örgüsü varsayılan genişlik */
-      --par:24;--parça:24;
+      --par:24;--parça:24;    /* Kap örgüsü varsayılan genişlik */
     }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     AYARLAR & TEMİZLEME
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/*  Varsayılan değiştirgeleri temizleme eylemi. */
+    /* Varsayılan değiştirgeleri temizleme eylemi. */
     *{
-      /* Tüm tarayıcılar için her şeyin beri (margin) değerini sıfırlama. */
-      margin: 0;
-      /* Tüm tarayıcılar için her şeyin dolgu (padding) değerini sıfırlama. */
-      padding: 0;
+      margin: 0;    /* Tüm tarayıcılar için her şeyin beri (margin) değerini sıfırlama. */
+      padding: 0;   /* Tüm tarayıcılar için her şeyin dolgu (padding) değerini sıfırlama. */
     }
 
     html {
-      /* Metin boyutlarında ayarlamaları doğallaştırma. */
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;     /* Metin boyutlarında ayarlamaları doğallaştırma. */
+      -webkit-text-size-adjust: 100%; /* " */
     }
 
     body{
-      /* Her yerde varsayılan yazı biçimi */
-      font-family: var(--yazı-biçimi);
-      /* Her yerde varsayılan yazı boyutu ve tipi */
-        font-size: var(--yazı-boyutu);
+      font-family: var(--yazı-biçimi);  /* Her yerde varsayılan yazı biçimi */
+        font-size: var(--yazı-boyutu);  /* Her yerde varsayılan yazı boyutu */
         font-weight: 300;
     }
 
@@ -97,21 +90,18 @@
     figcaption,figure,footer,
     header,hgroup,section,
     menu,main,nav{
-      /* Varsayılan gösterim ayarı */
-      display: block;
+      display: block;   /* Varsayılan gösterim ayarı */
     }
 
     a{
-      /* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
-      text-decoration: none;
+      text-decoration: none;/* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
     }
 
     a, button, input, textarea {
-      /* Sınır çizgilerini sıfırlama ayarı */
-        outline: 0;
+        outline: 0;   /* Sınır çizgilerini sıfırlama ayarı */
     }
 
-/*  Başlık ayarları */
+    /*  Başlık ayarları */
     h1, h2, h3, h4, h5, h6{
       width: 100%;
       display: block;
@@ -129,22 +119,19 @@
               h6{font-size:1.0em}
 
     img {
-      /* Kenarlıkları sıfırlama */
-      border: 0;
+      border: 0;  /* Kenarlıkları sıfırlama */
     }
 
     table{
       display: table !important;
     }
 
-/* Paragraf ayarları */
+    /* Paragraf ayarları */
     p{display: block; width:100%;}
-      /* İki paragraf arasına mesafe verme ayarı */
-      p+p{margin-top:1rem;}
+      p+p{margin-top:1rem;}   /* İki paragraf arasına mesafe verme ayarı */
 
-/* Liste ayarları */
+    /* Liste ayarları */
     ul{padding:0; margin: 0;}
-      /* Liste tipini temizleme ayarı */
       ul li{list-style-type: none;}
         ul ul{margin-left: 15px;}
 
@@ -153,19 +140,9 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
     /* Genel Ayarlar */
-    [data-gnl],[data-byk],[data-ort],[data-ufk]{
-      /* Her durumda esnek görünüm tanımlama ayarı */
-      display: flex;
-      /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-      flex-wrap: wrap;
-      /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
-      box-sizing: border-box;
-      /* Varsayılan olarak üstte ol */
-      align-items: flex-start;
-    }
+
     /* TÜM EKRANLAR: 0px < data-gnl + */
     /* Kap alanını gizleme sınıfı */
-    [data-gnl~="gizli"]{display: none;}
 
     [data-gnl~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
@@ -215,13 +192,17 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     }
 
     [data-gnl]{
-      display: flex;
-      flex-flow: wrap;
-      box-sizing: border-box;
+      display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+      flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      align-items: flex-start;/* Varsayılan olarak üstte ol */
     }
     [data-gnl~="sütun"]{
       flex-direction: column;
     }
+
+    [data-gnl~="gizli"]{display: none;}
+
 
     /* Kap Örgüsü Parça Ayarları */
     [data-gnl~="1"]{--parça:1;}   [data-gnl~="2"]{--parça:2;}   [data-gnl~="3"]{--parça:3;}   [data-gnl~="4"]{--parça:4;}
@@ -353,6 +334,12 @@ S01 UFAK-BAŞ (ufk) veya (ufk-son) | Ekran ölçeği: 300px ≤ *
         --ara:10px;
       }
 
+      [data-ufk]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      }
+
       [data-ufk~="1"]{--parça:1;}   [data-ufk~="2"]{--parça:2;}   [data-ufk~="3"]{--parça:3;}   [data-ufk~="4"]{--parça:4;}
       [data-ufk~="5"]{--parça:5;}   [data-ufk~="6"]{--parça:6;}   [data-ufk~="7"]{--parça:7;}   [data-ufk~="8"]{--parça:8;}
       [data-ufk~="9"]{--parça:9;}   [data-ufk~="10"]{--parça:10;} [data-ufk~="11"]{--parça:11;} [data-ufk~="12"]{--parça:12;}
@@ -387,6 +374,13 @@ S01 UFAK-BAŞ (ufk) veya (ufk-son) | Ekran ölçeği: 300px ≤ *
 S02 KÇK-BAŞ (kçk) veya (kçk-baş) | Ekran ölçeği: 576px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) {
+
+      [data-kçk]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      }
+
       [data-kçk~="1"]{--parça:1;}   [data-kçk~="2"]{--parça:2;}   [data-kçk~="3"]{--parça:3;}   [data-kçk~="4"]{--parça:4;}
       [data-kçk~="5"]{--parça:5;}   [data-kçk~="6"]{--parça:6;}   [data-kçk~="7"]{--parça:7;}   [data-kçk~="8"]{--parça:8;}
       [data-kçk~="9"]{--parça:9;}   [data-kçk~="10"]{--parça:10;} [data-kçk~="11"]{--parça:11;} [data-kçk~="12"]{--parça:12;}
@@ -421,6 +415,13 @@ S02 KÇK-BAŞ (kçk) veya (kçk-baş) | Ekran ölçeği: 576px ≤ *
 S03 ORTA-BAŞ (ort) veya (ort-baş) | Ekran ölçeği: 768px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) {
+
+      [data-ort]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      }
+
       [data-ort~="1"]{--parça:1;}   [data-ort~="2"]{--parça:2;}   [data-ort~="3"]{--parça:3;}   [data-ort~="4"]{--parça:4;}
       [data-ort~="5"]{--parça:5;}   [data-ort~="6"]{--parça:6;}   [data-ort~="7"]{--parça:7;}   [data-ort~="8"]{--parça:8;}
       [data-ort~="9"]{--parça:9;}   [data-ort~="10"]{--parça:10;} [data-ort~="11"]{--parça:11;} [data-ort~="12"]{--parça:12;}
@@ -455,6 +456,13 @@ S03 ORTA-BAŞ (ort) veya (ort-baş) | Ekran ölçeği: 768px ≤ *
 S04 BÜYÜK-BAŞ (byk) veya (byk-baş) | Ekran ölçeği: 992px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) {
+
+      [data-byk]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      }
+
       [data-byk~="1"]{--parça:1;}   [data-byk~="2"]{--parça:2;}   [data-byk~="3"]{--parça:3;}   [data-byk~="4"]{--parça:4;}
       [data-byk~="5"]{--parça:5;}   [data-byk~="6"]{--parça:6;}   [data-byk~="7"]{--parça:7;}   [data-byk~="8"]{--parça:8;}
       [data-byk~="9"]{--parça:9;}   [data-byk~="10"]{--parça:10;} [data-byk~="11"]{--parça:11;} [data-byk~="12"]{--parça:12;}
@@ -489,6 +497,13 @@ S04 BÜYÜK-BAŞ (byk) veya (byk-baş) | Ekran ölçeği: 992px ≤ *
 S05 KOCAMAN-BAŞ (kcm) veya (kcm-baş) | Ekran ölçeği: 1200px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) {
+
+      [data-kcm]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      }
+
       [data-kcm~="1"]{--parça:1;}   [data-kcm~="2"]{--parça:2;}   [data-kcm~="3"]{--parça:3;}   [data-kcm~="4"]{--parça:4;}
       [data-kcm~="5"]{--parça:5;}   [data-kcm~="6"]{--parça:6;}   [data-kcm~="7"]{--parça:7;}   [data-kcm~="8"]{--parça:8;}
       [data-kcm~="9"]{--parça:9;}   [data-kcm~="10"]{--parça:10;} [data-kcm~="11"]{--parça:11;} [data-kcm~="12"]{--parça:12;}
@@ -523,6 +538,13 @@ S05 KOCAMAN-BAŞ (kcm) veya (kcm-baş) | Ekran ölçeği: 1200px ≤ *
 S06 DEV-BAŞ (dev) veya (dev-baş) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1900px) {
+
+      [data-dev]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      }
+
       [data-dev~="1"]{--parça:1;}   [data-dev~="2"]{--parça:2;}   [data-dev~="3"]{--parça:3;}   [data-dev~="4"]{--parça:4;}
       [data-dev~="5"]{--parça:5;}   [data-dev~="6"]{--parça:6;}   [data-dev~="7"]{--parça:7;}   [data-dev~="8"]{--parça:8;}
       [data-dev~="9"]{--parça:9;}   [data-dev~="10"]{--parça:10;} [data-dev~="11"]{--parça:11;} [data-dev~="12"]{--parça:12;}
