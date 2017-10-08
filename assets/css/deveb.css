@@ -54,145 +54,149 @@
     • RENK ÖRGÜSÜ       -> Satır-imi: yok
 */
 
-/*  AYARLAR
-    ==========================================================================*/
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ÖZELLEŞTİRİLEBİLİR AYARLAR
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+    :root{
+      --yazı-biçimi:'Roboto', sans-serif;
+      --yazı-boyutu:11pt;
 
-:root{
-  --yazı-biçimi:'Roboto', sans-serif;
-  --yazı-boyutu:11pt;
+      /* Kap örgüsü varsayılan genişlik */
+      --par:24;--parça:24;
+    }
 
-  /* Kap örgüsü varsayılan genişlik */
-  --par:24;--parça:24;
-}
-/*  Temizleme
-    ==========================================================================*/
-/** Varsayılan değiştirgeleri temizleme eylemi. */
-*{
-  /* Tüm tarayıcılar için her şeyin beri (margin) değerini sıfırlama. */
-  margin: 0;
-  /* Tüm tarayıcılar için her şeyin dolgu (padding) değerini sıfırlama. */
-  padding: 0;
-}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AYARLAR & TEMİZLEME
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
 
-html {
-  /* Metin boyutlarında ayarlamaları doğallaştırma. */
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+/*  Varsayılan değiştirgeleri temizleme eylemi. */
+    *{
+      /* Tüm tarayıcılar için her şeyin beri (margin) değerini sıfırlama. */
+      margin: 0;
+      /* Tüm tarayıcılar için her şeyin dolgu (padding) değerini sıfırlama. */
+      padding: 0;
+    }
 
-body{
-  /* Her yerde varsayılan yazı biçimi */
-  font-family: var(--yazı-biçimi);
-  /* Her yerde varsayılan yazı boyutu ve tipi */
-    font-size: var(--yazı-boyutu);
-    font-weight: 300;
-}
+    html {
+      /* Metin boyutlarında ayarlamaları doğallaştırma. */
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
 
-article,aside,details,
-figcaption,figure,footer,
-header,hgroup,section,
-menu,main,nav{
-  /* Varsayılan gösterim ayarı */
-  display: block;
-}
-a{
-  /* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
-  text-decoration: none;
-}
+    body{
+      /* Her yerde varsayılan yazı biçimi */
+      font-family: var(--yazı-biçimi);
+      /* Her yerde varsayılan yazı boyutu ve tipi */
+        font-size: var(--yazı-boyutu);
+        font-weight: 300;
+    }
 
-a, button, input, textarea {
-  /* Sınır çizgilerini sıfırlama ayarı */
-    outline: 0;
-}
+    article,aside,details,
+    figcaption,figure,footer,
+    header,hgroup,section,
+    menu,main,nav{
+      /* Varsayılan gösterim ayarı */
+      display: block;
+    }
 
-/* Başlık ayarları */
-h1, h2, h3, h4, h5, h6{
-  width: 100%;
-  display: block;
-  font-weight: bold;
-  -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-}
-h1{font-size:2.6em}
-  h2{font-size:2.2em}
-    h3{font-size:1.8em}
-      h4{font-size:1.4em}
-        h5{font-size:1.2em}
-          h6{font-size:1.0em}
+    a{
+      /* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
+      text-decoration: none;
+    }
 
-img {
-  /* Kenarlıkları sıfırlama */
-  border: 0;
-}
+    a, button, input, textarea {
+      /* Sınır çizgilerini sıfırlama ayarı */
+        outline: 0;
+    }
 
-table{
-  display: table !important;
-}
+/*  Başlık ayarları */
+    h1, h2, h3, h4, h5, h6{
+      width: 100%;
+      display: block;
+      font-weight: bold;
+      -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+    }
+    h1{font-size:2.6em}
+      h2{font-size:2.2em}
+        h3{font-size:1.8em}
+          h4{font-size:1.4em}
+            h5{font-size:1.2em}
+              h6{font-size:1.0em}
 
-/* Deveb Varsayılan */
+    img {
+      /* Kenarlıkları sıfırlama */
+      border: 0;
+    }
+
+    table{
+      display: table !important;
+    }
 
 /* Paragraf ayarları */
-p{display: block; width:100%;}
-  /* İki paragraf arasına mesafe verme ayarı */
-  p+p{margin-top:1rem;}
+    p{display: block; width:100%;}
+      /* İki paragraf arasına mesafe verme ayarı */
+      p+p{margin-top:1rem;}
 
 /* Liste ayarları */
-ul{padding:0; margin: 0;}
-  /* Liste tipini temizleme ayarı */
-  ul li{list-style-type: none;}
-    ul ul{margin-left: 15px;}
-/* ==========================================================================
+    ul{padding:0; margin: 0;}
+      /* Liste tipini temizleme ayarı */
+      ul li{list-style-type: none;}
+        ul ul{margin-left: 15px;}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     KAP ÖRGÜSÜ
-    'Display:flex' yöntemiyle geliştirilen kap örgüsü.
-    * data-gnl, data-byk, data-ort, data-ufk ekran genişlikleri için kullanılan özel nitelikler.
-========================================================================== */
-/* Genel Ayarlar */
-[data-gnl],[data-byk],[data-ort],[data-ufk]{
-  /* Her durumda esnek görünüm tanımlama ayarı */
-  display: flex;
-  /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-  flex-wrap: wrap;
-  /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
-  box-sizing: border-box;
-  /* Varsayılan olarak üstte ol */
-  align-items: flex-start;
-}
-/* TÜM EKRANLAR: 0px < data-gnl + */
-/* Kap alanını gizleme sınıfı */
-[data-gnl~="gizli"]{display: none;}
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-[data-gnl~="tam-kaplama"]{width: 100%; max-width: 100%;}
+    /* Genel Ayarlar */
+    [data-gnl],[data-byk],[data-ort],[data-ufk]{
+      /* Her durumda esnek görünüm tanımlama ayarı */
+      display: flex;
+      /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      flex-wrap: wrap;
+      /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      box-sizing: border-box;
+      /* Varsayılan olarak üstte ol */
+      align-items: flex-start;
+    }
+    /* TÜM EKRANLAR: 0px < data-gnl + */
+    /* Kap alanını gizleme sınıfı */
+    [data-gnl~="gizli"]{display: none;}
 
-@media screen and (min-width: 35.5em){
-/* UFAK: 568px <= data-ufk+ */
-/* Kap alanını gizleme sınıfı */
-[data-ufk~="gizli"]{display: none;}
-/* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
-[data-ufk]:not([data-ufk~="gizli"]){display: flex;}
-[data-ufk~="tam-kaplama"]{width: 100%; max-width: 100%;}
+    [data-gnl~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
-}
+    @media screen and (min-width: 35.5em){
+    /* UFAK: 568px <= data-ufk+ */
+    /* Kap alanını gizleme sınıfı */
+    [data-ufk~="gizli"]{display: none;}
+    /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
+    [data-ufk]:not([data-ufk~="gizli"]){display: flex;}
+    [data-ufk~="tam-kaplama"]{width: 100%; max-width: 100%;}
 
-/* Dizüstü ve büyük: 768px <= data-ort + */
-@media screen and (min-width: 48em){
-/* Kap alanını gizleme sınıfı */
-[data-ort~="gizli"]{display: none;}
-/* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
-[data-ort]:not([data-ort~="gizli"]){display: flex;}
-[data-ort~="tam-kaplama"]{width: 100%; max-width: 100%;}
-}
+    }
 
-/* Büyükler: 1024px <= data-byk + */
-@media screen and (min-width: 64em){
+    /* Dizüstü ve büyük: 768px <= data-ort + */
+    @media screen and (min-width: 48em){
+    /* Kap alanını gizleme sınıfı */
+    [data-ort~="gizli"]{display: none;}
+    /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
+    [data-ort]:not([data-ort~="gizli"]){display: flex;}
+    [data-ort~="tam-kaplama"]{width: 100%; max-width: 100%;}
+    }
 
-/* Kap alanını gizleme sınıfı */
-[data-byk~="gizli"]{display: none;}
-/* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
-[data-byk]:not([data-byk~="gizli"]){display: flex;}
-[data-byk~="tam-kaplama"]{width: 100%; max-width: 100%;}
-}
+    /* Büyükler: 1024px <= data-byk + */
+    @media screen and (min-width: 64em){
+
+    /* Kap alanını gizleme sınıfı */
+    [data-byk~="gizli"]{display: none;}
+    /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
+    [data-byk]:not([data-byk~="gizli"]){display: flex;}
+    [data-byk~="tam-kaplama"]{width: 100%; max-width: 100%;}
+    }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
