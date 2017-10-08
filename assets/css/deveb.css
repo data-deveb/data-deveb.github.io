@@ -139,13 +139,6 @@
     KAP ÖRGÜSÜ
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-    /* Genel Ayarlar */
-
-    /* TÜM EKRANLAR: 0px < data-gnl + */
-    /* Kap alanını gizleme sınıfı */
-
-    [data-gnl~="tam-kaplama"]{width: 100%; max-width: 100%;}
-
     @media screen and (min-width: 35.5em){
     /* UFAK: 568px <= data-ufk+ */
     /* Kap alanını gizleme sınıfı */
