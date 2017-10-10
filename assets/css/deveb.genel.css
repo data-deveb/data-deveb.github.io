@@ -238,7 +238,9 @@ ul.liste-temiz li{
 	color:#444;
 	padding:5px;
 }
-
+[data-menü~="basamak"] ul{
+	margin-left: 2px;
+}
 [data-menü~="basamak"] li{
 	padding:10px 0 10px 10px;
 }
