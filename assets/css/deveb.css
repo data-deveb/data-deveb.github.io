@@ -41,7 +41,7 @@
 
     • EKRAN YÖNETİMİ    -> Satır-imi: yok
       • GENEL           -> Satır-imi: S00
-      ◘ İLKERE DOĞRU ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ TEKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ SONERE DOĞRU ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+      ◘ İLKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ TEKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ SONER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
       • MİNİK » ∞       -> Satır-imi: S010      • MİNİK     -> Satır-imi: S011      • MİNİK » 0     -> Satır-imi: S012
       • UFAK » ∞        -> Satır-imi: S020      • UFAK      -> Satır-imi: S021      • UFAK » 0      -> Satır-imi: S022
       • KÜÇÜK » ∞       -> Satır-imi: S030      • KÜÇÜK     -> Satır-imi: S031      • KÜÇÜK » 0     -> Satır-imi: S032
@@ -61,7 +61,7 @@
 */
     :root{
       --yazı-biçimi:'Roboto', sans-serif;
-      --yazı-boyutu:11pt;
+      --yazı-boyutu:14px;
 
       --par:24;--parça:24;    /* Kap örgüsü varsayılan genişlik */
     }
@@ -112,9 +112,9 @@
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
     }
-    h1{font-size:2.6em}
-      h2{font-size:2.2em}
-        h3{font-size:1.8em}
+    h1{font-size:2em}
+      h2{font-size:1.8em}
+        h3{font-size:1.6em}
           h4{font-size:1.4em}
             h5{font-size:1.2em}
               h6{font-size:1.0em}
