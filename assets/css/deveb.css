@@ -41,14 +41,14 @@
 
     • EKRAN YÖNETİMİ    -> Satır-imi: yok
       • GENEL           -> Satır-imi: S00
-      ◘ İLKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ TEKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ SONER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-      • MİNİK » ∞       -> Satır-imi: S010      • MİNİK     -> Satır-imi: S011      • 0 » MİNİK     -> Satır-imi: S012
-      • UFAK » ∞        -> Satır-imi: S020      • UFAK      -> Satır-imi: S021      • 0 » UFAK      -> Satır-imi: S022
-      • KÜÇÜK » ∞       -> Satır-imi: S030      • KÜÇÜK     -> Satır-imi: S031      • 0 » KÜÇÜK     -> Satır-imi: S032
-      • ORTA » ∞        -> Satır-imi: S040      • ORTA      -> Satır-imi: S041      • 0 » ORTA      -> Satır-imi: S042
-      • BÜYÜK » ∞       -> Satır-imi: S050      • BÜYÜK     -> Satır-imi: S051      • 0 » BÜYÜK     -> Satır-imi: S052
-      • KOCAMAN » ∞     -> Satır-imi: S060      • KOCAMAN   -> Satır-imi: S061      • 0 » KOCAMAN   -> Satır-imi: S062
-      • DEV » ∞         -> Satır-imi: S070      • DEV       -> Satır-imi: S071      • 0 » DEV       -> Satır-imi: S072
+      ◘ İLKERE DOĞRU ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ TEKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ SONERE DOĞRU ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+      • MİNİK » ∞       -> Satır-imi: S010      • MİNİK     -> Satır-imi: S011      • MİNİK » 0     -> Satır-imi: S012
+      • UFAK » ∞        -> Satır-imi: S020      • UFAK      -> Satır-imi: S021      • UFAK » 0      -> Satır-imi: S022
+      • KÜÇÜK » ∞       -> Satır-imi: S030      • KÜÇÜK     -> Satır-imi: S031      • KÜÇÜK » 0     -> Satır-imi: S032
+      • ORTA » ∞        -> Satır-imi: S040      • ORTA      -> Satır-imi: S041      • ORTA » 0      -> Satır-imi: S042
+      • BÜYÜK » ∞       -> Satır-imi: S050      • BÜYÜK     -> Satır-imi: S051      • BÜYÜK » 0     -> Satır-imi: S052
+      • KOCAMAN » ∞     -> Satır-imi: S060      • KOCAMAN   -> Satır-imi: S061      • KOCAMAN » 0   -> Satır-imi: S062
+      • DEV » ∞         -> Satır-imi: S070      • DEV       -> Satır-imi: S071      • DEV » 0       -> Satır-imi: S072
 
  ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
 
@@ -819,6 +819,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 
 /* SÖZCÜKLER VE ANLAMLARI */
-/* İLKER: İlk, önce, başta */
-/* TEKER: Tek, yalnız, sadece */
-/* SONER: Son, sonra, sonda */
+/* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
+/* TEKER: Tek, yalnız, sadece (bu sözcüklerin birleşimidir) */
+/* SONER: Son, sonra, sonda, son doğan, küçük olan (bu sözcüklerin birleşimidir) */
