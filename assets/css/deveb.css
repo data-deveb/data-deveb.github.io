@@ -62,6 +62,7 @@
     :root{
       --yazı-biçimi:'Roboto', sans-serif;
       --yazı-boyutu:14px;
+      --yazı-rengi:#333;
 
       --par:24;--parça:24;    /* Kap örgüsü varsayılan genişlik */
     }
@@ -111,6 +112,7 @@
         -webkit-margin-after: 0;
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
+      color:#333;
     }
     h1{font-size:2em}
       h2{font-size:1.8em}
