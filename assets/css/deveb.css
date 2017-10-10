@@ -115,9 +115,10 @@
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
       color:#333;
+      margin: 0.67em 0;
     }
-    h1{font-size:1.5em; margin: 0.67em 0;}
-      h2{font-size:1.1em; margin: 0.67em 0;}
+    h1{font-size:1.5em;}
+      h2{font-size:1.1em;}
         h3{font-size:1.1em; color:#555;}
           h4{font-size:1.0em; color:#888;}
             h5{font-size:1.0em; color: #999;}
