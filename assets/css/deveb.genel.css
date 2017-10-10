@@ -248,5 +248,44 @@ ul.liste-temiz li{
 [data-menü~="basamak"] li{
 	border-left:3px solid #abcdef;
 }
+[data-menü~="basamak"] li:hover{
+	-webkit-animation-name: çakarlamba;
+ -webkit-animation-duration: 25s;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-timing-function: linear;
+ -moz-animation-name: çakarlamba;
+ -moz-animation-duration: 25s;
+ -moz-animation-iteration-count: infinite;
+ -moz-animation-timing-function: linear;
+ -ms-animation-name: çakarlamba;
+ -ms-animation-duration: 25s;
+ -ms-animation-iteration-count: infinite;
+ -ms-animation-timing-function: linear;
+}
 [data-menü~="basamak"] li > ul > li:first-child{
 	margin-top:15px;}
+
+	@-webkit-keyframes çakarlamba {
+	  from {
+	    border-color: #abcdef;
+	  }
+	  to {
+	    border-color: transparent;
+	  }
+	}
+	@-moz-keyframes çakarlamba {
+	  from {
+	    border-color: #abcdef;
+	  }
+	  to {
+	    border-color: transparent;
+	  }
+	}
+	@-ms-keyframes çakarlamba {
+	  from {
+	    border-color: #abcdef;
+	  }
+	  to {
+	    border-color: transparent;
+	  }
+	}
