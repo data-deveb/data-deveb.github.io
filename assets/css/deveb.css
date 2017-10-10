@@ -61,7 +61,7 @@
 */
     :root{
       --yazı-biçimi:'Roboto', sans-serif;
-      --yazı-boyutu:14px;
+      --yazı-boyutu:15px;
       --yazı-rengi:#333;
 
       --par:24;--parça:24;    /* Kap örgüsü varsayılan genişlik */
@@ -97,6 +97,7 @@
 
     a{
       text-decoration: none;/* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
+      color:#394eff;
     }
 
     a, button, input, textarea {
