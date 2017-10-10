@@ -240,5 +240,11 @@ ul.liste-temiz li{
 }
 
 [data-menü~="basamak"] li{
-	margin:10px 0;
+
+}
+[data-menü~="basamak"] li a{
+	padding:10px 0 10px 10px;
+}
+[data-menü~="basamak"] li a:active{
+	border-left:3px solid #2c2171;
 }
