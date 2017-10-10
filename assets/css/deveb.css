@@ -141,6 +141,9 @@
     ul{padding:0; margin: 0;}
       ul li{list-style-type: none;}
         ul ul{margin-left: 15px;}
+    ul h1, ul h2, ul h3, ul h4, ul h5, ul h6{
+      margin:0;
+    }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     KAP ÖRGÜSÜ
