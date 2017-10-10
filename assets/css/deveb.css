@@ -115,11 +115,11 @@
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
       color:#333;
-      margin: 0.80em 0 0.67em 0;
+      margin: 2em 0 0.5em 0;
     }
     h1{font-size:1.5em;}
       h2{font-size:1.1em;}
-        h3{font-size:1.1em; font-weight: 500;}
+        h3{font-size:1.1em;}
           h4{font-size:1.0em; font-weight: 500; color:#444;}
             h5{font-size:1.0em; font-weight: 500; color: #666;}
               h6{font-size:1.0em; font-weight: 300; color: #888;}
