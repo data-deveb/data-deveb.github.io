@@ -245,5 +245,5 @@ ul.liste-temiz li{
 [data-menü~="basamak"] li{
 	border-left:3px solid #abcdef;
 }
-[data-menü~="basamak"] li > ul + li{
+[data-menü~="basamak"] li > ul > li:first-child{
 	margin-top:10px;}
