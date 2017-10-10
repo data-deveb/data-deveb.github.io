@@ -86,6 +86,7 @@
       font-family: var(--yazı-biçimi);  /* Her yerde varsayılan yazı biçimi */
         font-size: var(--yazı-boyutu);  /* Her yerde varsayılan yazı boyutu */
         font-weight: 300;
+        color:#333;
     }
 
     article,aside,details,
