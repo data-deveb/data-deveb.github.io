@@ -1,5 +1,5 @@
 ---
-mainmenu:
+navigation:
 - text: Belgeler
   title: Deveb hakkında bilgiler
   url: /belgeler/deveb.html
@@ -24,7 +24,7 @@ mainmenu:
     </ul>
     <ul class="menü-genel" data-gnl="1 1p göbekte ortada" data-ort="0">
 
-      {% for link in page.mainmenu %}
+      {% for link in page.navigation %}
       <li {% if page.url == link.url %}class="current"{% endif %}>
          <a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a></li>
       {% endfor %}
