@@ -247,6 +247,7 @@ ul.liste-temiz li{
 }
 [data-menü~="basamak"] li{
 	border-left:3px solid #abcdef;
+	border-radius: 10px;
 }
 [data-menü~="basamak"] li:hover{
 	-webkit-animation: lamba 1s infinite;
