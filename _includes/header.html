@@ -1,12 +1,13 @@
+{% assign current = page.url | downcase | split: '/' %}
 <div id="header" data-gnl="24 24p ortada göbekte" class="beri-alt-1 kenar-alt">
   <div data-gnl="23 kaplama ortada göbekte" data-ort="ger">
     <ul class="menü-genel" data-gnl="0 göbekte">
       <li><a href="https://data-deveb.github.io" class="logo">deveb</a></li>
     </ul>
     <ul class="menü-genel" data-gnl="1 1p göbekte ortada" data-ort="0">
-      <li><a href="https://data-deveb.github.io/belgeler/deveb.html">Belgeler</a></li>
-      <li><a href="https://data-deveb.github.io/belgeler/takim.html">Takım</a></li>
-      <li><a href="https://data-deveb.github.io/belgeler/tarayici-destegi.html">Tarayıcı Desteği</a></li>
+      <li><a href="/belgeler/deveb.html" {% if current[1] == 'belgeler/deveb.html' %}class="current"{% endif %}>Belgeler</a></li>
+      <li><a href="/belgeler/takim.html">Takım</a></li>
+      <li><a href="/belgeler/tarayici-destegi.html">Tarayıcı Desteği</a></li>
     </ul>
   </div>
 </div>
