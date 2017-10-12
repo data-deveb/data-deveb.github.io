@@ -1,37 +1,12 @@
----
-navigation:
-- text: Belgeler
-  title: Deveb hakkında bilgiler
-  url: /belgeler/deveb.html
-- text: Takım
-  title: Deveb'in İnsanları
-  url: /belgeler/takim.html
-- text: Tarayıcı Desteği
-  title: Tarayıcı desteği
-  url: /belgeler/tarayici-destegi.html
----
-
-<ul>
-
-</ul>
-
-
-
 <div id="header" data-gnl="24 24p ortada göbekte" class="beri-alt-1 kenar-alt">
   <div data-gnl="23 kaplama ortada göbekte" data-ort="ger">
     <ul class="menü-genel" data-gnl="0 göbekte">
       <li><a href="https://data-deveb.github.io" class="logo">deveb</a></li>
     </ul>
     <ul class="menü-genel" data-gnl="1 1p göbekte ortada" data-ort="0">
-
-      {% for link in page.navigation %}
-      <li {% if page.url == link.url %}class="current"{% endif %}>
-         <a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a></li>
-      {% endfor %}
-
-      <li><a href="https://data-deveb.github.io/belgeler/deveb.html">Belgeler</a></li>
-      <li><a href="https://data-deveb.github.io/belgeler/takim.html">Takım</a></li>
-      <li><a href="https://data-deveb.github.io/belgeler/tarayici-destegi.html">Tarayıcı Desteği</a></li>
+      <li><a href="/belgeler/deveb.html">Belgeler</a></li>
+      <li><a href="/belgeler/takim.html">Takım</a></li>
+      <li><a href="/belgeler/tarayici-destegi.html">Tarayıcı Desteği</a></li>
     </ul>
   </div>
 </div>
