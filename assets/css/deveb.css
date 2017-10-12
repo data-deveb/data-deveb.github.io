@@ -153,39 +153,6 @@
     }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    KAP ÖRGÜSÜ
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-    @media screen and (min-width: 35.5em){
-    /* UFAK: 568px <= data-ufk+ */
-    /* Kap alanını gizleme sınıfı */
-    [data-ufk~="gizli"]{display: none;}
-    /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
-    [data-ufk]:not([data-ufk~="gizli"]){display: flex;}
-    [data-ufk~="tam-kaplama"]{width: 100%; max-width: 100%;}
-
-    }
-
-    /* Dizüstü ve büyük: 768px <= data-ort + */
-    @media screen and (min-width: 48em){
-    /* Kap alanını gizleme sınıfı */
-    [data-ort~="gizli"]{display: none;}
-    /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
-    [data-ort]:not([data-ort~="gizli"]){display: flex;}
-    [data-ort~="tam-kaplama"]{width: 100%; max-width: 100%;}
-    }
-
-    /* Büyükler: 1024px <= data-byk + */
-    @media screen and (min-width: 64em){
-
-    /* Kap alanını gizleme sınıfı */
-    [data-byk~="gizli"]{display: none;}
-    /* Kap alanı gizleme data-gnl ve diğer ekran tanımlamalarından gelirse iptal etmek */
-    [data-byk]:not([data-byk~="gizli"]){display: flex;}
-    [data-byk~="tam-kaplama"]{width: 100%; max-width: 100%;}
-    }
-
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -845,8 +812,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
         max-width: 1140px;
       }
     }
-
-
 
 
 /* ==========================================================================
