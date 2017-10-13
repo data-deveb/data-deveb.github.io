@@ -462,7 +462,7 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="satırda"]{align-items: baseline;}
       [data-kçk~="satırda-ol"]{align-self: baseline;}
 
-      [data-kçk~="sonrasıyla-gizle"]{display: none;}
+      [data-ufk~="sonrasını-gizle"],[data-kçk~="sonrasıyla-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
@@ -537,7 +537,7 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-ort~="satırda"]{align-items: baseline;}
       [data-ort~="satırda-ol"]{align-self: baseline;}
 
-      [data-ort~="sonrasıyla-gizle"]{display: none;}
+      [data-kçk~="sonrasını-gizle"],[data-ort~="sonrasıyla-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
@@ -612,7 +612,7 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk~="satırda"]{align-items: baseline;}
       [data-byk~="satırda-ol"]{align-self: baseline;}
 
-      [data-byk~="sonrasıyla-gizle"]{display: none;}
+      [data-ort~="sonrasını-gizle"],[data-byk~="sonrasıyla-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
@@ -687,7 +687,7 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-kcm~="satırda"]{align-items: baseline;}
       [data-kcm~="satırda-ol"]{align-self: baseline;}
 
-      [data-kcm~="sonrasıyla-gizle"]{display: none;}
+      [data-byk~="sonrasını-gizle"],[data-kcm~="sonrasıyla-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
@@ -767,7 +767,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="satırda"]{align-items: baseline;}
       [data-dev~="satırda-ol"]{align-self: baseline;}
 
-      [data-dev~="sonrasıyla-gizle"],[data-dev~="gizle"]{display: none;}
+      [data-dev~="sonrasını-gizle"],[data-dev~="sonrasıyla-gizle"],[data-dev~="gizle"]{display: none;}
     }
 
 /*  DUYARLI TİP - YALIN |< * >| */
