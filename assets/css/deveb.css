@@ -248,10 +248,10 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-gnl~="ortada"]{justify-content:center;}
     [data-gnl~="sağda"]{justify-content: flex-end;}
 
-    [data-gnl~="merkezde"]{align-items:center; justify-content: center;}
-    [data-gnl~="üstte"]{align-items: flex-start;}
-    [data-gnl~="göbekte"]{align-items: center;}
-    [data-gnl~="altta"]{align-items: flex-end;}
+    [data-gnl~="merkezde"]{align-items:center !important; justify-content: center;}
+    [data-gnl~="üstte"]{align-items: flex-start !important;}
+    [data-gnl~="göbekte"]{align-items: center !important;}
+    [data-gnl~="altta"]{align-items: flex-end !important;}
     [data-gnl~="üstte-ol"]{align-self: flex-start !important;}
     [data-gnl~="göbekte-ol"]{align-self: center !important;}
     [data-gnl~="altta-ol"]{margin-top:auto;}
@@ -261,10 +261,10 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
 
     [data-gnl~="ger"]{justify-content: space-between;}
     [data-gnl~="yay"]{justify-content: space-around;}
-    [data-gnl~="uzat"]{align-items: stretch;}
+    [data-gnl~="uzat"]{align-items: stretch !important;}
     [data-gnl~="uzun-ol"]{align-self: stretch;}
 
-    [data-gnl~="satırda"]{align-items: baseline;}
+    [data-gnl~="satırda"]{align-items: baseline !important;}
     [data-gnl~="satırda-ol"]{align-self: baseline;}
 
     [data-gnl~="gizle"]{display: none;}
