@@ -797,7 +797,16 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     MİNİK-YALIN (mnk) veya (mnk-yalın) | Ekran ölçeği: 0 ≤ * < 300px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:300px) {
-      [data-gnl~="kaplama"],[data-mnk~="kaplama"]{
+      [data-gnl~="kaplama"],
+      [data-mn~="sonrasıyla-kaplama"],
+      [data-mn~="kaplama"],
+      [data-mn~="öncesiyle-kaplama"],
+      [data-ufk~="öncesini-kaplama"],[data-ufk~="öncesiyle-kaplama"],
+      [data-kçk~="öncesini-kaplama"],[data-kçk~="öncesiyle-kaplama"],
+      [data-ort~="öncesini-kaplama"],[data-ort~="öncesiyle-kaplama"],
+      [data-byk~="öncesini-kaplama"],[data-byk~="öncesiyle-kaplama"],
+      [data-kcm~="öncesini-kaplama"],[data-kcm~="öncesiyle-kaplama"],
+      [data-dev~="öncesini-kaplama"],[data-dev~="öncesiyle-kaplama"]{
         flex-basis: 100%;
         max-width: 100%;
       }
@@ -807,16 +816,35 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     UFAK-YALIN (ufk) veya (ufk-yalın) | Ekran ölçeği: 300px ≤ * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) and (max-width:576px) {
-      [data-gnl~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
+      [data-gnl~="kaplama"],
+      [data-mn~="sonrasını-kaplama"],[data-mn~="sonrasıyla-kaplama"],
+      [data-ufk~="sonrasıyla-kaplama"],
+      [data-ufk~="kaplama"],
+      [data-ufk~="öncesiyle-kaplama"],
+      [data-kçk~="öncesini-kaplama"],[data-kçk~="öncesiyle-kaplama"],
+      [data-ort~="öncesini-kaplama"],[data-ort~="öncesiyle-kaplama"],
+      [data-byk~="öncesini-kaplama"],[data-byk~="öncesiyle-kaplama"],
+      [data-kcm~="öncesini-kaplama"],[data-kcm~="öncesiyle-kaplama"],
+      [data-dev~="öncesini-kaplama"],[data-dev~="öncesiyle-kaplama"]{
         flex-basis: calc(100% - 20px);
         max-width: calc(100% - 20px);
       }
+      [data-ufk~="hide"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     KÇK-YALIN (kçk) veya (kçk-yalın) | Ekran ölçeği: 576px ≤ * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) and (max-width:768px) {
-      [data-gnl~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
+      [data-gnl~="kaplama"],
+      [data-mn~="sonrasını-kaplama"],[data-mn~="sonrasıyla-kaplama"],
+      [data-ufk~="sonrasını-kaplama"],[data-ufk~="sonrasıyla-kaplama"],
+      [data-kçk~="sonrasıyla-kaplama"],
+      [data-kçk~="kaplama"],
+      [data-kçk~="öncesiyle-kaplama"],
+      [data-ort~="öncesini-kaplama"],[data-ort~="öncesiyle-kaplama"],
+      [data-byk~="öncesini-kaplama"],[data-byk~="öncesiyle-kaplama"],
+      [data-kcm~="öncesini-kaplama"],[data-kcm~="öncesiyle-kaplama"],
+      [data-dev~="öncesini-kaplama"],[data-dev~="öncesiyle-kaplama"]{
         flex-basis: 566px;
         max-width: 566px;
       }
@@ -827,7 +855,16 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     Ekran ölçeği: 768px ≤ * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) and (max-width:992px) {
-      [data-gnl~="kaplama"],[data-ort~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
+      [data-gnl~="kaplama"],
+      [data-mn~="sonrasını-kaplama"],[data-mn~="sonrasıyla-kaplama"],
+      [data-ufk~="sonrasını-kaplama"],[data-ufk~="sonrasıyla-kaplama"],
+      [data-kçk~="sonrasını-kaplama"],[data-kçk~="sonrasıyla-kaplama"],
+      [data-ort~="sonrasıyla-kaplama"],
+      [data-ort~="kaplama"],
+      [data-ort~="öncesiyle-kaplama"],
+      [data-byk~="öncesini-kaplama"],[data-byk~="öncesiyle-kaplama"],
+      [data-kcm~="öncesini-kaplama"],[data-kcm~="öncesiyle-kaplama"],
+      [data-dev~="öncesini-kaplama"],[data-dev~="öncesiyle-kaplama"]{
         flex-basis: 760px;
         max-width: 760px;
       }
@@ -837,7 +874,16 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     BÜYÜK-YALIN (byk) veya (byk-yalın) | Ekran ölçeği: 992px ≤ * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) and (max-width:1200px) {
-      [data-gnl~="kaplama"],[data-byk~="kaplama"],[data-ort~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
+      [data-gnl~="kaplama"],
+      [data-mn~="sonrasını-kaplama"],[data-mn~="sonrasıyla-kaplama"],
+      [data-ufk~="sonrasını-kaplama"],[data-ufk~="sonrasıyla-kaplama"],
+      [data-kçk~="sonrasını-kaplama"],[data-kçk~="sonrasıyla-kaplama"],
+      [data-ort~="sonrasını-kaplama"],[data-ort~="sonrasıyla-kaplama"],
+      [data-byk~="sonrasıyla-kaplama"],
+      [data-byk~="kaplama"],
+      [data-byk~="öncesiyle-kaplama"],
+      [data-kcm~="öncesini-kaplama"],[data-kcm~="öncesiyle-kaplama"],
+      [data-dev~="öncesini-kaplama"],[data-dev~="öncesiyle-kaplama"]{
         flex-basis: 960px;
         max-width: 960px;
       }
@@ -847,7 +893,15 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     KOCAMAN-YALIN (kcm) veya (kcm-yalın) | Ekran ölçeği: 1200px ≤ * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) and (max-width:1900px) {
-      [data-gnl~="kaplama"],[data-kcm~="kaplama"],[data-byk~="kaplama"],[data-ort~="kaplama"],[data-kçk~="kaplama"],[data-ufk~="kaplama"],[data-mnk~="kaplama"]{
+      [data-gnl~="kaplama"],
+      [data-mn~="sonrasını-kaplama"],[data-mn~="sonrasıyla-kaplama"],
+      [data-ufk~="sonrasını-kaplama"],[data-ufk~="sonrasıyla-kaplama"],
+      [data-kçk~="sonrasını-kaplama"],[data-kçk~="sonrasıyla-kaplama"],
+      [data-ort~="sonrasını-kaplama"],[data-ort~="sonrasıyla-kaplama"],
+      [data-byk~="sonrasını-kaplama"],[data-byk~="sonrasıyla-kaplama"],
+      [data-kcm~="sonrasıyla-kaplama"],
+      [data-kcm~="kaplama"],
+      [data-kcm~="öncesiyle-kaplama"]{
         flex-basis: 1140px;
         max-width: 1140px;
       }
