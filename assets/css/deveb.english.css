@@ -745,7 +745,8 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
       [data-hg~="17o"]{flex:17;}  [data-hg~="18o"]{flex:18;} [data-hg~="19o"]{flex:19;}  [data-hg~="20o"]{flex:20;}
       [data-hg~="21o"]{flex:21;}  [data-hg~="22o"]{flex:22;} [data-hg~="23o"]{flex:23;}  [data-hg~="24o"]{flex:24;}
 
-      [data-gnl~="container"],[data-hg~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
+      [data-gnl~="container"],[data-hg~="container"],
+      [data-hg~="container-after"],[data-hg~="container-with-after"]{
         flex-basis: 1890px;
         max-width: 1890px;
       }
@@ -790,7 +791,16 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     MINI-ONLY (mn) or (mno) | Screen size: 0 ≤ * < 300px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:300px) {
-      [data-gnl~="container"],[data-mn~="container"]{
+      [data-gnl~="container"],
+      [data-mn~="container-with-after"],
+      [data-mn~="container"],
+      [data-mn~="container-with-before"],
+      [data-xs~="container-before"],[data-xs~="container-with-before"],
+      [data-sm~="container-before"],[data-sm~="container-with-before"],
+      [data-md~="container-before"],[data-md~="container-with-before"],
+      [data-lg~="container-before"],[data-lg~="container-with-before"],
+      [data-xl~="container-before"],[data-xl~="container-with-before"],
+      [data-hg~="container-before"],[data-hg~="container-with-before"]{
         flex-basis: 100%;
         max-width: 100%;
       }
@@ -800,7 +810,16 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     EXTRA-SMALL-ONLY (xs) or (xso) | Screen size: 300px ≤ * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) and (max-width:576px) {
-      [data-gnl~="container"],[data-xs~="container"],[data-mn~="container"]{
+      [data-gnl~="container"],
+      [data-mn~="container-after"],[data-mn~="container-with-after"],
+      [data-xs~="container-with-after"],
+      [data-xs~="container"],
+      [data-xs~="container-with-before"],
+      [data-sm~="container-before"],[data-sm~="container-with-before"],
+      [data-md~="container-before"],[data-md~="container-with-before"],
+      [data-lg~="container-before"],[data-lg~="container-with-before"],
+      [data-xl~="container-before"],[data-xl~="container-with-before"],
+      [data-hg~="container-before"],[data-hg~="container-with-before"]{
         flex-basis: calc(100% - 20px);
         max-width: calc(100% - 20px);
       }
@@ -810,7 +829,16 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     SMALL-ONLY (sm) or (smo) | Screen size: 576px ≤ * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) and (max-width:768px) {
-      [data-gnl~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
+      [data-gnl~="container"],
+      [data-mn~="container-after"],[data-mn~="container-with-after"],
+      [data-xs~="container-after"],[data-xs~="container-with-after"],
+      [data-sm~="container-with-after"],
+      [data-sm~="container"],
+      [data-sm~="container-with-before"],
+      [data-md~="container-before"],[data-md~="container-with-before"],
+      [data-lg~="container-before"],[data-lg~="container-with-before"],
+      [data-xl~="container-before"],[data-xl~="container-with-before"],
+      [data-hg~="container-before"],[data-hg~="container-with-before"]{
         flex-basis: 566px;
         max-width: 566px;
       }
@@ -821,7 +849,16 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     Screen size: 768px ≤ * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) and (max-width:992px) {
-      [data-gnl~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
+      [data-gnl~="container"],
+      [data-mn~="container-after"],[data-mn~="container-with-after"],
+      [data-xs~="container-after"],[data-xs~="container-with-after"],
+      [data-sm~="container-after"],[data-sm~="container-with-after"],
+      [data-md~="container-with-after"],
+      [data-md~="container"],
+      [data-md~="container-with-before"],
+      [data-lg~="container-before"],[data-lg~="container-with-before"],
+      [data-xl~="container-before"],[data-xl~="container-with-before"],
+      [data-hg~="container-before"],[data-hg~="container-with-before"]{
         flex-basis: 760px;
         max-width: 760px;
       }
@@ -831,7 +868,16 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     LARGE-ONLY (lg) or (lgo) | Screen size: 992px ≤ * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) and (max-width:1200px) {
-      [data-gnl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
+      [data-gnl~="container"],
+      [data-mn~="container-after"],[data-mn~="container-with-after"],
+      [data-xs~="container-after"],[data-xs~="container-with-after"],
+      [data-sm~="container-after"],[data-sm~="container-with-after"],
+      [data-md~="container-after"],[data-md~="container-with-after"],
+      [data-lg~="container-with-after"],
+      [data-lg~="container"],
+      [data-lg~="container-with-before"],
+      [data-xl~="container-before"],[data-xl~="container-with-before"],
+      [data-hg~="container-before"],[data-hg~="container-with-before"]{
         flex-basis: 960px;
         max-width: 960px;
       }
@@ -841,7 +887,15 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     EXTRA-LARGE-ONLY (xl) or (xlo) | Screen size: 1200px ≤ * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) and (max-width:1900px) {
-      [data-gnl~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
+      [data-gnl~="container"],
+      [data-mn~="container-after"],[data-mn~="container-with-after"],
+      [data-xs~="container-after"],[data-xs~="container-with-after"],
+      [data-sm~="container-after"],[data-sm~="container-with-after"],
+      [data-md~="container-after"],[data-md~="container-with-after"],
+      [data-lg~="container-after"],[data-lg~="container-with-after"],
+      [data-xl~="container-with-after"],
+      [data-xl~="container"],
+      [data-xl~="container-with-before"]{
         flex-basis: 1140px;
         max-width: 1140px;
       }
