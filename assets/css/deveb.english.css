@@ -1,7 +1,13 @@
-/* ==========================================================================
+@charset "UTF-8";
+
+/*
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
 
     [DEVEB ENGLISH 0.1]
-    file:: "deveb.english.css"
+    file  :: "deveb.english.css"
+    site  :: "https://data-deveb.github.io/en"
+
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
 
     DEFINITIONS
     mr: CSS > margin          		pd: CSS > padding
@@ -18,49 +24,133 @@
 
     p: (p)art
 
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+
     • DEFAULT
+
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+
     • GRID SYSTEM         -> Line-tag: G00
+      • GAP               -> Line-tag: G01
+      • GUTTER            -> Line-tag: G02
+      • PIECE             -> Line-tag: G03
+      • RATIO             -> Line-tag: G04
+      • CONTAINERS        -> Line-tag: G05
+
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+
     • SCREEN CONTROL      -> Line-tag: none
       • GENERAL           -> Line-tag: S01
-      • EXTRA-SMALL START -> Line-tag: S02
-      • SMALL START       -> Line-tag: S03
-      • MEDIUM START      -> Line-tag: S04
-      • LARGE START       -> Line-tag: S05
-      • EXTRA-LARGE START -> Line-tag: S06
-      • HUGE START        -> Line-tag: S07
-========================================================================== */
+      ◘ LAST-CHILDREN ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ ALONE-CHILD ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ LAST-CHILDREN ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+      • MINI » ∞          -> Line-tag: S010      • MINI          -> Line-tag: S011      • MINI » 0          -> Line-tag: S012
+      • EXTRA-SMALL » ∞   -> Line-tag: S020      • EXTRA-SMALL   -> Line-tag: S021      • EXTRA-SMALL » 0   -> Line-tag: S022
+      • SMALL » ∞         -> Line-tag: S030      • SMALL         -> Line-tag: S031      • SMALL » 0         -> Line-tag: S032
+      • MEDIUM » ∞        -> Line-tag: S040      • MEDIUM        -> Line-tag: S041      • MEDIUM » 0        -> Line-tag: S042
+      • LARGE » ∞         -> Line-tag: S050      • LARGE         -> Line-tag: S051      • LARGE » 0         -> Line-tag: S052
+      • EXTRA-LARGE » ∞   -> Line-tag: S060      • EXTRA-LARGE   -> Line-tag: S061      • EXTRA-LARGE » 0   -> Line-tag: S062
+      • HUGE » ∞          -> Line-tag: S070      • HUGE          -> Line-tag: S071      • HUGE » 0          -> Line-tag: S072
 
-/* ==========================================================================
-    DEFAULT
-    Varsayılan değiştirgeleri temizleme eylemi.
--------------------------------------------------------------------------- */
-*{
-  margin: 0;
-  padding: 0;
-}
-body{
-  font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
-a{
-  text-decoration: none;
-}
+ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
 
-h1, h2, h3, h4, h5, h6{
-  width: 100%;
-  display: block;
-  font-weight: bold;
-  -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-}
-h1{font-size:2.6em}
-  h2{font-size:2.2em}
-    h3{font-size:1.8em}
-      h4{font-size:1.4em}
-        h5{font-size:1.2em}
-          h6{font-size:1.0em}
+    • COLOR SYSTEM        -> Line-tag: none
+*/
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    CUSTOMIZE SETTINGS
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    :root{
+      --yazı-biçimi:'Roboto', sans-serif;
+      --yazı-boyutu:15px;
+      --yazı-rengi:#333;
+
+      --par:24;--parça:24;    /* Kap örgüsü varsayılan genişlik */
+    }
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SETTINGS & RESETS
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    /* Varsayılan değiştirgeleri temizleme eylemi. */
+    *{
+      margin: 0;    /* Tüm tarayıcılar için her şeyin beri (margin) değerini sıfırlama. */
+      padding: 0;   /* Tüm tarayıcılar için her şeyin dolgu (padding) değerini sıfırlama. */
+    }
+
+    html {
+      -ms-text-size-adjust: 100%;     /* Metin boyutlarında ayarlamaları doğallaştırma. */
+      -webkit-text-size-adjust: 100%; /* " */
+    }
+
+    body{
+      font-family: var(--yazı-biçimi);  /* Her yerde varsayılan yazı biçimi */
+        font-size: var(--yazı-boyutu);  /* Her yerde varsayılan yazı boyutu */
+        font-weight: 300;
+        color:#333;
+    }
+
+    article,aside,details,
+    figcaption,figure,footer,
+    header,hgroup,section,
+    menu,main,nav{
+      display: block;   /* Varsayılan gösterim ayarı */
+    }
+
+    a{
+      text-decoration: none;/* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
+      color:#394eff;
+    }
+
+    a, button, input, textarea {
+        outline: 0;   /* Sınır çizgilerini sıfırlama ayarı */
+    }
+
+    /*  Başlık ayarları */
+    h1, h2, h3, h4, h5, h6{
+      width: 100%;
+      display: block;
+      font-weight: bold;
+      -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+      color:#333;
+      margin: 2em 0 0.5em 0;
+    }
+    * > h1:first-child,
+    * > h2:first-child,
+    * > h3:first-child,
+    * > h4:first-child,
+    * > h5:first-child,
+    * > h6:first-child,
+    [data-metin~="ilk"] {margin-top:0;}
+    h1{font-size:1.5em}
+      h2{font-size:1.1em}
+        h3{font-size:1.1em}
+          h4{font-size:1.0em; font-weight: 500; color:#444;}
+            h5{font-size:1.0em; font-weight: 500; color: #666;}
+              h6{font-size:1.0em; font-weight: 300; color: #888;}
+              h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6{
+                margin-top: 0;
+              }
+    img {
+      border: 0;  /* Kenarlıkları sıfırlama */
+    }
+
+    table{
+      display: table !important;
+    }
+
+    /* Paragraf ayarları */
+    p{display: block; width:100%;}
+      p+p{margin-top:1rem;}   /* İki paragraf arasına mesafe verme ayarı */
+
+    /* Liste ayarları */
+    ul{padding:0; margin: 0;}
+      ul li{list-style-type: none;}
+        ul ul{margin-left: 15px;}
+    ul h1, ul h2, ul h3, ul h4, ul h5, ul h6{
+      margin:0;
+    }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 G00 GENERAL | Screen size: 0 ≤ * < ∞
@@ -71,8 +161,8 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
         | Flexbox
     */
     :root{
-      --gutter:5px;
       --gap:5px;
+      --gutter:5px;
 
       --piece:24;
       --part:24;
@@ -82,7 +172,13 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
       display: flex;
       flex-flow: wrap;
       box-sizing: border-box;
+      align-items: flex-start;
     }
+    [data-gnl~="col"]{
+      flex-direction: column;
+    }
+
+    [data-gnl~="hide"]{display: none;}
 
     /* Grid pieces settings */
     [data-gnl~="1"]{--piece:1;}   [data-gnl~="2"]{--piece:2;}   [data-gnl~="3"]{--piece:3;}   [data-gnl~="4"]{--piece:4;}
@@ -117,7 +213,7 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
         padding-left: var(--gutter);
         padding-right: var(--gutter);
       }
-      [data-gnl~="gutter-zero"] > [data-gnl]{
+      [data-gnl~="gutter-no"] > [data-gnl]{
         padding:0;
       }
     /* Free grid piece */
@@ -127,7 +223,6 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
       width: auto;
     }
     [data-gnl~="container"]{
-      width: auto;
       margin-left:auto;
       margin-right:auto;
     }
@@ -142,75 +237,91 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
 
     /* Position Settings */
     [data-gnl~="hidden-overflow"]{overflow: hidden;}
+    [data-gnl~="auto-overflow"]{overflow-x: auto;}
     [data-gnl~="nowrap"]{flex-wrap: nowrap;}
 
     [data-gnl~="wrap-reverse"]{flex-wrap: wrap-reverse;}
     [data-gnl~="row-reverse"]{flex-direction: row-reverse;}
-    [data-gnl~="column-reverse"]{flex-direction: column-reverse;}
+    [data-gnl~="col-reverse"]{flex-direction: column-reverse;}
 
     [data-gnl~="left"]{justify-content: flex-start;}
     [data-gnl~="center"]{justify-content:center;}
     [data-gnl~="right"]{justify-content: flex-end;}
 
-    [data-gnl~="center-vh"]{align-items:center; justify-content: center;}
+    [data-gnl~="center-middle"]{align-items:center; justify-content: center;}
     [data-gnl~="top"]{align-items: flex-start;}
     [data-gnl~="middle"]{align-items: center;}
     [data-gnl~="bottom"]{align-items: flex-end;}
-    [data-gnl~="top-this"]{align-self: flex-start !important;}
-    [data-gnl~="middle-this"]{align-self: center !important;}
-    [data-gnl~="bottom-this"]{align-self: flex-end !important;}
-    [data-gnl~="right-this"]{margin-left:auto; align-self:flex-start;}
-    [data-gnl~="left-this"]{margin-right:auto; align-self:flex-start;}
-    [data-gnl~="center-this"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+    [data-gnl~="top-it"]{align-self: flex-start !important;}
+    [data-gnl~="middle-it"]{align-self: center !important;}
+    [data-gnl~="bottom-it"]{align-self: flex-end !important;}
+    [data-gnl~="right-it"]{margin-left:auto; align-self:flex-start;}
+    [data-gnl~="center-it"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+    [data-gnl~="left-it"]{margin-right:auto; align-self:flex-start;}
 
     [data-gnl~="space-between"]{justify-content: space-between;}
     [data-gnl~="space-around"]{justify-content: space-around;}
     [data-gnl~="stretch"]{align-items: stretch;}
-    [data-gnl~="stretch-this"]{align-self: stretch;}
+    [data-gnl~="stretch-it"]{align-self: stretch;}
 
     [data-gnl~="baseline"]{align-items: baseline;}
-    [data-gnl~="baseline-this"]{align-self: baseline;}
+    [data-gnl~="baseline-it"]{align-self: baseline;}
 
-/*  RESPONSIVE TYPE 0 >> ∞ */
+    [data-gnl~="hide"]{display: none;}
+
+/*  RESPONSIVE TYPE - LAST-CHILDREN 0 << ∞ */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-LARGE-END (xl) or (xle) | Screen size: * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:1900px) {
-
+      [data-xl~="hide-with-before"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     LARGE-END (lg) or (lge) | Screen size: * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:1200px) {
-
+      [data-lg~="hide-with-before"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MIDDLE-END (md) or (mde) | Screen size: * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:993px) {
-
+      [data-md~="hide-with-before"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     SMALL-END (sm) or (sme) | Screen size: * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:768px) {
-
+      [data-sm~="hide-with-before"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-SMALL-END (xs) or (xse) | Screen size: * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:576px) {
-
+      [data-xs~="hide-with-before"]{display: none;}
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MINI-END (mn) or (mne) | Screen size: * < 576px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (max-width:300px) {
+      [data-mn~="hide-with-before"],[data-mn~="hide"]{display: none;}
     }
 
-/*  RESPONSIVE TYPE START * >> ∞  */
+/*  RESPONSIVE TYPE FIRST-CHILDREN * >> ∞  */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
+S01 EXTRA-SMALL-FIRST-CHILDREN (xs) or (xsf) | Screen size: 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) {
       :root{
         --gutter:10px;
         --gap:10px;
+      }
+
+      [data-xs]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+        align-items: flex-start;
       }
 
       [data-xs~="1"]{--piece:1;}   [data-xs~="2"]{--piece:2;}   [data-xs~="3"]{--piece:3;}   [data-xs~="4"]{--piece:4;}
@@ -244,11 +355,53 @@ S01 EXTRA-SMALL-START (xs) or (xss) | Screen size: 300px ≤ *
       [data-xs~="13o"]{flex:13;} [data-xs~="14o"]{flex:14;} [data-xs~="15o"]{flex:15;} [data-xs~="16o"]{flex:16;}
       [data-xs~="17o"]{flex:17;} [data-xs~="18o"]{flex:18;} [data-xs~="19o"]{flex:19;} [data-xs~="20o"]{flex:20;}
       [data-xs~="21o"]{flex:21;} [data-xs~="22o"]{flex:22;} [data-xs~="23o"]{flex:23;} [data-xs~="24o"]{flex:24;}
+
+      /* Position Settings */
+      [data-xs~="hidden-overflow"]{overflow: hidden;}
+      [data-xs~="auto-overflow"]{overflow-x: auto;}
+      [data-xs~="nowrap"]{flex-wrap: nowrap;}
+
+      [data-xs~="wrap-reverse"]{flex-wrap: wrap-reverse;}
+      [data-xs~="row-reverse"]{flex-direction: row-reverse;}
+      [data-xs~="col-reverse"]{flex-direction: column-reverse;}
+
+      [data-xs~="left"]{justify-content: flex-start;}
+      [data-xs~="center"]{justify-content:center;}
+      [data-xs~="right"]{justify-content: flex-end;}
+
+      [data-xs~="center-middle"]{align-items:center; justify-content: center;}
+      [data-xs~="top"]{align-items: flex-start;}
+      [data-xs~="middle"]{align-items: center;}
+      [data-xs~="bottom"]{align-items: flex-end;}
+      [data-xs~="top-it"]{align-self: flex-start !important;}
+      [data-xs~="middle-it"]{align-self: center !important;}
+      [data-xs~="bottom-it"]{align-self: flex-end !important;}
+      [data-xs~="right-it"]{margin-left:auto; align-self:flex-start;}
+      [data-xs~="center-it"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+      [data-xs~="left-it"]{margin-right:auto; align-self:flex-start;}
+
+      [data-xs~="space-between"]{justify-content: space-between;}
+      [data-xs~="space-around"]{justify-content: space-around;}
+      [data-xs~="stretch"]{align-items: stretch;}
+      [data-xs~="stretch-it"]{align-self: stretch;}
+
+      [data-xs~="baseline"]{align-items: baseline;}
+      [data-xs~="baseline-it"]{align-self: baseline;}
+
+      [data-xs~="hide-with-after"],[data-mn~="hide-after"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) {
+
+      [data-sm]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+        align-items: flex-start;
+      }
+
       [data-sm~="1"]{--piece:1;}   [data-sm~="2"]{--piece:2;}   [data-sm~="3"]{--piece:3;}   [data-sm~="4"]{--piece:4;}
       [data-sm~="5"]{--piece:5;}   [data-sm~="6"]{--piece:6;}   [data-sm~="7"]{--piece:7;}   [data-sm~="8"]{--piece:8;}
       [data-sm~="9"]{--piece:9;}   [data-sm~="10"]{--piece:10;} [data-sm~="11"]{--piece:11;} [data-sm~="12"]{--piece:12;}
@@ -280,11 +433,53 @@ S02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
       [data-sm~="13o"]{flex:13;}  [data-sm~="14o"]{flex:14;} [data-sm~="15o"]{flex:15;}  [data-sm~="16o"]{flex:16;}
       [data-sm~="17o"]{flex:17;}  [data-sm~="18o"]{flex:18;} [data-sm~="19o"]{flex:19;}  [data-sm~="20o"]{flex:20;}
       [data-sm~="21o"]{flex:21;}  [data-sm~="22o"]{flex:22;} [data-sm~="23o"]{flex:23;}  [data-sm~="24o"]{flex:24;}
+
+      /* Position Settings */
+      [data-sm~="hidden-overflow"]{overflow: hidden;}
+      [data-sm~="auto-overflow"]{overflow-x: auto;}
+      [data-sm~="nowrap"]{flex-wrap: nowrap;}
+
+      [data-sm~="wrap-reverse"]{flex-wrap: wrap-reverse;}
+      [data-sm~="row-reverse"]{flex-direction: row-reverse;}
+      [data-sm~="col-reverse"]{flex-direction: column-reverse;}
+
+      [data-sm~="left"]{justify-content: flex-start;}
+      [data-sm~="center"]{justify-content:center;}
+      [data-sm~="right"]{justify-content: flex-end;}
+
+      [data-sm~="center-middle"]{align-items:center; justify-content: center;}
+      [data-sm~="top"]{align-items: flex-start;}
+      [data-sm~="middle"]{align-items: center;}
+      [data-sm~="bottom"]{align-items: flex-end;}
+      [data-sm~="top-it"]{align-self: flex-start !important;}
+      [data-sm~="middle-it"]{align-self: center !important;}
+      [data-sm~="bottom-it"]{align-self: flex-end !important;}
+      [data-sm~="right-it"]{margin-left:auto; align-self:flex-start;}
+      [data-sm~="center-it"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+      [data-sm~="left-it"]{margin-right:auto; align-self:flex-start;}
+
+      [data-sm~="space-between"]{justify-content: space-between;}
+      [data-sm~="space-around"]{justify-content: space-around;}
+      [data-sm~="stretch"]{align-items: stretch;}
+      [data-sm~="stretch-it"]{align-self: stretch;}
+
+      [data-sm~="baseline"]{align-items: baseline;}
+      [data-sm~="baseline-it"]{align-self: baseline;}
+
+      [data-sm~="hide-with-after"],[data-xs~="hide-after"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) {
+
+      [data-md]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+        align-items: flex-start;
+      }
+
       [data-md~="1"]{--piece:1;}   [data-md~="2"]{--piece:2;}   [data-md~="3"]{--piece:3;}   [data-md~="4"]{--piece:4;}
       [data-md~="5"]{--piece:5;}   [data-md~="6"]{--piece:6;}   [data-md~="7"]{--piece:7;}   [data-md~="8"]{--piece:8;}
       [data-md~="9"]{--piece:9;}   [data-md~="10"]{--piece:10;} [data-md~="11"]{--piece:11;} [data-md~="12"]{--piece:12;}
@@ -316,11 +511,53 @@ S03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
       [data-md~="13o"]{flex:13;}  [data-md~="14o"]{flex:14;} [data-md~="15o"]{flex:15;}  [data-md~="16o"]{flex:16;}
       [data-md~="17o"]{flex:17;}  [data-md~="18o"]{flex:18;} [data-md~="19o"]{flex:19;}  [data-md~="20o"]{flex:20;}
       [data-md~="21o"]{flex:21;}  [data-md~="22o"]{flex:22;} [data-md~="23o"]{flex:23;}  [data-md~="24o"]{flex:24;}
+
+      /* Position Settings */
+      [data-md~="hidden-overflow"]{overflow: hidden;}
+      [data-md~="auto-overflow"]{overflow-x: auto;}
+      [data-md~="nowrap"]{flex-wrap: nowrap;}
+
+      [data-md~="wrap-reverse"]{flex-wrap: wrap-reverse;}
+      [data-md~="row-reverse"]{flex-direction: row-reverse;}
+      [data-md~="col-reverse"]{flex-direction: column-reverse;}
+
+      [data-md~="left"]{justify-content: flex-start;}
+      [data-md~="center"]{justify-content:center;}
+      [data-md~="right"]{justify-content: flex-end;}
+
+      [data-md~="center-middle"]{align-items:center; justify-content: center;}
+      [data-md~="top"]{align-items: flex-start;}
+      [data-md~="middle"]{align-items: center;}
+      [data-md~="bottom"]{align-items: flex-end;}
+      [data-md~="top-it"]{align-self: flex-start !important;}
+      [data-md~="middle-it"]{align-self: center !important;}
+      [data-md~="bottom-it"]{align-self: flex-end !important;}
+      [data-md~="right-it"]{margin-left:auto; align-self:flex-start;}
+      [data-md~="center-it"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+      [data-md~="left-it"]{margin-right:auto; align-self:flex-start;}
+
+      [data-md~="space-between"]{justify-content: space-between;}
+      [data-md~="space-around"]{justify-content: space-around;}
+      [data-md~="stretch"]{align-items: stretch;}
+      [data-md~="stretch-it"]{align-self: stretch;}
+
+      [data-md~="baseline"]{align-items: baseline;}
+      [data-md~="baseline-it"]{align-self: baseline;}
+
+      [data-md~="hide-with-after"],[data-sm~="hide-after"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) {
+
+      [data-lg]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+        align-items: flex-start;
+      }
+
       [data-lg~="1"]{--piece:1;}   [data-lg~="2"]{--piece:2;}   [data-lg~="3"]{--piece:3;}   [data-lg~="4"]{--piece:4;}
       [data-lg~="5"]{--piece:5;}   [data-lg~="6"]{--piece:6;}   [data-lg~="7"]{--piece:7;}   [data-lg~="8"]{--piece:8;}
       [data-lg~="9"]{--piece:9;}   [data-lg~="10"]{--piece:10;} [data-lg~="11"]{--piece:11;} [data-lg~="12"]{--piece:12;}
@@ -352,11 +589,53 @@ S04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
       [data-lg~="13o"]{flex:13;}  [data-lg~="14o"]{flex:14;} [data-lg~="15o"]{flex:15;}  [data-lg~="16o"]{flex:16;}
       [data-lg~="17o"]{flex:17;}  [data-lg~="18o"]{flex:18;} [data-lg~="19o"]{flex:19;}  [data-lg~="20o"]{flex:20;}
       [data-lg~="21o"]{flex:21;}  [data-lg~="22o"]{flex:22;} [data-lg~="23o"]{flex:23;}  [data-lg~="24o"]{flex:24;}
+
+      /* Position Settings */
+      [data-lg~="hidden-overflow"]{overflow: hidden;}
+      [data-lg~="auto-overflow"]{overflow-x: auto;}
+      [data-lg~="nowrap"]{flex-wrap: nowrap;}
+
+      [data-lg~="wrap-reverse"]{flex-wrap: wrap-reverse;}
+      [data-lg~="row-reverse"]{flex-direction: row-reverse;}
+      [data-lg~="col-reverse"]{flex-direction: column-reverse;}
+
+      [data-lg~="left"]{justify-content: flex-start;}
+      [data-lg~="center"]{justify-content:center;}
+      [data-lg~="right"]{justify-content: flex-end;}
+
+      [data-lg~="center-middle"]{align-items:center; justify-content: center;}
+      [data-lg~="top"]{align-items: flex-start;}
+      [data-lg~="middle"]{align-items: center;}
+      [data-lg~="bottom"]{align-items: flex-end;}
+      [data-lg~="top-it"]{align-self: flex-start !important;}
+      [data-lg~="middle-it"]{align-self: center !important;}
+      [data-lg~="bottom-it"]{align-self: flex-end !important;}
+      [data-lg~="right-it"]{margin-left:auto; align-self:flex-start;}
+      [data-lg~="center-it"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+      [data-lg~="left-it"]{margin-right:auto; align-self:flex-start;}
+
+      [data-lg~="space-between"]{justify-content: space-between;}
+      [data-lg~="space-around"]{justify-content: space-around;}
+      [data-lg~="stretch"]{align-items: stretch;}
+      [data-lg~="stretch-it"]{align-self: stretch;}
+
+      [data-lg~="baseline"]{align-items: baseline;}
+      [data-lg~="baseline-it"]{align-self: baseline;}
+
+      [data-lg~="hide-with-after"],[data-md~="hide-after"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) {
+
+      [data-xl]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+        align-items: flex-start;
+      }
+
       [data-xl~="1"]{--piece:1;}   [data-xl~="2"]{--piece:2;}   [data-xl~="3"]{--piece:3;}   [data-xl~="4"]{--piece:4;}
       [data-xl~="5"]{--piece:5;}   [data-xl~="6"]{--piece:6;}   [data-xl~="7"]{--piece:7;}   [data-xl~="8"]{--piece:8;}
       [data-xl~="9"]{--piece:9;}   [data-xl~="10"]{--piece:10;} [data-xl~="11"]{--piece:11;} [data-xl~="12"]{--piece:12;}
@@ -388,11 +667,52 @@ S05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
       [data-xl~="13o"]{flex:13;}  [data-xl~="14o"]{flex:14;} [data-xl~="15o"]{flex:15;}  [data-xl~="16o"]{flex:16;}
       [data-xl~="17o"]{flex:17;}  [data-xl~="18o"]{flex:18;} [data-xl~="19o"]{flex:19;}  [data-xl~="20o"]{flex:20;}
       [data-xl~="21o"]{flex:21;}  [data-xl~="22o"]{flex:22;} [data-xl~="23o"]{flex:23;}  [data-xl~="24o"]{flex:24;}
+
+      /* Position Settings */
+      [data-xl~="hidden-overflow"]{overflow: hidden;}
+      [data-xl~="auto-overflow"]{overflow-x: auto;}
+      [data-xl~="nowrap"]{flex-wrap: nowrap;}
+
+      [data-xl~="wrap-reverse"]{flex-wrap: wrap-reverse;}
+      [data-xl~="row-reverse"]{flex-direction: row-reverse;}
+      [data-xl~="col-reverse"]{flex-direction: column-reverse;}
+
+      [data-xl~="left"]{justify-content: flex-start;}
+      [data-xl~="center"]{justify-content:center;}
+      [data-xl~="right"]{justify-content: flex-end;}
+
+      [data-xl~="center-middle"]{align-items:center; justify-content: center;}
+      [data-xl~="top"]{align-items: flex-start;}
+      [data-xl~="middle"]{align-items: center;}
+      [data-xl~="bottom"]{align-items: flex-end;}
+      [data-xl~="top-it"]{align-self: flex-start !important;}
+      [data-xl~="middle-it"]{align-self: center !important;}
+      [data-xl~="bottom-it"]{align-self: flex-end !important;}
+      [data-xl~="right-it"]{margin-left:auto; align-self:flex-start;}
+      [data-xl~="center-it"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+      [data-xl~="left-it"]{margin-right:auto; align-self:flex-start;}
+
+      [data-xl~="space-between"]{justify-content: space-between;}
+      [data-xl~="space-around"]{justify-content: space-around;}
+      [data-xl~="stretch"]{align-items: stretch;}
+      [data-xl~="stretch-it"]{align-self: stretch;}
+
+      [data-xl~="baseline"]{align-items: baseline;}
+      [data-xl~="baseline-it"]{align-self: baseline;}
+
+      [data-xl~="hide-with-after"],[data-lg~="hide-after"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1900px) {
+      [data-hg]{
+        display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+        align-items: flex-start;
+      }
+
       [data-hg~="1"]{--piece:1;}   [data-hg~="2"]{--piece:2;}   [data-hg~="3"]{--piece:3;}   [data-hg~="4"]{--piece:4;}
       [data-hg~="5"]{--piece:5;}   [data-hg~="6"]{--piece:6;}   [data-hg~="7"]{--piece:7;}   [data-hg~="8"]{--piece:8;}
       [data-hg~="9"]{--piece:9;}   [data-hg~="10"]{--piece:10;} [data-hg~="11"]{--piece:11;} [data-hg~="12"]{--piece:12;}
@@ -425,66 +745,105 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
       [data-hg~="17o"]{flex:17;}  [data-hg~="18o"]{flex:18;} [data-hg~="19o"]{flex:19;}  [data-hg~="20o"]{flex:20;}
       [data-hg~="21o"]{flex:21;}  [data-hg~="22o"]{flex:22;} [data-hg~="23o"]{flex:23;}  [data-hg~="24o"]{flex:24;}
 
-      [data-gnl~="container"],[data-hg~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+      [data-gnl~="container"],[data-hg~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
         flex-basis: 1890px;
         max-width: 1890px;
       }
 
+      /* Position Settings */
+      [data-hg~="hidden-overflow"]{overflow: hidden;}
+      [data-hg~="auto-overflow"]{overflow-x: auto;}
+      [data-hg~="nowrap"]{flex-wrap: nowrap;}
+
+      [data-hg~="wrap-reverse"]{flex-wrap: wrap-reverse;}
+      [data-hg~="row-reverse"]{flex-direction: row-reverse;}
+      [data-hg~="col-reverse"]{flex-direction: column-reverse;}
+
+      [data-hg~="left"]{justify-content: flex-start;}
+      [data-hg~="center"]{justify-content:center;}
+      [data-hg~="right"]{justify-content: flex-end;}
+
+      [data-hg~="center-middle"]{align-items:center; justify-content: center;}
+      [data-hg~="top"]{align-items: flex-start;}
+      [data-hg~="middle"]{align-items: center;}
+      [data-hg~="bottom"]{align-items: flex-end;}
+      [data-hg~="top-it"]{align-self: flex-start !important;}
+      [data-hg~="middle-it"]{align-self: center !important;}
+      [data-hg~="bottom-it"]{align-self: flex-end !important;}
+      [data-hg~="right-it"]{margin-left:auto; align-self:flex-start;}
+      [data-hg~="center-it"]{margin-left:auto; margin-right:auto; align-self:flex-start;}
+      [data-hg~="left-it"]{margin-right:auto; align-self:flex-start;}
+
+      [data-hg~="space-between"]{justify-content: space-between;}
+      [data-hg~="space-around"]{justify-content: space-around;}
+      [data-hg~="stretch"]{align-items: stretch;}
+      [data-hg~="stretch-it"]{align-self: stretch;}
+
+      [data-hg~="baseline"]{align-items: baseline;}
+      [data-hg~="baseline-it"]{align-self: baseline;}
+
+      [data-hg~="hide-with-after"],[data-xl~="hide-after"]{display: none;}
     }
 
 /*  RESPONSIVE TYPE ONLY |< * >| */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    TINY-ONLY (ti) or (tio) | Screen size: 0 ≤ * < 300px
+    MINI-ONLY (mn) or (mno) | Screen size: 0 ≤ * < 300px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:300px) {
-      [data-gnl~="container"],[data-ti~="container"]{
+      [data-gnl~="container"],[data-mn~="container"]{
         flex-basis: 100%;
         max-width: 100%;
       }
+      [data-mn~="hide"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-SMALL-ONLY (xs) or (xso) | Screen size: 300px ≤ * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) and (max-width:576px) {
-      [data-gnl~="container"],[data-xs~="container"],[data-ti~="container"]{
+      [data-gnl~="container"],[data-xs~="container"],[data-mn~="container"]{
         flex-basis: calc(100% - 20px);
         max-width: calc(100% - 20px);
       }
+      [data-xs~="hide"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     SMALL-ONLY (sm) or (smo) | Screen size: 576px ≤ * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) and (max-width:768px) {
-      [data-gnl~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+      [data-gnl~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
         flex-basis: 566px;
         max-width: 566px;
       }
+      [data-sm~="hide"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MIDDLE-ONLY (md) or (mdo)
     Screen size: 768px ≤ * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) and (max-width:992px) {
-      [data-gnl~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+      [data-gnl~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
         flex-basis: 760px;
         max-width: 760px;
       }
+      [data-md~="hide"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     LARGE-ONLY (lg) or (lgo) | Screen size: 992px ≤ * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) and (max-width:1200px) {
-      [data-gnl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+      [data-gnl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
         flex-basis: 960px;
         max-width: 960px;
       }
+      [data-lg~="hide"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-LARGE-ONLY (xl) or (xlo) | Screen size: 1200px ≤ * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) and (max-width:1900px) {
-      [data-gnl~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-ti~="container"]{
+      [data-gnl~="container"],[data-xl~="container"],[data-lg~="container"],[data-md~="container"],[data-sm~="container"],[data-xs~="container"],[data-mn~="container"]{
         flex-basis: 1140px;
         max-width: 1140px;
       }
+      [data-xl~="hide"]{display: none;}
     }
