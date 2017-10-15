@@ -177,6 +177,7 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-gnl~="sütun"]{
       flex-direction: column;
       flex-wrap: nowrap;
+      align-items: stretch;
     }
     body[data-gnl~="sütun"]{
       min-height:100vh;
