@@ -754,7 +754,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-kçk~="büyükleri-kaplama"],[data-kçk~="büyükleriyle-kaplama"],
       [data-ufk~="büyükleri-kaplama"],[data-ufk~="büyükleriyle-kaplama"],
       [data-mnk~="büyükleri-kaplama"],[data-mnk~="büyükleriyle-kaplama"]{
-        flex-basis: 1890px;
         max-width: 1890px;
       }
 
@@ -808,7 +807,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-byk~="küçükleri-kaplama"],[data-byk~="küçükleriyle-kaplama"],
       [data-kcm~="küçükleri-kaplama"],[data-kcm~="küçükleriyle-kaplama"],
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
-        flex-basis: 100%;
         max-width: 100%;
       }
       [data-mnk~="gizle"]{display: none;}
@@ -827,7 +825,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-byk~="küçükleri-kaplama"],[data-byk~="küçükleriyle-kaplama"],
       [data-kcm~="küçükleri-kaplama"],[data-kcm~="küçükleriyle-kaplama"],
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
-        flex-basis: calc(100% - 20px);
         max-width: calc(100% - 20px);
       }
       [data-ufk~="hide"]{display: none;}
@@ -846,7 +843,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-byk~="küçükleri-kaplama"],[data-byk~="küçükleriyle-kaplama"],
       [data-kcm~="küçükleri-kaplama"],[data-kcm~="küçükleriyle-kaplama"],
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
-        flex-basis: 566px;
         max-width: 566px;
       }
       [data-kçk~="gizle"]{display: none;}
@@ -866,7 +862,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-byk~="küçükleri-kaplama"],[data-byk~="küçükleriyle-kaplama"],
       [data-kcm~="küçükleri-kaplama"],[data-kcm~="küçükleriyle-kaplama"],
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
-        flex-basis: 760px;
         max-width: 760px;
       }
       [data-ort~="gizle"]{display: none;}
@@ -885,7 +880,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-byk~="küçükleriyle-kaplama"],
       [data-kcm~="küçükleri-kaplama"],[data-kcm~="küçükleriyle-kaplama"],
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
-        flex-basis: 960px;
         max-width: 960px;
       }
       [data-byk~="gizle"]{display: none;}
@@ -903,7 +897,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-kcm~="büyükleriyle-kaplama"],
       [data-kcm~="kaplama"],
       [data-kcm~="küçükleriyle-kaplama"]{
-        flex-basis: 1140px;
         max-width: 1140px;
       }
       [data-kcm~="gizle"]{display: none;}
