@@ -109,8 +109,8 @@
       width: 100%;
       display: block;
       font-weight: bold;
-      -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
+      -webkit-margin-smaller: 0;
+        -webkit-margin-bigger: 0;
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
       color:#333;
@@ -274,37 +274,37 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
     EXTRA-LARGE-END (xl) or (xle) | Screen size: * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:1900px) {
-      [data-xl~="hide-with-before"]{display: none;}
+      [data-xl~="hide-with-smaller"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     LARGE-END (lg) or (lge) | Screen size: * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:1200px) {
-      [data-lg~="hide-with-before"]{display: none;}
+      [data-lg~="hide-with-smaller"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MIDDLE-END (md) or (mde) | Screen size: * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:993px) {
-      [data-md~="hide-with-before"]{display: none;}
+      [data-md~="hide-with-smaller"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     SMALL-END (sm) or (sme) | Screen size: * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:768px) {
-      [data-sm~="hide-with-before"]{display: none;}
+      [data-sm~="hide-with-smaller"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     EXTRA-SMALL-END (xs) or (xse) | Screen size: * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:576px) {
-      [data-xs~="hide-with-before"]{display: none;}
+      [data-xs~="hide-with-smaller"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MINI-END (mn) or (mne) | Screen size: * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:300px) {
-      [data-mn~="hide-with-before"],[data-mn~="hide"]{display: none;}
+      [data-mn~="hide-with-smaller"],[data-mn~="hide"]{display: none;}
     }
 
 /*  RESPONSIVE TYPE FIRST-CHILDREN * >> ∞  */
@@ -388,7 +388,7 @@ S01 EXTRA-SMALL-FIRST-CHILDREN (xs) or (xsf) | Screen size: 300px ≤ *
       [data-xs~="baseline"]{align-items: baseline;}
       [data-xs~="baseline-it"]{align-self: baseline;}
 
-      [data-xs~="hide-with-after"],[data-mn~="hide-after"]{display: none;}
+      [data-xs~="hide-with-bigger"],[data-mn~="hide-bigger"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
@@ -466,7 +466,7 @@ S02 SMALL-START (sm) or (sms) | Screen size: 576px ≤ *
       [data-sm~="baseline"]{align-items: baseline;}
       [data-sm~="baseline-it"]{align-self: baseline;}
 
-      [data-sm~="hide-with-after"],[data-xs~="hide-after"]{display: none;}
+      [data-sm~="hide-with-bigger"],[data-xs~="hide-bigger"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
@@ -544,7 +544,7 @@ S03 MIDDLE-START (md) or (mds) | Screen size: 768px ≤ *
       [data-md~="baseline"]{align-items: baseline;}
       [data-md~="baseline-it"]{align-self: baseline;}
 
-      [data-md~="hide-with-after"],[data-sm~="hide-after"]{display: none;}
+      [data-md~="hide-with-bigger"],[data-sm~="hide-bigger"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
@@ -622,7 +622,7 @@ S04 LARGE-START (lg) or (lgs) | Screen size: 992px ≤ *
       [data-lg~="baseline"]{align-items: baseline;}
       [data-lg~="baseline-it"]{align-self: baseline;}
 
-      [data-lg~="hide-with-after"],[data-md~="hide-after"]{display: none;}
+      [data-lg~="hide-with-bigger"],[data-md~="hide-bigger"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
@@ -700,7 +700,7 @@ S05 EXTRA-LARGE-START (xl) or (xls) | Screen size: 1200px ≤ *
       [data-xl~="baseline"]{align-items: baseline;}
       [data-xl~="baseline-it"]{align-self: baseline;}
 
-      [data-xl~="hide-with-after"],[data-lg~="hide-after"]{display: none;}
+      [data-xl~="hide-with-bigger"],[data-lg~="hide-bigger"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
@@ -746,7 +746,7 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
       [data-hg~="21o"]{flex:21;}  [data-hg~="22o"]{flex:22;} [data-hg~="23o"]{flex:23;}  [data-hg~="24o"]{flex:24;}
 
       [data-gnl~="container"],[data-hg~="container"],
-      [data-hg~="container-after"],[data-hg~="container-with-after"]{
+      [data-hg~="container-bigger"],[data-hg~="container-with-bigger"]{
         flex-basis: 1890px;
         max-width: 1890px;
       }
@@ -783,7 +783,7 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
       [data-hg~="baseline"]{align-items: baseline;}
       [data-hg~="baseline-it"]{align-self: baseline;}
 
-      [data-hg~="hide-with-after"],[data-xl~="hide-after"]{display: none;}
+      [data-hg~="hide-with-bigger"],[data-xl~="hide-bigger"]{display: none;}
     }
 
 /*  RESPONSIVE TYPE ONLY |< * >| */
@@ -792,15 +792,15 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:300px) {
       [data-gnl~="container"],
-      [data-mn~="container-with-after"],
+      [data-mn~="container-with-bigger"],
       [data-mn~="container"],
-      [data-mn~="container-with-before"],
-      [data-xs~="container-before"],[data-xs~="container-with-before"],
-      [data-sm~="container-before"],[data-sm~="container-with-before"],
-      [data-md~="container-before"],[data-md~="container-with-before"],
-      [data-lg~="container-before"],[data-lg~="container-with-before"],
-      [data-xl~="container-before"],[data-xl~="container-with-before"],
-      [data-hg~="container-before"],[data-hg~="container-with-before"]{
+      [data-mn~="container-with-smaller"],
+      [data-xs~="container-smaller"],[data-xs~="container-with-smaller"],
+      [data-sm~="container-smaller"],[data-sm~="container-with-smaller"],
+      [data-md~="container-smaller"],[data-md~="container-with-smaller"],
+      [data-lg~="container-smaller"],[data-lg~="container-with-smaller"],
+      [data-xl~="container-smaller"],[data-xl~="container-with-smaller"],
+      [data-hg~="container-smaller"],[data-hg~="container-with-smaller"]{
         flex-basis: 100%;
         max-width: 100%;
       }
@@ -811,15 +811,15 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) and (max-width:576px) {
       [data-gnl~="container"],
-      [data-mn~="container-after"],[data-mn~="container-with-after"],
-      [data-xs~="container-with-after"],
+      [data-mn~="container-bigger"],[data-mn~="container-with-bigger"],
+      [data-xs~="container-with-bigger"],
       [data-xs~="container"],
-      [data-xs~="container-with-before"],
-      [data-sm~="container-before"],[data-sm~="container-with-before"],
-      [data-md~="container-before"],[data-md~="container-with-before"],
-      [data-lg~="container-before"],[data-lg~="container-with-before"],
-      [data-xl~="container-before"],[data-xl~="container-with-before"],
-      [data-hg~="container-before"],[data-hg~="container-with-before"]{
+      [data-xs~="container-with-smaller"],
+      [data-sm~="container-smaller"],[data-sm~="container-with-smaller"],
+      [data-md~="container-smaller"],[data-md~="container-with-smaller"],
+      [data-lg~="container-smaller"],[data-lg~="container-with-smaller"],
+      [data-xl~="container-smaller"],[data-xl~="container-with-smaller"],
+      [data-hg~="container-smaller"],[data-hg~="container-with-smaller"]{
         flex-basis: calc(100% - 20px);
         max-width: calc(100% - 20px);
       }
@@ -830,15 +830,15 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) and (max-width:768px) {
       [data-gnl~="container"],
-      [data-mn~="container-after"],[data-mn~="container-with-after"],
-      [data-xs~="container-after"],[data-xs~="container-with-after"],
-      [data-sm~="container-with-after"],
+      [data-mn~="container-bigger"],[data-mn~="container-with-bigger"],
+      [data-xs~="container-bigger"],[data-xs~="container-with-bigger"],
+      [data-sm~="container-with-bigger"],
       [data-sm~="container"],
-      [data-sm~="container-with-before"],
-      [data-md~="container-before"],[data-md~="container-with-before"],
-      [data-lg~="container-before"],[data-lg~="container-with-before"],
-      [data-xl~="container-before"],[data-xl~="container-with-before"],
-      [data-hg~="container-before"],[data-hg~="container-with-before"]{
+      [data-sm~="container-with-smaller"],
+      [data-md~="container-smaller"],[data-md~="container-with-smaller"],
+      [data-lg~="container-smaller"],[data-lg~="container-with-smaller"],
+      [data-xl~="container-smaller"],[data-xl~="container-with-smaller"],
+      [data-hg~="container-smaller"],[data-hg~="container-with-smaller"]{
         flex-basis: 566px;
         max-width: 566px;
       }
@@ -850,15 +850,15 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) and (max-width:992px) {
       [data-gnl~="container"],
-      [data-mn~="container-after"],[data-mn~="container-with-after"],
-      [data-xs~="container-after"],[data-xs~="container-with-after"],
-      [data-sm~="container-after"],[data-sm~="container-with-after"],
-      [data-md~="container-with-after"],
+      [data-mn~="container-bigger"],[data-mn~="container-with-bigger"],
+      [data-xs~="container-bigger"],[data-xs~="container-with-bigger"],
+      [data-sm~="container-bigger"],[data-sm~="container-with-bigger"],
+      [data-md~="container-with-bigger"],
       [data-md~="container"],
-      [data-md~="container-with-before"],
-      [data-lg~="container-before"],[data-lg~="container-with-before"],
-      [data-xl~="container-before"],[data-xl~="container-with-before"],
-      [data-hg~="container-before"],[data-hg~="container-with-before"]{
+      [data-md~="container-with-smaller"],
+      [data-lg~="container-smaller"],[data-lg~="container-with-smaller"],
+      [data-xl~="container-smaller"],[data-xl~="container-with-smaller"],
+      [data-hg~="container-smaller"],[data-hg~="container-with-smaller"]{
         flex-basis: 760px;
         max-width: 760px;
       }
@@ -869,15 +869,15 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) and (max-width:1200px) {
       [data-gnl~="container"],
-      [data-mn~="container-after"],[data-mn~="container-with-after"],
-      [data-xs~="container-after"],[data-xs~="container-with-after"],
-      [data-sm~="container-after"],[data-sm~="container-with-after"],
-      [data-md~="container-after"],[data-md~="container-with-after"],
-      [data-lg~="container-with-after"],
+      [data-mn~="container-bigger"],[data-mn~="container-with-bigger"],
+      [data-xs~="container-bigger"],[data-xs~="container-with-bigger"],
+      [data-sm~="container-bigger"],[data-sm~="container-with-bigger"],
+      [data-md~="container-bigger"],[data-md~="container-with-bigger"],
+      [data-lg~="container-with-bigger"],
       [data-lg~="container"],
-      [data-lg~="container-with-before"],
-      [data-xl~="container-before"],[data-xl~="container-with-before"],
-      [data-hg~="container-before"],[data-hg~="container-with-before"]{
+      [data-lg~="container-with-smaller"],
+      [data-xl~="container-smaller"],[data-xl~="container-with-smaller"],
+      [data-hg~="container-smaller"],[data-hg~="container-with-smaller"]{
         flex-basis: 960px;
         max-width: 960px;
       }
@@ -888,14 +888,14 @@ S06 HUGE-START (hg) or (hgs) or (hgo) | Screen size: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) and (max-width:1900px) {
       [data-gnl~="container"],
-      [data-mn~="container-after"],[data-mn~="container-with-after"],
-      [data-xs~="container-after"],[data-xs~="container-with-after"],
-      [data-sm~="container-after"],[data-sm~="container-with-after"],
-      [data-md~="container-after"],[data-md~="container-with-after"],
-      [data-lg~="container-after"],[data-lg~="container-with-after"],
-      [data-xl~="container-with-after"],
+      [data-mn~="container-bigger"],[data-mn~="container-with-bigger"],
+      [data-xs~="container-bigger"],[data-xs~="container-with-bigger"],
+      [data-sm~="container-bigger"],[data-sm~="container-with-bigger"],
+      [data-md~="container-bigger"],[data-md~="container-with-bigger"],
+      [data-lg~="container-bigger"],[data-lg~="container-with-bigger"],
+      [data-xl~="container-with-bigger"],
       [data-xl~="container"],
-      [data-xl~="container-with-before"]{
+      [data-xl~="container-with-smaller"]{
         flex-basis: 1140px;
         max-width: 1140px;
       }
