@@ -182,6 +182,9 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     body[data-gnl~="sütun"]{
       min-height:100vh;
     }
+    body[data-gnl~="sütun"]>footer{
+      margin-top:auto;
+    }
     [data-gnl~="gizli"]{display: none;}
 
     /* Kap Örgüsü Parça Ayarları */
