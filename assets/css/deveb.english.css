@@ -176,6 +176,7 @@ G00 GENERAL | Screen size: 0 ≤ * < ∞
     }
     [data-gnl~="col"]{
       flex-direction: column;
+      align-items:stretch;
     }
 
     [data-gnl~="hide"]{display: none;}
