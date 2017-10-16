@@ -138,6 +138,7 @@
 
     table{
       display: table !important;
+      width: 100%;
     }
 
     /* Paragraf ayarları */
