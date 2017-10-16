@@ -1076,6 +1076,16 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 [data-kenar~="olumsuz"][data-kenar~="üst"]{ border-top-color: hsl(var(--kenar-olumsuz-renk),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
 [data-kenar~="olumsuz"][data-kenar~="alt"]{ border-bottom-color: hsl(var(--kenar-olumsuz-renk),var(--kenar-tonu),var(--kenar-dolgu)) !important;}
 
+/* ==========================================================================
+    METİN ÖRGÜSÜ s0.1
+    Katkıda Bulunanlar
+    {Ramazan Kapar Facebook>ramazankadir.kapan}
+-------------------------------------------------------------------------- */
+[data-metin~="çok-kalın"]{font-weight: 700;}
+[data-metin~="kalın"]{font-weight: 600;}
+[data-metin~="doğal"]{font-weight: 500;}
+[data-metin~="ince"]{font-weight: 400;}
+[data-metin~="çok-ince"]{font-weight: 300;}
 
 /* ==========================================================================
     RESİM ÖRGÜSÜ s0.1
