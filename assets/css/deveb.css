@@ -275,44 +275,46 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-gnl~="satırda"]{align-items: baseline !important;}
     [data-gnl~="satırda-ol"]{align-self: baseline;}
 
-    [data-gnl~="gizle"]{display: none;}
+    [data-gnl~="gizle"],
+    [data-mnk~="gizle"]
+    {display: none;}
 
 /*  DUYARLI TİP - SONER 0 >> ∞ */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    KOCAMAN-soner (kcm) veya (kcm-soner) | Ekran ölçeği: * < 1900px
+    KOCAMAN-soner (kcm) veya (kcm-soner) | Ekran ölçeği: 0 < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:1900px) {
-      [data-kcm~="küçükleriyle-gizle"]{display: none;}
+      [data-dev~="küçükleri-gizle"],[data-kcm~="küçükleriyle-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    BÜYÜK-soner (byk) veya (byk-soner) | Ekran ölçeği: * < 1200px
+    BÜYÜK-soner (byk) veya (byk-soner) | Ekran ölçeği: 0 < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:1200px) {
-      [data-byk~="küçükleriyle-gizle"]{display: none;}
+      [data-kcm~="küçükleri-gizle"],[data-byk~="küçükleriyle-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    ORTA-soner (ort) veya (ort-soner) | Ekran ölçeği: * < 992px
+    ORTA-soner (ort) veya (ort-soner) | Ekran ölçeği: 0 < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:993px) {
-      [data-ort~="küçükleriyle-gizle"]{display: none;}
+      [data-byk~="küçükleri-gizle"],[data-ort~="küçükleriyle-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    KÜÇÜK-soner (kçk) veya (kçk-soner) | Ekran ölçeği: * < 768px
+    KÜÇÜK-soner (kçk) veya (kçk-soner) | Ekran ölçeği: 0 < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:768px) {
-      [data-kçk~="küçükleriyle-gizle"]{display: none;}
+      [data-ort~="küçükleri-gizle"],[data-kçk~="küçükleriyle-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    UFAK-soner (ufk) veya (ufk-soner) | Ekran ölçeği: * < 576px
+    UFAK-soner (ufk) veya (ufk-soner) | Ekran ölçeği: 0 < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:576px) {
-      [data-ufk~="küçükleriyle-gizle"]{display: none;}
+      [data-kçk~="küçükleri-gizle"],[data-ufk~="küçükleriyle-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    MİNİK-soner (ufk) veya (ufk-soner) | Ekran ölçeği: * < 576px
+    MİNİK-soner (mnk) veya (mnk-soner) | Ekran ölçeği: 0 < 300px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:300px) {
-      [data-mnk~="küçükleriyle-gizle"],[data-mnk~="gizle"]{display: none;}
+      [data-ufk~="küçükleri-gizle"],[data-mnk~="küçükleriyle-gizle"],[data-mnk~="bunu-gizle"]{display: none;}
     }
 
 /*  DUYARLI TİP İLKER * >> ∞ */
@@ -396,7 +398,10 @@ S01 UFAK-İLKER (ufk) veya (ufk-soner) | Ekran ölçeği: 300px ≤ *
       [data-ufk~="satırda"]{align-items: baseline;}
       [data-ufk~="satırda-ol"]{align-self: baseline;}
 
-      [data-ufk~="büyükleriyle-gizle"],[data-mnk~="büyükleri-gizle"]{display: none;}
+      [data-ufk~="gizle"],
+      [data-ufk~="büyükleriyle-gizle"],
+      [data-mnk~="büyükleri-gizle"]
+      {display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
@@ -474,7 +479,10 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="satırda"]{align-items: baseline;}
       [data-kçk~="satırda-ol"]{align-self: baseline;}
 
-      [data-kçk~="büyükleriyle-gizle"],[data-ufk~="büyükleri-gizle"]{display: none;}
+      [data-kçk~="gizle"],
+      [data-kçk~="büyükleriyle-gizle"],
+      [data-ufk~="büyükleri-gizle"]
+      {display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
@@ -552,7 +560,10 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-ort~="satırda"]{align-items: baseline;}
       [data-ort~="satırda-ol"]{align-self: baseline;}
 
-      [data-ort~="büyükleriyle-gizle"],[data-kçk~="büyükleri-gizle"]{display: none;}
+      [data-ort~="gizle"],
+      [data-ort~="büyükleriyle-gizle"],
+      [data-kçk~="büyükleri-gizle"]
+      {display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
@@ -630,7 +641,10 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk~="satırda"]{align-items: baseline;}
       [data-byk~="satırda-ol"]{align-self: baseline;}
 
-      [data-byk~="büyükleriyle-gizle"],[data-ort~="büyükleri-gizle"]{display: none;}
+      [data-byk~="gizle"],
+      [data-byk~="büyükleriyle-gizle"],
+      [data-ort~="büyükleri-gizle"]
+      {display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
@@ -708,7 +722,10 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-kcm~="satırda"]{align-items: baseline;}
       [data-kcm~="satırda-ol"]{align-self: baseline;}
 
-      [data-kcm~="büyükleriyle-gizle"],[data-byk~="büyükleri-gizle"]{display: none;}
+      [data-kcm~="gizle"],
+      [data-kcm~="büyükleriyle-gizle"],
+      [data-byk~="büyükleri-gizle"]
+      {display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
@@ -816,7 +833,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
         max-width: 100%;
       }
-      [data-mnk~="gizle"]{display: none;}
+      [data-mnk~="bunu-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     UFAK-YALIN (ufk) veya (ufk-yalın) | Ekran ölçeği: 300px ≤ * < 576px
@@ -834,7 +851,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
         max-width: calc(100% - 20px);
       }
-      [data-ufk~="hide"]{display: none;}
+      [data-ufk~="bunu-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     KÇK-YALIN (kçk) veya (kçk-yalın) | Ekran ölçeği: 576px ≤ * < 768px
@@ -852,7 +869,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
         max-width: 566px;
       }
-      [data-kçk~="gizle"]{display: none;}
+      [data-kçk~="bunu-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ORTA-YALIN (ort) veya (ort-yalın)
@@ -871,7 +888,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
         max-width: 760px;
       }
-      [data-ort~="gizle"]{display: none;}
+      [data-ort~="bunu-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     BÜYÜK-YALIN (byk) veya (byk-yalın) | Ekran ölçeği: 992px ≤ * < 1200px
@@ -889,7 +906,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="küçükleri-kaplama"],[data-dev~="küçükleriyle-kaplama"]{
         max-width: 960px;
       }
-      [data-byk~="gizle"]{display: none;}
+      [data-byk~="bunu-gizle"]{display: none;}
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     KOCAMAN-YALIN (kcm) veya (kcm-yalın) | Ekran ölçeği: 1200px ≤ * < 1900px
@@ -906,7 +923,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-kcm~="küçükleriyle-kaplama"]{
         max-width: 1140px;
       }
-      [data-kcm~="gizle"]{display: none;}
+      [data-kcm~="bunu-gizle"]{display: none;}
     }
 
 /* ==========================================================================
