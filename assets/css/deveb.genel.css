@@ -94,14 +94,13 @@ pre{
 
 
 .sayfa-başlığı{
-	background:rgb(114, 137, 218) none repeat scroll 0% 0%;
 	padding:64px 0;
 	color:#fff;
 }
 .sayfa-başlığı h1{
 	text-align: center;
 	font-weight: 300;
-	color:#fff;
+	color:rgb(114, 137, 218) none repeat scroll 0% 0%;
 }
 
 
