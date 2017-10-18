@@ -291,17 +291,17 @@ ul.liste-temiz li{
 	-ms-animation:     havada 7s infinite;}
 
 	@-webkit-keyframes havada {
-		0% {padding:8px;}
-		50% {padding:0px;}
-		100% {padding:8px;}
+		0% {padding:0 8px;}
+		50% {padding:0 0px;}
+		100% {padding:0 8px;}
 	}
 	@-moz-keyframes havada {
-		0% {padding:8px;}
-		50% {padding:0px;}
-		100% {padding:8px;}
+		0% {padding:0 8px;}
+		50% {padding:0 0px;}
+		100% {padding:0 8px;}
 	}
 	@-ms-keyframes havada {
-		0% {padding:8px;}
-		50% {padding:0px;}
-		100% {padding:8px;}
+		0% {padding:0 8px;}
+		50% {padding:0 0px;}
+		100% {padding:0 8px;}
 	}
