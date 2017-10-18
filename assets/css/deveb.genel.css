@@ -109,6 +109,7 @@ pre{
 	font-size: 26px;
 	color:#fff !important;
 	font-weight: bold !important;
+	opacity: 1;
 }
 .ap-kara	{background-color:#222;}
 .ap-deniz	{background-color: #17C4BB;}
@@ -152,6 +153,7 @@ box-shadow: 0 2px 0 hsla(200,9%,93%,.25);
 -o-transition: .3s all;
 transition: .3s all;}
 	.menü-genel li a:hover{
+		opacity: 1;
 		color: #fff !important;
 		background: #2c2171;
 		border-radius: 40px;
