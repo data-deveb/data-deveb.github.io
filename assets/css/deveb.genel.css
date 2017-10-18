@@ -286,9 +286,9 @@ ul.liste-temiz li{
 	  to {border-color: transparent;}
 	}
 [data-etki~="havada"]{
-	-webkit-animation: lamba 1s infinite;
-	-moz-animation:    lamba 1s infinite;
-	-ms-animation:     lamba 1s infinite;}
+	-webkit-animation: havada 1s infinite;
+	-moz-animation:    havada 1s infinite;
+	-ms-animation:     havada 1s infinite;}
 
 	@-webkit-keyframes havada {
 		from {padding-top:20px;}
