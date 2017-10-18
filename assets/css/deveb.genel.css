@@ -106,10 +106,10 @@ pre{
 
 a.logo{
 	font-family: 'Comfortaa', cursive;
-	font-size: 26px;
+	font-size: 26px !important;
 	color:#fff !important;
 	font-weight: bold !important;
-	opacity: 1;
+	opacity: 1 !important;
 }
 .ap-kara	{background-color:#222;}
 .ap-deniz	{background-color: #17C4BB;}
