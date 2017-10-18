@@ -285,3 +285,20 @@ ul.liste-temiz li{
 		from {border-color: #abcdef;}
 	  to {border-color: transparent;}
 	}
+[data-etki~="havada"]{
+	-webkit-animation: lamba 1s infinite;
+	-moz-animation:    lamba 1s infinite;
+	-ms-animation:     lamba 1s infinite;}
+
+	@-webkit-keyframes havada {
+		from {padding-top:20px;}
+		to {padding-top:0px;}
+	}
+	@-moz-keyframes havada {
+		from {padding-top:20px;}
+		to {padding-top:0px;}
+	}
+	@-ms-keyframes havada {
+		from {padding-top:20px;}
+		to {padding-top:0px;}
+	}
