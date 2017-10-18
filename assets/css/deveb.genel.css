@@ -95,7 +95,8 @@ pre{
 
 .sayfa-başlığı{
 	padding:64px 0;
-	color:#fff;
+	font-size: 26px;
+	letter-spacing: 2px;
 }
 .sayfa-başlığı h1{
 	font-weight: 300;
