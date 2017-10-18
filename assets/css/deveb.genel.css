@@ -148,8 +148,8 @@ box-shadow: 0 2px 0 hsla(200,9%,93%,.25);
     Menü görünümleri
 ========================================================================== */
 .menü-genel{ padding: 5px;}
-	.menü-genel li{display: inline-block;margin-right: 5px;font-size: 11pt; opacity: .8;}
-	.menü-genel li a{display: inline-block; text-decoration: none; padding:8px; color: #fff; font-weight: 300;-webkit-transition: .3s all;
+	.menü-genel li{display: inline-block;margin-right: 5px;font-size: 11pt;}
+	.menü-genel li a{ opacity: .8;display: inline-block; text-decoration: none; padding:8px; color: #fff; font-weight: 300;-webkit-transition: .3s all;
 -o-transition: .3s all;
 transition: .3s all;}
 	.menü-genel li a:hover{
