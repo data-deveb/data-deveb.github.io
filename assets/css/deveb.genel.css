@@ -263,8 +263,7 @@ ul.liste-temiz li{
 	margin-bottom: 5px;
 }
 [data-menü~="basamak"] li{
-	border-left:3px solid #abcdef;
-	border-radius: 10px;
+	border-left:3px solid rgb(114, 137, 218);
 }
 [data-menü~="basamak"] li:hover{
 	-webkit-animation: lamba 1s infinite;
