@@ -60,9 +60,9 @@ title: Kap Örgüsü
     <p></p>
 
 
-    <h3>"SAYIp" >> "SAYI" Kullanımında Ne Olur?</h3>
+    <h3>"SAYI SAYIp" > "SAYI" Kullanımında Ne Olur?</h3>
 
-    <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim."<span data-metin="dikkat">Uyarı: Eski internet tarayıcılarını önemseyerek oluşturduğunuz çalışmalarınızda bu yöntem bazı şartları aştığında sorunlu çalışır.</span></p>
+    <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim."<span data-metin="dikkat"> Uyarı: Eski internet tarayıcılarını önemseyerek oluşturduğunuz çalışmalarınızda bu yöntem bazı şartları aşması durumunda istenildiği gibi çalışmayabilir. Bu yüzden eski tarayıcıları önemsiyorsanız her zaman "SAYI SAYIp" tanımlaması yaparak kullanılmanızı tavsiye ederiz.</span></p>
 
     <div data-gnl="1 1p" class="önizleme">
       <h3>Önizleme</h3>
@@ -84,17 +84,41 @@ title: Kap Örgüsü
         Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
       &lt;/div&gt;
     &lt;/div&gt;
-
     </code></pre>
     <p></p>
-
-    <h3>"SAYI SAYIp" >> "SAYI" Kullanımında Ne Olur?</h3>
-
-    <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Aynı zamanda ana html etiketinde belirttiğim SAYI ana html etiketimin genişliğidir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim."</p>
 
     <h3>"SAYI SAYIp" >> "SAYI SAYIp" Kullanımında Ne Olur?</h3>
 
     <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Aynı zamanda ana html etiketinde belirttiğim SAYI ana html etiketimin genişliğidir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim. Eğer yavru etiketlerden en az birinde SAYIp belirttiysem, bu belirttiğim etiketin parça düzeni olurken SAYI değeride ana HTML etiketiyle ilişkisini kesip bu etiketteki parça düzenine göre genişliği etkileyecektir. Ve bu HTML etiketin yavru etiketleri varsa onların varsayılan parça düzeni olacaktır."</p>
+
+    <div data-gnl="1 1p" class="önizleme">
+      <h3>Önizleme</h3>
+      <div data-gnl="2 2p">
+        <div data-gnl="1 4p">
+          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        </div>
+        <div data-gnl="1 4p">
+          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        </div>
+        <div data-gnl="1 4p">
+          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        </div>
+        <div data-gnl="1 4p">
+          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        </div>
+      </div>
+    </div>
+    <pre data-gnl="1 1p"><code class="language-html">
+    &lt;div data-gnl=&quot;2 2p&quot;&gt;
+      &lt;div data-gnl=&quot;1&quot;&gt;
+        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;1&quot;&gt;
+        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+    <p></p>
 
     <h2>Kap Örgüsü Tablosu</h2>
 
