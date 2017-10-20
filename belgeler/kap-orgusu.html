@@ -3,6 +3,12 @@ layout: default
 title: Kap Örgüsü
 ---
 
+<style media="screen">
+  .önizleme{background-color:#efefef; padding:10px;}
+  .önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1; padding:10px; color:#eee;}
+  .önizleme h3 {color:#999;margin:0 0 10px 0;}
+</style>
+
     <h1>Kap Örgüsü <span data-metin="dikkat gri">(s0.9)</span></h1>
 
     <p>İşte bu! Tek kap düzenine bağlı kalmaktan kurtulun! Çoklu kap düzeni desteği karşınızda. Yani 1'den 24'e kadar olan kaplara ayırma düzenlerini aynı anda kullanabilmek artık hayal değil. Deveb kap örgüsü bunu en hızlı şekilde yepyeni özelliklerle birlikte kullanımınıza sunuyor. Beğendiniz mi? O zaman kap örgüsünü öğrenerek bir başlangıç yapın. Unutmadan, artık öncelik küçük ekranlara ait.</p>
@@ -35,11 +41,6 @@ title: Kap Örgüsü
     <p>Örneğin siz bulunduğunuz genişliğin yarısı kadar bir genişlik kullanmak istiyorsanız "1 2p", "2 4p", "3 6p", "4 8p", "5 10p", "6 12p", "7 14p", "8 16p", "9 18p", "10 20p", "11 22p" veya "12 24p" değerlerinden dilediğiniz bir tanesini kullanmanız gerekmektedir.</p>
 
     <div data-gnl="1 1p" class="önizleme">
-      <style media="screen">
-        .önizleme{background-color:#efefef; padding:10px;}
-        .önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1; padding:10px; color:#eee;}
-        .önizleme h3 {color:#999;margin:0 0 10px 0;}
-      </style>
       <h3>Önizleme</h3>
       <div data-gnl="1 2p">
         Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
@@ -62,6 +63,30 @@ title: Kap Örgüsü
     <h3>"SAYIp" >> "SAYI" Kullanımında Ne Olur?</h3>
 
     <p>Bu kavramı kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim."</p>
+
+    <div data-gnl="1 1p" class="önizleme">
+      <h3>Önizleme</h3>
+      <div data-gnl="2p">
+        <div data-gnl="1">
+          Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+        </div>
+        <div data-gnl="1">
+          Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+        </div>
+      </div>      
+    </div>
+    <pre data-gnl="1 1p"><code class="language-html">
+    &lt;div data-gnl=&quot;2 2p&quot;&gt;
+      &lt;div data-gnl=&quot;1&quot;&gt;
+        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;1&quot;&gt;
+        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    </code></pre>
+    <p></p>
 
     <h3>"SAYI SAYIp" >> "SAYI" Kullanımında Ne Olur?</h3>
 
