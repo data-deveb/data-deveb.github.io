@@ -34,23 +34,30 @@ title: Kap Örgüsü
 
     <p>Örneğin siz bulunduğunuz genişliğin yarısı kadar bir genişlik kullanmak istiyorsanız "1 2p", "2 4p", "3 6p", "4 8p", "5 10p", "6 12p", "7 14p", "8 16p", "9 18p", "10 20p", "11 22p" veya "12 24p" değerlerinden dilediğiniz bir tanesini kullanmanız gerekmektedir.</p>
 
-    <pre data-gnl="1 1p"><code class="language-html">
-    &lt;div data-gnl=&quot;1 2p&quot;&gt;
-      Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
-    &lt;/div&gt;
-    </code></pre>
-    <p></p>
     <div data-gnl="1 1p" class="önizleme">
       <style media="screen">
-        .önizleme{background-color:#efefef;}
-        .önizleme [data-gnl]{border:1px dashed #eee;}
-        .önizleme h3 {color:green; background-color:#eee;}
+        .önizleme{background-color:#efefef; padding:5%;}
+        .önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1;}
+        .önizleme h3 {color:#ddd;margin:0 0 10px 0;}
       </style>
       <h3>Önizleme</h3>
       <div data-gnl="1 2p">
         Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
       </div>
+      <div data-gnl="1 2p">
+        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+      </div>
     </div>
+    <pre data-gnl="1 1p"><code class="language-html">
+    &lt;div data-gnl=&quot;1 2p&quot;&gt;
+      Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 2p&quot;&gt;
+      Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+    &lt;/div&gt;
+    </code></pre>
+    <p></p>
+
 
     <h3>"SAYIp" >> "SAYI" Kullanımında Ne Olur?</h3>
 
