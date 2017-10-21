@@ -119,8 +119,8 @@ title: Kap Örgüsü
     <p>Deveb kap örgüsünün konumlama özellikleri oluşturulmuş birkaç öznitelik sınıfıyla kullanılır. İsterseniz tek tek bu sınıfları inceleyelim</p>
 
     <h3>Konumlama: <span data-metin="dikkat">taşmadan | kaymadan</span></h3>
-    <p>"taşma" sınıfı bir HTML etiketindeki içeriğin dışarı taşmasını engeller.</p>
-    <p>"kayma" sınıfı bir HTML etiketindeki içeriğin alt satırlara kaymasını engeller ve tek satırda gösterir.</p>
+    <p>"taşmadan" sınıfı bir HTML etiketindeki içeriğin dışarı taşmasını engeller.</p>
+    <p>"kaymadan" sınıfı bir HTML etiketindeki içeriğin alt satırlara kaymasını engeller ve tek satırda gösterir.</p>
     <div data-gnl="1 1p" class="önizleme">
       <h3>Önizleme</h3>
       <div data-gnl="1 1p kaymadan">
@@ -302,7 +302,7 @@ title: Kap Örgüsü
     <p></p>
 
     <h3>Konumlama: <span data-metin="dikkat">uzat | uzun-ol</span></h3>
-    <p>"uzun" sınıfı bir HTML etiketindeki içeriği aşağıdan yukarıya uzatarak gösterir.</p>
+    <p>"uzat" sınıfı bir HTML etiketindeki içeriği aşağıdan yukarıya uzatarak gösterir.</p>
     <p>"uzun-ol" sınıfı bir tanımlandığı etiketi içinde bulunduğu etiketin durumuna göre uzatır.</p>
     <div data-gnl="1 1p" class="önizleme">
       <h3>Önizleme</h3>
@@ -355,11 +355,60 @@ title: Kap Örgüsü
     </code></pre>
     <p></p>
 
-    <h3>Konumlama: <span data-metin="dikkat">çizgide</span></h3>
+    <h3>Konumlama: <span data-metin="dikkat">çizgide | çizgide-ol</span></h3>
     <p>"çizgide" sınıfı bir HTML etiketindeki içeriği bir çizgiye dizerek gösterir.</p>
-
-    <h3>Konumlama: <span data-metin="dikkat">çizgide-ol</span></h3>
     <p>"çizgide-ol" sınıfı bir buldunduğu etiketi bir çizgi konumuna dizerek gösterir.</p>
+    <div data-gnl="1 1p" class="önizleme">
+      <h3>Önizleme</h3>
+      <div data-gnl="1 2p çizgide" style="height:33vh;">
+        <div data-gnl="0">
+          Örnek bir yazı çizgide.
+        </div>
+        <div data-gnl="0">
+          Örnek bir yazı çizgide.
+        </div>
+        <div data-gnl="0">
+          Örnek bir yazı çizgide.<br>Çizgide örnek bir yazı
+        </div>
+      </div>
+      <div data-gnl="1 2p" style="height:33vh;">
+        <div data-gnl="0">
+          Örnek bir yazı varsayılan.
+        </div>
+        <div data-gnl="0 çizgide-ol">
+          Örnek bir yazı varsayılan değil. <br>Çizgide olması gereken bir yazı.
+        </div>
+        <div data-gnl="0">
+          Örnek bir yazı varsayılan.
+        </div>
+      </div>
+    </div>
+    <pre data-gnl="1 1p"><code class="language-html">
+    &lt;div data-gnl=&quot;1 2p &ccedil;izgide&quot; style=&quot;height:33vh;&quot;&gt;
+      &lt;div data-gnl=&quot;0&quot;&gt;
+        &Ouml;rnek bir yaz&#305; &ccedil;izgide.
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;0&quot;&gt;
+        &Ouml;rnek bir yaz&#305; &ccedil;izgide.
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;0&quot;&gt;
+        &Ouml;rnek bir yaz&#305; &ccedil;izgide.&lt;br&gt;&Ccedil;izgide &ouml;rnek bir yaz&#305;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 2p&quot; style=&quot;height:33vh;&quot;&gt;
+      &lt;div data-gnl=&quot;0&quot;&gt;
+        &Ouml;rnek bir yaz&#305; varsay&#305;lan.
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;0 &ccedil;izgide-ol&quot;&gt;
+        &Ouml;rnek bir yaz&#305; varsay&#305;lan de&#287;il. &lt;br&gt;&Ccedil;izgide olmas&#305; gereken bir yaz&#305;.
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;0&quot;&gt;
+        &Ouml;rnek bir yaz&#305; varsay&#305;lan.
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+    <p></p>
+
 
     <h3>Konumlama: <span data-metin="dikkat">ters-dizi | ters-satır | ters-sütun</span></h3>
     <p>"ters-dizi" sınıfı bir HTML etiketindeki içeriği ters yönde dizerek gösterir.</p>
