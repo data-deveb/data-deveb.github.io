@@ -301,13 +301,59 @@ title: Kap Örgüsü
     </code></pre>
     <p></p>
 
-    <h3>Konumlama: <span data-metin="dikkat">uzun | uzun-ol</span></h3>
+    <h3>Konumlama: <span data-metin="dikkat">uzat | uzun-ol</span></h3>
     <p>"uzun" sınıfı bir HTML etiketindeki içeriği aşağıdan yukarıya uzatarak gösterir.</p>
     <p>"uzun-ol" sınıfı bir tanımlandığı etiketi içinde bulunduğu etiketin durumuna göre uzatır.</p>
-    <div data-gnl="1 1p">
-      <iframe data-gnl="1 2p" width="100%" height="300" src="//jsfiddle.net/deveb/qpvxv53a/embedded/html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-      <iframe data-gnl="1 2p" width="100%" height="300" src="//jsfiddle.net/deveb/qpvxv53a/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <div data-gnl="1 1p" class="önizleme">
+      <h3>Önizleme</h3>
+      <div data-gnl="1 2p uzat" style="height:33vh;">
+        <div data-gnl="1 8p">
+          uzat
+        </div>
+        <div data-gnl="1 8p">
+          uzat
+        </div>
+        <div data-gnl="1 8p">
+          uzat
+        </div>
+      </div>
+      <div data-gnl="1 2p">
+        <div data-gnl="1 8p">
+          varsayılan
+        </div>
+        <div data-gnl="1 8p uzun-ol">
+          uzun-ol
+        </div>
+        <div data-gnl="1 8p">
+          varsayılan
+        </div>
+      </div>
     </div>
+    <pre data-gnl="1 1p"><code class="language-html">
+    &lt;div data-gnl=&quot;1 2p uzat&quot; style=&quot;height:33vh;&quot;&gt;
+     &lt;div data-gnl=&quot;1 8p&quot;&gt;
+       uzat
+     &lt;/div&gt;
+     &lt;div data-gnl=&quot;1 8p&quot;&gt;
+       uzat
+     &lt;/div&gt;
+     &lt;div data-gnl=&quot;1 8p&quot;&gt;
+       uzat
+     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 2p&quot;&gt;
+     &lt;div data-gnl=&quot;1 8p&quot;&gt;
+       varsay&#305;lan
+     &lt;/div&gt;
+     &lt;div data-gnl=&quot;1 8p uzun-ol&quot;&gt;
+       uzun-ol
+     &lt;/div&gt;
+     &lt;div data-gnl=&quot;1 8p&quot;&gt;
+       varsay&#305;lan
+     &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+    <p></p>
 
     <h3>Konumlama: <span data-metin="dikkat">çizgide</span></h3>
     <p>"çizgide" sınıfı bir HTML etiketindeki içeriği bir çizgiye dizerek gösterir.</p>
@@ -369,74 +415,6 @@ title: Kap Örgüsü
     <iframe data-gnl="1 2p" height="300" src="//jsfiddle.net/deveb/hsr989pz/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
   </div>
 </div>
-
-  <h2>Kavramlar</h2>
-  <h3>Ekran Çeşitleri</h3>
-  <p>Ekran çeşitleri denildiğinde aklınıza gelmesi gereken ekranın fiziksel ölçeklerine uygun çözünürlük değerleridir.
-  Bu değerler belli başlı isimlerle sınıflandırılmış ve isimlendirilmiştir. Bu isimleri şöyle sıralayabiliriz; genel, kocaman, dev, büyük, orta, küçük, ufak, minik. Ancak Deveb Önyüz İskeleti genel, büyük, orta, ufak isimlerini varsayılan ayarlarında destekleyerek gelir.
-Her bir ismin kısaltılmış yazılışları vardır.</p>
-
-
-<table class="tablo" data-gnl="tam-kaplama">
-  <thead>
-    <tr>
-      <th>Ekran Çeşitleri</th>
-      <th>
-        Genel <br>
-        <i class="fa fa-minus-square-o" aria-hidden="true"></i>
-        <i class="fa fa-mobile" aria-hidden="true"></i>
-        <i class="fa fa-tablet" aria-hidden="true"></i>
-        <i class="fa fa-laptop" aria-hidden="true"></i>
-        <i class="fa fa-desktop" aria-hidden="true"></i>
-        <i class="fa fa-television" aria-hidden="true"></i>
-        <br><span data-metin="olumlu">saat + telefon + tablet + dizüstü + masaüstü + dev</span>
-      </th>
-      <th>
-        Ufak <br>
-        <i class="fa fa-mobile" aria-hidden="true"></i>
-        <i class="fa fa-tablet" aria-hidden="true"></i>
-        <i class="fa fa-laptop" aria-hidden="true"></i>
-        <i class="fa fa-desktop" aria-hidden="true"></i>
-        <i class="fa fa-television" aria-hidden="true"></i>
-        <br><span data-metin="olumlu">telefon + tablet + dizüstü + masaüstü + dev</span>
-      </th>
-      <th>
-        Orta <br>
-        <i class="fa fa-laptop" aria-hidden="true"></i>
-        <i class="fa fa-desktop" aria-hidden="true"></i>
-        <br><span data-metin="olumlu">dizüstü ve daha büyük</span>
-      </th>
-      <th>
-        Büyük <br>
-        <i class="fa fa-desktop" aria-hidden="true"></i>
-        <br><span data-metin="olumlu">büyük ekranlar</span>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Sınıf önekleri</th>
-      <td>data-gnl</td>
-      <td>data-ufk</td>
-      <td>data-ort</td>
-      <td>data-byk</td>
-    </tr>
-    <tr>
-      <th>Oran Ölçekleri</th>
-      <td colspan="8">0 ~ 24 oranlarında ölçekleme (hazırlanıyor)</td>
-    </tr>
-    <tr>
-      <th>Bölme Ölçekleri</th>
-      <td colspan="8">1 ~ 24 parçaya eşit genişlikte ölçekleme</td>
-    </tr>
-    <tr>
-      <th>Parça Ölçekleri</th>
-      <td colspan="8">1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 parça boyu olmak üzere 24 farklı ölçekleme</td>
-    </tr>
-  </tbody>
-</table>
-
-
 
 
 <style media="screen">
