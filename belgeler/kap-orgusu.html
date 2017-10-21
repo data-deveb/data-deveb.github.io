@@ -228,20 +228,20 @@ title: Kap Örgüsü
       </div>
     </div>
     <pre data-gnl="1 1p"><code class="language-html">
-    &lt;div data-gnl=&quot;1 1p solda&quot;&gt;
-     &lt;div data-gnl=&quot;1 3p&quot;&gt;
-      solda
-     &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 1p &uuml;stte&quot; style=&quot;height:33vh;&quot;&gt;
+      &lt;div data-gnl=&quot;1 1p&quot;&gt;
+        &uuml;stte
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div data-gnl=&quot;1 1p ortada&quot;&gt;
-     &lt;div data-gnl=&quot;1 3p&quot;&gt;
-      ortada
-     &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 1p g&ouml;bekte&quot; style=&quot;height:33vh;&quot;&gt;
+      &lt;div data-gnl=&quot;1 1p&quot;&gt;
+        g&ouml;bekte
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div data-gnl=&quot;1 1p sa&#287;da&quot;&gt;
-     &lt;div data-gnl=&quot;1 3p&quot;&gt;
-      sağda
-     &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 1p altta&quot; style=&quot;height:33vh;&quot;&gt;
+      &lt;div data-gnl=&quot;1 1p&quot;&gt;
+        altta
+      &lt;/div&gt;
     &lt;/div&gt;
     </code></pre>
     <p></p>
@@ -250,10 +250,56 @@ title: Kap Örgüsü
     <h3>Konumlama: <span data-metin="dikkat">ger | yay</span></h3>
     <p>"ger" sınıfı bir HTML etiketindeki içeriği en sağa ve sola yayarak gösterir.</p>
     <p>"yay" sınıfı bir HTML etiketindeki içeriği sağa sola doğru yayarak gösterir.</p>
-    <div data-gnl="1 1p">
-      <iframe data-gnl="1 2p" width="100%" height="300" src="//jsfiddle.net/deveb/c6vcx4st/embedded/html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-      <iframe data-gnl="1 2p" width="100%" height="300" src="//jsfiddle.net/deveb/c6vcx4st/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    <div data-gnl="1 1p" class="önizleme">
+      <h3>Önizleme</h3>
+      <div data-gnl="1 1p ger">
+        <div data-gnl="1 8p">
+          ger
+        </div>
+        <div data-gnl="1 8p">
+          ger
+        </div>
+        <div data-gnl="1 8p">
+          ger
+        </div>
+      </div>
+      <div data-gnl="1 1p yay">
+        <div data-gnl="1 8p">
+          yay
+        </div>
+        <div data-gnl="1 8p">
+          yay
+        </div>
+        <div data-gnl="1 8p">
+          yay
+        </div>
+      </div>
     </div>
+    <pre data-gnl="1 1p"><code class="language-html">
+    &lt;div data-gnl=&quot;1 1p ger&quot;&gt;
+      &lt;div data-gnl=&quot;1 8p&quot;&gt;
+        ger
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;1 8p&quot;&gt;
+        ger
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;1 8p&quot;&gt;
+        ger
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 1p yay&quot;&gt;
+      &lt;div data-gnl=&quot;1 8p&quot;&gt;
+        yay
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;1 8p&quot;&gt;
+        yay
+      &lt;/div&gt;
+      &lt;div data-gnl=&quot;1 8p&quot;&gt;
+        yay
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+    <p></p>
 
     <h3>Konumlama: <span data-metin="dikkat">uzun | uzun-ol</span></h3>
     <p>"uzun" sınıfı bir HTML etiketindeki içeriği aşağıdan yukarıya uzatarak gösterir.</p>
