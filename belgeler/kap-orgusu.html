@@ -167,10 +167,43 @@ title: Kap Örgüsü
     <p>"solda" sınıfı bir HTML etiketindeki içeriği sola dayalı olarak gösterir.</p>
     <p>"ortada" sınıfı bir HTML etiketindeki içeriği ortalanmış olarak gösterir.</p>
     <p>"sağda" sınıfı bir HTML etiketindeki içeriği sağa dayalı olarak gösterir.</p>
-    <div data-gnl="1 1p">
-      <iframe data-ort="1 2p" data-gnl="1 1p" height="300" src="//jsfiddle.net/deveb/r7gqcscx/embedded/html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-      <iframe data-ort="1 2p" data-gnl="1 1p" height="300" src="//jsfiddle.net/deveb/r7gqcscx/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+    <div data-gnl="1 1p" class="önizleme">
+      <h3>Önizleme</h3>
+      <div data-gnl="1 1p solda">
+        <div data-gnl="1 3p">
+          solda
+        </div>
+      </div>
+      <div data-gnl="1 1p ortada">
+        <div data-gnl="1 3p">
+          ortada
+        </div>
+      </div>
+      <div data-gnl="1 1p sağda">
+        <div data-gnl="1 3p">
+          solda
+        </div>
+      </div>
     </div>
+    <pre data-gnl="1 1p"><code class="language-html">
+    &lt;div data-gnl=&quot;1 1p solda&quot;&gt;
+     &lt;div data-gnl=&quot;1 3p&quot;&gt;
+      solda
+     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 1p ortada&quot;&gt;
+     &lt;div data-gnl=&quot;1 3p&quot;&gt;
+      ortada
+     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;1 1p sa&#287;da&quot;&gt;
+     &lt;div data-gnl=&quot;1 3p&quot;&gt;
+      solda
+     &lt;/div&gt;
+    &lt;/div&gt;
+    </code></pre>
+    <p></p>
 
     <h3>Konumlama: <span data-metin="dikkat">üstte | göbekte | altta</span></h3>
     <p>"üstte" sınıfı bir HTML etiketindeki içeriği başa doğru dayalı olarak gösterir.</p>
