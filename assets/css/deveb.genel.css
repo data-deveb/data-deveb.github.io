@@ -101,7 +101,8 @@
 .sayfa-başlığı h1{
 	font-weight: 300;
 	color:rgb(114, 137, 218);
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 font-size: 30px;
 }
 
