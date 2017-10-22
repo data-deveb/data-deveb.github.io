@@ -1,0 +1,438 @@
+---
+layout: default
+title: Kap Örgüsü Konumlama
+---
+<p>Deveb kap örgüsünün konumlama özellikleri oluşturulmuş birkaç öznitelik sınıfıyla kullanılır. İsterseniz tek tek bu sınıfları inceleyelim</p>
+
+<h3>Konumlama: <span data-metin="dikkat">taşmadan | dürmeden</span></h3>
+<p>"taşmadan" sınıfı bir HTML etiketindeki içeriğin dışarı taşmasını engeller.</p>
+<p>"dürmeden" sınıfı bir HTML etiketindeki içeriğin alt satırlara kaymasını engeller ve tek satırda gösterir.</p>
+<p></p>
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme</h3>
+  <div data-gnl="1 1p dürmeden">
+    <div>
+      Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+    </div>
+    <div>
+      Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+    </div>
+    <div>
+      Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+    </div>
+    <div>
+      Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+    </div>
+  </div>
+  <div data-gnl="1 24p taşmadan">
+    Taşmadan yazamadıklarımızdan mısınız?
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 1p dürmeden&quot;&gt;
+ &lt;div&gt;
+  Buradaki i&ccedil;erikler dürmeden etkisi alt&#305;nda g&ouml;r&uuml;nt&uuml;lenmektedir.
+ &lt;/div&gt;
+ &lt;div&gt;
+  Buradaki i&ccedil;erikler dürmeden etkisi alt&#305;nda g&ouml;r&uuml;nt&uuml;lenmektedir.
+ &lt;/div&gt;
+ &lt;div&gt;
+  Buradaki i&ccedil;erikler dürmeden etkisi alt&#305;nda g&ouml;r&uuml;nt&uuml;lenmektedir.
+ &lt;/div&gt;
+ &lt;div&gt;
+  Buradaki i&ccedil;erikler dürmeden etkisi alt&#305;nda g&ouml;r&uuml;nt&uuml;lenmektedir.
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 24p taşmadan&quot;&gt;
+ Taşmadan yazamadıklarımızdan mısınız?
+&lt;/div&gt;
+</code></pre>
+<p></p>
+
+<h3>Konumlama: <span data-metin="dikkat">solda | ortada | sağda</span></h3>
+<p>"solda" sınıfı bir HTML etiketindeki içeriği sola dayalı olarak gösterir.</p>
+<p>"ortada" sınıfı bir HTML etiketindeki içeriği ortalanmış olarak gösterir.</p>
+<p>"sağda" sınıfı bir HTML etiketindeki içeriği sağa dayalı olarak gösterir.</p>
+<p></p>
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme</h3>
+  <div data-gnl="1 1p solda">
+    <div data-gnl="1 3p">
+      solda
+    </div>
+  </div>
+  <div data-gnl="1 1p ortada">
+    <div data-gnl="1 3p">
+      ortada
+    </div>
+  </div>
+  <div data-gnl="1 1p sağda">
+    <div data-gnl="1 3p">
+      sağda
+    </div>
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 1p solda&quot;&gt;
+ &lt;div data-gnl=&quot;1 3p&quot;&gt;
+  solda
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 1p ortada&quot;&gt;
+ &lt;div data-gnl=&quot;1 3p&quot;&gt;
+  ortada
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 1p sa&#287;da&quot;&gt;
+ &lt;div data-gnl=&quot;1 3p&quot;&gt;
+  sağda
+ &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p></p>
+
+<h3>Konumlama: <span data-metin="dikkat">üstte | göbekte | altta | üstte-ol | göbekte-ol | altta-ol</span></h3>
+<p>"üstte" sınıfı bir HTML etiketindeki içeriği başa doğru dayalı olarak gösterir.</p>
+<p>"göbekte" sınıfı bir HTML etiketindeki içeriği dikey konumda ortalanmış gösterir.</p>
+<p>"altta" sınıfı bir HTML etiketindeki içeriği en aşağıya dayalı olarak gösterir.</p>
+<p>"üstte-ol" sınıfı bir tanımlandığı etiketi içinde bulunduğu etiketin üstüne dayalı olarak gösterir.</p>
+<p>"göbekte-ol" sınıfı bir tanımlandığı etiketi içinde bulunduğu etiketin dikey konumunda ortalanmış olarak gösterir.</p>
+<p>"altta-ol" sınıfı bir tanımlandığı etiketi içinde bulunduğu etiketin aşağısına dayalı olarak gösterir.</p>
+<p></p>
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme</h3>
+  <div data-gnl="1 3p üstte" style="height:33vh;">
+    <div data-gnl="1 1p">
+      üstte
+    </div>
+    <div data-gnl="1 1p göbekte-ol">
+      göbekte-ol
+    </div>
+    <div data-gnl="1 1p altta-ol">
+      altta-ol
+    </div>
+  </div>
+  <div data-gnl="1 3p göbekte" style="height:33vh;">
+    <div data-gnl="1 1p üstte-ol">
+      üstte-ol
+    </div>
+    <div data-gnl="1 1p">
+      göbekte
+    </div>
+    <div data-gnl="1 1p altta-ol">
+      altta-ol
+    </div>
+  </div>
+  <div data-gnl="1 3p altta" style="height:33vh;">
+    <div data-gnl="1 1p üstte-ol">
+      üstte-ol
+    </div>
+    <div data-gnl="1 1p göbekte-ol">
+      göbekte-ol
+    </div>
+    <div data-gnl="1 1p">
+      altta
+    </div>
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 3p &uuml;stte&quot; style=&quot;height:33vh;&quot;&gt;
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;
+    &uuml;stte
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p g&ouml;bekte-ol&quot;&gt;
+    g&ouml;bekte-ol
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p altta-ol&quot;&gt;
+    altta-ol
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;div data-gnl=&quot;1 3p g&ouml;bekte&quot; style=&quot;height:33vh;&quot;&gt;
+  &lt;div data-gnl=&quot;1 1p &uuml;stte-ol&quot;&gt;
+    &uuml;stte-ol
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;
+    g&ouml;bekte
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p altta-ol&quot;&gt;
+    altta-ol
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 3p altta&quot; style=&quot;height:33vh;&quot;&gt;
+  &lt;div data-gnl=&quot;1 1p &uuml;stte-ol&quot;&gt;
+    &uuml;stte-ol
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p g&ouml;bekte-ol&quot;&gt;
+    g&ouml;bekte-ol
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;
+    altta
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p></p>
+
+
+<h3>Konumlama: <span data-metin="dikkat">ger | yay</span></h3>
+<p>"ger" sınıfı bir HTML etiketindeki içeriği en sağa ve sola yayarak gösterir.</p>
+<p>"yay" sınıfı bir HTML etiketindeki içeriği sağa sola doğru yayarak gösterir.</p>
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme</h3>
+  <div data-gnl="1 1p ger">
+    <div data-gnl="1 8p">
+      ger
+    </div>
+    <div data-gnl="1 8p">
+      ger
+    </div>
+    <div data-gnl="1 8p">
+      ger
+    </div>
+  </div>
+  <div data-gnl="1 1p yay">
+    <div data-gnl="1 8p">
+      yay
+    </div>
+    <div data-gnl="1 8p">
+      yay
+    </div>
+    <div data-gnl="1 8p">
+      yay
+    </div>
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 1p ger&quot;&gt;
+  &lt;div data-gnl=&quot;1 8p&quot;&gt;
+    ger
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 8p&quot;&gt;
+    ger
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 8p&quot;&gt;
+    ger
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 1p yay&quot;&gt;
+  &lt;div data-gnl=&quot;1 8p&quot;&gt;
+    yay
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 8p&quot;&gt;
+    yay
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 8p&quot;&gt;
+    yay
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p></p>
+
+<h3>Konumlama: <span data-metin="dikkat">uzat | uzun-ol</span></h3>
+<p>"uzat" sınıfı bir HTML etiketindeki içeriği aşağıdan yukarıya uzatarak gösterir.</p>
+<p>"uzun-ol" sınıfı bir tanımlandığı etiketi içinde bulunduğu etiketin durumuna göre uzatır.</p>
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme</h3>
+  <div data-gnl="1 2p uzat" style="height:33vh;">
+    <div data-gnl="0">
+      uzat
+    </div>
+    <div data-gnl="0">
+      uzat
+    </div>
+    <div data-gnl="0">
+      uzat
+    </div>
+  </div>
+  <div data-gnl="1 2p" style="height:33vh;">
+    <div data-gnl="0">
+      varsayılan
+    </div>
+    <div data-gnl="0 uzun-ol">
+      uzun-ol
+    </div>
+    <div data-gnl="0">
+      varsayılan
+    </div>
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 2p uzat&quot; style=&quot;height:33vh;&quot;&gt;
+ &lt;div data-gnl=&quot;0&quot;&gt;
+   uzat
+ &lt;/div&gt;
+ &lt;div data-gnl=&quot;0&quot;&gt;
+   uzat
+ &lt;/div&gt;
+ &lt;div data-gnl=&quot;0&quot;&gt;
+   uzat
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 2p&quot; style=&quot;height:33vh;&quot;&gt;
+ &lt;div data-gnl=&quot;0&quot;&gt;
+   varsay&#305;lan
+ &lt;/div&gt;
+ &lt;div data-gnl=&quot;0 uzun-ol&quot;&gt;
+   uzun-ol
+ &lt;/div&gt;
+ &lt;div data-gnl=&quot;0&quot;&gt;
+   varsay&#305;lan
+ &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p></p>
+
+<h3>Konumlama: <span data-metin="dikkat">satırda | satırda-ol</span></h3>
+<p>"satırda" sınıfı bir HTML etiketindeki içeriği bir çizgiye dizerek gösterir.</p>
+<p>"satırda-ol" sınıfı bir buldunduğu etiketi bir çizgi konumuna dizerek gösterir.</p>
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme</h3>
+  <div data-gnl="1 2p satırda" style="height:33vh;">
+    <div data-gnl="0" style="font-size:2em">
+      Örnek bir yazı "satırda".
+    </div>
+    <div data-gnl="0">
+      Örnek bir yazı "satırda".
+    </div>
+  </div>
+  <div data-gnl="1 2p" style="height:33vh;">
+    <div data-gnl="0 satırda-ol" style="font-size:2em">
+      Örnek bir yazı "satırda-ol".
+    </div>
+    <div data-gnl="0 satırda-ol">
+      Örnek bir yazı "satırda-ol".
+    </div>
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 2p sat&#305;rda&quot; style=&quot;height:33vh;&quot;&gt;
+  &lt;div data-gnl=&quot;0&quot; style=&quot;font-size:2em&quot;&gt;
+    &Ouml;rnek bir yaz&#305; &quot;sat&#305;rda&quot;.
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;0&quot;&gt;
+    &Ouml;rnek bir yaz&#305; &quot;sat&#305;rda&quot;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 2p&quot; style=&quot;height:33vh;&quot;&gt;
+  &lt;div data-gnl=&quot;0 sat&#305;rda-ol&quot; style=&quot;font-size:2em&quot;&gt;
+    &Ouml;rnek bir yaz&#305; &quot;sat&#305;rda-ol&quot;.
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;0 sat&#305;rda-ol&quot;&gt;
+    &Ouml;rnek bir yaz&#305; &quot;sat&#305;rda-ol&quot;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p></p>
+
+<h3>Konumlama: <span data-metin="dikkat">ters-dürme | ters-satır | ters-sütun</span></h3>
+<p>"ters-dürme" sınıfı bir HTML etiketindeki içeriği ters yönde dürerek gösterir.</p>
+<p>"ters-satır" sınıfı bir HTML etiketindeki satırları aynalı olarak gösterir.</p>
+<p>"ters-sütun" sınıfı bir HTML etiketindeki sütunları aynalı olarak gösterir.</p>
+<p></p>
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme</h3>
+  <div data-gnl="1 1p ters-dürme">
+    <div data-gnl="1 3p">
+      ters-dürme #1
+    </div>
+    <div data-gnl="1 3p">
+      ters-dürme #2
+    </div>
+    <div data-gnl="1 3p">
+      ters-dürme #3
+    </div>
+    <div data-gnl="1 3p">
+      ters-dürme #4
+    </div>
+    <div data-gnl="1 3p">
+      ters-dürme #5
+    </div>
+    <div data-gnl="1 3p">
+      ters-dürme #6
+    </div>
+  </div>
+  <div data-gnl="1 1p ters-satır">
+    <div data-gnl="1 3p">
+      ters-satır #1
+    </div>
+    <div data-gnl="1 3p">
+      ters-satır #2
+    </div>
+    <div data-gnl="1 3p">
+      ters-satır #3
+    </div>
+    <div data-gnl="1 3p">
+      ters-satır #4
+    </div>
+    <div data-gnl="1 3p">
+      ters-satır #5
+    </div>
+    <div data-gnl="1 3p">
+      ters-satır #6
+    </div>
+  </div>
+  <div data-gnl="1 1p ters-sütun">
+    <div data-gnl="1 3p">
+      ters-sütun #1
+    </div>
+    <div data-gnl="1 3p">
+      ters-sütun #2
+    </div>
+    <div data-gnl="1 3p">
+      ters-sütun #3
+    </div>
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 1p ters-dürme&quot;&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-dürme #1
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-dürme #2
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-dürme #3
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-dürme #4
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-dürme #5
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-dürme #6
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 1p ters-sat&#305;r&quot;&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-sat&#305;r #1
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-sat&#305;r #2
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-sat&#305;r #3
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-sat&#305;r #4
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-sat&#305;r #5
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-sat&#305;r #6
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 1p ters-s&uuml;tun&quot;&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-s&uuml;tun #1
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-s&uuml;tun #2
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    ters-s&uuml;tun #3
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p></p>
