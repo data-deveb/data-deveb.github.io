@@ -245,10 +245,10 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
 
     /* Konum Ayarları */
     [data-gnl~="taşma-gizle"]{overflow: hidden;}
-    [data-gnl~="taşma"]{overflow-x: auto;}
-    [data-gnl~="kaymadan"]{flex-wrap: nowrap;}
+    [data-gnl~="taşmadan"]{overflow-x: auto;}
+    [data-gnl~="dürmesiz"]{flex-wrap: nowrap;}
 
-    [data-gnl~="ters-kayma"]{flex-wrap: wrap-reverse;}
+    [data-gnl~="ters-dürme"]{flex-wrap: wrap-reverse;}
     [data-gnl~="ters-satır"]{flex-direction: row-reverse;}
     [data-gnl~="ters-sütun"]{flex-direction: column-reverse;}
 
@@ -330,10 +330,10 @@ S01 UFAK-İLKER (ufk) veya (ufk-soner) | Ekran ölçeği: 300px ≤ *
 
       /* Konum Ayarları */
       [data-ufk~="taşma-gizle"]{overflow: hidden;}
-      [data-ufk~="taşma"]{overflow-x: auto;}
-      [data-ufk~="kaymadan"]{flex-wrap: nowrap;}
+      [data-ufk~="taşmadan"]{overflow-x: auto;}
+      [data-ufk~="dürmesiz"]{flex-wrap: nowrap;}
 
-      [data-ufk~="ters-kayma"]{flex-wrap: wrap-reverse;}
+      [data-ufk~="ters-dürme"]{flex-wrap: wrap-reverse;}
       [data-ufk~="ters-satır"]{flex-direction: row-reverse;}
       [data-ufk~="ters-sütun"]{flex-direction: column-reverse;}
 
@@ -412,10 +412,10 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
 
       /* Konum Ayarları */
       [data-kçk~="taşma-gizle"]{overflow: hidden;}
-      [data-kçk~="taşma"]{overflow-x: auto;}
-      [data-kçk~="kaymadan"]{flex-wrap: nowrap;}
+      [data-kçk~="taşmadan"]{overflow-x: auto;}
+      [data-kçk~="dürmesiz"]{flex-wrap: nowrap;}
 
-      [data-kçk~="ters-kayma"]{flex-wrap: wrap-reverse;}
+      [data-kçk~="ters-dürme"]{flex-wrap: wrap-reverse;}
       [data-kçk~="ters-satır"]{flex-direction: row-reverse;}
       [data-kçk~="ters-sütun"]{flex-direction: column-reverse;}
 
@@ -494,10 +494,10 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
 
       /* Konum Ayarları */
       [data-ort~="taşma-gizle"]{overflow: hidden;}
-      [data-ort~="taşma"]{overflow-x: auto;}
-      [data-ort~="kaymadan"]{flex-wrap: nowrap;}
+      [data-ort~="taşmadan"]{overflow-x: auto;}
+      [data-ort~="dürmesiz"]{flex-wrap: nowrap;}
 
-      [data-ort~="ters-kayma"]{flex-wrap: wrap-reverse;}
+      [data-ort~="ters-dürme"]{flex-wrap: wrap-reverse;}
       [data-ort~="ters-satır"]{flex-direction: row-reverse;}
       [data-ort~="ters-sütun"]{flex-direction: column-reverse;}
 
@@ -576,10 +576,10 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
 
       /* Konum Ayarları */
       [data-byk~="taşma-gizle"]{overflow: hidden;}
-      [data-byk~="taşma"]{overflow-x: auto;}
-      [data-byk~="kaymadan"]{flex-wrap: nowrap;}
+      [data-byk~="taşmadan"]{overflow-x: auto;}
+      [data-byk~="dürmesiz"]{flex-wrap: nowrap;}
 
-      [data-byk~="ters-kayma"]{flex-wrap: wrap-reverse;}
+      [data-byk~="ters-dürme"]{flex-wrap: wrap-reverse;}
       [data-byk~="ters-satır"]{flex-direction: row-reverse;}
       [data-byk~="ters-sütun"]{flex-direction: column-reverse;}
 
@@ -658,10 +658,10 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
 
       /* Konum Ayarları */
       [data-kcm~="taşma-gizle"]{overflow: hidden;}
-      [data-kcm~="taşma"]{overflow-x: auto;}
-      [data-kcm~="kaymadan"]{flex-wrap: nowrap;}
+      [data-kcm~="taşmadan"]{overflow-x: auto;}
+      [data-kcm~="dürmesiz"]{flex-wrap: nowrap;}
 
-      [data-kcm~="ters-kayma"]{flex-wrap: wrap-reverse;}
+      [data-kcm~="ters-dürme"]{flex-wrap: wrap-reverse;}
       [data-kcm~="ters-satır"]{flex-direction: row-reverse;}
       [data-kcm~="ters-sütun"]{flex-direction: column-reverse;}
 
@@ -750,10 +750,10 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
       /* Konum Ayarları */
       [data-dev~="taşma-gizle"]{overflow: hidden;}
-      [data-dev~="taşma"]{overflow-x: auto;}
-      [data-dev~="kaymadan"]{flex-wrap: nowrap;}
+      [data-dev~="taşmadan"]{overflow-x: auto;}
+      [data-dev~="dürmesiz"]{flex-wrap: nowrap;}
 
-      [data-dev~="ters-kayma"]{flex-wrap: wrap-reverse;}
+      [data-dev~="ters-dürme"]{flex-wrap: wrap-reverse;}
       [data-dev~="ters-satır"]{flex-direction: row-reverse;}
       [data-dev~="ters-sütun"]{flex-direction: column-reverse;}
 
