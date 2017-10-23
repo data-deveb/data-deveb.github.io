@@ -10,8 +10,8 @@ title: Kap Örgüsü Oran Düzeni
   </style>
   <p>Basit şekilde oranlar belirterek kap alanları oluşturabilirsiniz. Oran düzeni "CSS FLEX" özelliği üzerine geliştirilmiştir. Oran örgüsünün kullanımı için ekran özniteliklerine (data-gnl, data-mnk ...) "<span data-metin="ana">SAYIo</span>" sınıfını yazmanız yeterlidir. SAYI 1 ile 24 arasında değer alabilir. Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş olmasını istiyorsunuz. Bunun için data-gnl="2o" data-gnl="1o" öznitelikleri tanımlaybilirsiniz.</p>
 
-  <h3>Oran Yöntemini Kullanma Örneği</h3>
-  <p>Üç sütun görünümünde bir düzen oluşturalım. Dağılımı 1 4 2 şeklinde yapalım.</p>
+  <h3>Oran Düzeni Nasıl Kullanılır?</h3>
+  <p>Ekranların hepsinde üç sütun görünümünde bir düzen oluşturalım. Örnek olarak düzen dağılımını 1 4 2 şeklinde yapalım.</p>
   <p></p>
   <div data-gnl="1 1p" class="önizleme">
     <h3>Önizleme</h3>
@@ -34,6 +34,60 @@ title: Kap Örgüsü Oran Düzeni
   &lt;/div&gt;
   &lt;div data-gnl=&quot;2o&quot;&gt;
     2o
+  &lt;/div&gt;
+  </code></pre>
+  <p></p>
+
+  <h3>Oran Ve Parça Düzeni Kıyaslaması</h3>
+  <p>Oran düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Oran düzeninde her oran birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.</p>
+  <p></p>
+  <div data-gnl="1 1p" class="önizleme">
+    <h3>Önizleme</h3>
+    <div data-gnl="1 1p">
+      <div data-gnl="1o">
+        1o
+      </div>
+      <div data-gnl="4o">
+        4o
+      </div>
+      <div data-gnl="2o">
+        2o
+      </div>
+    </div>
+    <div data-gnl="1 1p">
+      <div data-gnl="1 7p">
+        1 7p
+      </div>
+      <div data-gnl="4 7p">
+        4 7p
+      </div>
+      <div data-gnl="2 7p">
+        2 7p
+      </div>
+    </div>
+  </div>
+  <pre data-gnl="1 1p"><code class="language-html">
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;
+    &lt;div data-gnl=&quot;1o&quot;&gt;
+      1o
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;4o&quot;&gt;
+      4o
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;2o&quot;&gt;
+      2o
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;
+    &lt;div data-gnl=&quot;1 7p&quot;&gt;
+      1 7p
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;4 7p&quot;&gt;
+      4 7p
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;2 7p&quot;&gt;
+      2 7p
+    &lt;/div&gt;
   &lt;/div&gt;
   </code></pre>
   <p></p>
