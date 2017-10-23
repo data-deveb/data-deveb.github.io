@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kap Örgüsü Oran Düzeni
+title: Kap Örgüsü genleşme Düzeni
 ---
   <style media="screen">
     .önizleme{background-color:#efefef; padding:10px;}
@@ -8,49 +8,49 @@ title: Kap Örgüsü Oran Düzeni
     .önizleme h3 {color:#999;margin:0 0 10px 0;}
     pre.language-html{ max-height:50vh; overflow-y: auto;}
   </style>
-  <p>Basit şekilde oranlar belirterek kap alanları oluşturabilirsiniz. Oran düzeni "CSS FLEX" özelliği üzerine geliştirilmiştir. Oran örgüsünün kullanımı için ekran özniteliklerine (data-gnl, data-mnk ...) "<span data-metin="ana">SAYIo</span>" sınıfını yazmanız yeterlidir. SAYI 1 ile 24 arasında değer alabilir. Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş olmasını istiyorsunuz. Bunun için data-gnl="2o" data-gnl="1o" öznitelikleri tanımlaybilirsiniz.</p>
+  <p>Basit şekilde genleşmelar belirterek kap alanları oluşturabilirsiniz. genleşme düzeni "CSS FLEX" özelliği üzerine geliştirilmiştir. genleşme örgüsünün kullanımı için ekran özniteliklerine (data-gnl, data-mnk ...) "<span data-metin="ana">SAYIg</span>" sınıfını yazmanız yeterlidir. SAYI 1 ile 24 arasında değer alabilir. Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş olmasını istiyorsunuz. Bunun için data-gnl="2g" data-gnl="1g" öznitelikleri tanımlaybilirsiniz.</p>
 
-  <h3>Oran Düzeni Nasıl Kullanılır?</h3>
+  <h3>genleşme Düzeni Nasıl Kullanılır?</h3>
   <p>Ekranların hepsinde üç sütun görünümünde bir düzen oluşturalım. Örnek olarak düzen dağılımını 1 4 2 şeklinde yapalım.</p>
   <p></p>
   <div data-gnl="1 1p" class="önizleme">
     <h3>Önizleme</h3>
-    <div data-gnl="1o">
+    <div data-gnl="1g">
       1o
     </div>
-    <div data-gnl="4o">
+    <div data-gnl="4g">
       4o
     </div>
-    <div data-gnl="2o">
+    <div data-gnl="2g">
       2o
     </div>
   </div>
   <pre data-gnl="1 1p"><code class="language-html">
-  &lt;div data-gnl=&quot;1o&quot;&gt;
+  &lt;div data-gnl=&quot;1g&quot;&gt;
     1o
   &lt;/div&gt;
-  &lt;div data-gnl=&quot;4o&quot;&gt;
+  &lt;div data-gnl=&quot;4g&quot;&gt;
     4o
   &lt;/div&gt;
-  &lt;div data-gnl=&quot;2o&quot;&gt;
+  &lt;div data-gnl=&quot;2g&quot;&gt;
     2o
   &lt;/div&gt;
   </code></pre>
   <p></p>
 
-  <h3>Oran Ve Parça Düzeni Kıyaslaması</h3>
-  <p>Oran düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Oran düzeninde her oran birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.</p>
+  <h3>genleşme Ve Parça Düzeni Kıyaslaması</h3>
+  <p>genleşme düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. genleşme düzeninde her genleşme birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.</p>
   <p></p>
   <div data-gnl="1 1p" class="önizleme">
     <h3>Önizleme</h3>
     <div data-gnl="1 1p">
-      <div data-gnl="1o">
+      <div data-gnl="1g">
         1o
       </div>
-      <div data-gnl="4o">
+      <div data-gnl="4g">
         4o
       </div>
-      <div data-gnl="2o">
+      <div data-gnl="2g">
         2o
       </div>
     </div>
@@ -68,13 +68,13 @@ title: Kap Örgüsü Oran Düzeni
   </div>
   <pre data-gnl="1 1p"><code class="language-html">
   &lt;div data-gnl=&quot;1 1p&quot;&gt;
-    &lt;div data-gnl=&quot;1o&quot;&gt;
+    &lt;div data-gnl=&quot;1g&quot;&gt;
       1o
     &lt;/div&gt;
-    &lt;div data-gnl=&quot;4o&quot;&gt;
+    &lt;div data-gnl=&quot;4g&quot;&gt;
       4o
     &lt;/div&gt;
-    &lt;div data-gnl=&quot;2o&quot;&gt;
+    &lt;div data-gnl=&quot;2g&quot;&gt;
       2o
     &lt;/div&gt;
   &lt;/div&gt;

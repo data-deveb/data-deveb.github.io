@@ -236,12 +236,12 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     }
 
     /* Kap Örgüsü Oran Ayarları */
-    [data-gnl~="1o"]{flex:1;}   [data-gnl~="2o"]{flex:2;}   [data-gnl~="3o"]{flex:3;}   [data-gnl~="4o"]{flex:4;}
-    [data-gnl~="5o"]{flex:5;}   [data-gnl~="6o"]{flex:6;}   [data-gnl~="7o"]{flex:7;}   [data-gnl~="8o"]{flex:8;}
-    [data-gnl~="9o"]{flex:9;}   [data-gnl~="10o"]{flex:10;} [data-gnl~="11o"]{flex:11;} [data-gnl~="12o"]{flex:12;}
-    [data-gnl~="13o"]{flex:13;} [data-gnl~="14o"]{flex:14;} [data-gnl~="15o"]{flex:15;} [data-gnl~="16o"]{flex:16;}
-    [data-gnl~="17o"]{flex:17;} [data-gnl~="18o"]{flex:18;} [data-gnl~="19o"]{flex:19;} [data-gnl~="20o"]{flex:20;}
-    [data-gnl~="21o"]{flex:21;} [data-gnl~="22o"]{flex:22;} [data-gnl~="23o"]{flex:23;} [data-gnl~="24o"]{flex:24;}
+    [data-gnl~="1g"]{flex:1;}   [data-gnl~="2g"]{flex:2;}   [data-gnl~="3g"]{flex:3;}   [data-gnl~="4g"]{flex:4;}
+    [data-gnl~="5g"]{flex:5;}   [data-gnl~="6g"]{flex:6;}   [data-gnl~="7g"]{flex:7;}   [data-gnl~="8g"]{flex:8;}
+    [data-gnl~="9g"]{flex:9;}   [data-gnl~="10g"]{flex:10;} [data-gnl~="11g"]{flex:11;} [data-gnl~="12g"]{flex:12;}
+    [data-gnl~="13g"]{flex:13;} [data-gnl~="14g"]{flex:14;} [data-gnl~="15g"]{flex:15;} [data-gnl~="16g"]{flex:16;}
+    [data-gnl~="17g"]{flex:17;} [data-gnl~="18g"]{flex:18;} [data-gnl~="19g"]{flex:19;} [data-gnl~="20g"]{flex:20;}
+    [data-gnl~="21g"]{flex:21;} [data-gnl~="22g"]{flex:22;} [data-gnl~="23g"]{flex:23;} [data-gnl~="24g"]{flex:24;}
 
     /* Konum Ayarları */
     [data-gnl~="taşma-gizle"]{overflow: hidden;}
@@ -321,12 +321,12 @@ S01 UFAK-İLKER (ufk) veya (ufk-soner) | Ekran ölçeği: 300px ≤ *
         width: auto;
       }
 
-      [data-ufk~="1o"]{flex:1;}   [data-ufk~="2o"]{flex:2;}   [data-ufk~="3o"]{flex:3;}   [data-ufk~="4o"]{flex:4;}
-      [data-ufk~="5o"]{flex:5;}   [data-ufk~="6o"]{flex:6;}   [data-ufk~="7o"]{flex:7;}   [data-ufk~="8o"]{flex:8;}
-      [data-ufk~="9o"]{flex:9;}   [data-ufk~="10o"]{flex:10;} [data-ufk~="11o"]{flex:11;} [data-ufk~="12o"]{flex:12;}
-      [data-ufk~="13o"]{flex:13;} [data-ufk~="14o"]{flex:14;} [data-ufk~="15o"]{flex:15;} [data-ufk~="16o"]{flex:16;}
-      [data-ufk~="17o"]{flex:17;} [data-ufk~="18o"]{flex:18;} [data-ufk~="19o"]{flex:19;} [data-ufk~="20o"]{flex:20;}
-      [data-ufk~="21o"]{flex:21;} [data-ufk~="22o"]{flex:22;} [data-ufk~="23o"]{flex:23;} [data-ufk~="24o"]{flex:24;}
+      [data-ufk~="1g"]{flex:1;}   [data-ufk~="2g"]{flex:2;}   [data-ufk~="3g"]{flex:3;}   [data-ufk~="4g"]{flex:4;}
+      [data-ufk~="5g"]{flex:5;}   [data-ufk~="6g"]{flex:6;}   [data-ufk~="7g"]{flex:7;}   [data-ufk~="8g"]{flex:8;}
+      [data-ufk~="9g"]{flex:9;}   [data-ufk~="10g"]{flex:10;} [data-ufk~="11g"]{flex:11;} [data-ufk~="12g"]{flex:12;}
+      [data-ufk~="13g"]{flex:13;} [data-ufk~="14g"]{flex:14;} [data-ufk~="15g"]{flex:15;} [data-ufk~="16g"]{flex:16;}
+      [data-ufk~="17g"]{flex:17;} [data-ufk~="18g"]{flex:18;} [data-ufk~="19g"]{flex:19;} [data-ufk~="20g"]{flex:20;}
+      [data-ufk~="21g"]{flex:21;} [data-ufk~="22g"]{flex:22;} [data-ufk~="23g"]{flex:23;} [data-ufk~="24g"]{flex:24;}
 
       /* Konum Ayarları */
       [data-ufk~="taşma-gizle"]{overflow: hidden;}
@@ -403,12 +403,12 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
         width: auto;
       }
 
-      [data-kçk~="1o"]{flex:1;}    [data-kçk~="2o"]{flex:2;}   [data-kçk~="3o"]{flex:3;}    [data-kçk~="4o"]{flex:4;}
-      [data-kçk~="5o"]{flex:5;}    [data-kçk~="6o"]{flex:6;}   [data-kçk~="7o"]{flex:7;}    [data-kçk~="8o"]{flex:8;}
-      [data-kçk~="9o"]{flex:9;}    [data-kçk~="10o"]{flex:10;} [data-kçk~="11o"]{flex:11;}  [data-kçk~="12o"]{flex:12;}
-      [data-kçk~="13o"]{flex:13;}  [data-kçk~="14o"]{flex:14;} [data-kçk~="15o"]{flex:15;}  [data-kçk~="16o"]{flex:16;}
-      [data-kçk~="17o"]{flex:17;}  [data-kçk~="18o"]{flex:18;} [data-kçk~="19o"]{flex:19;}  [data-kçk~="20o"]{flex:20;}
-      [data-kçk~="21o"]{flex:21;}  [data-kçk~="22o"]{flex:22;} [data-kçk~="23o"]{flex:23;}  [data-kçk~="24o"]{flex:24;}
+      [data-kçk~="1g"]{flex:1;}    [data-kçk~="2g"]{flex:2;}   [data-kçk~="3g"]{flex:3;}    [data-kçk~="4g"]{flex:4;}
+      [data-kçk~="5g"]{flex:5;}    [data-kçk~="6g"]{flex:6;}   [data-kçk~="7g"]{flex:7;}    [data-kçk~="8g"]{flex:8;}
+      [data-kçk~="9g"]{flex:9;}    [data-kçk~="10g"]{flex:10;} [data-kçk~="11g"]{flex:11;}  [data-kçk~="12g"]{flex:12;}
+      [data-kçk~="13g"]{flex:13;}  [data-kçk~="14g"]{flex:14;} [data-kçk~="15g"]{flex:15;}  [data-kçk~="16g"]{flex:16;}
+      [data-kçk~="17g"]{flex:17;}  [data-kçk~="18g"]{flex:18;} [data-kçk~="19g"]{flex:19;}  [data-kçk~="20g"]{flex:20;}
+      [data-kçk~="21g"]{flex:21;}  [data-kçk~="22g"]{flex:22;} [data-kçk~="23g"]{flex:23;}  [data-kçk~="24g"]{flex:24;}
 
       /* Konum Ayarları */
       [data-kçk~="taşma-gizle"]{overflow: hidden;}
@@ -485,12 +485,12 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
         width: auto;
       }
 
-      [data-ort~="1o"]{flex:1;}    [data-ort~="2o"]{flex:2;}   [data-ort~="3o"]{flex:3;}    [data-ort~="4o"]{flex:4;}
-      [data-ort~="5o"]{flex:5;}    [data-ort~="6o"]{flex:6;}   [data-ort~="7o"]{flex:7;}    [data-ort~="8o"]{flex:8;}
-      [data-ort~="9o"]{flex:9;}    [data-ort~="10o"]{flex:10;} [data-ort~="11o"]{flex:11;}  [data-ort~="12o"]{flex:12;}
-      [data-ort~="13o"]{flex:13;}  [data-ort~="14o"]{flex:14;} [data-ort~="15o"]{flex:15;}  [data-ort~="16o"]{flex:16;}
-      [data-ort~="17o"]{flex:17;}  [data-ort~="18o"]{flex:18;} [data-ort~="19o"]{flex:19;}  [data-ort~="20o"]{flex:20;}
-      [data-ort~="21o"]{flex:21;}  [data-ort~="22o"]{flex:22;} [data-ort~="23o"]{flex:23;}  [data-ort~="24o"]{flex:24;}
+      [data-ort~="1g"]{flex:1;}    [data-ort~="2g"]{flex:2;}   [data-ort~="3g"]{flex:3;}    [data-ort~="4g"]{flex:4;}
+      [data-ort~="5g"]{flex:5;}    [data-ort~="6g"]{flex:6;}   [data-ort~="7g"]{flex:7;}    [data-ort~="8g"]{flex:8;}
+      [data-ort~="9g"]{flex:9;}    [data-ort~="10g"]{flex:10;} [data-ort~="11g"]{flex:11;}  [data-ort~="12g"]{flex:12;}
+      [data-ort~="13g"]{flex:13;}  [data-ort~="14g"]{flex:14;} [data-ort~="15g"]{flex:15;}  [data-ort~="16g"]{flex:16;}
+      [data-ort~="17g"]{flex:17;}  [data-ort~="18g"]{flex:18;} [data-ort~="19g"]{flex:19;}  [data-ort~="20g"]{flex:20;}
+      [data-ort~="21g"]{flex:21;}  [data-ort~="22g"]{flex:22;} [data-ort~="23g"]{flex:23;}  [data-ort~="24g"]{flex:24;}
 
       /* Konum Ayarları */
       [data-ort~="taşma-gizle"]{overflow: hidden;}
@@ -567,12 +567,12 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
         width: auto;
       }
 
-      [data-byk~="1o"]{flex:1;}    [data-byk~="2o"]{flex:2;}   [data-byk~="3o"]{flex:3;}    [data-byk~="4o"]{flex:4;}
-      [data-byk~="5o"]{flex:5;}    [data-byk~="6o"]{flex:6;}   [data-byk~="7o"]{flex:7;}    [data-byk~="8o"]{flex:8;}
-      [data-byk~="9o"]{flex:9;}    [data-byk~="10o"]{flex:10;} [data-byk~="11o"]{flex:11;}  [data-byk~="12o"]{flex:12;}
-      [data-byk~="13o"]{flex:13;}  [data-byk~="14o"]{flex:14;} [data-byk~="15o"]{flex:15;}  [data-byk~="16o"]{flex:16;}
-      [data-byk~="17o"]{flex:17;}  [data-byk~="18o"]{flex:18;} [data-byk~="19o"]{flex:19;}  [data-byk~="20o"]{flex:20;}
-      [data-byk~="21o"]{flex:21;}  [data-byk~="22o"]{flex:22;} [data-byk~="23o"]{flex:23;}  [data-byk~="24o"]{flex:24;}
+      [data-byk~="1g"]{flex:1;}    [data-byk~="2g"]{flex:2;}   [data-byk~="3g"]{flex:3;}    [data-byk~="4g"]{flex:4;}
+      [data-byk~="5g"]{flex:5;}    [data-byk~="6g"]{flex:6;}   [data-byk~="7g"]{flex:7;}    [data-byk~="8g"]{flex:8;}
+      [data-byk~="9g"]{flex:9;}    [data-byk~="10g"]{flex:10;} [data-byk~="11g"]{flex:11;}  [data-byk~="12g"]{flex:12;}
+      [data-byk~="13g"]{flex:13;}  [data-byk~="14g"]{flex:14;} [data-byk~="15g"]{flex:15;}  [data-byk~="16g"]{flex:16;}
+      [data-byk~="17g"]{flex:17;}  [data-byk~="18g"]{flex:18;} [data-byk~="19g"]{flex:19;}  [data-byk~="20g"]{flex:20;}
+      [data-byk~="21g"]{flex:21;}  [data-byk~="22g"]{flex:22;} [data-byk~="23g"]{flex:23;}  [data-byk~="24g"]{flex:24;}
 
       /* Konum Ayarları */
       [data-byk~="taşma-gizle"]{overflow: hidden;}
@@ -649,12 +649,12 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
         width: auto;
       }
 
-      [data-kcm~="1o"]{flex:1;}    [data-kcm~="2o"]{flex:2;}   [data-kcm~="3o"]{flex:3;}    [data-kcm~="4o"]{flex:4;}
-      [data-kcm~="5o"]{flex:5;}    [data-kcm~="6o"]{flex:6;}   [data-kcm~="7o"]{flex:7;}    [data-kcm~="8o"]{flex:8;}
-      [data-kcm~="9o"]{flex:9;}    [data-kcm~="10o"]{flex:10;} [data-kcm~="11o"]{flex:11;}  [data-kcm~="12o"]{flex:12;}
-      [data-kcm~="13o"]{flex:13;}  [data-kcm~="14o"]{flex:14;} [data-kcm~="15o"]{flex:15;}  [data-kcm~="16o"]{flex:16;}
-      [data-kcm~="17o"]{flex:17;}  [data-kcm~="18o"]{flex:18;} [data-kcm~="19o"]{flex:19;}  [data-kcm~="20o"]{flex:20;}
-      [data-kcm~="21o"]{flex:21;}  [data-kcm~="22o"]{flex:22;} [data-kcm~="23o"]{flex:23;}  [data-kcm~="24o"]{flex:24;}
+      [data-kcm~="1g"]{flex:1;}    [data-kcm~="2g"]{flex:2;}   [data-kcm~="3g"]{flex:3;}    [data-kcm~="4g"]{flex:4;}
+      [data-kcm~="5g"]{flex:5;}    [data-kcm~="6g"]{flex:6;}   [data-kcm~="7g"]{flex:7;}    [data-kcm~="8g"]{flex:8;}
+      [data-kcm~="9g"]{flex:9;}    [data-kcm~="10g"]{flex:10;} [data-kcm~="11g"]{flex:11;}  [data-kcm~="12g"]{flex:12;}
+      [data-kcm~="13g"]{flex:13;}  [data-kcm~="14g"]{flex:14;} [data-kcm~="15g"]{flex:15;}  [data-kcm~="16g"]{flex:16;}
+      [data-kcm~="17g"]{flex:17;}  [data-kcm~="18g"]{flex:18;} [data-kcm~="19g"]{flex:19;}  [data-kcm~="20g"]{flex:20;}
+      [data-kcm~="21g"]{flex:21;}  [data-kcm~="22g"]{flex:22;} [data-kcm~="23g"]{flex:23;}  [data-kcm~="24g"]{flex:24;}
 
       /* Konum Ayarları */
       [data-kcm~="taşma-gizle"]{overflow: hidden;}
@@ -731,12 +731,12 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
         width: auto;
       }
 
-      [data-dev~="1o"]{flex:1;}    [data-dev~="2o"]{flex:2;}   [data-dev~="3o"]{flex:3;}    [data-dev~="4o"]{flex:4;}
-      [data-dev~="5o"]{flex:5;}    [data-dev~="6o"]{flex:6;}   [data-dev~="7o"]{flex:7;}    [data-dev~="8o"]{flex:8;}
-      [data-dev~="9o"]{flex:9;}    [data-dev~="10o"]{flex:10;} [data-dev~="11o"]{flex:11;}  [data-dev~="12o"]{flex:12;}
-      [data-dev~="13o"]{flex:13;}  [data-dev~="14o"]{flex:14;} [data-dev~="15o"]{flex:15;}  [data-dev~="16o"]{flex:16;}
-      [data-dev~="17o"]{flex:17;}  [data-dev~="18o"]{flex:18;} [data-dev~="19o"]{flex:19;}  [data-dev~="20o"]{flex:20;}
-      [data-dev~="21o"]{flex:21;}  [data-dev~="22o"]{flex:22;} [data-dev~="23o"]{flex:23;}  [data-dev~="24o"]{flex:24;}
+      [data-dev~="1g"]{flex:1;}    [data-dev~="2g"]{flex:2;}   [data-dev~="3g"]{flex:3;}    [data-dev~="4g"]{flex:4;}
+      [data-dev~="5g"]{flex:5;}    [data-dev~="6g"]{flex:6;}   [data-dev~="7g"]{flex:7;}    [data-dev~="8g"]{flex:8;}
+      [data-dev~="9g"]{flex:9;}    [data-dev~="10g"]{flex:10;} [data-dev~="11g"]{flex:11;}  [data-dev~="12g"]{flex:12;}
+      [data-dev~="13g"]{flex:13;}  [data-dev~="14g"]{flex:14;} [data-dev~="15g"]{flex:15;}  [data-dev~="16g"]{flex:16;}
+      [data-dev~="17g"]{flex:17;}  [data-dev~="18g"]{flex:18;} [data-dev~="19g"]{flex:19;}  [data-dev~="20g"]{flex:20;}
+      [data-dev~="21g"]{flex:21;}  [data-dev~="22g"]{flex:22;} [data-dev~="23g"]{flex:23;}  [data-dev~="24g"]{flex:24;}
 
       [data-gnl~="kaplama"],[data-dev~="kaplama"],
       [data-kcm~="büyükleri-kaplama"],[data-kcm~="büyükleriyle-kaplama"],
