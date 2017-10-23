@@ -1,0 +1,39 @@
+---
+layout: default
+title: Kap Örgüsü Oran Düzeni
+---
+  <style media="screen">
+    .önizleme{background-color:#efefef; padding:10px;}
+    .önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1; padding:10px; color:#eee;}
+    .önizleme h3 {color:#999;margin:0 0 10px 0;}
+    pre.language-html{ max-height:50vh; overflow-y: auto;}
+  </style>
+  <p>Basit şekilde oranlar belirterek kap alanları oluşturabilirsiniz. Oran düzeni "CSS FLEX" özelliği üzerine geliştirilmiştir. Oran örgüsünün kullanımı için ekran özniteliklerine (data-gnl, data-mnk ...) "<span data-metin="ana">SAYIo</span>" sınıfını yazmanız yeterlidir. SAYI 1 ile 24 arasında değer alabilir. Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş olmasını istiyorsunuz. Bunun için data-gnl="2o" data-gnl="1o" öznitelikleri tanımlaybilirsiniz.</p>
+
+  <h3>Oran Yöntemini Kullanma Örneği</h3>
+  <p>Üç sütun görünümünde bir düzen oluşturalım. Dağılımı 1 4 2 şeklinde yapalım.</p>
+  <p></p>
+  <div data-gnl="1 1p" class="önizleme">
+    <h3>Önizleme</h3>
+    <div data-gnl="1o">
+      1o
+    </div>
+    <div data-gnl="4o">
+      4o
+    </div>
+    <div data-gnl="2o">
+      2o
+    </div>
+  </div>
+  <pre data-gnl="1 1p"><code class="language-html">
+  &lt;div data-gnl=&quot;1o&quot;&gt;
+    1o
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;4o&quot;&gt;
+    4o
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;2o&quot;&gt;
+    2o
+  &lt;/div&gt;
+  </code></pre>
+  <p></p>
