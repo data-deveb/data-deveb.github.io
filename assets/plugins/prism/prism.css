@@ -25,6 +25,7 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	width: 100%;
 }
 
 /* Code blocks */
@@ -224,4 +225,3 @@ pre[data-line] code {
 pre .line-highlight {
 	margin-top: 0;
 }
-
