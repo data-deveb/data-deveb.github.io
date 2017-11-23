@@ -1,0 +1,56 @@
+---
+layout: default
+title: Ekran Örgüsünü Anlamak (Çekirdek Geliştiriciler)
+---
+<h2>
+  3 Temel Üzerine Kurulmuş Ekran Örgüsü
+</h2>
+<p>
+  Deveb ile ekran yönetimini çok kolay yapabilmekteyiz. Ancak çekirdek geliştiricisi iseniz öncelikle
+  ekran örgüsünü (screen system) çok iyi anlamanız gerekmektedir. 3 temel düzen üzerine kurulan ekran örgüsü
+  ekranların seçim yöntemiyle alakalıdır. Ekranlar 3 farklı yönde seçilir. Bunlar şöyledir;
+</p>
+<ul>
+  <li>
+    Soner Seçimi: Küçükten büyüğe doğru
+  </li>
+  <li>
+    İlker Seçimi: Büyükten küçüğe doğru
+  </li>
+  <li>
+    Teker Seçimi: Tekil seçim
+  </li>
+</ul>
+<h2>
+  8 Ekran Çeşidi İle Oluşturulan Ekran Örgüsü
+</h2>
+<p>
+  Teknik ayrıntılara geçmeden önce değinilmesi gereken diğer konu ise ekran çeşitleridir. Minik, ufak, küçük, orta, büyük, kocaman, dev ve genel
+  olmak üzere tanımlanmış ekran çeşitlerini genişlikleriyle beraber inceleyerek başlayalım.
+</p>
+<ul>
+  <li>
+    [adı][etiketi][ölçeği]
+  </li>
+  <li>
+    [minik][mnk][-- 0 : 300px --]
+  </li>
+  <li>
+    [ufak][ufk][-- 300px : 576px --]
+  </li>
+  <li>
+    [küçük][kçk][-- 576px : 768px --]
+  </li>
+  <li>
+    [ort][orta][-- 768px : 992px --]
+  </li>
+  <li>
+    [büyük][byk][-- 992px : 1200px --]
+  </li>
+  <li>
+    [kocaman][kcm][-- 1200px : 1900px --]
+  </li>
+  <li>
+    [dev][dev][-- 1900px : ∞ --]
+  </li>
+</ul>

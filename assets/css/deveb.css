@@ -41,7 +41,7 @@
 
     • EKRAN YÖNETİMİ    -> Satır-imi: yok
       • GENEL           -> Satır-imi: S00
-      ◘ İLKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ TEKER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ SONER ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+      ◘ BÜYÜKLERİYLE ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ BUNU ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ KÜÇÜKLERİYLE ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
       • MİNİK » ∞       -> Satır-imi: S010      • MİNİK     -> Satır-imi: S011      • MİNİK » 0     -> Satır-imi: S012
       • UFAK » ∞        -> Satır-imi: S020      • UFAK      -> Satır-imi: S021      • UFAK » 0      -> Satır-imi: S022
       • KÜÇÜK » ∞       -> Satır-imi: S030      • KÜÇÜK     -> Satır-imi: S031      • KÜÇÜK » 0     -> Satır-imi: S032
@@ -244,8 +244,8 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-gnl~="21g"]{flex:21;} [data-gnl~="22g"]{flex:22;} [data-gnl~="23g"]{flex:23;} [data-gnl~="24g"]{flex:24;}
 
     /* Konum Ayarları */
-    [data-gnl~="taşma-gizle"]{overflow: hidden;}
-    [data-gnl~="taşmadan"]{overflow-x: auto;}
+    [data-gnl~="kaymadan"]{overflow: hidden;}
+    [data-gnl~="yatay-kayma"]{overflow-x: auto;}
     [data-gnl~="dürmeden"]{flex-wrap: nowrap;}
 
     [data-gnl~="ters-dürme"]{flex-wrap: wrap-reverse;}
@@ -279,9 +279,8 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-mnk~="gizle"]
     {display: none;}
 
-/*  DUYARLI TİP İLKER * >> ∞ */
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S01 UFAK-İLKER (ufk) veya (ufk-soner) | Ekran ölçeği: 300px ≤ *
+S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) {
       :root{
@@ -329,8 +328,8 @@ S01 UFAK-İLKER (ufk) veya (ufk-soner) | Ekran ölçeği: 300px ≤ *
       [data-ufk~="21g"]{flex:21;} [data-ufk~="22g"]{flex:22;} [data-ufk~="23g"]{flex:23;} [data-ufk~="24g"]{flex:24;}
 
       /* Konum Ayarları */
-      [data-ufk~="taşma-gizle"]{overflow: hidden;}
-      [data-ufk~="taşmadan"]{overflow-x: auto;}
+      [data-ufk~="kaymadan"]{overflow: hidden;}
+      [data-ufk~="yatay-kayma"]{overflow-x: auto;}
       [data-ufk~="dürmeden"]{flex-wrap: nowrap;}
 
       [data-ufk~="ters-dürme"]{flex-wrap: wrap-reverse;}
@@ -411,8 +410,8 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="21g"]{flex:21;}  [data-kçk~="22g"]{flex:22;} [data-kçk~="23g"]{flex:23;}  [data-kçk~="24g"]{flex:24;}
 
       /* Konum Ayarları */
-      [data-kçk~="taşma-gizle"]{overflow: hidden;}
-      [data-kçk~="taşmadan"]{overflow-x: auto;}
+      [data-kçk~="kaymadan"]{overflow: hidden;}
+      [data-kçk~="yatay-kayma"]{overflow-x: auto;}
       [data-kçk~="dürmeden"]{flex-wrap: nowrap;}
 
       [data-kçk~="ters-dürme"]{flex-wrap: wrap-reverse;}
@@ -493,8 +492,8 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-ort~="21g"]{flex:21;}  [data-ort~="22g"]{flex:22;} [data-ort~="23g"]{flex:23;}  [data-ort~="24g"]{flex:24;}
 
       /* Konum Ayarları */
-      [data-ort~="taşma-gizle"]{overflow: hidden;}
-      [data-ort~="taşmadan"]{overflow-x: auto;}
+      [data-ort~="kaymadan"]{overflow: hidden;}
+      [data-ort~="yatay-kayma"]{overflow-x: auto;}
       [data-ort~="dürmeden"]{flex-wrap: nowrap;}
 
       [data-ort~="ters-dürme"]{flex-wrap: wrap-reverse;}
@@ -575,8 +574,8 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk~="21g"]{flex:21;}  [data-byk~="22g"]{flex:22;} [data-byk~="23g"]{flex:23;}  [data-byk~="24g"]{flex:24;}
 
       /* Konum Ayarları */
-      [data-byk~="taşma-gizle"]{overflow: hidden;}
-      [data-byk~="taşmadan"]{overflow-x: auto;}
+      [data-byk~="kaymadan"]{overflow: hidden;}
+      [data-byk~="yatay-kayma"]{overflow-x: auto;}
       [data-byk~="dürmeden"]{flex-wrap: nowrap;}
 
       [data-byk~="ters-dürme"]{flex-wrap: wrap-reverse;}
@@ -657,8 +656,8 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-kcm~="21g"]{flex:21;}  [data-kcm~="22g"]{flex:22;} [data-kcm~="23g"]{flex:23;}  [data-kcm~="24g"]{flex:24;}
 
       /* Konum Ayarları */
-      [data-kcm~="taşma-gizle"]{overflow: hidden;}
-      [data-kcm~="taşmadan"]{overflow-x: auto;}
+      [data-kcm~="kaymadan"]{overflow: hidden;}
+      [data-kcm~="yatay-kayma"]{overflow-x: auto;}
       [data-kcm~="dürmeden"]{flex-wrap: nowrap;}
 
       [data-kcm~="ters-dürme"]{flex-wrap: wrap-reverse;}
@@ -749,8 +748,8 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       }
 
       /* Konum Ayarları */
-      [data-dev~="taşma-gizle"]{overflow: hidden;}
-      [data-dev~="taşmadan"]{overflow-x: auto;}
+      [data-dev~="kaymadan"]{overflow: hidden;}
+      [data-dev~="yatay-kayma"]{overflow-x: auto;}
       [data-dev~="dürmeden"]{flex-wrap: nowrap;}
 
       [data-dev~="ters-dürme"]{flex-wrap: wrap-reverse;}
