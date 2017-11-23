@@ -131,7 +131,7 @@ title: Ekran Örgüsünü Anlamak (Çekirdek Geliştiriciler İçin)
   Tüm ekranlar etkileneceği için CSS ekran seçici tanımlanmamıştır. Uygun yere satırları yazabiliriz.
 </p>
 <h3>
-  Küçükten Büyüğe (varsayılan)
+  Büyükleriyle: Küçükten Büyüğe (varsayılan)
 </h3>
 <p>
   @media screen and (min-width:300px){}<br>
@@ -142,7 +142,7 @@ title: Ekran Örgüsünü Anlamak (Çekirdek Geliştiriciler İçin)
   @media screen and (min-width:1900px){}<br>
 </p>
 <h3>
-  Büyükten Küçüğe
+  Küçükleriyle: Büyükten Küçüğe
 </h3>
 <p>
   @media screen and (min-width:1900px){}<br>
@@ -162,4 +162,12 @@ title: Ekran Örgüsünü Anlamak (Çekirdek Geliştiriciler İçin)
   @media screen and (min-width:992px){} and (max-width:1200px){}<br>
   @media screen and (min-width:1200px){} and (max-width:1900px){}<br>
   @media screen and (min-width:1900px){}<br>
+</p>
+<h2>
+  Büyükleriyle - Büyükleri ve Küçükleriyle - Küçükleri Arasındaki Farklar
+</h2>
+<p>
+  Örneğin gizle işlemi yapmak istiyoruz. Ekran seçicilerimizi belirlerken büyükleriyle-gizle dediğimizde tanımladığımız ekran ve sonrasını gizlemesi gerekiyor.
+  Bunu yapabilmek için 2. alana ilgili "display:none;" tanımlamalarını yapıyoruz. Ufak ekran ve daha büyüklerine tanımlama yapabilmemiz için şu alana şöyle tanımlama yapacağız.<br><br>
+  @media screen and (min-width:300px){<br><br>[data-ufk~="büyükleriyle-gizle"]{display:none;}<br>}
 </p>
