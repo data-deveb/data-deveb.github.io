@@ -10,15 +10,16 @@ title: Ekran Örgüsünü Anlamak (Çekirdek Geliştiriciler)
   ekran örgüsünü (screen system) çok iyi anlamanız gerekmektedir. 3 temel düzen üzerine kurulan ekran örgüsü
   ekranların seçim yöntemiyle alakalıdır. Ekranlar 3 farklı yönde seçilir. Bunlar şöyledir;
 </p>
+<p></p>
 <ul>
   <li>
-    Soner Seçimi: Küçükten büyüğe doğru
+    Büyükleriyle: Küçükten büyüğe doğru ekranları kapsar
   </li>
   <li>
-    İlker Seçimi: Büyükten küçüğe doğru
+    Küçükleriyle: Büyükten küçüğe doğru ekranları kapsar
   </li>
   <li>
-    Teker Seçimi: Tekil seçim
+    Bunu: Sadece ilgili ekranı kapsar
   </li>
 </ul>
 <h2>
@@ -28,29 +29,87 @@ title: Ekran Örgüsünü Anlamak (Çekirdek Geliştiriciler)
   Teknik ayrıntılara geçmeden önce değinilmesi gereken diğer konu ise ekran çeşitleridir. Minik, ufak, küçük, orta, büyük, kocaman, dev ve genel
   olmak üzere tanımlanmış ekran çeşitlerini genişlikleriyle beraber inceleyerek başlayalım.
 </p>
-<ul>
-  <li>
-    [adı][etiketi][ölçeği]
-  </li>
-  <li>
-    [minik][mnk][-- 0 : 300px --]
-  </li>
-  <li>
-    [ufak][ufk][-- 300px : 576px --]
-  </li>
-  <li>
-    [küçük][kçk][-- 576px : 768px --]
-  </li>
-  <li>
-    [ort][orta][-- 768px : 992px --]
-  </li>
-  <li>
-    [büyük][byk][-- 992px : 1200px --]
-  </li>
-  <li>
-    [kocaman][kcm][-- 1200px : 1900px --]
-  </li>
-  <li>
-    [dev][dev][-- 1900px : ∞ --]
-  </li>
-</ul>
+<table class="tablo">
+  <thead>
+    <tr>
+      <th>Ekranlar</th>
+      <th>
+        Genel <br>
+        <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <i class="fa fa-tablet" aria-hidden="true"></i>
+        <i class="fa fa-laptop" aria-hidden="true"></i>
+        <i class="fa fa-desktop" aria-hidden="true"></i>
+        <i class="fa fa-television" aria-hidden="true"></i>
+        <i class="fa fa-window-maximize" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">saat » dev</span>
+      </th>
+      <th>
+        Minik <br>
+        <i class="fa fa-minus-square-o" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">saat</span>
+      </th>
+      <th>
+        Ufak <br>
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">telefon</span>
+      </th>
+      <th>
+        Küçük <br>
+        <i class="fa fa-tablet" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">tablet</span>
+      </th>
+      <th>
+        Orta <br>
+        <i class="fa fa-laptop" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">dizüstü</span>
+      </th>
+      <th>
+        Büyük <br>
+        <i class="fa fa-desktop" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">Masaüstü</span>
+      </th>
+      <th>
+        Kocaman <br>
+        <i class="fa fa-television" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">Televizyon</span>
+      </th>
+      <th>
+        Dev <br>
+        <i class="fa fa-window-maximize" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">Dev ekran</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Ölçekler</th>
+      <td>0 »</td>
+      <td>» 300px</td>
+      <td>300px »</td>
+      <td>576px »</td>
+      <td>768px »</td>
+      <td>992px »</td>
+      <td>1200px »</td>
+      <td>1900px »</td>
+    </tr>
+    <tr>
+      <th>Birimleri</th>
+      <td>data-gnl</td>
+      <td>data-mnk</td>
+      <td>data-ufk</td>
+      <td>data-kçk</td>
+      <td>data-ort</td>
+      <td>data-byk</td>
+      <td>data-kcm</td>
+      <td>data-dev</td>
+    </tr>
+    <tr>
+      <th>Ekran Seçme</th>
+      <td><span data-metin="ana gri">sınıf</span></td>
+      <td>bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span><br>büyükleriyle-<span data-metin="ana gri">sınıf</span><br>büyükleri-<span data-metin="ana gri">sınıf</span></td>
+      <td colspan="5">küçükleri-<span data-metin="ana gri">sınıf</span><br>küçükleriyle-<span data-metin="ana gri">sınıf</span><br>bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span><br>büyükleriyle-<span data-metin="ana gri">sınıf</span><br>büyükleri-<span data-metin="ana gri">sınıf</span></td>
+      <td>küçükleri-<span data-metin="ana gri">sınıf</span><br>küçükleriyle-<span data-metin="ana gri">sınıf</span><br>bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span></td>
+    </tr>
+  </tbody>
+</table>
