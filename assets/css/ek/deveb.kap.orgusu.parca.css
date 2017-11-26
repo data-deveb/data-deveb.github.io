@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+:root{
+  --par:24;--parça:24;    /* Kap örgüsü varsayılan genişlik */
+}
+
+[data-gnl]{
+  display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+  flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+  box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+  align-items: flex-start;/* Varsayılan olarak üstte ol */
+}
+
+[data-gnl~="sütun"]{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+body[data-gnl~="sütun"]{
+  min-height:100vh;
+}
+body[data-gnl~="sütun"]>footer{
+  margin-top:auto;
+}
+
+
+/* Kap Örgüsü Parça Ayarları */
+[data-gnl~="1"]{--parça:1;}   [data-gnl~="2"]{--parça:2;}   [data-gnl~="3"]{--parça:3;}   [data-gnl~="4"]{--parça:4;}
+[data-gnl~="5"]{--parça:5;}   [data-gnl~="6"]{--parça:6;}   [data-gnl~="7"]{--parça:7;}   [data-gnl~="8"]{--parça:8;}
+[data-gnl~="9"]{--parça:9;}   [data-gnl~="10"]{--parça:10;} [data-gnl~="11"]{--parça:11;} [data-gnl~="12"]{--parça:12;}
+[data-gnl~="13"]{--parça:13;} [data-gnl~="14"]{--parça:14;} [data-gnl~="15"]{--parça:15;} [data-gnl~="16"]{--parça:16;}
+[data-gnl~="17"]{--parça:17;} [data-gnl~="18"]{--parça:18;} [data-gnl~="19"]{--parça:19;} [data-gnl~="20"]{--parça:20;}
+[data-gnl~="21"]{--parça:21;} [data-gnl~="22"]{--parça:22;} [data-gnl~="23"]{--parça:23;} [data-gnl~="24"]{--parça:24;}
+
+[data-gnl~="1p"]{--par:1;}   [data-gnl~="2p"]{--par:2;}   [data-gnl~="3p"]{--par:3;}   [data-gnl~="4p"]{--par:4;}
+[data-gnl~="5p"]{--par:5;}   [data-gnl~="6p"]{--par:6;}   [data-gnl~="7p"]{--par:7;}   [data-gnl~="8p"]{--par:8;}
+[data-gnl~="9p"]{--par:9;}   [data-gnl~="10p"]{--par:10;} [data-gnl~="11p"]{--par:11;} [data-gnl~="12p"]{--par:12;}
+[data-gnl~="13p"]{--par:13;} [data-gnl~="14p"]{--par:14;} [data-gnl~="15p"]{--par:15;} [data-gnl~="16p"]{--par:16;}
+[data-gnl~="17p"]{--par:17;} [data-gnl~="18p"]{--par:18;} [data-gnl~="19p"]{--par:19;} [data-gnl~="20p"]{--par:20;}
+[data-gnl~="21p"]{--par:21;} [data-gnl~="22p"]{--par:22;} [data-gnl~="23p"]{--par:23;} [data-gnl~="24p"]{--par:24;}
+
+/* Kap Örgüsü Parça Hesaplama */
+[data-gnl]{
+  flex-basis: calc(100% / var(--par) * var(--parça));
+  max-width:  calc(100% / var(--par) * var(--parça));
+}
+
+@media screen and (min-width:300px) {
+    [data-ufk]{
+      display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+      flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      align-items: flex-start;/* Varsayılan olarak üstte ol */
+    }
+
+    [data-ufk~="1"]{--parça:1;}   [data-ufk~="2"]{--parça:2;}   [data-ufk~="3"]{--parça:3;}   [data-ufk~="4"]{--parça:4;}
+    [data-ufk~="5"]{--parça:5;}   [data-ufk~="6"]{--parça:6;}   [data-ufk~="7"]{--parça:7;}   [data-ufk~="8"]{--parça:8;}
+    [data-ufk~="9"]{--parça:9;}   [data-ufk~="10"]{--parça:10;} [data-ufk~="11"]{--parça:11;} [data-ufk~="12"]{--parça:12;}
+    [data-ufk~="13"]{--parça:13;} [data-ufk~="14"]{--parça:14;} [data-ufk~="15"]{--parça:15;} [data-ufk~="16"]{--parça:16;}
+    [data-ufk~="17"]{--parça:17;} [data-ufk~="18"]{--parça:18;} [data-ufk~="19"]{--parça:19;} [data-ufk~="20"]{--parça:20;}
+    [data-ufk~="21"]{--parça:21;} [data-ufk~="22"]{--parça:22;} [data-ufk~="23"]{--parça:23;} [data-ufk~="24"]{--parça:24;}
+
+    [data-ufk~="1p"]{--par:1;}   [data-ufk~="2p"]{--par:2;}   [data-ufk~="3p"]{--par:3;}   [data-ufk~="4p"]{--par:4;}
+    [data-ufk~="5p"]{--par:5;}   [data-ufk~="6p"]{--par:6;}   [data-ufk~="7p"]{--par:7;}   [data-ufk~="8p"]{--par:8;}
+    [data-ufk~="9p"]{--par:9;}   [data-ufk~="10p"]{--par:10;} [data-ufk~="11p"]{--par:11;} [data-ufk~="12p"]{--par:12;}
+    [data-ufk~="13p"]{--par:13;} [data-ufk~="14p"]{--par:14;} [data-ufk~="15p"]{--par:15;} [data-ufk~="16p"]{--par:16;}
+    [data-ufk~="17p"]{--par:17;} [data-ufk~="18p"]{--par:18;} [data-ufk~="19p"]{--par:19;} [data-ufk~="20p"]{--par:20;}
+    [data-ufk~="21p"]{--par:21;} [data-ufk~="22p"]{--par:22;} [data-ufk~="23p"]{--par:23;} [data-ufk~="24p"]{--par:24;}
+
+    [data-ufk]{
+      flex-basis: calc(100% / var(--par) * var(--parça));
+      max-width:  calc(100% / var(--par) * var(--parça));
+    }
+}
+
+@media screen and (min-width:576px) {
+    [data-kçk]{
+      display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+      flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      align-items: flex-start;/* Varsayılan olarak üstte ol */
+    }
+
+    [data-kçk~="1"]{--parça:1;}   [data-kçk~="2"]{--parça:2;}   [data-kçk~="3"]{--parça:3;}   [data-kçk~="4"]{--parça:4;}
+    [data-kçk~="5"]{--parça:5;}   [data-kçk~="6"]{--parça:6;}   [data-kçk~="7"]{--parça:7;}   [data-kçk~="8"]{--parça:8;}
+    [data-kçk~="9"]{--parça:9;}   [data-kçk~="10"]{--parça:10;} [data-kçk~="11"]{--parça:11;} [data-kçk~="12"]{--parça:12;}
+    [data-kçk~="13"]{--parça:13;} [data-kçk~="14"]{--parça:14;} [data-kçk~="15"]{--parça:15;} [data-kçk~="16"]{--parça:16;}
+    [data-kçk~="17"]{--parça:17;} [data-kçk~="18"]{--parça:18;} [data-kçk~="19"]{--parça:19;} [data-kçk~="20"]{--parça:20;}
+    [data-kçk~="21"]{--parça:21;} [data-kçk~="22"]{--parça:22;} [data-kçk~="23"]{--parça:23;} [data-kçk~="24"]{--parça:24;}
+
+    [data-kçk~="1p"]{--par:1;}   [data-kçk~="2p"]{--par:2;}   [data-kçk~="3p"]{--par:3;}   [data-kçk~="4p"]{--par:4;}
+    [data-kçk~="5p"]{--par:5;}   [data-kçk~="6p"]{--par:6;}   [data-kçk~="7p"]{--par:7;}   [data-kçk~="8p"]{--par:8;}
+    [data-kçk~="9p"]{--par:9;}   [data-kçk~="10p"]{--par:10;} [data-kçk~="11p"]{--par:11;} [data-kçk~="12p"]{--par:12;}
+    [data-kçk~="13p"]{--par:13;} [data-kçk~="14p"]{--par:14;} [data-kçk~="15p"]{--par:15;} [data-kçk~="16p"]{--par:16;}
+    [data-kçk~="17p"]{--par:17;} [data-kçk~="18p"]{--par:18;} [data-kçk~="19p"]{--par:19;} [data-kçk~="20p"]{--par:20;}
+    [data-kçk~="21p"]{--par:21;} [data-kçk~="22p"]{--par:22;} [data-kçk~="23p"]{--par:23;} [data-kçk~="24p"]{--par:24;}
+
+    [data-kçk]{
+      flex-basis: calc(100% / var(--par) * var(--parça));
+      max-width:  calc(100% / var(--par) * var(--parça));
+    }
+}
+
+@media screen and (min-width:768px) {
+    [data-ort]{
+      display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+      flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      align-items: flex-start;/* Varsayılan olarak üstte ol */
+    }
+
+    [data-ort~="1"]{--parça:1;}   [data-ort~="2"]{--parça:2;}   [data-ort~="3"]{--parça:3;}   [data-ort~="4"]{--parça:4;}
+    [data-ort~="5"]{--parça:5;}   [data-ort~="6"]{--parça:6;}   [data-ort~="7"]{--parça:7;}   [data-ort~="8"]{--parça:8;}
+    [data-ort~="9"]{--parça:9;}   [data-ort~="10"]{--parça:10;} [data-ort~="11"]{--parça:11;} [data-ort~="12"]{--parça:12;}
+    [data-ort~="13"]{--parça:13;} [data-ort~="14"]{--parça:14;} [data-ort~="15"]{--parça:15;} [data-ort~="16"]{--parça:16;}
+    [data-ort~="17"]{--parça:17;} [data-ort~="18"]{--parça:18;} [data-ort~="19"]{--parça:19;} [data-ort~="20"]{--parça:20;}
+    [data-ort~="21"]{--parça:21;} [data-ort~="22"]{--parça:22;} [data-ort~="23"]{--parça:23;} [data-ort~="24"]{--parça:24;}
+
+    [data-ort~="1p"]{--par:1;}   [data-ort~="2p"]{--par:2;}   [data-ort~="3p"]{--par:3;}   [data-ort~="4p"]{--par:4;}
+    [data-ort~="5p"]{--par:5;}   [data-ort~="6p"]{--par:6;}   [data-ort~="7p"]{--par:7;}   [data-ort~="8p"]{--par:8;}
+    [data-ort~="9p"]{--par:9;}   [data-ort~="10p"]{--par:10;} [data-ort~="11p"]{--par:11;} [data-ort~="12p"]{--par:12;}
+    [data-ort~="13p"]{--par:13;} [data-ort~="14p"]{--par:14;} [data-ort~="15p"]{--par:15;} [data-ort~="16p"]{--par:16;}
+    [data-ort~="17p"]{--par:17;} [data-ort~="18p"]{--par:18;} [data-ort~="19p"]{--par:19;} [data-ort~="20p"]{--par:20;}
+    [data-ort~="21p"]{--par:21;} [data-ort~="22p"]{--par:22;} [data-ort~="23p"]{--par:23;} [data-ort~="24p"]{--par:24;}
+
+    [data-ort]{
+      flex-basis: calc(100% / var(--par) * var(--parça));
+      max-width:  calc(100% / var(--par) * var(--parça));
+    }
+}
+
+@media screen and (min-width:992px) {
+    [data-byk]{
+      display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+      flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      align-items: flex-start;/* Varsayılan olarak üstte ol */
+    }
+
+    [data-byk~="1"]{--parça:1;}   [data-byk~="2"]{--parça:2;}   [data-byk~="3"]{--parça:3;}   [data-byk~="4"]{--parça:4;}
+    [data-byk~="5"]{--parça:5;}   [data-byk~="6"]{--parça:6;}   [data-byk~="7"]{--parça:7;}   [data-byk~="8"]{--parça:8;}
+    [data-byk~="9"]{--parça:9;}   [data-byk~="10"]{--parça:10;} [data-byk~="11"]{--parça:11;} [data-byk~="12"]{--parça:12;}
+    [data-byk~="13"]{--parça:13;} [data-byk~="14"]{--parça:14;} [data-byk~="15"]{--parça:15;} [data-byk~="16"]{--parça:16;}
+    [data-byk~="17"]{--parça:17;} [data-byk~="18"]{--parça:18;} [data-byk~="19"]{--parça:19;} [data-byk~="20"]{--parça:20;}
+    [data-byk~="21"]{--parça:21;} [data-byk~="22"]{--parça:22;} [data-byk~="23"]{--parça:23;} [data-byk~="24"]{--parça:24;}
+
+    [data-byk~="1p"]{--par:1;}   [data-byk~="2p"]{--par:2;}   [data-byk~="3p"]{--par:3;}   [data-byk~="4p"]{--par:4;}
+    [data-byk~="5p"]{--par:5;}   [data-byk~="6p"]{--par:6;}   [data-byk~="7p"]{--par:7;}   [data-byk~="8p"]{--par:8;}
+    [data-byk~="9p"]{--par:9;}   [data-byk~="10p"]{--par:10;} [data-byk~="11p"]{--par:11;} [data-byk~="12p"]{--par:12;}
+    [data-byk~="13p"]{--par:13;} [data-byk~="14p"]{--par:14;} [data-byk~="15p"]{--par:15;} [data-byk~="16p"]{--par:16;}
+    [data-byk~="17p"]{--par:17;} [data-byk~="18p"]{--par:18;} [data-byk~="19p"]{--par:19;} [data-byk~="20p"]{--par:20;}
+    [data-byk~="21p"]{--par:21;} [data-byk~="22p"]{--par:22;} [data-byk~="23p"]{--par:23;} [data-byk~="24p"]{--par:24;}
+
+    [data-byk]{
+      flex-basis: calc(100% / var(--par) * var(--parça));
+      max-width:  calc(100% / var(--par) * var(--parça));
+    }
+}
+
+@media screen and (min-width:1200px) {
+    [data-kcm]{
+      display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+      flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      align-items: flex-start;/* Varsayılan olarak üstte ol */
+    }
+
+    [data-kcm~="1"]{--parça:1;}   [data-kcm~="2"]{--parça:2;}   [data-kcm~="3"]{--parça:3;}   [data-kcm~="4"]{--parça:4;}
+    [data-kcm~="5"]{--parça:5;}   [data-kcm~="6"]{--parça:6;}   [data-kcm~="7"]{--parça:7;}   [data-kcm~="8"]{--parça:8;}
+    [data-kcm~="9"]{--parça:9;}   [data-kcm~="10"]{--parça:10;} [data-kcm~="11"]{--parça:11;} [data-kcm~="12"]{--parça:12;}
+    [data-kcm~="13"]{--parça:13;} [data-kcm~="14"]{--parça:14;} [data-kcm~="15"]{--parça:15;} [data-kcm~="16"]{--parça:16;}
+    [data-kcm~="17"]{--parça:17;} [data-kcm~="18"]{--parça:18;} [data-kcm~="19"]{--parça:19;} [data-kcm~="20"]{--parça:20;}
+    [data-kcm~="21"]{--parça:21;} [data-kcm~="22"]{--parça:22;} [data-kcm~="23"]{--parça:23;} [data-kcm~="24"]{--parça:24;}
+
+    [data-kcm~="1p"]{--par:1;}   [data-kcm~="2p"]{--par:2;}   [data-kcm~="3p"]{--par:3;}   [data-kcm~="4p"]{--par:4;}
+    [data-kcm~="5p"]{--par:5;}   [data-kcm~="6p"]{--par:6;}   [data-kcm~="7p"]{--par:7;}   [data-kcm~="8p"]{--par:8;}
+    [data-kcm~="9p"]{--par:9;}   [data-kcm~="10p"]{--par:10;} [data-kcm~="11p"]{--par:11;} [data-kcm~="12p"]{--par:12;}
+    [data-kcm~="13p"]{--par:13;} [data-kcm~="14p"]{--par:14;} [data-kcm~="15p"]{--par:15;} [data-kcm~="16p"]{--par:16;}
+    [data-kcm~="17p"]{--par:17;} [data-kcm~="18p"]{--par:18;} [data-kcm~="19p"]{--par:19;} [data-kcm~="20p"]{--par:20;}
+    [data-kcm~="21p"]{--par:21;} [data-kcm~="22p"]{--par:22;} [data-kcm~="23p"]{--par:23;} [data-kcm~="24p"]{--par:24;}
+
+    [data-kcm]{
+      flex-basis: calc(100% / var(--par) * var(--parça));
+      max-width:  calc(100% / var(--par) * var(--parça));
+    }
+}
+
+@media screen and (min-width:1900px) {
+    [data-dev]{
+      display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
+      flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      align-items: flex-start;/* Varsayılan olarak üstte ol */
+    }
+
+    [data-dev~="1"]{--parça:1;}   [data-dev~="2"]{--parça:2;}   [data-dev~="3"]{--parça:3;}   [data-dev~="4"]{--parça:4;}
+    [data-dev~="5"]{--parça:5;}   [data-dev~="6"]{--parça:6;}   [data-dev~="7"]{--parça:7;}   [data-dev~="8"]{--parça:8;}
+    [data-dev~="9"]{--parça:9;}   [data-dev~="10"]{--parça:10;} [data-dev~="11"]{--parça:11;} [data-dev~="12"]{--parça:12;}
+    [data-dev~="13"]{--parça:13;} [data-dev~="14"]{--parça:14;} [data-dev~="15"]{--parça:15;} [data-dev~="16"]{--parça:16;}
+    [data-dev~="17"]{--parça:17;} [data-dev~="18"]{--parça:18;} [data-dev~="19"]{--parça:19;} [data-dev~="20"]{--parça:20;}
+    [data-dev~="21"]{--parça:21;} [data-dev~="22"]{--parça:22;} [data-dev~="23"]{--parça:23;} [data-dev~="24"]{--parça:24;}
+
+    [data-dev~="1p"]{--par:1;}   [data-dev~="2p"]{--par:2;}   [data-dev~="3p"]{--par:3;}   [data-dev~="4p"]{--par:4;}
+    [data-dev~="5p"]{--par:5;}   [data-dev~="6p"]{--par:6;}   [data-dev~="7p"]{--par:7;}   [data-dev~="8p"]{--par:8;}
+    [data-dev~="9p"]{--par:9;}   [data-dev~="10p"]{--par:10;} [data-dev~="11p"]{--par:11;} [data-dev~="12p"]{--par:12;}
+    [data-dev~="13p"]{--par:13;} [data-dev~="14p"]{--par:14;} [data-dev~="15p"]{--par:15;} [data-dev~="16p"]{--par:16;}
+    [data-dev~="17p"]{--par:17;} [data-dev~="18p"]{--par:18;} [data-dev~="19p"]{--par:19;} [data-dev~="20p"]{--par:20;}
+    [data-dev~="21p"]{--par:21;} [data-dev~="22p"]{--par:22;} [data-dev~="23p"]{--par:23;} [data-dev~="24p"]{--par:24;}
+
+    [data-dev]{
+      flex-basis: calc(100% / var(--par) * var(--parça));
+      max-width:  calc(100% / var(--par) * var(--parça));
+    }
+}
+
+@media screen and (max-width:1900px) {
+
+}
+
+@media screen and (max-width:1200px) {
+
+}
+
+@media screen and (max-width:993px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:576px) {
+
+}
+
+@media screen and (max-width:300px) {
+
+}
+
+@media screen and (min-width:300px) and (max-width:576px) {
+
+}
+
+@media screen and (min-width:576px) and (max-width:768px) {
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1900px) {
+
+}
