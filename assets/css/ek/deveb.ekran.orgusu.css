@@ -2,24 +2,64 @@
 /* Özgür alan */
 
 /* Özgür alan sonu */
-@media screen and (min-width:300px) {}
-@media screen and (min-width:576px) {}
-@media screen and (min-width:768px) {}
-@media screen and (min-width:992px) {}
-@media screen and (min-width:1200px) {}
-@media screen and (min-width:1900px) {}
-@media screen and (max-width:1900px) {}
-@media screen and (max-width:1200px) {}
-@media screen and (max-width:993px) {}
-@media screen and (max-width:768px) {}
-@media screen and (max-width:576px) {}
-@media screen and (max-width:300px) {}
-@media screen and (max-width:300px) {}
-@media screen and (min-width:300px) and (max-width:576px) {}
-@media screen and (min-width:576px) and (max-width:768px) {}
-@media screen and (min-width:768px) and (max-width:992px) {}
-@media screen and (min-width:992px) and (max-width:1200px) {}
-@media screen and (min-width:1200px) and (max-width:1900px) {}
+@media screen and (min-width:300px) {
+
+}
+@media screen and (min-width:576px) {
+
+}
+@media screen and (min-width:768px) {
+
+}
+@media screen and (min-width:992px) {
+
+}
+@media screen and (min-width:1200px) {
+
+}
+@media screen and (min-width:1900px) {
+
+}
+@media screen and (max-width:1900px) {
+
+}
+@media screen and (max-width:1200px) {
+
+}
+@media screen and (max-width:993px) {
+
+}
+@media screen and (max-width:768px) {
+
+}
+@media screen and (max-width:576px) {
+
+}
+@media screen and (max-width:300px) {
+  /* Günümüzde çok yaygın olmasa da gelecekte olabilecek minik ekranlar */
+  /* örnek ürün https://gadgets.ndtv.com/unihertz-jelly-4140 */
+}
+@media screen and (min-width:300px) and (max-width:576px) {
+
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+}
+@media screen and (min-width:1200px) and (max-width:1900px) {
+
+}
 /* Özgür alan */
 
 /* Özgür alan sonu */
+/* Açıklamalar */
+
+/* Bu alan neden tanımlanmadı?
+/* @media screen and (min-width:0px) and (max-width:300px)
+/* - Bu alanda çalışması istenilen değiştirgeler @media screen and (max-width:300px)
+/* alanında tanımlanabileceği için gereksiz yere
