@@ -1,21 +1,25 @@
 @charset "UTF-8";
+/* Özgür alan */
 
+/* Özgür alan sonu */
+@media screen and (min-width:300px) {}
+@media screen and (min-width:576px) {}
+@media screen and (min-width:768px) {}
+@media screen and (min-width:992px) {}
+@media screen and (min-width:1200px) {}
+@media screen and (min-width:1900px) {}
+@media screen and (max-width:1900px) {}
+@media screen and (max-width:1200px) {}
+@media screen and (max-width:993px) {}
+@media screen and (max-width:768px) {}
+@media screen and (max-width:576px) {}
+@media screen and (max-width:300px) {}
+@media screen and (max-width:300px) {}
+@media screen and (min-width:300px) and (max-width:576px) {}
+@media screen and (min-width:576px) and (max-width:768px) {}
+@media screen and (min-width:768px) and (max-width:992px) {}
+@media screen and (min-width:992px) and (max-width:1200px) {}
+@media screen and (min-width:1200px) and (max-width:1900px) {}
+/* Özgür alan */
 
-    @media screen and (min-width:300px) {}
-    @media screen and (min-width:576px) {}
-    @media screen and (min-width:768px) {}
-    @media screen and (min-width:992px) {}
-    @media screen and (min-width:1200px) {}
-    @media screen and (min-width:1900px) {}
-    @media screen and (max-width:1900px) {}
-    @media screen and (max-width:1200px) {}
-    @media screen and (max-width:993px) {}
-    @media screen and (max-width:768px) {}
-    @media screen and (max-width:576px) {}
-    @media screen and (max-width:300px) {}
-    @media screen and (max-width:300px) {}
-    @media screen and (min-width:300px) and (max-width:576px) {}
-    @media screen and (min-width:576px) and (max-width:768px) {}
-    @media screen and (min-width:768px) and (max-width:992px) {}
-    @media screen and (min-width:992px) and (max-width:1200px) {}
-    @media screen and (min-width:1200px) and (max-width:1900px) {}
+/* Özgür alan sonu */
