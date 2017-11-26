@@ -11,19 +11,6 @@
   align-items: flex-start;/* Varsayılan olarak üstte ol */
 }
 
-[data-gnl~="sütun"]{
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: stretch;
-}
-body[data-gnl~="sütun"]{
-  min-height:100vh;
-}
-body[data-gnl~="sütun"]>footer{
-  margin-top:auto;
-}
-
-
 /* Kap Örgüsü Parça Ayarları */
 [data-gnl~="1"]{--parça:1;}   [data-gnl~="2"]{--parça:2;}   [data-gnl~="3"]{--parça:3;}   [data-gnl~="4"]{--parça:4;}
 [data-gnl~="5"]{--parça:5;}   [data-gnl~="6"]{--parça:6;}   [data-gnl~="7"]{--parça:7;}   [data-gnl~="8"]{--parça:8;}
