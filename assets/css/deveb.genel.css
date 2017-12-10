@@ -8,7 +8,7 @@
 	overflow-x: auto;
 }*/
 .bg{
-	background-image: url(../img/bg.svg),linear-gradient(#2c2171, #292070 15%);
+	background-image: url(../img/bg.png),linear-gradient(#2c2171, #292070 15%);
 }
 .header{min-height: 72px;}
 #header{
@@ -128,7 +128,7 @@ a.logo{
 }
 .ap-kara	{background-color:#222;}
 .ap-deniz	{background-color: #17C4BB;}
-.ap-deveb	{background-color: #7c71f1;opacity: 0.3;}
+.ap-deveb	{background-color: #eee;opacity: 0.15;}
 .ap-yesil	{background-color: #00BF6F;}
 
 .kenar-alt{border-bottom:1px solid #eceeef;-webkit-box-shadow: 0 2px 0 hsla(200,9%,93%,.25);
