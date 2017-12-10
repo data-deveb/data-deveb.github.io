@@ -96,7 +96,7 @@
     figcaption,figure,footer,
     header,hgroup,section,
     menu,main,nav{
-      display: block;   /* Varsayılan gösterim ayarı */
+      display: block   /* Varsayılan gösterim ayarı */
     }
 
     a{
@@ -105,7 +105,7 @@
     }
 
     a, button, input, textarea {
-        outline: 0;   /* Sınır çizgilerini sıfırlama ayarı */
+        outline: 0   /* Sınır çizgilerini sıfırlama ayarı */
     }
 
     /*  Başlık ayarları */
@@ -126,7 +126,7 @@
     * > h4:first-child,
     * > h5:first-child,
     * > h6:first-child,
-    [data-metin~="ilk"] {margin-top:0;}
+    [data-metin~="ilk"] {margin-top:0}
     h1{font-size:1.5em}
       h2{font-size:1.2em}
         h3{font-size:1.1em}
@@ -134,7 +134,7 @@
             h5{font-size:1.0em; font-weight: 500; color: #666;}
               h6{font-size:1.0em; font-weight: 300; color: #888;}
               h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6{
-                margin-top: 0;
+                margin-top: 0
               }
     img {
       border: 0;  /* Kenarlıkları sıfırlama */
@@ -147,25 +147,21 @@
 
     /* Paragraf ayarları */
     p{display: block; width:100%;}
-      p+p{margin-top:1rem;}   /* İki paragraf arasına mesafe verme ayarı */
+      p+p{margin-top:1rem}   /* İki paragraf arasına mesafe verme ayarı */
 
     /* Liste ayarları */
     ul{padding:0; margin: 0;}
-      ul li{list-style-type: none;}
-        ul ul{margin-left: 15px;}
+      ul li{list-style-type: none}
+        ul ul{margin-left: 15px}
     ul h1, ul h2, ul h3, ul h4, ul h5, ul h6{
       margin:0;
     }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-    /*
-    GS1 | KAP ÖRGÜSÜ
-        | Esnekkutu
-    */
-
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GS1 KAP ÖRGÜSÜ
+*/
 
     [data-gnl]{
       display: flex;          /* Her durumda esnek görünüm tanımlama ayarı */
@@ -184,8 +180,6 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     body[data-gnl~="sütun"]>footer{
       margin-top:auto;
     }
-    [data-gnl~="gizli"]{display: none;}
-
     /* Kap Örgüsü Parça Ayarları */
     [data-gnl~="1"]{--parça:1}   [data-gnl~="2"]{--parça:2}   [data-gnl~="3"]{--parça:3}   [data-gnl~="4"]{--parça:4}
     [data-gnl~="5"]{--parça:5}   [data-gnl~="6"]{--parça:6}   [data-gnl~="7"]{--parça:7}   [data-gnl~="8"]{--parça:8}
@@ -220,7 +214,7 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
         padding-right: var(--oluk);
       }
       [data-gnl~="oluk-yok"] > [data-gnl]{
-        padding:0;
+        padding:0
       }
     /* Esnek Kap Örgüsü Genişliği */
     [data-gnl~="0"]{
@@ -234,25 +228,25 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     }
 
     /* Kap Örgüsü Oran Ayarları */
-    [data-gnl~="1g"]{flex:1;}   [data-gnl~="2g"]{flex:2;}   [data-gnl~="3g"]{flex:3;}   [data-gnl~="4g"]{flex:4;}
-    [data-gnl~="5g"]{flex:5;}   [data-gnl~="6g"]{flex:6;}   [data-gnl~="7g"]{flex:7;}   [data-gnl~="8g"]{flex:8;}
-    [data-gnl~="9g"]{flex:9;}   [data-gnl~="10g"]{flex:10;} [data-gnl~="11g"]{flex:11;} [data-gnl~="12g"]{flex:12;}
-    [data-gnl~="13g"]{flex:13;} [data-gnl~="14g"]{flex:14;} [data-gnl~="15g"]{flex:15;} [data-gnl~="16g"]{flex:16;}
-    [data-gnl~="17g"]{flex:17;} [data-gnl~="18g"]{flex:18;} [data-gnl~="19g"]{flex:19;} [data-gnl~="20g"]{flex:20;}
-    [data-gnl~="21g"]{flex:21;} [data-gnl~="22g"]{flex:22;} [data-gnl~="23g"]{flex:23;} [data-gnl~="24g"]{flex:24;}
+    [data-gnl~="1g"]{flex:1}   [data-gnl~="2g"]{flex:2}   [data-gnl~="3g"]{flex:3}   [data-gnl~="4g"]{flex:4}
+    [data-gnl~="5g"]{flex:5}   [data-gnl~="6g"]{flex:6}   [data-gnl~="7g"]{flex:7}   [data-gnl~="8g"]{flex:8}
+    [data-gnl~="9g"]{flex:9}   [data-gnl~="10g"]{flex:10} [data-gnl~="11g"]{flex:11} [data-gnl~="12g"]{flex:12}
+    [data-gnl~="13g"]{flex:13} [data-gnl~="14g"]{flex:14} [data-gnl~="15g"]{flex:15} [data-gnl~="16g"]{flex:16}
+    [data-gnl~="17g"]{flex:17} [data-gnl~="18g"]{flex:18} [data-gnl~="19g"]{flex:19} [data-gnl~="20g"]{flex:20}
+    [data-gnl~="21g"]{flex:21} [data-gnl~="22g"]{flex:22} [data-gnl~="23g"]{flex:23} [data-gnl~="24g"]{flex:24}
 
     /* Konum Ayarları */
-    [data-gnl~="kaymadan"]{overflow: hidden;}
-    [data-gnl~="yatay-kayma"]{overflow-x: auto;}
-    [data-gnl~="dürmeden"]{flex-wrap: nowrap;}
+    [data-gnl~="kaymadan"]{overflow: hidden}
+    [data-gnl~="yatay-kayma"]{overflow-x: auto}
+    [data-gnl~="dürmeden"]{flex-wrap: nowrap}
 
-    [data-gnl~="ters-dürme"]{flex-wrap: wrap-reverse;}
-    [data-gnl~="ters-satır"]{flex-direction: row-reverse;}
-    [data-gnl~="ters-sütun"]{flex-direction: column-reverse;}
+    [data-gnl~="ters-dürme"]{flex-wrap: wrap-reverse}
+    [data-gnl~="ters-satır"]{flex-direction: row-reverse}
+    [data-gnl~="ters-sütun"]{flex-direction: column-reverse}
 
-    [data-gnl~="solda"]{justify-content: flex-start;}
-    [data-gnl~="ortada"]{justify-content:center;}
-    [data-gnl~="sağda"]{justify-content: flex-end;}
+    [data-gnl~="solda"]{justify-content: flex-start}
+    [data-gnl~="ortada"]{justify-content:center}
+    [data-gnl~="sağda"]{justify-content: flex-end}
 
     [data-gnl~="merkezde"]{align-items:center !important; justify-content: center;}
     [data-gnl~="üstte"]{align-items: flex-start !important;}
@@ -276,7 +270,6 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
     [data-gnl~="gizle"],
     [data-mnk~="gizle"]
     {display: none;}
-
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
