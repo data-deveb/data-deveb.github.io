@@ -100,7 +100,7 @@
     }
 
     a{
-      text-decoration: none;/* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
+      text-decoration: none;  /* Bağ verilen tüm yazıların altı çizili durumunu kaldırma */
       color:#394eff;
     }
 
@@ -168,9 +168,9 @@ G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
 
 
     [data-gnl]{
-      display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
-      flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-      box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
+      display: flex;          /* Her durumda esnek görünüm tanımlama ayarı */
+      flex-wrap: wrap;        /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      box-sizing: border-box; /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
       align-items: flex-start;/* Varsayılan olarak üstte ol */
     }
     [data-gnl~="sütun"]{
