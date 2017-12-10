@@ -8,7 +8,7 @@
 	overflow-x: auto;
 }*/
 .bg{
-	background-image: url(assets/img/bg.svg),linear-gradient(#2c2171, #292070 15%);
+	background-image: url(../img/bg.svg),linear-gradient(#2c2171, #292070 15%);
 }
 .header{min-height: 72px;}
 #header{
