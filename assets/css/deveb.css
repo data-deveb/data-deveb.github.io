@@ -235,6 +235,14 @@ GS1 KAP ÖRGÜSÜ
     [data-gnl~="17g"]{flex:17} [data-gnl~="18g"]{flex:18} [data-gnl~="19g"]{flex:19} [data-gnl~="20g"]{flex:20}
     [data-gnl~="21g"]{flex:21} [data-gnl~="22g"]{flex:22} [data-gnl~="23g"]{flex:23} [data-gnl~="24g"]{flex:24}
 
+    /* Kap Örgüsü Sıraya Koyma Ayarları */
+    [data-gnl~="1nc"]{order:1}   [data-gnl~="2nc"]{order:2}   [data-gnl~="3nc"]{order:3}   [data-gnl~="4nc"]{order:4}
+    [data-gnl~="5nc"]{order:5}   [data-gnl~="6nc"]{order:6}   [data-gnl~="7nc"]{order:7}   [data-gnl~="8nc"]{order:8}
+    [data-gnl~="9nc"]{order:9}   [data-gnl~="10nc"]{order:10} [data-gnl~="11nc"]{order:11} [data-gnl~="12nc"]{order:12}
+    [data-gnl~="13nc"]{order:13} [data-gnl~="14nc"]{order:14} [data-gnl~="15nc"]{order:15} [data-gnl~="16nc"]{order:16}
+    [data-gnl~="17nc"]{order:17} [data-gnl~="18nc"]{order:18} [data-gnl~="19nc"]{order:19} [data-gnl~="20nc"]{order:20}
+    [data-gnl~="21nc"]{order:21} [data-gnl~="22nc"]{order:22} [data-gnl~="23nc"]{order:23} [data-gnl~="24nc"]{order:24}
+
     /* Konum Ayarları */
     [data-gnl~="kaymadan"]{overflow: hidden}
     [data-gnl~="yatay-kayma"]{overflow-x: auto}
@@ -318,6 +326,15 @@ S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
       [data-ufk~="17g"]{flex:17;} [data-ufk~="18g"]{flex:18;} [data-ufk~="19g"]{flex:19;} [data-ufk~="20g"]{flex:20;}
       [data-ufk~="21g"]{flex:21;} [data-ufk~="22g"]{flex:22;} [data-ufk~="23g"]{flex:23;} [data-ufk~="24g"]{flex:24;}
 
+
+      /* Kap Örgüsü Sıraya Koyma Ayarları */
+      [data-ufk~="1nc"]{order:1}   [data-ufk~="2nc"]{order:2}   [data-ufk~="3nc"]{order:3}   [data-ufk~="4nc"]{order:4}
+      [data-ufk~="5nc"]{order:5}   [data-ufk~="6nc"]{order:6}   [data-ufk~="7nc"]{order:7}   [data-ufk~="8nc"]{order:8}
+      [data-ufk~="9nc"]{order:9}   [data-ufk~="10nc"]{order:10} [data-ufk~="11nc"]{order:11} [data-ufk~="12nc"]{order:12}
+      [data-ufk~="13nc"]{order:13} [data-ufk~="14nc"]{order:14} [data-ufk~="15nc"]{order:15} [data-ufk~="16nc"]{order:16}
+      [data-ufk~="17nc"]{order:17} [data-ufk~="18nc"]{order:18} [data-ufk~="19nc"]{order:19} [data-ufk~="20nc"]{order:20}
+      [data-ufk~="21nc"]{order:21} [data-ufk~="22nc"]{order:22} [data-ufk~="23nc"]{order:23} [data-ufk~="24nc"]{order:24}
+
       /* Konum Ayarları */
       [data-ufk~="kaymadan"]{overflow: hidden;}
       [data-ufk~="yatay-kayma"]{overflow-x: auto;}
@@ -399,6 +416,14 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="13g"]{flex:13;}  [data-kçk~="14g"]{flex:14;} [data-kçk~="15g"]{flex:15;}  [data-kçk~="16g"]{flex:16;}
       [data-kçk~="17g"]{flex:17;}  [data-kçk~="18g"]{flex:18;} [data-kçk~="19g"]{flex:19;}  [data-kçk~="20g"]{flex:20;}
       [data-kçk~="21g"]{flex:21;}  [data-kçk~="22g"]{flex:22;} [data-kçk~="23g"]{flex:23;}  [data-kçk~="24g"]{flex:24;}
+
+      /* Kap Örgüsü Sıraya Koyma Ayarları */
+      [data-kçk~="1nc"]{order:1}   [data-kçk~="2nc"]{order:2}   [data-kçk~="3nc"]{order:3}   [data-kçk~="4nc"]{order:4}
+      [data-kçk~="5nc"]{order:5}   [data-kçk~="6nc"]{order:6}   [data-kçk~="7nc"]{order:7}   [data-kçk~="8nc"]{order:8}
+      [data-kçk~="9nc"]{order:9}   [data-kçk~="10nc"]{order:10} [data-kçk~="11nc"]{order:11} [data-kçk~="12nc"]{order:12}
+      [data-kçk~="13nc"]{order:13} [data-kçk~="14nc"]{order:14} [data-kçk~="15nc"]{order:15} [data-kçk~="16nc"]{order:16}
+      [data-kçk~="17nc"]{order:17} [data-kçk~="18nc"]{order:18} [data-kçk~="19nc"]{order:19} [data-kçk~="20nc"]{order:20}
+      [data-kçk~="21nc"]{order:21} [data-kçk~="22nc"]{order:22} [data-kçk~="23nc"]{order:23} [data-kçk~="24nc"]{order:24}
 
       /* Konum Ayarları */
       [data-kçk~="kaymadan"]{overflow: hidden;}
@@ -482,6 +507,14 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-ort~="17g"]{flex:17;}  [data-ort~="18g"]{flex:18;} [data-ort~="19g"]{flex:19;}  [data-ort~="20g"]{flex:20;}
       [data-ort~="21g"]{flex:21;}  [data-ort~="22g"]{flex:22;} [data-ort~="23g"]{flex:23;}  [data-ort~="24g"]{flex:24;}
 
+      /* Kap Örgüsü Sıraya Koyma Ayarları */
+      [data-ort~="1nc"]{order:1}   [data-ort~="2nc"]{order:2}   [data-ort~="3nc"]{order:3}   [data-ort~="4nc"]{order:4}
+      [data-ort~="5nc"]{order:5}   [data-ort~="6nc"]{order:6}   [data-ort~="7nc"]{order:7}   [data-ort~="8nc"]{order:8}
+      [data-ort~="9nc"]{order:9}   [data-ort~="10nc"]{order:10} [data-ort~="11nc"]{order:11} [data-ort~="12nc"]{order:12}
+      [data-ort~="13nc"]{order:13} [data-ort~="14nc"]{order:14} [data-ort~="15nc"]{order:15} [data-ort~="16nc"]{order:16}
+      [data-ort~="17nc"]{order:17} [data-ort~="18nc"]{order:18} [data-ort~="19nc"]{order:19} [data-ort~="20nc"]{order:20}
+      [data-ort~="21nc"]{order:21} [data-ort~="22nc"]{order:22} [data-ort~="23nc"]{order:23} [data-ort~="24nc"]{order:24}
+
       /* Konum Ayarları */
       [data-ort~="kaymadan"]{overflow: hidden;}
       [data-ort~="yatay-kayma"]{overflow-x: auto;}
@@ -563,6 +596,14 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk~="13g"]{flex:13;}  [data-byk~="14g"]{flex:14;} [data-byk~="15g"]{flex:15;}  [data-byk~="16g"]{flex:16;}
       [data-byk~="17g"]{flex:17;}  [data-byk~="18g"]{flex:18;} [data-byk~="19g"]{flex:19;}  [data-byk~="20g"]{flex:20;}
       [data-byk~="21g"]{flex:21;}  [data-byk~="22g"]{flex:22;} [data-byk~="23g"]{flex:23;}  [data-byk~="24g"]{flex:24;}
+
+      /* Kap Örgüsü Sıraya Koyma Ayarları */
+      [data-byk~="1nc"]{order:1}   [data-byk~="2nc"]{order:2}   [data-byk~="3nc"]{order:3}   [data-byk~="4nc"]{order:4}
+      [data-byk~="5nc"]{order:5}   [data-byk~="6nc"]{order:6}   [data-byk~="7nc"]{order:7}   [data-byk~="8nc"]{order:8}
+      [data-byk~="9nc"]{order:9}   [data-byk~="10nc"]{order:10} [data-byk~="11nc"]{order:11} [data-byk~="12nc"]{order:12}
+      [data-byk~="13nc"]{order:13} [data-byk~="14nc"]{order:14} [data-byk~="15nc"]{order:15} [data-byk~="16nc"]{order:16}
+      [data-byk~="17nc"]{order:17} [data-byk~="18nc"]{order:18} [data-byk~="19nc"]{order:19} [data-byk~="20nc"]{order:20}
+      [data-byk~="21nc"]{order:21} [data-byk~="22nc"]{order:22} [data-byk~="23nc"]{order:23} [data-byk~="24nc"]{order:24}
 
       /* Konum Ayarları */
       [data-byk~="kaymadan"]{overflow: hidden;}
@@ -646,6 +687,14 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-kcm~="17g"]{flex:17;}  [data-kcm~="18g"]{flex:18;} [data-kcm~="19g"]{flex:19;}  [data-kcm~="20g"]{flex:20;}
       [data-kcm~="21g"]{flex:21;}  [data-kcm~="22g"]{flex:22;} [data-kcm~="23g"]{flex:23;}  [data-kcm~="24g"]{flex:24;}
 
+      /* Kap Örgüsü Sıraya Koyma Ayarları */
+      [data-kcm~="1nc"]{order:1}   [data-kcm~="2nc"]{order:2}   [data-kcm~="3nc"]{order:3}   [data-kcm~="4nc"]{order:4}
+      [data-kcm~="5nc"]{order:5}   [data-kcm~="6nc"]{order:6}   [data-kcm~="7nc"]{order:7}   [data-kcm~="8nc"]{order:8}
+      [data-kcm~="9nc"]{order:9}   [data-kcm~="10nc"]{order:10} [data-kcm~="11nc"]{order:11} [data-kcm~="12nc"]{order:12}
+      [data-kcm~="13nc"]{order:13} [data-kcm~="14nc"]{order:14} [data-kcm~="15nc"]{order:15} [data-kcm~="16nc"]{order:16}
+      [data-kcm~="17nc"]{order:17} [data-kcm~="18nc"]{order:18} [data-kcm~="19nc"]{order:19} [data-kcm~="20nc"]{order:20}
+      [data-kcm~="21nc"]{order:21} [data-kcm~="22nc"]{order:22} [data-kcm~="23nc"]{order:23} [data-kcm~="24nc"]{order:24}
+
       /* Konum Ayarları */
       [data-kcm~="kaymadan"]{overflow: hidden;}
       [data-kcm~="yatay-kayma"]{overflow-x: auto;}
@@ -727,6 +776,14 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="13g"]{flex:13;}  [data-dev~="14g"]{flex:14;} [data-dev~="15g"]{flex:15;}  [data-dev~="16g"]{flex:16;}
       [data-dev~="17g"]{flex:17;}  [data-dev~="18g"]{flex:18;} [data-dev~="19g"]{flex:19;}  [data-dev~="20g"]{flex:20;}
       [data-dev~="21g"]{flex:21;}  [data-dev~="22g"]{flex:22;} [data-dev~="23g"]{flex:23;}  [data-dev~="24g"]{flex:24;}
+
+      /* Kap Örgüsü Sıraya Koyma Ayarları */
+      [data-dev~="1nc"]{order:1}   [data-dev~="2nc"]{order:2}   [data-dev~="3nc"]{order:3}   [data-dev~="4nc"]{order:4}
+      [data-dev~="5nc"]{order:5}   [data-dev~="6nc"]{order:6}   [data-dev~="7nc"]{order:7}   [data-dev~="8nc"]{order:8}
+      [data-dev~="9nc"]{order:9}   [data-dev~="10nc"]{order:10} [data-dev~="11nc"]{order:11} [data-dev~="12nc"]{order:12}
+      [data-dev~="13nc"]{order:13} [data-dev~="14nc"]{order:14} [data-dev~="15nc"]{order:15} [data-dev~="16nc"]{order:16}
+      [data-dev~="17nc"]{order:17} [data-dev~="18nc"]{order:18} [data-dev~="19nc"]{order:19} [data-dev~="20nc"]{order:20}
+      [data-dev~="21nc"]{order:21} [data-dev~="22nc"]{order:22} [data-dev~="23nc"]{order:23} [data-dev~="24nc"]{order:24}
 
       [data-gnl~="kaplama"],[data-dev~="kaplama"],
       [data-kcm~="büyükleri-kaplama"],[data-kcm~="büyükleriyle-kaplama"],
