@@ -7,6 +7,9 @@
 	width: 100%;
 	overflow-x: auto;
 }*/
+body{
+	background-color: #f8f8f8;
+}
 .bg{
 	background-image: url(../img/bg.png),linear-gradient(#2c2171, #292070 15%);
 }
