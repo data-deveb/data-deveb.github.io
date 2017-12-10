@@ -59,11 +59,11 @@
     ÖZELLEŞTİRİLEBİLİR AYARLAR
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     :root{
-      --yazı-biçimi:'Roboto', sans-serif;
-      --yazı-boyutu:15px;
-      --yazı-rengi:#333;
+      --yazı-biçimi: 'Roboto', sans-serif;
+      --yazı-boyutu: 15px;
+      --yazı-rengi: #333;
 
-      --par:24;--parça:24;    /* Kap örgüsü varsayılan genişlik */
+      --par: 24; --parça: 24;    /* Kap örgüsü varsayılan genişlik */
     }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
