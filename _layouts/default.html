@@ -9,13 +9,15 @@
   </header>
   <div data-gnl="1g">
     <div data-gnl="24 24p" data-kçk="4 24p">{% include icerik.html %}</div>
-    <div data-gnl="24 24p" data-kçk="20 24p">
+    <div data-gnl="24 24p oluk" data-kçk="20 24p">
       {% if page.title %}
       <div data-gnl="1 1p" class="sayfa-başlığı">
         <h1 data-gnl="23 24p ortada ortada-ol">{{ page.title }}</h1>
       </div>
       {% endif %}
-      {{ content }}
+      <div data-gnl="1 1p">
+        {{ content }}
+      </div>
     </div>
   </div>
   <footer data-gnl="24">
