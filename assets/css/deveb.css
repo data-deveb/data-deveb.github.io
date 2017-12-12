@@ -1205,6 +1205,71 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 [data-resim~="yuvarlak-3"]{border-radius:10px;}
 
 
+
+/* ==========================================================================
+    SEKME ÖRGÜSÜ s0.1
+    Sadece css yöntemiyle kurulmuş sekme örgüsü
+----------------------------------------------------------------------------- */
+[data-sekme]{
+  display: flex;
+  flex-flow: row wrap;
+}
+[data-sekme] > input{
+  display:none;
+}
+
+[data-sekme] > label{
+  box-sizing: border-box;
+  z-index: 2;
+  /* özelleştirme +() */
+  background: #5c51a1;
+  color:#fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: background ease 0.6s;
+  transition: background ease 0.6s;
+}
+[data-sekme] > input:checked + label{
+  /* özelleştirme +() */
+  background: #2c2171;
+  color:#fff;
+}
+[data-sekme] > label{
+  -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+      order: 1;
+  display:block;
+  /* özelleştirme +() */
+  margin-right: 0.2rem;
+}
+[data-sekme] > input + label + div{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  opacity: 0;
+  order:2;
+}
+[data-sekme] > input:checked + label + div{
+  position: relative;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+[data-sekme~="sağda"]{
+  justify-content: flex-end;
+}
+[data-sekme~="altta"]{
+  flex-wrap: wrap-reverse;
+}
+[data-sekme~="sağda"][data-sekme~="altta"]{
+  justify-content: flex-end;
+  flex-wrap: wrap-reverse;
+}
+
 /* SÖZCÜKLER VE ANLAMLARI */
 /* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
 /* TEKER: Tek, yalnız, sadece (bu sözcüklerin birleşimidir) */
