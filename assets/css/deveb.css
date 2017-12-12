@@ -1283,6 +1283,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   top:0;
 }
 [data-sekme~="sütun"] > label{
+  margin:0;
   margin-bottom:5px;
 }
 [data-sekme~="sütun"][data-sekme~="sütun"] > div {
