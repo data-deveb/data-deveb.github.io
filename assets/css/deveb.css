@@ -1213,6 +1213,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 [data-sekme]{
   display: flex;
   flex-flow: row wrap;
+  position: relative;
 }
 [data-sekme] > input{
   display:none;
@@ -1247,10 +1248,10 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   display: flex;
   width: 100%;
   position: absolute;
-  left:0;
   z-index: -100;
   opacity: 0;
   order:2;
+  left:0;
 }
 [data-sekme] > input:checked + label + div{
   position: relative;
@@ -1270,6 +1271,30 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   justify-content: flex-end;
   flex-wrap: wrap-reverse;
 }
+[data-sekme~="sütun"]{
+  flex-direction: column;
+}
+[data-sekme~="sütun"][data-sekme~="sağda"]{
+  flex-wrap: wrap-reverse;
+}
+[data-sekme~="sütun"][data-sekme~="sütun"][data-sekme~="sağda"] > div{
+  right:auto;
+  left:0;
+  top:0;
+}
+[data-sekme~="sütun"] > label{
+  width:20%;
+}
+[data-sekme~="sütun"][data-sekme~="sütun"] > div {
+  display: flex;
+  position: absolute;
+  right: 0;
+  left: auto;
+}
+[data-sekme~="sütun"][data-sekme~="sütun"] > input:checked + label + div {
+  position: absolute;
+}
+
 
 /* SÖZCÜKLER VE ANLAMLARI */
 /* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
