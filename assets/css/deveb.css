@@ -336,7 +336,7 @@ S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
       [data-ufk~="21nc"]{order:21} [data-ufk~="22nc"]{order:22} [data-ufk~="23nc"]{order:23} [data-ufk~="24nc"]{order:24}
 
       /* Konum Ayarları */
-      [data-ufk~="kaymadan"]{overflow: hidden;}
+      [data-ufk~="kaymadan"]{overflow-x: hidden;}
       [data-ufk~="yatay-kayma"]{overflow-x: auto;}
       [data-ufk~="dürmeden"]{flex-wrap: nowrap;}
 
@@ -347,6 +347,8 @@ S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
       [data-ufk~="solda"]{justify-content: flex-start;}
       [data-ufk~="ortada"]{justify-content:center;}
       [data-ufk~="sağda"]{justify-content: flex-end;}
+      [data-ufk~="ger"]{justify-content: space-between;}
+      [data-ufk~="yay"]{justify-content: space-around;}
 
       [data-ufk~="merkezde"]{align-items:center; justify-content: center;}
       [data-ufk~="üstte"]{align-items: flex-start;}
@@ -359,8 +361,6 @@ S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
       [data-ufk~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
       [data-ufk~="solda-ol"]{margin-right:auto; align-self:flex-start;}
 
-      [data-ufk~="ger"]{justify-content: space-between;}
-      [data-ufk~="yay"]{justify-content: space-around;}
       [data-ufk~="uzat"]{align-items: stretch;}
       [data-ufk~="uzun-ol"]{align-self: stretch;}
 
