@@ -1219,7 +1219,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   display:none;
 }
 
-[data-sekme] > label{
+[data-sekme] label{
   box-sizing: border-box;
   z-index: 2;
   /* özelleştirme +() */
@@ -1231,11 +1231,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   -webkit-transition: background ease 0.6s;
   transition: background ease 0.6s;
 }
-[data-sekme] > input:checked + label{
-  /* özelleştirme +() */
-  background: #2c2171;
-  color:#fff;
-}
+
 [data-sekme] > label{
   -webkit-box-ordinal-group: 1;
     -ms-flex-order: 1;
@@ -1271,29 +1267,61 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   justify-content: flex-end;
   flex-wrap: wrap-reverse;
 }
-[data-sekme~="sütun"]{
-  flex-direction: column;
+[data-sekme~="yan"] > .sekme-listesi{
+  align-content: flex-start;
 }
-[data-sekme~="sütun"][data-sekme~="sağda"]{
-  flex-wrap: wrap-reverse;
+[data-sekme~="yan"] > .sekme-listesi > label{
+  margin:0 10px 10px 10px;
+  width:100%;
 }
-[data-sekme~="sütun"][data-sekme~="sütun"][data-sekme~="sağda"] > div{
-  right:auto;
-  left:0;
-  top:0;
+[data-sekme] > input:checked + label,
+[data-sekme~="yan"] > input:nth-child(1):checked ~ .sekme-listesi > label:nth-child(1),
+[data-sekme~="yan"] > input:nth-child(2):checked ~ .sekme-listesi > label:nth-child(2),
+[data-sekme~="yan"] > input:nth-child(3):checked ~ .sekme-listesi > label:nth-child(3),
+[data-sekme~="yan"] > input:nth-child(4):checked ~ .sekme-listesi > label:nth-child(4),
+[data-sekme~="yan"] > input:nth-child(5):checked ~ .sekme-listesi > label:nth-child(5),
+[data-sekme~="yan"] > input:nth-child(6):checked ~ .sekme-listesi > label:nth-child(6),
+[data-sekme~="yan"] > input:nth-child(7):checked ~ .sekme-listesi > label:nth-child(7),
+[data-sekme~="yan"] > input:nth-child(8):checked ~ .sekme-listesi > label:nth-child(8),
+[data-sekme~="yan"] > input:nth-child(9):checked ~ .sekme-listesi > label:nth-child(9),
+[data-sekme~="yan"] > input:nth-child(10):checked ~ .sekme-listesi > label:nth-child(10),
+[data-sekme~="yan"] > input:nth-child(11):checked ~ .sekme-listesi > label:nth-child(11),
+[data-sekme~="yan"] > input:nth-child(12):checked ~ .sekme-listesi > label:nth-child(12){
+  /* özelleştirme +() */
+  background: #2c2171;
+  color:#fff;
 }
-[data-sekme~="sütun"] > label{
-  margin:0;
-  margin-bottom:5px;
-}
-[data-sekme~="sütun"][data-sekme~="sütun"] > div {
-  display: flex;
+[data-sekme~="yan"] > .sekme-içeriği > div{
   position: absolute;
-  right: 0;
-  left: auto;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  /* özelleştirme +() */
+  margin:0 10px 10px 10px;
 }
-[data-sekme~="sütun"][data-sekme~="sütun"] > input:checked + label + div {
-  position: absolute;
+[data-sekme~="yan"] > input:nth-child(1):checked ~ .sekme-içeriği > div:nth-child(1),
+[data-sekme~="yan"] > input:nth-child(2):checked ~ .sekme-içeriği > div:nth-child(2),
+[data-sekme~="yan"] > input:nth-child(3):checked ~ .sekme-içeriği > div:nth-child(3),
+[data-sekme~="yan"] > input:nth-child(4):checked ~ .sekme-içeriği > div:nth-child(4),
+[data-sekme~="yan"] > input:nth-child(5):checked ~ .sekme-içeriği > div:nth-child(5),
+[data-sekme~="yan"] > input:nth-child(6):checked ~ .sekme-içeriği > div:nth-child(6),
+[data-sekme~="yan"] > input:nth-child(7):checked ~ .sekme-içeriği > div:nth-child(7),
+[data-sekme~="yan"] > input:nth-child(8):checked ~ .sekme-içeriği > div:nth-child(8),
+[data-sekme~="yan"] > input:nth-child(9):checked ~ .sekme-içeriği > div:nth-child(9),
+[data-sekme~="yan"] > input:nth-child(10):checked ~ .sekme-içeriği > div:nth-child(10),
+[data-sekme~="yan"] > input:nth-child(11):checked ~ .sekme-içeriği > div:nth-child(11),
+[data-sekme~="yan"] > input:nth-child(12):checked ~ .sekme-içeriği > div:nth-child(12){
+    width:100%;
+    position: relative;
+    opacity: 1;
+    height: auto;
+  /* özelleştirme +() */
+  margin:0 10px 10px 10px;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+[data-sekme~="yan"][data-sekme~="sağda"]{
+  flex-direction: row-reverse;
 }
 
 
