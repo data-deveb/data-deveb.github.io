@@ -1,68 +1,33 @@
 @charset "UTF-8";
-
 /*
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+  * [DEVEB 0.104] | (deveb.css) | (https://data-deveb.github.io)
 
-    [DEVEB 0.1]
-    dosya :: "deveb.css"
-    site  :: "https://data-deveb.github.io"
+  * İMLER
+  * G00 | Kap Örgüsü
+      G01 | Aralık verme
+      G02 | Oluk açma
+      G03 | Parça düzeni
+      G04 | Genleşme düzeni
+      G05 | Kaplama düzeni
 
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
+  * ??? | Ekran Örgüsü
+      S00 | Genel
+              [Genişleyerek | Sadece  | Daralarak]
+      Minik   [S010         | S011    | S012     ]
+      Ufak    [S020         | S021    | S022     ]
+      Küçük   [S030         | S031    | S032     ]
+      Orta    [S040         | S041    | S042     ]
+      Büyük   [S050         | S051    | S052     ]
+      Kocaman [S060         | S061    | S062     ]
+      Dev     [S070         | S071    | S072     ]
 
-    TANIMLAR
-    beri: CSS > margin          		dolgu: CSS > padding
-
-    EKRAN ÖLÇEKLERİ
-    dev: (dev)
-    kcm: (k)o(c)a(m)an
-    byk: (b)ü(y)ü(k)
-    ort: (o)(r)(t)a
-    kçk: (k)ü(ç)ü(k)
-    ufk: (u)(f)a(k)
-    mnk: (m)i(n)i(k)
-    gnl: (g)e(n)e(l)
-
-    p: (p)arça
-
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
-
-    • VARSAYILAN
-
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
-
-    • KAP ÖRGÜSÜ        -> Satır-imi: G00
-      • ARALIK VERME    -> Satır-imi: G01
-      • OLUK AÇMA       -> Satır-imi: G02
-      • PARÇALAMA (p)   -> Satır-imi: G03
-      • ORANLAMA (o)    -> Satır-imi: G04
-      • KAPLAMALAR      -> Satır-imi: G05
-
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
-
-    • EKRAN YÖNETİMİ    -> Satır-imi: yok
-      • GENEL           -> Satır-imi: S00
-      ◘ BÜYÜKLERİYLE ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ BUNU ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘      ◘ KÜÇÜKLERİYLE ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-      • MİNİK » ∞       -> Satır-imi: S010      • MİNİK     -> Satır-imi: S011      • MİNİK » 0     -> Satır-imi: S012
-      • UFAK » ∞        -> Satır-imi: S020      • UFAK      -> Satır-imi: S021      • UFAK » 0      -> Satır-imi: S022
-      • KÜÇÜK » ∞       -> Satır-imi: S030      • KÜÇÜK     -> Satır-imi: S031      • KÜÇÜK » 0     -> Satır-imi: S032
-      • ORTA » ∞        -> Satır-imi: S040      • ORTA      -> Satır-imi: S041      • ORTA » 0      -> Satır-imi: S042
-      • BÜYÜK » ∞       -> Satır-imi: S050      • BÜYÜK     -> Satır-imi: S051      • BÜYÜK » 0     -> Satır-imi: S052
-      • KOCAMAN » ∞     -> Satır-imi: S060      • KOCAMAN   -> Satır-imi: S061      • KOCAMAN » 0   -> Satır-imi: S062
-      • DEV » ∞         -> Satır-imi: S070      • DEV       -> Satır-imi: S071      • DEV » 0       -> Satır-imi: S072
-
- ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░ ░
-
-    • RENK ÖRGÜSÜ       -> Satır-imi: yok
+  * ??? | Renk Örgüsü
 */
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ÖZELLEŞTİRİLEBİLİR AYARLAR
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     :root{
-      --yazı-biçimi: 'Roboto', sans-serif;
-      --yazı-boyutu: 15px;
-      --yazı-rengi: #333;
-
       --aralık: 5px;
       --oluk: 5px;
 
@@ -73,30 +38,27 @@
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     AYARLAR & TEMİZLEME
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-    /* Varsayılan değiştirgeleri temizleme eylemi. */
-    *{
-      margin: 0;    /* Tüm tarayıcılar için her şeyin beri (margin) değerini sıfırlama. */
-      padding: 0;   /* Tüm tarayıcılar için her şeyin dolgu (padding) değerini sıfırlama. */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
     }
 
     html {
       -ms-text-size-adjust: 100%;     /* Metin boyutlarında ayarlamaları doğallaştırma. */
-      -webkit-text-size-adjust: 100%; /* " */
-    }
-
-    body{
-      font-family: var(--yazı-biçimi);  /* Her yerde varsayılan yazı biçimi */
-        font-size: var(--yazı-boyutu);  /* Her yerde varsayılan yazı boyutu */
-        font-weight: 300;
+      -webkit-text-size-adjust: 100%;
+      font-family: 'Roboto', sans-serif;
+        font-size: 14px;
         color:#333;
     }
 
-    article,aside,details,
-    figcaption,figure,footer,
-    header,hgroup,section,
-    menu,main,nav{
-      display: block   /* Varsayılan gösterim ayarı */
+    body{
+      margin: 0
+    }
+
+    article,aside,details,figcaption,figure,
+    footer,header,hgroup,section,menu,main,nav{
+      display: block
     }
 
     a{
@@ -112,30 +74,33 @@
     h1, h2, h3, h4, h5, h6{
       width: 100%;
       display: block;
-      font-weight: bold;
       -webkit-margin-before: 0;
         -webkit-margin-after: 0;
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
-      color:#333;
       margin: 2em 0 0.5em 0;
+      color:#333;
+      font-weight: bold;
     }
-    * > h1:first-child,
-    * > h2:first-child,
-    * > h3:first-child,
-    * > h4:first-child,
-    * > h5:first-child,
-    * > h6:first-child,
-    [data-metin~="ilk"] {margin-top:0}
-    h1{font-size:1.5em}
-      h2{font-size:1.2em}
-        h3{font-size:1.1em}
+    div > h1:first-child,
+    div > h2:first-child,
+    div > h3:first-child,
+    div > h4:first-child,
+    div > h5:first-child,
+    div > h6:first-child{margin-top:0}
+    h1{font-size:1.5em;}
+      h2{font-size:1.2em;}
+        h3{font-size:1.1em;}
           h4{font-size:1.0em; font-weight: 500; color:#444;}
             h5{font-size:1.0em; font-weight: 500; color: #666;}
               h6{font-size:1.0em; font-weight: 300; color: #888;}
-              h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6{
-                margin-top: 0
-              }
+    h1 + h2,
+    h2 + h3,
+    h3 + h4,
+    h4 + h5,
+    h5 + h6{
+      margin-top: 0
+    }
     img {
       border: 0;  /* Kenarlıkları sıfırlama */
     }
@@ -166,7 +131,6 @@ GS1 KAP ÖRGÜSÜ
     [data-gnl]{
       display: flex;          /* Her durumda esnek görünüm tanımlama ayarı */
       flex-wrap: wrap;        /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-      box-sizing: border-box; /* Genişliklerin başka etkenlerle etkilenmesini temizleme */
       align-items: flex-start;/* Varsayılan olarak üstte ol */
     }
     [data-gnl~="sütun"]{
@@ -290,7 +254,6 @@ S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
       [data-ufk]{
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
         flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
         align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
 
@@ -381,7 +344,6 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk]{
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
         flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
         align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
 
@@ -471,7 +433,6 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-ort]{
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
         flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
         align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
 
@@ -561,7 +522,6 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk]{
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
         flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
         align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
 
@@ -651,7 +611,6 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-kcm]{
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
         flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
         align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
 
@@ -741,7 +700,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev]{
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
         flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        box-sizing: border-box;/* Genişliklerin başka etkenlerle etkilenmesini temizleme */
         align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
 
@@ -1220,7 +1178,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 }
 
 [data-sekme] label{
-  box-sizing: border-box;
   z-index: 2;
   /* özelleştirme +() */
   background: #5c51a1;
