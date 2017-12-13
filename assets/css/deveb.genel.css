@@ -299,17 +299,17 @@ ul.liste-temiz li{
 	-ms-animation:     havada 7s infinite;}
 
 	@-webkit-keyframes havada {
-		0% {margin-bottom:15px;}
-		50% {margin-bottom:0px;}
-		100% {margin-bottom:15px;}
+		0% {margin-top:60px;}
+		50% {margin-top:0px;}
+		100% {margin-top:60px;}
 	}
 	@-moz-keyframes havada {
-		0% {margin-bottom:15px;}
-		50% {margin-bottom:0px;}
-		100% {margin-bottom:15px;}
+		0% {margin-top:60px;}
+		50% {margin-top:0px;}
+		100% {margin-top:60px;}
 	}
 	@-ms-keyframes havada {
-		0% {margin-bottom:15px;}
-		50% {margin-bottom:0px;}
-		100% {margin-bottom:15px;}
+		0% {margin-top:60px;}
+		50% {margin-top:0px;}
+		100% {margin-top:60px;}
 	}
