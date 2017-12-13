@@ -117,7 +117,9 @@ font-size: 30px;
 
 
 
-
+.sol-bölge{
+	background: #f1f1f7;
+}
 
 a.logo{
 	font-family: 'Comfortaa', cursive;
