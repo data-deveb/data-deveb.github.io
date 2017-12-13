@@ -7,9 +7,9 @@
   <header data-gnl="24" class="header">
   {% include header.html %}
   </header>
-  <div data-gnl="1g uzat oluk-çevre">
-    <div class="sol-bölge" data-gnl="24 24p" data-kçk="4 24p">{% include icerik.html %}</div>
-    <div data-gnl="24 24p oluk" data-kçk="20 24p">
+  <div data-gnl="1g uzat oluk-çevre" style="min-height:1px;">
+    <div class="sol-bölge" data-gnl="24 24p" data-kçk="4 24p" style="height:100%; overflow:auto;">{% include icerik.html %}</div>
+    <div data-gnl="24 24p oluk" data-kçk="20 24p" style="height:100%; overflow:auto;">
       {% if page.title %}
       <div data-gnl="1 1p" class="sayfa-başlığı">
         <h1 data-gnl="23 24p ortada ortada-ol">{{ page.title }}</h1>
