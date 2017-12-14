@@ -41,7 +41,8 @@
     *,
     *::before,
     *::after {
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
     }
 
     html {
@@ -129,14 +130,25 @@ GS1 KAP ÖRGÜSÜ
 */
 
     [data-gnl]{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;          /* Her durumda esnek görünüm tanımlama ayarı */
-      flex-wrap: wrap;        /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-      align-items: flex-start;/* Varsayılan olarak üstte ol */
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;        /* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;/* Varsayılan olarak üstte ol */
     }
     [data-gnl~="sütun"]{
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: stretch;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
     }
     [data-gnl~="sığdır"]{
       min-height:1px; height:100%; max-height:100vh;  overflow-y:auto;
@@ -164,13 +176,15 @@ GS1 KAP ÖRGÜSÜ
 
     /* Kap Örgüsü Parça Hesaplama */
     [data-gnl]{
-      flex-basis: calc(100% / var(--par) * var(--parça));
+      -ms-flex-preferred-size: calc(100% / var(--par) * var(--parça));
+          flex-basis: calc(100% / var(--par) * var(--parça));
       max-width:  calc(100% / var(--par) * var(--parça));
     }
     /* Kap Örgüsü Ek Etkiler */
       [data-gnl~="aralık"] > [data-gnl]{
         margin: var(--aralık);
-        flex-basis: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
+        -ms-flex-preferred-size: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
+            flex-basis: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
         max-width:  calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
       }
       [data-gnl~="oluk-çevre"] > [data-gnl]{
@@ -185,7 +199,8 @@ GS1 KAP ÖRGÜSÜ
       }
     /* Esnek Kap Örgüsü Genişliği */
     [data-gnl~="0"]{
-      flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto;
       max-width: auto;
       width: auto;
     }
@@ -195,52 +210,52 @@ GS1 KAP ÖRGÜSÜ
     }
 
     /* Kap Örgüsü Oran Ayarları */
-    [data-gnl~="1g"]{flex:1}   [data-gnl~="2g"]{flex:2}   [data-gnl~="3g"]{flex:3}   [data-gnl~="4g"]{flex:4}
-    [data-gnl~="5g"]{flex:5}   [data-gnl~="6g"]{flex:6}   [data-gnl~="7g"]{flex:7}   [data-gnl~="8g"]{flex:8}
-    [data-gnl~="9g"]{flex:9}   [data-gnl~="10g"]{flex:10} [data-gnl~="11g"]{flex:11} [data-gnl~="12g"]{flex:12}
-    [data-gnl~="13g"]{flex:13} [data-gnl~="14g"]{flex:14} [data-gnl~="15g"]{flex:15} [data-gnl~="16g"]{flex:16}
-    [data-gnl~="17g"]{flex:17} [data-gnl~="18g"]{flex:18} [data-gnl~="19g"]{flex:19} [data-gnl~="20g"]{flex:20}
-    [data-gnl~="21g"]{flex:21} [data-gnl~="22g"]{flex:22} [data-gnl~="23g"]{flex:23} [data-gnl~="24g"]{flex:24}
+    [data-gnl~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1}   [data-gnl~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2}   [data-gnl~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3}   [data-gnl~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4}
+    [data-gnl~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5}   [data-gnl~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6}   [data-gnl~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7}   [data-gnl~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8}
+    [data-gnl~="9g"]{-webkit-box-flex:9;-ms-flex:9;flex:9}   [data-gnl~="10g"]{-webkit-box-flex:10;-ms-flex:10;flex:10} [data-gnl~="11g"]{-webkit-box-flex:11;-ms-flex:11;flex:11} [data-gnl~="12g"]{-webkit-box-flex:12;-ms-flex:12;flex:12}
+    [data-gnl~="13g"]{-webkit-box-flex:13;-ms-flex:13;flex:13} [data-gnl~="14g"]{-webkit-box-flex:14;-ms-flex:14;flex:14} [data-gnl~="15g"]{-webkit-box-flex:15;-ms-flex:15;flex:15} [data-gnl~="16g"]{-webkit-box-flex:16;-ms-flex:16;flex:16}
+    [data-gnl~="17g"]{-webkit-box-flex:17;-ms-flex:17;flex:17} [data-gnl~="18g"]{-webkit-box-flex:18;-ms-flex:18;flex:18} [data-gnl~="19g"]{-webkit-box-flex:19;-ms-flex:19;flex:19} [data-gnl~="20g"]{-webkit-box-flex:20;-ms-flex:20;flex:20}
+    [data-gnl~="21g"]{-webkit-box-flex:21;-ms-flex:21;flex:21} [data-gnl~="22g"]{-webkit-box-flex:22;-ms-flex:22;flex:22} [data-gnl~="23g"]{-webkit-box-flex:23;-ms-flex:23;flex:23} [data-gnl~="24g"]{-webkit-box-flex:24;-ms-flex:24;flex:24}
 
     /* Kap Örgüsü Sıraya Koyma Ayarları */
-    [data-gnl~="1nc"]{order:1}   [data-gnl~="2nc"]{order:2}   [data-gnl~="3nc"]{order:3}   [data-gnl~="4nc"]{order:4}
-    [data-gnl~="5nc"]{order:5}   [data-gnl~="6nc"]{order:6}   [data-gnl~="7nc"]{order:7}   [data-gnl~="8nc"]{order:8}
-    [data-gnl~="9nc"]{order:9}   [data-gnl~="10nc"]{order:10} [data-gnl~="11nc"]{order:11} [data-gnl~="12nc"]{order:12}
-    [data-gnl~="13nc"]{order:13} [data-gnl~="14nc"]{order:14} [data-gnl~="15nc"]{order:15} [data-gnl~="16nc"]{order:16}
-    [data-gnl~="17nc"]{order:17} [data-gnl~="18nc"]{order:18} [data-gnl~="19nc"]{order:19} [data-gnl~="20nc"]{order:20}
-    [data-gnl~="21nc"]{order:21} [data-gnl~="22nc"]{order:22} [data-gnl~="23nc"]{order:23} [data-gnl~="24nc"]{order:24}
+    [data-gnl~="1nc"]{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}   [data-gnl~="2nc"]{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}   [data-gnl~="3nc"]{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}   [data-gnl~="4nc"]{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
+    [data-gnl~="5nc"]{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}   [data-gnl~="6nc"]{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}   [data-gnl~="7nc"]{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}   [data-gnl~="8nc"]{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}
+    [data-gnl~="9nc"]{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}   [data-gnl~="10nc"]{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10} [data-gnl~="11nc"]{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11} [data-gnl~="12nc"]{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}
+    [data-gnl~="13nc"]{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13} [data-gnl~="14nc"]{-webkit-box-ordinal-group:15;-ms-flex-order:14;order:14} [data-gnl~="15nc"]{-webkit-box-ordinal-group:16;-ms-flex-order:15;order:15} [data-gnl~="16nc"]{-webkit-box-ordinal-group:17;-ms-flex-order:16;order:16}
+    [data-gnl~="17nc"]{-webkit-box-ordinal-group:18;-ms-flex-order:17;order:17} [data-gnl~="18nc"]{-webkit-box-ordinal-group:19;-ms-flex-order:18;order:18} [data-gnl~="19nc"]{-webkit-box-ordinal-group:20;-ms-flex-order:19;order:19} [data-gnl~="20nc"]{-webkit-box-ordinal-group:21;-ms-flex-order:20;order:20}
+    [data-gnl~="21nc"]{-webkit-box-ordinal-group:22;-ms-flex-order:21;order:21} [data-gnl~="22nc"]{-webkit-box-ordinal-group:23;-ms-flex-order:22;order:22} [data-gnl~="23nc"]{-webkit-box-ordinal-group:24;-ms-flex-order:23;order:23} [data-gnl~="24nc"]{-webkit-box-ordinal-group:25;-ms-flex-order:24;order:24}
 
     /* Konum Ayarları */
     [data-gnl~="kaymadan"]{overflow: hidden}
     [data-gnl~="yatay-kayma"]{overflow-x: auto}
-    [data-gnl~="dürmeden"]{flex-wrap: nowrap}
+    [data-gnl~="dürmeden"]{-ms-flex-wrap: nowrap;flex-wrap: nowrap}
 
-    [data-gnl~="ters-dürme"]{flex-wrap: wrap-reverse}
-    [data-gnl~="ters-satır"]{flex-direction: row-reverse}
-    [data-gnl~="ters-sütun"]{flex-direction: column-reverse}
+    [data-gnl~="ters-dürme"]{-ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse}
+    [data-gnl~="ters-satır"]{-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse}
+    [data-gnl~="ters-sütun"]{-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse}
 
-    [data-gnl~="solda"]{justify-content: flex-start}
-    [data-gnl~="ortada"]{justify-content:center}
-    [data-gnl~="sağda"]{justify-content: flex-end}
+    [data-gnl~="solda"]{-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start}
+    [data-gnl~="ortada"]{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+    [data-gnl~="sağda"]{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end}
 
-    [data-gnl~="merkezde"]{align-items:center !important; justify-content: center;}
-    [data-gnl~="üstte"]{align-items: flex-start !important;}
-    [data-gnl~="göbekte"]{align-items: center !important;}
-    [data-gnl~="altta"]{align-items: flex-end !important;}
-    [data-gnl~="üstte-ol"]{align-self: flex-start !important;}
-    [data-gnl~="göbekte-ol"]{align-self: center !important;}
+    [data-gnl~="merkezde"]{-webkit-box-align:center !important;-ms-flex-align:center !important;align-items:center !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+    [data-gnl~="üstte"]{-webkit-box-align: start !important;-ms-flex-align: start !important;align-items: flex-start !important;}
+    [data-gnl~="göbekte"]{-webkit-box-align: center !important;-ms-flex-align: center !important;align-items: center !important;}
+    [data-gnl~="altta"]{-webkit-box-align: end !important;-ms-flex-align: end !important;align-items: flex-end !important;}
+    [data-gnl~="üstte-ol"]{-ms-flex-item-align: start !important;align-self: flex-start !important;}
+    [data-gnl~="göbekte-ol"]{-ms-flex-item-align: center !important;align-self: center !important;}
     [data-gnl~="altta-ol"]{margin-top:auto;}
-    [data-gnl~="sağda-ol"]{margin-left:auto; align-self:flex-end;}
-    [data-gnl~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
-    [data-gnl~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+    [data-gnl~="sağda-ol"]{margin-left:auto; -ms-flex-item-align:end; align-self:flex-end;}
+    [data-gnl~="ortada-ol"]{margin-left:auto; margin-right:auto; -ms-flex-item-align:center; align-self:center;}
+    [data-gnl~="solda-ol"]{margin-right:auto; -ms-flex-item-align:start; align-self:flex-start;}
 
-    [data-gnl~="ger"]{justify-content: space-between;}
-    [data-gnl~="yay"]{justify-content: space-around;}
-    [data-gnl~="uzat"]{align-items: stretch !important;}
-    [data-gnl~="uzun-ol"]{align-self: stretch;}
+    [data-gnl~="ger"]{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+    [data-gnl~="yay"]{-ms-flex-pack: distribute;justify-content: space-around;}
+    [data-gnl~="uzat"]{-webkit-box-align: stretch !important;-ms-flex-align: stretch !important;align-items: stretch !important;}
+    [data-gnl~="uzun-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
 
-    [data-gnl~="satırda"]{align-items: baseline !important;}
-    [data-gnl~="satırda-ol"]{align-self: baseline;}
+    [data-gnl~="satırda"]{-webkit-box-align: baseline !important;-ms-flex-align: baseline !important;align-items: baseline !important;}
+    [data-gnl~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
     [data-gnl~="gizle"],
     [data-mnk~="gizle"]
@@ -255,9 +270,14 @@ S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
       }
 
       [data-ufk]{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
-        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        align-items: flex-start;/* Varsayılan olarak üstte ol */
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-ufk~="sığdır"]{
         min-height:1px; height:100%; max-height:100vh;  overflow-y:auto;
@@ -277,63 +297,65 @@ S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
       [data-ufk~="21p"]{--par:21;} [data-ufk~="22p"]{--par:22;} [data-ufk~="23p"]{--par:23;} [data-ufk~="24p"]{--par:24;}
 
       [data-ufk]{
-        flex-basis: calc(100% / var(--par) * var(--parça));
+        -ms-flex-preferred-size: calc(100% / var(--par) * var(--parça));
+            flex-basis: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
       [data-ufk~="0"]{
-        flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
         max-width: auto;
         width: auto;
       }
 
-      [data-ufk~="1g"]{flex:1;}   [data-ufk~="2g"]{flex:2;}   [data-ufk~="3g"]{flex:3;}   [data-ufk~="4g"]{flex:4;}
-      [data-ufk~="5g"]{flex:5;}   [data-ufk~="6g"]{flex:6;}   [data-ufk~="7g"]{flex:7;}   [data-ufk~="8g"]{flex:8;}
-      [data-ufk~="9g"]{flex:9;}   [data-ufk~="10g"]{flex:10;} [data-ufk~="11g"]{flex:11;} [data-ufk~="12g"]{flex:12;}
-      [data-ufk~="13g"]{flex:13;} [data-ufk~="14g"]{flex:14;} [data-ufk~="15g"]{flex:15;} [data-ufk~="16g"]{flex:16;}
-      [data-ufk~="17g"]{flex:17;} [data-ufk~="18g"]{flex:18;} [data-ufk~="19g"]{flex:19;} [data-ufk~="20g"]{flex:20;}
-      [data-ufk~="21g"]{flex:21;} [data-ufk~="22g"]{flex:22;} [data-ufk~="23g"]{flex:23;} [data-ufk~="24g"]{flex:24;}
+      [data-ufk~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1;}   [data-ufk~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2;}   [data-ufk~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3;}   [data-ufk~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4;}
+      [data-ufk~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5;}   [data-ufk~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6;}   [data-ufk~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7;}   [data-ufk~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8;}
+      [data-ufk~="9g"]{-webkit-box-flex:9;-ms-flex:9;flex:9;}   [data-ufk~="10g"]{-webkit-box-flex:10;-ms-flex:10;flex:10;} [data-ufk~="11g"]{-webkit-box-flex:11;-ms-flex:11;flex:11;} [data-ufk~="12g"]{-webkit-box-flex:12;-ms-flex:12;flex:12;}
+      [data-ufk~="13g"]{-webkit-box-flex:13;-ms-flex:13;flex:13;} [data-ufk~="14g"]{-webkit-box-flex:14;-ms-flex:14;flex:14;} [data-ufk~="15g"]{-webkit-box-flex:15;-ms-flex:15;flex:15;} [data-ufk~="16g"]{-webkit-box-flex:16;-ms-flex:16;flex:16;}
+      [data-ufk~="17g"]{-webkit-box-flex:17;-ms-flex:17;flex:17;} [data-ufk~="18g"]{-webkit-box-flex:18;-ms-flex:18;flex:18;} [data-ufk~="19g"]{-webkit-box-flex:19;-ms-flex:19;flex:19;} [data-ufk~="20g"]{-webkit-box-flex:20;-ms-flex:20;flex:20;}
+      [data-ufk~="21g"]{-webkit-box-flex:21;-ms-flex:21;flex:21;} [data-ufk~="22g"]{-webkit-box-flex:22;-ms-flex:22;flex:22;} [data-ufk~="23g"]{-webkit-box-flex:23;-ms-flex:23;flex:23;} [data-ufk~="24g"]{-webkit-box-flex:24;-ms-flex:24;flex:24;}
 
 
       /* Kap Örgüsü Sıraya Koyma Ayarları */
-      [data-ufk~="1nc"]{order:1}   [data-ufk~="2nc"]{order:2}   [data-ufk~="3nc"]{order:3}   [data-ufk~="4nc"]{order:4}
-      [data-ufk~="5nc"]{order:5}   [data-ufk~="6nc"]{order:6}   [data-ufk~="7nc"]{order:7}   [data-ufk~="8nc"]{order:8}
-      [data-ufk~="9nc"]{order:9}   [data-ufk~="10nc"]{order:10} [data-ufk~="11nc"]{order:11} [data-ufk~="12nc"]{order:12}
-      [data-ufk~="13nc"]{order:13} [data-ufk~="14nc"]{order:14} [data-ufk~="15nc"]{order:15} [data-ufk~="16nc"]{order:16}
-      [data-ufk~="17nc"]{order:17} [data-ufk~="18nc"]{order:18} [data-ufk~="19nc"]{order:19} [data-ufk~="20nc"]{order:20}
-      [data-ufk~="21nc"]{order:21} [data-ufk~="22nc"]{order:22} [data-ufk~="23nc"]{order:23} [data-ufk~="24nc"]{order:24}
+      [data-ufk~="1nc"]{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}   [data-ufk~="2nc"]{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}   [data-ufk~="3nc"]{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}   [data-ufk~="4nc"]{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
+      [data-ufk~="5nc"]{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}   [data-ufk~="6nc"]{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}   [data-ufk~="7nc"]{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}   [data-ufk~="8nc"]{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}
+      [data-ufk~="9nc"]{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}   [data-ufk~="10nc"]{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10} [data-ufk~="11nc"]{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11} [data-ufk~="12nc"]{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}
+      [data-ufk~="13nc"]{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13} [data-ufk~="14nc"]{-webkit-box-ordinal-group:15;-ms-flex-order:14;order:14} [data-ufk~="15nc"]{-webkit-box-ordinal-group:16;-ms-flex-order:15;order:15} [data-ufk~="16nc"]{-webkit-box-ordinal-group:17;-ms-flex-order:16;order:16}
+      [data-ufk~="17nc"]{-webkit-box-ordinal-group:18;-ms-flex-order:17;order:17} [data-ufk~="18nc"]{-webkit-box-ordinal-group:19;-ms-flex-order:18;order:18} [data-ufk~="19nc"]{-webkit-box-ordinal-group:20;-ms-flex-order:19;order:19} [data-ufk~="20nc"]{-webkit-box-ordinal-group:21;-ms-flex-order:20;order:20}
+      [data-ufk~="21nc"]{-webkit-box-ordinal-group:22;-ms-flex-order:21;order:21} [data-ufk~="22nc"]{-webkit-box-ordinal-group:23;-ms-flex-order:22;order:22} [data-ufk~="23nc"]{-webkit-box-ordinal-group:24;-ms-flex-order:23;order:23} [data-ufk~="24nc"]{-webkit-box-ordinal-group:25;-ms-flex-order:24;order:24}
 
       /* Konum Ayarları */
       [data-ufk~="kaymadan"]{overflow-x: hidden;}
       [data-ufk~="yatay-kayma"]{overflow-x: auto;}
-      [data-ufk~="dürmeden"]{flex-wrap: nowrap;}
+      [data-ufk~="dürmeden"]{-ms-flex-wrap: nowrap;flex-wrap: nowrap;}
 
-      [data-ufk~="ters-dürme"]{flex-wrap: wrap-reverse;}
-      [data-ufk~="ters-satır"]{flex-direction: row-reverse;}
-      [data-ufk~="ters-sütun"]{flex-direction: column-reverse;}
+      [data-ufk~="ters-dürme"]{-ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse;}
+      [data-ufk~="ters-satır"]{-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+      [data-ufk~="ters-sütun"]{-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;}
 
-      [data-ufk~="solda"]{justify-content: flex-start;}
-      [data-ufk~="ortada"]{justify-content:center;}
-      [data-ufk~="sağda"]{justify-content: flex-end;}
-      [data-ufk~="ger"]{justify-content: space-between;}
-      [data-ufk~="yay"]{justify-content: space-around;}
+      [data-ufk~="solda"]{-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+      [data-ufk~="ortada"]{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+      [data-ufk~="sağda"]{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
+      [data-ufk~="ger"]{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+      [data-ufk~="yay"]{-ms-flex-pack: distribute;justify-content: space-around;}
 
-      [data-ufk~="merkezde"]{align-items:center; justify-content: center;}
-      [data-ufk~="üstte"]{align-items: flex-start;}
-      [data-ufk~="göbekte"]{align-items: center;}
-      [data-ufk~="altta"]{align-items: flex-end;}
-      [data-ufk~="üstte-ol"]{align-self: flex-start !important;}
-      [data-ufk~="göbekte-ol"]{align-self: center !important;}
+      [data-ufk~="merkezde"]{-webkit-box-align:center;-ms-flex-align:center;align-items:center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+      [data-ufk~="üstte"]{-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
+      [data-ufk~="göbekte"]{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+      [data-ufk~="altta"]{-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;}
+      [data-ufk~="üstte-ol"]{-ms-flex-item-align: start !important;align-self: flex-start !important;}
+      [data-ufk~="göbekte-ol"]{-ms-flex-item-align: center !important;align-self: center !important;}
       [data-ufk~="altta-ol"]{margin-top:auto;}
-      [data-ufk~="sağda-ol"]{margin-left:auto; align-self:flex-end;}
-      [data-ufk~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
-      [data-ufk~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+      [data-ufk~="sağda-ol"]{margin-left:auto; -ms-flex-item-align:end; align-self:flex-end;}
+      [data-ufk~="ortada-ol"]{margin-left:auto; margin-right:auto; -ms-flex-item-align:center; align-self:center;}
+      [data-ufk~="solda-ol"]{margin-right:auto; -ms-flex-item-align:start; align-self:flex-start;}
 
-      [data-ufk~="uzat"]{align-items: stretch;}
-      [data-ufk~="uzun-ol"]{align-self: stretch;}
+      [data-ufk~="uzat"]{-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;}
+      [data-ufk~="uzun-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
 
-      [data-ufk~="satırda"]{align-items: baseline;}
-      [data-ufk~="satırda-ol"]{align-self: baseline;}
+      [data-ufk~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;align-items: baseline;}
+      [data-ufk~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
       [data-ufk~="gizle"],
       [data-ufk~="büyükleriyle-gizle"],
@@ -347,9 +369,14 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     @media screen and (min-width:576px) {
 
       [data-kçk]{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
-        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        align-items: flex-start;/* Varsayılan olarak üstte ol */
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-kçk~="sığdır"]{
         min-height:1px; height:100%; max-height:100vh;  overflow-y:auto;
@@ -369,62 +396,64 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="21p"]{--par:21;} [data-kçk~="22p"]{--par:22;} [data-kçk~="23p"]{--par:23;} [data-kçk~="24p"]{--par:24;}
 
       [data-kçk]{
-        flex-basis: calc(100% / var(--par) * var(--parça));
+        -ms-flex-preferred-size: calc(100% / var(--par) * var(--parça));
+            flex-basis: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
       [data-kçk~="0"]{
-        flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
         max-width: auto;
         width: auto;
       }
 
-      [data-kçk~="1g"]{flex:1;}    [data-kçk~="2g"]{flex:2;}   [data-kçk~="3g"]{flex:3;}    [data-kçk~="4g"]{flex:4;}
-      [data-kçk~="5g"]{flex:5;}    [data-kçk~="6g"]{flex:6;}   [data-kçk~="7g"]{flex:7;}    [data-kçk~="8g"]{flex:8;}
-      [data-kçk~="9g"]{flex:9;}    [data-kçk~="10g"]{flex:10;} [data-kçk~="11g"]{flex:11;}  [data-kçk~="12g"]{flex:12;}
-      [data-kçk~="13g"]{flex:13;}  [data-kçk~="14g"]{flex:14;} [data-kçk~="15g"]{flex:15;}  [data-kçk~="16g"]{flex:16;}
-      [data-kçk~="17g"]{flex:17;}  [data-kçk~="18g"]{flex:18;} [data-kçk~="19g"]{flex:19;}  [data-kçk~="20g"]{flex:20;}
-      [data-kçk~="21g"]{flex:21;}  [data-kçk~="22g"]{flex:22;} [data-kçk~="23g"]{flex:23;}  [data-kçk~="24g"]{flex:24;}
+      [data-kçk~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1;}    [data-kçk~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2;}   [data-kçk~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3;}    [data-kçk~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4;}
+      [data-kçk~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5;}    [data-kçk~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6;}   [data-kçk~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7;}    [data-kçk~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8;}
+      [data-kçk~="9g"]{-webkit-box-flex:9;-ms-flex:9;flex:9;}    [data-kçk~="10g"]{-webkit-box-flex:10;-ms-flex:10;flex:10;} [data-kçk~="11g"]{-webkit-box-flex:11;-ms-flex:11;flex:11;}  [data-kçk~="12g"]{-webkit-box-flex:12;-ms-flex:12;flex:12;}
+      [data-kçk~="13g"]{-webkit-box-flex:13;-ms-flex:13;flex:13;}  [data-kçk~="14g"]{-webkit-box-flex:14;-ms-flex:14;flex:14;} [data-kçk~="15g"]{-webkit-box-flex:15;-ms-flex:15;flex:15;}  [data-kçk~="16g"]{-webkit-box-flex:16;-ms-flex:16;flex:16;}
+      [data-kçk~="17g"]{-webkit-box-flex:17;-ms-flex:17;flex:17;}  [data-kçk~="18g"]{-webkit-box-flex:18;-ms-flex:18;flex:18;} [data-kçk~="19g"]{-webkit-box-flex:19;-ms-flex:19;flex:19;}  [data-kçk~="20g"]{-webkit-box-flex:20;-ms-flex:20;flex:20;}
+      [data-kçk~="21g"]{-webkit-box-flex:21;-ms-flex:21;flex:21;}  [data-kçk~="22g"]{-webkit-box-flex:22;-ms-flex:22;flex:22;} [data-kçk~="23g"]{-webkit-box-flex:23;-ms-flex:23;flex:23;}  [data-kçk~="24g"]{-webkit-box-flex:24;-ms-flex:24;flex:24;}
 
       /* Kap Örgüsü Sıraya Koyma Ayarları */
-      [data-kçk~="1nc"]{order:1}   [data-kçk~="2nc"]{order:2}   [data-kçk~="3nc"]{order:3}   [data-kçk~="4nc"]{order:4}
-      [data-kçk~="5nc"]{order:5}   [data-kçk~="6nc"]{order:6}   [data-kçk~="7nc"]{order:7}   [data-kçk~="8nc"]{order:8}
-      [data-kçk~="9nc"]{order:9}   [data-kçk~="10nc"]{order:10} [data-kçk~="11nc"]{order:11} [data-kçk~="12nc"]{order:12}
-      [data-kçk~="13nc"]{order:13} [data-kçk~="14nc"]{order:14} [data-kçk~="15nc"]{order:15} [data-kçk~="16nc"]{order:16}
-      [data-kçk~="17nc"]{order:17} [data-kçk~="18nc"]{order:18} [data-kçk~="19nc"]{order:19} [data-kçk~="20nc"]{order:20}
-      [data-kçk~="21nc"]{order:21} [data-kçk~="22nc"]{order:22} [data-kçk~="23nc"]{order:23} [data-kçk~="24nc"]{order:24}
+      [data-kçk~="1nc"]{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}   [data-kçk~="2nc"]{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}   [data-kçk~="3nc"]{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}   [data-kçk~="4nc"]{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
+      [data-kçk~="5nc"]{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}   [data-kçk~="6nc"]{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}   [data-kçk~="7nc"]{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}   [data-kçk~="8nc"]{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}
+      [data-kçk~="9nc"]{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}   [data-kçk~="10nc"]{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10} [data-kçk~="11nc"]{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11} [data-kçk~="12nc"]{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}
+      [data-kçk~="13nc"]{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13} [data-kçk~="14nc"]{-webkit-box-ordinal-group:15;-ms-flex-order:14;order:14} [data-kçk~="15nc"]{-webkit-box-ordinal-group:16;-ms-flex-order:15;order:15} [data-kçk~="16nc"]{-webkit-box-ordinal-group:17;-ms-flex-order:16;order:16}
+      [data-kçk~="17nc"]{-webkit-box-ordinal-group:18;-ms-flex-order:17;order:17} [data-kçk~="18nc"]{-webkit-box-ordinal-group:19;-ms-flex-order:18;order:18} [data-kçk~="19nc"]{-webkit-box-ordinal-group:20;-ms-flex-order:19;order:19} [data-kçk~="20nc"]{-webkit-box-ordinal-group:21;-ms-flex-order:20;order:20}
+      [data-kçk~="21nc"]{-webkit-box-ordinal-group:22;-ms-flex-order:21;order:21} [data-kçk~="22nc"]{-webkit-box-ordinal-group:23;-ms-flex-order:22;order:22} [data-kçk~="23nc"]{-webkit-box-ordinal-group:24;-ms-flex-order:23;order:23} [data-kçk~="24nc"]{-webkit-box-ordinal-group:25;-ms-flex-order:24;order:24}
 
       /* Konum Ayarları */
       [data-kçk~="kaymadan"]{overflow: hidden;}
       [data-kçk~="yatay-kayma"]{overflow-x: auto;}
-      [data-kçk~="dürmeden"]{flex-wrap: nowrap;}
+      [data-kçk~="dürmeden"]{-ms-flex-wrap: nowrap;flex-wrap: nowrap;}
 
-      [data-kçk~="ters-dürme"]{flex-wrap: wrap-reverse;}
-      [data-kçk~="ters-satır"]{flex-direction: row-reverse;}
-      [data-kçk~="ters-sütun"]{flex-direction: column-reverse;}
+      [data-kçk~="ters-dürme"]{-ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse;}
+      [data-kçk~="ters-satır"]{-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+      [data-kçk~="ters-sütun"]{-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;}
 
-      [data-kçk~="solda"]{justify-content: flex-start;}
-      [data-kçk~="ortada"]{justify-content:center;}
-      [data-kçk~="sağda"]{justify-content: flex-end;}
+      [data-kçk~="solda"]{-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+      [data-kçk~="ortada"]{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+      [data-kçk~="sağda"]{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
 
-      [data-kçk~="merkezde"]{align-items:center; justify-content: center;}
-      [data-kçk~="üstte"]{align-items: flex-start;}
-      [data-kçk~="göbekte"]{align-items: center;}
-      [data-kçk~="altta"]{align-items: flex-end;}
-      [data-kçk~="üstte-ol"]{align-self: flex-start !important;}
-      [data-kçk~="göbekte-ol"]{align-self: center !important;}
+      [data-kçk~="merkezde"]{-webkit-box-align:center;-ms-flex-align:center;align-items:center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+      [data-kçk~="üstte"]{-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
+      [data-kçk~="göbekte"]{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+      [data-kçk~="altta"]{-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;}
+      [data-kçk~="üstte-ol"]{-ms-flex-item-align: start !important;align-self: flex-start !important;}
+      [data-kçk~="göbekte-ol"]{-ms-flex-item-align: center !important;align-self: center !important;}
       [data-kçk~="altta-ol"]{margin-top:auto;}
-      [data-kçk~="sağda-ol"]{margin-left:auto; align-self:flex-end;}
-      [data-kçk~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
-      [data-kçk~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+      [data-kçk~="sağda-ol"]{margin-left:auto; -ms-flex-item-align:end; align-self:flex-end;}
+      [data-kçk~="ortada-ol"]{margin-left:auto; margin-right:auto; -ms-flex-item-align:center; align-self:center;}
+      [data-kçk~="solda-ol"]{margin-right:auto; -ms-flex-item-align:start; align-self:flex-start;}
 
-      [data-kçk~="ger"]{justify-content: space-between;}
-      [data-kçk~="yay"]{justify-content: space-around;}
-      [data-kçk~="uzat"]{align-items: stretch;}
-      [data-kçk~="uzun-ol"]{align-self: stretch;}
+      [data-kçk~="ger"]{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+      [data-kçk~="yay"]{-ms-flex-pack: distribute;justify-content: space-around;}
+      [data-kçk~="uzat"]{-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;}
+      [data-kçk~="uzun-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
 
-      [data-kçk~="satırda"]{align-items: baseline;}
-      [data-kçk~="satırda-ol"]{align-self: baseline;}
+      [data-kçk~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;align-items: baseline;}
+      [data-kçk~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
       [data-kçk~="gizle"],
       [data-kçk~="büyükleriyle-gizle"],
@@ -438,9 +467,14 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     @media screen and (min-width:768px) {
 
       [data-ort]{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
-        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        align-items: flex-start;/* Varsayılan olarak üstte ol */
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-ort~="sığdır"]{
         min-height:1px; height:100%; max-height:100vh;  overflow-y:auto;
@@ -460,62 +494,64 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-ort~="21p"]{--par:21;} [data-ort~="22p"]{--par:22;} [data-ort~="23p"]{--par:23;} [data-ort~="24p"]{--par:24;}
 
       [data-ort]{
-        flex-basis: calc(100% / var(--par) * var(--parça));
+        -ms-flex-preferred-size: calc(100% / var(--par) * var(--parça));
+            flex-basis: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
       [data-ort~="0"]{
-        flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
         max-width: auto;
         width: auto;
       }
 
-      [data-ort~="1g"]{flex:1;}    [data-ort~="2g"]{flex:2;}   [data-ort~="3g"]{flex:3;}    [data-ort~="4g"]{flex:4;}
-      [data-ort~="5g"]{flex:5;}    [data-ort~="6g"]{flex:6;}   [data-ort~="7g"]{flex:7;}    [data-ort~="8g"]{flex:8;}
-      [data-ort~="9g"]{flex:9;}    [data-ort~="10g"]{flex:10;} [data-ort~="11g"]{flex:11;}  [data-ort~="12g"]{flex:12;}
-      [data-ort~="13g"]{flex:13;}  [data-ort~="14g"]{flex:14;} [data-ort~="15g"]{flex:15;}  [data-ort~="16g"]{flex:16;}
-      [data-ort~="17g"]{flex:17;}  [data-ort~="18g"]{flex:18;} [data-ort~="19g"]{flex:19;}  [data-ort~="20g"]{flex:20;}
-      [data-ort~="21g"]{flex:21;}  [data-ort~="22g"]{flex:22;} [data-ort~="23g"]{flex:23;}  [data-ort~="24g"]{flex:24;}
+      [data-ort~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1;}    [data-ort~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2;}   [data-ort~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3;}    [data-ort~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4;}
+      [data-ort~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5;}    [data-ort~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6;}   [data-ort~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7;}    [data-ort~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8;}
+      [data-ort~="9g"]{-webkit-box-flex:9;-ms-flex:9;flex:9;}    [data-ort~="10g"]{-webkit-box-flex:10;-ms-flex:10;flex:10;} [data-ort~="11g"]{-webkit-box-flex:11;-ms-flex:11;flex:11;}  [data-ort~="12g"]{-webkit-box-flex:12;-ms-flex:12;flex:12;}
+      [data-ort~="13g"]{-webkit-box-flex:13;-ms-flex:13;flex:13;}  [data-ort~="14g"]{-webkit-box-flex:14;-ms-flex:14;flex:14;} [data-ort~="15g"]{-webkit-box-flex:15;-ms-flex:15;flex:15;}  [data-ort~="16g"]{-webkit-box-flex:16;-ms-flex:16;flex:16;}
+      [data-ort~="17g"]{-webkit-box-flex:17;-ms-flex:17;flex:17;}  [data-ort~="18g"]{-webkit-box-flex:18;-ms-flex:18;flex:18;} [data-ort~="19g"]{-webkit-box-flex:19;-ms-flex:19;flex:19;}  [data-ort~="20g"]{-webkit-box-flex:20;-ms-flex:20;flex:20;}
+      [data-ort~="21g"]{-webkit-box-flex:21;-ms-flex:21;flex:21;}  [data-ort~="22g"]{-webkit-box-flex:22;-ms-flex:22;flex:22;} [data-ort~="23g"]{-webkit-box-flex:23;-ms-flex:23;flex:23;}  [data-ort~="24g"]{-webkit-box-flex:24;-ms-flex:24;flex:24;}
 
       /* Kap Örgüsü Sıraya Koyma Ayarları */
-      [data-ort~="1nc"]{order:1}   [data-ort~="2nc"]{order:2}   [data-ort~="3nc"]{order:3}   [data-ort~="4nc"]{order:4}
-      [data-ort~="5nc"]{order:5}   [data-ort~="6nc"]{order:6}   [data-ort~="7nc"]{order:7}   [data-ort~="8nc"]{order:8}
-      [data-ort~="9nc"]{order:9}   [data-ort~="10nc"]{order:10} [data-ort~="11nc"]{order:11} [data-ort~="12nc"]{order:12}
-      [data-ort~="13nc"]{order:13} [data-ort~="14nc"]{order:14} [data-ort~="15nc"]{order:15} [data-ort~="16nc"]{order:16}
-      [data-ort~="17nc"]{order:17} [data-ort~="18nc"]{order:18} [data-ort~="19nc"]{order:19} [data-ort~="20nc"]{order:20}
-      [data-ort~="21nc"]{order:21} [data-ort~="22nc"]{order:22} [data-ort~="23nc"]{order:23} [data-ort~="24nc"]{order:24}
+      [data-ort~="1nc"]{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}   [data-ort~="2nc"]{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}   [data-ort~="3nc"]{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}   [data-ort~="4nc"]{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
+      [data-ort~="5nc"]{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}   [data-ort~="6nc"]{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}   [data-ort~="7nc"]{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}   [data-ort~="8nc"]{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}
+      [data-ort~="9nc"]{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}   [data-ort~="10nc"]{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10} [data-ort~="11nc"]{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11} [data-ort~="12nc"]{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}
+      [data-ort~="13nc"]{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13} [data-ort~="14nc"]{-webkit-box-ordinal-group:15;-ms-flex-order:14;order:14} [data-ort~="15nc"]{-webkit-box-ordinal-group:16;-ms-flex-order:15;order:15} [data-ort~="16nc"]{-webkit-box-ordinal-group:17;-ms-flex-order:16;order:16}
+      [data-ort~="17nc"]{-webkit-box-ordinal-group:18;-ms-flex-order:17;order:17} [data-ort~="18nc"]{-webkit-box-ordinal-group:19;-ms-flex-order:18;order:18} [data-ort~="19nc"]{-webkit-box-ordinal-group:20;-ms-flex-order:19;order:19} [data-ort~="20nc"]{-webkit-box-ordinal-group:21;-ms-flex-order:20;order:20}
+      [data-ort~="21nc"]{-webkit-box-ordinal-group:22;-ms-flex-order:21;order:21} [data-ort~="22nc"]{-webkit-box-ordinal-group:23;-ms-flex-order:22;order:22} [data-ort~="23nc"]{-webkit-box-ordinal-group:24;-ms-flex-order:23;order:23} [data-ort~="24nc"]{-webkit-box-ordinal-group:25;-ms-flex-order:24;order:24}
 
       /* Konum Ayarları */
       [data-ort~="kaymadan"]{overflow: hidden;}
       [data-ort~="yatay-kayma"]{overflow-x: auto;}
-      [data-ort~="dürmeden"]{flex-wrap: nowrap;}
+      [data-ort~="dürmeden"]{-ms-flex-wrap: nowrap;flex-wrap: nowrap;}
 
-      [data-ort~="ters-dürme"]{flex-wrap: wrap-reverse;}
-      [data-ort~="ters-satır"]{flex-direction: row-reverse;}
-      [data-ort~="ters-sütun"]{flex-direction: column-reverse;}
+      [data-ort~="ters-dürme"]{-ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse;}
+      [data-ort~="ters-satır"]{-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+      [data-ort~="ters-sütun"]{-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;}
 
-      [data-ort~="solda"]{justify-content: flex-start;}
-      [data-ort~="ortada"]{justify-content:center;}
-      [data-ort~="sağda"]{justify-content: flex-end;}
+      [data-ort~="solda"]{-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+      [data-ort~="ortada"]{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+      [data-ort~="sağda"]{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
 
-      [data-ort~="merkezde"]{align-items:center; justify-content: center;}
-      [data-ort~="üstte"]{align-items: flex-start;}
-      [data-ort~="göbekte"]{align-items: center;}
-      [data-ort~="altta"]{align-items: flex-end;}
-      [data-ort~="üstte-ol"]{align-self: flex-start !important;}
-      [data-ort~="göbekte-ol"]{align-self: center !important;}
+      [data-ort~="merkezde"]{-webkit-box-align:center;-ms-flex-align:center;align-items:center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+      [data-ort~="üstte"]{-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
+      [data-ort~="göbekte"]{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+      [data-ort~="altta"]{-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;}
+      [data-ort~="üstte-ol"]{-ms-flex-item-align: start !important;align-self: flex-start !important;}
+      [data-ort~="göbekte-ol"]{-ms-flex-item-align: center !important;align-self: center !important;}
       [data-ort~="altta-ol"]{margin-top:auto;}
-      [data-ort~="sağda-ol"]{margin-left:auto; align-self:flex-end;}
-      [data-ort~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
-      [data-ort~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+      [data-ort~="sağda-ol"]{margin-left:auto; -ms-flex-item-align:end; align-self:flex-end;}
+      [data-ort~="ortada-ol"]{margin-left:auto; margin-right:auto; -ms-flex-item-align:center; align-self:center;}
+      [data-ort~="solda-ol"]{margin-right:auto; -ms-flex-item-align:start; align-self:flex-start;}
 
-      [data-ort~="ger"]{justify-content: space-between;}
-      [data-ort~="yay"]{justify-content: space-around;}
-      [data-ort~="uzat"]{align-items: stretch;}
-      [data-ort~="uzun-ol"]{align-self: stretch;}
+      [data-ort~="ger"]{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+      [data-ort~="yay"]{-ms-flex-pack: distribute;justify-content: space-around;}
+      [data-ort~="uzat"]{-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;}
+      [data-ort~="uzun-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
 
-      [data-ort~="satırda"]{align-items: baseline;}
-      [data-ort~="satırda-ol"]{align-self: baseline;}
+      [data-ort~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;align-items: baseline;}
+      [data-ort~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
       [data-ort~="gizle"],
       [data-ort~="büyükleriyle-gizle"],
@@ -529,9 +565,14 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     @media screen and (min-width:992px) {
 
       [data-byk]{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
-        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        align-items: flex-start;/* Varsayılan olarak üstte ol */
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-byk~="sığdır"]{
         min-height:1px; height:100%; max-height:100vh;  overflow-y:auto;
@@ -551,62 +592,64 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk~="21p"]{--par:21;} [data-byk~="22p"]{--par:22;} [data-byk~="23p"]{--par:23;} [data-byk~="24p"]{--par:24;}
 
       [data-byk]{
-        flex-basis: calc(100% / var(--par) * var(--parça));
+        -ms-flex-preferred-size: calc(100% / var(--par) * var(--parça));
+            flex-basis: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
       [data-byk~="0"]{
-        flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
         max-width: auto;
         width: auto;
       }
 
-      [data-byk~="1g"]{flex:1;}    [data-byk~="2g"]{flex:2;}   [data-byk~="3g"]{flex:3;}    [data-byk~="4g"]{flex:4;}
-      [data-byk~="5g"]{flex:5;}    [data-byk~="6g"]{flex:6;}   [data-byk~="7g"]{flex:7;}    [data-byk~="8g"]{flex:8;}
-      [data-byk~="9g"]{flex:9;}    [data-byk~="10g"]{flex:10;} [data-byk~="11g"]{flex:11;}  [data-byk~="12g"]{flex:12;}
-      [data-byk~="13g"]{flex:13;}  [data-byk~="14g"]{flex:14;} [data-byk~="15g"]{flex:15;}  [data-byk~="16g"]{flex:16;}
-      [data-byk~="17g"]{flex:17;}  [data-byk~="18g"]{flex:18;} [data-byk~="19g"]{flex:19;}  [data-byk~="20g"]{flex:20;}
-      [data-byk~="21g"]{flex:21;}  [data-byk~="22g"]{flex:22;} [data-byk~="23g"]{flex:23;}  [data-byk~="24g"]{flex:24;}
+      [data-byk~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1;}    [data-byk~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2;}   [data-byk~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3;}    [data-byk~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4;}
+      [data-byk~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5;}    [data-byk~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6;}   [data-byk~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7;}    [data-byk~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8;}
+      [data-byk~="9g"]{-webkit-box-flex:9;-ms-flex:9;flex:9;}    [data-byk~="10g"]{-webkit-box-flex:10;-ms-flex:10;flex:10;} [data-byk~="11g"]{-webkit-box-flex:11;-ms-flex:11;flex:11;}  [data-byk~="12g"]{-webkit-box-flex:12;-ms-flex:12;flex:12;}
+      [data-byk~="13g"]{-webkit-box-flex:13;-ms-flex:13;flex:13;}  [data-byk~="14g"]{-webkit-box-flex:14;-ms-flex:14;flex:14;} [data-byk~="15g"]{-webkit-box-flex:15;-ms-flex:15;flex:15;}  [data-byk~="16g"]{-webkit-box-flex:16;-ms-flex:16;flex:16;}
+      [data-byk~="17g"]{-webkit-box-flex:17;-ms-flex:17;flex:17;}  [data-byk~="18g"]{-webkit-box-flex:18;-ms-flex:18;flex:18;} [data-byk~="19g"]{-webkit-box-flex:19;-ms-flex:19;flex:19;}  [data-byk~="20g"]{-webkit-box-flex:20;-ms-flex:20;flex:20;}
+      [data-byk~="21g"]{-webkit-box-flex:21;-ms-flex:21;flex:21;}  [data-byk~="22g"]{-webkit-box-flex:22;-ms-flex:22;flex:22;} [data-byk~="23g"]{-webkit-box-flex:23;-ms-flex:23;flex:23;}  [data-byk~="24g"]{-webkit-box-flex:24;-ms-flex:24;flex:24;}
 
       /* Kap Örgüsü Sıraya Koyma Ayarları */
-      [data-byk~="1nc"]{order:1}   [data-byk~="2nc"]{order:2}   [data-byk~="3nc"]{order:3}   [data-byk~="4nc"]{order:4}
-      [data-byk~="5nc"]{order:5}   [data-byk~="6nc"]{order:6}   [data-byk~="7nc"]{order:7}   [data-byk~="8nc"]{order:8}
-      [data-byk~="9nc"]{order:9}   [data-byk~="10nc"]{order:10} [data-byk~="11nc"]{order:11} [data-byk~="12nc"]{order:12}
-      [data-byk~="13nc"]{order:13} [data-byk~="14nc"]{order:14} [data-byk~="15nc"]{order:15} [data-byk~="16nc"]{order:16}
-      [data-byk~="17nc"]{order:17} [data-byk~="18nc"]{order:18} [data-byk~="19nc"]{order:19} [data-byk~="20nc"]{order:20}
-      [data-byk~="21nc"]{order:21} [data-byk~="22nc"]{order:22} [data-byk~="23nc"]{order:23} [data-byk~="24nc"]{order:24}
+      [data-byk~="1nc"]{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}   [data-byk~="2nc"]{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}   [data-byk~="3nc"]{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}   [data-byk~="4nc"]{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
+      [data-byk~="5nc"]{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}   [data-byk~="6nc"]{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}   [data-byk~="7nc"]{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}   [data-byk~="8nc"]{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}
+      [data-byk~="9nc"]{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}   [data-byk~="10nc"]{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10} [data-byk~="11nc"]{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11} [data-byk~="12nc"]{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}
+      [data-byk~="13nc"]{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13} [data-byk~="14nc"]{-webkit-box-ordinal-group:15;-ms-flex-order:14;order:14} [data-byk~="15nc"]{-webkit-box-ordinal-group:16;-ms-flex-order:15;order:15} [data-byk~="16nc"]{-webkit-box-ordinal-group:17;-ms-flex-order:16;order:16}
+      [data-byk~="17nc"]{-webkit-box-ordinal-group:18;-ms-flex-order:17;order:17} [data-byk~="18nc"]{-webkit-box-ordinal-group:19;-ms-flex-order:18;order:18} [data-byk~="19nc"]{-webkit-box-ordinal-group:20;-ms-flex-order:19;order:19} [data-byk~="20nc"]{-webkit-box-ordinal-group:21;-ms-flex-order:20;order:20}
+      [data-byk~="21nc"]{-webkit-box-ordinal-group:22;-ms-flex-order:21;order:21} [data-byk~="22nc"]{-webkit-box-ordinal-group:23;-ms-flex-order:22;order:22} [data-byk~="23nc"]{-webkit-box-ordinal-group:24;-ms-flex-order:23;order:23} [data-byk~="24nc"]{-webkit-box-ordinal-group:25;-ms-flex-order:24;order:24}
 
       /* Konum Ayarları */
       [data-byk~="kaymadan"]{overflow: hidden;}
       [data-byk~="yatay-kayma"]{overflow-x: auto;}
-      [data-byk~="dürmeden"]{flex-wrap: nowrap;}
+      [data-byk~="dürmeden"]{-ms-flex-wrap: nowrap;flex-wrap: nowrap;}
 
-      [data-byk~="ters-dürme"]{flex-wrap: wrap-reverse;}
-      [data-byk~="ters-satır"]{flex-direction: row-reverse;}
-      [data-byk~="ters-sütun"]{flex-direction: column-reverse;}
+      [data-byk~="ters-dürme"]{-ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse;}
+      [data-byk~="ters-satır"]{-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+      [data-byk~="ters-sütun"]{-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;}
 
-      [data-byk~="solda"]{justify-content: flex-start;}
-      [data-byk~="ortada"]{justify-content:center;}
-      [data-byk~="sağda"]{justify-content: flex-end;}
+      [data-byk~="solda"]{-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+      [data-byk~="ortada"]{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+      [data-byk~="sağda"]{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
 
-      [data-byk~="merkezde"]{align-items:center; justify-content: center;}
-      [data-byk~="üstte"]{align-items: flex-start;}
-      [data-byk~="göbekte"]{align-items: center;}
-      [data-byk~="altta"]{align-items: flex-end;}
-      [data-byk~="üstte-ol"]{align-self: flex-start !important;}
-      [data-byk~="göbekte-ol"]{align-self: center !important;}
+      [data-byk~="merkezde"]{-webkit-box-align:center;-ms-flex-align:center;align-items:center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+      [data-byk~="üstte"]{-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
+      [data-byk~="göbekte"]{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+      [data-byk~="altta"]{-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;}
+      [data-byk~="üstte-ol"]{-ms-flex-item-align: start !important;align-self: flex-start !important;}
+      [data-byk~="göbekte-ol"]{-ms-flex-item-align: center !important;align-self: center !important;}
       [data-byk~="altta-ol"]{margin-top:auto;}
-      [data-byk~="sağda-ol"]{margin-left:auto; align-self:flex-end;}
-      [data-byk~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
-      [data-byk~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+      [data-byk~="sağda-ol"]{margin-left:auto; -ms-flex-item-align:end; align-self:flex-end;}
+      [data-byk~="ortada-ol"]{margin-left:auto; margin-right:auto; -ms-flex-item-align:center; align-self:center;}
+      [data-byk~="solda-ol"]{margin-right:auto; -ms-flex-item-align:start; align-self:flex-start;}
 
-      [data-byk~="ger"]{justify-content: space-between;}
-      [data-byk~="yay"]{justify-content: space-around;}
-      [data-byk~="uzat"]{align-items: stretch;}
-      [data-byk~="uzun-ol"]{align-self: stretch;}
+      [data-byk~="ger"]{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+      [data-byk~="yay"]{-ms-flex-pack: distribute;justify-content: space-around;}
+      [data-byk~="uzat"]{-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;}
+      [data-byk~="uzun-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
 
-      [data-byk~="satırda"]{align-items: baseline;}
-      [data-byk~="satırda-ol"]{align-self: baseline;}
+      [data-byk~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;align-items: baseline;}
+      [data-byk~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
       [data-byk~="gizle"],
       [data-byk~="büyükleriyle-gizle"],
@@ -620,9 +663,14 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     @media screen and (min-width:1200px) {
 
       [data-kcm]{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
-        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        align-items: flex-start;/* Varsayılan olarak üstte ol */
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-kcm~="sığdır"]{
         min-height:1px; height:100%; max-height:100vh;  overflow-y:auto;
@@ -642,62 +690,64 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-kcm~="21p"]{--par:21;} [data-kcm~="22p"]{--par:22;} [data-kcm~="23p"]{--par:23;} [data-kcm~="24p"]{--par:24;}
 
       [data-kcm]{
-        flex-basis: calc(100% / var(--par) * var(--parça));
+        -ms-flex-preferred-size: calc(100% / var(--par) * var(--parça));
+            flex-basis: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
       [data-kcm~="0"]{
-        flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
         max-width: auto;
         width: auto;
       }
 
-      [data-kcm~="1g"]{flex:1;}    [data-kcm~="2g"]{flex:2;}   [data-kcm~="3g"]{flex:3;}    [data-kcm~="4g"]{flex:4;}
-      [data-kcm~="5g"]{flex:5;}    [data-kcm~="6g"]{flex:6;}   [data-kcm~="7g"]{flex:7;}    [data-kcm~="8g"]{flex:8;}
-      [data-kcm~="9g"]{flex:9;}    [data-kcm~="10g"]{flex:10;} [data-kcm~="11g"]{flex:11;}  [data-kcm~="12g"]{flex:12;}
-      [data-kcm~="13g"]{flex:13;}  [data-kcm~="14g"]{flex:14;} [data-kcm~="15g"]{flex:15;}  [data-kcm~="16g"]{flex:16;}
-      [data-kcm~="17g"]{flex:17;}  [data-kcm~="18g"]{flex:18;} [data-kcm~="19g"]{flex:19;}  [data-kcm~="20g"]{flex:20;}
-      [data-kcm~="21g"]{flex:21;}  [data-kcm~="22g"]{flex:22;} [data-kcm~="23g"]{flex:23;}  [data-kcm~="24g"]{flex:24;}
+      [data-kcm~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1;}    [data-kcm~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2;}   [data-kcm~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3;}    [data-kcm~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4;}
+      [data-kcm~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5;}    [data-kcm~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6;}   [data-kcm~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7;}    [data-kcm~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8;}
+      [data-kcm~="9g"]{-webkit-box-flex:9;-ms-flex:9;flex:9;}    [data-kcm~="10g"]{-webkit-box-flex:10;-ms-flex:10;flex:10;} [data-kcm~="11g"]{-webkit-box-flex:11;-ms-flex:11;flex:11;}  [data-kcm~="12g"]{-webkit-box-flex:12;-ms-flex:12;flex:12;}
+      [data-kcm~="13g"]{-webkit-box-flex:13;-ms-flex:13;flex:13;}  [data-kcm~="14g"]{-webkit-box-flex:14;-ms-flex:14;flex:14;} [data-kcm~="15g"]{-webkit-box-flex:15;-ms-flex:15;flex:15;}  [data-kcm~="16g"]{-webkit-box-flex:16;-ms-flex:16;flex:16;}
+      [data-kcm~="17g"]{-webkit-box-flex:17;-ms-flex:17;flex:17;}  [data-kcm~="18g"]{-webkit-box-flex:18;-ms-flex:18;flex:18;} [data-kcm~="19g"]{-webkit-box-flex:19;-ms-flex:19;flex:19;}  [data-kcm~="20g"]{-webkit-box-flex:20;-ms-flex:20;flex:20;}
+      [data-kcm~="21g"]{-webkit-box-flex:21;-ms-flex:21;flex:21;}  [data-kcm~="22g"]{-webkit-box-flex:22;-ms-flex:22;flex:22;} [data-kcm~="23g"]{-webkit-box-flex:23;-ms-flex:23;flex:23;}  [data-kcm~="24g"]{-webkit-box-flex:24;-ms-flex:24;flex:24;}
 
       /* Kap Örgüsü Sıraya Koyma Ayarları */
-      [data-kcm~="1nc"]{order:1}   [data-kcm~="2nc"]{order:2}   [data-kcm~="3nc"]{order:3}   [data-kcm~="4nc"]{order:4}
-      [data-kcm~="5nc"]{order:5}   [data-kcm~="6nc"]{order:6}   [data-kcm~="7nc"]{order:7}   [data-kcm~="8nc"]{order:8}
-      [data-kcm~="9nc"]{order:9}   [data-kcm~="10nc"]{order:10} [data-kcm~="11nc"]{order:11} [data-kcm~="12nc"]{order:12}
-      [data-kcm~="13nc"]{order:13} [data-kcm~="14nc"]{order:14} [data-kcm~="15nc"]{order:15} [data-kcm~="16nc"]{order:16}
-      [data-kcm~="17nc"]{order:17} [data-kcm~="18nc"]{order:18} [data-kcm~="19nc"]{order:19} [data-kcm~="20nc"]{order:20}
-      [data-kcm~="21nc"]{order:21} [data-kcm~="22nc"]{order:22} [data-kcm~="23nc"]{order:23} [data-kcm~="24nc"]{order:24}
+      [data-kcm~="1nc"]{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}   [data-kcm~="2nc"]{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}   [data-kcm~="3nc"]{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}   [data-kcm~="4nc"]{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
+      [data-kcm~="5nc"]{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}   [data-kcm~="6nc"]{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}   [data-kcm~="7nc"]{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}   [data-kcm~="8nc"]{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}
+      [data-kcm~="9nc"]{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}   [data-kcm~="10nc"]{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10} [data-kcm~="11nc"]{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11} [data-kcm~="12nc"]{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}
+      [data-kcm~="13nc"]{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13} [data-kcm~="14nc"]{-webkit-box-ordinal-group:15;-ms-flex-order:14;order:14} [data-kcm~="15nc"]{-webkit-box-ordinal-group:16;-ms-flex-order:15;order:15} [data-kcm~="16nc"]{-webkit-box-ordinal-group:17;-ms-flex-order:16;order:16}
+      [data-kcm~="17nc"]{-webkit-box-ordinal-group:18;-ms-flex-order:17;order:17} [data-kcm~="18nc"]{-webkit-box-ordinal-group:19;-ms-flex-order:18;order:18} [data-kcm~="19nc"]{-webkit-box-ordinal-group:20;-ms-flex-order:19;order:19} [data-kcm~="20nc"]{-webkit-box-ordinal-group:21;-ms-flex-order:20;order:20}
+      [data-kcm~="21nc"]{-webkit-box-ordinal-group:22;-ms-flex-order:21;order:21} [data-kcm~="22nc"]{-webkit-box-ordinal-group:23;-ms-flex-order:22;order:22} [data-kcm~="23nc"]{-webkit-box-ordinal-group:24;-ms-flex-order:23;order:23} [data-kcm~="24nc"]{-webkit-box-ordinal-group:25;-ms-flex-order:24;order:24}
 
       /* Konum Ayarları */
       [data-kcm~="kaymadan"]{overflow: hidden;}
       [data-kcm~="yatay-kayma"]{overflow-x: auto;}
-      [data-kcm~="dürmeden"]{flex-wrap: nowrap;}
+      [data-kcm~="dürmeden"]{-ms-flex-wrap: nowrap;flex-wrap: nowrap;}
 
-      [data-kcm~="ters-dürme"]{flex-wrap: wrap-reverse;}
-      [data-kcm~="ters-satır"]{flex-direction: row-reverse;}
-      [data-kcm~="ters-sütun"]{flex-direction: column-reverse;}
+      [data-kcm~="ters-dürme"]{-ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse;}
+      [data-kcm~="ters-satır"]{-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+      [data-kcm~="ters-sütun"]{-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;}
 
-      [data-kcm~="solda"]{justify-content: flex-start;}
-      [data-kcm~="ortada"]{justify-content:center;}
-      [data-kcm~="sağda"]{justify-content: flex-end;}
+      [data-kcm~="solda"]{-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+      [data-kcm~="ortada"]{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+      [data-kcm~="sağda"]{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
 
-      [data-kcm~="merkezde"]{align-items:center; justify-content: center;}
-      [data-kcm~="üstte"]{align-items: flex-start;}
-      [data-kcm~="göbekte"]{align-items: center;}
-      [data-kcm~="altta"]{align-items: flex-end;}
-      [data-kcm~="üstte-ol"]{align-self: flex-start !important;}
-      [data-kcm~="göbekte-ol"]{align-self: center !important;}
+      [data-kcm~="merkezde"]{-webkit-box-align:center;-ms-flex-align:center;align-items:center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+      [data-kcm~="üstte"]{-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
+      [data-kcm~="göbekte"]{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+      [data-kcm~="altta"]{-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;}
+      [data-kcm~="üstte-ol"]{-ms-flex-item-align: start !important;align-self: flex-start !important;}
+      [data-kcm~="göbekte-ol"]{-ms-flex-item-align: center !important;align-self: center !important;}
       [data-kcm~="altta-ol"]{margin-top:auto;}
-      [data-kcm~="sağda-ol"]{margin-left:auto; align-self:flex-end;}
-      [data-kcm~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
-      [data-kcm~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+      [data-kcm~="sağda-ol"]{margin-left:auto; -ms-flex-item-align:end; align-self:flex-end;}
+      [data-kcm~="ortada-ol"]{margin-left:auto; margin-right:auto; -ms-flex-item-align:center; align-self:center;}
+      [data-kcm~="solda-ol"]{margin-right:auto; -ms-flex-item-align:start; align-self:flex-start;}
 
-      [data-kcm~="ger"]{justify-content: space-between;}
-      [data-kcm~="yay"]{justify-content: space-around;}
-      [data-kcm~="uzat"]{align-items: stretch;}
-      [data-kcm~="uzun-ol"]{align-self: stretch;}
+      [data-kcm~="ger"]{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+      [data-kcm~="yay"]{-ms-flex-pack: distribute;justify-content: space-around;}
+      [data-kcm~="uzat"]{-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;}
+      [data-kcm~="uzun-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
 
-      [data-kcm~="satırda"]{align-items: baseline;}
-      [data-kcm~="satırda-ol"]{align-self: baseline;}
+      [data-kcm~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;align-items: baseline;}
+      [data-kcm~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
       [data-kcm~="gizle"],
       [data-kcm~="büyükleriyle-gizle"],
@@ -711,9 +761,14 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     @media screen and (min-width:1900px) {
 
       [data-dev]{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;/* Her durumda esnek görünüm tanımlama ayarı */
-        flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
-        align-items: flex-start;/* Varsayılan olarak üstte ol */
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;/* Her durumda varsayılan olarak satır düzeninde kaydırılmış içerik ayarı */
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-dev~="sığdır"]{
         min-height:1px; height:100%; max-height:100vh;  overflow-y:auto;
@@ -733,30 +788,32 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="21p"]{--par:21;} [data-dev~="22p"]{--par:22;} [data-dev~="23p"]{--par:23;} [data-dev~="24p"]{--par:24;}
 
       [data-dev]{
-        flex-basis: calc(100% / var(--par) * var(--parça));
+        -ms-flex-preferred-size: calc(100% / var(--par) * var(--parça));
+            flex-basis: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
       [data-dev~="0"]{
-        flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
         max-width: auto;
         width: auto;
       }
 
-      [data-dev~="1g"]{flex:1;}    [data-dev~="2g"]{flex:2;}   [data-dev~="3g"]{flex:3;}    [data-dev~="4g"]{flex:4;}
-      [data-dev~="5g"]{flex:5;}    [data-dev~="6g"]{flex:6;}   [data-dev~="7g"]{flex:7;}    [data-dev~="8g"]{flex:8;}
-      [data-dev~="9g"]{flex:9;}    [data-dev~="10g"]{flex:10;} [data-dev~="11g"]{flex:11;}  [data-dev~="12g"]{flex:12;}
-      [data-dev~="13g"]{flex:13;}  [data-dev~="14g"]{flex:14;} [data-dev~="15g"]{flex:15;}  [data-dev~="16g"]{flex:16;}
-      [data-dev~="17g"]{flex:17;}  [data-dev~="18g"]{flex:18;} [data-dev~="19g"]{flex:19;}  [data-dev~="20g"]{flex:20;}
-      [data-dev~="21g"]{flex:21;}  [data-dev~="22g"]{flex:22;} [data-dev~="23g"]{flex:23;}  [data-dev~="24g"]{flex:24;}
+      [data-dev~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1;}    [data-dev~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2;}   [data-dev~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3;}    [data-dev~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4;}
+      [data-dev~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5;}    [data-dev~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6;}   [data-dev~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7;}    [data-dev~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8;}
+      [data-dev~="9g"]{-webkit-box-flex:9;-ms-flex:9;flex:9;}    [data-dev~="10g"]{-webkit-box-flex:10;-ms-flex:10;flex:10;} [data-dev~="11g"]{-webkit-box-flex:11;-ms-flex:11;flex:11;}  [data-dev~="12g"]{-webkit-box-flex:12;-ms-flex:12;flex:12;}
+      [data-dev~="13g"]{-webkit-box-flex:13;-ms-flex:13;flex:13;}  [data-dev~="14g"]{-webkit-box-flex:14;-ms-flex:14;flex:14;} [data-dev~="15g"]{-webkit-box-flex:15;-ms-flex:15;flex:15;}  [data-dev~="16g"]{-webkit-box-flex:16;-ms-flex:16;flex:16;}
+      [data-dev~="17g"]{-webkit-box-flex:17;-ms-flex:17;flex:17;}  [data-dev~="18g"]{-webkit-box-flex:18;-ms-flex:18;flex:18;} [data-dev~="19g"]{-webkit-box-flex:19;-ms-flex:19;flex:19;}  [data-dev~="20g"]{-webkit-box-flex:20;-ms-flex:20;flex:20;}
+      [data-dev~="21g"]{-webkit-box-flex:21;-ms-flex:21;flex:21;}  [data-dev~="22g"]{-webkit-box-flex:22;-ms-flex:22;flex:22;} [data-dev~="23g"]{-webkit-box-flex:23;-ms-flex:23;flex:23;}  [data-dev~="24g"]{-webkit-box-flex:24;-ms-flex:24;flex:24;}
 
       /* Kap Örgüsü Sıraya Koyma Ayarları */
-      [data-dev~="1nc"]{order:1}   [data-dev~="2nc"]{order:2}   [data-dev~="3nc"]{order:3}   [data-dev~="4nc"]{order:4}
-      [data-dev~="5nc"]{order:5}   [data-dev~="6nc"]{order:6}   [data-dev~="7nc"]{order:7}   [data-dev~="8nc"]{order:8}
-      [data-dev~="9nc"]{order:9}   [data-dev~="10nc"]{order:10} [data-dev~="11nc"]{order:11} [data-dev~="12nc"]{order:12}
-      [data-dev~="13nc"]{order:13} [data-dev~="14nc"]{order:14} [data-dev~="15nc"]{order:15} [data-dev~="16nc"]{order:16}
-      [data-dev~="17nc"]{order:17} [data-dev~="18nc"]{order:18} [data-dev~="19nc"]{order:19} [data-dev~="20nc"]{order:20}
-      [data-dev~="21nc"]{order:21} [data-dev~="22nc"]{order:22} [data-dev~="23nc"]{order:23} [data-dev~="24nc"]{order:24}
+      [data-dev~="1nc"]{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}   [data-dev~="2nc"]{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}   [data-dev~="3nc"]{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}   [data-dev~="4nc"]{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
+      [data-dev~="5nc"]{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}   [data-dev~="6nc"]{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}   [data-dev~="7nc"]{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}   [data-dev~="8nc"]{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}
+      [data-dev~="9nc"]{-webkit-box-ordinal-group:10;-ms-flex-order:9;order:9}   [data-dev~="10nc"]{-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10} [data-dev~="11nc"]{-webkit-box-ordinal-group:12;-ms-flex-order:11;order:11} [data-dev~="12nc"]{-webkit-box-ordinal-group:13;-ms-flex-order:12;order:12}
+      [data-dev~="13nc"]{-webkit-box-ordinal-group:14;-ms-flex-order:13;order:13} [data-dev~="14nc"]{-webkit-box-ordinal-group:15;-ms-flex-order:14;order:14} [data-dev~="15nc"]{-webkit-box-ordinal-group:16;-ms-flex-order:15;order:15} [data-dev~="16nc"]{-webkit-box-ordinal-group:17;-ms-flex-order:16;order:16}
+      [data-dev~="17nc"]{-webkit-box-ordinal-group:18;-ms-flex-order:17;order:17} [data-dev~="18nc"]{-webkit-box-ordinal-group:19;-ms-flex-order:18;order:18} [data-dev~="19nc"]{-webkit-box-ordinal-group:20;-ms-flex-order:19;order:19} [data-dev~="20nc"]{-webkit-box-ordinal-group:21;-ms-flex-order:20;order:20}
+      [data-dev~="21nc"]{-webkit-box-ordinal-group:22;-ms-flex-order:21;order:21} [data-dev~="22nc"]{-webkit-box-ordinal-group:23;-ms-flex-order:22;order:22} [data-dev~="23nc"]{-webkit-box-ordinal-group:24;-ms-flex-order:23;order:23} [data-dev~="24nc"]{-webkit-box-ordinal-group:25;-ms-flex-order:24;order:24}
 
       [data-gnl~="kaplama"],[data-dev~="kaplama"],
       [data-kcm~="büyükleri-kaplama"],[data-kcm~="büyükleriyle-kaplama"],
@@ -771,34 +828,34 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       /* Konum Ayarları */
       [data-dev~="kaymadan"]{overflow: hidden;}
       [data-dev~="yatay-kayma"]{overflow-x: auto;}
-      [data-dev~="dürmeden"]{flex-wrap: nowrap;}
+      [data-dev~="dürmeden"]{-ms-flex-wrap: nowrap;flex-wrap: nowrap;}
 
-      [data-dev~="ters-dürme"]{flex-wrap: wrap-reverse;}
-      [data-dev~="ters-satır"]{flex-direction: row-reverse;}
-      [data-dev~="ters-sütun"]{flex-direction: column-reverse;}
+      [data-dev~="ters-dürme"]{-ms-flex-wrap: wrap-reverse;flex-wrap: wrap-reverse;}
+      [data-dev~="ters-satır"]{-webkit-box-orient: horizontal;-webkit-box-direction: reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+      [data-dev~="ters-sütun"]{-webkit-box-orient: vertical;-webkit-box-direction: reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;}
 
-      [data-dev~="solda"]{justify-content: flex-start;}
-      [data-dev~="ortada"]{justify-content:center;}
-      [data-dev~="sağda"]{justify-content: flex-end;}
+      [data-dev~="solda"]{-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+      [data-dev~="ortada"]{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+      [data-dev~="sağda"]{-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
 
-      [data-dev~="merkezde"]{align-items:center; justify-content: center;}
-      [data-dev~="üstte"]{align-items: flex-start;}
-      [data-dev~="göbekte"]{align-items: center;}
-      [data-dev~="altta"]{align-items: flex-end;}
-      [data-dev~="üstte-ol"]{align-self: flex-start !important;}
-      [data-dev~="göbekte-ol"]{align-self: center !important;}
+      [data-dev~="merkezde"]{-webkit-box-align:center;-ms-flex-align:center;align-items:center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+      [data-dev~="üstte"]{-webkit-box-align: start;-ms-flex-align: start;align-items: flex-start;}
+      [data-dev~="göbekte"]{-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+      [data-dev~="altta"]{-webkit-box-align: end;-ms-flex-align: end;align-items: flex-end;}
+      [data-dev~="üstte-ol"]{-ms-flex-item-align: start !important;align-self: flex-start !important;}
+      [data-dev~="göbekte-ol"]{-ms-flex-item-align: center !important;align-self: center !important;}
       [data-dev~="altta-ol"]{margin-top:auto;}
-      [data-dev~="sağda-ol"]{margin-left:auto; align-self:flex-end;}
-      [data-dev~="ortada-ol"]{margin-left:auto; margin-right:auto; align-self:center;}
-      [data-dev~="solda-ol"]{margin-right:auto; align-self:flex-start;}
+      [data-dev~="sağda-ol"]{margin-left:auto; -ms-flex-item-align:end; align-self:flex-end;}
+      [data-dev~="ortada-ol"]{margin-left:auto; margin-right:auto; -ms-flex-item-align:center; align-self:center;}
+      [data-dev~="solda-ol"]{margin-right:auto; -ms-flex-item-align:start; align-self:flex-start;}
 
-      [data-dev~="ger"]{justify-content: space-between;}
-      [data-dev~="yay"]{justify-content: space-around;}
-      [data-dev~="uzat"]{align-items: stretch;}
-      [data-dev~="uzun-ol"]{align-self: stretch;}
+      [data-dev~="ger"]{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+      [data-dev~="yay"]{-ms-flex-pack: distribute;justify-content: space-around;}
+      [data-dev~="uzat"]{-webkit-box-align: stretch;-ms-flex-align: stretch;align-items: stretch;}
+      [data-dev~="uzun-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
 
-      [data-dev~="satırda"]{align-items: baseline;}
-      [data-dev~="satırda-ol"]{align-self: baseline;}
+      [data-dev~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;align-items: baseline;}
+      [data-dev~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
       [data-dev~="büyükleriyle-gizle"],
       [data-dev~="büyükleri-gizle"],
@@ -1184,8 +1241,13 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     Sadece css yöntemiyle kurulmuş sekme örgüsü
 ----------------------------------------------------------------------------- */
 [data-sekme]{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   position: relative;
 }
 [data-sekme] > input{
@@ -1201,6 +1263,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: background ease 0.6s;
+  -o-transition: background ease 0.6s;
   transition: background ease 0.6s;
 }
 
@@ -1213,12 +1276,16 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   margin-right: 0.2rem;
 }
 [data-sekme] > input + label + div{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   position: absolute;
   z-index: -100;
   opacity: 0;
-  order:2;
+  -webkit-box-ordinal-group:3;
+      -ms-flex-order:2;
+          order:2;
   left:0;
 }
 [data-sekme] > input:checked + label + div{
@@ -1226,21 +1293,29 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   z-index: 0;
   opacity: 1;
   -webkit-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
   transition: all ease 0.6s;
 }
 
 [data-sekme~="sağda"]{
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 [data-sekme~="altta"]{
-  flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 [data-sekme~="sağda"][data-sekme~="altta"]{
-  justify-content: flex-end;
-  flex-wrap: wrap-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 [data-sekme~="yan"] > .sekme-listesi{
-  align-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 [data-sekme~="yan"] > .sekme-listesi > label{
   margin:0 10px 10px 10px;
@@ -1290,10 +1365,14 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   /* özelleştirme +() */
   margin:0 10px 10px 10px;
   -webkit-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
   transition: all ease 0.6s;
 }
 [data-sekme~="yan"][data-sekme~="sağda"]{
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 
