@@ -1,0 +1,45 @@
+---
+layout: default
+title: Kap Örgüsü Sıralama
+---
+<style media="screen">
+  .önizleme{background-color:#efefef; padding:10px;}
+  .önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1; padding:10px; color:#eee;}
+  .önizleme h3 {color:#999;margin:0 0 10px 0;}
+  pre.language-html{ max-height:50vh; overflow-y: auto;}
+</style>
+<p>Deveb kap örgüsünün sıralama özellikleri nesneleri kendi aralarında yazılış sırasından kopararay yeniden sıralandırmaya yarar ve nc birimiyle kullanılır.</p>
+
+<h3>Sıralama: <span data-metin="dikkat">1nc~24nc</span></h3>
+<p>Sıralama işlemi 1'den 24'e kadar gruplandırılabilir. Bir HTML etiketine 1nc ve 2nc tanımlaması yaptığınızda birbirleri arasında sıralama yapılır.</p>
+<p></p>
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme</h3>
+  <div data-gnl="1 1p 2nc">
+    2nc: kaynak kodunda birinci sırada, görüntülemede ikinci sırada.
+  </div>
+  <div data-gnl="1 1p 3nc">
+    3nc: kaynak kodunda ikinci sırada, görüntülemede üçüncü sırada.
+  </div>
+  <div data-gnl="1 1p 1nc">
+    1nc: kaynak kodunda üçüncü sırada, görüntülemede birinci sırada.
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 1p solda&quot;&gt;
+ &lt;div data-gnl=&quot;1 3p&quot;&gt;
+  solda
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 1p ortada&quot;&gt;
+ &lt;div data-gnl=&quot;1 3p&quot;&gt;
+  ortada
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;div data-gnl=&quot;1 1p sa&#287;da&quot;&gt;
+ &lt;div data-gnl=&quot;1 3p&quot;&gt;
+  sağda
+ &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p></p>
