@@ -139,7 +139,7 @@ GS1 KAP ÖRGÜSÜ
       align-items: stretch;
     }
     [data-gnl~="ekranda"]{
-      min-height:1px; height:100%; max-height:100vh;  overflow:auto;
+      min-height:1px; height:100%; max-height:100vh;  overflow-y:auto;
     }
     body[data-gnl~="sütun"]{
       min-height:100vh;
