@@ -78,17 +78,11 @@
         -webkit-margin-after: 0;
         -webkit-margin-start: 0px;
         -webkit-margin-end: 0px;
-      margin: 2em 0 0.5em 0;
+      margin: 1em 0 0.5em 0;
       color:#333;
       font-weight: bold;
     }
 
-    div > h1:first-child,
-    div > h2:first-child,
-    div > h3:first-child,
-    div > h4:first-child,
-    div > h5:first-child,
-    div > h6:first-child{margin-top:0}
     h1{font-size:1.5em;}
       h2{font-size:1.2em;}
         h3{font-size:1.1em;}
@@ -103,7 +97,7 @@
     h5 + h6{
       margin-top: 0
     }
-    
+
     img {
       border: 0;  /* Kenarlıkları sıfırlama */
     }
