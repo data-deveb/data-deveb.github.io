@@ -894,13 +894,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     UFAK-soner (ufk) veya (ufk-soner) | Ekran ölçeği: 0 < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:576px) {
-      body{font-size: .7em}
-      h1{font-size:1.6em;}
-        h2{font-size:1.4em;}
-          h3{font-size:1.2em;}
-            h4{font-size:1em;}
-              h5{font-size:.9em;}
-                h6{font-size:.8em}
+      body{font-size: 10px; font-size:1em;}
       [data-kçk~="küçükleri-gizle"],
       [data-kçk~="diğerlerini-gizle"],
       [data-ufk~="küçükleriyle-gizle"]
