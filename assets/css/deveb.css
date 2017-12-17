@@ -196,7 +196,7 @@ GS1 KAP ÖRGÜSÜ
     [data-gnl~="0"]{
       -ms-flex-preferred-size: auto;
           flex-basis: auto;
-      max-width: auto;
+      max-width: none;
       width: auto;
     }
     [data-gnl~="kaplama"]{
@@ -299,7 +299,7 @@ S01 UFAK-BÜYÜKLERİYLE [data-ufk] | Ekran ölçeği: 300px ≤ *
       [data-ufk~="0"]{
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
-        max-width: auto;
+        max-width: none;
         width: auto;
       }
 
@@ -397,7 +397,7 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="0"]{
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
-        max-width: auto;
+        max-width: none;
         width: auto;
       }
 
@@ -494,7 +494,7 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-ort~="0"]{
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
-        max-width: auto;
+        max-width: none;
         width: auto;
       }
 
@@ -591,7 +591,7 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk~="0"]{
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
-        max-width: auto;
+        max-width: none;
         width: auto;
       }
 
@@ -688,7 +688,7 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-kcm~="0"]{
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
-        max-width: auto;
+        max-width: none;
         width: auto;
       }
 
@@ -785,7 +785,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="0"]{
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
-        max-width: auto;
+        max-width: none;
         width: auto;
       }
 
