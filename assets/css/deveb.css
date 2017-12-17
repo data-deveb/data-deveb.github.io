@@ -1301,12 +1301,14 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
 }
-[data-sekme~="sağda"][data-sekme~="altta"]{
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+[data-sekme~="ortada"]{
+  justify-content: center;
+}
+[data-sekme~="gergin"]{
+  justify-content: space-between;
+}
+[data-sekme~="gergin"] > label {
+  flex:1 1 auto;
 }
 [data-sekme~="yan"] > .sekme-listesi{
   -ms-flex-line-pack: start;
