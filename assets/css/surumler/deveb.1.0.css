@@ -154,8 +154,9 @@ GS1 KAP ÖRGÜSÜ
     }
 
     [data-gnl~="sığdır"]{
-      /* min-height:1px; height:100%; max-height:100vh; overflow-y:auto; */
-      flex: 1 1 0 !important;
+      -webkit-box-flex: 1 !important;
+          -ms-flex: 1 1 0 !important;
+              flex: 1 1 0 !important;
       overflow: auto;
     }
 
@@ -292,7 +293,9 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
                 align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-ufk~="sığdır"]{
-        flex: 1 1 0 !important;
+        -webkit-box-flex: 1 !important;
+            -ms-flex: 1 1 0 !important;
+                flex: 1 1 0 !important;
         overflow: auto;
       }
       [data-ufk~="1"]{--parça:1;}   [data-ufk~="2"]{--parça:2;}   [data-ufk~="3"]{--parça:3;}   [data-ufk~="4"]{--parça:4;}
@@ -391,7 +394,9 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
                 align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-kçk~="sığdır"]{
-        flex: 1 1 0 !important;
+        -webkit-box-flex: 1 !important;
+            -ms-flex: 1 1 0 !important;
+                flex: 1 1 0 !important;
         overflow: auto;
       }
 
@@ -490,7 +495,9 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
                 align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-ort~="sığdır"]{
-        flex: 1 1 0 !important;
+        -webkit-box-flex: 1 !important;
+            -ms-flex: 1 1 0 !important;
+                flex: 1 1 0 !important;
         overflow: auto;
       }
 
@@ -589,7 +596,9 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
                 align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-byk~="sığdır"]{
-        flex: 1 1 0 !important;
+        -webkit-box-flex: 1 !important;
+            -ms-flex: 1 1 0 !important;
+                flex: 1 1 0 !important;
         overflow: auto;
       }
 
@@ -688,7 +697,9 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
                 align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-kcm~="sığdır"]{
-        flex: 1 1 0 !important;
+        -webkit-box-flex: 1 !important;
+            -ms-flex: 1 1 0 !important;
+                flex: 1 1 0 !important;
         overflow: auto;
       }
 
@@ -787,7 +798,9 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
                 align-items: flex-start;/* Varsayılan olarak üstte ol */
       }
       [data-dev~="sığdır"]{
-        flex: 1 1 0 !important;
+        -webkit-box-flex: 1 !important;
+            -ms-flex: 1 1 0 !important;
+                flex: 1 1 0 !important;
         overflow: auto;
       }
 
@@ -1337,13 +1350,19 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       flex-wrap: wrap-reverse;
 }
 [data-sekme~="ortada"]{
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 [data-sekme~="gergin"]{
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 [data-sekme~="gergin"] > label {
-  flex:1 1 auto;
+  -webkit-box-flex:1;
+      -ms-flex:1 1 auto;
+          flex:1 1 auto;
 }
 [data-sekme~="yan"] > .sekme-listesi{
   -ms-flex-line-pack: start;
