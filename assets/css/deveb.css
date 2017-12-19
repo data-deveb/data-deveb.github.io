@@ -1401,7 +1401,16 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-
+/* ==========================================================================
+    MENÜ ÖRGÜSÜ s0.1
+    Sadece css yöntemiyle kurulmuş sekme örgüsü
+----------------------------------------------------------------------------- */
+[data-menü] + input{
+  display: none;
+}
+[data-menü] + input:checked + ul{
+  display: flex !important;
+}
 
 /* SÖZCÜKLER VE ANLAMLARI */
 /* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
