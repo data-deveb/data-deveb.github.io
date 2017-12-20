@@ -269,6 +269,10 @@ GS1 KAP ÖRGÜSÜ
     [data-gnl~="satırda"]{-webkit-box-align: baseline !important;-ms-flex-align: baseline !important;-ms-grid-row-align: baseline !important;align-items: baseline !important;}
     [data-gnl~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
+    [data-gnl~="metin-sağda"]{text-align: right}
+    [data-gnl~="metin-ortada"]{text-align: center}
+    [data-gnl~="metin-solda"]{text-align: left}
+
     [data-gnl~="gizle"],
     [data-mnk~="gizle"]
     {display: none !important}
@@ -370,6 +374,10 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
 
       [data-ufk~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;-ms-grid-row-align: baseline;align-items: baseline;}
       [data-ufk~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
+
+      [data-ufk~="metin-sağda"]{text-align: right}
+      [data-ufk~="metin-ortada"]{text-align: center}
+      [data-ufk~="metin-solda"]{text-align: left}
 
       [data-ufk~="gizle"],
       [data-ufk~="büyükleriyle-gizle"],
@@ -473,6 +481,10 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;-ms-grid-row-align: baseline;align-items: baseline;}
       [data-kçk~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
+      [data-kçk~="metin-sağda"]{text-align: right}
+      [data-kçk~="metin-ortada"]{text-align: center}
+      [data-kçk~="metin-solda"]{text-align: left}
+
       [data-kçk~="gizle"],
       [data-kçk~="büyükleriyle-gizle"],
       [data-ufk~="büyükleri-gizle"],
@@ -573,6 +585,10 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
 
       [data-ort~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;-ms-grid-row-align: baseline;align-items: baseline;}
       [data-ort~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
+
+      [data-ort~="metin-sağda"]{text-align: right}
+      [data-ort~="metin-ortada"]{text-align: center}
+      [data-ort~="metin-solda"]{text-align: left}
 
       [data-ort~="gizle"],
       [data-ort~="büyükleriyle-gizle"],
@@ -675,6 +691,10 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;-ms-grid-row-align: baseline;align-items: baseline;}
       [data-byk~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
 
+      [data-byk~="metin-sağda"]{text-align: right}
+      [data-byk~="metin-ortada"]{text-align: center}
+      [data-byk~="metin-solda"]{text-align: left}
+
       [data-byk~="gizle"],
       [data-byk~="büyükleriyle-gizle"],
       [data-ort~="büyükleri-gizle"],
@@ -775,6 +795,10 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
 
       [data-kcm~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;-ms-grid-row-align: baseline;align-items: baseline;}
       [data-kcm~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
+
+      [data-kcm~="metin-sağda"]{text-align: right}
+      [data-kcm~="metin-ortada"]{text-align: center}
+      [data-kcm~="metin-solda"]{text-align: left}
 
       [data-kcm~="gizle"],
       [data-kcm~="büyükleriyle-gizle"],
@@ -886,6 +910,10 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
       [data-dev~="satırda"]{-webkit-box-align: baseline;-ms-flex-align: baseline;-ms-grid-row-align: baseline;align-items: baseline;}
       [data-dev~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}
+
+      [data-dev~="metin-sağda"]{text-align: right}
+      [data-dev~="metin-ortada"]{text-align: center}
+      [data-dev~="metin-solda"]{text-align: left}
 
       [data-dev~="gizle"],
       [data-dev~="büyükleriyle-gizle"],
