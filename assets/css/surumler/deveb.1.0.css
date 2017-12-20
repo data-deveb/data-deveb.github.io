@@ -185,13 +185,13 @@ GS1 KAP ÖRGÜSÜ
 
     /* Kap Örgüsü Parça Hesaplama */
     [data-gnl]{
-      width: calc(100% / var(--par) * var(--parça));
+      flex-basis: calc(100% / var(--par) * var(--parça)); width: calc(100% / var(--par) * var(--parça));
       max-width:  calc(100% / var(--par) * var(--parça));
     }
     /* Kap Örgüsü Ek Etkiler */
       [data-gnl~="aralık"] > [data-gnl]{
         margin: var(--aralık);
-        width: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
+        flex-basis: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara)); width: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
         max-width:  calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
       }
 
@@ -313,7 +313,7 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
       [data-ufk~="21p"]{--par:21;} [data-ufk~="22p"]{--par:22;} [data-ufk~="23p"]{--par:23;} [data-ufk~="24p"]{--par:24;}
 
       [data-ufk]{
-        width: calc(100% / var(--par) * var(--parça));
+        flex-basis: calc(100% / var(--par) * var(--parça)); width: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
@@ -415,7 +415,7 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-kçk~="21p"]{--par:21;} [data-kçk~="22p"]{--par:22;} [data-kçk~="23p"]{--par:23;} [data-kçk~="24p"]{--par:24;}
 
       [data-kçk]{
-        width: calc(100% / var(--par) * var(--parça));
+        flex-basis: calc(100% / var(--par) * var(--parça)); width: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
@@ -516,7 +516,7 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-ort~="21p"]{--par:21;} [data-ort~="22p"]{--par:22;} [data-ort~="23p"]{--par:23;} [data-ort~="24p"]{--par:24;}
 
       [data-ort]{
-        width: calc(100% / var(--par) * var(--parça));
+        flex-basis: calc(100% / var(--par) * var(--parça)); width: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
@@ -617,7 +617,7 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-byk~="21p"]{--par:21;} [data-byk~="22p"]{--par:22;} [data-byk~="23p"]{--par:23;} [data-byk~="24p"]{--par:24;}
 
       [data-byk]{
-        width: calc(100% / var(--par) * var(--parça));
+        flex-basis: calc(100% / var(--par) * var(--parça)); width: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
@@ -718,7 +718,7 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-kcm~="21p"]{--par:21;} [data-kcm~="22p"]{--par:22;} [data-kcm~="23p"]{--par:23;} [data-kcm~="24p"]{--par:24;}
 
       [data-kcm]{
-        width: calc(100% / var(--par) * var(--parça));
+        flex-basis: calc(100% / var(--par) * var(--parça)); width: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
@@ -819,7 +819,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-dev~="21p"]{--par:21;} [data-dev~="22p"]{--par:22;} [data-dev~="23p"]{--par:23;} [data-dev~="24p"]{--par:24;}
 
       [data-dev]{
-        width: calc(100% / var(--par) * var(--parça));
+        flex-basis: calc(100% / var(--par) * var(--parça)); width: calc(100% / var(--par) * var(--parça));
         max-width:  calc(100% / var(--par) * var(--parça));
       }
 
