@@ -1477,6 +1477,14 @@ label[data-menü], [data-menü~="varsayılan"] + input + ul li a{
 [data-menü~="varsayılan"] + input + ul li a.etkin{
   background-color: #3c3181;
 }
+label[data-menü~="yukarı"]{
+  display: flex;
+  order: 2;
+}
+label[data-menü~="yukarı"] + input + ul{
+  display: flex;
+  order: 1;
+}
 
 /* SÖZCÜKLER VE ANLAMLARI */
 /* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
