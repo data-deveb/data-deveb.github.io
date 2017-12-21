@@ -263,8 +263,8 @@ GS1 KAP ÖRGÜSÜ
 
     [data-gnl~="geniş-aralıklı"]{-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
     [data-gnl~="aralıklı"]{-ms-flex-pack: distribute;justify-content: space-around;}
-    [data-gnl~="gergin"]{-webkit-box-align: stretch !important;-ms-flex-align: stretch !important;-ms-grid-row-align: stretch !important;align-items: stretch !important;}
-    [data-gnl~="gergin-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
+    [data-gnl~="uzat"]{-webkit-box-align: stretch !important;-ms-flex-align: stretch !important;-ms-grid-row-align: stretch !important;align-items: stretch !important;}
+    [data-gnl~="uzun-ol"]{-ms-flex-item-align: stretch;align-self: stretch;}
 
     [data-gnl~="satırda"]{-webkit-box-align: baseline !important;-ms-flex-align: baseline !important;-ms-grid-row-align: baseline !important;align-items: baseline !important;}
     [data-gnl~="satırda-ol"]{-ms-flex-item-align: baseline;align-self: baseline;}

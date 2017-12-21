@@ -158,6 +158,7 @@ GS1 KAP ÖRGÜSÜ
           -ms-flex: 1 1 0 !important;
               flex: 1 1 0 !important;
       overflow: auto;
+      height: 100%;
     }
 
     body[data-gnl~="sütun"]{
@@ -301,6 +302,7 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
             -ms-flex: 1 1 0 !important;
                 flex: 1 1 0 !important;
         overflow: auto;
+        height: 100%;
       }
       [data-ufk~="1"]{--parça:1;}   [data-ufk~="2"]{--parça:2;}   [data-ufk~="3"]{--parça:3;}   [data-ufk~="4"]{--parça:4;}
       [data-ufk~="5"]{--parça:5;}   [data-ufk~="6"]{--parça:6;}   [data-ufk~="7"]{--parça:7;}   [data-ufk~="8"]{--parça:8;}
@@ -406,6 +408,7 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
             -ms-flex: 1 1 0 !important;
                 flex: 1 1 0 !important;
         overflow: auto;
+        height: 100%;
       }
 
       [data-kçk~="1"]{--parça:1;}   [data-kçk~="2"]{--parça:2;}   [data-kçk~="3"]{--parça:3;}   [data-kçk~="4"]{--parça:4;}
@@ -511,6 +514,7 @@ S03 ORTA-ilker (ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
             -ms-flex: 1 1 0 !important;
                 flex: 1 1 0 !important;
         overflow: auto;
+        height: 100%;
       }
 
       [data-ort~="1"]{--parça:1;}   [data-ort~="2"]{--parça:2;}   [data-ort~="3"]{--parça:3;}   [data-ort~="4"]{--parça:4;}
@@ -616,6 +620,7 @@ S04 BÜYÜK-ilker (byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
             -ms-flex: 1 1 0 !important;
                 flex: 1 1 0 !important;
         overflow: auto;
+        height: 100%;
       }
 
       [data-byk~="1"]{--parça:1;}   [data-byk~="2"]{--parça:2;}   [data-byk~="3"]{--parça:3;}   [data-byk~="4"]{--parça:4;}
@@ -721,6 +726,7 @@ S05 KOCAMAN-ilker (kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
             -ms-flex: 1 1 0 !important;
                 flex: 1 1 0 !important;
         overflow: auto;
+        height: 100%;
       }
 
       [data-kcm~="1"]{--parça:1;}   [data-kcm~="2"]{--parça:2;}   [data-kcm~="3"]{--parça:3;}   [data-kcm~="4"]{--parça:4;}
@@ -826,6 +832,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
             -ms-flex: 1 1 0 !important;
                 flex: 1 1 0 !important;
         overflow: auto;
+        height: 100%;
       }
 
       [data-dev~="1"]{--parça:1;}   [data-dev~="2"]{--parça:2;}   [data-dev~="3"]{--parça:3;}   [data-dev~="4"]{--parça:4;}
