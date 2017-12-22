@@ -1471,6 +1471,27 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 [data-menü] > input:first-child:checked + label + ul{
   display: flex !important;
 }
+
+[data-menü~="yukarı"] > label{
+  display: flex;
+  order: 2;
+}
+[data-menü~="yukarı"] > ul{
+  display: flex;
+  order: 1;
+}
+[data-menü~="boş"] > input:checked + label{
+  background-color: gray;
+}
+[data-menü~="boş"] > ul li a:hover,
+[data-menü~="boş"] > ul li a.etkin{
+  background-color: rgba(0,0,0,.05);
+}
+[data-menü~="boş"] > ul li a,
+[data-menü~="boş"] > label {
+  display: inherit;
+  flex:1 1 0;
+}
 [data-menü~="varsayılan"] > ul li a,
 [data-menü~="varsayılan"] > label {
   display: inherit;
@@ -1489,14 +1510,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 [data-menü~="varsayılan"] > ul li a.etkin{
   background-color: #3c3181;
 }
-[data-menü~="yukarı"] > label{
-  display: flex;
-  order: 2;
-}
-[data-menü~="yukarı"] > ul{
-  display: flex;
-  order: 1;
-}
+
 
 /* SÖZCÜKLER VE ANLAMLARI */
 /* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
