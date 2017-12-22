@@ -10,8 +10,6 @@ $(document).ready(function(i)	{
     var id = $(this).attr('data-gnl');
     var deger = id.split(' ');
     var degerkac = deger.length;
-    var deger0 = 24;
-    var deger1 = 24;
     for(i=0;i < degerkac;){
         if(oranlar0.lastIndexOf(deger[i]) != -1){
         	var deger0 = oranlar0[oranlar0.lastIndexOf(deger[i])];
@@ -22,7 +20,7 @@ $(document).ready(function(i)	{
         i++;
     }
     //alert(deger0);
-    var hesapla = 100/(deger1.replace('p', ''))*deger0;
+    var hesapla = 100/deger1.replace('p', '')*deger0;
     var data = deger0+" "+deger1;
     $(this).css('width',hesapla+'%');
   });
