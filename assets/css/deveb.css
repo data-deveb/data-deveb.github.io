@@ -1465,13 +1465,14 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     MENÜ ÖRGÜSÜ s0.1
     Sadece css yöntemiyle kurulmuş sekme örgüsü
 ----------------------------------------------------------------------------- */
-label[data-menü] + input{
+[data-menü] > input:first-child{
   display: none;
 }
-label[data-menü] + input:checked + ul{
+[data-menü] > input:first-child:checked + label + ul{
   display: flex !important;
 }
-label[data-menü], [data-menü~="varsayılan"] + input + ul li a{
+[data-menü~="varsayılan"] > ul li a,
+[data-menü~="varsayılan"] > label {
   display: inherit;
   padding: 10px 15px;
   flex:1 1 0;
@@ -1479,16 +1480,20 @@ label[data-menü], [data-menü~="varsayılan"] + input + ul li a{
   color:#fefefe;
   text-align: center;
   justify-content: center;
+  border-bottom: 1px solid rgba(255,255,255,.05);
 }
-[data-menü~="varsayılan"] + input + ul li a:hover,
-[data-menü~="varsayılan"] + input + ul li a.etkin{
+[data-menü~="varsayılan"] > input:checked + label{
+  background-color: gray;
+}
+[data-menü~="varsayılan"] > ul li a:hover,
+[data-menü~="varsayılan"] > ul li a.etkin{
   background-color: #3c3181;
 }
-label[data-menü~="yukarı"]{
+[data-menü~="yukarı"] > label{
   display: flex;
   order: 2;
 }
-label[data-menü~="yukarı"] + input + ul{
+[data-menü~="yukarı"] > ul{
   display: flex;
   order: 1;
 }
