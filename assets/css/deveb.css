@@ -1492,6 +1492,9 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   display: inherit;
   flex:1 1 0;
 }
+[data-menü~="boş"] ul li a
+{  padding:5px 0 5px 5px;}
+
 [data-menü~="varsayılan"] > ul li a,
 [data-menü~="varsayılan"] > label {
   display: inherit;
@@ -1503,8 +1506,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   justify-content: center;
   border-bottom: 1px solid rgba(255,255,255,.05);
 }
-[data-menü~="varsayılan"] ul li a
-{  padding:5px 0 5px 5px;}
+
 [data-menü~="varsayılan"] > input:checked + label{
   background-color: gray;
 }
