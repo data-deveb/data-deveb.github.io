@@ -269,6 +269,7 @@ ul.liste-temiz li{
 [data-menü~="basamak"] li{
 	padding:5px 0 5px 10px;
 	margin-bottom: 5px;
+	width:100%;
 }
 [data-menü~="basamak"] li{
 	border-left:3px solid rgb(114, 137, 218);
