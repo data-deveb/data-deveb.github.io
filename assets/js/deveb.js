@@ -98,4 +98,73 @@ $(document).ready(function(i)	{
                      }
                    });
                  }
+                 if (window.screen.width >= 992) {
+                   $('[data-byk]').each(function(i) {
+                     var id = $(this).attr('data-byk');
+                     var deger = id.split(' ');
+                     var degerkac = deger.length;
+                     var deger0 = -1;
+                     var deger1 = -1;
+                     for(i=0;i < degerkac;){
+                         if(oranlar0.lastIndexOf(deger[i]) != -1){
+                          var deger0 = oranlar0[oranlar0.lastIndexOf(deger[i])];
+                        }
+                         if(oranlar1.lastIndexOf(deger[i]) != -1){
+                          var deger1 = oranlar1[oranlar1.lastIndexOf(deger[i])];
+                        }
+                         i++;
+                     }
+                     if (deger0 != -1 && deger1 != -1){
+                         var hesapla = 100/deger1.replace('p', '')*deger0;
+                         var data = deger0+" "+deger1;
+                         $(this).css('width',hesapla+'%');
+                     }
+                   });
+                 }
+                 if (window.screen.width >= 1200) {
+                   $('[data-kcm]').each(function(i) {
+                     var id = $(this).attr('data-kcm');
+                     var deger = id.split(' ');
+                     var degerkac = deger.length;
+                     var deger0 = -1;
+                     var deger1 = -1;
+                     for(i=0;i < degerkac;){
+                         if(oranlar0.lastIndexOf(deger[i]) != -1){
+                          var deger0 = oranlar0[oranlar0.lastIndexOf(deger[i])];
+                        }
+                         if(oranlar1.lastIndexOf(deger[i]) != -1){
+                          var deger1 = oranlar1[oranlar1.lastIndexOf(deger[i])];
+                        }
+                         i++;
+                     }
+                     if (deger0 != -1 && deger1 != -1){
+                         var hesapla = 100/deger1.replace('p', '')*deger0;
+                         var data = deger0+" "+deger1;
+                         $(this).css('width',hesapla+'%');
+                     }
+                   });
+                 }
+                 if (window.screen.width >= 1900) {
+                   $('[data-dev]').each(function(i) {
+                     var id = $(this).attr('data-dev');
+                     var deger = id.split(' ');
+                     var degerkac = deger.length;
+                     var deger0 = -1;
+                     var deger1 = -1;
+                     for(i=0;i < degerkac;){
+                         if(oranlar0.lastIndexOf(deger[i]) != -1){
+                          var deger0 = oranlar0[oranlar0.lastIndexOf(deger[i])];
+                        }
+                         if(oranlar1.lastIndexOf(deger[i]) != -1){
+                          var deger1 = oranlar1[oranlar1.lastIndexOf(deger[i])];
+                        }
+                         i++;
+                     }
+                     if (deger0 != -1 && deger1 != -1){
+                         var hesapla = 100/deger1.replace('p', '')*deger0;
+                         var data = deger0+" "+deger1;
+                         $(this).css('width',hesapla+'%');
+                     }
+                   });
+                 }
 });
