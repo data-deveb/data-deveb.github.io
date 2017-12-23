@@ -1,4 +1,5 @@
 $(document).ready(function(i)	{
+  if (/MSIE (\d+\.\d+);/.test(navigator.userAgent) || navigator.userAgent.indexOf("Trident/") > -1 ){
 
   var oranlar0 = ['1','2','3','4','5','6','7','8',
                  '9','10','11','12','13','14','15','16',
@@ -166,5 +167,8 @@ $(document).ready(function(i)	{
                          $(this).css('width',hesapla+'%');
                      }
                    });
+                 }
+
+                  // do stuff with ie-users
                  }
 });
