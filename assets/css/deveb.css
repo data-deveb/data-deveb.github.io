@@ -1541,7 +1541,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   background-color: #3c3181;
 }
 
-@media screen and (min-width:576px), (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (min-width:576px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   [data-kçk~="0"]{
     -ms-flex-preferred-size: auto !important;
 
