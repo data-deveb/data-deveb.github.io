@@ -462,13 +462,6 @@ S02 KÇK-ilker (kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
         max-width: none;
         width: auto;
       }
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        [data-kçk~="0"]{
-          -ms-flex-preferred-size: auto !important;
-
-          width: auto !important;
-        }
-      }
 
       [data-kçk~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1;}    [data-kçk~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2;}   [data-kçk~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3;}    [data-kçk~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4;}
       [data-kçk~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5;}    [data-kçk~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6;}   [data-kçk~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7;}    [data-kçk~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8;}
@@ -1548,7 +1541,13 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   background-color: #3c3181;
 }
 
+@media screen and (min-width:576px), (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  [data-kçk~="0"]{
+    -ms-flex-preferred-size: auto !important;
 
+    width: auto !important;
+  }
+}
 /* SÖZCÜKLER VE ANLAMLARI */
 /* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
 /* TEKER: Tek, yalnız, sadece (bu sözcüklerin birleşimidir) */
