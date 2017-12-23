@@ -1,3 +1,4 @@
+//Okyanus Okan Sefer ve Arcface'in desteği ile geliştirilen uyumsuzluk çözücüsü.
 $(document).ready(function(i)	{
   if (/MSIE (\d+\.\d+);/.test(navigator.userAgent) || navigator.userAgent.indexOf("Trident/") > -1 ){
 
