@@ -222,40 +222,13 @@ GS1 KAP ÖRGÜSÜ
       margin-right:auto;
     }
 
-    /* Kap Örgüsü Oran Ayarları */
-    [data-gnl~="1g"]{-webkit-box-flex: 1;-ms-flex-positive: 1;flex-grow: 1;}
-    [data-gnl~="2g"]{-webkit-box-flex: 2;-ms-flex-positive: 2;flex-grow: 2;}
-    [data-gnl~="3g"]{-webkit-box-flex: 3;-ms-flex-positive: 3;flex-grow: 3;}
-    [data-gnl~="4g"]{-webkit-box-flex: 4;-ms-flex-positive: 4;flex-grow: 4;}
-    [data-gnl~="5g"]{-webkit-box-flex: 5;-ms-flex-positive: 5;flex-grow: 5;}
-    [data-gnl~="6g"]{-webkit-box-flex: 6;-ms-flex-positive: 6;flex-grow: 6;}
-    [data-gnl~="7g"]{-webkit-box-flex: 7;-ms-flex-positive: 7;flex-grow: 7;}
-    [data-gnl~="8g"]{-webkit-box-flex: 8;-ms-flex-positive: 8;flex-grow: 8;}
-    [data-gnl~="9g"]{-webkit-box-flex: 9;-ms-flex-positive: 9;flex-grow: 9;}
-    [data-gnl~="10g"]{-webkit-box-flex: 10;-ms-flex-positive: 10;flex-grow: 10;}
-    [data-gnl~="11g"]{-webkit-box-flex: 11;-ms-flex-positive: 11;flex-grow: 11;}
-    [data-gnl~="12g"]{-webkit-box-flex: 11;-ms-flex-positive: 11;flex-grow: 11;}
-    [data-gnl~="13g"]{-webkit-box-flex: 12;-ms-flex-positive: 12;flex-grow: 12;}
-    [data-gnl~="14g"]{-webkit-box-flex: 13;-ms-flex-positive: 13;flex-grow: 13;}
-    [data-gnl~="15g"]{-webkit-box-flex: 14;-ms-flex-positive: 14;flex-grow: 14;}
-    [data-gnl~="16g"]{-webkit-box-flex: 15;-ms-flex-positive: 15;flex-grow: 15;}
-    [data-gnl~="17g"]{-webkit-box-flex: 16;-ms-flex-positive: 16;flex-grow: 16;}
-    [data-gnl~="18g"]{-webkit-box-flex: 17;-ms-flex-positive: 17;flex-grow: 17;}
-    [data-gnl~="19g"]{-webkit-box-flex: 18;-ms-flex-positive: 18;flex-grow: 18;}
-    [data-gnl~="20g"]{-webkit-box-flex: 19;-ms-flex-positive: 19;flex-grow: 19;}
-    [data-gnl~="21g"]{-webkit-box-flex: 20;-ms-flex-positive: 20;flex-grow: 20;}
-    [data-gnl~="22g"]{-webkit-box-flex: 22;-ms-flex-positive: 22;flex-grow: 22;}
-    [data-gnl~="23g"]{-webkit-box-flex: 23;-ms-flex-positive: 23;flex-grow: 23;}
-    [data-gnl~="24g"]{-webkit-box-flex: 24;-ms-flex-positive: 24;flex-grow: 24;}
-
-
-    /*[data-gnl~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1}   [data-gnl~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2}   [data-gnl~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3}   [data-gnl~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4}
+    [data-gnl~="1g"]{-webkit-box-flex:1;-ms-flex:1;flex:1}   [data-gnl~="2g"]{-webkit-box-flex:2;-ms-flex:2;flex:2}   [data-gnl~="3g"]{-webkit-box-flex:3;-ms-flex:3;flex:3}   [data-gnl~="4g"]{-webkit-box-flex:4;-ms-flex:4;flex:4}
     [data-gnl~="5g"]{-webkit-box-flex:5;-ms-flex:5;flex:5}   [data-gnl~="6g"]{-webkit-box-flex:6;-ms-flex:6;flex:6}   [data-gnl~="7g"]{-webkit-box-flex:7;-ms-flex:7;flex:7}   [data-gnl~="8g"]{-webkit-box-flex:8;-ms-flex:8;flex:8}
     [data-gnl~="9g"]{-webkit-box-flex:9;-ms-flex:9;flex:9}   [data-gnl~="10g"]{-webkit-box-flex:10;-ms-flex:10;flex:10} [data-gnl~="11g"]{-webkit-box-flex:11;-ms-flex:11;flex:11} [data-gnl~="12g"]{-webkit-box-flex:12;-ms-flex:12;flex:12}
     [data-gnl~="13g"]{-webkit-box-flex:13;-ms-flex:13;flex:13} [data-gnl~="14g"]{-webkit-box-flex:14;-ms-flex:14;flex:14} [data-gnl~="15g"]{-webkit-box-flex:15;-ms-flex:15;flex:15} [data-gnl~="16g"]{-webkit-box-flex:16;-ms-flex:16;flex:16}
     [data-gnl~="17g"]{-webkit-box-flex:17;-ms-flex:17;flex:17} [data-gnl~="18g"]{-webkit-box-flex:18;-ms-flex:18;flex:18} [data-gnl~="19g"]{-webkit-box-flex:19;-ms-flex:19;flex:19} [data-gnl~="20g"]{-webkit-box-flex:20;-ms-flex:20;flex:20}
     [data-gnl~="21g"]{-webkit-box-flex:21;-ms-flex:21;flex:21} [data-gnl~="22g"]{-webkit-box-flex:22;-ms-flex:22;flex:22} [data-gnl~="23g"]{-webkit-box-flex:23;-ms-flex:23;flex:23} [data-gnl~="24g"]{-webkit-box-flex:24;-ms-flex:24;flex:24}
-    */
+
     /* Kap Örgüsü Sıraya Koyma Ayarları */
     [data-gnl~="1nc"]{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}   [data-gnl~="2nc"]{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}   [data-gnl~="3nc"]{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}   [data-gnl~="4nc"]{-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4}
     [data-gnl~="5nc"]{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}   [data-gnl~="6nc"]{-webkit-box-ordinal-group:7;-ms-flex-order:6;order:6}   [data-gnl~="7nc"]{-webkit-box-ordinal-group:8;-ms-flex-order:7;order:7}   [data-gnl~="8nc"]{-webkit-box-ordinal-group:9;-ms-flex-order:8;order:8}
