@@ -29,11 +29,11 @@
     ÖZELLEŞTİRİLEBİLİR AYARLAR
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 :root{
- --aralık: 5px;
- --oluk: 5px;
+ --aralık:5px;
+ --oluk:5px;
 
- --parça: 24; /* parça: par içinde kullanılabilecek parçalardır. */
- --par: 24;   /* par: parçaların toplamı sonucu oluşabilecek bütündür. */
+ --parça:24; /* parça: par içinde kullanılabilecek parçalardır. */
+ --par:24;   /* par: parçaların toplamı sonucu oluşabilecek bütündür. */
 }
 
     html {
