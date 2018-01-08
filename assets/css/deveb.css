@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 /*
   * [DEVEB 0.104] | (deveb.css) | (https://data-deveb.github.io)
 
@@ -31,7 +31,6 @@
 :root{
  --aralık:5px;
  --oluk:5px;
-
  --parça:24; /* parça: par içinde kullanılabilecek parçalardır. */
  --par:24;   /* par: parçaların toplamı sonucu oluşabilecek bütündür. */
 }
