@@ -1290,8 +1290,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 /* ==========================================================================
     METİN ÖRGÜSÜ s0.1
-    Katkıda Bulunanlar
-    {Ramazan Kapar Facebook>ramazankadir.kapan}
 -------------------------------------------------------------------------- */
 [data-metin~="çok-kalın"]{font-weight: 700;}
 [data-metin~="kalın"]{font-weight: 600;}
@@ -1301,8 +1299,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 /* ==========================================================================
     RESİM ÖRGÜSÜ s0.1
-    Katkıda Bulunanlar
-    {Ramazan Kapar Facebook>ramazankadir.kapan}
 -------------------------------------------------------------------------- */
 [data-resim~="daire"]{border-radius: 50%;}
 [data-resim~="kare"]{border-radius: 0;}
