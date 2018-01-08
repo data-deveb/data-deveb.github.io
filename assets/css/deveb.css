@@ -28,13 +28,13 @@
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     ÖZELLEŞTİRİLEBİLİR AYARLAR
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-    :root{
-      --aralık: 5px;
-      --oluk: 5px;
+:root{
+ --aralık: 5px;
+ --oluk: 5px;
 
-      --parça: 24; /* parça: par içinde kullanılabilecek parçalardır. */
-      --par: 24;   /* par: parçaların toplamı sonucu oluşabilecek bütündür. */
-    }
+ --parça: 24; /* parça: par içinde kullanılabilecek parçalardır. */
+ --par: 24;   /* par: parçaların toplamı sonucu oluşabilecek bütündür. */
+}
 
     html {
       font-family: 'Roboto', sans-serif;
@@ -104,6 +104,7 @@
 
     img {
       border: 0;  /* Kenarlıkları sıfırlama */
+      max-width: 100%;
     }
 
     table{
