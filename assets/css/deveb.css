@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*
   * [DEVEB 0.104] | (deveb.css) | (https://data-deveb.github.io)
-
   * İMLER
   * G00 | Kap Örgüsü
       G01 | Aralık verme
@@ -9,7 +8,6 @@
       G03 | Parça düzeni
       G04 | Genleşme düzeni
       G05 | Kaplama düzeni
-
   * ??? | Ekran Örgüsü
       S00 | Genel
                     [Genişleyerek | Sadece  | Daralarak]
@@ -21,7 +19,6 @@
       (byk) Büyük   [S050         | S051    | S052     ]
       (kcm) Kocaman [S060         | S061    | S062     ]
       (dev) Dev     [S070         | S071    | S072     ]
-
   * ??? | Renk Örgüsü
 */
 
@@ -1124,7 +1121,6 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     RENK ÖRGÜSÜ s0.4
     Ayırt etmek için önceden belirlenmiş renk grupları.
     data-arka | data-metin | data-kenar
-
     RENKLER: ana | ara | birincil | ikincil
     DOLGULAR: 900-800-700-600-500-400-300-200-100
     TONLAR: en-parlak çok-parlak parlak az-parlak normal az-soluk soluk çok-soluk en-soluk
