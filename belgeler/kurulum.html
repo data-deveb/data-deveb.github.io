@@ -3,18 +3,36 @@ layout: default
 title: Deveb Kurulumu
 ---
 <div data-gnl="1 1p">
-    <p>Deveb kullanımı için yapmanız gereken sadece CSS dosyasını doğru şekilde projenize dahil etmek olacak. Deveb'i Türkçe ve İngilizce kullanabildiğiniz için bunlar ayrıştırılmıştır. Aynı anda iki dilde satırlarınızı yazmak istiyorsanız tüm CSS'leri dahil etmeniz gerekecektir.</p>
+    <p>
+      Deveb'i projenize dahil etmek çok kolaydır. Yapmanız gereken CSS dosyasını
+      ve ihtiyaç duyuyorsanız Javascript dosyasını projenizin ilgili yerine kopyalamak
+      ve html dosyanızda çağırmaktan ibarettir. Türkçe kod yazmanın tadına varmak ister misiniz?
+      O halde Deveb'in türkçe diliyle geliştirilmiş sürümünü kullanın. Eğer ingilizce diliyle yazmayı
+      seçenlerdenseniz türkçe sürümünün arkasından gelen ingilizce sürümünü kullanabilirsiniz.
+      Deveb öncelikli olarak matematiksel yapıda olan türkçe dilinin doğal özelliklerinden faydalanarak kurgulanır.
+      İngilizce sürümü türkçe dilinin kolaylaştırdığı kurgudan yola çıkarak oluşturulur.
+      Kısaca Deveb kullanımı için yapmanız gereken sadece CSS dosyasını doğru şekilde projenize
+      dahil etmek olacak. Deveb'i Türkçe ve İngilizce kullanabilme olanağı sunulduğu için bunlar
+      ayrıştırılmış ve farklı dosyalar haline getirilmiştir. Aynı anda iki dilde satırlarınızı yazmak
+      gibi bir çılgınlığa sahipseniz tüm CSS'leri dahil etmeniz gerekecektir.
+    </p>
+    <p><a href="https://github.com/data-deveb/data-deveb.github.io/releases/download/s0.1-ilkel/deveb-s0.1-ilkel.zip">Deveb ön uç çerçevesi dosyalarını buradan indirin.</a></p>
 
     <h2>Türkçe düşünenler için Türkçe diliyle Deveb</h2>
     <pre data-gnl="1 1p"><code class="language-html">
+    &lt;head&gt;
       &lt;script src=&quot;https://code.jquery.com/jquery-2.2.4.min.js&quot;  integrity=&quot;sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=&quot;  crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/deveb.js&quot;&gt;&lt;/script&gt;
       &lt;link href=&quot;/css/deveb.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;/head&gt;
     </code></pre>
-    <p><a href="https://data-deveb.github.io/assets/css/deveb.css">Deveb'i buradan indirebilirsiniz</a></p>
-    <p><a href="https://data-deveb.github.io/assets/js/deveb.js">DevebJS'i buradan indirebilirsiniz</a></p>
 
     <h2>İngilizce düşünenler için İngilizce diliyle Deveb</h2>
-    <pre data-gnl="1 1p"><code class="language-html">&lt;link href=&quot;/css/deveb.english.css&quot; rel=&quot;stylesheet&quot;&gt;</code></pre>
-    <p><a href="https://data-deveb.github.io/assets/css/deveb.english.css">Deveb'i buradan indirebilirsiniz</a></p>
+    <pre data-gnl="1 1p"><code class="language-html">
+    &lt;head&gt;
+      &lt;link href=&quot;/css/deveb.english.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;/head&gt;
+    </code></pre>
+
+    <p>Not: İngilizce diliyle geliştirilen sürüm, türkçe sürümü geriden takip etmektedir. Türkçe sürüme göre daha az özelliğe sahip olabilir ve hata durumu görülebilir.</p>
 </div>
