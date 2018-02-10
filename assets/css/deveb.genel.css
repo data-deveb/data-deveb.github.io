@@ -119,6 +119,10 @@ font-size: 30px;
 
 .sol-bölge{
 	background: #f3f3f4;
+	overflow: hidden;
+}
+.sol-bölge:hover{
+	overflow: auto;
 }
 
 a.logo{
