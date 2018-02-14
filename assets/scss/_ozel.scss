@@ -1,0 +1,21 @@
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  ÖZELLEŞTİRİLEBİLİR AYARLAR
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+:root{
+ --aralık: 5px;
+ --oluk: 5px;
+ /* parça: par içinde kullanılabilecek parçalardır. */
+ --parça: 24;
+ /* par: parçaların toplamı sonucu oluşabilecek bütündür. */
+ --par: 24; }
+
+
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #333; }
+
+a{
+  text-decoration: none;
+  color: #4c41a1; }
