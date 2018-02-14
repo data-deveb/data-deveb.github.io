@@ -1,0 +1,5392 @@
+@charset "UTF-8";
+/* İngilizce */
+/* Kap Örgüsü */
+/* Konumlama - Kap Örgüsü */
+/* Durumlama - Kap Örgüsü */
+/* */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  AYARLAR & TEMİZLEME
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, section, menu, main, nav {
+  display: block;
+}
+
+a, button, input, textarea {
+  outline: 0;
+}
+
+/*  Başlık ayarları */
+h1, h2, h3, h4, h5, h6 {
+  width: 100%;
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  margin: 1em 0 0.5em 0;
+  color: #333;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1.15em;
+}
+
+h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
+  margin-top: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+table {
+  display: table !important;
+  width: 100%;
+}
+
+/* Paragraf ayarları */
+p {
+  display: block;
+  width: 100%;
+}
+
+p + p {
+  /* İki paragraf arasına mesafe verme ayarı */
+  margin-top: 14px;
+  margin-top: 1rem;
+}
+
+/* Liste ayarları */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+ul ul {
+  margin-left: 15px;
+}
+ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
+  margin: 0;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  ÖZELLEŞTİRİLEBİLİR AYARLAR
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+:root {
+  --aralık: 5px;
+  --oluk: 5px;
+  /* parça: par içinde kullanılabilecek parçalardır. */
+  --parça: 24;
+  /* par: parçaların toplamı sonucu oluşabilecek bütündür. */
+  --par: 24;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #4c41a1;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  GS1 KAP ÖRGÜSÜ */
+[data-gnl] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+[data-gnl~="sütun"] {
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-items: stretch;
+}
+
+[data-gnl~="sığdır"] {
+  -webkit-box-flex: 1 !important;
+  -ms-flex: 1 1 0 !important;
+  flex: 1 1 0 !important;
+  overflow: auto;
+  height: 100%;
+}
+
+body[data-gnl~="sütun"] {
+  min-height: 100vh;
+}
+
+body[data-gnl~="sütun"] > footer {
+  margin-top: auto;
+}
+
+/*  Kap Örgüsü Parça Ayarları */
+[data-gnl~="1"] {
+  --parça: 1;
+}
+
+[data-gnl~="1p"] {
+  --par: 1;
+}
+
+[data-gnl~="2"] {
+  --parça: 2;
+}
+
+[data-gnl~="2p"] {
+  --par: 2;
+}
+
+[data-gnl~="3"] {
+  --parça: 3;
+}
+
+[data-gnl~="3p"] {
+  --par: 3;
+}
+
+[data-gnl~="4"] {
+  --parça: 4;
+}
+
+[data-gnl~="4p"] {
+  --par: 4;
+}
+
+[data-gnl~="5"] {
+  --parça: 5;
+}
+
+[data-gnl~="5p"] {
+  --par: 5;
+}
+
+[data-gnl~="6"] {
+  --parça: 6;
+}
+
+[data-gnl~="6p"] {
+  --par: 6;
+}
+
+[data-gnl~="7"] {
+  --parça: 7;
+}
+
+[data-gnl~="7p"] {
+  --par: 7;
+}
+
+[data-gnl~="8"] {
+  --parça: 8;
+}
+
+[data-gnl~="8p"] {
+  --par: 8;
+}
+
+[data-gnl~="9"] {
+  --parça: 9;
+}
+
+[data-gnl~="9p"] {
+  --par: 9;
+}
+
+[data-gnl~="10"] {
+  --parça: 10;
+}
+
+[data-gnl~="10p"] {
+  --par: 10;
+}
+
+[data-gnl~="11"] {
+  --parça: 11;
+}
+
+[data-gnl~="11p"] {
+  --par: 11;
+}
+
+[data-gnl~="12"] {
+  --parça: 12;
+}
+
+[data-gnl~="12p"] {
+  --par: 12;
+}
+
+[data-gnl~="13"] {
+  --parça: 13;
+}
+
+[data-gnl~="13p"] {
+  --par: 13;
+}
+
+[data-gnl~="14"] {
+  --parça: 14;
+}
+
+[data-gnl~="14p"] {
+  --par: 14;
+}
+
+[data-gnl~="15"] {
+  --parça: 15;
+}
+
+[data-gnl~="15p"] {
+  --par: 15;
+}
+
+[data-gnl~="16"] {
+  --parça: 16;
+}
+
+[data-gnl~="16p"] {
+  --par: 16;
+}
+
+[data-gnl~="17"] {
+  --parça: 17;
+}
+
+[data-gnl~="17p"] {
+  --par: 17;
+}
+
+[data-gnl~="18"] {
+  --parça: 18;
+}
+
+[data-gnl~="18p"] {
+  --par: 18;
+}
+
+[data-gnl~="19"] {
+  --parça: 19;
+}
+
+[data-gnl~="19p"] {
+  --par: 19;
+}
+
+[data-gnl~="20"] {
+  --parça: 20;
+}
+
+[data-gnl~="20p"] {
+  --par: 20;
+}
+
+[data-gnl~="21"] {
+  --parça: 21;
+}
+
+[data-gnl~="21p"] {
+  --par: 21;
+}
+
+[data-gnl~="22"] {
+  --parça: 22;
+}
+
+[data-gnl~="22p"] {
+  --par: 22;
+}
+
+[data-gnl~="23"] {
+  --parça: 23;
+}
+
+[data-gnl~="23p"] {
+  --par: 23;
+}
+
+[data-gnl~="24"] {
+  --parça: 24;
+}
+
+[data-gnl~="24p"] {
+  --par: 24;
+}
+
+[data-gnl] {
+  flex-basis: calc(100% / var(--par) * var(--parça));
+  width: calc(100% / var(--par) * var(--parça));
+  max-width: calc(100% / var(--par) * var(--parça));
+}
+
+/* Kap Örgüsü Ek Etkiler */
+[data-gnl~="aralık"] > [data-gnl] {
+  margin: var(--aralık);
+  flex-basis: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
+  width: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
+  max-width: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
+}
+
+[data-gnl~="oluk-çevre"] > [data-gnl] {
+  padding: var(--oluk);
+}
+
+[data-gnl~="oluk"] > [data-gnl] {
+  padding-left: var(--oluk);
+  padding-right: var(--oluk);
+}
+
+[data-gnl~="oluk-yok"] > [data-gnl] {
+  padding: 0;
+}
+
+[data-gnl~="container"] {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Kap Örgüsü Genleşme Ayarları */
+[data-gnl~="1g"] {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+[data-gnl~="2g"] {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+[data-gnl~="3g"] {
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+
+[data-gnl~="4g"] {
+  -webkit-box-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+}
+
+[data-gnl~="5g"] {
+  -webkit-box-flex: 5;
+  -ms-flex: 5;
+  flex: 5;
+}
+
+[data-gnl~="6g"] {
+  -webkit-box-flex: 6;
+  -ms-flex: 6;
+  flex: 6;
+}
+
+[data-gnl~="7g"] {
+  -webkit-box-flex: 7;
+  -ms-flex: 7;
+  flex: 7;
+}
+
+[data-gnl~="8g"] {
+  -webkit-box-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
+}
+
+[data-gnl~="9g"] {
+  -webkit-box-flex: 9;
+  -ms-flex: 9;
+  flex: 9;
+}
+
+[data-gnl~="10g"] {
+  -webkit-box-flex: 10;
+  -ms-flex: 10;
+  flex: 10;
+}
+
+[data-gnl~="11g"] {
+  -webkit-box-flex: 11;
+  -ms-flex: 11;
+  flex: 11;
+}
+
+[data-gnl~="12g"] {
+  -webkit-box-flex: 12;
+  -ms-flex: 12;
+  flex: 12;
+}
+
+[data-gnl~="13g"] {
+  -webkit-box-flex: 13;
+  -ms-flex: 13;
+  flex: 13;
+}
+
+[data-gnl~="14g"] {
+  -webkit-box-flex: 14;
+  -ms-flex: 14;
+  flex: 14;
+}
+
+[data-gnl~="15g"] {
+  -webkit-box-flex: 15;
+  -ms-flex: 15;
+  flex: 15;
+}
+
+[data-gnl~="16g"] {
+  -webkit-box-flex: 16;
+  -ms-flex: 16;
+  flex: 16;
+}
+
+[data-gnl~="17g"] {
+  -webkit-box-flex: 17;
+  -ms-flex: 17;
+  flex: 17;
+}
+
+[data-gnl~="18g"] {
+  -webkit-box-flex: 18;
+  -ms-flex: 18;
+  flex: 18;
+}
+
+[data-gnl~="19g"] {
+  -webkit-box-flex: 19;
+  -ms-flex: 19;
+  flex: 19;
+}
+
+[data-gnl~="20g"] {
+  -webkit-box-flex: 20;
+  -ms-flex: 20;
+  flex: 20;
+}
+
+[data-gnl~="21g"] {
+  -webkit-box-flex: 21;
+  -ms-flex: 21;
+  flex: 21;
+}
+
+[data-gnl~="22g"] {
+  -webkit-box-flex: 22;
+  -ms-flex: 22;
+  flex: 22;
+}
+
+[data-gnl~="23g"] {
+  -webkit-box-flex: 23;
+  -ms-flex: 23;
+  flex: 23;
+}
+
+[data-gnl~="24g"] {
+  -webkit-box-flex: 24;
+  -ms-flex: 24;
+  flex: 24;
+}
+
+[data-gnl~="0"] {
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  max-width: none;
+  width: auto;
+}
+
+/* Kap Örgüsü Sıralama Düzeni */
+[data-gnl~="1nc"] {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+[data-gnl~="2nc"] {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+[data-gnl~="3nc"] {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+[data-gnl~="4nc"] {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+[data-gnl~="5nc"] {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 5;
+  order: 5;
+}
+
+[data-gnl~="6nc"] {
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 6;
+  order: 6;
+}
+
+[data-gnl~="7nc"] {
+  -webkit-box-ordinal-group: 7;
+  -ms-flex-order: 7;
+  order: 7;
+}
+
+[data-gnl~="8nc"] {
+  -webkit-box-ordinal-group: 8;
+  -ms-flex-order: 8;
+  order: 8;
+}
+
+[data-gnl~="9nc"] {
+  -webkit-box-ordinal-group: 9;
+  -ms-flex-order: 9;
+  order: 9;
+}
+
+[data-gnl~="10nc"] {
+  -webkit-box-ordinal-group: 10;
+  -ms-flex-order: 10;
+  order: 10;
+}
+
+[data-gnl~="11nc"] {
+  -webkit-box-ordinal-group: 11;
+  -ms-flex-order: 11;
+  order: 11;
+}
+
+[data-gnl~="12nc"] {
+  -webkit-box-ordinal-group: 12;
+  -ms-flex-order: 12;
+  order: 12;
+}
+
+[data-gnl~="13nc"] {
+  -webkit-box-ordinal-group: 13;
+  -ms-flex-order: 13;
+  order: 13;
+}
+
+[data-gnl~="14nc"] {
+  -webkit-box-ordinal-group: 14;
+  -ms-flex-order: 14;
+  order: 14;
+}
+
+[data-gnl~="15nc"] {
+  -webkit-box-ordinal-group: 15;
+  -ms-flex-order: 15;
+  order: 15;
+}
+
+[data-gnl~="16nc"] {
+  -webkit-box-ordinal-group: 16;
+  -ms-flex-order: 16;
+  order: 16;
+}
+
+[data-gnl~="17nc"] {
+  -webkit-box-ordinal-group: 17;
+  -ms-flex-order: 17;
+  order: 17;
+}
+
+[data-gnl~="18nc"] {
+  -webkit-box-ordinal-group: 18;
+  -ms-flex-order: 18;
+  order: 18;
+}
+
+[data-gnl~="19nc"] {
+  -webkit-box-ordinal-group: 19;
+  -ms-flex-order: 19;
+  order: 19;
+}
+
+[data-gnl~="20nc"] {
+  -webkit-box-ordinal-group: 20;
+  -ms-flex-order: 20;
+  order: 20;
+}
+
+[data-gnl~="21nc"] {
+  -webkit-box-ordinal-group: 21;
+  -ms-flex-order: 21;
+  order: 21;
+}
+
+[data-gnl~="22nc"] {
+  -webkit-box-ordinal-group: 22;
+  -ms-flex-order: 22;
+  order: 22;
+}
+
+[data-gnl~="23nc"] {
+  -webkit-box-ordinal-group: 23;
+  -ms-flex-order: 23;
+  order: 23;
+}
+
+[data-gnl~="24nc"] {
+  -webkit-box-ordinal-group: 24;
+  -ms-flex-order: 24;
+  order: 24;
+}
+
+[data-gnl~="overflow-hidden"] {
+  overflow: hidden;
+}
+
+[data-gnl~="h-overflow"] {
+  overflow-x: auto;
+}
+
+[data-gnl~="nowrap"] {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+[data-gnl~="reverse-wrap"] {
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+[data-gnl~="reverse-row"] {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+[data-gnl~="reverse-column"] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column;
+  -reverseflex-direction: column-reverse;
+}
+
+[data-gnl~="left"] {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+[data-gnl~="center"] {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+[data-gnl~="right"] {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+[data-gnl~="center-middle"] {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  -ms-grid-row-align: center !important;
+  align-items: center !important;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+[data-gnl~="top"] {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+  -ms-grid-row-align: flex-start !important;
+  align-items: flex-start !important;
+}
+
+[data-gnl~="middle"] {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  -ms-grid-row-align: center !important;
+  align-items: center !important;
+}
+
+[data-gnl~="bottom"] {
+  -webkit-box-align: end !important;
+  -ms-flex-align: end !important;
+  -ms-grid-row-align: flex-end !important;
+  align-items: flex-end !important;
+}
+
+[data-gnl~="top-it"] {
+  -ms-flex-item-align: start !important;
+  align-self: flex-start !important;
+}
+
+[data-gnl~="middle-it"] {
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+}
+
+[data-gnl~="bottom-it"] {
+  margin-top: auto;
+}
+
+[data-gnl~="right-it"] {
+  margin-left: auto;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+[data-gnl~="center-it"] {
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+[data-gnl~="left-it"] {
+  margin-right: auto;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+[data-gnl~="justify"] {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+[data-gnl~="space-around"] {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+[data-gnl~="stretch"] {
+  -webkit-box-align: stretch !important;
+  -ms-flex-align: stretch !important;
+  -ms-grid-row-align: stretch !important;
+  align-items: stretch !important;
+}
+
+[data-gnl~="stretch-it"] {
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+[data-gnl~="baseline"] {
+  -webkit-box-align: baseline !important;
+  -ms-flex-align: baseline !important;
+  -ms-grid-row-align: baseline !important;
+  align-items: baseline !important;
+}
+
+[data-gnl~="baseline-it"] {
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+}
+
+[data-gnl~="text-right"] {
+  text-align: right;
+}
+
+[data-gnl~="text-center"] {
+  text-align: center;
+}
+
+[data-gnl~="text-left"] {
+  text-align: left;
+}
+
+[data-gnl~="hide"],
+[data-mn~="hide"] {
+  display: none !important;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 300px) {
+  :root {
+    --oluk:10px;
+    --ara:10px;
+  }
+
+  [data-xs]:not([data-gnl]) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-xs~="sığdır"] {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 0 !important;
+    flex: 1 1 0 !important;
+    overflow: auto;
+    height: 100%;
+  }
+
+  /*  Kap Örgüsü Parça Ayarları */
+  [data-xs~="1"] {
+    --parça: 1;
+  }
+
+  [data-xs~="1p"] {
+    --par: 1;
+  }
+
+  [data-xs~="2"] {
+    --parça: 2;
+  }
+
+  [data-xs~="2p"] {
+    --par: 2;
+  }
+
+  [data-xs~="3"] {
+    --parça: 3;
+  }
+
+  [data-xs~="3p"] {
+    --par: 3;
+  }
+
+  [data-xs~="4"] {
+    --parça: 4;
+  }
+
+  [data-xs~="4p"] {
+    --par: 4;
+  }
+
+  [data-xs~="5"] {
+    --parça: 5;
+  }
+
+  [data-xs~="5p"] {
+    --par: 5;
+  }
+
+  [data-xs~="6"] {
+    --parça: 6;
+  }
+
+  [data-xs~="6p"] {
+    --par: 6;
+  }
+
+  [data-xs~="7"] {
+    --parça: 7;
+  }
+
+  [data-xs~="7p"] {
+    --par: 7;
+  }
+
+  [data-xs~="8"] {
+    --parça: 8;
+  }
+
+  [data-xs~="8p"] {
+    --par: 8;
+  }
+
+  [data-xs~="9"] {
+    --parça: 9;
+  }
+
+  [data-xs~="9p"] {
+    --par: 9;
+  }
+
+  [data-xs~="10"] {
+    --parça: 10;
+  }
+
+  [data-xs~="10p"] {
+    --par: 10;
+  }
+
+  [data-xs~="11"] {
+    --parça: 11;
+  }
+
+  [data-xs~="11p"] {
+    --par: 11;
+  }
+
+  [data-xs~="12"] {
+    --parça: 12;
+  }
+
+  [data-xs~="12p"] {
+    --par: 12;
+  }
+
+  [data-xs~="13"] {
+    --parça: 13;
+  }
+
+  [data-xs~="13p"] {
+    --par: 13;
+  }
+
+  [data-xs~="14"] {
+    --parça: 14;
+  }
+
+  [data-xs~="14p"] {
+    --par: 14;
+  }
+
+  [data-xs~="15"] {
+    --parça: 15;
+  }
+
+  [data-xs~="15p"] {
+    --par: 15;
+  }
+
+  [data-xs~="16"] {
+    --parça: 16;
+  }
+
+  [data-xs~="16p"] {
+    --par: 16;
+  }
+
+  [data-xs~="17"] {
+    --parça: 17;
+  }
+
+  [data-xs~="17p"] {
+    --par: 17;
+  }
+
+  [data-xs~="18"] {
+    --parça: 18;
+  }
+
+  [data-xs~="18p"] {
+    --par: 18;
+  }
+
+  [data-xs~="19"] {
+    --parça: 19;
+  }
+
+  [data-xs~="19p"] {
+    --par: 19;
+  }
+
+  [data-xs~="20"] {
+    --parça: 20;
+  }
+
+  [data-xs~="20p"] {
+    --par: 20;
+  }
+
+  [data-xs~="21"] {
+    --parça: 21;
+  }
+
+  [data-xs~="21p"] {
+    --par: 21;
+  }
+
+  [data-xs~="22"] {
+    --parça: 22;
+  }
+
+  [data-xs~="22p"] {
+    --par: 22;
+  }
+
+  [data-xs~="23"] {
+    --parça: 23;
+  }
+
+  [data-xs~="23p"] {
+    --par: 23;
+  }
+
+  [data-xs~="24"] {
+    --parça: 24;
+  }
+
+  [data-xs~="24p"] {
+    --par: 24;
+  }
+
+  [data-xs] {
+    flex-basis: calc(100% / var(--par) * var(--parça));
+    width: calc(100% / var(--par) * var(--parça));
+    max-width: calc(100% / var(--par) * var(--parça));
+  }
+
+  /* Kap Örgüsü Genleşme Ayarları */
+  [data-xs~="1g"] {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  [data-xs~="2g"] {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+
+  [data-xs~="3g"] {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+
+  [data-xs~="4g"] {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+  }
+
+  [data-xs~="5g"] {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+  }
+
+  [data-xs~="6g"] {
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+  }
+
+  [data-xs~="7g"] {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+  }
+
+  [data-xs~="8g"] {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+  }
+
+  [data-xs~="9g"] {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
+    flex: 9;
+  }
+
+  [data-xs~="10g"] {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
+    flex: 10;
+  }
+
+  [data-xs~="11g"] {
+    -webkit-box-flex: 11;
+    -ms-flex: 11;
+    flex: 11;
+  }
+
+  [data-xs~="12g"] {
+    -webkit-box-flex: 12;
+    -ms-flex: 12;
+    flex: 12;
+  }
+
+  [data-xs~="13g"] {
+    -webkit-box-flex: 13;
+    -ms-flex: 13;
+    flex: 13;
+  }
+
+  [data-xs~="14g"] {
+    -webkit-box-flex: 14;
+    -ms-flex: 14;
+    flex: 14;
+  }
+
+  [data-xs~="15g"] {
+    -webkit-box-flex: 15;
+    -ms-flex: 15;
+    flex: 15;
+  }
+
+  [data-xs~="16g"] {
+    -webkit-box-flex: 16;
+    -ms-flex: 16;
+    flex: 16;
+  }
+
+  [data-xs~="17g"] {
+    -webkit-box-flex: 17;
+    -ms-flex: 17;
+    flex: 17;
+  }
+
+  [data-xs~="18g"] {
+    -webkit-box-flex: 18;
+    -ms-flex: 18;
+    flex: 18;
+  }
+
+  [data-xs~="19g"] {
+    -webkit-box-flex: 19;
+    -ms-flex: 19;
+    flex: 19;
+  }
+
+  [data-xs~="20g"] {
+    -webkit-box-flex: 20;
+    -ms-flex: 20;
+    flex: 20;
+  }
+
+  [data-xs~="21g"] {
+    -webkit-box-flex: 21;
+    -ms-flex: 21;
+    flex: 21;
+  }
+
+  [data-xs~="22g"] {
+    -webkit-box-flex: 22;
+    -ms-flex: 22;
+    flex: 22;
+  }
+
+  [data-xs~="23g"] {
+    -webkit-box-flex: 23;
+    -ms-flex: 23;
+    flex: 23;
+  }
+
+  [data-xs~="24g"] {
+    -webkit-box-flex: 24;
+    -ms-flex: 24;
+    flex: 24;
+  }
+
+  [data-xs~="0"] {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  /* Kap Örgüsü Sıralama Düzeni */
+  [data-xs~="1nc"] {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  [data-xs~="2nc"] {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  [data-xs~="3nc"] {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  [data-xs~="4nc"] {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  [data-xs~="5nc"] {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  [data-xs~="6nc"] {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  [data-xs~="7nc"] {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+
+  [data-xs~="8nc"] {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+
+  [data-xs~="9nc"] {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+
+  [data-xs~="10nc"] {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+
+  [data-xs~="11nc"] {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+
+  [data-xs~="12nc"] {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+
+  [data-xs~="13nc"] {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  [data-xs~="14nc"] {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 14;
+    order: 14;
+  }
+
+  [data-xs~="15nc"] {
+    -webkit-box-ordinal-group: 15;
+    -ms-flex-order: 15;
+    order: 15;
+  }
+
+  [data-xs~="16nc"] {
+    -webkit-box-ordinal-group: 16;
+    -ms-flex-order: 16;
+    order: 16;
+  }
+
+  [data-xs~="17nc"] {
+    -webkit-box-ordinal-group: 17;
+    -ms-flex-order: 17;
+    order: 17;
+  }
+
+  [data-xs~="18nc"] {
+    -webkit-box-ordinal-group: 18;
+    -ms-flex-order: 18;
+    order: 18;
+  }
+
+  [data-xs~="19nc"] {
+    -webkit-box-ordinal-group: 19;
+    -ms-flex-order: 19;
+    order: 19;
+  }
+
+  [data-xs~="20nc"] {
+    -webkit-box-ordinal-group: 20;
+    -ms-flex-order: 20;
+    order: 20;
+  }
+
+  [data-xs~="21nc"] {
+    -webkit-box-ordinal-group: 21;
+    -ms-flex-order: 21;
+    order: 21;
+  }
+
+  [data-xs~="22nc"] {
+    -webkit-box-ordinal-group: 22;
+    -ms-flex-order: 22;
+    order: 22;
+  }
+
+  [data-xs~="23nc"] {
+    -webkit-box-ordinal-group: 23;
+    -ms-flex-order: 23;
+    order: 23;
+  }
+
+  [data-xs~="24nc"] {
+    -webkit-box-ordinal-group: 24;
+    -ms-flex-order: 24;
+    order: 24;
+  }
+
+  [data-xs~="overflow-hidden"] {
+    overflow: hidden;
+  }
+
+  [data-xs~="h-overflow"] {
+    overflow-x: auto;
+  }
+
+  [data-xs~="nowrap"] {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  [data-xs~="reverse-wrap"] {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-xs~="reverse-row"] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  [data-xs~="reverse-column"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column;
+    -reverseflex-direction: column-reverse;
+  }
+
+  [data-xs~="left"] {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  [data-xs~="center"] {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-xs~="right"] {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  [data-xs~="center-middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-xs~="top"] {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    -ms-grid-row-align: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  [data-xs~="middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+  }
+
+  [data-xs~="bottom"] {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    -ms-grid-row-align: flex-end !important;
+    align-items: flex-end !important;
+  }
+
+  [data-xs~="top-it"] {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+
+  [data-xs~="middle-it"] {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+
+  [data-xs~="bottom-it"] {
+    margin-top: auto;
+  }
+
+  [data-xs~="right-it"] {
+    margin-left: auto;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  [data-xs~="center-it"] {
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  [data-xs~="left-it"] {
+    margin-right: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-xs~="justify"] {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  [data-xs~="space-around"] {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [data-xs~="stretch"] {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    -ms-grid-row-align: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-xs~="stretch-it"] {
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+
+  [data-xs~="baseline"] {
+    -webkit-box-align: baseline !important;
+    -ms-flex-align: baseline !important;
+    -ms-grid-row-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  [data-xs~="baseline-it"] {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  [data-xs~="text-right"] {
+    text-align: right;
+  }
+
+  [data-xs~="text-center"] {
+    text-align: center;
+  }
+
+  [data-xs~="text-left"] {
+    text-align: left;
+  }
+
+  [data-xs~="hide"],
+  [data-xs~="hide-with-bigger"],
+  [data-mn~="hide-bigger"],
+  [data-mn~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 576px) {
+  [data-sm]:not([data-gnl]) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-sm~="sığdır"] {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 0 !important;
+    flex: 1 1 0 !important;
+    overflow: auto;
+    height: 100%;
+  }
+
+  /*  Kap Örgüsü Parça Ayarları */
+  [data-sm~="1"] {
+    --parça: 1;
+  }
+
+  [data-sm~="1p"] {
+    --par: 1;
+  }
+
+  [data-sm~="2"] {
+    --parça: 2;
+  }
+
+  [data-sm~="2p"] {
+    --par: 2;
+  }
+
+  [data-sm~="3"] {
+    --parça: 3;
+  }
+
+  [data-sm~="3p"] {
+    --par: 3;
+  }
+
+  [data-sm~="4"] {
+    --parça: 4;
+  }
+
+  [data-sm~="4p"] {
+    --par: 4;
+  }
+
+  [data-sm~="5"] {
+    --parça: 5;
+  }
+
+  [data-sm~="5p"] {
+    --par: 5;
+  }
+
+  [data-sm~="6"] {
+    --parça: 6;
+  }
+
+  [data-sm~="6p"] {
+    --par: 6;
+  }
+
+  [data-sm~="7"] {
+    --parça: 7;
+  }
+
+  [data-sm~="7p"] {
+    --par: 7;
+  }
+
+  [data-sm~="8"] {
+    --parça: 8;
+  }
+
+  [data-sm~="8p"] {
+    --par: 8;
+  }
+
+  [data-sm~="9"] {
+    --parça: 9;
+  }
+
+  [data-sm~="9p"] {
+    --par: 9;
+  }
+
+  [data-sm~="10"] {
+    --parça: 10;
+  }
+
+  [data-sm~="10p"] {
+    --par: 10;
+  }
+
+  [data-sm~="11"] {
+    --parça: 11;
+  }
+
+  [data-sm~="11p"] {
+    --par: 11;
+  }
+
+  [data-sm~="12"] {
+    --parça: 12;
+  }
+
+  [data-sm~="12p"] {
+    --par: 12;
+  }
+
+  [data-sm~="13"] {
+    --parça: 13;
+  }
+
+  [data-sm~="13p"] {
+    --par: 13;
+  }
+
+  [data-sm~="14"] {
+    --parça: 14;
+  }
+
+  [data-sm~="14p"] {
+    --par: 14;
+  }
+
+  [data-sm~="15"] {
+    --parça: 15;
+  }
+
+  [data-sm~="15p"] {
+    --par: 15;
+  }
+
+  [data-sm~="16"] {
+    --parça: 16;
+  }
+
+  [data-sm~="16p"] {
+    --par: 16;
+  }
+
+  [data-sm~="17"] {
+    --parça: 17;
+  }
+
+  [data-sm~="17p"] {
+    --par: 17;
+  }
+
+  [data-sm~="18"] {
+    --parça: 18;
+  }
+
+  [data-sm~="18p"] {
+    --par: 18;
+  }
+
+  [data-sm~="19"] {
+    --parça: 19;
+  }
+
+  [data-sm~="19p"] {
+    --par: 19;
+  }
+
+  [data-sm~="20"] {
+    --parça: 20;
+  }
+
+  [data-sm~="20p"] {
+    --par: 20;
+  }
+
+  [data-sm~="21"] {
+    --parça: 21;
+  }
+
+  [data-sm~="21p"] {
+    --par: 21;
+  }
+
+  [data-sm~="22"] {
+    --parça: 22;
+  }
+
+  [data-sm~="22p"] {
+    --par: 22;
+  }
+
+  [data-sm~="23"] {
+    --parça: 23;
+  }
+
+  [data-sm~="23p"] {
+    --par: 23;
+  }
+
+  [data-sm~="24"] {
+    --parça: 24;
+  }
+
+  [data-sm~="24p"] {
+    --par: 24;
+  }
+
+  [data-sm] {
+    flex-basis: calc(100% / var(--par) * var(--parça));
+    width: calc(100% / var(--par) * var(--parça));
+    max-width: calc(100% / var(--par) * var(--parça));
+  }
+
+  /* Kap Örgüsü Genleşme Ayarları */
+  [data-sm~="1g"] {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  [data-sm~="2g"] {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+
+  [data-sm~="3g"] {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+
+  [data-sm~="4g"] {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+  }
+
+  [data-sm~="5g"] {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+  }
+
+  [data-sm~="6g"] {
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+  }
+
+  [data-sm~="7g"] {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+  }
+
+  [data-sm~="8g"] {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+  }
+
+  [data-sm~="9g"] {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
+    flex: 9;
+  }
+
+  [data-sm~="10g"] {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
+    flex: 10;
+  }
+
+  [data-sm~="11g"] {
+    -webkit-box-flex: 11;
+    -ms-flex: 11;
+    flex: 11;
+  }
+
+  [data-sm~="12g"] {
+    -webkit-box-flex: 12;
+    -ms-flex: 12;
+    flex: 12;
+  }
+
+  [data-sm~="13g"] {
+    -webkit-box-flex: 13;
+    -ms-flex: 13;
+    flex: 13;
+  }
+
+  [data-sm~="14g"] {
+    -webkit-box-flex: 14;
+    -ms-flex: 14;
+    flex: 14;
+  }
+
+  [data-sm~="15g"] {
+    -webkit-box-flex: 15;
+    -ms-flex: 15;
+    flex: 15;
+  }
+
+  [data-sm~="16g"] {
+    -webkit-box-flex: 16;
+    -ms-flex: 16;
+    flex: 16;
+  }
+
+  [data-sm~="17g"] {
+    -webkit-box-flex: 17;
+    -ms-flex: 17;
+    flex: 17;
+  }
+
+  [data-sm~="18g"] {
+    -webkit-box-flex: 18;
+    -ms-flex: 18;
+    flex: 18;
+  }
+
+  [data-sm~="19g"] {
+    -webkit-box-flex: 19;
+    -ms-flex: 19;
+    flex: 19;
+  }
+
+  [data-sm~="20g"] {
+    -webkit-box-flex: 20;
+    -ms-flex: 20;
+    flex: 20;
+  }
+
+  [data-sm~="21g"] {
+    -webkit-box-flex: 21;
+    -ms-flex: 21;
+    flex: 21;
+  }
+
+  [data-sm~="22g"] {
+    -webkit-box-flex: 22;
+    -ms-flex: 22;
+    flex: 22;
+  }
+
+  [data-sm~="23g"] {
+    -webkit-box-flex: 23;
+    -ms-flex: 23;
+    flex: 23;
+  }
+
+  [data-sm~="24g"] {
+    -webkit-box-flex: 24;
+    -ms-flex: 24;
+    flex: 24;
+  }
+
+  [data-sm~="0"] {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  /* Kap Örgüsü Sıralama Düzeni */
+  [data-sm~="1nc"] {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  [data-sm~="2nc"] {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  [data-sm~="3nc"] {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  [data-sm~="4nc"] {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  [data-sm~="5nc"] {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  [data-sm~="6nc"] {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  [data-sm~="7nc"] {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+
+  [data-sm~="8nc"] {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+
+  [data-sm~="9nc"] {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+
+  [data-sm~="10nc"] {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+
+  [data-sm~="11nc"] {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+
+  [data-sm~="12nc"] {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+
+  [data-sm~="13nc"] {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  [data-sm~="14nc"] {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 14;
+    order: 14;
+  }
+
+  [data-sm~="15nc"] {
+    -webkit-box-ordinal-group: 15;
+    -ms-flex-order: 15;
+    order: 15;
+  }
+
+  [data-sm~="16nc"] {
+    -webkit-box-ordinal-group: 16;
+    -ms-flex-order: 16;
+    order: 16;
+  }
+
+  [data-sm~="17nc"] {
+    -webkit-box-ordinal-group: 17;
+    -ms-flex-order: 17;
+    order: 17;
+  }
+
+  [data-sm~="18nc"] {
+    -webkit-box-ordinal-group: 18;
+    -ms-flex-order: 18;
+    order: 18;
+  }
+
+  [data-sm~="19nc"] {
+    -webkit-box-ordinal-group: 19;
+    -ms-flex-order: 19;
+    order: 19;
+  }
+
+  [data-sm~="20nc"] {
+    -webkit-box-ordinal-group: 20;
+    -ms-flex-order: 20;
+    order: 20;
+  }
+
+  [data-sm~="21nc"] {
+    -webkit-box-ordinal-group: 21;
+    -ms-flex-order: 21;
+    order: 21;
+  }
+
+  [data-sm~="22nc"] {
+    -webkit-box-ordinal-group: 22;
+    -ms-flex-order: 22;
+    order: 22;
+  }
+
+  [data-sm~="23nc"] {
+    -webkit-box-ordinal-group: 23;
+    -ms-flex-order: 23;
+    order: 23;
+  }
+
+  [data-sm~="24nc"] {
+    -webkit-box-ordinal-group: 24;
+    -ms-flex-order: 24;
+    order: 24;
+  }
+
+  [data-sm~="overflow-hidden"] {
+    overflow: hidden;
+  }
+
+  [data-sm~="h-overflow"] {
+    overflow-x: auto;
+  }
+
+  [data-sm~="nowrap"] {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  [data-sm~="reverse-wrap"] {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-sm~="reverse-row"] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  [data-sm~="reverse-column"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column;
+    -reverseflex-direction: column-reverse;
+  }
+
+  [data-sm~="left"] {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  [data-sm~="center"] {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-sm~="right"] {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  [data-sm~="center-middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-sm~="top"] {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    -ms-grid-row-align: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  [data-sm~="middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+  }
+
+  [data-sm~="bottom"] {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    -ms-grid-row-align: flex-end !important;
+    align-items: flex-end !important;
+  }
+
+  [data-sm~="top-it"] {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+
+  [data-sm~="middle-it"] {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+
+  [data-sm~="bottom-it"] {
+    margin-top: auto;
+  }
+
+  [data-sm~="right-it"] {
+    margin-left: auto;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  [data-sm~="center-it"] {
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  [data-sm~="left-it"] {
+    margin-right: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-sm~="justify"] {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  [data-sm~="space-around"] {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [data-sm~="stretch"] {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    -ms-grid-row-align: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-sm~="stretch-it"] {
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+
+  [data-sm~="baseline"] {
+    -webkit-box-align: baseline !important;
+    -ms-flex-align: baseline !important;
+    -ms-grid-row-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  [data-sm~="baseline-it"] {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  [data-sm~="text-right"] {
+    text-align: right;
+  }
+
+  [data-sm~="text-center"] {
+    text-align: center;
+  }
+
+  [data-sm~="text-left"] {
+    text-align: left;
+  }
+
+  [data-sm~="hide"],
+  [data-sm~="hide-with-bigger"],
+  [data-xs~="hide-bigger"],
+  [data-xs~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 768px) {
+  [data-md]:not([data-gnl]) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-md~="sığdır"] {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 0 !important;
+    flex: 1 1 0 !important;
+    overflow: auto;
+    height: 100%;
+  }
+
+  /*  Kap Örgüsü Parça Ayarları */
+  [data-md~="1"] {
+    --parça: 1;
+  }
+
+  [data-md~="1p"] {
+    --par: 1;
+  }
+
+  [data-md~="2"] {
+    --parça: 2;
+  }
+
+  [data-md~="2p"] {
+    --par: 2;
+  }
+
+  [data-md~="3"] {
+    --parça: 3;
+  }
+
+  [data-md~="3p"] {
+    --par: 3;
+  }
+
+  [data-md~="4"] {
+    --parça: 4;
+  }
+
+  [data-md~="4p"] {
+    --par: 4;
+  }
+
+  [data-md~="5"] {
+    --parça: 5;
+  }
+
+  [data-md~="5p"] {
+    --par: 5;
+  }
+
+  [data-md~="6"] {
+    --parça: 6;
+  }
+
+  [data-md~="6p"] {
+    --par: 6;
+  }
+
+  [data-md~="7"] {
+    --parça: 7;
+  }
+
+  [data-md~="7p"] {
+    --par: 7;
+  }
+
+  [data-md~="8"] {
+    --parça: 8;
+  }
+
+  [data-md~="8p"] {
+    --par: 8;
+  }
+
+  [data-md~="9"] {
+    --parça: 9;
+  }
+
+  [data-md~="9p"] {
+    --par: 9;
+  }
+
+  [data-md~="10"] {
+    --parça: 10;
+  }
+
+  [data-md~="10p"] {
+    --par: 10;
+  }
+
+  [data-md~="11"] {
+    --parça: 11;
+  }
+
+  [data-md~="11p"] {
+    --par: 11;
+  }
+
+  [data-md~="12"] {
+    --parça: 12;
+  }
+
+  [data-md~="12p"] {
+    --par: 12;
+  }
+
+  [data-md~="13"] {
+    --parça: 13;
+  }
+
+  [data-md~="13p"] {
+    --par: 13;
+  }
+
+  [data-md~="14"] {
+    --parça: 14;
+  }
+
+  [data-md~="14p"] {
+    --par: 14;
+  }
+
+  [data-md~="15"] {
+    --parça: 15;
+  }
+
+  [data-md~="15p"] {
+    --par: 15;
+  }
+
+  [data-md~="16"] {
+    --parça: 16;
+  }
+
+  [data-md~="16p"] {
+    --par: 16;
+  }
+
+  [data-md~="17"] {
+    --parça: 17;
+  }
+
+  [data-md~="17p"] {
+    --par: 17;
+  }
+
+  [data-md~="18"] {
+    --parça: 18;
+  }
+
+  [data-md~="18p"] {
+    --par: 18;
+  }
+
+  [data-md~="19"] {
+    --parça: 19;
+  }
+
+  [data-md~="19p"] {
+    --par: 19;
+  }
+
+  [data-md~="20"] {
+    --parça: 20;
+  }
+
+  [data-md~="20p"] {
+    --par: 20;
+  }
+
+  [data-md~="21"] {
+    --parça: 21;
+  }
+
+  [data-md~="21p"] {
+    --par: 21;
+  }
+
+  [data-md~="22"] {
+    --parça: 22;
+  }
+
+  [data-md~="22p"] {
+    --par: 22;
+  }
+
+  [data-md~="23"] {
+    --parça: 23;
+  }
+
+  [data-md~="23p"] {
+    --par: 23;
+  }
+
+  [data-md~="24"] {
+    --parça: 24;
+  }
+
+  [data-md~="24p"] {
+    --par: 24;
+  }
+
+  [data-md] {
+    flex-basis: calc(100% / var(--par) * var(--parça));
+    width: calc(100% / var(--par) * var(--parça));
+    max-width: calc(100% / var(--par) * var(--parça));
+  }
+
+  /* Kap Örgüsü Genleşme Ayarları */
+  [data-md~="1g"] {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  [data-md~="2g"] {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+
+  [data-md~="3g"] {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+
+  [data-md~="4g"] {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+  }
+
+  [data-md~="5g"] {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+  }
+
+  [data-md~="6g"] {
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+  }
+
+  [data-md~="7g"] {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+  }
+
+  [data-md~="8g"] {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+  }
+
+  [data-md~="9g"] {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
+    flex: 9;
+  }
+
+  [data-md~="10g"] {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
+    flex: 10;
+  }
+
+  [data-md~="11g"] {
+    -webkit-box-flex: 11;
+    -ms-flex: 11;
+    flex: 11;
+  }
+
+  [data-md~="12g"] {
+    -webkit-box-flex: 12;
+    -ms-flex: 12;
+    flex: 12;
+  }
+
+  [data-md~="13g"] {
+    -webkit-box-flex: 13;
+    -ms-flex: 13;
+    flex: 13;
+  }
+
+  [data-md~="14g"] {
+    -webkit-box-flex: 14;
+    -ms-flex: 14;
+    flex: 14;
+  }
+
+  [data-md~="15g"] {
+    -webkit-box-flex: 15;
+    -ms-flex: 15;
+    flex: 15;
+  }
+
+  [data-md~="16g"] {
+    -webkit-box-flex: 16;
+    -ms-flex: 16;
+    flex: 16;
+  }
+
+  [data-md~="17g"] {
+    -webkit-box-flex: 17;
+    -ms-flex: 17;
+    flex: 17;
+  }
+
+  [data-md~="18g"] {
+    -webkit-box-flex: 18;
+    -ms-flex: 18;
+    flex: 18;
+  }
+
+  [data-md~="19g"] {
+    -webkit-box-flex: 19;
+    -ms-flex: 19;
+    flex: 19;
+  }
+
+  [data-md~="20g"] {
+    -webkit-box-flex: 20;
+    -ms-flex: 20;
+    flex: 20;
+  }
+
+  [data-md~="21g"] {
+    -webkit-box-flex: 21;
+    -ms-flex: 21;
+    flex: 21;
+  }
+
+  [data-md~="22g"] {
+    -webkit-box-flex: 22;
+    -ms-flex: 22;
+    flex: 22;
+  }
+
+  [data-md~="23g"] {
+    -webkit-box-flex: 23;
+    -ms-flex: 23;
+    flex: 23;
+  }
+
+  [data-md~="24g"] {
+    -webkit-box-flex: 24;
+    -ms-flex: 24;
+    flex: 24;
+  }
+
+  [data-md~="0"] {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  /* Kap Örgüsü Sıralama Düzeni */
+  [data-md~="1nc"] {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  [data-md~="2nc"] {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  [data-md~="3nc"] {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  [data-md~="4nc"] {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  [data-md~="5nc"] {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  [data-md~="6nc"] {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  [data-md~="7nc"] {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+
+  [data-md~="8nc"] {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+
+  [data-md~="9nc"] {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+
+  [data-md~="10nc"] {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+
+  [data-md~="11nc"] {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+
+  [data-md~="12nc"] {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+
+  [data-md~="13nc"] {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  [data-md~="14nc"] {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 14;
+    order: 14;
+  }
+
+  [data-md~="15nc"] {
+    -webkit-box-ordinal-group: 15;
+    -ms-flex-order: 15;
+    order: 15;
+  }
+
+  [data-md~="16nc"] {
+    -webkit-box-ordinal-group: 16;
+    -ms-flex-order: 16;
+    order: 16;
+  }
+
+  [data-md~="17nc"] {
+    -webkit-box-ordinal-group: 17;
+    -ms-flex-order: 17;
+    order: 17;
+  }
+
+  [data-md~="18nc"] {
+    -webkit-box-ordinal-group: 18;
+    -ms-flex-order: 18;
+    order: 18;
+  }
+
+  [data-md~="19nc"] {
+    -webkit-box-ordinal-group: 19;
+    -ms-flex-order: 19;
+    order: 19;
+  }
+
+  [data-md~="20nc"] {
+    -webkit-box-ordinal-group: 20;
+    -ms-flex-order: 20;
+    order: 20;
+  }
+
+  [data-md~="21nc"] {
+    -webkit-box-ordinal-group: 21;
+    -ms-flex-order: 21;
+    order: 21;
+  }
+
+  [data-md~="22nc"] {
+    -webkit-box-ordinal-group: 22;
+    -ms-flex-order: 22;
+    order: 22;
+  }
+
+  [data-md~="23nc"] {
+    -webkit-box-ordinal-group: 23;
+    -ms-flex-order: 23;
+    order: 23;
+  }
+
+  [data-md~="24nc"] {
+    -webkit-box-ordinal-group: 24;
+    -ms-flex-order: 24;
+    order: 24;
+  }
+
+  [data-md~="overflow-hidden"] {
+    overflow: hidden;
+  }
+
+  [data-md~="h-overflow"] {
+    overflow-x: auto;
+  }
+
+  [data-md~="nowrap"] {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  [data-md~="reverse-wrap"] {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-md~="reverse-row"] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  [data-md~="reverse-column"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column;
+    -reverseflex-direction: column-reverse;
+  }
+
+  [data-md~="left"] {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  [data-md~="center"] {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-md~="right"] {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  [data-md~="center-middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-md~="top"] {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    -ms-grid-row-align: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  [data-md~="middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+  }
+
+  [data-md~="bottom"] {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    -ms-grid-row-align: flex-end !important;
+    align-items: flex-end !important;
+  }
+
+  [data-md~="top-it"] {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+
+  [data-md~="middle-it"] {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+
+  [data-md~="bottom-it"] {
+    margin-top: auto;
+  }
+
+  [data-md~="right-it"] {
+    margin-left: auto;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  [data-md~="center-it"] {
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  [data-md~="left-it"] {
+    margin-right: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-md~="justify"] {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  [data-md~="space-around"] {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [data-md~="stretch"] {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    -ms-grid-row-align: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-md~="stretch-it"] {
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+
+  [data-md~="baseline"] {
+    -webkit-box-align: baseline !important;
+    -ms-flex-align: baseline !important;
+    -ms-grid-row-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  [data-md~="baseline-it"] {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  [data-md~="text-right"] {
+    text-align: right;
+  }
+
+  [data-md~="text-center"] {
+    text-align: center;
+  }
+
+  [data-md~="text-left"] {
+    text-align: left;
+  }
+
+  [data-md~="hide"],
+  [data-md~="hide-with-bigger"],
+  [data-sm~="hide-bigger"],
+  [data-sm~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 992px) {
+  [data-lg]:not([data-gnl]) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-lg~="sığdır"] {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 0 !important;
+    flex: 1 1 0 !important;
+    overflow: auto;
+    height: 100%;
+  }
+
+  /*  Kap Örgüsü Parça Ayarları */
+  [data-lg~="1"] {
+    --parça: 1;
+  }
+
+  [data-lg~="1p"] {
+    --par: 1;
+  }
+
+  [data-lg~="2"] {
+    --parça: 2;
+  }
+
+  [data-lg~="2p"] {
+    --par: 2;
+  }
+
+  [data-lg~="3"] {
+    --parça: 3;
+  }
+
+  [data-lg~="3p"] {
+    --par: 3;
+  }
+
+  [data-lg~="4"] {
+    --parça: 4;
+  }
+
+  [data-lg~="4p"] {
+    --par: 4;
+  }
+
+  [data-lg~="5"] {
+    --parça: 5;
+  }
+
+  [data-lg~="5p"] {
+    --par: 5;
+  }
+
+  [data-lg~="6"] {
+    --parça: 6;
+  }
+
+  [data-lg~="6p"] {
+    --par: 6;
+  }
+
+  [data-lg~="7"] {
+    --parça: 7;
+  }
+
+  [data-lg~="7p"] {
+    --par: 7;
+  }
+
+  [data-lg~="8"] {
+    --parça: 8;
+  }
+
+  [data-lg~="8p"] {
+    --par: 8;
+  }
+
+  [data-lg~="9"] {
+    --parça: 9;
+  }
+
+  [data-lg~="9p"] {
+    --par: 9;
+  }
+
+  [data-lg~="10"] {
+    --parça: 10;
+  }
+
+  [data-lg~="10p"] {
+    --par: 10;
+  }
+
+  [data-lg~="11"] {
+    --parça: 11;
+  }
+
+  [data-lg~="11p"] {
+    --par: 11;
+  }
+
+  [data-lg~="12"] {
+    --parça: 12;
+  }
+
+  [data-lg~="12p"] {
+    --par: 12;
+  }
+
+  [data-lg~="13"] {
+    --parça: 13;
+  }
+
+  [data-lg~="13p"] {
+    --par: 13;
+  }
+
+  [data-lg~="14"] {
+    --parça: 14;
+  }
+
+  [data-lg~="14p"] {
+    --par: 14;
+  }
+
+  [data-lg~="15"] {
+    --parça: 15;
+  }
+
+  [data-lg~="15p"] {
+    --par: 15;
+  }
+
+  [data-lg~="16"] {
+    --parça: 16;
+  }
+
+  [data-lg~="16p"] {
+    --par: 16;
+  }
+
+  [data-lg~="17"] {
+    --parça: 17;
+  }
+
+  [data-lg~="17p"] {
+    --par: 17;
+  }
+
+  [data-lg~="18"] {
+    --parça: 18;
+  }
+
+  [data-lg~="18p"] {
+    --par: 18;
+  }
+
+  [data-lg~="19"] {
+    --parça: 19;
+  }
+
+  [data-lg~="19p"] {
+    --par: 19;
+  }
+
+  [data-lg~="20"] {
+    --parça: 20;
+  }
+
+  [data-lg~="20p"] {
+    --par: 20;
+  }
+
+  [data-lg~="21"] {
+    --parça: 21;
+  }
+
+  [data-lg~="21p"] {
+    --par: 21;
+  }
+
+  [data-lg~="22"] {
+    --parça: 22;
+  }
+
+  [data-lg~="22p"] {
+    --par: 22;
+  }
+
+  [data-lg~="23"] {
+    --parça: 23;
+  }
+
+  [data-lg~="23p"] {
+    --par: 23;
+  }
+
+  [data-lg~="24"] {
+    --parça: 24;
+  }
+
+  [data-lg~="24p"] {
+    --par: 24;
+  }
+
+  [data-lg] {
+    flex-basis: calc(100% / var(--par) * var(--parça));
+    width: calc(100% / var(--par) * var(--parça));
+    max-width: calc(100% / var(--par) * var(--parça));
+  }
+
+  /* Kap Örgüsü Genleşme Ayarları */
+  [data-lg~="1g"] {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  [data-lg~="2g"] {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+
+  [data-lg~="3g"] {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+
+  [data-lg~="4g"] {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+  }
+
+  [data-lg~="5g"] {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+  }
+
+  [data-lg~="6g"] {
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+  }
+
+  [data-lg~="7g"] {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+  }
+
+  [data-lg~="8g"] {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+  }
+
+  [data-lg~="9g"] {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
+    flex: 9;
+  }
+
+  [data-lg~="10g"] {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
+    flex: 10;
+  }
+
+  [data-lg~="11g"] {
+    -webkit-box-flex: 11;
+    -ms-flex: 11;
+    flex: 11;
+  }
+
+  [data-lg~="12g"] {
+    -webkit-box-flex: 12;
+    -ms-flex: 12;
+    flex: 12;
+  }
+
+  [data-lg~="13g"] {
+    -webkit-box-flex: 13;
+    -ms-flex: 13;
+    flex: 13;
+  }
+
+  [data-lg~="14g"] {
+    -webkit-box-flex: 14;
+    -ms-flex: 14;
+    flex: 14;
+  }
+
+  [data-lg~="15g"] {
+    -webkit-box-flex: 15;
+    -ms-flex: 15;
+    flex: 15;
+  }
+
+  [data-lg~="16g"] {
+    -webkit-box-flex: 16;
+    -ms-flex: 16;
+    flex: 16;
+  }
+
+  [data-lg~="17g"] {
+    -webkit-box-flex: 17;
+    -ms-flex: 17;
+    flex: 17;
+  }
+
+  [data-lg~="18g"] {
+    -webkit-box-flex: 18;
+    -ms-flex: 18;
+    flex: 18;
+  }
+
+  [data-lg~="19g"] {
+    -webkit-box-flex: 19;
+    -ms-flex: 19;
+    flex: 19;
+  }
+
+  [data-lg~="20g"] {
+    -webkit-box-flex: 20;
+    -ms-flex: 20;
+    flex: 20;
+  }
+
+  [data-lg~="21g"] {
+    -webkit-box-flex: 21;
+    -ms-flex: 21;
+    flex: 21;
+  }
+
+  [data-lg~="22g"] {
+    -webkit-box-flex: 22;
+    -ms-flex: 22;
+    flex: 22;
+  }
+
+  [data-lg~="23g"] {
+    -webkit-box-flex: 23;
+    -ms-flex: 23;
+    flex: 23;
+  }
+
+  [data-lg~="24g"] {
+    -webkit-box-flex: 24;
+    -ms-flex: 24;
+    flex: 24;
+  }
+
+  [data-lg~="0"] {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  /* Kap Örgüsü Sıralama Düzeni */
+  [data-lg~="1nc"] {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  [data-lg~="2nc"] {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  [data-lg~="3nc"] {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  [data-lg~="4nc"] {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  [data-lg~="5nc"] {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  [data-lg~="6nc"] {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  [data-lg~="7nc"] {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+
+  [data-lg~="8nc"] {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+
+  [data-lg~="9nc"] {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+
+  [data-lg~="10nc"] {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+
+  [data-lg~="11nc"] {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+
+  [data-lg~="12nc"] {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+
+  [data-lg~="13nc"] {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  [data-lg~="14nc"] {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 14;
+    order: 14;
+  }
+
+  [data-lg~="15nc"] {
+    -webkit-box-ordinal-group: 15;
+    -ms-flex-order: 15;
+    order: 15;
+  }
+
+  [data-lg~="16nc"] {
+    -webkit-box-ordinal-group: 16;
+    -ms-flex-order: 16;
+    order: 16;
+  }
+
+  [data-lg~="17nc"] {
+    -webkit-box-ordinal-group: 17;
+    -ms-flex-order: 17;
+    order: 17;
+  }
+
+  [data-lg~="18nc"] {
+    -webkit-box-ordinal-group: 18;
+    -ms-flex-order: 18;
+    order: 18;
+  }
+
+  [data-lg~="19nc"] {
+    -webkit-box-ordinal-group: 19;
+    -ms-flex-order: 19;
+    order: 19;
+  }
+
+  [data-lg~="20nc"] {
+    -webkit-box-ordinal-group: 20;
+    -ms-flex-order: 20;
+    order: 20;
+  }
+
+  [data-lg~="21nc"] {
+    -webkit-box-ordinal-group: 21;
+    -ms-flex-order: 21;
+    order: 21;
+  }
+
+  [data-lg~="22nc"] {
+    -webkit-box-ordinal-group: 22;
+    -ms-flex-order: 22;
+    order: 22;
+  }
+
+  [data-lg~="23nc"] {
+    -webkit-box-ordinal-group: 23;
+    -ms-flex-order: 23;
+    order: 23;
+  }
+
+  [data-lg~="24nc"] {
+    -webkit-box-ordinal-group: 24;
+    -ms-flex-order: 24;
+    order: 24;
+  }
+
+  [data-lg~="overflow-hidden"] {
+    overflow: hidden;
+  }
+
+  [data-lg~="h-overflow"] {
+    overflow-x: auto;
+  }
+
+  [data-lg~="nowrap"] {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  [data-lg~="reverse-wrap"] {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-lg~="reverse-row"] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  [data-lg~="reverse-column"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column;
+    -reverseflex-direction: column-reverse;
+  }
+
+  [data-lg~="left"] {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  [data-lg~="center"] {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-lg~="right"] {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  [data-lg~="center-middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-lg~="top"] {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    -ms-grid-row-align: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  [data-lg~="middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+  }
+
+  [data-lg~="bottom"] {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    -ms-grid-row-align: flex-end !important;
+    align-items: flex-end !important;
+  }
+
+  [data-lg~="top-it"] {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+
+  [data-lg~="middle-it"] {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+
+  [data-lg~="bottom-it"] {
+    margin-top: auto;
+  }
+
+  [data-lg~="right-it"] {
+    margin-left: auto;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  [data-lg~="center-it"] {
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  [data-lg~="left-it"] {
+    margin-right: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-lg~="justify"] {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  [data-lg~="space-around"] {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [data-lg~="stretch"] {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    -ms-grid-row-align: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-lg~="stretch-it"] {
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+
+  [data-lg~="baseline"] {
+    -webkit-box-align: baseline !important;
+    -ms-flex-align: baseline !important;
+    -ms-grid-row-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  [data-lg~="baseline-it"] {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  [data-lg~="text-right"] {
+    text-align: right;
+  }
+
+  [data-lg~="text-center"] {
+    text-align: center;
+  }
+
+  [data-lg~="text-left"] {
+    text-align: left;
+  }
+
+  [data-lg~="hide"],
+  [data-lg~="hide-with-bigger"],
+  [data-md~="hide-bigger"],
+  [data-md~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 1200px) {
+  [data-xl]:not([data-gnl]) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-xl~="sığdır"] {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 0 !important;
+    flex: 1 1 0 !important;
+    overflow: auto;
+    height: 100%;
+  }
+
+  /*  Kap Örgüsü Parça Ayarları */
+  [data-xl~="1"] {
+    --parça: 1;
+  }
+
+  [data-xl~="1p"] {
+    --par: 1;
+  }
+
+  [data-xl~="2"] {
+    --parça: 2;
+  }
+
+  [data-xl~="2p"] {
+    --par: 2;
+  }
+
+  [data-xl~="3"] {
+    --parça: 3;
+  }
+
+  [data-xl~="3p"] {
+    --par: 3;
+  }
+
+  [data-xl~="4"] {
+    --parça: 4;
+  }
+
+  [data-xl~="4p"] {
+    --par: 4;
+  }
+
+  [data-xl~="5"] {
+    --parça: 5;
+  }
+
+  [data-xl~="5p"] {
+    --par: 5;
+  }
+
+  [data-xl~="6"] {
+    --parça: 6;
+  }
+
+  [data-xl~="6p"] {
+    --par: 6;
+  }
+
+  [data-xl~="7"] {
+    --parça: 7;
+  }
+
+  [data-xl~="7p"] {
+    --par: 7;
+  }
+
+  [data-xl~="8"] {
+    --parça: 8;
+  }
+
+  [data-xl~="8p"] {
+    --par: 8;
+  }
+
+  [data-xl~="9"] {
+    --parça: 9;
+  }
+
+  [data-xl~="9p"] {
+    --par: 9;
+  }
+
+  [data-xl~="10"] {
+    --parça: 10;
+  }
+
+  [data-xl~="10p"] {
+    --par: 10;
+  }
+
+  [data-xl~="11"] {
+    --parça: 11;
+  }
+
+  [data-xl~="11p"] {
+    --par: 11;
+  }
+
+  [data-xl~="12"] {
+    --parça: 12;
+  }
+
+  [data-xl~="12p"] {
+    --par: 12;
+  }
+
+  [data-xl~="13"] {
+    --parça: 13;
+  }
+
+  [data-xl~="13p"] {
+    --par: 13;
+  }
+
+  [data-xl~="14"] {
+    --parça: 14;
+  }
+
+  [data-xl~="14p"] {
+    --par: 14;
+  }
+
+  [data-xl~="15"] {
+    --parça: 15;
+  }
+
+  [data-xl~="15p"] {
+    --par: 15;
+  }
+
+  [data-xl~="16"] {
+    --parça: 16;
+  }
+
+  [data-xl~="16p"] {
+    --par: 16;
+  }
+
+  [data-xl~="17"] {
+    --parça: 17;
+  }
+
+  [data-xl~="17p"] {
+    --par: 17;
+  }
+
+  [data-xl~="18"] {
+    --parça: 18;
+  }
+
+  [data-xl~="18p"] {
+    --par: 18;
+  }
+
+  [data-xl~="19"] {
+    --parça: 19;
+  }
+
+  [data-xl~="19p"] {
+    --par: 19;
+  }
+
+  [data-xl~="20"] {
+    --parça: 20;
+  }
+
+  [data-xl~="20p"] {
+    --par: 20;
+  }
+
+  [data-xl~="21"] {
+    --parça: 21;
+  }
+
+  [data-xl~="21p"] {
+    --par: 21;
+  }
+
+  [data-xl~="22"] {
+    --parça: 22;
+  }
+
+  [data-xl~="22p"] {
+    --par: 22;
+  }
+
+  [data-xl~="23"] {
+    --parça: 23;
+  }
+
+  [data-xl~="23p"] {
+    --par: 23;
+  }
+
+  [data-xl~="24"] {
+    --parça: 24;
+  }
+
+  [data-xl~="24p"] {
+    --par: 24;
+  }
+
+  [data-xl] {
+    flex-basis: calc(100% / var(--par) * var(--parça));
+    width: calc(100% / var(--par) * var(--parça));
+    max-width: calc(100% / var(--par) * var(--parça));
+  }
+
+  /* Kap Örgüsü Genleşme Ayarları */
+  [data-xl~="1g"] {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  [data-xl~="2g"] {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+
+  [data-xl~="3g"] {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+
+  [data-xl~="4g"] {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+  }
+
+  [data-xl~="5g"] {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+  }
+
+  [data-xl~="6g"] {
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+  }
+
+  [data-xl~="7g"] {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+  }
+
+  [data-xl~="8g"] {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+  }
+
+  [data-xl~="9g"] {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
+    flex: 9;
+  }
+
+  [data-xl~="10g"] {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
+    flex: 10;
+  }
+
+  [data-xl~="11g"] {
+    -webkit-box-flex: 11;
+    -ms-flex: 11;
+    flex: 11;
+  }
+
+  [data-xl~="12g"] {
+    -webkit-box-flex: 12;
+    -ms-flex: 12;
+    flex: 12;
+  }
+
+  [data-xl~="13g"] {
+    -webkit-box-flex: 13;
+    -ms-flex: 13;
+    flex: 13;
+  }
+
+  [data-xl~="14g"] {
+    -webkit-box-flex: 14;
+    -ms-flex: 14;
+    flex: 14;
+  }
+
+  [data-xl~="15g"] {
+    -webkit-box-flex: 15;
+    -ms-flex: 15;
+    flex: 15;
+  }
+
+  [data-xl~="16g"] {
+    -webkit-box-flex: 16;
+    -ms-flex: 16;
+    flex: 16;
+  }
+
+  [data-xl~="17g"] {
+    -webkit-box-flex: 17;
+    -ms-flex: 17;
+    flex: 17;
+  }
+
+  [data-xl~="18g"] {
+    -webkit-box-flex: 18;
+    -ms-flex: 18;
+    flex: 18;
+  }
+
+  [data-xl~="19g"] {
+    -webkit-box-flex: 19;
+    -ms-flex: 19;
+    flex: 19;
+  }
+
+  [data-xl~="20g"] {
+    -webkit-box-flex: 20;
+    -ms-flex: 20;
+    flex: 20;
+  }
+
+  [data-xl~="21g"] {
+    -webkit-box-flex: 21;
+    -ms-flex: 21;
+    flex: 21;
+  }
+
+  [data-xl~="22g"] {
+    -webkit-box-flex: 22;
+    -ms-flex: 22;
+    flex: 22;
+  }
+
+  [data-xl~="23g"] {
+    -webkit-box-flex: 23;
+    -ms-flex: 23;
+    flex: 23;
+  }
+
+  [data-xl~="24g"] {
+    -webkit-box-flex: 24;
+    -ms-flex: 24;
+    flex: 24;
+  }
+
+  [data-xl~="0"] {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  /* Kap Örgüsü Sıralama Düzeni */
+  [data-xl~="1nc"] {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  [data-xl~="2nc"] {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  [data-xl~="3nc"] {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  [data-xl~="4nc"] {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  [data-xl~="5nc"] {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  [data-xl~="6nc"] {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  [data-xl~="7nc"] {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+
+  [data-xl~="8nc"] {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+
+  [data-xl~="9nc"] {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+
+  [data-xl~="10nc"] {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+
+  [data-xl~="11nc"] {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+
+  [data-xl~="12nc"] {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+
+  [data-xl~="13nc"] {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  [data-xl~="14nc"] {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 14;
+    order: 14;
+  }
+
+  [data-xl~="15nc"] {
+    -webkit-box-ordinal-group: 15;
+    -ms-flex-order: 15;
+    order: 15;
+  }
+
+  [data-xl~="16nc"] {
+    -webkit-box-ordinal-group: 16;
+    -ms-flex-order: 16;
+    order: 16;
+  }
+
+  [data-xl~="17nc"] {
+    -webkit-box-ordinal-group: 17;
+    -ms-flex-order: 17;
+    order: 17;
+  }
+
+  [data-xl~="18nc"] {
+    -webkit-box-ordinal-group: 18;
+    -ms-flex-order: 18;
+    order: 18;
+  }
+
+  [data-xl~="19nc"] {
+    -webkit-box-ordinal-group: 19;
+    -ms-flex-order: 19;
+    order: 19;
+  }
+
+  [data-xl~="20nc"] {
+    -webkit-box-ordinal-group: 20;
+    -ms-flex-order: 20;
+    order: 20;
+  }
+
+  [data-xl~="21nc"] {
+    -webkit-box-ordinal-group: 21;
+    -ms-flex-order: 21;
+    order: 21;
+  }
+
+  [data-xl~="22nc"] {
+    -webkit-box-ordinal-group: 22;
+    -ms-flex-order: 22;
+    order: 22;
+  }
+
+  [data-xl~="23nc"] {
+    -webkit-box-ordinal-group: 23;
+    -ms-flex-order: 23;
+    order: 23;
+  }
+
+  [data-xl~="24nc"] {
+    -webkit-box-ordinal-group: 24;
+    -ms-flex-order: 24;
+    order: 24;
+  }
+
+  [data-xl~="overflow-hidden"] {
+    overflow: hidden;
+  }
+
+  [data-xl~="h-overflow"] {
+    overflow-x: auto;
+  }
+
+  [data-xl~="nowrap"] {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  [data-xl~="reverse-wrap"] {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-xl~="reverse-row"] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  [data-xl~="reverse-column"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column;
+    -reverseflex-direction: column-reverse;
+  }
+
+  [data-xl~="left"] {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  [data-xl~="center"] {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-xl~="right"] {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  [data-xl~="center-middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-xl~="top"] {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    -ms-grid-row-align: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  [data-xl~="middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+  }
+
+  [data-xl~="bottom"] {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    -ms-grid-row-align: flex-end !important;
+    align-items: flex-end !important;
+  }
+
+  [data-xl~="top-it"] {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+
+  [data-xl~="middle-it"] {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+
+  [data-xl~="bottom-it"] {
+    margin-top: auto;
+  }
+
+  [data-xl~="right-it"] {
+    margin-left: auto;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  [data-xl~="center-it"] {
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  [data-xl~="left-it"] {
+    margin-right: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-xl~="justify"] {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  [data-xl~="space-around"] {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [data-xl~="stretch"] {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    -ms-grid-row-align: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-xl~="stretch-it"] {
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+
+  [data-xl~="baseline"] {
+    -webkit-box-align: baseline !important;
+    -ms-flex-align: baseline !important;
+    -ms-grid-row-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  [data-xl~="baseline-it"] {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  [data-xl~="text-right"] {
+    text-align: right;
+  }
+
+  [data-xl~="text-center"] {
+    text-align: center;
+  }
+
+  [data-xl~="text-left"] {
+    text-align: left;
+  }
+
+  [data-xl~="hide"],
+  [data-xl~="hide-with-bigger"],
+  [data-lg~="hide-bigger"],
+  [data-lg~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 1900px) {
+  [data-hg]:not([data-gnl]) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-hg~="sığdır"] {
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 0 !important;
+    flex: 1 1 0 !important;
+    overflow: auto;
+    height: 100%;
+  }
+
+  /*  Kap Örgüsü Parça Ayarları */
+  [data-hg~="1"] {
+    --parça: 1;
+  }
+
+  [data-hg~="1p"] {
+    --par: 1;
+  }
+
+  [data-hg~="2"] {
+    --parça: 2;
+  }
+
+  [data-hg~="2p"] {
+    --par: 2;
+  }
+
+  [data-hg~="3"] {
+    --parça: 3;
+  }
+
+  [data-hg~="3p"] {
+    --par: 3;
+  }
+
+  [data-hg~="4"] {
+    --parça: 4;
+  }
+
+  [data-hg~="4p"] {
+    --par: 4;
+  }
+
+  [data-hg~="5"] {
+    --parça: 5;
+  }
+
+  [data-hg~="5p"] {
+    --par: 5;
+  }
+
+  [data-hg~="6"] {
+    --parça: 6;
+  }
+
+  [data-hg~="6p"] {
+    --par: 6;
+  }
+
+  [data-hg~="7"] {
+    --parça: 7;
+  }
+
+  [data-hg~="7p"] {
+    --par: 7;
+  }
+
+  [data-hg~="8"] {
+    --parça: 8;
+  }
+
+  [data-hg~="8p"] {
+    --par: 8;
+  }
+
+  [data-hg~="9"] {
+    --parça: 9;
+  }
+
+  [data-hg~="9p"] {
+    --par: 9;
+  }
+
+  [data-hg~="10"] {
+    --parça: 10;
+  }
+
+  [data-hg~="10p"] {
+    --par: 10;
+  }
+
+  [data-hg~="11"] {
+    --parça: 11;
+  }
+
+  [data-hg~="11p"] {
+    --par: 11;
+  }
+
+  [data-hg~="12"] {
+    --parça: 12;
+  }
+
+  [data-hg~="12p"] {
+    --par: 12;
+  }
+
+  [data-hg~="13"] {
+    --parça: 13;
+  }
+
+  [data-hg~="13p"] {
+    --par: 13;
+  }
+
+  [data-hg~="14"] {
+    --parça: 14;
+  }
+
+  [data-hg~="14p"] {
+    --par: 14;
+  }
+
+  [data-hg~="15"] {
+    --parça: 15;
+  }
+
+  [data-hg~="15p"] {
+    --par: 15;
+  }
+
+  [data-hg~="16"] {
+    --parça: 16;
+  }
+
+  [data-hg~="16p"] {
+    --par: 16;
+  }
+
+  [data-hg~="17"] {
+    --parça: 17;
+  }
+
+  [data-hg~="17p"] {
+    --par: 17;
+  }
+
+  [data-hg~="18"] {
+    --parça: 18;
+  }
+
+  [data-hg~="18p"] {
+    --par: 18;
+  }
+
+  [data-hg~="19"] {
+    --parça: 19;
+  }
+
+  [data-hg~="19p"] {
+    --par: 19;
+  }
+
+  [data-hg~="20"] {
+    --parça: 20;
+  }
+
+  [data-hg~="20p"] {
+    --par: 20;
+  }
+
+  [data-hg~="21"] {
+    --parça: 21;
+  }
+
+  [data-hg~="21p"] {
+    --par: 21;
+  }
+
+  [data-hg~="22"] {
+    --parça: 22;
+  }
+
+  [data-hg~="22p"] {
+    --par: 22;
+  }
+
+  [data-hg~="23"] {
+    --parça: 23;
+  }
+
+  [data-hg~="23p"] {
+    --par: 23;
+  }
+
+  [data-hg~="24"] {
+    --parça: 24;
+  }
+
+  [data-hg~="24p"] {
+    --par: 24;
+  }
+
+  [data-hg] {
+    flex-basis: calc(100% / var(--par) * var(--parça));
+    width: calc(100% / var(--par) * var(--parça));
+    max-width: calc(100% / var(--par) * var(--parça));
+  }
+
+  /* Kap Örgüsü Genleşme Ayarları */
+  [data-hg~="1g"] {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  [data-hg~="2g"] {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+
+  [data-hg~="3g"] {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+
+  [data-hg~="4g"] {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+  }
+
+  [data-hg~="5g"] {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+  }
+
+  [data-hg~="6g"] {
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+  }
+
+  [data-hg~="7g"] {
+    -webkit-box-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
+  }
+
+  [data-hg~="8g"] {
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+  }
+
+  [data-hg~="9g"] {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
+    flex: 9;
+  }
+
+  [data-hg~="10g"] {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
+    flex: 10;
+  }
+
+  [data-hg~="11g"] {
+    -webkit-box-flex: 11;
+    -ms-flex: 11;
+    flex: 11;
+  }
+
+  [data-hg~="12g"] {
+    -webkit-box-flex: 12;
+    -ms-flex: 12;
+    flex: 12;
+  }
+
+  [data-hg~="13g"] {
+    -webkit-box-flex: 13;
+    -ms-flex: 13;
+    flex: 13;
+  }
+
+  [data-hg~="14g"] {
+    -webkit-box-flex: 14;
+    -ms-flex: 14;
+    flex: 14;
+  }
+
+  [data-hg~="15g"] {
+    -webkit-box-flex: 15;
+    -ms-flex: 15;
+    flex: 15;
+  }
+
+  [data-hg~="16g"] {
+    -webkit-box-flex: 16;
+    -ms-flex: 16;
+    flex: 16;
+  }
+
+  [data-hg~="17g"] {
+    -webkit-box-flex: 17;
+    -ms-flex: 17;
+    flex: 17;
+  }
+
+  [data-hg~="18g"] {
+    -webkit-box-flex: 18;
+    -ms-flex: 18;
+    flex: 18;
+  }
+
+  [data-hg~="19g"] {
+    -webkit-box-flex: 19;
+    -ms-flex: 19;
+    flex: 19;
+  }
+
+  [data-hg~="20g"] {
+    -webkit-box-flex: 20;
+    -ms-flex: 20;
+    flex: 20;
+  }
+
+  [data-hg~="21g"] {
+    -webkit-box-flex: 21;
+    -ms-flex: 21;
+    flex: 21;
+  }
+
+  [data-hg~="22g"] {
+    -webkit-box-flex: 22;
+    -ms-flex: 22;
+    flex: 22;
+  }
+
+  [data-hg~="23g"] {
+    -webkit-box-flex: 23;
+    -ms-flex: 23;
+    flex: 23;
+  }
+
+  [data-hg~="24g"] {
+    -webkit-box-flex: 24;
+    -ms-flex: 24;
+    flex: 24;
+  }
+
+  [data-hg~="0"] {
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  /* Kap Örgüsü Sıralama Düzeni */
+  [data-hg~="1nc"] {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  [data-hg~="2nc"] {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  [data-hg~="3nc"] {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  [data-hg~="4nc"] {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  [data-hg~="5nc"] {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  [data-hg~="6nc"] {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  [data-hg~="7nc"] {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 7;
+    order: 7;
+  }
+
+  [data-hg~="8nc"] {
+    -webkit-box-ordinal-group: 8;
+    -ms-flex-order: 8;
+    order: 8;
+  }
+
+  [data-hg~="9nc"] {
+    -webkit-box-ordinal-group: 9;
+    -ms-flex-order: 9;
+    order: 9;
+  }
+
+  [data-hg~="10nc"] {
+    -webkit-box-ordinal-group: 10;
+    -ms-flex-order: 10;
+    order: 10;
+  }
+
+  [data-hg~="11nc"] {
+    -webkit-box-ordinal-group: 11;
+    -ms-flex-order: 11;
+    order: 11;
+  }
+
+  [data-hg~="12nc"] {
+    -webkit-box-ordinal-group: 12;
+    -ms-flex-order: 12;
+    order: 12;
+  }
+
+  [data-hg~="13nc"] {
+    -webkit-box-ordinal-group: 13;
+    -ms-flex-order: 13;
+    order: 13;
+  }
+
+  [data-hg~="14nc"] {
+    -webkit-box-ordinal-group: 14;
+    -ms-flex-order: 14;
+    order: 14;
+  }
+
+  [data-hg~="15nc"] {
+    -webkit-box-ordinal-group: 15;
+    -ms-flex-order: 15;
+    order: 15;
+  }
+
+  [data-hg~="16nc"] {
+    -webkit-box-ordinal-group: 16;
+    -ms-flex-order: 16;
+    order: 16;
+  }
+
+  [data-hg~="17nc"] {
+    -webkit-box-ordinal-group: 17;
+    -ms-flex-order: 17;
+    order: 17;
+  }
+
+  [data-hg~="18nc"] {
+    -webkit-box-ordinal-group: 18;
+    -ms-flex-order: 18;
+    order: 18;
+  }
+
+  [data-hg~="19nc"] {
+    -webkit-box-ordinal-group: 19;
+    -ms-flex-order: 19;
+    order: 19;
+  }
+
+  [data-hg~="20nc"] {
+    -webkit-box-ordinal-group: 20;
+    -ms-flex-order: 20;
+    order: 20;
+  }
+
+  [data-hg~="21nc"] {
+    -webkit-box-ordinal-group: 21;
+    -ms-flex-order: 21;
+    order: 21;
+  }
+
+  [data-hg~="22nc"] {
+    -webkit-box-ordinal-group: 22;
+    -ms-flex-order: 22;
+    order: 22;
+  }
+
+  [data-hg~="23nc"] {
+    -webkit-box-ordinal-group: 23;
+    -ms-flex-order: 23;
+    order: 23;
+  }
+
+  [data-hg~="24nc"] {
+    -webkit-box-ordinal-group: 24;
+    -ms-flex-order: 24;
+    order: 24;
+  }
+
+  [data-hg~="overflow-hidden"] {
+    overflow: hidden;
+  }
+
+  [data-hg~="h-overflow"] {
+    overflow-x: auto;
+  }
+
+  [data-hg~="nowrap"] {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  [data-hg~="reverse-wrap"] {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-hg~="reverse-row"] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  [data-hg~="reverse-column"] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column;
+    -reverseflex-direction: column-reverse;
+  }
+
+  [data-hg~="left"] {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  [data-hg~="center"] {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-hg~="right"] {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  [data-hg~="center-middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  [data-hg~="top"] {
+    -webkit-box-align: start !important;
+    -ms-flex-align: start !important;
+    -ms-grid-row-align: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  [data-hg~="middle"] {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    -ms-grid-row-align: center !important;
+    align-items: center !important;
+  }
+
+  [data-hg~="bottom"] {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    -ms-grid-row-align: flex-end !important;
+    align-items: flex-end !important;
+  }
+
+  [data-hg~="top-it"] {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+  }
+
+  [data-hg~="middle-it"] {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+
+  [data-hg~="bottom-it"] {
+    margin-top: auto;
+  }
+
+  [data-hg~="right-it"] {
+    margin-left: auto;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  [data-hg~="center-it"] {
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  [data-hg~="left-it"] {
+    margin-right: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  [data-hg~="justify"] {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  [data-hg~="space-around"] {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  [data-hg~="stretch"] {
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    -ms-grid-row-align: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-hg~="stretch-it"] {
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+
+  [data-hg~="baseline"] {
+    -webkit-box-align: baseline !important;
+    -ms-flex-align: baseline !important;
+    -ms-grid-row-align: baseline !important;
+    align-items: baseline !important;
+  }
+
+  [data-hg~="baseline-it"] {
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  [data-hg~="text-right"] {
+    text-align: right;
+  }
+
+  [data-hg~="text-center"] {
+    text-align: center;
+  }
+
+  [data-hg~="text-left"] {
+    text-align: left;
+  }
+
+  [data-gnl~="container"], [data-hg~="container"],
+  [data-xl~="conatiner-bigger"], [data-xl~="container-with-bigger"],
+  [data-lg~="conatiner-bigger"], [data-lg~="container-with-bigger"],
+  [data-md~="conatiner-bigger"], [data-md~="container-with-bigger"],
+  [data-sm~="conatiner-bigger"], [data-sm~="container-with-bigger"],
+  [data-xs~="conatiner-bigger"], [data-xs~="container-with-bigger"],
+  [data-mn~="conatiner-bigger"], [data-mn~="container-with-bigger"] {
+    max-width: 1890px;
+  }
+
+  [data-hg~="hide"],
+  [data-hg~="hide-with-bigger"],
+  [data-xl~="hide-bigger"],
+  [data-xl~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KOCAMAN-soner ($kcm) veya (kcm-soner) | Ekran ölçeği: 0 < 1900px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1900px) {
+  [data-hg~="hide-smaller"],
+  [data-hg~="hide-other"],
+  [data-xl~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    BÜYÜK-soner ($byk) veya (byk-soner) | Ekran ölçeği: 0 < 1200px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1200px) {
+  [data-xl~="hide-smaller"],
+  [data-xl~="hide-other"],
+  [data-lg~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ORTA-soner ($ort) veya (ort-soner) | Ekran ölçeği: 0 < 992px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 993px) {
+  [data-lg~="hide-smaller"],
+  [data-lg~="hide-other"],
+  [data-md~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KÜÇÜK-soner ($kçk) veya (kçk-soner) | Ekran ölçeği: 0 < 768px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  [data-md~="hide-smaller"],
+  [data-md~="hide-other"],
+  [data-sm~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    UFAK-soner ($ufk) veya (ufk-soner) | Ekran ölçeği: 0 < 576px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 13px !important;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+
+  h6 {
+    font-size: 1.1em;
+  }
+
+  [data-sm~="hide-smaller"],
+  [data-sm~="hide-other"],
+  [data-xs~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MİNİK-soner ($mnk) veya (mnk-soner) | Ekran ölçeği: 0 < 300px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 300px) {
+  [data-xs~="hide-smaller"],
+  [data-xs~="hide-other"],
+  [data-mn~="hide-with-smaller"],
+  [data-mn~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  DUYARLI TİP - YALIN |< * >| */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MİNİK-YALIN ($mnk) veya (mnk-yalın) | Ekran ölçeği: 0 ≤ * < 300px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 300px) {
+  [data-gnl~="container"],
+  [data-mn~="container-with-bigger"],
+  [data-mn~="container-this"],
+  [data-mn~="container-with-smaller"],
+  [data-xs~="container-smaller"], [data-xs~="container-with-smaller"],
+  [data-sm~="container-smaller"], [data-sm~="container-with-smaller"],
+  [data-md~="container-smaller"], [data-md~="container-with-smaller"],
+  [data-lg~="container-smaller"], [data-lg~="container-with-smaller"],
+  [data-xl~="container-smaller"], [data-xl~="container-with-smaller"],
+  [data-hg~="container-smaller"], [data-hg~="container-with-smaller"] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Gizleme */
+  [data-mn~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    UFAK-YALIN ($ufk) veya (ufk-yalın) | Ekran ölçeği: 300px ≤ * < 576px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  [data-gnl~="container"],
+  [data-mn~="conatiner-bigger"], [data-mn~="container-with-bigger"],
+  [data-xs~="container-with-bigger"],
+  [data-xs~="container-this"],
+  [data-xs~="container-with-smaller"],
+  [data-sm~="container-smaller"], [data-sm~="container-with-smaller"],
+  [data-md~="container-smaller"], [data-md~="container-with-smaller"],
+  [data-lg~="container-smaller"], [data-lg~="container-with-smaller"],
+  [data-xl~="container-smaller"], [data-xl~="container-with-smaller"],
+  [data-hg~="container-smaller"], [data-hg~="container-with-smaller"] {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
+
+  /* Gizleme */
+  [data-xs~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KÇK-YALIN ($kçk) veya (kçk-yalın) | Ekran ölçeği: 576px ≤ * < 768px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  [data-gnl~="container"],
+  [data-mn~="conatiner-bigger"], [data-mn~="container-with-bigger"],
+  [data-xs~="conatiner-bigger"], [data-xs~="container-with-bigger"],
+  [data-sm~="container-with-bigger"],
+  [data-sm~="container-this"],
+  [data-sm~="container-with-smaller"],
+  [data-md~="container-smaller"], [data-md~="container-with-smaller"],
+  [data-lg~="container-smaller"], [data-lg~="container-with-smaller"],
+  [data-xl~="container-smaller"], [data-xl~="container-with-smaller"],
+  [data-hg~="container-smaller"], [data-hg~="container-with-smaller"] {
+    width: 566px;
+    max-width: 566px;
+  }
+
+  /* Gizleme */
+  [data-sm~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ORTA-YALIN ($ort) veya (ort-yalın)
+    Ekran ölçeği: 768px ≤ * < 992px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  [data-gnl~="container"],
+  [data-mn~="conatiner-bigger"], [data-mn~="container-with-bigger"],
+  [data-xs~="conatiner-bigger"], [data-xs~="container-with-bigger"],
+  [data-sm~="conatiner-bigger"], [data-sm~="container-with-bigger"],
+  [data-md~="container-with-bigger"],
+  [data-md~="container-this"],
+  [data-md~="container-with-smaller"],
+  [data-lg~="container-smaller"], [data-lg~="container-with-smaller"],
+  [data-xl~="container-smaller"], [data-xl~="container-with-smaller"],
+  [data-hg~="container-smaller"], [data-hg~="container-with-smaller"] {
+    width: 760px;
+    max-width: 760px;
+  }
+
+  /* Gizleme */
+  [data-md~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    BÜYÜK-YALIN ($byk) veya (byk-yalın) | Ekran ölçeği: 992px ≤ * < 1200px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  [data-gnl~="container"],
+  [data-mn~="conatiner-bigger"], [data-mn~="container-with-bigger"],
+  [data-xs~="conatiner-bigger"], [data-xs~="container-with-bigger"],
+  [data-sm~="conatiner-bigger"], [data-sm~="container-with-bigger"],
+  [data-md~="conatiner-bigger"], [data-md~="container-with-bigger"],
+  [data-lg~="container-with-bigger"],
+  [data-lg~="container-this"],
+  [data-lg~="container-with-smaller"],
+  [data-xl~="container-smaller"], [data-xl~="container-with-smaller"],
+  [data-hg~="container-smaller"], [data-hg~="container-with-smaller"] {
+    width: 960px;
+    max-width: 960px;
+  }
+
+  /* Gizleme */
+  [data-lg~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KOCAMAN-YALIN ($kcm) veya (kcm-yalın) | Ekran ölçeği: 1200px ≤ * < 1900px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+  [data-gnl~="container"],
+  [data-mn~="conatiner-bigger"], [data-mn~="container-with-bigger"],
+  [data-xs~="conatiner-bigger"], [data-xs~="container-with-bigger"],
+  [data-sm~="conatiner-bigger"], [data-sm~="container-with-bigger"],
+  [data-md~="conatiner-bigger"], [data-md~="container-with-bigger"],
+  [data-lg~="conatiner-bigger"], [data-lg~="container-with-bigger"],
+  [data-xl~="container-with-bigger"],
+  [data-xl~="container-this"],
+  [data-xl~="container-with-smaller"] {
+    width: 1140px;
+    max-width: 1140px;
+  }
+
+  /* Gizleme */
+  [data-xl~="hide-this"] {
+    display: none !important;
+  }
+}
+/* ==========================================================================
+    SEKME ÖRGÜSÜ s0.1
+    Sadece css yöntemiyle kurulmuş sekme örgüsü
+----------------------------------------------------------------------------- */
+[data-sekme] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+}
+
+[data-sekme] > input {
+  display: none;
+}
+
+[data-sekme] label {
+  z-index: 2;
+  /* özelleştirme +() */
+  background: #5c51a1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: background ease 0.6s;
+  transition: background ease 0.6s;
+}
+
+[data-sekme] > label {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  display: block;
+  /* özelleştirme +() */
+  margin-right: 2.8px;
+  margin-right: 0.2rem;
+}
+
+[data-sekme] > input + label + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  opacity: 0;
+  padding: 10px 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  left: 0;
+}
+
+[data-sekme] > input:checked + label + div {
+  position: relative;
+  z-index: 0;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+[data-sekme~="sağda"] {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+[data-sekme~="altta"] {
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+[data-sekme~="ortada"] {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+[data-sekme~="gergin"] {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+[data-sekme~="gergin"] > label {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+[data-sekme~="yan"] > .sekme-listesi {
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+[data-sekme~="yan"] > .sekme-listesi > label {
+  margin: 0 10px 10px 10px;
+  width: 100%;
+}
+
+[data-sekme] > input:checked + label,
+[data-sekme~="yan"] > input:nth-child(1):checked ~ .sekme-listesi > label:nth-child(1),
+[data-sekme~="yan"] > input:nth-child(2):checked ~ .sekme-listesi > label:nth-child(2),
+[data-sekme~="yan"] > input:nth-child(3):checked ~ .sekme-listesi > label:nth-child(3),
+[data-sekme~="yan"] > input:nth-child(4):checked ~ .sekme-listesi > label:nth-child(4),
+[data-sekme~="yan"] > input:nth-child(5):checked ~ .sekme-listesi > label:nth-child(5),
+[data-sekme~="yan"] > input:nth-child(6):checked ~ .sekme-listesi > label:nth-child(6),
+[data-sekme~="yan"] > input:nth-child(7):checked ~ .sekme-listesi > label:nth-child(7),
+[data-sekme~="yan"] > input:nth-child(8):checked ~ .sekme-listesi > label:nth-child(8),
+[data-sekme~="yan"] > input:nth-child(9):checked ~ .sekme-listesi > label:nth-child(9),
+[data-sekme~="yan"] > input:nth-child(10):checked ~ .sekme-listesi > label:nth-child(10),
+[data-sekme~="yan"] > input:nth-child(11):checked ~ .sekme-listesi > label:nth-child(11),
+[data-sekme~="yan"] > input:nth-child(12):checked ~ .sekme-listesi > label:nth-child(12) {
+  /* özelleştirme +() */
+  background: #2c2171;
+  color: #fff;
+}
+
+[data-sekme~="yan"] > .sekme-içeriği > div {
+  position: absolute;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  height: 0;
+  overflow: hidden;
+  /* özelleştirme +() */
+  margin: 0 10px 10px 10px;
+}
+
+[data-sekme~="yan"] > input:nth-child(1):checked ~ .sekme-içeriği > div:nth-child(1),
+[data-sekme~="yan"] > input:nth-child(2):checked ~ .sekme-içeriği > div:nth-child(2),
+[data-sekme~="yan"] > input:nth-child(3):checked ~ .sekme-içeriği > div:nth-child(3),
+[data-sekme~="yan"] > input:nth-child(4):checked ~ .sekme-içeriği > div:nth-child(4),
+[data-sekme~="yan"] > input:nth-child(5):checked ~ .sekme-içeriği > div:nth-child(5),
+[data-sekme~="yan"] > input:nth-child(6):checked ~ .sekme-içeriği > div:nth-child(6),
+[data-sekme~="yan"] > input:nth-child(7):checked ~ .sekme-içeriği > div:nth-child(7),
+[data-sekme~="yan"] > input:nth-child(8):checked ~ .sekme-içeriği > div:nth-child(8),
+[data-sekme~="yan"] > input:nth-child(9):checked ~ .sekme-içeriği > div:nth-child(9),
+[data-sekme~="yan"] > input:nth-child(10):checked ~ .sekme-içeriği > div:nth-child(10),
+[data-sekme~="yan"] > input:nth-child(11):checked ~ .sekme-içeriği > div:nth-child(11),
+[data-sekme~="yan"] > input:nth-child(12):checked ~ .sekme-içeriği > div:nth-child(12) {
+  width: 100%;
+  position: relative;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  height: auto;
+  /* özelleştirme +() */
+  margin: 0 10px 10px 10px;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+[data-sekme~="yan"][data-sekme~="sağda"] {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+/*# sourceMappingURL=dvb-ing.css.map */
