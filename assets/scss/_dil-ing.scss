@@ -7,3 +7,61 @@ $ort: md;
 $byk: lg;
 $kcm: xl;
 $dev: hg;
+
+/* Kap Örgüsü */
+/* Konumlama - Kap Örgüsü */
+$kaymadan: overflow-hidden;
+$yatay-kayma: h-overflow;
+
+$dürmeden: nowrap;
+$ters-dürme: reverse-wrap;
+$ters-satır: reverse-row;
+$ters-sütun: reverse-column;
+
+$solda: left;
+$ortada: center;
+$sağda: right;
+$merkezde: center-middle;
+$üstte: top;
+$göbekte: middle;
+$altta: bottom;
+
+$üstte-ol: top-it;
+$göbekte-ol: middle-it;
+$altta-ol: bottom-it;
+$sağda-ol: right-it;
+$ortada-ol: center-it;
+$solda-ol: left-it;
+
+$geniş-aralıklı: justify;
+$aralıklı: space-around;
+$uzat: stretch;
+$uzun-ol: stretch-it;
+
+$satırda: baseline;
+$satırda-ol: baseline-it;
+
+$metin-sağda: text-right;
+$metin-ortada: text-center;
+$metin-solda: text-left;
+
+/* Durumlama - Kap Örgüsü */
+$gizle: hide;
+$bunu-gizle: hide-this;
+$küçükleri-gizle: hide-smaller;
+$büyükleri-gizle: hide-bigger;
+$küçükleriyle-gizle: hide-with-smaller;
+$büyükleriyle-gizle: hide-with-bigger;
+$diğerlerini-gizle: hide-other;
+
+/* */
+$aralık: aralık;
+$oluk-çevre: oluk-çevre;
+$oluk: oluk;
+$oluk-yok: oluk-yok;
+$kaplama: container;
+$bunu-kaplama: container-this;
+$küçükleri-kaplama: container-smaller;
+$küçükleriyle-kaplama: container-with-smaller;
+$büyükleriyle-kaplama: container-with-bigger;
+$büyükleri-kaplama: conatiner-bigger;
