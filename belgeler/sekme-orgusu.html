@@ -2,6 +2,13 @@
 layout: default
 title: Sekme Örgüsü
 ---
+<style media="screen">
+  .önizleme{background-color:#efefef; padding:10px;}
+  .önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1; padding:10px; color:#eee;}
+  .önizleme h3 {color:#999;margin:0 0 10px 0;}
+  pre.language-html{ max-height:50vh; overflow-y: auto;}
+</style>
+
 Deveb, sekme örgüsünü saf CSS yöntemiyle oluşturmaktadır. HTML yapısı ve kullanımı çok basittir. Sekmeleri yatay düzende, dikey düzende kullanabilirsiniz. Ufak bir değiştirge ekleyerek sekmelerin
 konumlarına ve durumlarına müdahale edebilirsiniz.
 
@@ -12,6 +19,70 @@ için hazırlanan html düzeninde kullanılır.
 
 <hr>
 <h2>Sekme Örnekleri</h2>
+
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme: Sekme, Solda Konumlanmış</h3>
+  <div data-sekme="" data-gnl="1 1p">
+    <input id="im11" type="radio" name="sekme1" checked="checked">
+    <label for="im11">Birinci Sekme</label>
+    <div>
+      Taşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır. Sis yelpazeyle dağıtılmaz. Şöhret kabiliyetin gölgesidir.
+      Güzellik, tabiatın kadınlara verdiği ilk hediye, aynı zamanda geri aldığı ilk şeydir. İnsan dışı ile karşılanır, içi ile uğurlanır. Ağaç ne kadar yüksek olursa olsun, yaprakları yine de yere dökülür. Altın ateşle, kadın altınla, erkek kadınla imtihan edilir.
+    </div>
+
+    <input id="im21" type="radio" name="sekme1">
+    <label for="im21">İkinci Sekme</label>
+    <div>
+      Taşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır. Sis yelpazeyle dağıtılmaz. Şöhret kabiliyetin gölgesidir.
+      Güzellik, tabiatın kadınlara verdiği ilk hediye, aynı zamanda geri aldığı ilk şeydir. İnsan dışı ile karşılanır, içi ile uğurlanır. Ağaç ne kadar yüksek olursa olsun, yaprakları yine de yere dökülür. Altın ateşle, kadın altınla, erkek kadınla imtihan edilir.
+    </div>
+
+    <input id="im31" type="radio" name="sekme1">
+    <label for="im31">Üçüncü Sekme</label>
+    <div>
+      Taşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır. Sis yelpazeyle dağıtılmaz. Şöhret kabiliyetin gölgesidir.
+      Güzellik, tabiatın kadınlara verdiği ilk hediye, aynı zamanda geri aldığı ilk şeydir. İnsan dışı ile karşılanır, içi ile uğurlanır. Ağaç ne kadar yüksek olursa olsun, yaprakları yine de yere dökülür. Altın ateşle, kadın altınla, erkek kadınla imtihan edilir.
+    </div>
+
+    <input id="im41" type="radio" name="sekme1">
+    <label for="im41">Dördüncü Sekme</label>
+    <div>
+      Taşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır. Sis yelpazeyle dağıtılmaz. Şöhret kabiliyetin gölgesidir.
+      Güzellik, tabiatın kadınlara verdiği ilk hediye, aynı zamanda geri aldığı ilk şeydir. İnsan dışı ile karşılanır, içi ile uğurlanır. Ağaç ne kadar yüksek olursa olsun, yaprakları yine de yere dökülür. Altın ateşle, kadın altınla, erkek kadınla imtihan edilir.
+    </div>
+  </div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-sekme=&quot;&quot; data-gnl=&quot;1 1p&quot;&gt;
+  &lt;input id=&quot;im11&quot; type=&quot;radio&quot; name=&quot;sekme1&quot; checked=&quot;checked&quot;&gt;
+  &lt;label for=&quot;im11&quot;&gt;Birinci Sekme&lt;/label&gt;
+  &lt;div&gt;
+    Ta&#351;&#305; delen suyun kuvveti de&#287;il, damlalar&#305;n s&uuml;reklili&#287;idir. Hi&ccedil;bir mutfak iki kad&#305;n&#305; alacak kadar geni&#351; de&#287;ildir. Sevmek keman &ccedil;almak gibidir, bilmeyen k&ouml;t&uuml; sesler &ccedil;&#305;kar&#305;r. Sis yelpazeyle da&#287;&#305;t&#305;lmaz. &#350;&ouml;hret kabiliyetin g&ouml;lgesidir.
+    G&uuml;zellik, tabiat&#305;n kad&#305;nlara verdi&#287;i ilk hediye, ayn&#305; zamanda geri ald&#305;&#287;&#305; ilk &#351;eydir. &#304;nsan d&#305;&#351;&#305; ile kar&#351;&#305;lan&#305;r, i&ccedil;i ile u&#287;urlan&#305;r. A&#287;a&ccedil; ne kadar y&uuml;ksek olursa olsun, yapraklar&#305; yine de yere d&ouml;k&uuml;l&uuml;r. Alt&#305;n ate&#351;le, kad&#305;n alt&#305;nla, erkek kad&#305;nla imtihan edilir.
+  &lt;/div&gt;
+
+  &lt;input id=&quot;im21&quot; type=&quot;radio&quot; name=&quot;sekme1&quot;&gt;
+  &lt;label for=&quot;im21&quot;&gt;&#304;kinci Sekme&lt;/label&gt;
+  &lt;div&gt;
+    Ta&#351;&#305; delen suyun kuvveti de&#287;il, damlalar&#305;n s&uuml;reklili&#287;idir. Hi&ccedil;bir mutfak iki kad&#305;n&#305; alacak kadar geni&#351; de&#287;ildir. Sevmek keman &ccedil;almak gibidir, bilmeyen k&ouml;t&uuml; sesler &ccedil;&#305;kar&#305;r. Sis yelpazeyle da&#287;&#305;t&#305;lmaz. &#350;&ouml;hret kabiliyetin g&ouml;lgesidir.
+    G&uuml;zellik, tabiat&#305;n kad&#305;nlara verdi&#287;i ilk hediye, ayn&#305; zamanda geri ald&#305;&#287;&#305; ilk &#351;eydir. &#304;nsan d&#305;&#351;&#305; ile kar&#351;&#305;lan&#305;r, i&ccedil;i ile u&#287;urlan&#305;r. A&#287;a&ccedil; ne kadar y&uuml;ksek olursa olsun, yapraklar&#305; yine de yere d&ouml;k&uuml;l&uuml;r. Alt&#305;n ate&#351;le, kad&#305;n alt&#305;nla, erkek kad&#305;nla imtihan edilir.
+  &lt;/div&gt;
+
+  &lt;input id=&quot;im31&quot; type=&quot;radio&quot; name=&quot;sekme1&quot;&gt;
+  &lt;label for=&quot;im31&quot;&gt;&Uuml;&ccedil;&uuml;nc&uuml; Sekme&lt;/label&gt;
+  &lt;div&gt;
+    Ta&#351;&#305; delen suyun kuvveti de&#287;il, damlalar&#305;n s&uuml;reklili&#287;idir. Hi&ccedil;bir mutfak iki kad&#305;n&#305; alacak kadar geni&#351; de&#287;ildir. Sevmek keman &ccedil;almak gibidir, bilmeyen k&ouml;t&uuml; sesler &ccedil;&#305;kar&#305;r. Sis yelpazeyle da&#287;&#305;t&#305;lmaz. &#350;&ouml;hret kabiliyetin g&ouml;lgesidir.
+    G&uuml;zellik, tabiat&#305;n kad&#305;nlara verdi&#287;i ilk hediye, ayn&#305; zamanda geri ald&#305;&#287;&#305; ilk &#351;eydir. &#304;nsan d&#305;&#351;&#305; ile kar&#351;&#305;lan&#305;r, i&ccedil;i ile u&#287;urlan&#305;r. A&#287;a&ccedil; ne kadar y&uuml;ksek olursa olsun, yapraklar&#305; yine de yere d&ouml;k&uuml;l&uuml;r. Alt&#305;n ate&#351;le, kad&#305;n alt&#305;nla, erkek kad&#305;nla imtihan edilir.
+  &lt;/div&gt;
+
+  &lt;input id=&quot;im41&quot; type=&quot;radio&quot; name=&quot;sekme1&quot;&gt;
+  &lt;label for=&quot;im41&quot;&gt;D&ouml;rd&uuml;nc&uuml; Sekme&lt;/label&gt;
+  &lt;div&gt;
+    Ta&#351;&#305; delen suyun kuvveti de&#287;il, damlalar&#305;n s&uuml;reklili&#287;idir. Hi&ccedil;bir mutfak iki kad&#305;n&#305; alacak kadar geni&#351; de&#287;ildir. Sevmek keman &ccedil;almak gibidir, bilmeyen k&ouml;t&uuml; sesler &ccedil;&#305;kar&#305;r. Sis yelpazeyle da&#287;&#305;t&#305;lmaz. &#350;&ouml;hret kabiliyetin g&ouml;lgesidir.
+    G&uuml;zellik, tabiat&#305;n kad&#305;nlara verdi&#287;i ilk hediye, ayn&#305; zamanda geri ald&#305;&#287;&#305; ilk &#351;eydir. &#304;nsan d&#305;&#351;&#305; ile kar&#351;&#305;lan&#305;r, i&ccedil;i ile u&#287;urlan&#305;r. A&#287;a&ccedil; ne kadar y&uuml;ksek olursa olsun, yapraklar&#305; yine de yere d&ouml;k&uuml;l&uuml;r. Alt&#305;n ate&#351;le, kad&#305;n alt&#305;nla, erkek kad&#305;nla imtihan edilir.
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 
 <!--  yeni sekme örgüsü -->
 <div data-sekme data-gnl="1 1p">
