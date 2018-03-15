@@ -1517,3 +1517,8 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 /* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
 /* TEKER: Tek, yalnız, sadece (bu sözcüklerin birleşimidir) */
 /* SONER: Son, sonra, sonda, son doğan, küçük olan (bu sözcüklerin birleşimidir) */
+
+  .önizleme{background-color:#efefef; padding:10px;}
+  .önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1; padding:10px; color:#eee;}
+  .önizleme h3 {color:#999;margin:0 0 10px 0;}
+  pre.language-html{ max-height:50vh; overflow-y: auto;}
