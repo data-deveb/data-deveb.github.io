@@ -7,6 +7,7 @@
     @include dürme;
     @include satır;
     position: relative;
+    z-index: 999;
   }
   [data-sekme] > input{
     display:none;

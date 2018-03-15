@@ -1316,6 +1316,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   position: relative;
+  z-index: 999;
 }
 [data-sekme] > input{
   display:none;
