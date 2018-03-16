@@ -1348,6 +1348,7 @@ S06 DEV-ilker (dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  flex-basis: 100%;
   position: absolute;
   z-index: -100;
   opacity: 0;
