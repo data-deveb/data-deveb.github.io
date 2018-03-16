@@ -33,120 +33,108 @@ data-sekme=&quot;yan sağda&quot;
 <h2>Sekme Örnekleri</h2>
 
 <!--  yeni sekme örgüsü -->
+<div data-gnl="1 1p" class="önizleme">
+  <h3>Önizleme: Basmallara Basarak Konumları Deneyin</h3>
 
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("p:first").addClass("intro");
+  <script>
+    $(document).ready(function(){
+      $("#solda").click(function(){       sekme.setAttribute("data-sekme", "solda")});
+      $("#solda_altta").click(function(){ sekme.setAttribute("data-sekme", "solda altta")});
+      $("#sağda").click(function(){       sekme.setAttribute("data-sekme", "sağda")});
+      $("#sağda_altta").click(function(){ sekme.setAttribute("data-sekme", "sağda altta")});
+      $("#ortada").click(function(){      sekme.setAttribute("data-sekme", "ortada")});
+      $("#ortada_altta").click(function(){sekme.setAttribute("data-sekme", "ortada altta")});
+      $("#gergin").click(function(){      sekme.setAttribute("data-sekme", "gergin")});
+      $("#gergin_altta").click(function(){sekme.setAttribute("data-sekme", "gergin altta")});
     });
-});
-</script>
+  </script>
+  <button id="solda">solda</button>
+  <button id="solda_altta">solda altta</button>
+  <button id="sağda">sağda</button>
+  <button id="sağda_altta">sağda altta</button>
+  <button id="ortada">ortada</button>
+  <button id="ortada_altta">ortada altta</button>
+  <button id="gergin">gergin</button>
+  <button id="gergin_altta">gergin altta</button>
 
+  <div id="sekme" data-sekme="" data-gnl="1 1p">
+    <input id="im11" type="radio" name="sekme1" checked="checked">
+    <label for="im11">Birinci Sekme</label>
+    <div>
+      <p>
+        İnsanları canlandıran ümit ve güzel hayaldir. Ümidini kaybetmiş olanın, başka kaybedecek şeyi olmaz. Güzel gören güzel düşünür, güzel düşünen hayatından tat alır. Güzel sözler petekten damla damla sızan bala benzer. İstediğini söyleyen, istemediğini işitir.
+      </p>
 
-
-
-<!--<div data-sekme data-gnl="1 1p">
-  <input id="im0" type="radio" name="sekme" checked="checked">
-  <label for="im0">solda</label>
-  <div>-->
-    <div data-gnl="1 1p" class="önizleme">
-      <h3>Önizleme: Solda Konumlanmış Sekme</h3>
-
-      <script>
-        $(document).ready(function(){
-          $("#solda").click(function(){       sekme.setAttribute("data-sekme", "solda")});
-          $("#solda_altta").click(function(){ sekme.setAttribute("data-sekme", "solda altta")});
-          $("#sağda").click(function(){       sekme.setAttribute("data-sekme", "sağda")});
-          $("#sağda_altta").click(function(){ sekme.setAttribute("data-sekme", "sağda altta")});
-          $("#ortada").click(function(){      sekme.setAttribute("data-sekme", "ortada")});
-          $("#ortada_altta").click(function(){sekme.setAttribute("data-sekme", "ortada altta")});
-        });
-      </script>
-      <button id="solda">solda</button>
-      <button id="solda_altta">solda altta</button>
-      <button id="sağda">sağda</button>
-      <button id="sağda_altta">sağda altta</button>
-      <button id="ortada">ortada</button>
-      <button id="ortada_altta">ortada altta</button>
-
-      <div id="sekme" data-sekme="" data-gnl="1 1p">
-        <input id="im11" type="radio" name="sekme1" checked="checked">
-        <label for="im11">Birinci Sekme</label>
-        <div>
-          <p>
-            İnsanları canlandıran ümit ve güzel hayaldir. Ümidini kaybetmiş olanın, başka kaybedecek şeyi olmaz. Güzel gören güzel düşünür, güzel düşünen hayatından tat alır. Güzel sözler petekten damla damla sızan bala benzer. İstediğini söyleyen, istemediğini işitir.
-          </p>
-
-          <p>
-            Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır. Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer.
-          </p>
-        </div>
-
-        <input id="im21" type="radio" name="sekme1">
-        <label for="im21">İkinci Sekme</label>
-        <div>
-          <p>
-            Boynuz kulağı geçer. Ağaç yaşken eğilir. İstediğini söyleyen, istemediğini işitir. Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır.
-          </p>
-
-          </p>
-            Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer. Borcunu azaldırsan hür yaşarsın, günahını azaltırsan rahat ölürsün.  Yaşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır.
-          </p>
-        </div>
-
-        <input id="im31" type="radio" name="sekme1">
-        <label for="im31">Üçüncü Sekme</label>
-        <div>
-          <p>
-            Katırdan olmaz şeker, olsa bile cinsine çeker. Bin ölçüp bir biçmeli. Üzüm üzüme baka baka kararır. Söz söylemeyi öğrenmek, kılıç kullanmayı öğrenmekten zordur. Tek kelime bile karşımızdakinin akıllı mı aptal mı olduğunu gösterir. Biliyorsan konuş alim sansınlar, bilmiyorsan sus insan sansınlar. Soru soranın kişiliği sorusunda gizlidir.
-          </p>
-
-          <p>
-            Soru kişinin karakterini yansıtır. Cahil ile sohbet etmek güçtür bilene, cahil ne gelirse söyler diline. Adam adamdır olmasa pulu, eşek eşektir altından olsa da çulu. Eşeğe altın semer vurmuşlar, eşek yine eşek. İnsanla kitabın dışına aldanma, içine bak.
-          </p>
-
-          <p>
-            Söz uçar, yazı kalır. İki gönül bir olduktan sonra samanlık seyran olur. Güzel soru sormakda ilmin yarısıdır. Gerekmezi sakla, gereken güne kadar. Sakla samanı, gelir zamanı. Ölümü hatırlamak insanları kötülükten uzaklaştırır. Ameller niyetlere göredir. Hacının horozu ölmüş, yolcuya ne! Herkes kendi ölüsü için ağlar. El, el için ağlamaz başına kara bağlamaz. Düşüne düşüne görmeli işi. Sonra pişman olmamalı kişi. El elin nesine, gülerek gider yasına. En üstün cihat, zalim sultana karşı söylenen hakikatlerdir.
-          </p>
-        </div>
-
-        <input id="im41" type="radio" name="sekme1">
-        <label for="im41">Dördüncü Sekme</label>
-        <div>
-          <p>
-            Ayağını yorgana göre uzat. Ağaca çıkan keçinin, dala bakan oğlağı olur. Anasına bak kızını al, kenarına bak bezini al. Gülme komşuna, gelir başına. Son gülen iyi güler. Bir musibet, bin nasihattan iyidir. Damlaya damlaya göl olur. Ekmeden biçilmez. Kişi her bildiğini ayağının altına alsa, başı göğe değer. Cahile laf anlatmak, deveye hendek atlatmaktan, köre renk tarif etmekten zordur. Göster bana arkadaşını, söyleyeyim sana kim olduğunu. Her şeyin yol olduğu anda bile, ümit vardır. İnsanları canlandıran ümit ve güzel hayaldir.
-          </p>
-
-          <p>
-            Ümidini kaybetmiş olanın, başka kaybedecek şeyi olmaz. Güzel gören güzel düşünür, güzel düşünen hayatından tat alır. Güzel sözler petekten damla damla sızan bala benzer. Katırdan olmaz şeker, olsa bile cinsine çeker. Bin ölçüp bir biçmeli. Üzüm üzüme baka baka kararır. Söz söylemeyi öğrenmek, kılıç kullanmayı öğrenmekten zordur. Tek kelime bile karşımızdakinin akıllı mı aptal mı olduğunu gösterir.
-          </p>
-
-          <p>
-            Biliyorsan konuş alim sansınlar, bilmiyorsan sus insan sansınlar. Soru soranın kişiliği sorusunda gizlidir. Soru kişinin karakterini yansıtır. Cahil ile sohbet etmek güçtür bilene, cahil ne gelirse söyler diline. Adam adamdır olmasa pulu, eşek eşektir altından olsa da çulu.
-          </p>
-
-          <p>
-            Eşeğe altın semer vurmuşlar, eşek yine eşek. İnsanla kitabın dışına aldanma, içine bak. Söz uçar, yazı kalır. İki gönül bir olduktan sonra samanlık seyran olur. Güzel soru sormakda ilmin yarısıdır. Gerekmezi sakla, gereken güne kadar. Sakla samanı, gelir zamanı. Ölümü hatırlamak insanları kötülükten uzaklaştırır. Ameller niyetlere göredir. Hacının horozu ölmüş, yolcuya ne! Herkes kendi ölüsü için ağlar. El, el için ağlamaz başına kara bağlamaz. Düşüne düşüne görmeli işi. Sonra pişman olmamalı kişi. El elin nesine, gülerek gider yasına. En üstün cihat, zalim sultana karşı söylenen hakikatlerdir. Fazla tatlı olma, yutulursun; fazla acı olma atılırsın. Başkasına muhtaç olmamak için çalışmak da ibadettir. Para efendi değil vasıtadır. Para iyi bir hizmetçi, kötü bir efendidir. Misafir umduğunu değil, bulduğunu yer. Yerinde soru, ilmin anahtarıdır. Kararsızlık ve gecikme, başarısızlığın sebebidir. Bencillik dostluğun zehiridir. Parasını aziz eden kendini rezil eder. Ademoğlunun iki vadi dolusu altını alsaydı, üçüncüsünü isterdi. Bir avuç altının olacağına, bir karış toprağın olsun. Başa gelen çekilir. Akıl akıldan üstündür. Çağrıldığın yere erinme, istenmediğin yerde görünme.
-          </p>
-
-          <p>
-            Gülü seven dikenine katlanır. Hamama giren terler. Ya olduğun gibi görün ya da göründüğün gibi ol! Aslan yattığı yerden belli olur. Alma mazlumun ahını, çıkar aheste aheste. Kediden post, gavurdan dost olmaz. Biri yer biri bakar kıyamet ondan kopar. Dereyi görmeden paçayı sıvama. Öfkeyle kalkan zararla oturur. Ava giden avlanır. Çivi çiyi söker. Yalancının mumu yatsıya kadar yanar. Boynuz kulağı geçer. Ağaç yaşken eğilir.
-          </p>
-
-          <p>
-            İstediğini söyleyen, istemediğini işitir. Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır. Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer.
-          </p>
-
-          <p>
-            Borcunu azaldırsan hür yaşarsın, günahını azaltırsan rahat ölürsün.  Yaşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır.
-          </p>
-
-          <p>
-            Sis yelpazeyle dağıtılmaz. Şöhret kabiliyetin gölgesidir. Güzellik, tabiatın kadınlara verdiği ilk hediye, aynı zamanda geri aldığı ilk şeydir. İnsan dışı ile karşılanır, içi ile uğurlanır. Ağaç ne kadar yüksek olursa olsun, yaprakları yine de yere dökülür. Erkek kadınla, kadın altınla, altın ateşle imtihan edilir.
-          </p>
-        </div>
-      </div>
+      <p>
+        Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır. Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer.
+      </p>
     </div>
+
+    <input id="im21" type="radio" name="sekme1">
+    <label for="im21">İkinci Sekme</label>
+    <div>
+      <p>
+        Boynuz kulağı geçer. Ağaç yaşken eğilir. İstediğini söyleyen, istemediğini işitir. Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır.
+      </p>
+
+      </p>
+        Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer. Borcunu azaldırsan hür yaşarsın, günahını azaltırsan rahat ölürsün.  Yaşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır.
+      </p>
+    </div>
+
+    <input id="im31" type="radio" name="sekme1">
+    <label for="im31">Üçüncü Sekme</label>
+    <div>
+      <p>
+        Katırdan olmaz şeker, olsa bile cinsine çeker. Bin ölçüp bir biçmeli. Üzüm üzüme baka baka kararır. Söz söylemeyi öğrenmek, kılıç kullanmayı öğrenmekten zordur. Tek kelime bile karşımızdakinin akıllı mı aptal mı olduğunu gösterir. Biliyorsan konuş alim sansınlar, bilmiyorsan sus insan sansınlar. Soru soranın kişiliği sorusunda gizlidir.
+      </p>
+
+      <p>
+        Soru kişinin karakterini yansıtır. Cahil ile sohbet etmek güçtür bilene, cahil ne gelirse söyler diline. Adam adamdır olmasa pulu, eşek eşektir altından olsa da çulu. Eşeğe altın semer vurmuşlar, eşek yine eşek. İnsanla kitabın dışına aldanma, içine bak.
+      </p>
+
+      <p>
+        Söz uçar, yazı kalır. İki gönül bir olduktan sonra samanlık seyran olur. Güzel soru sormakda ilmin yarısıdır. Gerekmezi sakla, gereken güne kadar. Sakla samanı, gelir zamanı. Ölümü hatırlamak insanları kötülükten uzaklaştırır. Ameller niyetlere göredir. Hacının horozu ölmüş, yolcuya ne! Herkes kendi ölüsü için ağlar. El, el için ağlamaz başına kara bağlamaz. Düşüne düşüne görmeli işi. Sonra pişman olmamalı kişi. El elin nesine, gülerek gider yasına. En üstün cihat, zalim sultana karşı söylenen hakikatlerdir.
+      </p>
+    </div>
+
+    <input id="im41" type="radio" name="sekme1">
+    <label for="im41">Dördüncü Sekme</label>
+    <div>
+      <p>
+        Ayağını yorgana göre uzat. Ağaca çıkan keçinin, dala bakan oğlağı olur. Anasına bak kızını al, kenarına bak bezini al. Gülme komşuna, gelir başına. Son gülen iyi güler. Bir musibet, bin nasihattan iyidir. Damlaya damlaya göl olur. Ekmeden biçilmez. Kişi her bildiğini ayağının altına alsa, başı göğe değer. Cahile laf anlatmak, deveye hendek atlatmaktan, köre renk tarif etmekten zordur. Göster bana arkadaşını, söyleyeyim sana kim olduğunu. Her şeyin yol olduğu anda bile, ümit vardır. İnsanları canlandıran ümit ve güzel hayaldir.
+      </p>
+
+      <p>
+        Ümidini kaybetmiş olanın, başka kaybedecek şeyi olmaz. Güzel gören güzel düşünür, güzel düşünen hayatından tat alır. Güzel sözler petekten damla damla sızan bala benzer. Katırdan olmaz şeker, olsa bile cinsine çeker. Bin ölçüp bir biçmeli. Üzüm üzüme baka baka kararır. Söz söylemeyi öğrenmek, kılıç kullanmayı öğrenmekten zordur. Tek kelime bile karşımızdakinin akıllı mı aptal mı olduğunu gösterir.
+      </p>
+
+      <p>
+        Biliyorsan konuş alim sansınlar, bilmiyorsan sus insan sansınlar. Soru soranın kişiliği sorusunda gizlidir. Soru kişinin karakterini yansıtır. Cahil ile sohbet etmek güçtür bilene, cahil ne gelirse söyler diline. Adam adamdır olmasa pulu, eşek eşektir altından olsa da çulu.
+      </p>
+
+      <p>
+        Eşeğe altın semer vurmuşlar, eşek yine eşek. İnsanla kitabın dışına aldanma, içine bak. Söz uçar, yazı kalır. İki gönül bir olduktan sonra samanlık seyran olur. Güzel soru sormakda ilmin yarısıdır. Gerekmezi sakla, gereken güne kadar. Sakla samanı, gelir zamanı. Ölümü hatırlamak insanları kötülükten uzaklaştırır. Ameller niyetlere göredir. Hacının horozu ölmüş, yolcuya ne! Herkes kendi ölüsü için ağlar. El, el için ağlamaz başına kara bağlamaz. Düşüne düşüne görmeli işi. Sonra pişman olmamalı kişi. El elin nesine, gülerek gider yasına. En üstün cihat, zalim sultana karşı söylenen hakikatlerdir. Fazla tatlı olma, yutulursun; fazla acı olma atılırsın. Başkasına muhtaç olmamak için çalışmak da ibadettir. Para efendi değil vasıtadır. Para iyi bir hizmetçi, kötü bir efendidir. Misafir umduğunu değil, bulduğunu yer. Yerinde soru, ilmin anahtarıdır. Kararsızlık ve gecikme, başarısızlığın sebebidir. Bencillik dostluğun zehiridir. Parasını aziz eden kendini rezil eder. Ademoğlunun iki vadi dolusu altını alsaydı, üçüncüsünü isterdi. Bir avuç altının olacağına, bir karış toprağın olsun. Başa gelen çekilir. Akıl akıldan üstündür. Çağrıldığın yere erinme, istenmediğin yerde görünme.
+      </p>
+
+      <p>
+        Gülü seven dikenine katlanır. Hamama giren terler. Ya olduğun gibi görün ya da göründüğün gibi ol! Aslan yattığı yerden belli olur. Alma mazlumun ahını, çıkar aheste aheste. Kediden post, gavurdan dost olmaz. Biri yer biri bakar kıyamet ondan kopar. Dereyi görmeden paçayı sıvama. Öfkeyle kalkan zararla oturur. Ava giden avlanır. Çivi çiyi söker. Yalancının mumu yatsıya kadar yanar. Boynuz kulağı geçer. Ağaç yaşken eğilir.
+      </p>
+
+      <p>
+        İstediğini söyleyen, istemediğini işitir. Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır. Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer.
+      </p>
+
+      <p>
+        Borcunu azaldırsan hür yaşarsın, günahını azaltırsan rahat ölürsün.  Yaşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır.
+      </p>
+
+      <p>
+        Sis yelpazeyle dağıtılmaz. Şöhret kabiliyetin gölgesidir. Güzellik, tabiatın kadınlara verdiği ilk hediye, aynı zamanda geri aldığı ilk şeydir. İnsan dışı ile karşılanır, içi ile uğurlanır. Ağaç ne kadar yüksek olursa olsun, yaprakları yine de yere dökülür. Erkek kadınla, kadın altınla, altın ateşle imtihan edilir.
+      </p>
+    </div>
+  </div>
+</div>
 
 <pre data-gnl="1 1p">
   <code class="language-html">
@@ -178,364 +166,79 @@ Burası senin alanın.
   </code>
 </pre>
   </div>
-<!--
-<input id="im1" type="radio" name="sekme">
-<label for="im1">ortada</label>
-<div>
+
+
+
+
   <div data-gnl="1 1p" class="önizleme">
-    <h3>Önizleme: Sekme, Ortada Konumlanmış</h3>
-    <div data-sekme="ortada" data-gnl="1 1p">
-      <input id="im12" type="radio" name="sekme2" checked="checked">
-      <label for="im12">Birinci Sekme</label>
-      <div>
-        <p>
-          İnsanları canlandıran ümit ve güzel hayaldir. Ümidini kaybetmiş olanın, başka kaybedecek şeyi olmaz. Güzel gören güzel düşünür, güzel düşünen hayatından tat alır. Güzel sözler petekten damla damla sızan bala benzer. İstediğini söyleyen, istemediğini işitir.
-        </p>
-
-        <p>
-          Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır. Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer.
-        </p>
+    <h3>Önizleme: Sekme, Sağ Yanda Konumlanmış</h3>
+    <div data-sekme="yan sağda" data-gnl="1 1p">
+      <input id="im1d" type="radio" name="sekme-sütun" checked="checked">
+      <input id="im2d" type="radio" name="sekme-sütun">
+      <input id="im3d" type="radio" name="sekme-sütun">
+      <input id="im4d" type="radio" name="sekme-sütun">
+      <div class="sekme-listesi" data-gnl="1 5p">
+        <label for="im1d">Birinci</label>
+        <label for="im2d">İkinci</label>
+        <label for="im3d">Üçüncü</label>
+        <label for="im4d">Dördüncü</label>
       </div>
+      <div class="sekme-içeriği" data-gnl="4 5p">
+        <div>Birinci sağda sekme içeriği</div>
+        <div>İkinci sağda sekme içeriği</div>
+        <div>Üçüncü sağda sekme içeriği</div>
+        <div>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
 
-      <input id="im22" type="radio" name="sekme2">
-      <label for="im22">İkinci Sekme</label>
-      <div>
-        <p>
-          Boynuz kulağı geçer. Ağaç yaşken eğilir. İstediğini söyleyen, istemediğini işitir. Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır.
-        </p>
+          Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
 
-        </p>
-          Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer. Borcunu azaldırsan hür yaşarsın, günahını azaltırsan rahat ölürsün.  Yaşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir. Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır.
-        </p>
+          Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+
+          Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+
+          Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+
+          Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+
+          Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+
+          Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</div>
+        </div>
       </div>
+    </div>
+    <pre data-gnl="1 1p"><code class="language-html">&lt;div data-sekme=&quot;yan sa&#287;da&quot; data-gnl=&quot;1 1p&quot;&gt;
+      &lt;input id=&quot;im1d&quot; type=&quot;radio&quot; name=&quot;sekme-s&uuml;tun&quot; checked=&quot;checked&quot;&gt;
+      &lt;input id=&quot;im2d&quot; type=&quot;radio&quot; name=&quot;sekme-s&uuml;tun&quot;&gt;
+      &lt;input id=&quot;im3d&quot; type=&quot;radio&quot; name=&quot;sekme-s&uuml;tun&quot;&gt;
+      &lt;input id=&quot;im4d&quot; type=&quot;radio&quot; name=&quot;sekme-s&uuml;tun&quot;&gt;
+      &lt;div class=&quot;sekme-listesi&quot; data-gnl=&quot;1 5p&quot;&gt;
+      &lt;label for=&quot;im1d&quot;&gt;Birinci&lt;/label&gt;
+      &lt;label for=&quot;im2d&quot;&gt;&#304;kinci&lt;/label&gt;
+      &lt;label for=&quot;im3d&quot;&gt;&Uuml;&ccedil;&uuml;nc&uuml;&lt;/label&gt;
+      &lt;label for=&quot;im4d&quot;&gt;D&ouml;rd&uuml;nc&uuml;&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sekme-i&ccedil;eri&#287;i&quot; data-gnl=&quot;4 5p&quot;&gt;
+      &lt;div&gt;Birinci sa&#287;da sekme i&ccedil;eri&#287;i&lt;/div&gt;
+      &lt;div&gt;&#304;kinci sa&#287;da sekme i&ccedil;eri&#287;i&lt;/div&gt;
+      &lt;div&gt;&Uuml;&ccedil;&uuml;nc&uuml; sa&#287;da sekme i&ccedil;eri&#287;i&lt;/div&gt;
+      &lt;div&gt;Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
 
-      <input id="im32" type="radio" name="sekme2">
-      <label for="im32">Üçüncü Sekme</label>
-      <div>
-        <p>
-          Katırdan olmaz şeker, olsa bile cinsine çeker. Bin ölçüp bir biçmeli. Üzüm üzüme baka baka kararır. Söz söylemeyi öğrenmek, kılıç kullanmayı öğrenmekten zordur. Tek kelime bile karşımızdakinin akıllı mı aptal mı olduğunu gösterir. Biliyorsan konuş alim sansınlar, bilmiyorsan sus insan sansınlar. Soru soranın kişiliği sorusunda gizlidir.
-        </p>
+      Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
 
-        <p>
-          Soru kişinin karakterini yansıtır. Cahil ile sohbet etmek güçtür bilene, cahil ne gelirse söyler diline. Adam adamdır olmasa pulu, eşek eşektir altından olsa da çulu. Eşeğe altın semer vurmuşlar, eşek yine eşek. İnsanla kitabın dışına aldanma, içine bak.
-        </p>
+      Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
 
-        <p>
-          Söz uçar, yazı kalır. İki gönül bir olduktan sonra samanlık seyran olur. Güzel soru sormakda ilmin yarısıdır. Gerekmezi sakla, gereken güne kadar. Sakla samanı, gelir zamanı. Ölümü hatırlamak insanları kötülükten uzaklaştırır. Ameller niyetlere göredir. Hacının horozu ölmüş, yolcuya ne! Herkes kendi ölüsü için ağlar. El, el için ağlamaz başına kara bağlamaz. Düşüne düşüne görmeli işi. Sonra pişman olmamalı kişi. El elin nesine, gülerek gider yasına. En üstün cihat, zalim sultana karşı söylenen hakikatlerdir.
-        </p>
-      </div>
+      Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
 
-      <input id="im42" type="radio" name="sekme2">
-      <label for="im42">Dördüncü Sekme</label>
-      <div>
-        <p>
-Ayağını yorgana göre uzat. Ağaca çıkan keçinin, dala bakan oğlağı olur. Anasına bak kızını al, kenarına bak bezini al. Gülme komşuna, gelir başına. Son gülen iyi güler. Bir musibet, bin nasihattan iyidir.
-Damlaya damlaya göl olur. Ekmeden biçilmez. Kişi her bildiğini ayağının altına alsa, başı göğe değer. Cahile laf anlatmak, deveye hendek atlatmaktan, köre renk tarif etmekten zordur. Göster bana arkadaşını, söyleyeyim sana kim olduğunu.
-Her şeyin yol olduğu anda bile, ümit vardır. İnsanları canlandıran ümit ve güzel hayaldir. Ümidini kaybetmiş olanın, başka kaybedecek şeyi olmaz. Güzel gören güzel düşünür, güzel düşünen hayatından tat alır.
-Güzel sözler petekten damla damla sızan bala benzer. Katırdan olmaz şeker, olsa bile cinsine çeker. Bin ölçüp bir biçmeli. Üzüm üzüme baka baka kararır. Söz söylemeyi öğrenmek, kılıç kullanmayı öğrenmekten zordur.
-Tek kelime bile karşımızdakinin akıllı mı aptal mı olduğunu gösterir. Biliyorsan konuş alim sansınlar, bilmiyorsan sus insan sansınlar.
-Soru soranın kişiliği sorusunda gizlidir. Soru kişinin karakterini yansıtır. Cahil ile sohbet etmek güçtür bilene, cahil ne gelirse söyler diline. Adam adamdır olmasa pulu, eşek eşektir altından olsa da çulu.
-Eşeğe altın semer vurmuşlar, eşek yine eşek. İnsanla kitabın dışına aldanma, içine bak. Söz uçar, yazı kalır. İki gönül bir olduktan sonra samanlık seyran olur. Güzel soru sormakda ilmin yarısıdır. Gerekmezi sakla, gereken güne kadar.
-Sakla samanı, gelir zamanı. Ölümü hatırlamak insanları kötülükten uzaklaştırır. Ameller niyetlere göredir. Hacının horozu ölmüş, yolcuya ne! Herkes kendi ölüsü için ağlar. El, el için ağlamaz başına kara bağlamaz. Düşüne düşüne görmeli işi. Sonra pişman olmamalı kişi. El elin nesine, gülerek gider yasına.
-En üstün cihat, zalim sultana karşı söylenen hakikatlerdir. Fazla tatlı olma, yutulursun; fazla acı olma atılırsın. Başkasına muhtaç olmamak için çalışmak da ibadettir. Para efendi değil vasıtadır. Para iyi bir hizmetçi, kötü bir efendidir. Misafir umduğunu değil, bulduğunu yer.
-Yerinde soru, ilmin anahtarıdır. Kararsızlık ve gecikme, başarısızlığın sebebidir. Bencillik dostluğun zehiridir. Parasını aziz eden kendini rezil eder. Ademoğlunun iki vadi dolusu altını alsaydı, üçüncüsünü isterdi. Bir avuç altının olacağına, bir karış toprağın olsun. Başa gelen çekilir. Akıl akıldan üstündür.
-Çağrıldığın yere erinme, istenmediğin yerde görünme. Gülü seven dikenine katlanır. Hamama giren terler. Ya olduğun gibi görün ya da göründüğün gibi ol! Aslan yattığı yerden belli olur. Alma mazlumun ahını, çıkar aheste aheste.
-Kediden post, gavurdan dost olmaz. Biri yer biri bakar kıyamet ondan kopar. Dereyi görmeden paçayı sıvama. Öfkeyle kalkan zararla oturur. Ava giden avlanır. Çivi çiyi söker.
-Yalancının mumu yatsıya kadar yanar. Boynuz kulağı geçer. Ağaç yaşken eğilir. İstediğini söyleyen, istemediğini işitir. Paranı kaybet, neşeni kaybetme. Ateş düştürü yeri yakar. Sütden ağzı yanan yoğurdu üfürerek yer. Dervişin fikri neyse zikri odur. Akıl akıldan üstündür. Kork Allah'dan korkmayandan, korkma Allah'dan korkandan. Derdini söylemeyen, derman bulamaz. Sakınan göze çöp batar. Kendi düşen ağlamaz. Her koyun kendi bacağından asılır. Kör ile yatan, şaşı ile kalkar. Ateş olmayan yerden, duman çıkmaz.  Yanan kıvılcım, sönük volkanlardan kuvvetlidir. Görünen köt kılavuz istemez. Bakmak ile öğrenilseydi kedi kasap olurdu. Çalışmayan demir paslanır. Namaz müslümanın ışığıdır. Namaza meyli olanın kulağı ezandır. Denize düşen balığa sarılır. Kızını döğmeyen, dizini döver. Söyleyene bakma, söyletene bak. Altın yere düşmekle pul olmaz. Düşmanın eline kılıç verilmez. El kazanı ile aş kaynamaz. Davetsiz gelen döşeksiz oturur. Taş yerinde ağardır. Erken biçen, konan göçer.
-Borcunu azaldırsan hür yaşarsın, günahını azaltırsan rahat ölürsün.  Yaşı delen suyun kuvveti değil, damlaların sürekliliğidir. Hiçbir mutfak iki kadını alacak kadar geniş değildir.
-Sevmek keman çalmak gibidir, bilmeyen kötü sesler çıkarır. Sis yelpazeyle dağıtılmaz. Şöhret kabiliyetin gölgesidir.
-Güzellik, tabiatın kadınlara verdiği ilk hediye, aynı zamanda geri aldığı ilk şeydir. İnsan dışı ile karşılanır, içi ile uğurlanır. Ağaç ne kadar yüksek olursa olsun, yaprakları yine de yere dökülür. Erkek kadınla, kadın altınla, altın ateşle imtihan edilir.
-</div>
-</div>
-</div>
-<pre data-gnl="1 1p"><code class="language-html">
-&lt;div data-sekme=&quot;ortada&quot; data-gnl=&quot;1 1p&quot;&gt;
-&lt;input id=&quot;im12&quot; type=&quot;radio&quot; name=&quot;sekme2&quot; checked=&quot;checked&quot;&gt;
-&lt;label for=&quot;im12&quot;&gt;Birinci Sekme&lt;/label&gt;
-&lt;div&gt;
-Burası senin alanın.
-&lt;/div&gt;
+      Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
 
-&lt;input id=&quot;im22&quot; type=&quot;radio&quot; name=&quot;sekme2&quot;&gt;
-&lt;label for=&quot;im22&quot;&gt;&#304;kinci Sekme&lt;/label&gt;
-&lt;div&gt;
-Burası senin alanın.
-&lt;/div&gt;
+      Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
 
-&lt;input id=&quot;im32&quot; type=&quot;radio&quot; name=&quot;sekme2&quot;&gt;
-&lt;label for=&quot;im32&quot;&gt;&Uuml;&ccedil;&uuml;nc&uuml; Sekme&lt;/label&gt;
-&lt;div&gt;
-Burası senin alanın.
-&lt;/div&gt;
+      Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
 
-&lt;input id=&quot;im42&quot; type=&quot;radio&quot; name=&quot;sekme2&quot;&gt;
-&lt;label for=&quot;im42&quot;&gt;D&ouml;rd&uuml;nc&uuml; Sekme&lt;/label&gt;
-&lt;div&gt;
-Burası senin alanın.
-&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-</div>
-
-                            <input id="im2" type="radio" name="sekme">
-                            <label for="im2">sağda</label>
-                            <div>
-
-                            </div>
-
-                            <input id="im3" type="radio" name="sekme">
-                            <label for="im3">gergin</label>
-                            <div>
-                              <div data-sekme="gergin" data-gnl="1 1p">
-                                <input id="im13" type="radio" name="sekme3" checked="checked">
-                                <label for="im13">Birinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </div>
-
-                                <input id="im23" type="radio" name="sekme3">
-                                <label for="im23">İkinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </div>
-
-                                <input id="im33" type="radio" name="sekme3">
-                                <label for="im33">Üçüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum.
-                                </div>
-
-                                <input id="im43" type="radio" name="sekme3">
-                                <label for="im43">Dördüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Sit amet aliquam id diam maecenas ultricies mi eget. Libero nunc consequat interdum varius.
-                                </div>
-                              </div>
-                            </div>
-
-                            <input id="im4" type="radio" name="sekme">
-                            <label for="im4">altta</label>
-                            <div>
-                              <div data-sekme="altta" data-gnl="1 1p">
-                                <input id="im14" type="radio" name="sekme4" checked="checked">
-                                <label for="im14">Birinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </div>
-
-                                <input id="im24" type="radio" name="sekme4">
-                                <label for="im24">İkinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </div>
-
-                                <input id="im34" type="radio" name="sekme4">
-                                <label for="im34">Üçüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum.
-                                </div>
-
-                                <input id="im44" type="radio" name="sekme4">
-                                <label for="im44">Dördüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Sit amet aliquam id diam maecenas ultricies mi eget. Libero nunc consequat interdum varius.
-                                </div>
-                              </div>
-                            </div>
-
-                            <input id="im5" type="radio" name="sekme">
-                            <label for="im5">altta ortada</label>
-                            <div>
-                              <div data-sekme="altta ortada" data-gnl="1 1p">
-                                <input id="im15" type="radio" name="sekme5" checked="checked">
-                                <label for="im15">Birinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </div>
-
-                                <input id="im25" type="radio" name="sekme5">
-                                <label for="im25">İkinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </div>
-
-                                <input id="im35" type="radio" name="sekme5">
-                                <label for="im35">Üçüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum.
-                                </div>
-
-                                <input id="im45" type="radio" name="sekme5">
-                                <label for="im45">Dördüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Sit amet aliquam id diam maecenas ultricies mi eget. Libero nunc consequat interdum varius.
-                                </div>
-                              </div>
-                            </div>
-
-                            <input id="im6" type="radio" name="sekme">
-                            <label for="im6">altta sağda</label>
-                            <div>
-                              <div data-sekme="altta sağda" data-gnl="1 1p">
-                                <input id="im16" type="radio" name="sekme6" checked="checked">
-                                <label for="im16">Birinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </div>
-
-                                <input id="im26" type="radio" name="sekme6">
-                                <label for="im26">İkinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </div>
-
-                                <input id="im36" type="radio" name="sekme6">
-                                <label for="im36">Üçüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum.
-                                </div>
-
-                                <input id="im46" type="radio" name="sekme6">
-                                <label for="im46">Dördüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Sit amet aliquam id diam maecenas ultricies mi eget. Libero nunc consequat interdum varius.
-                                </div>
-                              </div>
-                            </div>
-
-                            <input id="im7" type="radio" name="sekme">
-                            <label for="im7">altta gergin</label>
-                            <div>
-                              <div data-sekme="altta gergin" data-gnl="1 1p">
-                                <input id="im17" type="radio" name="sekme7" checked="checked">
-                                <label for="im17">Birinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </div>
-
-                                <input id="im27" type="radio" name="sekme7">
-                                <label for="im27">İkinci</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </div>
-
-                                <input id="im37" type="radio" name="sekme7">
-                                <label for="im37">Üçüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum.
-                                </div>
-
-                                <input id="im47" type="radio" name="sekme7">
-                                <label for="im47">Dördüncü</label>
-                                <div>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Sit amet aliquam id diam maecenas ultricies mi eget. Libero nunc consequat interdum varius.
-                                </div>
-                              </div>
-                            </div>
-                            <input id="im8" type="radio" name="sekme">
-                            <label for="im8">yan sağda</label>
-                            <div>
-                              <div data-gnl="1 1p" class="önizleme">
-                                <h3>Önizleme: Sekme, Sağ Yanda Konumlanmış</h3>
-                                <div data-sekme="yan sağda" data-gnl="1 1p">
-                                  <input id="im1d" type="radio" name="sekme-sütun" checked="checked">
-                                  <input id="im2d" type="radio" name="sekme-sütun">
-                                  <input id="im3d" type="radio" name="sekme-sütun">
-                                  <input id="im4d" type="radio" name="sekme-sütun">
-                                  <div class="sekme-listesi" data-gnl="1 5p">
-                                    <label for="im1d">Birinci</label>
-                                    <label for="im2d">İkinci</label>
-                                    <label for="im3d">Üçüncü</label>
-                                    <label for="im4d">Dördüncü</label>
-                                  </div>
-                                  <div class="sekme-içeriği" data-gnl="4 5p">
-                                    <div>Birinci sağda sekme içeriği</div>
-                                    <div>İkinci sağda sekme içeriği</div>
-                                    <div>Üçüncü sağda sekme içeriği</div>
-                                    <div>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-
-                                      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-
-                                      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-
-                                      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-
-                                      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-
-                                      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-
-                                      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
-
-                                      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <pre data-gnl="1 1p"><code class="language-html">&lt;div data-sekme=&quot;yan sa&#287;da&quot; data-gnl=&quot;1 1p&quot;&gt;
-                                  &lt;input id=&quot;im1d&quot; type=&quot;radio&quot; name=&quot;sekme-s&uuml;tun&quot; checked=&quot;checked&quot;&gt;
-                                  &lt;input id=&quot;im2d&quot; type=&quot;radio&quot; name=&quot;sekme-s&uuml;tun&quot;&gt;
-                                  &lt;input id=&quot;im3d&quot; type=&quot;radio&quot; name=&quot;sekme-s&uuml;tun&quot;&gt;
-                                  &lt;input id=&quot;im4d&quot; type=&quot;radio&quot; name=&quot;sekme-s&uuml;tun&quot;&gt;
-                                  &lt;div class=&quot;sekme-listesi&quot; data-gnl=&quot;1 5p&quot;&gt;
-                                  &lt;label for=&quot;im1d&quot;&gt;Birinci&lt;/label&gt;
-                                  &lt;label for=&quot;im2d&quot;&gt;&#304;kinci&lt;/label&gt;
-                                  &lt;label for=&quot;im3d&quot;&gt;&Uuml;&ccedil;&uuml;nc&uuml;&lt;/label&gt;
-                                  &lt;label for=&quot;im4d&quot;&gt;D&ouml;rd&uuml;nc&uuml;&lt;/label&gt;
-                                  &lt;/div&gt;
-                                  &lt;div class=&quot;sekme-i&ccedil;eri&#287;i&quot; data-gnl=&quot;4 5p&quot;&gt;
-                                  &lt;div&gt;Birinci sa&#287;da sekme i&ccedil;eri&#287;i&lt;/div&gt;
-                                  &lt;div&gt;&#304;kinci sa&#287;da sekme i&ccedil;eri&#287;i&lt;/div&gt;
-                                  &lt;div&gt;&Uuml;&ccedil;&uuml;nc&uuml; sa&#287;da sekme i&ccedil;eri&#287;i&lt;/div&gt;
-                                  &lt;div&gt;Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
-
-                                  Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
-
-                                  Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
-
-                                  Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
-
-                                  Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
-
-                                  Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
-
-                                  Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.
-
-                                  Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.&lt;/div&gt;
-                                  &lt;/div&gt;
-                                  &lt;/div&gt;
-                                </code></pre>
-                              </div>
-                            </div>
-
-                            <!-- yeni sekme örgüsü sonu -->
-
-                            <!--
-                            <div class="beri-alt-2" data-gnl="2 2p">
-                            <div data-gnl="1 2p">
-                            <div class="kutu kutu-genel">          SOL ÜST SEKME        </div>
-                          </div>
-                          <div data-gnl="1 2p">
-                          <div class="kutu kutu-genel">          SAĞ ÜST SEKME    </div>
-                        </div>
-                        <div data-gnl="1 2p">
-                        <div class="kutu kutu-genel">          ORTA ÜST SEKME        </div>
-                      </div>
-                      <div data-gnl="1 2p">
-                      <div class="kutu kutu-genel">          ORTA ALT SEKME    </div>
-                    </div>
-                    <div data-gnl="1 2p">
-                    <div class="kutu kutu-genel">          SOL ALT SEKME    </div>
-                  </div>
-                  <div data-gnl="1 2p">
-                  <div class="kutu kutu-genel">          SAĞ ALT SEKME    </div>
-                </div>
-                <div data-gnl="1 2p">
-                <div class="kutu kutu-genel">          SOL YAN SEKME        </div>
-              </div>
-              <div data-gnl="1 2p">
-              <div class="kutu kutu-genel">          SAĞ YAN SEKME    </div>
-            </div>
-          </div> -->
-
+      Lorem Ipsum, dizgi ve bask&#305; end&uuml;strisinde kullan&#305;lan m&#305;g&#305;r metinlerdir. Lorem Ipsum, ad&#305; bilinmeyen bir matbaac&#305;n&#305;n bir hurufat numune kitab&#305; olu&#351;turmak &uuml;zere bir yaz&#305; galerisini alarak kar&#305;&#351;t&#305;rd&#305;&#287;&#305; 1500&#39;lerden beri end&uuml;stri standard&#305; sahte metinler olarak kullan&#305;lm&#305;&#351;t&#305;r. Be&#351;y&uuml;z y&#305;l boyunca varl&#305;&#287;&#305;n&#305; s&uuml;rd&uuml;rmekle kalmam&#305;&#351;, ayn&#305; zamanda pek de&#287;i&#351;meden elektronik dizgiye de s&#305;&ccedil;ram&#305;&#351;t&#305;r. 1960&#39;larda Lorem Ipsum pasajlar&#305; da i&ccedil;eren Letraset yapraklar&#305;n&#305;n yay&#305;nlanmas&#305; ile ve yak&#305;n zamanda Aldus PageMaker gibi Lorem Ipsum s&uuml;r&uuml;mleri i&ccedil;eren masa&uuml;st&uuml; yay&#305;nc&#305;l&#305;k yaz&#305;l&#305;mlar&#305; ile pop&uuml;ler olmu&#351;tur.&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+    </code></pre>
+  </div>
 
 
 
