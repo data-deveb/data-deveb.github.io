@@ -135,6 +135,7 @@ GS1 KAP ÖRGÜSÜ
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;/* Varsayılan olarak üstte ol */
+              align-content: flex-start;
     }
 
     [data-gnl~="sütun"]{
