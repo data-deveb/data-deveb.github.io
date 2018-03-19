@@ -5,6 +5,7 @@
   box-sizing:border-box;
   font-size:.85em;
   border:2px solid transparent;
+  position:relative;
 }
 [data-imgelik~="küçük"]{
   font-size:.70em;
@@ -14,6 +15,40 @@
 }
 [data-imgelik~="kapsül"]{
   border-radius: 10rem;
+}
+[data-imgelik~="sol-kapsül"]{
+  border-top-left-radius:10rem;
+  border-bottom-left-radius:10rem;
+}
+[data-imgelik~="sağ-kapsül"]{
+  border-top-right-radius:10rem;
+  border-bottom-right-radius:10rem;
+}
+[data-imgelik~="boncuklu"]::before,
+[data-imgelik~="sol-boncuklu"]::before{
+  border-width:.5em;
+  border-style:solid;
+  content:"";
+  border-radius:100%;
+  display:block;
+  position:absolute;
+  left:-7px;
+  top:3px;
+}
+[data-imgelik~="boncuklu"]::after,
+[data-imgelik~="sağ-boncuklu"]::after{
+  border-width:.5em;
+  border-style:solid;
+  content:"";
+  border-radius:100%;
+  display:block;
+  position:absolute;
+  right:-7px;
+  top:3px;
+}
+[data-imgelik~="boncuklu"]{
+  margin-left:5px;
+  margin-right:5px;
 }
 [data-imgelik~="sivri"]{
   border-radius:0;
@@ -34,7 +69,9 @@
   border-style:solid;
   background-color:transparent;
 }
-[data-imgelik~="tel"][data-imgelik~="birincil"]{
+[data-imgelik~="tel"][data-imgelik~="birincil"],
+[data-imgelik~="birincil"]::after,
+[data-imgelik~="birincil"]::before{
   border-color:#007bff;
   color:#007bff;
 }
