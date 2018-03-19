@@ -1235,7 +1235,11 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 [data-sekme~="yan"][data-sekme~="sağda"] { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
 
-[data-imgelik] { padding-right: .6em; padding-left: .6em; border-radius: .4rem; box-sizing: border-box; font-size: 85%; border: 2px solid transparent; }
+[data-imgelik] { padding-right: .6em; padding-left: .6em; border-radius: .4rem; box-sizing: border-box; font-size: .85em; border: 2px solid transparent; }
+
+[data-imgelik~="küçük"] { font-size: .70em; }
+
+[data-imgelik~="büyük"] { font-size: 1.1em; }
 
 [data-imgelik~="kapsül"] { border-radius: 10rem; }
 
@@ -1243,7 +1247,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 [data-imgelik~="bombe"] { border-radius: 50% / 10%; }
 
-[data-imgelik~="yuvar"] { border-radius: 50% / 50%; }
+[data-imgelik~="yuvarlı"] { border-radius: 50% / 50%; }
 
 [data-imgelik~="birincil"] { background-color: #007bff; color: #fff; border: 2px solid #007bff; }
 
