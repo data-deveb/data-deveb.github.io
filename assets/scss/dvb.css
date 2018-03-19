@@ -1235,7 +1235,9 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 [data-sekme~="yan"][data-sekme~="sağda"] { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
 
-[data-imgelik~="kapsül"] { border-radius: 10rem; padding-right: .6em; padding-left: .6em; }
+[data-imgelik] { padding-right: .6em; padding-left: .6em; border-radius: 3rem; }
+
+[data-imgelik~="kapsül"] { border-radius: 10rem; }
 
 [data-imgelik~="birincil"] { background-color: #007bff; color: #fff; }
 
