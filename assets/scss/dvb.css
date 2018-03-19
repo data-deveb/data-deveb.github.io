@@ -1247,7 +1247,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 [data-imgelik~="bombe"] { border-radius: 50% / 10%; }
 
-[data-imgelik~="yuvarlı"] { border-radius: 50% / 50%; }
+[data-imgelik~="yuvar"] { border-radius: 50% / 50%; }
 
 [data-imgelik~="birincil"] { background-color: #007bff; color: #fff; border: 2px solid #007bff; }
 
