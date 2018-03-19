@@ -12,11 +12,6 @@
   flex-wrap: wrap-reverse;
 }
 
-@mixin üstte-ol {
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;}
-
 @mixin sütun {
   -ms-flex-direction: column;
   -moz-flex-direction: column;

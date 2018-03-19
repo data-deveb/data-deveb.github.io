@@ -90,7 +90,7 @@
     [data-#{$gnl}]{
       @include esnek;
       @include dürme;
-      @include üstte-ol;
+      @include üstte;
     }
 
     [data-#{$gnl}~="sütun"]{

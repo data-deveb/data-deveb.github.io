@@ -132,6 +132,28 @@ a {
   color: #4c41a1;
 }
 
+.önizleme {
+  background-color: #efefef;
+  padding: 10px;
+}
+
+.önizleme [data-gnl] {
+  border: 1px solid #2c2171;
+  background-color: #4c41a1;
+  padding: 10px;
+  color: #eee;
+}
+
+.önizleme h3 {
+  color: #999;
+  margin: 0 0 10px 0;
+}
+
+pre.language-html {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*  G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -142,8 +164,10 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
 }
 
 [data-gnl~="sütun"] {
@@ -5239,6 +5263,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
+  z-index: 999;
 }
 
 [data-sekme] > input {
