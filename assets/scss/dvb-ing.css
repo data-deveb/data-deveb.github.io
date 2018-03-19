@@ -168,6 +168,8 @@ pre.language-html {
   -ms-flex-align: start;
   -ms-grid-row-align: flex-start;
   align-items: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
 }
 
 [data-gnl~="sütun"] {
@@ -903,8 +905,12 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
   }
 
   [data-xs~="sığdır"] {
@@ -1589,8 +1595,12 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
   }
 
   [data-sm~="sığdır"] {
@@ -2275,8 +2285,12 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
   }
 
   [data-md~="sığdır"] {
@@ -2961,8 +2975,12 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
   }
 
   [data-lg~="sığdır"] {
@@ -3647,8 +3665,12 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
   }
 
   [data-xl~="sığdır"] {
@@ -4333,8 +4355,12 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
   }
 
   [data-hg~="sığdır"] {
