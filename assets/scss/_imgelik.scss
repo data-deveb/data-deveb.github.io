@@ -1,6 +1,11 @@
 [data-imgelik]{
-  
+
 }
 [data-imgelik~="kapsül"]{
-
+  border-radius: 50%;
+  font-size:80%;
+  padding:2px;
+}
+[data-imgelik~="birincil"]{
+  background-color:blue;
 }
