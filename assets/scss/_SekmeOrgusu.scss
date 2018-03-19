@@ -42,6 +42,7 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     @include sıralama(2);
     left:0;
+    flex-wrap: wrap;
   }
   [data-sekme] > input:checked + label + div{
     position: relative;
