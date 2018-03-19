@@ -1235,11 +1235,21 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 [data-sekme~="yan"][data-sekme~="sağda"] { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
 
-[data-imgelik] { padding-right: .6em; padding-left: .6em; border-radius: 1rem; }
+[data-imgelik] { padding-right: .6em; padding-left: .6em; border-radius: .4rem; box-sizing: border-box; font-size: 85%; border: 2px solid transparent; }
 
 [data-imgelik~="kapsül"] { border-radius: 10rem; }
 
-[data-imgelik~="birincil"] { background-color: #007bff; color: #fff; }
+[data-imgelik~="sivri"] { border-radius: 0; }
+
+[data-imgelik~="bombe"] { border-radius: 50% / 10%; }
+
+[data-imgelik~="yuvar"] { border-radius: 50% / 50%; }
+
+[data-imgelik~="birincil"] { background-color: #007bff; color: #fff; border: 2px solid #007bff; }
+
+[data-imgelik~="tel"] { border-width: 2px; border-style: solid; background-color: transparent; }
+
+[data-imgelik~="tel"][data-imgelik~="birincil"] { border-color: #007bff; color: #007bff; }
 
 /* ========================================================================== MENÜ ÖRGÜSÜ s0.1 Sadece css yöntemiyle kurulmuş sekme örgüsü
 ----------------------------------------------------------------------------- */
