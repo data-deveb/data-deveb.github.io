@@ -1235,4 +1235,30 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 [data-sekme~="yan"][data-sekme~="sağda"] { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
 
+/* ========================================================================== MENÜ ÖRGÜSÜ s0.1 Sadece css yöntemiyle kurulmuş sekme örgüsü
+----------------------------------------------------------------------------- */
+[data-menü] > input:first-child { display: none; }
+
+[data-menü] > input:first-child:checked + label + ul { display: flex !important; }
+
+[data-menü~="yukarı"] > label { display: flex; order: 2; }
+
+[data-menü~="yukarı"] > ul { display: flex; order: 1; }
+
+[data-menü~="boş"] > input:checked + label { background-color: gray; }
+
+[data-menü~="boş"] > ul li a:hover, [data-menü~="boş"] > ul li a.etkin { background-color: rgba(0, 0, 0, 0.05); }
+
+[data-menü~="boş"] > ul li a, [data-menü~="boş"] > label { display: inherit; flex: 1 1 0; }
+
+[data-menü~="boş"] ul li a { padding: 5px 0 5px 5px; }
+
+[data-menü~="varsayılan"] > ul li a, [data-menü~="varsayılan"] > label { display: inherit; padding: 10px 15px; flex: 1 1 0; background-color: #2c2171; color: #fefefe; text-align: center; justify-content: center; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+
+[data-menü~="varsayılan"] > input:checked + label { background-color: gray; }
+
+[data-menü~="varsayılan"] > ul li a:hover, [data-menü~="varsayılan"] > ul li a.etkin { background-color: #3c3181; }
+
+@media screen and (min-width: 576px) and (-ms-high-contrast: active), (-ms-high-contrast: none) { [data-kçk~="0"] { -ms-flex-preferred-size: auto !important; width: auto !important; } }
+
 /*# sourceMappingURL=dvb.css.map */
