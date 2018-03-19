@@ -2,10 +2,11 @@
 
 }
 [data-imgelik~="kapsül"]{
-  border-radius: 50%;
-  font-size:80%;
-  padding:2px;
+  border-radius: 10rem;
+  padding-right: .6em;
+  padding-left: .6em;
 }
 [data-imgelik~="birincil"]{
-  background-color:blue;
+  background-color:#007bff;
+  color:#fff;
 }
