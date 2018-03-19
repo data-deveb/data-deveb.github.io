@@ -68,12 +68,13 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-
+@mixin üstte-öge{
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+}
 @mixin üstte {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    -ms-grid-row-align: flex-start;
-    align-items: flex-start;
     -ms-flex-line-pack:start;
         align-content:flex-start;
 }
@@ -87,13 +88,15 @@
         align-content:center;
 }
 
-@mixin altta {
+@mixin altta-öge {
     -webkit-box-align: end;
     -ms-flex-align: end;
     -ms-grid-row-align: flex-end;
     align-items: flex-end;
-    -ms-flex-line-pack:end;
-        align-content:flex-end;
+}
+@mixin altta{
+  -ms-flex-line-pack:end;
+      align-content:flex-end;
 }
 
 @mixin üstte-ol {

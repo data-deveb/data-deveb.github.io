@@ -90,7 +90,7 @@
     [data-#{$gnl}]{
       @include esnek;
       @include dürme;
-      @include üstte;
+      @include üstte-öge;
     }
 
     [data-#{$gnl}~="sütun"]{
@@ -147,7 +147,7 @@ S01 [data-#{$ufk}] UFAK-BÜYÜKLERİYLE | 300px ≤ *
       [data-#{$ufk}]:not([data-#{$gnl}]){
         @include esnek;
         @include dürme;
-        @include üstte;}
+        @include üstte-öge;}
 
       @include sığdır($ufk);
 
@@ -171,7 +171,7 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       [data-#{$kçk}]:not([data-#{$gnl}]){
         @include esnek;
         @include dürme;
-        @include üstte;}
+        @include üstte-öge;}
 
       @include sığdır($kçk);
 
@@ -195,7 +195,7 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       [data-#{$ort}]:not([data-#{$gnl}]){
         @include esnek;
         @include dürme;
-        @include üstte;}
+        @include üstte-öge;}
 
       @include sığdır($ort);
 
@@ -218,7 +218,7 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       [data-#{$byk}]:not([data-#{$gnl}]){
         @include esnek;
         @include dürme;
-        @include üstte;}
+        @include üstte-öge;}
 
       @include sığdır($byk);
 
@@ -241,7 +241,7 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       [data-#{$kcm}]:not([data-#{$gnl}]){
         @include esnek;
         @include dürme;
-        @include üstte;}
+        @include üstte-öge;}
 
       @include sığdır($kcm);
 
@@ -264,7 +264,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-#{$dev}]:not([data-#{$gnl}]){
         @include esnek;
         @include dürme;
-        @include üstte;}
+        @include üstte-öge;}
 
       @include sığdır($dev);
 
