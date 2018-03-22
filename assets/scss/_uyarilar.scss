@@ -1,0 +1,49 @@
+[data-uyarı]{
+  position:relative;
+  width:100%;
+}
+[data-uyarı] > div{
+  border:2px solid #f66;
+  padding:15px;
+  background-color:#f33;
+  border-radius:4px;
+  color:#fdd;
+  position:relative;
+  margin-bottom:10px;
+}
+[data-uyarı] > div h2{
+  width:100%;
+  margin:0;
+}
+[data-uyarı] > div p{
+  width:100%;
+  margin:10px 0;
+}
+[data-uyarı] > input{
+  display:none;
+}
+[data-uyarı] > input:checked + div{
+  opacity:0;
+  transition: all ease 0.3s;
+  visibility: hidden;
+  margin-top:-10vh;
+  margin-right:10vh;
+  z-index:100;
+}
+[data-uyarı] > input:checked + div{
+  position:absolute;
+  right:0;
+  left:0;
+}
+[data-uyarı] > div{
+  display:flex;
+}
+[data-uyarı] > div > div{
+  display:flex;
+  flex:1;
+  flex-wrap:wrap;
+}
+[data-uyarı] > div > label{
+  display:flex;
+  flex:0;
+}
