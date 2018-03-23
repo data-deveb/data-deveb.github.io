@@ -1,9 +1,10 @@
 [data-uyarı]{
   position:relative;
   width:100%;
+  font-family: roboto;
 }
 [data-uyarı] > div{
-  border:2px solid #f66;
+  border:2px solid #f00;
   padding:15px;
   background-color:#f33;
   border-radius:4px;
@@ -11,6 +12,16 @@
   position:relative;
   margin-bottom:10px;
 }
+[data-uyarı~="kapatılamaz"] > div > label:last-child{
+  display:none;
+}
+[data-uyarı~="tamamlandı"] > div{
+  border:2px solid #c3e6cb;
+  background-color:#d4edda;
+  color:#155724;
+}
+
+
 [data-uyarı] > div h2{
   width:100%;
   margin:0;
