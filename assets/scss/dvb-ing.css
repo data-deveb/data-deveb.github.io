@@ -5318,6 +5318,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   -ms-flex-order: 2;
   order: 2;
   left: 0;
+  height: 0;
   flex-wrap: wrap;
 }
 
@@ -5328,6 +5329,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -webkit-transition: all ease 0.6s;
   transition: all ease 0.6s;
+  height: auto;
 }
 
 [data-sekme~="sağda"] {
