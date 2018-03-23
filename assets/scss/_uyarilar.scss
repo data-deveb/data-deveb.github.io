@@ -4,11 +4,11 @@
   font-family: roboto;
 }
 [data-uyarı] > div{
-  border:2px solid #f00;
+  border:2px solid #eee;
   padding:15px;
-  background-color:#f33;
+  background-color:#fff;
   border-radius:4px;
-  color:#fdd;
+  color:#666;
   position:relative;
   margin-bottom:10px;
 }
@@ -16,19 +16,47 @@
   display:none;
 }
 [data-uyarı~="tamamlandı"] > div{
-  border:2px solid #c3e6cb;
-  background-color:#d4edda;
   color:#155724;
+  background-color:#d4edda;
+  border-color: #c3e6cb;
 }
-
-
+[data-uyarı~="birincil"] > div{
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+[data-uyarı~="başarılı"] > div{
+  color:#155724;
+  background-color:#d4edda;
+  border-color: #c3e6cb;
+}
+[data-uyarı~="tehlike"] > div{
+color: #721c24;
+background-color: #f8d7da;
+border-color: #f5c6cb;
+}
+[data-uyarı~="tehlike"] > div{
+color: #721c24;
+background-color: #f8d7da;
+border-color: #f5c6cb;
+}
+[data-uyarı~="sorun"] > div{
+color: #856404;
+background-color: #fff3cd;
+border-color: #ffeeba;
+}
+[data-uyarı~="bilgi"] > div{
+color: #0c5460;
+background-color: #d1ecf1;
+border-color: #bee5eb;
+}
 [data-uyarı] > div h2{
   width:100%;
   margin:0;
 }
 [data-uyarı] > div p{
   width:100%;
-  margin:10px 0;
+  margin:0;
 }
 [data-uyarı] > input{
   display:none;

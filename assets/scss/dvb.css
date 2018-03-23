@@ -1292,15 +1292,27 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 @media screen and (min-width: 576px) and (-ms-high-contrast: active), (-ms-high-contrast: none) { [data-kçk~="0"] { -ms-flex-preferred-size: auto !important; width: auto !important; } }
 [data-uyarı] { position: relative; width: 100%; font-family: roboto; }
 
-[data-uyarı] > div { border: 2px solid #f00; padding: 15px; background-color: #f33; border-radius: 4px; color: #fdd; position: relative; margin-bottom: 10px; }
+[data-uyarı] > div { border: 2px solid #eee; padding: 15px; background-color: #fff; border-radius: 4px; color: #666; position: relative; margin-bottom: 10px; }
 
 [data-uyarı~="kapatılamaz"] > div > label:last-child { display: none; }
 
-[data-uyarı~="tamamlandı"] > div { border: 2px solid #c3e6cb; background-color: #d4edda; color: #155724; }
+[data-uyarı~="tamamlandı"] > div { color: #155724; background-color: #d4edda; border-color: #c3e6cb; }
+
+[data-uyarı~="birincil"] > div { color: #004085; background-color: #cce5ff; border-color: #b8daff; }
+
+[data-uyarı~="başarılı"] > div { color: #155724; background-color: #d4edda; border-color: #c3e6cb; }
+
+[data-uyarı~="tehlike"] > div { color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; }
+
+[data-uyarı~="tehlike"] > div { color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; }
+
+[data-uyarı~="sorun"] > div { color: #856404; background-color: #fff3cd; border-color: #ffeeba; }
+
+[data-uyarı~="bilgi"] > div { color: #0c5460; background-color: #d1ecf1; border-color: #bee5eb; }
 
 [data-uyarı] > div h2 { width: 100%; margin: 0; }
 
-[data-uyarı] > div p { width: 100%; margin: 10px 0; }
+[data-uyarı] > div p { width: 100%; margin: 0; }
 
 [data-uyarı] > input { display: none; }
 
