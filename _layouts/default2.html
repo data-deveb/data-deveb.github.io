@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+{% include head.html %}
+</head>
+<body data-gnl="sütun sığdır">
+  <header data-gnl="24 24p" class="header">
+  {% include header.html %}
+  </header>
+  <div data-gnl="1g uzat oluk-çevre sığdır">
+    <div class="sol-bölge" data-gnl="24 24p " data-kçk="4 24p sığdır">{% include icerik.html %}</div>
+    <div data-gnl="24 24p oluk üstte" data-kçk="20 24p sığdır">
+      {% if page.title %}
+      <div data-gnl="1 1p" class="sayfa-başlığı">
+        <h1 data-gnl="24 24p ortada-ol">{{ page.title }}</h1>
+      </div>
+      {% endif %}
+      <div data-gnl="1 1p">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  <footer data-gnl="24 24p">
+  {% include foot.html %}
+  </footer>
+</body>
+</html>

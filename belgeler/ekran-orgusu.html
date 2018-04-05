@@ -4,9 +4,19 @@ title: Ekran Örgüsü
 ---
 <div data-gnl="24 24p">
     <p>
-      Fiziksel ve sayısal ekran çözünürlüğü ölçeklerinin çeşitliliği günümüzde uyumlu tasarım yapmaya zorlamaktadır. Geleceğin minik ekranları da yavaş yavaş gündelik hayata dahil olmaktadır. Dünyada yeterliği olduğu düşünülen uyumlu ekran ögrüleri 5 6 ölçekle tanımlanır. Deveb önyüz çatısı ise daha kapsamlı olarak hazır hale getirilip kullanıma sunulmuştur.
-      Saat ekranları, telefon ekranları, tablet ekranları, dizüstü ekranları, masaüstü ekranları, tv ekranları ve dev ekranlar olarak gruplandırılmış ekranlar 8 farklı adet uyumlu ekran ölçeği ile kullanılır. Aşağıdaki tabloda uyumlu ekran ölçeklerini inceleyebilirsiniz.
+      Günümüzde ekran çözünürlüklerinin çeşitliliğinin artmasıyla zorunlu olarak
+      planlanan uyumlu tasarımlarınızı deveb ile yapabilirsiniz. Yakın gelecekte
+      yaygınlaşacak minik ekranlar dahil. Önyüz çatısı dünyasında yeterliği olduğu
+      düşünülen uyumlu ekran özellikleri 5 6 ölçek civarındadır. Deveb önyüz çatısı ise daha
+      kapsamlı olarak hazır hale getirilip kullanıma sunulmuştur.
     </p>
+    <p>
+      Saat ekranları, telefon ekranları, tablet ekranları, dizüstü ekranları,
+      masaüstü ekranları, tv ekranları ve dev ekranlar olarak gruplandırılmış
+      ekranlar 8 farklı adet uyumlu ekran ölçeği ile kullanılır.
+      Aşağıdaki tabloda uyumlu ekran ölçeklerini inceleyebilirsiniz.
+    </p>
+    <p></p>
     <table class="tablo">
       <thead>
         <tr>
@@ -61,17 +71,6 @@ title: Ekran Örgüsü
       </thead>
       <tbody>
         <tr>
-          <th>Ölçekler</th>
-          <td>0 »</td>
-          <td>» 300px</td>
-          <td>300px »</td>
-          <td>576px »</td>
-          <td>768px »</td>
-          <td>992px »</td>
-          <td>1200px »</td>
-          <td>1900px »</td>
-        </tr>
-        <tr>
           <th>Birimleri</th>
           <td>data-gnl</td>
           <td>data-mnk</td>
@@ -83,6 +82,17 @@ title: Ekran Örgüsü
           <td>data-dev</td>
         </tr>
         <tr>
+          <th>Ölçekler</th>
+          <td>0 »</td>
+          <td>0 » 300px</td>
+          <td>300px »</td>
+          <td>576px »</td>
+          <td>768px »</td>
+          <td>992px »</td>
+          <td>1200px »</td>
+          <td>1900px »</td>
+        </tr>
+        <tr>
           <th>Ekran Seçme</th>
           <td><span data-metin="ana gri">sınıf</span></td>
           <td>bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span><br>büyükleriyle-<span data-metin="ana gri">sınıf</span><br>büyükleri-<span data-metin="ana gri">sınıf</span></td>
@@ -92,13 +102,31 @@ title: Ekran Örgüsü
       </tbody>
     </table>
 
-    <h3>Ekran Yönergelerini Keşfet</h3>
+    <h3>Ekran Yönergeleri</h3>
 
-    <p>Deveb ekran örgüsü varsayılan olarak <span data-metin="ana">SIFIR >> SONSUZ</span> yönünde etkilemektedir. Bunun yanında ters yönde ve sadece belirtilmiş ekran grubu için yönergeleri de bulunur. Örneğin bir alanı dizüstü ekranlarına kadar gösterilmesini istemiyorsanız <span data-metin="ana">data-ort="küçükleri-gizle"</span> olarak tanımlamanız yeterlidir. Dizüstü hariç daha küçük ekranlarda gizleme işlemi yapacaktır.
-    Yani büyük ekranlardan küçük ekranlara doğru, küçük ekranlardan büyük ekranlara doğru ve sadece belirtilen ekranlar, belirtilen ekran dışında olanlar gibi ihtiyacınıza göre yöntemleri kullanabilirsiniz. Deveb'in bazı özelliklerinde varsayılan ekran kapsama yönü küçük ekrandan büyük ekrana doğrudur. Bunun dışında olan durumlarda ise ekranları kapsama yöntemini belirtmeniz gerekmektedir.</p>
+    <p>
+      Deveb ekran örgüsü ekranları belirli bir yönde etki altına alır. Kısaca büyük
+      ekranlardan küçük ekranlara doğru, küçük ekranlardan büyük ekranlara doğru,
+      sadece belirtilen ekranlar ve belirtilen ekran dışında olanlar gibi ihtiyacınıza
+      göre yöntemleri kullanabilirsiniz. Varsayılan olarak
+      <span data-metin="ana">SIFIR >> SONSUZ</span> yönündedir yani küçük ekranlardan
+      büyük ekranlara doğrudur. Bunun yanında ters yönde ve sadece belirtilmiş ekran
+      aralığı için yönergeler de bulunur.
+      <br><br>
+      Örneğin bir alanı dizüstü ekranlarına kadar gösterilmesini istemiyorsanız
+      <span data-metin="ana">data-ort="küçükleri-gizle"</span>
+      olarak tanımlamanız yeterlidir. Bu işlem dizüstü hariç daha küçük ekranlarda
+      gizleme işlemi yapacaktır. Deveb'in bazı özelliklerinde varsayılan ekran kapsama
+      yönü küçük ekrandan büyük ekrana doğrudur. Bunun dışında olan durumlarda ise
+      ekranları kapsama yöntemini harici olarak belirtmeniz gerekmektedir.
+    </p>
 
-    <h3>Kullanımı</h3>
-    <p>Az önce belirttiğimiz gibi bazı özelliklerinde varsayılan yön küçükten büyüğe doğru demiştik. Kap örgüsü mesela buna bir örnektir. Ve sadece bu şekilde kullanılması dışında bir özelliğe sahip değildir. Kap örgüsünden bir alıntı yapalım isterseniz.</p>
+    <h4>Kullanımı</h4>
+    <p>
+      Az önce belirttiğimiz gibi bazı özelliklerinde varsayılan yön küçükten büyüğe
+      doğru demiştik. Kap örgüsü mesela buna bir örnektir. Ve sadece bu şekilde kullanılması
+      dışında bir özelliğe sahip değildir. Kap örgüsünden bir alıntı yapalım isterseniz.
+    </p>
     <p>Örneğin dizüstü ekranlardan başlayarak daha büyük ekranlarda bir alanın yarısı kadar alan parçası kullanmak istiyorsak şöyle yazabiliriz; data-ort="1 2p". Daha küçük olan ekranlar ne olacak diye soruyor gibisiniz... Tanımlama yapmadıysanız büyük ihtimal doğal (auto) genişliğe veya 100% genişliğe sahip olacaktır.</p>
     <p>Diğer durumlarda ise ekran yönlerini belirtmek için şöyle kullanımlara baş vururuz;</p>
     <p data-metin="ana">Türkçe: küçükleriyle-?, küçükleri-?, ?, büyükleriyle-?, büyükleri-?</p>

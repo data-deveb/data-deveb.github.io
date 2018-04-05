@@ -17,8 +17,19 @@ p{
 .bg{
 	background-image: url(../img/bg.png),linear-gradient(#2c2171, #292070 15%);
 }
+#sol-alan{
+	border-right: 1px solid #ddd;
+	background: #f5f7f9;
+	background-image: -webkit-linear-gradient(9deg,hsla(0,0%,100%,0) 57%,hsla(0,0%,100%,.16) 84%,hsla(0,0%,100%,.17) 0,hsla(0,0%,100%,.57));
+	background-image: linear-gradient(81deg,hsla(0,0%,100%,0) 57%,hsla(0,0%,100%,.16) 84%,hsla(0,0%,100%,.17) 0,hsla(0,0%,100%,.57));
+}
+#içerik{
+	background-color:#fdfdfd;
+}
 #header{
 	background-color: #2c2171;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 .menu
 {
@@ -132,8 +143,15 @@ letter-spacing: 0px;
 
 a.logo{
 	font-family: 'Comfortaa', cursive;
-	font-size: 18px !important;
+	font-size: 24px !important;
 	color:#fff !important;
+	font-weight: bold !important;
+	opacity: 1 !important;
+}
+a.logo2{
+	font-family: 'Comfortaa', cursive;
+	font-size: 24px !important;
+	color:#2c2171 !important;
 	font-weight: bold !important;
 	opacity: 1 !important;
 }

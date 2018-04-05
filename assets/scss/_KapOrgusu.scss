@@ -58,9 +58,9 @@
   [data-#{$ekran}~="#{$ortada}"] { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   [data-#{$ekran}~="#{$sağda}"] { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
   [data-#{$ekran}~="#{$merkezde}"] { -webkit-box-align: center !important; -ms-flex-align: center !important; -ms-grid-row-align: center !important; align-items: center !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  [data-#{$ekran}~="#{$üstte}"] { -webkit-box-align: start !important; -ms-flex-align: start !important; -ms-grid-row-align: flex-start !important; align-items: flex-start !important; }
-  [data-#{$ekran}~="#{$göbekte}"] { -webkit-box-align: center !important; -ms-flex-align: center !important; -ms-grid-row-align: center !important; align-items: center !important; }
-  [data-#{$ekran}~="#{$altta}"] { -webkit-box-align: end !important; -ms-flex-align: end !important; -ms-grid-row-align: flex-end !important; align-items: flex-end !important; }
+  [data-#{$ekran}~="#{$üstte}"] { -ms-flex-line-pack: flex-start !important; align-content: flex-start !important; }
+  [data-#{$ekran}~="#{$göbekte}"] { -ms-flex-line-pack: center !important; align-content: center !important; }
+  [data-#{$ekran}~="#{$altta}"] { -ms-flex-line-pack: flex-end !important; align-content: flex-end !important; }
 
   [data-#{$ekran}~="#{$üstte-ol}"] { -ms-flex-item-align: start !important; align-self: flex-start !important; }
   [data-#{$ekran}~="#{$göbekte-ol}"] { -ms-flex-item-align: center !important; align-self: center !important; }
@@ -90,7 +90,6 @@
     [data-#{$gnl}]{
       @include esnek;
       @include dürme;
-      @include üstte-öge;
     }
 
     [data-#{$gnl}~="sütun"]{
