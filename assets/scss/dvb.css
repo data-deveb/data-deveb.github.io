@@ -6542,6 +6542,12 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: space-between;
+}
+
+[data-kart] .bilgi {
+  display: block;
+  width: 100%;
 }
 
 [data-kart] p {
@@ -6555,6 +6561,8 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 [data-kart] .alt {
   background-color: #eed;
+  width: 100%;
+  padding: 10px;
 }
 
 /* ==========================================================================
