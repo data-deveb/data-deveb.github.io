@@ -159,6 +159,39 @@ pre.language-html {
   overflow-y: auto;
 }
 
+/*
+
++----------------+--------------+--------------+
+| araları-aralık |              |              |
++----------------+--------------+--------------+
+| dengeli-aralık |              |              |
++----------------+--------------+--------------+
+| aralık         | kemer        | kenar        |
++----------------+--------------+--------------+
+| altüst-aralık  | altüst-kemer | altüst-kenar |
++----------------+--------------+--------------+
+| sağsol-aralık  | sağsol-kemer | sağsol-kenar |
++----------------+--------------+--------------+
+| üst-aralık     | üst-kemer    | üst-kenar    |
++----------------+--------------+--------------+
+| sağ-aralık     | sağ-kemer    | sağ-kenar    |
++----------------+--------------+--------------+
+| alt-aralık     | alt-kemer    | alt-kenar    |
++----------------+--------------+--------------+
+| sol-aralık     | sol-kemer    | sol-kenar    |
++----------------+--------------+--------------+
+
+sığdır
+
+parça-düzeni
+genleşme-düzeni
+sıralama-düzeni
+konumlama
+
+doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
+
+
+*/
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*  G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -177,12 +210,6 @@ pre.language-html {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  -ms-grid-row-align: stretch;
-  align-items: stretch;
 }
 
 [data-gnl~="sığdır"] {
@@ -723,6 +750,10 @@ body[data-gnl~="sütun"] > footer {
   order: 24;
 }
 
+[data-gnl~="sütun"] {
+  flex-direction: column;
+}
+
 [data-gnl~="kaymadan"] {
   overflow: hidden;
 }
@@ -755,57 +786,57 @@ body[data-gnl~="sütun"] > footer {
   -reverseflex-direction: column-reverse;
 }
 
-[data-gnl~="solda"] {
+[data-gnl~="sütun"][data-gnl~="üstte"], [data-gnl~="solda"]:not([data-gnl~="sütun"]) {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
-[data-gnl~="ortada"] {
+[data-gnl~="sütun"][data-gnl~="göbekte"], [data-gnl~="ortada"]:not([data-gnl~="sütun"]) {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-[data-gnl~="sağda"] {
+[data-gnl~="sütun"][data-gnl~="altta"], [data-gnl~="sağda"]:not([data-gnl~="sütun"]) {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
 [data-gnl~="merkezde"] {
-  -webkit-box-align: center !important;
-  -ms-flex-align: center !important;
-  -ms-grid-row-align: center !important;
-  align-items: center !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-[data-gnl~="üstte"] {
-  -ms-flex-line-pack: flex-start !important;
-  align-content: flex-start !important;
+[data-gnl~="sütun"][data-gnl~="solda"], [data-gnl~="üstte"]:not([data-gnl~="sütun"]) {
+  -ms-flex-line-pack: flex-start;
+  align-content: flex-start;
 }
 
-[data-gnl~="göbekte"] {
-  -ms-flex-line-pack: center !important;
-  align-content: center !important;
+[data-gnl~="sütun"][data-gnl~="ortada"], [data-gnl~="göbekte"]:not([data-gnl~="sütun"]) {
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
-[data-gnl~="altta"] {
-  -ms-flex-line-pack: flex-end !important;
-  align-content: flex-end !important;
+[data-gnl~="sütun"][data-gnl~="sağda"], [data-gnl~="altta"]:not([data-gnl~="sütun"]) {
+  -ms-flex-line-pack: flex-end;
+  align-content: flex-end;
 }
 
 [data-gnl~="üstte-ol"] {
-  -ms-flex-item-align: start !important;
-  align-self: flex-start !important;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 [data-gnl~="göbekte-ol"] {
-  -ms-flex-item-align: center !important;
-  align-self: center !important;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 [data-gnl~="altta-ol"] {
@@ -831,22 +862,30 @@ body[data-gnl~="sütun"] > footer {
   align-self: flex-start;
 }
 
-[data-gnl~="geniş-aralıklı"] {
+[data-gnl~="araları-aralık"]:not([data-gnl~="sütun"]) {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-[data-gnl~="aralıklı"] {
+[data-gnl~="dengeli-arala"]:not([data-gnl~="sütun"]) {
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
+[data-gnl~="sütun"][data-gnl~="araları-aralık"] {
+  align-content: space-around;
+}
+
+[data-gnl~="sütun"][data-gnl~="dengeli-arala"] {
+  align-content: space-around;
+}
+
 [data-gnl~="uzat"] {
-  -webkit-box-align: stretch !important;
-  -ms-flex-align: stretch !important;
-  -ms-grid-row-align: stretch !important;
-  align-items: stretch !important;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-items: stretch;
 }
 
 [data-gnl~="uzun-ol"] {
@@ -855,10 +894,10 @@ body[data-gnl~="sütun"] > footer {
 }
 
 [data-gnl~="satırda"] {
-  -webkit-box-align: baseline !important;
-  -ms-flex-align: baseline !important;
-  -ms-grid-row-align: baseline !important;
-  align-items: baseline !important;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -ms-grid-row-align: baseline;
+  align-items: baseline;
 }
 
 [data-gnl~="satırda-ol"] {
@@ -1408,6 +1447,10 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     order: 24;
   }
 
+  [data-ufk~="sütun"] {
+    flex-direction: column;
+  }
+
   [data-ufk~="kaymadan"] {
     overflow: hidden;
   }
@@ -1440,57 +1483,57 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     -reverseflex-direction: column-reverse;
   }
 
-  [data-ufk~="solda"] {
+  [data-ufk~="sütun"][data-ufk~="üstte"], [data-ufk~="solda"]:not([data-ufk~="sütun"]) {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
-  [data-ufk~="ortada"] {
+  [data-ufk~="sütun"][data-ufk~="göbekte"], [data-ufk~="ortada"]:not([data-ufk~="sütun"]) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-ufk~="sağda"] {
+  [data-ufk~="sütun"][data-ufk~="altta"], [data-ufk~="sağda"]:not([data-ufk~="sütun"]) {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
   [data-ufk~="merkezde"] {
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    -ms-grid-row-align: center !important;
-    align-items: center !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-ufk~="üstte"] {
-    -ms-flex-line-pack: flex-start !important;
-    align-content: flex-start !important;
+  [data-ufk~="sütun"][data-ufk~="solda"], [data-ufk~="üstte"]:not([data-ufk~="sütun"]) {
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
   }
 
-  [data-ufk~="göbekte"] {
-    -ms-flex-line-pack: center !important;
-    align-content: center !important;
+  [data-ufk~="sütun"][data-ufk~="ortada"], [data-ufk~="göbekte"]:not([data-ufk~="sütun"]) {
+    -ms-flex-line-pack: center;
+    align-content: center;
   }
 
-  [data-ufk~="altta"] {
-    -ms-flex-line-pack: flex-end !important;
-    align-content: flex-end !important;
+  [data-ufk~="sütun"][data-ufk~="sağda"], [data-ufk~="altta"]:not([data-ufk~="sütun"]) {
+    -ms-flex-line-pack: flex-end;
+    align-content: flex-end;
   }
 
   [data-ufk~="üstte-ol"] {
-    -ms-flex-item-align: start !important;
-    align-self: flex-start !important;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   [data-ufk~="göbekte-ol"] {
-    -ms-flex-item-align: center !important;
-    align-self: center !important;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 
   [data-ufk~="altta-ol"] {
@@ -1516,22 +1559,30 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     align-self: flex-start;
   }
 
-  [data-ufk~="geniş-aralıklı"] {
+  [data-ufk~="araları-aralık"]:not([data-ufk~="sütun"]) {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  [data-ufk~="aralıklı"] {
+  [data-ufk~="dengeli-arala"]:not([data-ufk~="sütun"]) {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
+  [data-ufk~="sütun"][data-ufk~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-ufk~="sütun"][data-ufk~="dengeli-arala"] {
+    align-content: space-around;
+  }
+
   [data-ufk~="uzat"] {
-    -webkit-box-align: stretch !important;
-    -ms-flex-align: stretch !important;
-    -ms-grid-row-align: stretch !important;
-    align-items: stretch !important;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
   }
 
   [data-ufk~="uzun-ol"] {
@@ -1540,10 +1591,10 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
   }
 
   [data-ufk~="satırda"] {
-    -webkit-box-align: baseline !important;
-    -ms-flex-align: baseline !important;
-    -ms-grid-row-align: baseline !important;
-    align-items: baseline !important;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-grid-row-align: baseline;
+    align-items: baseline;
   }
 
   [data-ufk~="satırda-ol"] {
@@ -2090,6 +2141,10 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     order: 24;
   }
 
+  [data-kçk~="sütun"] {
+    flex-direction: column;
+  }
+
   [data-kçk~="kaymadan"] {
     overflow: hidden;
   }
@@ -2122,57 +2177,57 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     -reverseflex-direction: column-reverse;
   }
 
-  [data-kçk~="solda"] {
+  [data-kçk~="sütun"][data-kçk~="üstte"], [data-kçk~="solda"]:not([data-kçk~="sütun"]) {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
-  [data-kçk~="ortada"] {
+  [data-kçk~="sütun"][data-kçk~="göbekte"], [data-kçk~="ortada"]:not([data-kçk~="sütun"]) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-kçk~="sağda"] {
+  [data-kçk~="sütun"][data-kçk~="altta"], [data-kçk~="sağda"]:not([data-kçk~="sütun"]) {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
   [data-kçk~="merkezde"] {
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    -ms-grid-row-align: center !important;
-    align-items: center !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-kçk~="üstte"] {
-    -ms-flex-line-pack: flex-start !important;
-    align-content: flex-start !important;
+  [data-kçk~="sütun"][data-kçk~="solda"], [data-kçk~="üstte"]:not([data-kçk~="sütun"]) {
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
   }
 
-  [data-kçk~="göbekte"] {
-    -ms-flex-line-pack: center !important;
-    align-content: center !important;
+  [data-kçk~="sütun"][data-kçk~="ortada"], [data-kçk~="göbekte"]:not([data-kçk~="sütun"]) {
+    -ms-flex-line-pack: center;
+    align-content: center;
   }
 
-  [data-kçk~="altta"] {
-    -ms-flex-line-pack: flex-end !important;
-    align-content: flex-end !important;
+  [data-kçk~="sütun"][data-kçk~="sağda"], [data-kçk~="altta"]:not([data-kçk~="sütun"]) {
+    -ms-flex-line-pack: flex-end;
+    align-content: flex-end;
   }
 
   [data-kçk~="üstte-ol"] {
-    -ms-flex-item-align: start !important;
-    align-self: flex-start !important;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   [data-kçk~="göbekte-ol"] {
-    -ms-flex-item-align: center !important;
-    align-self: center !important;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 
   [data-kçk~="altta-ol"] {
@@ -2198,22 +2253,30 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     align-self: flex-start;
   }
 
-  [data-kçk~="geniş-aralıklı"] {
+  [data-kçk~="araları-aralık"]:not([data-kçk~="sütun"]) {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  [data-kçk~="aralıklı"] {
+  [data-kçk~="dengeli-arala"]:not([data-kçk~="sütun"]) {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
+  [data-kçk~="sütun"][data-kçk~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-kçk~="sütun"][data-kçk~="dengeli-arala"] {
+    align-content: space-around;
+  }
+
   [data-kçk~="uzat"] {
-    -webkit-box-align: stretch !important;
-    -ms-flex-align: stretch !important;
-    -ms-grid-row-align: stretch !important;
-    align-items: stretch !important;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
   }
 
   [data-kçk~="uzun-ol"] {
@@ -2222,10 +2285,10 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
   }
 
   [data-kçk~="satırda"] {
-    -webkit-box-align: baseline !important;
-    -ms-flex-align: baseline !important;
-    -ms-grid-row-align: baseline !important;
-    align-items: baseline !important;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-grid-row-align: baseline;
+    align-items: baseline;
   }
 
   [data-kçk~="satırda-ol"] {
@@ -2772,6 +2835,10 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     order: 24;
   }
 
+  [data-ort~="sütun"] {
+    flex-direction: column;
+  }
+
   [data-ort~="kaymadan"] {
     overflow: hidden;
   }
@@ -2804,57 +2871,57 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     -reverseflex-direction: column-reverse;
   }
 
-  [data-ort~="solda"] {
+  [data-ort~="sütun"][data-ort~="üstte"], [data-ort~="solda"]:not([data-ort~="sütun"]) {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
-  [data-ort~="ortada"] {
+  [data-ort~="sütun"][data-ort~="göbekte"], [data-ort~="ortada"]:not([data-ort~="sütun"]) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-ort~="sağda"] {
+  [data-ort~="sütun"][data-ort~="altta"], [data-ort~="sağda"]:not([data-ort~="sütun"]) {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
   [data-ort~="merkezde"] {
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    -ms-grid-row-align: center !important;
-    align-items: center !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-ort~="üstte"] {
-    -ms-flex-line-pack: flex-start !important;
-    align-content: flex-start !important;
+  [data-ort~="sütun"][data-ort~="solda"], [data-ort~="üstte"]:not([data-ort~="sütun"]) {
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
   }
 
-  [data-ort~="göbekte"] {
-    -ms-flex-line-pack: center !important;
-    align-content: center !important;
+  [data-ort~="sütun"][data-ort~="ortada"], [data-ort~="göbekte"]:not([data-ort~="sütun"]) {
+    -ms-flex-line-pack: center;
+    align-content: center;
   }
 
-  [data-ort~="altta"] {
-    -ms-flex-line-pack: flex-end !important;
-    align-content: flex-end !important;
+  [data-ort~="sütun"][data-ort~="sağda"], [data-ort~="altta"]:not([data-ort~="sütun"]) {
+    -ms-flex-line-pack: flex-end;
+    align-content: flex-end;
   }
 
   [data-ort~="üstte-ol"] {
-    -ms-flex-item-align: start !important;
-    align-self: flex-start !important;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   [data-ort~="göbekte-ol"] {
-    -ms-flex-item-align: center !important;
-    align-self: center !important;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 
   [data-ort~="altta-ol"] {
@@ -2880,22 +2947,30 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     align-self: flex-start;
   }
 
-  [data-ort~="geniş-aralıklı"] {
+  [data-ort~="araları-aralık"]:not([data-ort~="sütun"]) {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  [data-ort~="aralıklı"] {
+  [data-ort~="dengeli-arala"]:not([data-ort~="sütun"]) {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
+  [data-ort~="sütun"][data-ort~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-ort~="sütun"][data-ort~="dengeli-arala"] {
+    align-content: space-around;
+  }
+
   [data-ort~="uzat"] {
-    -webkit-box-align: stretch !important;
-    -ms-flex-align: stretch !important;
-    -ms-grid-row-align: stretch !important;
-    align-items: stretch !important;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
   }
 
   [data-ort~="uzun-ol"] {
@@ -2904,10 +2979,10 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
   }
 
   [data-ort~="satırda"] {
-    -webkit-box-align: baseline !important;
-    -ms-flex-align: baseline !important;
-    -ms-grid-row-align: baseline !important;
-    align-items: baseline !important;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-grid-row-align: baseline;
+    align-items: baseline;
   }
 
   [data-ort~="satırda-ol"] {
@@ -3454,6 +3529,10 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     order: 24;
   }
 
+  [data-byk~="sütun"] {
+    flex-direction: column;
+  }
+
   [data-byk~="kaymadan"] {
     overflow: hidden;
   }
@@ -3486,57 +3565,57 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     -reverseflex-direction: column-reverse;
   }
 
-  [data-byk~="solda"] {
+  [data-byk~="sütun"][data-byk~="üstte"], [data-byk~="solda"]:not([data-byk~="sütun"]) {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
-  [data-byk~="ortada"] {
+  [data-byk~="sütun"][data-byk~="göbekte"], [data-byk~="ortada"]:not([data-byk~="sütun"]) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-byk~="sağda"] {
+  [data-byk~="sütun"][data-byk~="altta"], [data-byk~="sağda"]:not([data-byk~="sütun"]) {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
   [data-byk~="merkezde"] {
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    -ms-grid-row-align: center !important;
-    align-items: center !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-byk~="üstte"] {
-    -ms-flex-line-pack: flex-start !important;
-    align-content: flex-start !important;
+  [data-byk~="sütun"][data-byk~="solda"], [data-byk~="üstte"]:not([data-byk~="sütun"]) {
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
   }
 
-  [data-byk~="göbekte"] {
-    -ms-flex-line-pack: center !important;
-    align-content: center !important;
+  [data-byk~="sütun"][data-byk~="ortada"], [data-byk~="göbekte"]:not([data-byk~="sütun"]) {
+    -ms-flex-line-pack: center;
+    align-content: center;
   }
 
-  [data-byk~="altta"] {
-    -ms-flex-line-pack: flex-end !important;
-    align-content: flex-end !important;
+  [data-byk~="sütun"][data-byk~="sağda"], [data-byk~="altta"]:not([data-byk~="sütun"]) {
+    -ms-flex-line-pack: flex-end;
+    align-content: flex-end;
   }
 
   [data-byk~="üstte-ol"] {
-    -ms-flex-item-align: start !important;
-    align-self: flex-start !important;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   [data-byk~="göbekte-ol"] {
-    -ms-flex-item-align: center !important;
-    align-self: center !important;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 
   [data-byk~="altta-ol"] {
@@ -3562,22 +3641,30 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     align-self: flex-start;
   }
 
-  [data-byk~="geniş-aralıklı"] {
+  [data-byk~="araları-aralık"]:not([data-byk~="sütun"]) {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  [data-byk~="aralıklı"] {
+  [data-byk~="dengeli-arala"]:not([data-byk~="sütun"]) {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
+  [data-byk~="sütun"][data-byk~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-byk~="sütun"][data-byk~="dengeli-arala"] {
+    align-content: space-around;
+  }
+
   [data-byk~="uzat"] {
-    -webkit-box-align: stretch !important;
-    -ms-flex-align: stretch !important;
-    -ms-grid-row-align: stretch !important;
-    align-items: stretch !important;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
   }
 
   [data-byk~="uzun-ol"] {
@@ -3586,10 +3673,10 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
   }
 
   [data-byk~="satırda"] {
-    -webkit-box-align: baseline !important;
-    -ms-flex-align: baseline !important;
-    -ms-grid-row-align: baseline !important;
-    align-items: baseline !important;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-grid-row-align: baseline;
+    align-items: baseline;
   }
 
   [data-byk~="satırda-ol"] {
@@ -4136,6 +4223,10 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     order: 24;
   }
 
+  [data-kcm~="sütun"] {
+    flex-direction: column;
+  }
+
   [data-kcm~="kaymadan"] {
     overflow: hidden;
   }
@@ -4168,57 +4259,57 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     -reverseflex-direction: column-reverse;
   }
 
-  [data-kcm~="solda"] {
+  [data-kcm~="sütun"][data-kcm~="üstte"], [data-kcm~="solda"]:not([data-kcm~="sütun"]) {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
-  [data-kcm~="ortada"] {
+  [data-kcm~="sütun"][data-kcm~="göbekte"], [data-kcm~="ortada"]:not([data-kcm~="sütun"]) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-kcm~="sağda"] {
+  [data-kcm~="sütun"][data-kcm~="altta"], [data-kcm~="sağda"]:not([data-kcm~="sütun"]) {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
   [data-kcm~="merkezde"] {
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    -ms-grid-row-align: center !important;
-    align-items: center !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-kcm~="üstte"] {
-    -ms-flex-line-pack: flex-start !important;
-    align-content: flex-start !important;
+  [data-kcm~="sütun"][data-kcm~="solda"], [data-kcm~="üstte"]:not([data-kcm~="sütun"]) {
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
   }
 
-  [data-kcm~="göbekte"] {
-    -ms-flex-line-pack: center !important;
-    align-content: center !important;
+  [data-kcm~="sütun"][data-kcm~="ortada"], [data-kcm~="göbekte"]:not([data-kcm~="sütun"]) {
+    -ms-flex-line-pack: center;
+    align-content: center;
   }
 
-  [data-kcm~="altta"] {
-    -ms-flex-line-pack: flex-end !important;
-    align-content: flex-end !important;
+  [data-kcm~="sütun"][data-kcm~="sağda"], [data-kcm~="altta"]:not([data-kcm~="sütun"]) {
+    -ms-flex-line-pack: flex-end;
+    align-content: flex-end;
   }
 
   [data-kcm~="üstte-ol"] {
-    -ms-flex-item-align: start !important;
-    align-self: flex-start !important;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   [data-kcm~="göbekte-ol"] {
-    -ms-flex-item-align: center !important;
-    align-self: center !important;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 
   [data-kcm~="altta-ol"] {
@@ -4244,22 +4335,30 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     align-self: flex-start;
   }
 
-  [data-kcm~="geniş-aralıklı"] {
+  [data-kcm~="araları-aralık"]:not([data-kcm~="sütun"]) {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  [data-kcm~="aralıklı"] {
+  [data-kcm~="dengeli-arala"]:not([data-kcm~="sütun"]) {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
+  [data-kcm~="sütun"][data-kcm~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-kcm~="sütun"][data-kcm~="dengeli-arala"] {
+    align-content: space-around;
+  }
+
   [data-kcm~="uzat"] {
-    -webkit-box-align: stretch !important;
-    -ms-flex-align: stretch !important;
-    -ms-grid-row-align: stretch !important;
-    align-items: stretch !important;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
   }
 
   [data-kcm~="uzun-ol"] {
@@ -4268,10 +4367,10 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
   }
 
   [data-kcm~="satırda"] {
-    -webkit-box-align: baseline !important;
-    -ms-flex-align: baseline !important;
-    -ms-grid-row-align: baseline !important;
-    align-items: baseline !important;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-grid-row-align: baseline;
+    align-items: baseline;
   }
 
   [data-kcm~="satırda-ol"] {
@@ -4818,6 +4917,10 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     order: 24;
   }
 
+  [data-dev~="sütun"] {
+    flex-direction: column;
+  }
+
   [data-dev~="kaymadan"] {
     overflow: hidden;
   }
@@ -4850,57 +4953,57 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     -reverseflex-direction: column-reverse;
   }
 
-  [data-dev~="solda"] {
+  [data-dev~="sütun"][data-dev~="üstte"], [data-dev~="solda"]:not([data-dev~="sütun"]) {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
-  [data-dev~="ortada"] {
+  [data-dev~="sütun"][data-dev~="göbekte"], [data-dev~="ortada"]:not([data-dev~="sütun"]) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-dev~="sağda"] {
+  [data-dev~="sütun"][data-dev~="altta"], [data-dev~="sağda"]:not([data-dev~="sütun"]) {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
   [data-dev~="merkezde"] {
-    -webkit-box-align: center !important;
-    -ms-flex-align: center !important;
-    -ms-grid-row-align: center !important;
-    align-items: center !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
 
-  [data-dev~="üstte"] {
-    -ms-flex-line-pack: flex-start !important;
-    align-content: flex-start !important;
+  [data-dev~="sütun"][data-dev~="solda"], [data-dev~="üstte"]:not([data-dev~="sütun"]) {
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
   }
 
-  [data-dev~="göbekte"] {
-    -ms-flex-line-pack: center !important;
-    align-content: center !important;
+  [data-dev~="sütun"][data-dev~="ortada"], [data-dev~="göbekte"]:not([data-dev~="sütun"]) {
+    -ms-flex-line-pack: center;
+    align-content: center;
   }
 
-  [data-dev~="altta"] {
-    -ms-flex-line-pack: flex-end !important;
-    align-content: flex-end !important;
+  [data-dev~="sütun"][data-dev~="sağda"], [data-dev~="altta"]:not([data-dev~="sütun"]) {
+    -ms-flex-line-pack: flex-end;
+    align-content: flex-end;
   }
 
   [data-dev~="üstte-ol"] {
-    -ms-flex-item-align: start !important;
-    align-self: flex-start !important;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   [data-dev~="göbekte-ol"] {
-    -ms-flex-item-align: center !important;
-    align-self: center !important;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
 
   [data-dev~="altta-ol"] {
@@ -4926,22 +5029,30 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     align-self: flex-start;
   }
 
-  [data-dev~="geniş-aralıklı"] {
+  [data-dev~="araları-aralık"]:not([data-dev~="sütun"]) {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  [data-dev~="aralıklı"] {
+  [data-dev~="dengeli-arala"]:not([data-dev~="sütun"]) {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
+  [data-dev~="sütun"][data-dev~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-dev~="sütun"][data-dev~="dengeli-arala"] {
+    align-content: space-around;
+  }
+
   [data-dev~="uzat"] {
-    -webkit-box-align: stretch !important;
-    -ms-flex-align: stretch !important;
-    -ms-grid-row-align: stretch !important;
-    align-items: stretch !important;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
   }
 
   [data-dev~="uzun-ol"] {
@@ -4950,10 +5061,10 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   }
 
   [data-dev~="satırda"] {
-    -webkit-box-align: baseline !important;
-    -ms-flex-align: baseline !important;
-    -ms-grid-row-align: baseline !important;
-    align-items: baseline !important;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-grid-row-align: baseline;
+    align-items: baseline;
   }
 
   [data-dev~="satırda-ol"] {
@@ -6419,6 +6530,31 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
 [data-kenar~="olumsuz"][data-kenar~="alt"] {
   border-bottom-color: hsl(var(--kenar-olumsuz-renk), var(--kenar-tonu), var(--kenar-dolgu)) !important;
+}
+
+[data-kart] {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 13px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+[data-kart] p {
+  padding: 10px;
+  margin: 0;
+}
+
+[data-kart] h2 {
+  margin: 5px 0;
+}
+
+[data-kart] .alt {
+  background-color: #eed;
 }
 
 /* ==========================================================================

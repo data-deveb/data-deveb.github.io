@@ -1,3 +1,38 @@
+/*
+
++----------------+--------------+--------------+
+| araları-aralık |              |              |
++----------------+--------------+--------------+
+| dengeli-aralık |              |              |
++----------------+--------------+--------------+
+| aralık         | kemer        | kenar        |
++----------------+--------------+--------------+
+| altüst-aralık  | altüst-kemer | altüst-kenar |
++----------------+--------------+--------------+
+| sağsol-aralık  | sağsol-kemer | sağsol-kenar |
++----------------+--------------+--------------+
+| üst-aralık     | üst-kemer    | üst-kenar    |
++----------------+--------------+--------------+
+| sağ-aralık     | sağ-kemer    | sağ-kenar    |
++----------------+--------------+--------------+
+| alt-aralık     | alt-kemer    | alt-kenar    |
++----------------+--------------+--------------+
+| sol-aralık     | sol-kemer    | sol-kenar    |
++----------------+--------------+--------------+
+
+sığdır
+
+parça-düzeni
+genleşme-düzeni
+sıralama-düzeni
+konumlama
+
+doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
+
+
+*/
+
+
 
 @mixin sığdır($ekran) {
   [data-#{$ekran}~="sığdır"]{
@@ -46,6 +81,8 @@
 
 
 @mixin konumlama($ekran) {
+  [data-#{$ekran}~="#{$sütun}"] { flex-direction: column; }
+
   [data-#{$ekran}~="#{$kaymadan}"] { overflow: hidden; }
   [data-#{$ekran}~="#{$yatay-kayma}"] { overflow-x: auto; }
 
@@ -54,27 +91,30 @@
   [data-#{$ekran}~="#{$ters-satır}"] { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
   [data-#{$ekran}~="#{$ters-sütun}"] { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column; -reverseflex-direction: column-reverse; }
 
-  [data-#{$ekran}~="#{$solda}"] { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
-  [data-#{$ekran}~="#{$ortada}"] { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  [data-#{$ekran}~="#{$sağda}"] { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-  [data-#{$ekran}~="#{$merkezde}"] { -webkit-box-align: center !important; -ms-flex-align: center !important; -ms-grid-row-align: center !important; align-items: center !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  [data-#{$ekran}~="#{$üstte}"] { -ms-flex-line-pack: flex-start !important; align-content: flex-start !important; }
-  [data-#{$ekran}~="#{$göbekte}"] { -ms-flex-line-pack: center !important; align-content: center !important; }
-  [data-#{$ekran}~="#{$altta}"] { -ms-flex-line-pack: flex-end !important; align-content: flex-end !important; }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$üstte}"],[data-#{$ekran}~="#{$solda}"]:not([data-#{$ekran}~="#{$sütun}"]) { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$göbekte}"],[data-#{$ekran}~="#{$ortada}"]:not([data-#{$ekran}~="#{$sütun}"]) { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$altta}"],[data-#{$ekran}~="#{$sağda}"]:not([data-#{$ekran}~="#{$sütun}"]) { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+  [data-#{$ekran}~="#{$merkezde}"] { -webkit-box-align: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$solda}"],[data-#{$ekran}~="#{$üstte}"]:not([data-#{$ekran}~="#{$sütun}"]) { -ms-flex-line-pack: flex-start; align-content: flex-start; }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$ortada}"],[data-#{$ekran}~="#{$göbekte}"]:not([data-#{$ekran}~="#{$sütun}"]) { -ms-flex-line-pack: center; align-content: center; }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$sağda}"],[data-#{$ekran}~="#{$altta}"]:not([data-#{$ekran}~="#{$sütun}"]) { -ms-flex-line-pack: flex-end; align-content: flex-end; }
 
-  [data-#{$ekran}~="#{$üstte-ol}"] { -ms-flex-item-align: start !important; align-self: flex-start !important; }
-  [data-#{$ekran}~="#{$göbekte-ol}"] { -ms-flex-item-align: center !important; align-self: center !important; }
+  [data-#{$ekran}~="#{$üstte-ol}"] { -ms-flex-item-align: start; align-self: flex-start; }
+  [data-#{$ekran}~="#{$göbekte-ol}"] { -ms-flex-item-align: center; align-self: center; }
   [data-#{$ekran}~="#{$altta-ol}"] { margin-top: auto; }
   [data-#{$ekran}~="#{$sağda-ol}"] { margin-left: auto; -ms-flex-item-align: end; align-self: flex-end; }
   [data-#{$ekran}~="#{$ortada-ol}"] { margin-left: auto; margin-right: auto; -ms-flex-item-align: center; align-self: center; }
   [data-#{$ekran}~="#{$solda-ol}"] { margin-right: auto; -ms-flex-item-align: start; align-self: flex-start; }
 
-  [data-#{$ekran}~="#{$geniş-aralıklı}"] { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-  [data-#{$ekran}~="#{$aralıklı}"] { -ms-flex-pack: distribute; justify-content: space-around; }
-  [data-#{$ekran}~="#{$uzat}"] { -webkit-box-align: stretch !important; -ms-flex-align: stretch !important; -ms-grid-row-align: stretch !important; align-items: stretch !important; }
+  [data-#{$ekran}~="#{$araları-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]) { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  [data-#{$ekran}~="#{$dengeli-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]) { -ms-flex-pack: distribute; justify-content: space-around; }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$araları-aralık}"]{align-content: space-around;}
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$dengeli-aralık}"]{align-content: space-around;}
+
+  [data-#{$ekran}~="#{$uzat}"] { -webkit-box-align: stretch; -ms-flex-align: stretch; -ms-grid-row-align: stretch; align-items: stretch; }
   [data-#{$ekran}~="#{$uzun-ol}"] { -ms-flex-item-align: stretch; align-self: stretch; }
 
-  [data-#{$ekran}~="#{$satırda}"] { -webkit-box-align: baseline !important; -ms-flex-align: baseline !important; -ms-grid-row-align: baseline !important; align-items: baseline !important; }
+  [data-#{$ekran}~="#{$satırda}"] { -webkit-box-align: baseline; -ms-flex-align: baseline; -ms-grid-row-align: baseline; align-items: baseline; }
   [data-#{$ekran}~="#{$satırda-ol}"] { -ms-flex-item-align: baseline; align-self: baseline; }
 
   [data-#{$ekran}~="#{$metin-sağda}"] { text-align: right; }
@@ -94,8 +134,7 @@
 
     [data-#{$gnl}~="sütun"]{
       @include sütun;
-      @include dürmeden;
-      @include gergin;
+      
     }
 
     @include sığdır($gnl);

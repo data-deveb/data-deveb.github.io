@@ -10,36 +10,38 @@ $dev: hg;
 
 /* Kap Örgüsü */
 /* Konumlama - Kap Örgüsü */
+$sütun: column;
+
 $kaymadan: overflow-hidden;
 $yatay-kayma: h-overflow;
 
 $dürmeden: nowrap;
-$ters-dürme: reverse-wrap;
-$ters-satır: reverse-row;
-$ters-sütun: reverse-column;
+$ters-dürme: wrap-reverse;
+$ters-satır: row-reverse;
+$ters-sütun: column-reverse;
 
 $solda: left;
 $ortada: center;
 $sağda: right;
-$merkezde: center-middle;
+$merkezde: full-center;
 $üstte: top;
 $göbekte: middle;
 $altta: bottom;
 
-$üstte-ol: top-it;
-$göbekte-ol: middle-it;
-$altta-ol: bottom-it;
-$sağda-ol: right-it;
-$ortada-ol: center-it;
-$solda-ol: left-it;
+$üstte-ol: top-self;
+$göbekte-ol: middle-self;
+$altta-ol: bottom-self;
+$sağda-ol: right-self;
+$ortada-ol: center-self;
+$solda-ol: left-self;
 
-$geniş-aralıklı: justify;
-$aralıklı: space-around;
+$araları-aralık: space-between;
+$dengeli-aralık: space-around;
 $uzat: stretch;
-$uzun-ol: stretch-it;
+$uzun-ol: stretch-self;
 
 $satırda: baseline;
-$satırda-ol: baseline-it;
+$satırda-ol: baseline-self;
 
 $metin-sağda: text-right;
 $metin-ortada: text-center;

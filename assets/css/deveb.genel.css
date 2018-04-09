@@ -208,6 +208,7 @@ font-size: 13px;}
 			-o-transition: .3s all;
 	}
 	footer .menü-genel li a{color:#333 !important;}
+	body.bg footer .menü-genel li a{color:#fff !important;}
 /* ==========================================================================
     METİN
     Metin görünümleri

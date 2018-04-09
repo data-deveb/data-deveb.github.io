@@ -1,0 +1,22 @@
+[data-kart]{
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  font-size: 13px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+[data-kart] p {
+    padding: 10px;
+    margin:0;
+}
+[data-kart] h2{
+  margin:5px 0;
+}
+[data-kart] .alt{
+    background-color:#eed;
+}
