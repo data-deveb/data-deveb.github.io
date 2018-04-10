@@ -216,7 +216,7 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
   -ms-flex: 1 1 0 !important;
   flex: 1 1 0 !important;
   overflow: auto;
-  height: 100%;
+  max-height: 100%;
 }
 
 body[data-gnl~="sütun"] {
@@ -947,7 +947,7 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     -ms-flex: 1 1 0 !important;
     flex: 1 1 0 !important;
     overflow: auto;
-    height: 100%;
+    max-height: 100%;
   }
 
   /*  Kap Örgüsü Parça Ayarları */
@@ -1641,7 +1641,7 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     -ms-flex: 1 1 0 !important;
     flex: 1 1 0 !important;
     overflow: auto;
-    height: 100%;
+    max-height: 100%;
   }
 
   /*  Kap Örgüsü Parça Ayarları */
@@ -2335,7 +2335,7 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     -ms-flex: 1 1 0 !important;
     flex: 1 1 0 !important;
     overflow: auto;
-    height: 100%;
+    max-height: 100%;
   }
 
   /*  Kap Örgüsü Parça Ayarları */
@@ -3029,7 +3029,7 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     -ms-flex: 1 1 0 !important;
     flex: 1 1 0 !important;
     overflow: auto;
-    height: 100%;
+    max-height: 100%;
   }
 
   /*  Kap Örgüsü Parça Ayarları */
@@ -3723,7 +3723,7 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     -ms-flex: 1 1 0 !important;
     flex: 1 1 0 !important;
     overflow: auto;
-    height: 100%;
+    max-height: 100%;
   }
 
   /*  Kap Örgüsü Parça Ayarları */
@@ -4417,7 +4417,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     -ms-flex: 1 1 0 !important;
     flex: 1 1 0 !important;
     overflow: auto;
-    height: 100%;
+    max-height: 100%;
   }
 
   /*  Kap Örgüsü Parça Ayarları */
