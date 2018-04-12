@@ -1,7 +1,17 @@
-@charset "UTF-8";
-/* Özgür alan */
+/* -----------------------------------------------------------------------------
+    DEVEB
+    EKRAN ÖRGÜSÜ 1.0
 
-/* Özgür alan sonu */
+ *  Üçlü doğrultu özelliğine sahip ekran örgüsünün doğrultuları şöyledir;
+ *
+ *    'SIFIR'   >>  'SONSUZ'
+ *    'SONSUZ'  >>  'SIFIR'
+ *    'BULUNDUĞU ARALIK'
+
+----------------------------------------------------------------------------- */
+/* Bağımsız üst alan başı */
+
+/* Bağımsız üst alan sonu */
 @media screen and (min-width:300px) {
 
 }
@@ -36,8 +46,7 @@
 
 }
 @media screen and (max-width:300px) {
-  /* Günümüzde çok yaygın olmasa da gelecekte olabilecek minik ekranlar */
-  /* örnek ürün https://gadgets.ndtv.com/unihertz-jelly-4140 */
+/*  Günümüzde yaygın olmasa da kol ekranları gibi minik ekranlar alanı */
 }
 @media screen and (min-width:300px) and (max-width:576px) {
 
@@ -54,12 +63,7 @@
 @media screen and (min-width:1200px) and (max-width:1900px) {
 
 }
-/* Özgür alan */
+/* Bağımsız üst alan başı */
 
-/* Özgür alan sonu */
-/* Açıklamalar */
-
-/* Bu alan neden tanımlanmadı?
-/* @media screen and (min-width:0px) and (max-width:300px)
-/* - Bu alanda çalışması istenilen değiştirgeler @media screen and (max-width:300px)
-/* alanında tanımlanabileceği için gereksiz yere
+/* Bağımsız üst alan sonu */
+/* -------------------------------------------------------------------------- */

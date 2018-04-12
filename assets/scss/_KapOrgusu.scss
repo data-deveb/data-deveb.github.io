@@ -28,11 +28,64 @@ sıralama-düzeni
 konumlama
 
 doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
-
-
 */
 
 
+
+
+/* PARÇA DÜZENİ */
+@mixin parça-düzeni($ekran){
+
+    @for $i from 1 through 24{
+      [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
+      [data-#{$ekran}~="#{$i}p"]{--par: #{$i};}
+      [data-#{$ekran}~="soldan-#{$i}"]{--parça-soldan: #{$i};}
+      [data-#{$ekran}~="#{$i}p-öte"]{--par-soldan: #{$i};}
+      [data-#{$ekran}~="sağdan-#{$i}"]{--parça-sağdan: #{$i};}
+      [data-#{$ekran}~="#{$i}p-öte"]{--par-sağdan: #{$i};}
+    }
+
+    [data-#{$ekran}]{
+      flex-basis: calc(100% / var(--par) * var(--parça));
+      width: calc(100% / var(--par) * var(--parça));
+      max-width:  calc(100% / var(--par) * var(--parça));
+    }
+    [data-#{$ekran}*="soldan-"][data-#{$ekran}*="p-öte"]{
+      margin-left: calc(100% / var(--par-soldan) * var(--parça-soldan));
+    }
+    [data-#{$ekran}*="sağdan-"][data-#{$ekran}*="p-öte"]{
+      margin-right: calc(100% / var(--par-sağdan) * var(--parça-sağdan));
+    }
+}
+
+/* GENLEŞME DÜZENİ */
+@mixin genleşme-düzeni($ekran) {
+  @for $i from 1 through 24{
+    [data-#{$ekran}~="#{$i}g"]{
+      -webkit-box-flex: #{$i};
+      -ms-flex: #{$i};
+      flex: #{$i};
+    }
+  }
+
+  [data-#{$ekran}~="0"]{
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+}
+
+/* SIRALAMA DÜZENİ */
+@mixin sıralama-düzeni($ekran) {
+  @for $i from 1 through 24{
+    [data-#{$ekran}~="#{$i}nc"]{
+      -webkit-box-ordinal-group: #{$i};
+      -ms-flex-order: #{$i};
+      order: #{$i};
+    }
+  }
+}
 
 @mixin sığdır($ekran) {
   [data-#{$ekran}~="sığdır"]{
@@ -44,83 +97,158 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
   }
 }
 
-@mixin parça-düzeni($ekran){
-    /*  Kap Örgüsü Parça Ayarları */
-    @for $i from 1 through 24{
-      [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
-      [data-#{$ekran}~="#{$i}p"]{--par: #{$i};}}
-
-    [data-#{$ekran}]{
-      flex-basis: calc(100% / var(--par) * var(--parça));
-      width: calc(100% / var(--par) * var(--parça));
-      max-width:  calc(100% / var(--par) * var(--parça));}
-}
-
-@mixin genleşme-düzeni($ekran) {
-  /* Kap Örgüsü Genleşme Ayarları */
-  @for $i from 1 through 24{
-    [data-#{$ekran}~="#{$i}g"]{
-      -webkit-box-flex: #{$i};
-      -ms-flex: #{$i};
-      flex: #{$i};}}
-
-  [data-#{$ekran}~="0"]{
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    max-width: none;
-    width: auto;}
-}
-
-@mixin sıralama-düzeni($ekran) {
-  /* Kap Örgüsü Sıralama Düzeni */
-  @for $i from 1 through 24{
-    [data-#{$ekran}~="#{$i}nc"]{
-      -webkit-box-ordinal-group: #{$i};
-      -ms-flex-order: #{$i};
-      order: #{$i};}}
-}
-
-
 @mixin konumlama($ekran) {
-  [data-#{$ekran}~="#{$sütun}"] { flex-direction: column; }
+  [data-#{$ekran}~="#{$sütun}"]{
+    flex-direction: column;
+  }
 
-  [data-#{$ekran}~="#{$kaymadan}"] { overflow: hidden; }
-  [data-#{$ekran}~="#{$yatay-kayma}"] { overflow-x: auto; }
+  [data-#{$ekran}~="#{$kaymadan}"]{
+    overflow: hidden;
+  }
+  [data-#{$ekran}~="#{$yatay-kayma}"]{
+    overflow-x: auto;
+  }
 
-  [data-#{$ekran}~="#{$dürmeden}"] { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
-  [data-#{$ekran}~="#{$ters-dürme}"] { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
-  [data-#{$ekran}~="#{$ters-satır}"] { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
-  [data-#{$ekran}~="#{$ters-sütun}"] { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column; -reverseflex-direction: column-reverse; }
+  [data-#{$ekran}~="#{$dürmeden}"]{
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  [data-#{$ekran}~="#{$ters-dürme}"]{
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  [data-#{$ekran}~="#{$ters-satır}"]{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  [data-#{$ekran}~="#{$ters-sütun}"]{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column;
+    -reverseflex-direction: column-reverse;
+  }
 
-  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$üstte}"],[data-#{$ekran}~="#{$solda}"]:not([data-#{$ekran}~="#{$sütun}"]) { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
-  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$göbekte}"],[data-#{$ekran}~="#{$ortada}"]:not([data-#{$ekran}~="#{$sütun}"]) { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$altta}"],[data-#{$ekran}~="#{$sağda}"]:not([data-#{$ekran}~="#{$sütun}"]) { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-  [data-#{$ekran}~="#{$merkezde}"] { -webkit-box-align: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$solda}"],[data-#{$ekran}~="#{$üstte}"]:not([data-#{$ekran}~="#{$sütun}"]) { -ms-flex-line-pack: flex-start; align-content: flex-start; }
-  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$ortada}"],[data-#{$ekran}~="#{$göbekte}"]:not([data-#{$ekran}~="#{$sütun}"]) { -ms-flex-line-pack: center; align-content: center; }
-  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$sağda}"],[data-#{$ekran}~="#{$altta}"]:not([data-#{$ekran}~="#{$sütun}"]) { -ms-flex-line-pack: flex-end; align-content: flex-end; }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$üstte}"],
+  [data-#{$ekran}~="#{$solda}"]:not([data-#{$ekran}~="#{$sütun}"]){
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$göbekte}"],
+  [data-#{$ekran}~="#{$ortada}"]:not([data-#{$ekran}~="#{$sütun}"]){
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$altta}"],
+  [data-#{$ekran}~="#{$sağda}"]:not([data-#{$ekran}~="#{$sütun}"]){
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$solda}"],
+  [data-#{$ekran}~="#{$üstte}"]:not([data-#{$ekran}~="#{$sütun}"]){
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
+  }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$ortada}"],
+  [data-#{$ekran}~="#{$göbekte}"]:not([data-#{$ekran}~="#{$sütun}"]){
+    -ms-flex-line-pack: center;
+    align-content: center;
+  }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$sağda}"],
+  [data-#{$ekran}~="#{$altta}"]:not([data-#{$ekran}~="#{$sütun}"]){
+    -ms-flex-line-pack: flex-end;
+    align-content: flex-end;
+  }
 
-  [data-#{$ekran}~="#{$üstte-ol}"] { -ms-flex-item-align: start; align-self: flex-start; }
-  [data-#{$ekran}~="#{$göbekte-ol}"] { -ms-flex-item-align: center; align-self: center; }
-  [data-#{$ekran}~="#{$altta-ol}"] { margin-top: auto; }
-  [data-#{$ekran}~="#{$sağda-ol}"] { margin-left: auto; -ms-flex-item-align: end; align-self: flex-end; }
-  [data-#{$ekran}~="#{$ortada-ol}"] { margin-left: auto; margin-right: auto; -ms-flex-item-align: center; align-self: center; }
-  [data-#{$ekran}~="#{$solda-ol}"] { margin-right: auto; -ms-flex-item-align: start; align-self: flex-start; }
+  [data-#{$ekran}~="#{$merkezde}"]{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 
-  [data-#{$ekran}~="#{$araları-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]) { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-  [data-#{$ekran}~="#{$dengeli-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]) { -ms-flex-pack: distribute; justify-content: space-around; }
-  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$araları-aralık}"]{align-content: space-around;}
-  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$dengeli-aralık}"]{align-content: space-around;}
+  [data-#{$ekran}~="#{$üstte-ol}"]{
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+  [data-#{$ekran}~="#{$göbekte-ol}"]{
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+  [data-#{$ekran}~="#{$altta-ol}"]{
+    margin-top: auto
+  }
+  [data-#{$ekran}~="#{$sağda-ol}"]{
+    margin-left: auto;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+  [data-#{$ekran}~="#{$ortada-ol}"]{
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+  [data-#{$ekran}~="#{$solda-ol}"]{
+    margin-right: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
 
-  [data-#{$ekran}~="#{$uzat}"] { -webkit-box-align: stretch; -ms-flex-align: stretch; -ms-grid-row-align: stretch; align-items: stretch; }
-  [data-#{$ekran}~="#{$uzun-ol}"] { -ms-flex-item-align: stretch; align-self: stretch; }
+  [data-#{$ekran}~="#{$araları-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]){
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  [data-#{$ekran}~="#{$dengeli-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]){
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$araları-aralık}"]{
+    align-content: space-around;
+  }
+  [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$dengeli-aralık}"]{
+    align-content: space-around;
+  }
 
-  [data-#{$ekran}~="#{$satırda}"] { -webkit-box-align: baseline; -ms-flex-align: baseline; -ms-grid-row-align: baseline; align-items: baseline; }
-  [data-#{$ekran}~="#{$satırda-ol}"] { -ms-flex-item-align: baseline; align-self: baseline; }
+  [data-#{$ekran}~="#{$uzat}"]{
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
+  }
+  [data-#{$ekran}~="#{$uzun-ol}"]{
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
 
-  [data-#{$ekran}~="#{$metin-sağda}"] { text-align: right; }
-  [data-#{$ekran}~="#{$metin-ortada}"] { text-align: center; }
-  [data-#{$ekran}~="#{$metin-solda}"] { text-align: left; }
+  [data-#{$ekran}~="#{$satırda}"]{
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    -ms-grid-row-align: baseline;
+    align-items: baseline;
+  }
+  [data-#{$ekran}~="#{$satırda-ol}"]{
+    -ms-flex-item-align: baseline;
+    align-self: baseline;
+  }
+
+  [data-#{$ekran}~="#{$metin-sağda}"]{
+    text-align: right
+  }
+  [data-#{$ekran}~="#{$metin-ortada}"]{
+    text-align: center
+  }
+  [data-#{$ekran}~="#{$metin-solda}"]{
+    text-align: left
+  }
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,14 +263,17 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
 
     [data-#{$gnl}~="sütun"]{
       @include sütun;
-
     }
 
     @include sığdır($gnl);
 
-    body[data-#{$gnl}~="sütun"]{min-height: 100vh;}
+    body[data-#{$gnl}~="sütun"]{
+      min-height: 100vh
+    }
 
-    body[data-#{$gnl}~="sütun"] > footer{margin-top: auto;}
+    body[data-#{$gnl}~="sütun"] > footer{
+      margin-top: auto
+    }
 
     @include parça-düzeni($gnl);
 
@@ -151,17 +282,21 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
       margin: var(--aralık);
       flex-basis: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
       width: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
-      max-width:  calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));}
+      max-width:  calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
+    }
 
     [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
-      padding: var(--oluk);}
+      padding: var(--oluk);
+    }
 
     [data-#{$gnl}~="#{$oluk}"] > [data-#{$gnl}]{
       padding-left: var(--oluk);
-      padding-right: var(--oluk);}
+      padding-right: var(--oluk);
+    }
 
     [data-#{$gnl}~="#{$oluk-yok}"] > [data-#{$gnl}]{
-      padding: 0;}
+      padding: 0
+    }
 
     [data-#{$gnl}~="#{$kaplama}"]{
       margin-left: auto;
@@ -172,7 +307,8 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
     @include konumlama($gnl);
 
     [data-#{$gnl}~="#{$gizle}"],
-    [data-#{$mnk}~="#{$gizle}"]         {display: none !important;}
+    [data-#{$mnk}~="#{$gizle}"]{
+      display: none !important}
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S01 [data-#{$ufk}] UFAK-BÜYÜKLERİYLE | 300px ≤ *
