@@ -39,10 +39,10 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
     @for $i from 1 through 24{
       [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
       [data-#{$ekran}~="#{$i}p"]{--par: #{$i};}
-      [data-#{$ekran}~="soldan-#{$i}"]{--parça-soldan: #{$i};}
-      [data-#{$ekran}~="#{$i}p-öte"]{--par-soldan: #{$i};}
-      [data-#{$ekran}~="sağdan-#{$i}"]{--parça-sağdan: #{$i};}
-      [data-#{$ekran}~="#{$i}p-öte"]{--par-sağdan: #{$i};}
+      [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
+      [data-#{$ekran}~="#{$i}p-#{$öte}"]{--par-soldan: #{$i};}
+      [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
+      [data-#{$ekran}~="#{$i}p-#{$öte}"]{--par-sağdan: #{$i};}
     }
 
     [data-#{$ekran}]{
