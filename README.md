@@ -1,3 +1,9 @@
+<p data-gnl="ortada">
+  <a href="https://data-deveb.github.io/" target="_blank">
+    <img width="280" src="/assets/img/deveb_katmerli.png" alt="imge">
+  </a>
+</p>
+
 # deveb
 Web siteleri için hazırlanan bir css önyüz çatısıdır (frontend framework). Geliştirilme aşamasındadır. Türkçe ve İngilizce kullanım dili desteği ile geliştirilmesi devam etmektedir.
 
