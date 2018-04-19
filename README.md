@@ -1,10 +1,10 @@
-<p data-gnl="ortada">
+<p align="center">
   <a href="https://data-deveb.github.io/" target="_blank">
     <img width="280" src="/assets/img/deveb_katmerli.png" alt="imge">
   </a>
 </p>
 
-# deveb
+# deveb önyüz çatısına hoş geldiniz
 Web siteleri için hazırlanan bir css önyüz çatısıdır (frontend framework). Geliştirilme aşamasındadır. Türkçe ve İngilizce kullanım dili desteği ile geliştirilmesi devam etmektedir.
 
 Deveb saf CSS (pure css) yöntemiyle bir çok özelliği bünyesinde barındıran yepyeni bir çalışmadır. Ekran örgüsü (screen system), kap örgüsü (grid system), renk örgüsü (color system) gibi yepyeni özellikleri kullanıma sunmaktadır.
