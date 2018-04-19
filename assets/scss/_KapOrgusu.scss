@@ -38,23 +38,29 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
 
     @for $i from 1 through 24{
       [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
-      [data-#{$ekran}~="#{$i}p"]{--par: #{$i};}
+      [data-#{$ekran}~="#{$i}p"]{--parçalık: #{$i};}
       [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
-      [data-#{$ekran}~="#{$i}p-#{$öte}"]{--par-soldan: #{$i};}
+      [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-soldan: #{$i};}
       [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
-      [data-#{$ekran}~="#{$i}p-#{$öte}"]{--par-sağdan: #{$i};}
+      [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
     }
 
     [data-#{$ekran}]{
-      flex-basis: calc(100% / var(--par) * var(--parça));
-      width: calc(100% / var(--par) * var(--parça));
-      max-width:  calc(100% / var(--par) * var(--parça));
+      flex-basis: calc(100% / var(--parçalık) * var(--parça));
+      width: calc(100% / var(--parçalık) * var(--parça));
+      max-width:  calc(100% / var(--parçalık) * var(--parça));
     }
-    [data-#{$ekran}*="soldan-"][data-#{$ekran}*="p-öte"]{
-      margin-left: calc(100% / var(--par-soldan) * var(--parça-soldan));
+    [data-#{$ekran}*="soldan-"]{
+      margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
     }
-    [data-#{$ekran}*="sağdan-"][data-#{$ekran}*="p-öte"]{
-      margin-right: calc(100% / var(--par-sağdan) * var(--parça-sağdan));
+    [data-#{$ekran}*="sağdan-"]{
+      margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
+    }
+    [data-#{$ekran}*="soldan-"][data-#{$ekran}*="p-aralık"]{
+      margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
+    }
+    [data-#{$ekran}*="sağdan-"][data-#{$ekran}*="p-aralık"]{
+      margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
     }
 }
 
@@ -280,9 +286,9 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
     /* Kap Örgüsü Ek Etkiler */
     [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
       margin: var(--aralık);
-      flex-basis: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
-      width: calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
-      max-width:  calc(100% / var(--par) * var(--parça) - var(--ara) - var(--ara));
+      flex-basis: calc(100% / var(--parçalık) * var(--parça) - var(--ara) - var(--ara));
+      width: calc(100% / var(--parçalık) * var(--parça) - var(--ara) - var(--ara));
+      max-width:  calc(100% / var(--parçalık) * var(--parça) - var(--ara) - var(--ara));
     }
 
     [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
