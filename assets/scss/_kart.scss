@@ -1,16 +1,18 @@
 [data-kart]{
   width: 200px;
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 30px 10px 0 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.24);
   text-align: center;
 
   font-size: 13px;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-content: space-between;
-
+  flex-direction: column;
 }
 [data-kart] .bilgi{
   display: block;
