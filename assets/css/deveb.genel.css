@@ -669,11 +669,6 @@ ul.liste-temiz li{
 
 
 
-	.önizleme{background-color:#efefef; padding:10px;}
-	.önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1; padding:10px; color:#eee;}
-	.önizleme h3 {color:#999;margin:0 0 10px 0;}
-	pre.language-html{ max-height:50vh; overflow-y: auto;z-index: 1000;}
-
 
 /** İLKEL ****/
 
@@ -1248,11 +1243,3 @@ input[data-bağ~="simge"][data-bağ~="dev"]+label{	 font-size: 24pt; width:2em;	
     margin-top: 0.2rem;
   }
 }
-
-
-
-/* prismjs */
-.önizleme{background-color:#efefef; padding:10px;}
-.önizleme [data-gnl]{border:1px solid #2c2171; background-color: #4c41a1; padding:10px; color:#eee;}
-.önizleme h3 {color:#999;margin:0 0 10px 0;}
-pre.language-html{ max-height:50vh; overflow-y: auto;}
