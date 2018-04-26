@@ -1,4 +1,232 @@
 /* ==========================================================================
+    MENÜ ÖRGÜSÜ s0.01
+    Sadece css yöntemiyle kurulmuş sekme örgüsü
+----------------------------------------------------------------------------- */
+[data-menü] > input:first-child{
+  display: none;
+}
+[data-menü] > input:first-child:checked + label + ul{
+  display: flex !important;
+}
+
+[data-menü~="yukarı"] > label{
+  display: flex;
+  order: 2;
+}
+[data-menü~="yukarı"] > ul{
+  display: flex;
+  order: 1;
+}
+[data-menü~="boş"] > input:checked + label{
+  background-color: gray;
+}
+[data-menü~="boş"] > ul li a:hover,
+[data-menü~="boş"] > ul li a.etkin{
+  background-color: rgba(0,0,0,.05);
+}
+[data-menü~="boş"] > ul li a,
+[data-menü~="boş"] > label {
+  display: inherit;
+  flex:1 1 0;
+}
+[data-menü~="boş"] ul li a
+{  padding:5px 0 5px 5px;}
+
+[data-menü~="varsayılan"] > ul li a,
+[data-menü~="varsayılan"] > label {
+  display: inherit;
+  padding: 10px 15px;
+  flex:1 1 0;
+  background-color: #2c2171;
+  color:#fefefe;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+[data-menü~="varsayılan"] > input:checked + label{
+  background-color: gray;
+}
+[data-menü~="varsayılan"] > ul li a:hover,
+[data-menü~="varsayılan"] > ul li a.etkin{
+  background-color: #3c3181;
+}
+
+@media screen and (min-width:576px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  [data-kçk~="0"]{
+    -ms-flex-preferred-size: auto !important;
+
+    width: auto !important;
+  }
+}
+/* SÖZCÜKLER VE ANLAMLARI */
+/* İLKER: İlk, önce, başta, ilk doğan, büyük olan (bu sözcüklerin birleşimidir) */
+/* TEKER: Tek, yalnız, sadece (bu sözcüklerin birleşimidir) */
+/* SONER: Son, sonra, sonda, son doğan, küçük olan (bu sözcüklerin birleşimidir) */
+
+
+ul{
+  padding:0;
+}
+ul li {
+  list-style:none;
+}
+[data-menü] > label[for^="menü-"]{
+  padding:10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+[data-menü] input[id^="menü-"]:checked ul,
+[data-menü] ul ul li{
+  display: flex !important;
+  margin:0;
+}
+
+
+[data-menü] ul ul{
+  margin:0;
+}
+[data-menü] ul a{
+  display: block;
+  padding:5px 10px;
+}
+[data-menü] ul ul,
+[data-menü] ul li > ul li{
+  opacity: 0;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+@media screen and (min-width:577px) {
+  [data-menü] ul li:hover > ul li{
+    width:auto;
+    height:auto;
+    opacity: 1;
+    position:relative;
+  }
+[data-menü] ul li:hover > ul{
+  display: block;
+  height: auto;
+  width: auto;
+  opacity: 1;
+  transition: 0.3s ease opacity;
+  position: absolute;
+}
+[data-menü] ul ul li:hover > ul{
+  margin:0 -1000px 0 100%;
+  display: block;
+}
+[data-menü] input[id^="menü-"],
+[data-menü] > input[id^="menü-"] + label{
+  display: none;
+}
+}
+
+
+@media screen and (max-width:576px) {
+  [data-menü] input[id^="menü-"]:checked + label + ul{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  [data-menü] > ul {display: none;}
+  [data-menü] ul li > ul li,
+  [data-menü] ul ul{
+    opacity: 0;
+    height: 0;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+    overflow:hidden;
+
+  }
+  [data-menü] ul li:hover > ul{
+    position: relative;
+  }
+  [data-menü] ul li input[id^="menü-"],
+  [data-menü] ul li label[for^="menü-"] + a{
+    display:none;
+  }
+
+  [data-menü] input[id^="menü-"]:checked + label + a + ul{
+    display: block;
+    height: auto;
+    width: auto;
+    opacity: 1;
+    transition: 0.3s ease opacity;
+    position: relative;
+    z-index: 3;
+  }
+  [data-menü] input[id^="menü-"]:checked ~ ul li{
+    display: block !important;
+    width:auto;
+    height:auto;
+    opacity: 1;
+    position:relative;
+  }
+}
+
+
+/* özelleştirme */
+@media screen and (max-width:576px){
+  [data-menü~="tip1"] ul ul{
+  }
+  [data-menü~="tip1"] ul ul li:hover{
+    background-color: #F7F8FB;
+  }
+  [data-menü~="tip1"] ul li a,
+  [data-menü~="tip1"] ul li label[for^="menü-"]{
+    color:#79589F;
+    padding:10px 20px;
+    border-bottom: 1px solid #EEF1F6;
+    display: block;
+      cursor: pointer;
+  }
+  [data-menü~="tipi1"] ul li label[for^="menü-"]{
+    color: #fcc;
+  }
+  [data-menü~="tip1"] ul ul li a{
+    border-bottom: 1px solid #EEF1F6;
+    background-color: #f9f9f9;
+  }
+  [data-menü~="tip1"] ul li,
+  [data-menü~="tip1"] ul li a,
+  [data-menü~="tip1"] ul li label[for^="menü-"]{
+    width: 100% !important;
+  }
+
+
+}
+@media screen and (min-width:577px){
+  [data-menü~="tip1"] ul ul{
+    box-shadow: 0 3px 20px rgba(89, 105, 129, .3), 0 1px 2px rgba(0, 0, 0, .05), 0 0 0 1px rgba(89, 105, 129, .1);
+    border-radius: 3px;
+  }
+  [data-menü~="tip1"] ul ul li:first-child{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  [data-menü~="tip1"] ul ul li:last-child{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  [data-menü~="tip1"] ul ul li:hover{
+    background-color: #F7F8FB;
+  }
+  [data-menü~="tip1"] ul li a{
+    color:#79589F;
+    padding:10px 20px;
+  }
+  [data-menü~="tip1"] ul ul li a{
+    border-bottom: 1px solid #EEF1F6;
+  }
+
+
+}
+
+
+
+/* ==========================================================================
     MENÜ ÖRGÜSÜ s0.1
     Sadece css yöntemiyle kurulmuş sekme örgüsü
 ----------------------------------------------------------------------------- */
