@@ -37,7 +37,7 @@
     <li><a href="/belgeler/kurulum.html" class="{% if page.url == '/belgeler/kurulum.html' %}etkin{% endif %}">Kurulum</a></li>
     <li><a href="/belgeler/ekran-orgusu.html" class="{% if page.url == '/belgeler/ekran-orgusu.html' %}etkin{% endif %}">Ekran Örgüsü</a>
     <li><a href="/belgeler/kap-orgusu.html" class="{% if page.url == '/belgeler/kap-orgusu.html' %}etkin{% endif %}">Kap Örgüsü</a>
-      <input id="kap-örgüsü" type="checkbox" data-kapaç="sağda">
+      <input id="kap-örgüsü" type="checkbox" {% if page.url == '/belgeler/kap-orgusu.html' %}checked{% endif %} data-kapaç="sağda">
       <label for="kap-örgüsü"><span>▽</span></label>
       <label for="kap-örgüsü"><span>▼</span></label>
       <ul>
