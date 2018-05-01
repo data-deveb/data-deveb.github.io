@@ -5,6 +5,28 @@ nav {
   width:100%;
 }
 
+.imge[data-menü] li {
+  margin-bottom:5px;
+}
+.imge[data-menü] li > ul {
+  margin-top:5px;
+  margin-left: 5px;
+}
+.imge[data-menü] li.etkin > a{
+  background-color:#dddddd;
+  border-radius: 8px;
+}
+.imge[data-menü] li > a:hover{
+  background-color:#ededed;
+  border-radius: 8px;
+}
+
+.imge[data-menü] li > a,
+.imge[data-menü] li > label{
+  padding:5px 10px;
+}
+
+
 /* -----------------------------------
     MENÜ 0.01
    ----------------------------------- */
