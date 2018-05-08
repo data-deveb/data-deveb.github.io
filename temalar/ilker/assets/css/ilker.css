@@ -1,0 +1,20 @@
+/* MENÜ İMGESİ */
+[data-menü~="yatay"] li a{
+  padding:5px 10px;
+  margin:4px;
+  display: inline-block;
+  text-decoration: none;
+}
+[data-menü~="yatay"] li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 6px;
+    background: #cfdd00;
+    transition: width .3s;
+    margin-top:3px;
+}
+
+[data-menü~="yatay"] li a:hover::after {
+    width: 100%;
+}
