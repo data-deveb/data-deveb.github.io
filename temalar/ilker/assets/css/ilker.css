@@ -1,4 +1,17 @@
 /* MENÜ İMGESİ */
+@media screen and (max-width:576px) {
+  body{
+    font-size:16px !important;
+  }
+  header{
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+}
+
+
+
 [data-menü~="yatay"][data-menü~="basit"]{
   overflow-x: auto;
   flex-wrap: nowrap !important;
@@ -8,6 +21,12 @@
   padding:5px 10px;
   text-decoration: none;
   padding-top: 11px;
+}
+[data-menü~="yatay"][data-menü~="basit"] > li:first-child a{
+  padding-left:0;
+}
+[data-menü~="yatay"][data-menü~="basit"] > li:last-child a{
+  padding-right:0;
 }
 label[for="menü-0by"]{
   padding:5px 10px;
