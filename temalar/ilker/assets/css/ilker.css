@@ -1,9 +1,20 @@
 /* MENÜ İMGESİ */
+[data-menü~="yatay"][data-menü~="basit"]{
+  overflow-x: auto;
+  flex-wrap: nowrap !important;
+}
+
 [data-menü~="yatay"][data-menü~="basit"] > li a{
   padding:5px 10px;
-  margin:10px 4px 4px 4px;
-  display: inline-block;
   text-decoration: none;
+  padding-top: 11px;
+}
+label[for="menü-0by"]{
+  padding:5px 10px;
+  padding-right: 0;
+}
+[data-menü~="yatay"][data-menü~="basit"] > li a{
+  display: inline-block;
 }
 [data-menü~="yatay"][data-menü~="basit"] > li a::after {
     content: '';
