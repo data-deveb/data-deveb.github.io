@@ -26,7 +26,6 @@ nav {
   padding:5px 10px;
 }
 
-
 /* -----------------------------------
     MENÜ 0.01
    ----------------------------------- */
@@ -51,11 +50,9 @@ ul[data-menü],
 }
 [data-kapaç]+label{
   display: flex;
-  width:100%;
 }
 [data-kapaç]+label+label{
   display: none;
-  width:100%;
 }
 a+[data-kapaç]+label,
 a+[data-kapaç]+label+label{
