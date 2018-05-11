@@ -1,0 +1,54 @@
+.main-menu{
+  background-color: #000;
+  color:#fff;
+}
+.main{
+  background-color: #ddd;
+}
+[data-menü~="sağ-kaval"] > li a{
+  position: relative;
+  padding:10px;
+}
+[data-menü~="sağ-kaval"] > li a span{
+  display:none;
+  position: absolute;
+  right:100%;
+  top:0;
+}
+[data-menü~="sağ-kaval"] > li:hover a span{
+  display:flex;
+  align-items: center;
+  background-color: green;
+    height: 100%;
+    padding:0 15px;
+}
+[data-menü~="sağ-kaval"] > li:hover a{
+  background-color: green;
+  color:#fff;
+}
+
+/*****/
+.yemek-adi, .product-name{
+  padding-top:50px;
+  padding-left:10px;
+  font-size:32px;
+  line-height: 28px;
+  margin:0;
+  border-left:4px solid green;
+
+}
+.yemek-içeriği, .product-content{
+  padding-left:14px;
+  padding-right: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.product-content{
+  padding:0;
+  margin-bottom: 0;
+}
+.yemek-içeriği h2, .product-content h2{
+  font-size:16px;
+  font-weight: 600;
+}
