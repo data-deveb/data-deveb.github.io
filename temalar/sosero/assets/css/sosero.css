@@ -3,7 +3,15 @@
   color:#fff;
 }
 .main{
+
+}
+html{
   background-color: #ddd;
+  background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 [data-menü~="sağ-kaval"] > li a{
   position: relative;
@@ -35,7 +43,7 @@
   line-height: 28px;
   margin:0;
   border-left:4px solid green;
-
+  color:#c70000;
 }
 .yemek-içeriği, .product-content{
   padding-left:14px;
