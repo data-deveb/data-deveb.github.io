@@ -34,10 +34,23 @@ html{
   background-color: green;
   color:#fff;
 }
+@media screen and (max-width:576px) {
+[data-menü~="sağ-kaval"]{
+  position: fixed;
+  height: 100%;
+  width:100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 998;
+  background-color:rgba(111,41,36,.88);
+}
+}
 
 /*****/
 .sosero{
-  
+
 }
 .yemek-adi, .product-name{
   padding-top:50px;
