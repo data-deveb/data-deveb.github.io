@@ -5,7 +5,7 @@
 .main{
 
 }
-html{
+html:not(.intro){
   background-color: #ddd;
   background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -51,6 +51,13 @@ html{
 /*****/
 .sosero{
 
+}
+.intro{
+  background: url('/temalar/sosero/assets/img/giri_ap.png') no-repeat center bottom fixed,url('/temalar/sosero/assets/img/giri_ap.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .yemek-adi, .product-name{
   padding-top:50px;
