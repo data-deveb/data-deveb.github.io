@@ -116,3 +116,7 @@ html:not(.intro){
   font-size:1.4em;
   margin:0;
 }
+.product-card{
+  flex: 0 0 200px;
+  padding: 20px;
+}
