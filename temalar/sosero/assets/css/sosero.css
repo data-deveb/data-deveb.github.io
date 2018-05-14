@@ -28,12 +28,12 @@ html:not(.intro){
 [data-menü~="sağ-kaval"] > li:hover a span{
   display:flex;
   align-items: center;
-  background-color: green;
+  background-color: #13672f;
     height: 100%;
     padding:0 15px;
 }
 [data-menü~="sağ-kaval"] > li:hover a{
-  background-color: green;
+  background-color: #13672f;
   color:#fff;
 }
 @media screen and (max-width:576px) {
@@ -50,6 +50,13 @@ html:not(.intro){
 }
 }
 
+
+.tam{
+  width:auto;
+  min-width:100%;
+  min-height:100%;
+  display: block;
+}
 /*****/
 .sosero{
 
@@ -68,7 +75,7 @@ html:not(.intro){
   line-height: 28px;
   font-weight: bold;
   margin:0;
-  border-left:4px solid green;
+  border-left:4px solid #13672f;
   color:#c70000;
 }
 .yemek-içeriği, .product-content{
@@ -85,6 +92,27 @@ html:not(.intro){
 .yemek-içeriği h2, .product-content h2{
   font-size:16px;
   font-weight: 600;
-  color:green;
+  color:#13672f;
   margin-top:30px;
+}
+.product-detail{
+  text-align: center;
+  border-collapse:collapse;border-spacing:0;
+}
+.product-detail td{
+  border:1px solid rgba(0,0,0,.3);
+  background-color: #fff;
+  width:25%;
+}
+.product-detail th{
+  background-color:#c70000;
+  color:#fff;
+  font-weight: bold;
+  border:1px solid #c70000;
+  padding:10px;
+}
+.product-detail  .pd-value{
+  font-weight: bold;
+  font-size:1.4em;
+  margin:0;
 }
