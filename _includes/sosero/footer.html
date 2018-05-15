@@ -6,3 +6,16 @@
     <li><a href="#">Goo</a></li>
   </ul>
 </nav>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+ <script src="/temalar/sosero/assets/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+ <script type="text/javascript">
+   $(document).on('ready', function() {
+     $(".regular").slick({
+       dots: true,
+       infinite: true,
+       slidesToShow: 4,
+       slidesToScroll: 4
+     });
+   });
+</script>
