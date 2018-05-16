@@ -134,13 +134,20 @@ html:not(.intro){
   object-fit: cover;
 }
 .product-card .product-info{
-  background-color: green;
+  background-color: #ffc900;
   color:#fff;
   padding:10px;
   width:100%;
 }
-.product-card .product-imgx{
+.product-card:hover .product-info{
+  background-color: green;
+  color:#000;
+}
+.product-card:hover .product-imgx{
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.0) 50%, green 50%);
+}
+.product-card .product-imgx{
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.0) 50%, #ffc900 50%);
   height: 50px;
   width: 100%;
   margin-top: -50px;
@@ -454,30 +461,30 @@ html:not(.intro){
 }
 .slick-dots li button:before
 {
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 20px;
-    height: 20px;
-
-    content: 'â€¢';
+    content:'';
     text-align: center;
 
     opacity: .25;
     color: black;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    background-color: gray;
+
+    width: 10px;
+
+    height: 10px;
+
+    display: block;
+    border-radius:5px;
 }
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
     color: black;
+    background-color:#c70000;
+    width:20px;
+    border-radius:5px;
+    margin-left: -5px;
+    opacity: 1;
 }
 
 .slick-slider{
