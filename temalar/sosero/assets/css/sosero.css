@@ -5,6 +5,9 @@
 .main{
 
 }
+.paketler{
+  background-color: rgba(55,138,0,.8);
+}
 html:not(.intro){
   background-color: #ddd;
   background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
@@ -160,6 +163,12 @@ html:not(.intro){
   font-size:18px;
   font-weight: bold;
 }
+.product-card.beyaz .product-info,
+.product-card.beyaz .product-info h2,
+.product-card.beyaz .product-info p{
+  color:#222;
+  background-color: #fff;
+}
 .product-card .product-imgx{
   overflow: hidden;
     margin-top: -50px;
@@ -192,7 +201,15 @@ html:not(.intro){
   font-weight: bold;
   border-radius: 4px;
 }
-
+.product-card.beyaz .open-it{
+  border:2px solid #222;
+  padding: 10px;
+  line-height: 10px;
+  font-size:20px;
+  font-weight: bold;
+  border-radius: 4px;
+  color:#222;
+}
 
 
 /* Slider */

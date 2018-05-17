@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+{% include sosero/head.html %}
+</head>
+<body data-gnl="sütun sığdır">
+  <div data-gnl="1 1p" data-kçk="sığdır">
+    {% include sosero/menu.html %}
+    <div class="main paketler" data-gnl="1g 1nc üstte ortada sığdır" data-kçk="">
+      <header data-gnl="23 24p soldan-1 24p-aralık">
+        <a  data-gnl="1 3p" data-kçk="0" href="#"><img src="/temalar/sosero/assets/img/sosero.png" alt="SOSERO"></a>
+        <input id="menü-ana-çapraz" checked="" name="ana-menü" data-kapaç="sağda çaprazlama" type="radio">
+        <label for="menü-ana" data-gnl="0 sağdan-1 24p">•••</label>
+        <label for="menü-ana-çapraz" data-gnl="0 sağdan-1 24p">///</label>
+      </header>
+      {{ content }}
+    </div>
+    <footer data-gnl="0 soldan-1 24p-aralık" style="position:absolute; bottom:0; z-index:999;">
+      {% include sosero/footer.html %}
+    </footer>
+  </div>
+</body>
+</html>
