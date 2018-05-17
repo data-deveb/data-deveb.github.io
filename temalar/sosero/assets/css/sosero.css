@@ -136,12 +136,29 @@ html:not(.intro){
 .product-card .product-info{
   background-color: #ffc900;
   color:#fff;
-  padding:10px;
+  padding:20px;
   width:100%;
 }
 .product-card:hover .product-info{
-  background-color: green;
+  background-color: #13672f;
   color:#000;
+}
+.product-card .product-info p,
+.product-card .product-info h2{
+  color:#000;
+}
+.product-card:hover .product-info p,
+.product-card:hover .product-info h2{
+  color:#fff;
+}
+.product-card .product-info p{
+  margin:0;
+  font-size:14px;
+}
+.product-card .product-info h2{
+  margin:0;
+  font-size:18px;
+  font-weight: bold;
 }
 .product-card .product-imgx{
   overflow: hidden;
@@ -151,14 +168,13 @@ html:not(.intro){
   height: 55px;
 }
 .product-card:hover .product-imgx::before{
-  /*background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.0) 50%, green 50%);*/
-  border-color: transparent green green green;
+  /*background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.0) 50%, #13672f 50%);*/
+  border-color: transparent #13672f #13672f #13672f;
 }
 .product-card .product-imgx::before{
   /*background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.0) 50%, #ffc900 50%);
   height: 50px;
   width: 100%;*/
-
   border-color: transparent #ffc900 #ffc900 #ffc900;
         border-width:50px 400px 10px 0;
         width: 0;
@@ -166,20 +182,16 @@ html:not(.intro){
         border-style: solid;
         display: inline-block;
         content: "";
+}
 
-}
-.product-card .product-info p{
-  margin:0;
-  font-size:16px;
-  color:#fff;
-}
-.product-card .product-info h2{
-  margin:0;
-  font-size:24px;
+.product-card .open-it{
+  border:2px solid #fff;
+  padding: 10px;
+  line-height: 10px;
+  font-size:20px;
   font-weight: bold;
-  color:#fff;
+  border-radius: 4px;
 }
-
 
 
 
@@ -330,19 +342,16 @@ html:not(.intro){
 
     display: block;
 
-    width: 20px;
-    height: 20px;
-    padding: 0;
+    padding: 10px 15px;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
 
     cursor: pointer;
-
+    background-color: #13672f;
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -359,6 +368,7 @@ html:not(.intro){
 .slick-next:focus:before
 {
     opacity: 1;
+        color:#146830;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -371,7 +381,7 @@ html:not(.intro){
 {
     font-family: 'slick';
     font-size: 20px;
-    line-height: 1;
+    line-height: 1.5;
 
     opacity: .75;
     color: white;
@@ -391,11 +401,11 @@ html:not(.intro){
 }
 .slick-prev:before
 {
-    content: 'â†';
+    content: '◁';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: 'â†’';
+    content: '◁';
 }
 
 .slick-next
@@ -409,11 +419,11 @@ html:not(.intro){
 }
 .slick-next:before
 {
-    content: 'â†’';
+    content: '▷';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: 'â†';
+    content: '▷';
 }
 
 /* Dots */
@@ -515,13 +525,13 @@ html:not(.intro){
 }
 .slick-prev{
   order: 3;
-  border:1px solid black;
+  border:1px solid #146830;
   margin-left:auto;
   margin-top: 30px;
 }
 .slick-next{
   order: 3;
-  border:1px solid black;
+  border:1px solid #146830;
   margin-right: auto;
   margin-top: 30px;
 }
