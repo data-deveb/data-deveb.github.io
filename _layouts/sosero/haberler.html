@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+{% include sosero/head.html %}
+</head>
+<body data-gnl="sütun sığdır">
+  <div data-gnl="1 1p" data-kçk="sığdır">
+    {% include sosero/menu.html %}
+    <div class="main" data-gnl="1g 1nc üstte ortada sığdır" data-kçk="kaymadan">
+      <header data-gnl="23 24p soldan-1 24p-aralık" data-kçk="1 1p" style="margin-bottom:30px;">
+        <h1 class="product-name" data-gnl="1 3p üstte-ol">HABERLER</h1>
+      </header>
+      {{ content }}
+    </div>
+    <footer data-gnl="0 soldan-1 24p-aralık" style="position:absolute; bottom:0; z-index:999;">
+      {% include sosero/footer.html %}
+    </footer>
+  </div>
+</body>
+</html>

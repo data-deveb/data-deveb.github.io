@@ -16,6 +16,9 @@ html:not(.intro){
   -o-background-size: cover;
   background-size: cover;
 }
+[data-menü~="sağ-kaval"]{
+  z-index: 999;
+}
 [data-menü~="sağ-kaval"] > li a{
   position: relative;
   padding:10px;
@@ -120,12 +123,29 @@ html:not(.intro){
   font-size:1.4em;
   margin:0;
 }
+article:nth-child(odd) .product-content-alt{
+  text-align: right;
+}
+.product-content-alt .date{
+  font-size:12px;
+  width:100%;
+}
+.product-content-alt h1{
+  margin:0;
+  font-size:18px;
+  font-weight: bold;
+  line-height: 1.8;
+}
+.product-content-alt{
+  font-size:13px;
+}
 .product-card{
   display:flex !important;
   padding: 20px;
   flex-wrap: wrap;
   width:100%;
   max-height: 400px;
+  outline: none;
 }
 
 .product-card .product-img{
