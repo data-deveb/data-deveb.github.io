@@ -30,6 +30,12 @@ html:not(.intro){
   position: absolute;
   right:100%;
   top:0;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 10px;
+  white-space: nowrap;
 }
 [data-menü~="sağ-kaval"] > li:hover a span{
   display:flex;
