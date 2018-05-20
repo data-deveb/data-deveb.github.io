@@ -616,8 +616,19 @@ article:nth-child(odd) .product-content-alt{
   margin-right: auto;
   margin-top: 30px;
 }
-
-
+.yemek .slick-prev{
+  order: 2;
+  margin-left:0;
+  margin:0;
+}
+.yemek .slick-next{
+  order: 2;
+  margin:0;
+}
+.yemek .slick-dots{
+flex: 1 1 0;
+align-self: center;
+}
 /* İLETİŞİM */
 .button-container {
   text-align: right;
