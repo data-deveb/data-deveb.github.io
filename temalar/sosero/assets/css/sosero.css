@@ -49,10 +49,35 @@ html:not(.intro){
   width:100%;
   left: 0;
   top: 0;
-  bottom: 0;
   right: 0;
   z-index: 998;
   background-color:rgba(111,41,36,.88);
+  overflow-y: scroll;
+  flex-wrap: nowrap !important;
+  z-index: 1001;
+}
+[data-menü~="sağ-kaval"] li{
+  width: 100%;
+}
+[data-menü~="sağ-kaval"] li a{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+[data-menü~="sağ-kaval"] li a img{
+  width:30px;
+}
+[data-menü~="sağ-kaval"] li label[for*="-çapraz"]{
+flex: 0 0 auto;
+margin-right: 17px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+[data-menü~="sağ-kaval"] li a span{
+  display: inline-block;
+  position: static;
+  color:#fff;
+  margin-left:10px;
 }
 }
 
