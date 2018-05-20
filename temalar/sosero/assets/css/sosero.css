@@ -21,7 +21,7 @@ html:not(.intro){
 }
 [data-menü~="sağ-kaval"] > li a{
   position: relative;
-  padding:10px 20px;
+  padding:15px;
   display:flex;
   justify-content: center;
 }
@@ -30,6 +30,7 @@ html:not(.intro){
   position: absolute;
   right:100%;
   top:0;
+  padding:5px 10px;
 
   font-size: 18px;
   font-weight: bold;
@@ -191,6 +192,7 @@ article:nth-child(odd) .product-content-alt{
 
 .product-card .product-img{
   width:100%;
+    margin-bottom: -30px;
 }
 .product-card .product-img img{
   min-width: 100%;
@@ -236,6 +238,7 @@ article:nth-child(odd) .product-content-alt{
   width: 100%;
   display: inline-block;
   height: 55px;
+
 }
 .product-card:hover .product-imgx::before{
   /*background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.0) 50%, #13672f 50%);*/
@@ -425,10 +428,6 @@ article:nth-child(odd) .product-content-alt{
     display: block;
 
     padding: 10px 15px;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
     cursor: pointer;
     background-color: #13672f;
     color: transparent;
