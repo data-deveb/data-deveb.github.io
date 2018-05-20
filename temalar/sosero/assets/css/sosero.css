@@ -43,6 +43,12 @@ html:not(.intro){
   color:#fff;
 }
 @media screen and (max-width:576px) {
+label[for*="menü-ana"]{
+  background: black;
+  align-self: center;
+  color: #fff;
+  padding: 8px;
+}
 [data-menü~="sağ-kaval"]{
   position: fixed;
   height: 100%;
@@ -51,7 +57,7 @@ html:not(.intro){
   top: 0;
   right: 0;
   z-index: 998;
-  background-color:rgba(111,41,36,.88);
+  background-color:rgba(111,41,36,.92);
   overflow-y: scroll;
   flex-wrap: nowrap !important;
   z-index: 1001;
@@ -174,7 +180,7 @@ article:nth-child(odd) .product-content-alt{
   padding: 20px;
   flex-wrap: wrap;
   width:100%;
-  max-height: 400px;
+  /*max-height: 400px;*/
   outline: none;
 }
 
@@ -242,7 +248,11 @@ article:nth-child(odd) .product-content-alt{
         display: inline-block;
         content: "";
 }
-
+@media screen and (min-width:1200px){
+  .product-card .product-imgx::before{
+          border-width:50px 800px 10px 0;
+  }
+}
 .product-card .open-it{
   border:2px solid #fff;
   padding: 10px;
