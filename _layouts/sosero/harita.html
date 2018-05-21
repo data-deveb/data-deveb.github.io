@@ -7,9 +7,7 @@
   <div data-gnl="1 1p" data-kçk="sığdır">
     <header data-gnl="23 24p soldan-1 24p-aralık" data-kçk="0" style="position:absolute; z-index:999;">
       <a  data-gnl="1 3p" data-kçk="0" href="#"><img src="/temalar/sosero/assets/img/sosero.png" alt="SOSERO"></a>
-      <input id="menü-ana-çapraz" checked="" name="ana-menü" data-kapaç="sağda çaprazlama" type="radio">
-      <label for="menü-ana" data-gnl="0 sağdan-1 24p">•••</label>
-      <label for="menü-ana-çapraz" data-gnl="0 sağdan-1 24p">///</label>
+      {% include sosero/hamburger-capraz.html %}
     </header>
     {% include sosero/menu.html %}
     <div class="main" data-gnl="1g 1nc ortada sığdır" data-kçk="kaymadan dürmeden">

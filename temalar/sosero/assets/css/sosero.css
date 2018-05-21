@@ -8,6 +8,9 @@
 .paketler{
   background-color: rgba(55,138,0,.8);
 }
+.gelgit-etkin{
+  overflow: hidden;
+}
 html:not(.intro){
   background-color: #ddd;
   background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
@@ -16,6 +19,7 @@ html:not(.intro){
   -o-background-size: cover;
   background-size: cover;
 }
+
 [data-menü~="sağ-kaval"]{
   z-index: 999;
 }
@@ -63,13 +67,28 @@ label[for*="menü-ana"]{
   top: 0;
   right: 0;
   z-index: 998;
-  background-color:rgba(111,41,36,.92);
+
+  background: url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
   overflow-y: scroll;
   flex-wrap: nowrap !important;
   z-index: 1001;
+
+}
+[data-menü~="sağ-kaval"]::before{
+  background-color:rgba(89,28,23,.8);
+  content: '';
+  display: block;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+[data-menü~="sağ-kaval"] li a.baş,
+[data-menü~="sağ-kaval"] li a.baş:hover{
+  background: transparent;
 }
 [data-menü~="sağ-kaval"] li{
   width: 100%;
+  z-index: 1002;
 }
 [data-menü~="sağ-kaval"] li a{
   display: flex;
@@ -78,6 +97,7 @@ label[for*="menü-ana"]{
 }
 [data-menü~="sağ-kaval"] li a img{
   width:30px;
+  height: 38px;
 }
 [data-menü~="sağ-kaval"] li label[for*="-çapraz"]{
 flex: 0 0 auto;
