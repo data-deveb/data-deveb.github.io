@@ -590,7 +590,7 @@ article:nth-child(odd) .product-content-alt{
 {
     content:'';
     text-align: center;
-
+    transition: .3s ease;
     opacity: .25;
     color: black;
 
