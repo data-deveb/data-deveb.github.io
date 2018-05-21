@@ -19,6 +19,9 @@ html:not(.intro){
   -o-background-size: cover;
   background-size: cover;
 }
+header{
+  padding:0 20px;
+}
 
 [data-menü~="sağ-kaval"]{
   z-index: 999;
