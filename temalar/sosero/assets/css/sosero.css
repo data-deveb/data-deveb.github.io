@@ -19,8 +19,11 @@ html:not(.intro){
   -o-background-size: cover;
   background-size: cover;
 }
-header{
+header, footer{
   padding:0 20px;
+}
+footer{
+  position:absolute; bottom:0; z-index:999;
 }
 
 [data-menü~="sağ-kaval"]{
@@ -55,7 +58,15 @@ header{
   background-color: #13672f;
   color:#fff;
 }
-@media screen and (max-width:576px) {
+.logo{
+
+}
+  .logo img{}
+@media screen and (max-width:575.9px) {
+.logo{
+    width: 40%;
+}
+  .logo img{}
 label[for*="menü-ana"]{
   background: black;
   align-self: center;
@@ -70,7 +81,7 @@ label[for*="menü-ana"]{
   top: 0;
   right: 0;
   z-index: 998;
-
+  padding: 0 6% !important;
   background: url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
   overflow-y: scroll;
   flex-wrap: nowrap !important;
@@ -84,6 +95,8 @@ label[for*="menü-ana"]{
   height: 100%;
   position: fixed;
   width: 100%;
+  left:0;
+  right:0;
 }
 [data-menü~="sağ-kaval"] li a.baş,
 [data-menü~="sağ-kaval"] li a.baş:hover{
@@ -92,6 +105,7 @@ label[for*="menü-ana"]{
 [data-menü~="sağ-kaval"] li{
   width: 100%;
   z-index: 1002;
+  flex-shrink: 0;
 }
 [data-menü~="sağ-kaval"] li a{
   display: flex;
