@@ -20,11 +20,14 @@
 }
 html:not(.intro){
   background-color: #ddd;
-  background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  /*background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+  */
+  background: url('/temalar/sosero/assets/img/arkaplan-a.png') no-repeat top, url('/temalar/sosero/assets/img/arkaplan-b.png') no-repeat right bottom, url('/temalar/sosero/assets/img/arkaplan-c.png') no-repeat bottom, url('/temalar/sosero/assets/img/arkaplan-d.png') no-repeat left,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+
+  -webkit-background-size:  auto, auto, auto, auto, cover;
+  -moz-background-size: auto, auto, auto, auto, cover;
+  -o-background-size: auto, auto, auto, auto, cover;
+  background-size: auto, auto, auto, auto, cover;
 }
 header, footer{
   padding:0 20px;
@@ -204,7 +207,7 @@ margin-bottom: 15px;
   border:2px solid green;
 }
 .intro{
-  background: url('/temalar/sosero/assets/img/giri_ap.png') no-repeat center bottom fixed,url('/temalar/sosero/assets/img/giri_ap.jpg') no-repeat center center fixed;
+  background: url('/temalar/sosero/assets/img/giri_ap.png') no-repeat center bottom fixed,url('/temalar/sosero/assets/img/giri_ap.jpg') no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
