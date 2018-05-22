@@ -6,6 +6,13 @@
 
 }
 .paketler{
+  background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed;
+  background-size: auto auto;
+  background-size: auto auto, auto auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: rgba(55,138,0,.8);
 }
 .gelgit-etkin{
@@ -62,7 +69,7 @@ footer{
 
 }
   .logo img{}
-@media screen and (max-width:575.9px) {
+@media screen and (max-width:991.9px) {
 .logo{
     width: 40%;
 }
@@ -129,6 +136,55 @@ margin-bottom: 15px;
   margin-left:10px;
 }
 }
+[data-kapaç~="çaprazlama"]:checked+label,
+[data-kapaç~="çaprazlama"]+label+label{
+  display:flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+  flex-wrap:nowrap;
+}
+[data-kapaç~="çaprazlama"]+label,
+[data-kapaç~="çaprazlama"]:checked+label+label{
+  display:none;
+}
+[data-kapaç~="çaprazlama"][data-kapaç~="gizle"]+label,
+[data-kapaç~="çaprazlama"][data-kapaç~="gizle"]+label+label{
+  display:none;
+}
+@media screen and (min-width:996px) {
+  [data-kapaç]+label,
+  [data-kapaç]+label+label,
+  [data-kapaç]:checked+label+label{
+    display: none;
+  }
+  [data-kapaç~="çaprazlama"]:checked+label,
+  [data-kapaç~="çaprazlama"]+label+label{
+    display:none;
+  }
+  [data-kapaç]:checked+label+ul,
+  [data-menü] [data-kapaç]:checked+label+label+ul,
+  [data-menü] [data-kapaç]:checked+label+label{
+    display:flex;
+  }
+  [data-menü] {
+    display: flex !important;
+    flex: 1;
+    flex-wrap:wrap;
+  }
+}
+@media screen and (max-width:995.9px){
+  [data-menü] {
+    display: none !important;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+}
+[data-kapaç]:checked + label + ul, [data-kapaç]:checked + label + label + ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100%;}
 
 
 .tam{
@@ -230,6 +286,7 @@ article:nth-child(odd) .product-content-alt{
 .product-card .product-img{
   width:100%;
     margin-bottom: -30px;
+  min-height: 300px;
 }
 .product-card .product-img img{
   min-width: 100%;
@@ -247,12 +304,22 @@ article:nth-child(odd) .product-content-alt{
   color:#000;
 }
 .product-card .product-info p,
-.product-card .product-info h2{
+.product-card .product-info h2,
+.product-card .product-info .open-it{
   color:#000;
+  border-color:#000;
+}
+.paket .product-card:hover .product-info p,
+.paket .product-card:hover .product-info h2,
+.paket .product-card:hover .product-info .open-it{
+  color: #000;
+  border-color: #000;
 }
 .product-card:hover .product-info p,
-.product-card:hover .product-info h2{
+.product-card:hover .product-info h2,
+.product-card:hover .product-info .open-it{
   color:#fff;
+  border-color:#fff;
 }
 .product-card .product-info p{
   margin:0;
@@ -547,6 +614,7 @@ article:nth-child(odd) .product-content-alt{
 /* Dots */
 .slick-dotted.slick-slider
 {
+
 }
 
 .slick-dots
@@ -646,21 +714,25 @@ article:nth-child(odd) .product-content-alt{
   border:1px solid #146830;
   margin-left:auto;
   margin-top: 30px;
+  align-self: center;
 }
 .slick-next{
   order: 3;
   border:1px solid #146830;
   margin-right: auto;
   margin-top: 30px;
+  align-self: center;
 }
 .yemek .slick-prev{
   order: 2;
   margin-left:0;
   margin:0;
+
 }
 .yemek .slick-next{
   order: 2;
   margin:0;
+
 }
 .yemek .slick-dots{
 flex: 1 1 0;
