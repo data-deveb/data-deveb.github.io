@@ -69,13 +69,13 @@ footer{
   color:#fff;
 }
 .logo{
-
+  width:182px;
+  margin-right: 50px;
 }
   .logo img{}
 @media screen and (max-width:991.9px) {
 .logo{
-  max-width: 40%;
-  margin-right: 50px;
+
 }
   .logo img{}
 label[for*="menü-ana"]{
