@@ -74,7 +74,8 @@ footer{
   .logo img{}
 @media screen and (max-width:991.9px) {
 .logo{
-    width: 40%;
+  max-width: 40%;
+  margin-right: 50px;
 }
   .logo img{}
 label[for*="menü-ana"]{
@@ -240,6 +241,10 @@ margin-bottom: 15px;
   color:#13672f;
   margin-top:30px;
 }
+.product{
+   color:#fff;
+   display:Flex !important;
+}
 .product-detail{
   text-align: center;
   border-collapse:collapse;border-spacing:0;
@@ -261,21 +266,28 @@ margin-bottom: 15px;
   font-size:1.4em;
   margin:0;
 }
-article:nth-child(odd) .product-content-alt{
+.product:nth-child(odd){
   text-align: right;
 }
+.product:nth-child(even) .kesme{
+  display:none;
+}
+
 .product-content-alt .date{
   font-size:12px;
   width:100%;
 }
 .product-content-alt h1{
   margin:0;
-  font-size:18px;
+  font-size:20px;
   font-weight: bold;
   line-height: 1.8;
+  color:rgb(255,228,0);
 }
 .product-content-alt{
   font-size:13px;
+  padding:20px;
+   background-color:rgba(55,138,0,.9);
 }
 .product-card{
   display:flex !important;
