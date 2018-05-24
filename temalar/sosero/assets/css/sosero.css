@@ -270,9 +270,11 @@ margin-bottom: 15px;
 .product:nth-child(odd){
   text-align: right;
 }
+.product:last-child .kesme,
 .product:nth-child(even) .kesme{
   display:none;
 }
+
 
 .product-content-alt .date{
   font-size:12px;
@@ -561,7 +563,7 @@ margin-bottom: 15px;
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: #fff;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,

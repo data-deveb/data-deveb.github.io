@@ -55,8 +55,12 @@ $('.regular').slick({
   slidesToShow: 1,
   slidesToScroll: 1
   });
-
-  $('.regularx2').slick({
+  // HABERLER slick fix
+          if ($('div.news-slider > article').length % 2 != 0) {
+              $('div.news-slider').append('<article></article>');
+              $('div.news-slider > article').eq(-2).find('.kesit').remove();
+          }
+  $('.news-slider').slick({
   dots: true,
   infinite: false,
   speed: 300,
