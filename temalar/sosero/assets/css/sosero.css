@@ -242,7 +242,7 @@ margin-bottom: 15px;
   color:#13672f;
   margin-top:30px;
 }
-.product{
+.product, .product a{
    color:#fff;
    display:Flex !important;
 }
