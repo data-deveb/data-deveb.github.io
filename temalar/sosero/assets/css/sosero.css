@@ -206,6 +206,7 @@ margin-bottom: 15px;
   width:0;
   height: 100%;
   border:2px solid green;
+  margin-right: -2px;
 }
 .intro{
   background: url('/temalar/sosero/assets/img/giri_ap.png') no-repeat center bottom fixed,url('/temalar/sosero/assets/img/giri_ap.jpg') no-repeat center center fixed; */
