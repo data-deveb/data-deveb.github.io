@@ -308,6 +308,7 @@ margin-bottom: 15px;
   width:100%;
   /*max-height: 400px;*/
   outline: none;
+  align-content: center;
 }
 
 .product-card .product-img{
@@ -481,6 +482,9 @@ margin-bottom: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.regular .slick-track{
+  height:100%;
 }
 .slick-track:before,
 .slick-track:after
