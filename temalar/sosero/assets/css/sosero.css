@@ -31,6 +31,7 @@ html:not(.intro){
 }
 header, footer{
   padding:0 20px;
+  flex-shrink: 20;
 }
 footer{
   position:absolute; bottom:0; z-index:999;
@@ -72,7 +73,15 @@ footer{
   width:182px;
   margin-right: 50px;
 }
+.intro .logo{
+  margin-right: 0;
+}
   .logo img{}
+.intro-text{
+  color:#fff;
+  font-size:28px;
+  font-weight: bold;
+}
 @media screen and (max-width:991.9px) {
 .logo{
 
@@ -294,7 +303,7 @@ margin-bottom: 15px;
 }
 .product-card{
   display:flex !important;
-  padding: 20px;
+  padding: 0 20px;
   flex-wrap: wrap;
   width:100%;
   /*max-height: 400px;*/
@@ -303,13 +312,19 @@ margin-bottom: 15px;
 
 .product-card .product-img{
   width:100%;
-    margin-bottom: -30px;
-  min-height: 300px;
+  padding-top: 100%;
+  position: relative;
 }
 .product-card .product-img img{
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
 }
 .product-card .product-info{
   background-color: #ffc900;
@@ -433,6 +448,9 @@ margin-bottom: 15px;
 
     margin: 0;
     padding: 0;
+}
+.regular .slick-list{
+  height: calc(100% - 116px);
 }
 .slick-list:focus
 {
@@ -641,7 +659,7 @@ margin-bottom: 15px;
     display: block;
 
     width: 100%;
-    padding: 0;
+    padding: 20px;
     margin: 0;
 
     list-style: none;
@@ -731,14 +749,12 @@ margin-bottom: 15px;
   order: 3;
   border:1px solid #146830;
   margin-left:auto;
-  margin-top: 30px;
   align-self: center;
 }
 .slick-next{
   order: 3;
   border:1px solid #146830;
   margin-right: auto;
-  margin-top: 30px;
   align-self: center;
 }
 .yemek .slick-prev{
