@@ -660,8 +660,6 @@ margin-bottom: 15px;
 .slick-dots
 {
 
-    display: block;
-
     width: 100%;
     padding: 20px;
     margin: 0;
@@ -669,6 +667,10 @@ margin-bottom: 15px;
     list-style: none;
 
     text-align: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .slick-dots li
 {
