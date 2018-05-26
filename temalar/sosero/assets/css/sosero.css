@@ -217,6 +217,15 @@ margin-bottom: 15px;
   height: 100%;
   border:2px solid green;
   margin-right: -2px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.kesit::before,.kesit::after{
+  content:'';
+  border:4px solid #c70000;
+  border-radius: 50%;
+  margin-left:-4px;
 }
 .intro{
   background: url('/temalar/sosero/assets/img/giri_ap.png') no-repeat center bottom fixed,url('/temalar/sosero/assets/img/giri_ap.jpg') no-repeat center center fixed; */
@@ -291,8 +300,18 @@ margin-bottom: 15px;
   margin-bottom:25px;
   margin-top:20px;
 }
-
-
+.product.full-detail .content{
+  padding:30px;
+  text-align:left;
+  background-color:rgba(55,138,0,.9); color:#fff;
+}
+.product.full-detail .content h1{
+  color:#ffe400;
+  margin-top: 0;
+}
+.product.full-detail .content *:last-child{
+  padding-bottom: 20px;
+}
 .product-content-alt .date{
   font-size:12px;
   width:100%;
