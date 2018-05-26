@@ -84,7 +84,8 @@ footer{
 }
 @media screen and (max-width:991.9px) {
 .logo{
-
+  width:40%;
+  margin-right: 10%;
 }
   .logo img{}
 label[for*="menü-ana"]{
@@ -263,6 +264,7 @@ margin-bottom: 15px;
   border:1px solid rgba(0,0,0,.3);
   background-color: #fff;
   width:25%;
+  color:#222;
 }
 .product-detail th{
   background-color:#c70000;
@@ -282,6 +284,12 @@ margin-bottom: 15px;
 .product:last-child .kesme,
 .product:nth-child(even) .kesme{
   display:none;
+}
+
+.product.detail{
+  text-align:left;
+  margin-bottom:25px;
+  margin-top:20px;
 }
 
 
@@ -661,7 +669,7 @@ margin-bottom: 15px;
 {
 
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
 
     list-style: none;
