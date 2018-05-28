@@ -102,7 +102,7 @@ label[for*="menü-ana"]{
   top: 0;
   right: 0;
   z-index: 998;
-  padding: 0 6% !important;
+  padding: 0 20px !important;
   background: url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
   overflow-y: scroll;
   flex-wrap: nowrap !important;
@@ -194,6 +194,39 @@ margin-bottom: 15px;
     flex: 1;
     flex-wrap: wrap;
   }
+  [data-menü~="sağ-kaval"]{
+    opacity: 0;
+
+    display: block !important;
+    z-index: -1000;
+    left:-1000px;
+    transition: all ease 0.6s;
+    width:0%;
+
+  }
+  [data-kapaç]:checked ~ [data-menü~="sağ-kaval"]{
+    display: flex;
+    opacity: 1;
+
+    z-index: 1000;
+    left:0;
+    top:0;
+    width:100%;
+    transition: all ease 0.6s;
+    animation:   menemen .6s ease-in-out;
+    bottom:0;
+  }
+  input[id="menü-ana-çapraz"]:not(:checked) + label + label {
+    display: none;
+  }
+  /* Standard syntax */
+@keyframes menemen {
+    0%   {left: 0; }
+    1%{left: -110%; }
+    25%  {left: 10%; }
+    75%  {left: -60%; }
+    100% {left: 0;}
+}
 }
 [data-kapaç]:checked + label + ul, [data-kapaç]:checked + label + label + ul {
     display: flex !important;
