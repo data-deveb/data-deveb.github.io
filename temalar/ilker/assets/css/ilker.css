@@ -10,6 +10,12 @@
 
 }
 
+footer{
+  padding-top:30px;
+  padding-bottom:30px;
+  border-top:2px solid #626dd4;
+}
+
 
 
 [data-menü~="yatay"][data-menü~="basit"]{
@@ -54,5 +60,15 @@ label[for="menü-0by"]{
 .alan{
   background-color:#626dd4;
   background: linear-gradient(to bottom,#626dd4,#5d3bb4);
-  padding:20px 0;
+  padding:120px 0;
+
+  font-size:40px;
+  color:#fff;
+}
+.alan > div{
+    justify-content:center;
+}
+.alan > div > p{
+  text-align: center;
+  font-size:14px;
 }
