@@ -67,6 +67,7 @@ label[for="menü-0by"]{
 }
 .alan > div{
     justify-content:center;
+    text-align: center;
 }
 .alan > div > p{
   text-align: center;
