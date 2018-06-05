@@ -1,0 +1,1013 @@
+
+@mixin parça-düzeni($ekran){
+  [data-#{$ekran}~="1"][data-#{$ekran}~="24p"] {width: 4.1666666667%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="23p"] {width: 4.347826087%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="22p"] {width: 4.5454545455%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="21p"] {width: 4.7619047619%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="19p"] {width: 5.2631578947%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="20p"] {width: 5%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="18p"] {width: 5.5555555556%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="17p"] {width: 5.8823529412%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="16p"] {width: 6.25%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="15p"] {width: 6.6666666667%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="14p"] {width: 7.1428571429%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="13p"] {width: 7.6923076923%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="24p"] {width: 8.3333333333%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="23p"] {width: 8.6956521739%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="22p"] {width: 9.0909090909%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="21p"] {width: 9.5238095238%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="20p"] {width: 10%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="19p"] {width: 10.5263157895%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="18p"] {width: 11.1111111111%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="17p"] {width: 11.7647058824%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="8p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="16p"],
+  [data-#{$ekran}~="3"][data-#{$ekran}~="24p"] {width: 12.5%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="15p"] {width: 13.3333333333%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="23p"] {width: 13.0434782609%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="22p"] {width: 13.6363636364%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="7p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="14p"],
+  [data-#{$ekran}~="3"][data-#{$ekran}~="21p"] {width: 14.2857142857%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="20p"] {width: 15%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="13p"] {width: 15.3846153846%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="19p"] {width: 15.7894736842%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="6p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="3"][data-#{$ekran}~="18p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="24p"] {width: 16.6666666667%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="23p"] {width: 17.3913043478%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="17p"] {width: 17.6470588235%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="11p"]
+  [data-#{$ekran}~="4"][data-#{$ekran}~="22p"] {width: 18.1818181818%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="16p"] {width: 18.75%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="21p"] {width: 19.0476190476%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="5p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="3"][data-#{$ekran}~="15p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="20p"] {width: 20%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="24p"] {width: 20.8333333333%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="19p"] {width: 21.0526315789%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="14p"] {width: 21.4285714286%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="23p"] {width: 21.7391304348%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="18p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="9p"] {width: 22.2222222222%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="22p"] {width: 22.7272727273%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="13p"] {width: 23.0769230769%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="17p"] {width: 23.5294117647%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="21p"] {width: 23.8095238095%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="4p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="8p"],
+  [data-#{$ekran}~="3"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="16p"],
+  [data-#{$ekran}~="5"][data-#{$ekran}~="20p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="24p"] {width: 25%;}
+  [data-#{$ekran}~="6"][data-#{$ekran}~="23p"] {width: 26.0869565217%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="19p"] {width: 26.3157894737%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="15p"] {width: 26.6666666667%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="22p"] {width: 27.2727272727%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="18p"] {width: 27.7777777778%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="7p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="14p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="21p"] {width: 28.5714285714%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="24p"] {width: 29.1666666667%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="17p"] {width: 29.4117647059%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="20p"] {width: 30%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="23p"] {width: 30.4347826087%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="13p"] {width: 30.7692307692%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="16p"] {width: 31.25%;}
+  [data-#{$ekran}~="6"][data-#{$ekran}~="19p"] {width: 31.5789473684%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="22p"] {width: 31.8181818182%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="3p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="6p"],
+  [data-#{$ekran}~="3"][data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="5"][data-#{$ekran}~="15p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="18p"],
+  [data-#{$ekran}~="7"][data-#{$ekran}~="21p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="24p"] {width: 33.3333333333%;}
+  [data-#{$ekran}~="8"][data-#{$ekran}~="23p"] {width: 34.7826086957%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="20p"] {width: 35%;}
+  [data-#{$ekran}~="6"][data-#{$ekran}~="17p"] {width: 35.2941176471%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="14p"] {width: 35.7142857143%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="22p"] {width: 36.3636363636%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="19p"] {width: 36.8421052632%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="8p"]
+  [data-#{$ekran}~="6"][data-#{$ekran}~="16p"]
+  [data-#{$ekran}~="9"][data-#{$ekran}~="24p"] {width: 37.5%;}
+  [data-#{$ekran}~="8"][data-#{$ekran}~="21p"] {width: 38.0952380952%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="13p"] {width: 38.4615384615%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="18p"] {width: 38.8888888889%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="23p"] {width: 39.1304347826%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="5p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="15p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="20p"] {width: 40%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="22p"] {width: 40.9090909091%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="17p"] {width: 41.1764705882%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="24p"] {width: 41.6666666667%;}
+  [data-#{$ekran}~="8"][data-#{$ekran}~="19p"] {width: 42.1052631579%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="7p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="14p"],
+  [data-#{$ekran}~="9"][data-#{$ekran}~="21p"] {width: 42.8571428571%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="16p"] {width: 43.75%;}
+  [data-#{$ekran}~="10"][data-#{$ekran}~="23p"] {width: 43.4782608696%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="18p"] {width: 44.4444444444%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="20p"] {width: 45%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="22p"] {width: 45.4545454545%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="24p"] {width: 45.8333333333%;}
+  [data-#{$ekran}~="6"][data-#{$ekran}~="13p"] {width: 46.1538461538%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="15p"] {width: 46.6666666667%;}
+  [data-#{$ekran}~="8"][data-#{$ekran}~="17p"] {width: 47.0588235294%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="19p"] {width: 47.3684210526%;}
+  [data-#{$ekran}~="10"][data-#{$ekran}~="21p"] {width: 47.619047619%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="23p"] {width: 47.8260869565%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="2p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="4p"],
+  [data-#{$ekran}~="3"][data-#{$ekran}~="6p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="8p"],
+  [data-#{$ekran}~="5"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="7"][data-#{$ekran}~="14p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="16p"],
+  [data-#{$ekran}~="9"][data-#{$ekran}~="18p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="20p"],
+  [data-#{$ekran}~="11"][data-#{$ekran}~="22p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="24p"] {width: 50%;}
+  [data-#{$ekran}~="12"][data-#{$ekran}~="23p"] {width: 52.1739130435%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="21p"] {width: 52.380952381%;}
+  [data-#{$ekran}~="10"][data-#{$ekran}~="19p"] {width: 52.6315789474%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="17p"] {width: 52.9411764706%;}
+  [data-#{$ekran}~="8"][data-#{$ekran}~="15p"] {width: 53.3333333333%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="13p"] {width: 53.8461538462%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="24p"] {width: 54.1666666667%;}
+  [data-#{$ekran}~="6"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="22p"] {width: 54.5454545455%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="20p"] {width: 55%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="18p"] {width: 55.5555555556%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="16p"] {width: 56.25%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="23p"] {width: 56.5217391304%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="19p"] {width: 57.8947368421%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="14"][data-#{$ekran}~="24p"] {width: 58.3333333333%;}
+  [data-#{$ekran}~="10"][data-#{$ekran}~="17p"] {width: 58.8235294118%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="22p"] {width: 59.0909090909%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="5p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="9"][data-#{$ekran}~="15p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="20p"] {width: 60%;}
+  [data-#{$ekran}~="14"][data-#{$ekran}~="23p"] {width: 60.8695652174%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="18p"] {width: 61.1111111111%;}
+  [data-#{$ekran}~="8"][data-#{$ekran}~="13p"] {width: 61.5384615385%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="21p"] {width: 61.9047619048%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="8p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="16p"],
+  [data-#{$ekran}~="15"][data-#{$ekran}~="24p"] {width: 62.5%;}
+  [data-#{$ekran}~="12"][data-#{$ekran}~="19p"] {width: 63.1578947368%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="14"][data-#{$ekran}~="22p"] {width: 63.6363636364%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="14p"] {width: 64.2857142857%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="17p"] {width: 64.7058823529%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="20p"] {width: 65%;}
+  [data-#{$ekran}~="15"][data-#{$ekran}~="23p"] {width: 65.2173913043%;}
+  [data-#{$ekran}~="2"][data-#{$ekran}~="3p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="6p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="15p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="18p"],
+  [data-#{$ekran}~="14"][data-#{$ekran}~="21p"],
+  [data-#{$ekran}~="16"][data-#{$ekran}~="24p"] {width: 66.6666666667%;}
+  [data-#{$ekran}~="15"][data-#{$ekran}~="22p"] {width: 68.1818181818%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="19p"] {width: 68.4210526316%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="16p"] {width: 68.75%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="13p"] {width: 69.2307692308%;}
+  [data-#{$ekran}~="16"][data-#{$ekran}~="23p"] {width: 69.5652173913%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="10p"]
+  [data-#{$ekran}~="14"][data-#{$ekran}~="20p"] {width: 70%;}
+  [data-#{$ekran}~="12"][data-#{$ekran}~="17p"] {width: 70.5882352941%;}
+  [data-#{$ekran}~="17"][data-#{$ekran}~="24p"] {width: 70.8333333333%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="7p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="14p"],
+  [data-#{$ekran}~="15"][data-#{$ekran}~="21p"] {width: 71.4285714286%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="18p"] {width: 72.2222222222%;}
+  [data-#{$ekran}~="8"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="16"][data-#{$ekran}~="22p"] {width: 72.7272727273%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="15p"] {width: 73.3333333333%;}
+  [data-#{$ekran}~="14"][data-#{$ekran}~="19p"] {width: 73.6842105263%;}
+  [data-#{$ekran}~="17"][data-#{$ekran}~="23p"] {width: 73.9130434783%;}
+  [data-#{$ekran}~="3"][data-#{$ekran}~="4p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="8p"],
+  [data-#{$ekran}~="9"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="16p"],
+  [data-#{$ekran}~="15"][data-#{$ekran}~="20p"],
+  [data-#{$ekran}~="18"][data-#{$ekran}~="24p"] {width: 75%;}
+  [data-#{$ekran}~="12"][data-#{$ekran}~="13p"] {width: 92.3076923077%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="7p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="14p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="21p"] {width: 57.1428571429%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="14p"] {width: 92.8571428571%;}
+  [data-#{$ekran}~="16"][data-#{$ekran}~="21p"] {width: 76.1904761905%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="17p"] {width: 76.4705882353%;}
+  [data-#{$ekran}~="10"][data-#{$ekran}~="13p"] {width: 76.9230769231%;}
+  [data-#{$ekran}~="17"][data-#{$ekran}~="22p"] {width: 77.2727272727%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="14"][data-#{$ekran}~="18p"] {width: 77.7777777778%;}
+  [data-#{$ekran}~="18"][data-#{$ekran}~="23p"] {width: 78.2608695652%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="14p"] {width: 78.5714285714%;}
+  [data-#{$ekran}~="15"][data-#{$ekran}~="19p"] {width: 78.9473684211%;}
+  [data-#{$ekran}~="19"][data-#{$ekran}~="24p"] {width: 79.1666666667%;}
+  [data-#{$ekran}~="4"][data-#{$ekran}~="5p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="15p"],
+  [data-#{$ekran}~="16"][data-#{$ekran}~="20p"] {width: 80%;}
+  [data-#{$ekran}~="17"][data-#{$ekran}~="21p"] {width: 80.9523809524%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="16p"] {width: 81.25%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="18"][data-#{$ekran}~="22p"] {width: 81.8181818182%;}
+  [data-#{$ekran}~="14"][data-#{$ekran}~="17p"] {width: 82.3529411765%;}
+  [data-#{$ekran}~="19"][data-#{$ekran}~="23p"] {width: 82.6086956522%;}
+  [data-#{$ekran}~="5"][data-#{$ekran}~="6p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="15"][data-#{$ekran}~="18p"],
+  [data-#{$ekran}~="20"][data-#{$ekran}~="24p"] {width: 83.3333333333%;}
+  [data-#{$ekran}~="16"][data-#{$ekran}~="19p"] {width: 84.2105263158%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="13p"] {width: 84.6153846154%;}
+  [data-#{$ekran}~="17"][data-#{$ekran}~="20p"] {width: 85%;}
+  [data-#{$ekran}~="6"][data-#{$ekran}~="7p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="14p"],
+  [data-#{$ekran}~="18"][data-#{$ekran}~="21p"] {width: 85.7142857143%;}
+  [data-#{$ekran}~="19"][data-#{$ekran}~="22p"] {width: 86.3636363636%;}
+  [data-#{$ekran}~="13"][data-#{$ekran}~="15p"] {width: 86.6666666667%;}
+  [data-#{$ekran}~="20"][data-#{$ekran}~="23p"] {width: 86.9565217391%;}
+  [data-#{$ekran}~="7"][data-#{$ekran}~="8p"],
+  [data-#{$ekran}~="14"][data-#{$ekran}~="16p"],
+  [data-#{$ekran}~="21"][data-#{$ekran}~="24p"] {width: 87.5%;}
+  [data-#{$ekran}~="15"][data-#{$ekran}~="17p"] {width: 88.2352941176%;}
+  [data-#{$ekran}~="8"][data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="16"][data-#{$ekran}~="18p"] {width: 88.8888888889%;}
+  [data-#{$ekran}~="17"][data-#{$ekran}~="19p"] {width: 89.4736842105%;}
+  [data-#{$ekran}~="9"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="18"][data-#{$ekran}~="20p"] {width: 90%;}
+  [data-#{$ekran}~="19"][data-#{$ekran}~="21p"] {width: 90.4761904762%;}
+  [data-#{$ekran}~="10"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="20"][data-#{$ekran}~="22p"] {width: 90.9090909091%;}
+  [data-#{$ekran}~="21"][data-#{$ekran}~="23p"] {width: 91.3043478261%;}
+  [data-#{$ekran}~="11"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="22"][data-#{$ekran}~="24p"] {width: 91.6666666667%;}
+  [data-#{$ekran}~="14"][data-#{$ekran}~="15p"] {width: 93.3333333333%;}
+  [data-#{$ekran}~="15"][data-#{$ekran}~="16p"] {width: 93.75%;}
+  [data-#{$ekran}~="16"][data-#{$ekran}~="17p"] {width: 94.1176470588%;}
+  [data-#{$ekran}~="17"][data-#{$ekran}~="18p"] {width: 94.4444444444%;}
+  [data-#{$ekran}~="18"][data-#{$ekran}~="19p"] {width: 94.7368421053%;}
+  [data-#{$ekran}~="19"][data-#{$ekran}~="20p"] {width: 95%;}
+  [data-#{$ekran}~="20"][data-#{$ekran}~="21p"] {width: 95.2380952381%;}
+  [data-#{$ekran}~="21"][data-#{$ekran}~="22p"] {width: 95.4545454545%;}
+  [data-#{$ekran}~="22"][data-#{$ekran}~="23p"] {width: 95.652173913%;}
+  [data-#{$ekran}~="1"][data-#{$ekran}~="1p"],
+  [data-#{$ekran}~="2"][data-#{$ekran}~="2p"],
+  [data-#{$ekran}~="3"][data-#{$ekran}~="3p"],
+  [data-#{$ekran}~="4"][data-#{$ekran}~="4p"],
+  [data-#{$ekran}~="5"][data-#{$ekran}~="5p"],
+  [data-#{$ekran}~="6"][data-#{$ekran}~="6p"],
+  [data-#{$ekran}~="7"][data-#{$ekran}~="7p"],
+  [data-#{$ekran}~="8"][data-#{$ekran}~="8p"],
+  [data-#{$ekran}~="9"][data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="10"][data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="11"][data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="12"][data-#{$ekran}~="12p"],
+  [data-#{$ekran}~="13"][data-#{$ekran}~="13p"],
+  [data-#{$ekran}~="14"][data-#{$ekran}~="14p"],
+  [data-#{$ekran}~="15"][data-#{$ekran}~="15p"],
+  [data-#{$ekran}~="16"][data-#{$ekran}~="16p"],
+  [data-#{$ekran}~="17"][data-#{$ekran}~="17p"],
+  [data-#{$ekran}~="18"][data-#{$ekran}~="18p"],
+  [data-#{$ekran}~="19"][data-#{$ekran}~="19p"],
+  [data-#{$ekran}~="20"][data-#{$ekran}~="20p"],
+  [data-#{$ekran}~="21"][data-#{$ekran}~="21p"],
+  [data-#{$ekran}~="22"][data-#{$ekran}~="22p"],
+  [data-#{$ekran}~="23"][data-#{$ekran}~="23p"],
+  [data-#{$ekran}~="24"][data-#{$ekran}~="24p"] {width: 100%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="24p-aralık"] {margin-right: 4.1666666667%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="23p-aralık"] {margin-right: 4.347826087%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="22p-aralık"] {margin-right: 4.5454545455%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="21p-aralık"] {margin-right: 4.7619047619%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="19p-aralık"] {margin-right: 5.2631578947%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="20p-aralık"] {margin-right: 5%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="18p-aralık"] {margin-right: 5.5555555556%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="17p-aralık"] {margin-right: 5.8823529412%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="16p-aralık"] {margin-right: 6.25%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="15p-aralık"] {margin-right: 6.6666666667%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="14p-aralık"] {margin-right: 7.1428571429%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="13p-aralık"] {margin-right: 7.6923076923%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="24p-aralık"] {margin-right: 8.3333333333%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="23p-aralık"] {margin-right: 8.6956521739%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="22p-aralık"] {margin-right: 9.0909090909%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="21p-aralık"] {margin-right: 9.5238095238%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="20p-aralık"] {margin-right: 10%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="19p-aralık"] {margin-right: 10.5263157895%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="18p-aralık"] {margin-right: 11.1111111111%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="17p-aralık"] {margin-right: 11.7647058824%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="24p-aralık"] {margin-right: 12.5%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="15p-aralık"] {margin-right: 13.3333333333%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="23p-aralık"] {margin-right: 13.0434782609%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="22p-aralık"] {margin-right: 13.6363636364%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="21p-aralık"] {margin-right: 14.2857142857%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="20p-aralık"] {margin-right: 15%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="13p-aralık"] {margin-right: 15.3846153846%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="19p-aralık"] {margin-right: 15.7894736842%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="24p-aralık"] {margin-right: 16.6666666667%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="23p-aralık"] {margin-right: 17.3913043478%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="17p-aralık"] {margin-right: 17.6470588235%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="11p-aralık"]
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="22p-aralık"] {margin-right: 18.1818181818%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="16p-aralık"] {margin-right: 18.75%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="21p-aralık"] {margin-right: 19.0476190476%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="20p-aralık"] {margin-right: 20%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="24p-aralık"] {margin-right: 20.8333333333%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="19p-aralık"] {margin-right: 21.0526315789%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="14p-aralık"] {margin-right: 21.4285714286%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="23p-aralık"] {margin-right: 21.7391304348%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="9p-aralık"] {margin-right: 22.2222222222%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="22p-aralık"] {margin-right: 22.7272727273%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="13p-aralık"] {margin-right: 23.0769230769%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="17p-aralık"] {margin-right: 23.5294117647%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="21p-aralık"] {margin-right: 23.8095238095%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="4p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="20p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="24p-aralık"] {margin-right: 25%;}
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="23p-aralık"] {margin-right: 26.0869565217%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="19p-aralık"] {margin-right: 26.3157894737%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="15p-aralık"] {margin-right: 26.6666666667%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="22p-aralık"] {margin-right: 27.2727272727%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="18p-aralık"] {margin-right: 27.7777777778%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="21p-aralık"] {margin-right: 28.5714285714%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="24p-aralık"] {margin-right: 29.1666666667%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="17p-aralık"] {margin-right: 29.4117647059%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="20p-aralık"] {margin-right: 30%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="23p-aralık"] {margin-right: 30.4347826087%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="13p-aralık"] {margin-right: 30.7692307692%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="16p-aralık"] {margin-right: 31.25%;}
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="19p-aralık"] {margin-right: 31.5789473684%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="22p-aralık"] {margin-right: 31.8181818182%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="3p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="21p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="24p-aralık"] {margin-right: 33.3333333333%;}
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="23p-aralık"] {margin-right: 34.7826086957%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="20p-aralık"] {margin-right: 35%;}
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="17p-aralık"] {margin-right: 35.2941176471%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="14p-aralık"] {margin-right: 35.7142857143%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="22p-aralık"] {margin-right: 36.3636363636%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="19p-aralık"] {margin-right: 36.8421052632%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="8p-aralık"]
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="16p-aralık"]
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="24p-aralık"] {margin-right: 37.5%;}
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="21p-aralık"] {margin-right: 38.0952380952%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="13p-aralık"] {margin-right: 38.4615384615%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="18p-aralık"] {margin-right: 38.8888888889%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="23p-aralık"] {margin-right: 39.1304347826%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="20p-aralık"] {margin-right: 40%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="22p-aralık"] {margin-right: 40.9090909091%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="17p-aralık"] {margin-right: 41.1764705882%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="24p-aralık"] {margin-right: 41.6666666667%;}
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="19p-aralık"] {margin-right: 42.1052631579%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="21p-aralık"] {margin-right: 42.8571428571%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="16p-aralık"] {margin-right: 43.75%;}
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="23p-aralık"] {margin-right: 43.4782608696%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="18p-aralık"] {margin-right: 44.4444444444%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="20p-aralık"] {margin-right: 45%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="22p-aralık"] {margin-right: 45.4545454545%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="24p-aralık"] {margin-right: 45.8333333333%;}
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="13p-aralık"] {margin-right: 46.1538461538%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="15p-aralık"] {margin-right: 46.6666666667%;}
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="17p-aralık"] {margin-right: 47.0588235294%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="19p-aralık"] {margin-right: 47.3684210526%;}
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="21p-aralık"] {margin-right: 47.619047619%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="23p-aralık"] {margin-right: 47.8260869565%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="2p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="4p-aralık"],
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="20p-aralık"],
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="22p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="24p-aralık"] {margin-right: 50%;}
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="23p-aralık"] {margin-right: 52.1739130435%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="21p-aralık"] {margin-right: 52.380952381%;}
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="19p-aralık"] {margin-right: 52.6315789474%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="17p-aralık"] {margin-right: 52.9411764706%;}
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="15p-aralık"] {margin-right: 53.3333333333%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="13p-aralık"] {margin-right: 53.8461538462%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="24p-aralık"] {margin-right: 54.1666666667%;}
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="22p-aralık"] {margin-right: 54.5454545455%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="20p-aralık"] {margin-right: 55%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="18p-aralık"] {margin-right: 55.5555555556%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="16p-aralık"] {margin-right: 56.25%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="23p-aralık"] {margin-right: 56.5217391304%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="19p-aralık"] {margin-right: 57.8947368421%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="24p-aralık"] {margin-right: 58.3333333333%;}
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="17p-aralık"] {margin-right: 58.8235294118%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="22p-aralık"] {margin-right: 59.0909090909%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="20p-aralık"] {margin-right: 60%;}
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="23p-aralık"] {margin-right: 60.8695652174%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="18p-aralık"] {margin-right: 61.1111111111%;}
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="13p-aralık"] {margin-right: 61.5384615385%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="21p-aralık"] {margin-right: 61.9047619048%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="24p-aralık"] {margin-right: 62.5%;}
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="19p-aralık"] {margin-right: 63.1578947368%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="22p-aralık"] {margin-right: 63.6363636364%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="14p-aralık"] {margin-right: 64.2857142857%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="17p-aralık"] {margin-right: 64.7058823529%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="20p-aralık"] {margin-right: 65%;}
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="23p-aralık"] {margin-right: 65.2173913043%;}
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="3p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="21p-aralık"],
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="24p-aralık"] {margin-right: 66.6666666667%;}
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="22p-aralık"] {margin-right: 68.1818181818%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="19p-aralık"] {margin-right: 68.4210526316%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="16p-aralık"] {margin-right: 68.75%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="13p-aralık"] {margin-right: 69.2307692308%;}
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="23p-aralık"] {margin-right: 69.5652173913%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="10p-aralık"]
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="20p-aralık"] {margin-right: 70%;}
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="17p-aralık"] {margin-right: 70.5882352941%;}
+  [data-#{$ekran}~="sağdan-17"][data-#{$ekran}~="24p-aralık"] {margin-right: 70.8333333333%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="21p-aralık"] {margin-right: 71.4285714286%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="18p-aralık"] {margin-right: 72.2222222222%;}
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="22p-aralık"] {margin-right: 72.7272727273%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="15p-aralık"] {margin-right: 73.3333333333%;}
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="19p-aralık"] {margin-right: 73.6842105263%;}
+  [data-#{$ekran}~="sağdan-17"][data-#{$ekran}~="23p-aralık"] {margin-right: 73.9130434783%;}
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="4p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="20p-aralık"],
+  [data-#{$ekran}~="sağdan-18"][data-#{$ekran}~="24p-aralık"] {margin-right: 75%;}
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="13p-aralık"] {margin-right: 92.3076923077%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="21p-aralık"] {margin-right: 57.1428571429%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="14p-aralık"] {margin-right: 92.8571428571%;}
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="21p-aralık"] {margin-right: 76.1904761905%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="17p-aralık"] {margin-right: 76.4705882353%;}
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="13p-aralık"] {margin-right: 76.9230769231%;}
+  [data-#{$ekran}~="sağdan-17"][data-#{$ekran}~="22p-aralık"] {margin-right: 77.2727272727%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="18p-aralık"] {margin-right: 77.7777777778%;}
+  [data-#{$ekran}~="sağdan-18"][data-#{$ekran}~="23p-aralık"] {margin-right: 78.2608695652%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="14p-aralık"] {margin-right: 78.5714285714%;}
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="19p-aralık"] {margin-right: 78.9473684211%;}
+  [data-#{$ekran}~="sağdan-19"][data-#{$ekran}~="24p-aralık"] {margin-right: 79.1666666667%;}
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="20p-aralık"] {margin-right: 80%;}
+  [data-#{$ekran}~="sağdan-17"][data-#{$ekran}~="21p-aralık"] {margin-right: 80.9523809524%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="16p-aralık"] {margin-right: 81.25%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-18"][data-#{$ekran}~="22p-aralık"] {margin-right: 81.8181818182%;}
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="17p-aralık"] {margin-right: 82.3529411765%;}
+  [data-#{$ekran}~="sağdan-19"][data-#{$ekran}~="23p-aralık"] {margin-right: 82.6086956522%;}
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="sağdan-20"][data-#{$ekran}~="24p-aralık"] {margin-right: 83.3333333333%;}
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="19p-aralık"] {margin-right: 84.2105263158%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="13p-aralık"] {margin-right: 84.6153846154%;}
+  [data-#{$ekran}~="sağdan-17"][data-#{$ekran}~="20p-aralık"] {margin-right: 85%;}
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="sağdan-18"][data-#{$ekran}~="21p-aralık"] {margin-right: 85.7142857143%;}
+  [data-#{$ekran}~="sağdan-19"][data-#{$ekran}~="22p-aralık"] {margin-right: 86.3636363636%;}
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="15p-aralık"] {margin-right: 86.6666666667%;}
+  [data-#{$ekran}~="sağdan-20"][data-#{$ekran}~="23p-aralık"] {margin-right: 86.9565217391%;}
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="sağdan-21"][data-#{$ekran}~="24p-aralık"] {margin-right: 87.5%;}
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="17p-aralık"] {margin-right: 88.2352941176%;}
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="18p-aralık"] {margin-right: 88.8888888889%;}
+  [data-#{$ekran}~="sağdan-17"][data-#{$ekran}~="19p-aralık"] {margin-right: 89.4736842105%;}
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-18"][data-#{$ekran}~="20p-aralık"] {margin-right: 90%;}
+  [data-#{$ekran}~="sağdan-19"][data-#{$ekran}~="21p-aralık"] {margin-right: 90.4761904762%;}
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-20"][data-#{$ekran}~="22p-aralık"] {margin-right: 90.9090909091%;}
+  [data-#{$ekran}~="sağdan-21"][data-#{$ekran}~="23p-aralık"] {margin-right: 91.3043478261%;}
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-22"][data-#{$ekran}~="24p-aralık"] {margin-right: 91.6666666667%;}
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="15p-aralık"] {margin-right: 93.3333333333%;}
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="16p-aralık"] {margin-right: 93.75%;}
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="17p-aralık"] {margin-right: 94.1176470588%;}
+  [data-#{$ekran}~="sağdan-17"][data-#{$ekran}~="18p-aralık"] {margin-right: 94.4444444444%;}
+  [data-#{$ekran}~="sağdan-18"][data-#{$ekran}~="19p-aralık"] {margin-right: 94.7368421053%;}
+  [data-#{$ekran}~="sağdan-19"][data-#{$ekran}~="20p-aralık"] {margin-right: 95%;}
+  [data-#{$ekran}~="sağdan-20"][data-#{$ekran}~="21p-aralık"] {margin-right: 95.2380952381%;}
+  [data-#{$ekran}~="sağdan-21"][data-#{$ekran}~="22p-aralık"] {margin-right: 95.4545454545%;}
+  [data-#{$ekran}~="sağdan-22"][data-#{$ekran}~="23p-aralık"] {margin-right: 95.652173913%;}
+  [data-#{$ekran}~="sağdan-1"][data-#{$ekran}~="1p-aralık"],
+  [data-#{$ekran}~="sağdan-2"][data-#{$ekran}~="2p-aralık"],
+  [data-#{$ekran}~="sağdan-3"][data-#{$ekran}~="3p-aralık"],
+  [data-#{$ekran}~="sağdan-4"][data-#{$ekran}~="4p-aralık"],
+  [data-#{$ekran}~="sağdan-5"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="sağdan-6"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="sağdan-7"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="sağdan-8"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="sağdan-9"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="sağdan-10"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="sağdan-11"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="sağdan-12"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="sağdan-13"][data-#{$ekran}~="13p-aralık"],
+  [data-#{$ekran}~="sağdan-14"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="sağdan-15"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="sağdan-16"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="sağdan-17"][data-#{$ekran}~="17p-aralık"],
+  [data-#{$ekran}~="sağdan-18"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="sağdan-19"][data-#{$ekran}~="19p-aralık"],
+  [data-#{$ekran}~="sağdan-20"][data-#{$ekran}~="20p-aralık"],
+  [data-#{$ekran}~="sağdan-21"][data-#{$ekran}~="21p-aralık"],
+  [data-#{$ekran}~="sağdan-22"][data-#{$ekran}~="22p-aralık"],
+  [data-#{$ekran}~="sağdan-23"][data-#{$ekran}~="23p-aralık"],
+  [data-#{$ekran}~="sağdan-24"][data-#{$ekran}~="24p-aralık"] {margin-right: 100%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="24p-aralık"] {margin-left: 4.1666666667%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="23p-aralık"] {margin-left: 4.347826087%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="22p-aralık"] {margin-left: 4.5454545455%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="21p-aralık"] {margin-left: 4.7619047619%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="19p-aralık"] {margin-left: 5.2631578947%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="20p-aralık"] {margin-left: 5%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="18p-aralık"] {margin-left: 5.5555555556%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="17p-aralık"] {margin-left: 5.8823529412%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="16p-aralık"] {margin-left: 6.25%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="15p-aralık"] {margin-left: 6.6666666667%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="14p-aralık"] {margin-left: 7.1428571429%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="13p-aralık"] {margin-left: 7.6923076923%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="24p-aralık"] {margin-left: 8.3333333333%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="23p-aralık"] {margin-left: 8.6956521739%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="22p-aralık"] {margin-left: 9.0909090909%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="21p-aralık"] {margin-left: 9.5238095238%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="20p-aralık"] {margin-left: 10%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="19p-aralık"] {margin-left: 10.5263157895%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="18p-aralık"] {margin-left: 11.1111111111%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="17p-aralık"] {margin-left: 11.7647058824%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="24p-aralık"] {margin-left: 12.5%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="15p-aralık"] {margin-left: 13.3333333333%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="23p-aralık"] {margin-left: 13.0434782609%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="22p-aralık"] {margin-left: 13.6363636364%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="21p-aralık"] {margin-left: 14.2857142857%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="20p-aralık"] {margin-left: 15%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="13p-aralık"] {margin-left: 15.3846153846%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="19p-aralık"] {margin-left: 15.7894736842%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="24p-aralık"] {margin-left: 16.6666666667%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="23p-aralık"] {margin-left: 17.3913043478%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="17p-aralık"] {margin-left: 17.6470588235%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="11p-aralık"]
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="22p-aralık"] {margin-left: 18.1818181818%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="16p-aralık"] {margin-left: 18.75%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="21p-aralık"] {margin-left: 19.0476190476%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="20p-aralık"] {margin-left: 20%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="24p-aralık"] {margin-left: 20.8333333333%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="19p-aralık"] {margin-left: 21.0526315789%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="14p-aralık"] {margin-left: 21.4285714286%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="23p-aralık"] {margin-left: 21.7391304348%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="9p-aralık"] {margin-left: 22.2222222222%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="22p-aralık"] {margin-left: 22.7272727273%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="13p-aralık"] {margin-left: 23.0769230769%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="17p-aralık"] {margin-left: 23.5294117647%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="21p-aralık"] {margin-left: 23.8095238095%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="4p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="20p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="24p-aralık"] {margin-left: 25%;}
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="23p-aralık"] {margin-left: 26.0869565217%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="19p-aralık"] {margin-left: 26.3157894737%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="15p-aralık"] {margin-left: 26.6666666667%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="22p-aralık"] {margin-left: 27.2727272727%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="18p-aralık"] {margin-left: 27.7777777778%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="21p-aralık"] {margin-left: 28.5714285714%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="24p-aralık"] {margin-left: 29.1666666667%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="17p-aralık"] {margin-left: 29.4117647059%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="20p-aralık"] {margin-left: 30%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="23p-aralık"] {margin-left: 30.4347826087%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="13p-aralık"] {margin-left: 30.7692307692%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="16p-aralık"] {margin-left: 31.25%;}
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="19p-aralık"] {margin-left: 31.5789473684%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="22p-aralık"] {margin-left: 31.8181818182%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="3p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="21p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="24p-aralık"] {margin-left: 33.3333333333%;}
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="23p-aralık"] {margin-left: 34.7826086957%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="20p-aralık"] {margin-left: 35%;}
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="17p-aralık"] {margin-left: 35.2941176471%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="14p-aralık"] {margin-left: 35.7142857143%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="22p-aralık"] {margin-left: 36.3636363636%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="19p-aralık"] {margin-left: 36.8421052632%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="8p-aralık"]
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="16p-aralık"]
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="24p-aralık"] {margin-left: 37.5%;}
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="21p-aralık"] {margin-left: 38.0952380952%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="13p-aralık"] {margin-left: 38.4615384615%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="18p-aralık"] {margin-left: 38.8888888889%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="23p-aralık"] {margin-left: 39.1304347826%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="20p-aralık"] {margin-left: 40%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="22p-aralık"] {margin-left: 40.9090909091%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="17p-aralık"] {margin-left: 41.1764705882%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="24p-aralık"] {margin-left: 41.6666666667%;}
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="19p-aralık"] {margin-left: 42.1052631579%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="21p-aralık"] {margin-left: 42.8571428571%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="16p-aralık"] {margin-left: 43.75%;}
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="23p-aralık"] {margin-left: 43.4782608696%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="18p-aralık"] {margin-left: 44.4444444444%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="20p-aralık"] {margin-left: 45%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="22p-aralık"] {margin-left: 45.4545454545%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="24p-aralık"] {margin-left: 45.8333333333%;}
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="13p-aralık"] {margin-left: 46.1538461538%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="15p-aralık"] {margin-left: 46.6666666667%;}
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="17p-aralık"] {margin-left: 47.0588235294%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="19p-aralık"] {margin-left: 47.3684210526%;}
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="21p-aralık"] {margin-left: 47.619047619%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="23p-aralık"] {margin-left: 47.8260869565%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="2p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="4p-aralık"],
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="20p-aralık"],
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="22p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="24p-aralık"] {margin-left: 50%;}
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="23p-aralık"] {margin-left: 52.1739130435%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="21p-aralık"] {margin-left: 52.380952381%;}
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="19p-aralık"] {margin-left: 52.6315789474%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="17p-aralık"] {margin-left: 52.9411764706%;}
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="15p-aralık"] {margin-left: 53.3333333333%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="13p-aralık"] {margin-left: 53.8461538462%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="24p-aralık"] {margin-left: 54.1666666667%;}
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="22p-aralık"] {margin-left: 54.5454545455%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="20p-aralık"] {margin-left: 55%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="18p-aralık"] {margin-left: 55.5555555556%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="16p-aralık"] {margin-left: 56.25%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="23p-aralık"] {margin-left: 56.5217391304%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="19p-aralık"] {margin-left: 57.8947368421%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="24p-aralık"] {margin-left: 58.3333333333%;}
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="17p-aralık"] {margin-left: 58.8235294118%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="22p-aralık"] {margin-left: 59.0909090909%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="20p-aralık"] {margin-left: 60%;}
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="23p-aralık"] {margin-left: 60.8695652174%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="18p-aralık"] {margin-left: 61.1111111111%;}
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="13p-aralık"] {margin-left: 61.5384615385%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="21p-aralık"] {margin-left: 61.9047619048%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="24p-aralık"] {margin-left: 62.5%;}
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="19p-aralık"] {margin-left: 63.1578947368%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="22p-aralık"] {margin-left: 63.6363636364%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="14p-aralık"] {margin-left: 64.2857142857%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="17p-aralık"] {margin-left: 64.7058823529%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="20p-aralık"] {margin-left: 65%;}
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="23p-aralık"] {margin-left: 65.2173913043%;}
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="3p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="21p-aralık"],
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="24p-aralık"] {margin-left: 66.6666666667%;}
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="22p-aralık"] {margin-left: 68.1818181818%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="19p-aralık"] {margin-left: 68.4210526316%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="16p-aralık"] {margin-left: 68.75%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="13p-aralık"] {margin-left: 69.2307692308%;}
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="23p-aralık"] {margin-left: 69.5652173913%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="10p-aralık"]
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="20p-aralık"] {margin-left: 70%;}
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="17p-aralık"] {margin-left: 70.5882352941%;}
+  [data-#{$ekran}~="soldan-17"][data-#{$ekran}~="24p-aralık"] {margin-left: 70.8333333333%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="21p-aralık"] {margin-left: 71.4285714286%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="18p-aralık"] {margin-left: 72.2222222222%;}
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="22p-aralık"] {margin-left: 72.7272727273%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="15p-aralık"] {margin-left: 73.3333333333%;}
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="19p-aralık"] {margin-left: 73.6842105263%;}
+  [data-#{$ekran}~="soldan-17"][data-#{$ekran}~="23p-aralık"] {margin-left: 73.9130434783%;}
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="4p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="20p-aralık"],
+  [data-#{$ekran}~="soldan-18"][data-#{$ekran}~="24p-aralık"] {margin-left: 75%;}
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="13p-aralık"] {margin-left: 92.3076923077%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="21p-aralık"] {margin-left: 57.1428571429%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="14p-aralık"] {margin-left: 92.8571428571%;}
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="21p-aralık"] {margin-left: 76.1904761905%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="17p-aralık"] {margin-left: 76.4705882353%;}
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="13p-aralık"] {margin-left: 76.9230769231%;}
+  [data-#{$ekran}~="soldan-17"][data-#{$ekran}~="22p-aralık"] {margin-left: 77.2727272727%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="18p-aralık"] {margin-left: 77.7777777778%;}
+  [data-#{$ekran}~="soldan-18"][data-#{$ekran}~="23p-aralık"] {margin-left: 78.2608695652%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="14p-aralık"] {margin-left: 78.5714285714%;}
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="19p-aralık"] {margin-left: 78.9473684211%;}
+  [data-#{$ekran}~="soldan-19"][data-#{$ekran}~="24p-aralık"] {margin-left: 79.1666666667%;}
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="20p-aralık"] {margin-left: 80%;}
+  [data-#{$ekran}~="soldan-17"][data-#{$ekran}~="21p-aralık"] {margin-left: 80.9523809524%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="16p-aralık"] {margin-left: 81.25%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-18"][data-#{$ekran}~="22p-aralık"] {margin-left: 81.8181818182%;}
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="17p-aralık"] {margin-left: 82.3529411765%;}
+  [data-#{$ekran}~="soldan-19"][data-#{$ekran}~="23p-aralık"] {margin-left: 82.6086956522%;}
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="soldan-20"][data-#{$ekran}~="24p-aralık"] {margin-left: 83.3333333333%;}
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="19p-aralık"] {margin-left: 84.2105263158%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="13p-aralık"] {margin-left: 84.6153846154%;}
+  [data-#{$ekran}~="soldan-17"][data-#{$ekran}~="20p-aralık"] {margin-left: 85%;}
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="soldan-18"][data-#{$ekran}~="21p-aralık"] {margin-left: 85.7142857143%;}
+  [data-#{$ekran}~="soldan-19"][data-#{$ekran}~="22p-aralık"] {margin-left: 86.3636363636%;}
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="15p-aralık"] {margin-left: 86.6666666667%;}
+  [data-#{$ekran}~="soldan-20"][data-#{$ekran}~="23p-aralık"] {margin-left: 86.9565217391%;}
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="soldan-21"][data-#{$ekran}~="24p-aralık"] {margin-left: 87.5%;}
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="17p-aralık"] {margin-left: 88.2352941176%;}
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="18p-aralık"] {margin-left: 88.8888888889%;}
+  [data-#{$ekran}~="soldan-17"][data-#{$ekran}~="19p-aralık"] {margin-left: 89.4736842105%;}
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-18"][data-#{$ekran}~="20p-aralık"] {margin-left: 90%;}
+  [data-#{$ekran}~="soldan-19"][data-#{$ekran}~="21p-aralık"] {margin-left: 90.4761904762%;}
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-20"][data-#{$ekran}~="22p-aralık"] {margin-left: 90.9090909091%;}
+  [data-#{$ekran}~="soldan-21"][data-#{$ekran}~="23p-aralık"] {margin-left: 91.3043478261%;}
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-22"][data-#{$ekran}~="24p-aralık"] {margin-left: 91.6666666667%;}
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="15p-aralık"] {margin-left: 93.3333333333%;}
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="16p-aralık"] {margin-left: 93.75%;}
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="17p-aralık"] {margin-left: 94.1176470588%;}
+  [data-#{$ekran}~="soldan-17"][data-#{$ekran}~="18p-aralık"] {margin-left: 94.4444444444%;}
+  [data-#{$ekran}~="soldan-18"][data-#{$ekran}~="19p-aralık"] {margin-left: 94.7368421053%;}
+  [data-#{$ekran}~="soldan-19"][data-#{$ekran}~="20p-aralık"] {margin-left: 95%;}
+  [data-#{$ekran}~="soldan-20"][data-#{$ekran}~="21p-aralık"] {margin-left: 95.2380952381%;}
+  [data-#{$ekran}~="soldan-21"][data-#{$ekran}~="22p-aralık"] {margin-left: 95.4545454545%;}
+  [data-#{$ekran}~="soldan-22"][data-#{$ekran}~="23p-aralık"] {margin-left: 95.652173913%;}
+  [data-#{$ekran}~="soldan-1"][data-#{$ekran}~="1p-aralık"],
+  [data-#{$ekran}~="soldan-2"][data-#{$ekran}~="2p-aralık"],
+  [data-#{$ekran}~="soldan-3"][data-#{$ekran}~="3p-aralık"],
+  [data-#{$ekran}~="soldan-4"][data-#{$ekran}~="4p-aralık"],
+  [data-#{$ekran}~="soldan-5"][data-#{$ekran}~="5p-aralık"],
+  [data-#{$ekran}~="soldan-6"][data-#{$ekran}~="6p-aralık"],
+  [data-#{$ekran}~="soldan-7"][data-#{$ekran}~="7p-aralık"],
+  [data-#{$ekran}~="soldan-8"][data-#{$ekran}~="8p-aralık"],
+  [data-#{$ekran}~="soldan-9"][data-#{$ekran}~="9p-aralık"],
+  [data-#{$ekran}~="soldan-10"][data-#{$ekran}~="10p-aralık"],
+  [data-#{$ekran}~="soldan-11"][data-#{$ekran}~="11p-aralık"],
+  [data-#{$ekran}~="soldan-12"][data-#{$ekran}~="12p-aralık"],
+  [data-#{$ekran}~="soldan-13"][data-#{$ekran}~="13p-aralık"],
+  [data-#{$ekran}~="soldan-14"][data-#{$ekran}~="14p-aralık"],
+  [data-#{$ekran}~="soldan-15"][data-#{$ekran}~="15p-aralık"],
+  [data-#{$ekran}~="soldan-16"][data-#{$ekran}~="16p-aralık"],
+  [data-#{$ekran}~="soldan-17"][data-#{$ekran}~="17p-aralık"],
+  [data-#{$ekran}~="soldan-18"][data-#{$ekran}~="18p-aralık"],
+  [data-#{$ekran}~="soldan-19"][data-#{$ekran}~="19p-aralık"],
+  [data-#{$ekran}~="soldan-20"][data-#{$ekran}~="20p-aralık"],
+  [data-#{$ekran}~="soldan-21"][data-#{$ekran}~="21p-aralık"],
+  [data-#{$ekran}~="soldan-22"][data-#{$ekran}~="22p-aralık"],
+  [data-#{$ekran}~="soldan-23"][data-#{$ekran}~="23p-aralık"],
+  [data-#{$ekran}~="soldan-24"][data-#{$ekran}~="24p-aralık"] {margin-left: 100%;}
+}
+
+/*  GS1 KAP ÖRGÜSÜ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+G00 [data-#{$gnl}] | Ekran ölçeği: 0 ≤ * < ∞
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    @include parça-düzeni($gnl);
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S01 [data-#{$ufk}] | Ekran ölçeği: 300px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:300px) {
+      @include parça-düzeni($ufk);
+    }
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S02 [data-#{$kçk}] | Ekran ölçeği: 576px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:576px) {
+      @include parça-düzeni($kçk);
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S03 [data-#{$ort}] | Ekran ölçeği: 768px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:768px) {
+      @include parça-düzeni($ort);
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S04 [data-#{$byk}] | Ekran ölçeği: 992px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:992px) {
+      @include parça-düzeni($byk);
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S05 [data-#{$kcm}] | Ekran ölçeği: 1200px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:1200px) {
+      @include parça-düzeni($kcm);
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S06 [data-#{$dev}] | Ekran ölçeği: 1900px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:1900px) {
+      @include parça-düzeni($dev);
+    }
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$kcm}] | Ekran ölçeği: 0 < 1900px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (max-width:1900px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$byk}] | Ekran ölçeği: 0 < 1200px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (max-width:1200px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$ort}] | Ekran ölçeği: 0 < 992px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (max-width:993px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$kçk}] | Ekran ölçeği: 0 < 768px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (max-width:768px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$ufk}] | Ekran ölçeği: 0 < 576px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (max-width:576px) {
+
+    }
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$mnk}] | Ekran ölçeği: 0 ≤ * < 300px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (max-width:300px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$ufk}] | Ekran ölçeği: 300px ≤ * < 576px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:300px) and (max-width:576px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$kçk}] | Ekran ölçeği: 576px ≤ * < 768px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:576px) and (max-width:768px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$ort}] | Ekran ölçeği: 768px ≤ * < 992px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:768px) and (max-width:992px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$byk}] | Ekran ölçeği: 992px ≤ * < 1200px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:992px) and (max-width:1200px) {
+
+    }
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    [data-#{$kcm}] | Ekran ölçeği: 1200px ≤ * < 1900px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    @media screen and (min-width:1200px) and (max-width:1900px) {
+
+    }
