@@ -105,6 +105,9 @@
   background-color: #000;
   color:#fff;
 }
+
+
+
 .main{
 
 }
@@ -215,6 +218,7 @@ label[for*="menü-ana"]{
   color: #fff;
   padding: 8px;
 }
+
 [data-menü~="sağ-kaval"]{
   position: fixed;
   height: 100%;
@@ -312,7 +316,50 @@ margin-bottom: 15px;
     flex: 1;
     flex-wrap: wrap;
   }
+
+  @keyframes openit {
+
+  	0% { background-size:auto,0,0,0,0,0,0,0,0,0,0; }
+    10% { background-size:0,auto,0,0,0,0,0,0,0,0,0;}
+    20% {	background-size:0,0,auto,0,0,0,0,0,0,0,0;}
+    30% {	background-size:0,0,auto,0,0,0,0,0,0,0,0;}
+    40% {	background-size:0,0,0,auto,0,0,0,0,0,0,0;}
+    50% {	background-size:0,0,0,0,auto,0,0,0,0,0,0;}
+    60% {	background-size:0,0,0,0,0,auto,0,0,0,0,0;}
+    70% {	background-size:0,0,0,0,0,0,auto,0,0,0,0;}
+    80% {	background-size:0,0,0,0,0,0,0,auto,0,0,0;}
+    86% {	background-size:0,0,0,0,0,0,0,0,auto,0,0;}
+    94% {	background-size:0,0,0,0,0,0,0,0,0,auto,0;}
+    100% {background-size:0,0,0,0,0,0,0,0,0,auto,0;}
+  }
   [data-menü~="sağ-kaval"]{
+    background:
+      url('/temalar/sosero/assets/img/menu/menu_00.png'),
+      url('/temalar/sosero/assets/img/menu/menu_01.png'),
+      url('/temalar/sosero/assets/img/menu/menu_02.png'),
+      url('/temalar/sosero/assets/img/menu/menu_03.png'),
+      url('/temalar/sosero/assets/img/menu/menu_04.png'),
+      url('/temalar/sosero/assets/img/menu/menu_05.png'),
+      url('/temalar/sosero/assets/img/menu/menu_06.png'),
+      url('/temalar/sosero/assets/img/menu/menu_07.png'),
+      url('/temalar/sosero/assets/img/menu/menu_08.png'),
+      url('/temalar/sosero/assets/img/menu/menu_09.png'),
+      url('/temalar/sosero/assets/img/menu/menu_10.png'),
+      url('/temalar/sosero/assets/img/menu/menu_11.png');
+
+    background-position:center;
+    background-repeat: no-repeat;
+    -webkit-background-size:  auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    -webkit-animation:  openit 1s linear infinite;
+    -moz-animation:  openit 1s linear infinite;
+    animation: openit 1s linear infinite;
+  }
+
+
+  [data-menü~="sağ-kavalx"]{
     opacity: 0;
 
     display: block !important;
@@ -322,7 +369,7 @@ margin-bottom: 15px;
     width:0%;
 
   }
-  [data-kapaç]:checked ~ [data-menü~="sağ-kaval"]{
+  [data-kapaç]:checked ~ [data-menü~="sağ-kavalx"]{
     display: flex;
     opacity: 1;
 
