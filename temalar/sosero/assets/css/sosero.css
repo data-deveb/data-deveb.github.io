@@ -319,7 +319,7 @@ margin-bottom: 15px;
 
   @keyframes openit {
 
-  	0% { background-size:auto,0,0,0,0,0,0,0,0,0,0; }
+  	0% { background-size:auto,0,0,0,0,0,0,0,0,0,0;}
     10% { background-size:0,auto,0,0,0,0,0,0,0,0,0;}
     20% {	background-size:0,0,auto,0,0,0,0,0,0,0,0;}
     30% {	background-size:0,0,auto,0,0,0,0,0,0,0,0;}
@@ -332,7 +332,12 @@ margin-bottom: 15px;
     94% {	background-size:0,0,0,0,0,0,0,0,0,auto,0;}
     100% {background-size:0,0,0,0,0,0,0,0,0,auto,0;}
   }
-  [data-menü~="sağ-kaval"]{
+  @keyframes show{
+    0%{display:none;opacity: 0;}
+    90%{display:none;opacity: 0;}
+    100%{display:flex;opacity:1;}
+  }
+  [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval"]{
     background:
       url('/temalar/sosero/assets/img/menu/menu_00.png'),
       url('/temalar/sosero/assets/img/menu/menu_01.png'),
@@ -353,11 +358,27 @@ margin-bottom: 15px;
     -moz-background-size: auto;
     -o-background-size: auto;
     background-size: auto;
-    -webkit-animation:  openit 1s linear infinite;
-    -moz-animation:  openit 1s linear infinite;
-    animation: openit 1s linear infinite;
-  }
+    -webkit-animation:  openit 1s ease;
+    -moz-animation:  openit 1s ease;
+    animation: openit 1s ease;
 
+  }
+  [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval"]::before{
+    display: flex;
+    -webkit-animation:  show 1s ease;
+    -moz-animation:  show 1s ease;
+    animation: show 1s ease;
+    animation-delay: -.3s;
+    background: linear-gradient(rgba(89,28,23,.8), #d13531);
+
+  }
+  [data-menü~="sağ-kaval"] > li{
+    display: flex;
+    -webkit-animation:  show 1.2s ease;
+    -moz-animation:  show 1.2s ease;
+    animation: show 1.2s ease;
+    animation-delay: -.3s;
+  }
 
   [data-menü~="sağ-kavalx"]{
     opacity: 0;
