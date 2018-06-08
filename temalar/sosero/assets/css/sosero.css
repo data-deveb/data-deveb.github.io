@@ -332,11 +332,15 @@ margin-bottom: 15px;
     94% {	background-size:0,0,0,0,0,0,0,0,0,auto,0;}
     100% {background-size:0,0,0,0,0,0,0,0,0,auto,0;}
   }
-  @keyframes show{
-    0%{display:none;opacity: 0;}
+  @keyframes merdiven{
+  /*  0%{display:none;opacity: 0;}
     90%{display:none;opacity: 0;}
-    100%{display:flex;opacity:1;}
+    100%{display:flex;opacity:1;} */
+    0%{margin-left:-1000px;}
+    50%{margin-left:30px;}
+    100%{margin-left:0px;}
   }
+
   [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval"]{
     background:
       url('/temalar/sosero/assets/img/menu/menu_00.png'),
@@ -368,7 +372,7 @@ margin-bottom: 15px;
     -webkit-animation:  show 1s ease;
     -moz-animation:  show 1s ease;
     animation: show 1s ease;
-    animation-delay: -.3s;
+    animation-delay: -.05s;
     background: linear-gradient(rgba(89,28,23,.8), #d13531);
 
   }
@@ -379,7 +383,36 @@ margin-bottom: 15px;
     animation: show 1.2s ease;
     animation-delay: -.3s;
   }
-
+  [data-menü~="sağ-kaval"] > li:nth-child(n+1){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: -.3s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+2){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: -.2s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+3){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: -.1s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+4){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: 0s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+5){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: 0.1s;
+  }
   [data-menü~="sağ-kavalx"]{
     opacity: 0;
 
