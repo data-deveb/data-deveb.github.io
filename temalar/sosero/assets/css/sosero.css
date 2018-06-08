@@ -216,14 +216,13 @@ label[for*="menü-ana"]{
   right: 0;
   z-index: 998;
   padding: 0 20px !important;
-  background: url('/temalar/sosero/assets/img/arkaplant.png') no-repeat center center fixed;
+  background: url('/temalar/sosero/assets/img/arkaplant.png') repeat center center fixed;
   overflow-y: scroll;
   flex-wrap: nowrap !important;
   z-index: 1001;
 
 }
 [data-menü~="sağ-kaval"]::before{
-  background-color:rgba(89,28,23,.8);
   content: '';
   display: block;
   height: 100%;
@@ -396,7 +395,7 @@ margin-bottom: 15px;
     -moz-animation:  show 1s ease;
     animation: show 1s ease;
     animation-delay: -.05s;
-    background: rgba(89,28,23,.8);
+
 
   }
   [data-menü~="sağ-kaval"] > li{
