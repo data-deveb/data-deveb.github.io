@@ -341,7 +341,7 @@ margin-bottom: 15px;
     100%{margin-left:0px;}
   }
 
-  [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval"]{
+  [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval iptalettik"]{
     background:
       url('/temalar/sosero/assets/img/menu/menu_00.png'),
       url('/temalar/sosero/assets/img/menu/menu_01.png'),
@@ -373,7 +373,7 @@ margin-bottom: 15px;
     -moz-animation:  show 1s ease;
     animation: show 1s ease;
     animation-delay: -.05s;
-    background: linear-gradient(rgba(89,28,23,.8), #d13531);
+    background: rgba(89,28,23,.8);
 
   }
   [data-menü~="sağ-kaval"] > li{
