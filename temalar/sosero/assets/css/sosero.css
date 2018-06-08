@@ -413,7 +413,7 @@ margin-bottom: 15px;
     animation: merdiven 1.2s ease;
     animation-delay: 0.1s;
   }
-  [data-menü~="sağ-kaval"]{
+  [data-menü~="sağ-kavalx"]{
     opacity: 0;
 
     display: block !important;
@@ -423,7 +423,7 @@ margin-bottom: 15px;
     width:0%;
 
   }
-  [data-kapaç]:checked ~ [data-menü~="sağ-kaval"]{
+  [data-kapaç]:checked ~ [data-menü~="sağ-kavalx"]{
     display: flex;
     opacity: 1;
 
