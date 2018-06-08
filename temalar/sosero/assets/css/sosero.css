@@ -23,6 +23,8 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width:35px;
+  text-align:center;
 }
 
 .simge-ok-alt:before {
@@ -213,7 +215,7 @@ label[for*="menü-ana"]{
   right: 0;
   z-index: 998;
   padding: 0 20px !important;
-  background: url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+  background: url('/temalar/sosero/assets/img/arkaplant.png') no-repeat center center fixed;
   overflow-y: scroll;
   flex-wrap: nowrap !important;
   z-index: 1001;
