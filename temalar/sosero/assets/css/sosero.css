@@ -216,7 +216,7 @@ label[for*="menü-ana"]{
   right: 0;
   z-index: 998;
   padding: 0 20px !important;
-  background: url('/temalar/sosero/assets/img/arkaplant.png') repeat center center fixed;
+  background: url('/temalar/sosero/assets/img/arkaplant.png') repeat left fixed;
   overflow-y: scroll;
   flex-wrap: nowrap !important;
   z-index: 1001;
