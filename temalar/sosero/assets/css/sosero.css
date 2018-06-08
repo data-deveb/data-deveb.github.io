@@ -311,6 +311,23 @@ margin-bottom: 15px;
   }
 }
 @media screen and (max-width:995.9px){
+
+  html:not(.intro) body{
+    background-color: #ddd;
+    /*background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+    */
+    background: url('/temalar/sosero/assets/img/arkaplan/k1.png'), url('/temalar/sosero/assets/img/arkaplan/k2.png'), url('/temalar/sosero/assets/img/arkaplan/k3.png'), url('/temalar/sosero/assets/img/arkaplan/k4.png'), url('/temalar/sosero/assets/img/arkaplan/k5.png'), url('/temalar/sosero/assets/img/arkaplan/k6.png'), url('/temalar/sosero/assets/img/arkaplan/k7.png'), url('/temalar/sosero/assets/img/arkaplan/k8.png'), url('/temalar/sosero/assets/img/arkaplan/k9.png'), url('/temalar/sosero/assets/img/arkaplan/k0.png'),url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat  fixed;
+    /*background: url('/temalar/sosero/assets/img/arkaplan-a.png') no-repeat top, url('/temalar/sosero/assets/img/arkaplan-b.png') no-repeat right bottom, url('/temalar/sosero/assets/img/arkaplan-c.png') no-repeat bottom, url('/temalar/sosero/assets/img/arkaplan-d.png') no-repeat left,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+    */
+    background-position:-16% 20%, 10% 125%, 80% -36%, 35% -13%, 95% 100%, -40% 15%, -3% 70%, 101% 10%, 30% -110%, 107% 30%,center;
+    background-repeat: no-repeat;
+    -webkit-background-size:  auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
+
+
   [data-menü] {
     display: none !important;
     flex: 1;
