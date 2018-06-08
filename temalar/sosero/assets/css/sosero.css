@@ -175,6 +175,7 @@ footer{
   align-items: center;
   background-color: #13672f;
     height: 100%;
+    padding:0 10px;
 }
 [data-menü~="sağ-kaval"] > li:hover a{
   background-color: #13672f;
