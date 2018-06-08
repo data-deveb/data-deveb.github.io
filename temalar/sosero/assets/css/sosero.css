@@ -358,9 +358,14 @@ margin-bottom: 15px;
   /*  0%{display:none;opacity: 0;}
     90%{display:none;opacity: 0;}
     100%{display:flex;opacity:1;} */
-    0%{margin-left:-1000px; opacity: 0;}
-    50%{margin-left:30px;opacity: 1;}
+    0%{margin-left:-1000px;}
+    50%{margin-left:30px;}
     100%{margin-left:0px;}
+  }
+  @keyframes show {
+      0%{opacity: 0;}
+      50%{opacity: 1;}
+      100%{opacity: 1;}
   }
 
   [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval iptalettik"]{
