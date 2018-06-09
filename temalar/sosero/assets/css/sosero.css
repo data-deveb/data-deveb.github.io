@@ -125,7 +125,9 @@
 .gelgit-etkin{
   overflow: hidden;
 }
-
+body{
+  font-family: 'Roboto Condensed';
+}
 html:not(.intro) body.ap-yok{
   background-color: #ddd;
   /*background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
