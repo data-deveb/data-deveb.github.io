@@ -150,7 +150,6 @@ footer{
 
 [data-menü~="sağ-kaval"]{
   z-index: 999;
-  overflow-x: hidden;
 }
 [data-menü~="sağ-kaval"] > li a{
   position: relative;
@@ -224,7 +223,7 @@ label[for*="menü-ana"]{
   overflow-y: scroll;
   flex-wrap: nowrap !important;
   z-index: 1001;
-
+overflow-x: hidden;
 }
 [data-menü~="sağ-kaval"]::before{
   content: '';
