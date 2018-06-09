@@ -9,6 +9,7 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin-ext');
 
 [class^="simge-"], [class*=" simge-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -126,7 +127,7 @@
   overflow: hidden;
 }
 body{
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', sans-serif;
 }
 html:not(.intro) body.ap-yok{
   background-color: #ddd;
