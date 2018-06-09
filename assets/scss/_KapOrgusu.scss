@@ -34,33 +34,32 @@ doğrultular: dikey (sütun sözcüğü iptal), yatay (satır sözcüğü iptal)
 
 /* PARÇA DÜZENİ */
 @mixin parça-düzeni($ekran){
-
-      @for $i from 1 through 24{
-        [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
-        [data-#{$ekran}~="#{$i}p"]{--parçalık: #{$i};}
-        [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
-        [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-soldan: #{$i};}
-        [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
-        [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
-      }
-      [data-#{$ekran}]{
-        flex-basis: calc(100% / var(--parçalık) * var(--parça));
-        width: calc(100% / var(--parçalık) * var(--parça));
-        max-width:  calc(100% / var(--parçalık) * var(--parça));
-      }
-      [data-#{$ekran}*="soldan-"]{
-        margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
-      }
-      [data-#{$ekran}*="sağdan-"]{
-        margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
-      }
-      [data-#{$ekran}*="soldan-"][data-#{$ekran}*="p-aralık"]{
-        margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
-      }
-      [data-#{$ekran}*="sağdan-"][data-#{$ekran}*="p-aralık"]{
-        margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
-    }
+  @for $i from 1 through 24{
+    [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
+    [data-#{$ekran}~="#{$i}p"]{--parçalık: #{$i};}
+    [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
+    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-soldan: #{$i};}
+    [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
+    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
   }
+  [data-#{$ekran}]{
+    flex-basis: calc(100% / var(--parçalık) * var(--parça));
+    width: calc(100% / var(--parçalık) * var(--parça));
+    max-width:  calc(100% / var(--parçalık) * var(--parça));
+  }
+  [data-#{$ekran}*="soldan-"]{
+    margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
+  }
+  [data-#{$ekran}*="sağdan-"]{
+    margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
+  }
+  [data-#{$ekran}*="soldan-"][data-#{$ekran}*="p-aralık"]{
+    margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
+  }
+  [data-#{$ekran}*="sağdan-"][data-#{$ekran}*="p-aralık"]{
+    margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
+  }
+}
 
 /* GENLEŞME DÜZENİ */
 @mixin genleşme-düzeni($ekran) {

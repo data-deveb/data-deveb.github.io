@@ -1,14 +1,14 @@
 @charset "UTF-8";
-/* Türkçe http://www.objgen.com/json/models/nuZ*/
+/* Türkçe http://www.objgen.com/json/models/nuZ   */
 /* Ekran Örgüsü */
 /* Kap Örgüsü */
 /* Konumlama - Kap Örgüsü */
 /* Durumlama - Kap Örgüsü */
 /* */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/*  G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*  GS1 KAP ÖRGÜSÜ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+G00 [data-gnl] | Ekran ölçeği: 0 ≤ * < ∞
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 [data-gnl~="1"][data-gnl~="24p"] { width: 4.1666666667%; }
 
 [data-gnl~="1"][data-gnl~="23p"] { width: 4.347826087%; }
@@ -1084,7 +1084,7 @@
 [data-gnl~="soldan-1"][data-gnl~="1p-aralık"], [data-gnl~="soldan-2"][data-gnl~="2p-aralık"], [data-gnl~="soldan-3"][data-gnl~="3p-aralık"], [data-gnl~="soldan-4"][data-gnl~="4p-aralık"], [data-gnl~="soldan-5"][data-gnl~="5p-aralık"], [data-gnl~="soldan-6"][data-gnl~="6p-aralık"], [data-gnl~="soldan-7"][data-gnl~="7p-aralık"], [data-gnl~="soldan-8"][data-gnl~="8p-aralık"], [data-gnl~="soldan-9"][data-gnl~="9p-aralık"], [data-gnl~="soldan-10"][data-gnl~="10p-aralık"], [data-gnl~="soldan-11"][data-gnl~="11p-aralık"], [data-gnl~="soldan-12"][data-gnl~="12p-aralık"], [data-gnl~="soldan-13"][data-gnl~="13p-aralık"], [data-gnl~="soldan-14"][data-gnl~="14p-aralık"], [data-gnl~="soldan-15"][data-gnl~="15p-aralık"], [data-gnl~="soldan-16"][data-gnl~="16p-aralık"], [data-gnl~="soldan-17"][data-gnl~="17p-aralık"], [data-gnl~="soldan-18"][data-gnl~="18p-aralık"], [data-gnl~="soldan-19"][data-gnl~="19p-aralık"], [data-gnl~="soldan-20"][data-gnl~="20p-aralık"], [data-gnl~="soldan-21"][data-gnl~="21p-aralık"], [data-gnl~="soldan-22"][data-gnl~="22p-aralık"], [data-gnl~="soldan-23"][data-gnl~="23p-aralık"], [data-gnl~="soldan-24"][data-gnl~="24p-aralık"] { margin-left: 100%; }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+S01 [data-ufk] | Ekran ölçeği: 300px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 300px) { [data-ufk~="1"][data-ufk~="24p"] { width: 4.1666666667%; }
   [data-ufk~="1"][data-ufk~="23p"] { width: 4.347826087%; }
   [data-ufk~="1"][data-ufk~="22p"] { width: 4.5454545455%; }
@@ -1623,7 +1623,7 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   [data-ufk~="soldan-22"][data-ufk~="23p-aralık"] { margin-left: 95.652173913%; }
   [data-ufk~="soldan-1"][data-ufk~="1p-aralık"], [data-ufk~="soldan-2"][data-ufk~="2p-aralık"], [data-ufk~="soldan-3"][data-ufk~="3p-aralık"], [data-ufk~="soldan-4"][data-ufk~="4p-aralık"], [data-ufk~="soldan-5"][data-ufk~="5p-aralık"], [data-ufk~="soldan-6"][data-ufk~="6p-aralık"], [data-ufk~="soldan-7"][data-ufk~="7p-aralık"], [data-ufk~="soldan-8"][data-ufk~="8p-aralık"], [data-ufk~="soldan-9"][data-ufk~="9p-aralık"], [data-ufk~="soldan-10"][data-ufk~="10p-aralık"], [data-ufk~="soldan-11"][data-ufk~="11p-aralık"], [data-ufk~="soldan-12"][data-ufk~="12p-aralık"], [data-ufk~="soldan-13"][data-ufk~="13p-aralık"], [data-ufk~="soldan-14"][data-ufk~="14p-aralık"], [data-ufk~="soldan-15"][data-ufk~="15p-aralık"], [data-ufk~="soldan-16"][data-ufk~="16p-aralık"], [data-ufk~="soldan-17"][data-ufk~="17p-aralık"], [data-ufk~="soldan-18"][data-ufk~="18p-aralık"], [data-ufk~="soldan-19"][data-ufk~="19p-aralık"], [data-ufk~="soldan-20"][data-ufk~="20p-aralık"], [data-ufk~="soldan-21"][data-ufk~="21p-aralık"], [data-ufk~="soldan-22"][data-ufk~="22p-aralık"], [data-ufk~="soldan-23"][data-ufk~="23p-aralık"], [data-ufk~="soldan-24"][data-ufk~="24p-aralık"] { margin-left: 100%; } }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+S02 [data-kçk] | Ekran ölçeği: 576px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 576px) { [data-kçk~="1"][data-kçk~="24p"] { width: 4.1666666667%; }
   [data-kçk~="1"][data-kçk~="23p"] { width: 4.347826087%; }
   [data-kçk~="1"][data-kçk~="22p"] { width: 4.5454545455%; }
@@ -2162,7 +2162,7 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ * ~~~~~~~~
   [data-kçk~="soldan-22"][data-kçk~="23p-aralık"] { margin-left: 95.652173913%; }
   [data-kçk~="soldan-1"][data-kçk~="1p-aralık"], [data-kçk~="soldan-2"][data-kçk~="2p-aralık"], [data-kçk~="soldan-3"][data-kçk~="3p-aralık"], [data-kçk~="soldan-4"][data-kçk~="4p-aralık"], [data-kçk~="soldan-5"][data-kçk~="5p-aralık"], [data-kçk~="soldan-6"][data-kçk~="6p-aralık"], [data-kçk~="soldan-7"][data-kçk~="7p-aralık"], [data-kçk~="soldan-8"][data-kçk~="8p-aralık"], [data-kçk~="soldan-9"][data-kçk~="9p-aralık"], [data-kçk~="soldan-10"][data-kçk~="10p-aralık"], [data-kçk~="soldan-11"][data-kçk~="11p-aralık"], [data-kçk~="soldan-12"][data-kçk~="12p-aralık"], [data-kçk~="soldan-13"][data-kçk~="13p-aralık"], [data-kçk~="soldan-14"][data-kçk~="14p-aralık"], [data-kçk~="soldan-15"][data-kçk~="15p-aralık"], [data-kçk~="soldan-16"][data-kçk~="16p-aralık"], [data-kçk~="soldan-17"][data-kçk~="17p-aralık"], [data-kçk~="soldan-18"][data-kçk~="18p-aralık"], [data-kçk~="soldan-19"][data-kçk~="19p-aralık"], [data-kçk~="soldan-20"][data-kçk~="20p-aralık"], [data-kçk~="soldan-21"][data-kçk~="21p-aralık"], [data-kçk~="soldan-22"][data-kçk~="22p-aralık"], [data-kçk~="soldan-23"][data-kçk~="23p-aralık"], [data-kçk~="soldan-24"][data-kçk~="24p-aralık"] { margin-left: 100%; } }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+S03 [data-ort] | Ekran ölçeği: 768px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 768px) { [data-ort~="1"][data-ort~="24p"] { width: 4.1666666667%; }
   [data-ort~="1"][data-ort~="23p"] { width: 4.347826087%; }
   [data-ort~="1"][data-ort~="22p"] { width: 4.5454545455%; }
@@ -2701,7 +2701,7 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ * ~~~~~~~~~~
   [data-ort~="soldan-22"][data-ort~="23p-aralık"] { margin-left: 95.652173913%; }
   [data-ort~="soldan-1"][data-ort~="1p-aralık"], [data-ort~="soldan-2"][data-ort~="2p-aralık"], [data-ort~="soldan-3"][data-ort~="3p-aralık"], [data-ort~="soldan-4"][data-ort~="4p-aralık"], [data-ort~="soldan-5"][data-ort~="5p-aralık"], [data-ort~="soldan-6"][data-ort~="6p-aralık"], [data-ort~="soldan-7"][data-ort~="7p-aralık"], [data-ort~="soldan-8"][data-ort~="8p-aralık"], [data-ort~="soldan-9"][data-ort~="9p-aralık"], [data-ort~="soldan-10"][data-ort~="10p-aralık"], [data-ort~="soldan-11"][data-ort~="11p-aralık"], [data-ort~="soldan-12"][data-ort~="12p-aralık"], [data-ort~="soldan-13"][data-ort~="13p-aralık"], [data-ort~="soldan-14"][data-ort~="14p-aralık"], [data-ort~="soldan-15"][data-ort~="15p-aralık"], [data-ort~="soldan-16"][data-ort~="16p-aralık"], [data-ort~="soldan-17"][data-ort~="17p-aralık"], [data-ort~="soldan-18"][data-ort~="18p-aralık"], [data-ort~="soldan-19"][data-ort~="19p-aralık"], [data-ort~="soldan-20"][data-ort~="20p-aralık"], [data-ort~="soldan-21"][data-ort~="21p-aralık"], [data-ort~="soldan-22"][data-ort~="22p-aralık"], [data-ort~="soldan-23"][data-ort~="23p-aralık"], [data-ort~="soldan-24"][data-ort~="24p-aralık"] { margin-left: 100%; } }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+S04 [data-byk] | Ekran ölçeği: 992px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 992px) { [data-byk~="1"][data-byk~="24p"] { width: 4.1666666667%; }
   [data-byk~="1"][data-byk~="23p"] { width: 4.347826087%; }
   [data-byk~="1"][data-byk~="22p"] { width: 4.5454545455%; }
@@ -3240,7 +3240,7 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ * ~~~~~~~
   [data-byk~="soldan-22"][data-byk~="23p-aralık"] { margin-left: 95.652173913%; }
   [data-byk~="soldan-1"][data-byk~="1p-aralık"], [data-byk~="soldan-2"][data-byk~="2p-aralık"], [data-byk~="soldan-3"][data-byk~="3p-aralık"], [data-byk~="soldan-4"][data-byk~="4p-aralık"], [data-byk~="soldan-5"][data-byk~="5p-aralık"], [data-byk~="soldan-6"][data-byk~="6p-aralık"], [data-byk~="soldan-7"][data-byk~="7p-aralık"], [data-byk~="soldan-8"][data-byk~="8p-aralık"], [data-byk~="soldan-9"][data-byk~="9p-aralık"], [data-byk~="soldan-10"][data-byk~="10p-aralık"], [data-byk~="soldan-11"][data-byk~="11p-aralık"], [data-byk~="soldan-12"][data-byk~="12p-aralık"], [data-byk~="soldan-13"][data-byk~="13p-aralık"], [data-byk~="soldan-14"][data-byk~="14p-aralık"], [data-byk~="soldan-15"][data-byk~="15p-aralık"], [data-byk~="soldan-16"][data-byk~="16p-aralık"], [data-byk~="soldan-17"][data-byk~="17p-aralık"], [data-byk~="soldan-18"][data-byk~="18p-aralık"], [data-byk~="soldan-19"][data-byk~="19p-aralık"], [data-byk~="soldan-20"][data-byk~="20p-aralık"], [data-byk~="soldan-21"][data-byk~="21p-aralık"], [data-byk~="soldan-22"][data-byk~="22p-aralık"], [data-byk~="soldan-23"][data-byk~="23p-aralık"], [data-byk~="soldan-24"][data-byk~="24p-aralık"] { margin-left: 100%; } }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+S05 [data-kcm] | Ekran ölçeği: 1200px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1200px) { [data-kcm~="1"][data-kcm~="24p"] { width: 4.1666666667%; }
   [data-kcm~="1"][data-kcm~="23p"] { width: 4.347826087%; }
   [data-kcm~="1"][data-kcm~="22p"] { width: 4.5454545455%; }
@@ -3779,7 +3779,7 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ * ~~~~~~
   [data-kcm~="soldan-22"][data-kcm~="23p-aralık"] { margin-left: 95.652173913%; }
   [data-kcm~="soldan-1"][data-kcm~="1p-aralık"], [data-kcm~="soldan-2"][data-kcm~="2p-aralık"], [data-kcm~="soldan-3"][data-kcm~="3p-aralık"], [data-kcm~="soldan-4"][data-kcm~="4p-aralık"], [data-kcm~="soldan-5"][data-kcm~="5p-aralık"], [data-kcm~="soldan-6"][data-kcm~="6p-aralık"], [data-kcm~="soldan-7"][data-kcm~="7p-aralık"], [data-kcm~="soldan-8"][data-kcm~="8p-aralık"], [data-kcm~="soldan-9"][data-kcm~="9p-aralık"], [data-kcm~="soldan-10"][data-kcm~="10p-aralık"], [data-kcm~="soldan-11"][data-kcm~="11p-aralık"], [data-kcm~="soldan-12"][data-kcm~="12p-aralık"], [data-kcm~="soldan-13"][data-kcm~="13p-aralık"], [data-kcm~="soldan-14"][data-kcm~="14p-aralık"], [data-kcm~="soldan-15"][data-kcm~="15p-aralık"], [data-kcm~="soldan-16"][data-kcm~="16p-aralık"], [data-kcm~="soldan-17"][data-kcm~="17p-aralık"], [data-kcm~="soldan-18"][data-kcm~="18p-aralık"], [data-kcm~="soldan-19"][data-kcm~="19p-aralık"], [data-kcm~="soldan-20"][data-kcm~="20p-aralık"], [data-kcm~="soldan-21"][data-kcm~="21p-aralık"], [data-kcm~="soldan-22"][data-kcm~="22p-aralık"], [data-kcm~="soldan-23"][data-kcm~="23p-aralık"], [data-kcm~="soldan-24"][data-kcm~="24p-aralık"] { margin-left: 100%; } }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+S06 [data-dev] | Ekran ölçeği: 1900px ≤ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1900px) { [data-dev~="1"][data-dev~="24p"] { width: 4.1666666667%; }
   [data-dev~="1"][data-dev~="23p"] { width: 4.347826087%; }
   [data-dev~="1"][data-dev~="22p"] { width: 4.5454545455%; }
@@ -4317,17 +4317,16 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
   [data-dev~="soldan-21"][data-dev~="22p-aralık"] { margin-left: 95.4545454545%; }
   [data-dev~="soldan-22"][data-dev~="23p-aralık"] { margin-left: 95.652173913%; }
   [data-dev~="soldan-1"][data-dev~="1p-aralık"], [data-dev~="soldan-2"][data-dev~="2p-aralık"], [data-dev~="soldan-3"][data-dev~="3p-aralık"], [data-dev~="soldan-4"][data-dev~="4p-aralık"], [data-dev~="soldan-5"][data-dev~="5p-aralık"], [data-dev~="soldan-6"][data-dev~="6p-aralık"], [data-dev~="soldan-7"][data-dev~="7p-aralık"], [data-dev~="soldan-8"][data-dev~="8p-aralık"], [data-dev~="soldan-9"][data-dev~="9p-aralık"], [data-dev~="soldan-10"][data-dev~="10p-aralık"], [data-dev~="soldan-11"][data-dev~="11p-aralık"], [data-dev~="soldan-12"][data-dev~="12p-aralık"], [data-dev~="soldan-13"][data-dev~="13p-aralık"], [data-dev~="soldan-14"][data-dev~="14p-aralık"], [data-dev~="soldan-15"][data-dev~="15p-aralık"], [data-dev~="soldan-16"][data-dev~="16p-aralık"], [data-dev~="soldan-17"][data-dev~="17p-aralık"], [data-dev~="soldan-18"][data-dev~="18p-aralık"], [data-dev~="soldan-19"][data-dev~="19p-aralık"], [data-dev~="soldan-20"][data-dev~="20p-aralık"], [data-dev~="soldan-21"][data-dev~="21p-aralık"], [data-dev~="soldan-22"][data-dev~="22p-aralık"], [data-dev~="soldan-23"][data-dev~="23p-aralık"], [data-dev~="soldan-24"][data-dev~="24p-aralık"] { margin-left: 100%; } }
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ KOCAMAN-soner ($kcm) veya (kcm-soner) | Ekran ölçeği: 0 < 1900px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BÜYÜK-soner ($byk) veya (byk-soner) | Ekran ölçeği: 0 < 1200px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ORTA-soner ($ort) veya (ort-soner) | Ekran ölçeği: 0 < 992px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ KÜÇÜK-soner ($kçk) veya (kçk-soner) | Ekran ölçeği: 0 < 768px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UFAK-soner ($ufk) veya (ufk-soner) | Ekran ölçeği: 0 < 576px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  DUYARLI TİP - YALIN |< * >| */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MİNİK-YALIN ($mnk) veya (mnk-yalın) | Ekran ölçeği: 0 ≤ * < 300px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ UFAK-YALIN ($ufk) veya (ufk-yalın) | Ekran ölçeği: 300px ≤ * < 576px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ KÇK-YALIN ($kçk) veya (kçk-yalın) | Ekran ölçeği: 576px ≤ * < 768px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ORTA-YALIN ($ort) veya (ort-yalın) Ekran ölçeği: 768px ≤ * < 992px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BÜYÜK-YALIN ($byk) veya (byk-yalın) | Ekran ölçeği: 992px ≤ * < 1200px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ KOCAMAN-YALIN ($kcm) veya (kcm-yalın) | Ekran ölçeği: 1200px ≤ * < 1900px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-kcm] | Ekran ölçeği: 0 < 1900px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-byk] | Ekran ölçeği: 0 < 1200px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-ort] | Ekran ölçeği: 0 < 992px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-kçk] | Ekran ölçeği: 0 < 768px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-ufk] | Ekran ölçeği: 0 < 576px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-mnk] | Ekran ölçeği: 0 ≤ * < 300px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-ufk] | Ekran ölçeği: 300px ≤ * < 576px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-kçk] | Ekran ölçeği: 576px ≤ * < 768px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-ort] | Ekran ölçeği: 768px ≤ * < 992px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-byk] | Ekran ölçeği: 992px ≤ * < 1200px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [data-kcm] | Ekran ölçeği: 1200px ≤ * < 1900px ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /*# sourceMappingURL=deveb-ie.css.map */
