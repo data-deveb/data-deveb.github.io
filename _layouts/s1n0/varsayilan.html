@@ -18,15 +18,11 @@
       </div>
     </div>
     <div id="içerik" data-gnl="1 1p" data-kçk="18 22p sığdır oluk-çevre">
-      <div data-gnl="1 1p oluk üstte">
+      <div data-gnl="1 1p üstte" data-kçk="20 24p" style="padding-left:10px; padding-right:10px;">
         {% if page.title %}
-        <div data-gnl="1 1p" data-kçk="20 24p" class="sayfa-başlığı">
-          <h1 data-gnl="24 24p">{{ page.title }}</h1>
-        </div>
+          <h1 class="sayfa">{{ page.title }}</h1>
         {% endif %}
-        <div data-gnl="24 24p" data-kçk="20 24p">
-          {{ content }}
-        </div>
+        {{ content }}
       </div>
     </div>
   </div>

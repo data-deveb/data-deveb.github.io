@@ -112,7 +112,13 @@ p {
 .girlik {
   font-size: 1.5em;
   margin-bottom: 30px;
+  margin-top: 5px;
   font-weight: 300;
+}
+.simget{
+  font-family: 'Comfortaa', cursive;
+  color: #2c2171 !important;
+  font-weight: bold !important;
 }
 
 .bg{
@@ -224,14 +230,12 @@ p {
 }
 
 
-.sayfa-başlığı{
-	padding: 20px 0;
-	font-size: 26px;
-	letter-spacing: 2px
+h1.sayfa{
+	padding: 10px 0 5px 0;
 }
-.sayfa-başlığı h1{
+h1.sayfa{
 	font-weight: 300;
-color: rgb(114, 137, 218);
+  color: rgb(114, 137, 218);
 margin-top: 0;
 margin-bottom: 0;
 font-size: 42px;
