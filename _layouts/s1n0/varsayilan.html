@@ -8,7 +8,15 @@
   <div data-gnl="1 1p sığdır oluk-çevre">
     <div id="sol-alan" data-gnl="1 1p üstte" data-kçk="4 22p sığdır oluk-çevre">
       <div data-gnl="1 1p göbekte geniş-aralıklı" data-dev="2 3p sağda-ol göbekte-ol">
-        <a data-gnl="0" href="/" class="logo2">deveb</a><span class="birincil" data-gnl="0 göbekte-ol" data-imgelik="kapsül küçük">sürüm 1.0</span>
+        <a data-gnl="0" href="/" class="logo2">deveb</a>
+        <span class="birincil" data-gnl="0 göbekte-ol" data-imgelik="kapsül küçük">
+          {% if page.url contains '/tr/' %}Sürüm{% endif %}
+          {% if page.url contains '/en/' %}Version{% endif %} 1.0
+        </span> 
+        <span class="birincil" data-gnl="0 göbekte-ol" data-imgelik="kapsül küçük">
+          {% if page.url contains '/tr/' %}Türkçe{% endif %}
+          {% if page.url contains '/en/' %}English{% endif %}
+        </span>
         <input id="menü-ana-çapraz" checked type="radio" name="ana-menü" data-kapaç="sağda çaprazlama">
         <label for="menü-ana">•••</label>
         <label for="menü-ana-çapraz">///</label>
