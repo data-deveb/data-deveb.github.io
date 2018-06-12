@@ -35,15 +35,13 @@ Düzenler //////////////////////////////////
 */
 
   @mixin parça-düzeni($ekran){
-
     @for $i from 1 through 24{
       [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
       [data-#{$ekran}~="#{$i}p"]{--parçalık: #{$i};}
     }
     [data-#{$ekran}]{
-      flex-basis: calc(100% / var(--parçalık) * var(--parça));
       width: calc(100% / var(--parçalık) * var(--parça));
-      max-width:  calc(100% / var(--parçalık) * var(--parça));
+      max-width: calc(100% / var(--parçalık) * var(--parça));
     }
   }
   @mixin genleşme-düzeni($ekran) {
