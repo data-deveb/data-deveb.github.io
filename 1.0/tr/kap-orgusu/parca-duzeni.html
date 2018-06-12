@@ -2,11 +2,21 @@
 layout: s1n0/varsayilan
 title: Parça Düzeni - Kap Örgüsü
 ---
-  <p>Kap örgüsünün en çok kullanılan özelliği parça düzenidir. Parça düzeni kararlı yüzdesel genişliklerle şablonlar oluşturmanız için hazırlanmıştır. Tek parçadan yani 1 parçadan 24 parçaya kadar tüm parça düzenlerini kullanıma sunar. "<span data-metin="ana">SAYI SAYIp</span>" değerleri html dosyasında istenilen ekran örgüsüne yazılarak kullanılır. SAYI 1 ile 24 arasında değer alabilir. Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş olmasını istiyorsunuz. Bunun için <a href="/1.0/tr/ekran-orgusu.html">data-gnl</a>="2 3p" <a href="/1.0/tr/ekran-orgusu.html">data-gnl</a>="1 3p" değerlerini tanımlaybilirsiniz.</p>
+  <p>
+    Kap örgüsünün en çok kullanılan özelliği parça düzenidir. Parça düzeni kararlı
+    yüzdesel genişliklerle şablonlar oluşturmanız için hazırlanmıştır. Tek parçadan
+    yani 1 parçadan 24 parçaya kadar tüm parça düzenlerini kullanıma sunar.
+    "<span data-metin="ana">SAYI SAYIp</span>" değerleri html dosyasında istenilen
+    ekran örgüsüne yazılarak kullanılır. SAYI 1 ile 24 arasında değer alabilir.
+    Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş
+    olmasını istiyorsunuz. Bunun için <a href="/1.0/tr/ekran-orgusu.html">data-gnl</a>="2 3p"
+     <a href="/1.0/tr/ekran-orgusu.html">data-gnl</a>="1 3p" değerlerini tanımlaybilirsiniz.
+   </p>
 
   <div data-gnl="1 1p ortada">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NKGZ8HWdnFw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
+
   <h3>Parça Düzeni "SAYI SAYIp" Kullanım Yöntemi</h3>
 
   <p>Kap oluşturmak için bir parça düzeni yazdığınız an tarayıcılara şunu dersiniz; "Bulunduğum genişliği SAYIp kadar eşit parçaya bölerek SAYI kadar parça genişliğini kullanacağım". Örneğin siz bulunduğunuz genişliğin yarısı kadar bir genişlik kullanmak istiyorsanız "1 2p", "2 4p", "3 6p", "4 8p", "5 10p", "6 12p", "7 14p", "8 16p", "9 18p", "10 20p", "11 22p" veya "12 24p" değerlerinden dilediğiniz bir tanesini kullanmanız yeterlidir.</p>
@@ -24,17 +34,18 @@ title: Parça Düzeni - Kap Örgüsü
     <div data-gnl="1 3p">
       1 3p
     </div>
-    <pre><code class="language-html">
-    &lt;div data-gnl=&quot;1 3p&quot;&gt;
+
+    {% highlight html %}
+    <div data-gnl="1 3p">
       1 3p
-    &lt;/div&gt;
-    &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    </div>
+    <div data-gnl="1 3p">
       1 3p
-    &lt;/div&gt;
-    &lt;div data-gnl=&quot;1 3p&quot;&gt;
+    </div>
+    <div data-gnl="1 3p">
       1 3p
-    &lt;/div&gt;
-    </code></pre>
+    </div>
+    {% endhighlight %}
   </div>
 
   <div data-gnl="1 1p" class="önizleme">
@@ -228,6 +239,4 @@ title: Parça Düzeni - Kap Örgüsü
   </div>
 
   <p></p>
-  {% highlight html %}
-  <div>as</div>
-  {% endhighlight %}
+  {% highlight html %}<div data-gnl="1 12p">as</div>{% endhighlight %}
