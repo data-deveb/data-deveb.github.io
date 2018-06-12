@@ -3,66 +3,66 @@
   <label for="menü-ana">•••</label>
   <label for="menü-ana-çapraz">///</label>
   <ul class="imge" data-menü="görünür dikey">
-    <li class="{% if page.url == '/1.0/tr/' %}etkin{% endif %}">
+    <li class="{% if page.url contains '/1.0/tr/' %}etkin{% endif %}">
       <a href="/1.0/tr/">Giriş</a>
     </li>
-    <li class="{% if page.url == '/1.0/tr/kurulum.html' %}etkin{% endif %}">
-      <a href="/1.0/tr/kurulum.html">Kurulum</a>
+    <li class="{% if page.url contains '/1.0/tr/kurulum' %}etkin{% endif %}">
+      <a href="/1.0/tr/kurulum">Kurulum</a>
     </li>
-    <li class="{% if page.url == '/1.0/tr/ekran-orgusu.html' %}etkin{% endif %}">
-      <a href="/1.0/tr/ekran-orgusu.html">Ekran Örgüsü</a>
+    <li class="{% if page.url contains '/1.0/tr/ekran-orgusu' %}etkin{% endif %}">
+      <a href="/1.0/tr/ekran-orgusu">Ekran Örgüsü</a>
     </li>
-    <li class="{% if page.url == '/1.0/tr/kap-orgusu.html' %}etkin{% endif %}">
-      <a href="/1.0/tr/kap-orgusu.html">Kap Örgüsü</a>
-      <input id="kap-örgüsü" type="checkbox" {% if page.url == '/1.0/tr/kap-orgusu.html' or page.url contains '/1.0/tr/kap-orgusu/' or page.url contains '/1.0/tr/ornekler/' %}checked{% endif %} data-kapaç="sağda">
+    <li class="{% if page.url contains '/1.0/tr/kap-orgusu' %}etkin{% endif %}">
+      <a href="/1.0/tr/kap-orgusu">Kap Örgüsü</a>
+      <input id="kap-örgüsü" type="checkbox" {% if page.url contains '/1.0/tr/kap-orgusu' or page.url contains '/1.0/tr/kap-orgusu/' or page.url contains '/1.0/tr/ornekler/' %}checked{% endif %} data-kapaç="sağda">
       <label for="kap-örgüsü"><span>▽</span></label>
       <label for="kap-örgüsü"><span>▼</span></label>
       <ul>
-        <li class="{% if page.url == '/1.0/tr/kap-orgusu/parca-duzeni.html' %}etkin{% endif %}">
-          <a href="/1.0/tr/kap-orgusu/parca-duzeni.html">Parça Düzeni</a>
+        <li class="{% if page.url contains '/1.0/tr/kap-orgusu/parca-duzeni' %}etkin{% endif %}">
+          <a href="/1.0/tr/kap-orgusu/parca-duzeni">Parça Düzeni</a>
         </li>
-        <li class="{% if page.url == '/1.0/tr/kap-orgusu/genlesme-duzeni.html' %}etkin{% endif %}">
-          <a href="/1.0/tr/kap-orgusu/genlesme-duzeni.html">Genleşme Düzeni</a>
+        <li class="{% if page.url contains '/1.0/tr/kap-orgusu/genlesme-duzeni' %}etkin{% endif %}">
+          <a href="/1.0/tr/kap-orgusu/genlesme-duzeni">Genleşme Düzeni</a>
         </li>
-        <li class="{% if page.url == '/1.0/tr/kap-orgusu/konumlama.html' %}etkin{% endif %}">
-          <a href="/1.0/tr/kap-orgusu/konumlama.html">Konumlama</a>
+        <li class="{% if page.url contains '/1.0/tr/kap-orgusu/konumlama' %}etkin{% endif %}">
+          <a href="/1.0/tr/kap-orgusu/konumlama">Konumlama</a>
         </li>
-        <li class="{% if page.url == '/1.0/tr/kap-orgusu/siralama.html' %}etkin{% endif %}">
-          <a href="/1.0/tr/kap-orgusu/siralama.html">Sıralama</a>
+        <li class="{% if page.url contains '/1.0/tr/kap-orgusu/siralama' %}etkin{% endif %}">
+          <a href="/1.0/tr/kap-orgusu/siralama">Sıralama</a>
         </li>
-        <li class="{% if page.url == '/1.0/tr/kap-orgusu/olcekler.html' %}etkin{% endif %}">
-          <a href="/1.0/tr/kap-orgusu/olcekler.html">Ölçekler</a>
+        <li class="{% if page.url contains '/1.0/tr/kap-orgusu/olcekler' %}etkin{% endif %}">
+          <a href="/1.0/tr/kap-orgusu/olcekler">Ölçekler</a>
         </li>
         <li>
           <input id="kap-örgüsü-örnekler" type="checkbox" {% if page.url contains '/1.0/tr/ornekler/' %}checked{% endif %} data-kapaç="sağda">
           <label for="kap-örgüsü-örnekler"><a href="#">Örnekler</a><span>▽</span></label>
           <label for="kap-örgüsü-örnekler"><a href="#">Örnekler</a><span>▼</span></label>
           <ul>
-            <li class="{% if page.url == '/1.0/tr/ornekler/kap-orgusu-esit-bolme.html' %}etkin{% endif %}">
-              <a href="/1.0/tr/ornekler/kap-orgusu-esit-bolme.html">Eşit Bölme #1</a>
+            <li class="{% if page.url contains '/1.0/tr/ornekler/kap-orgusu-esit-bolme' %}etkin{% endif %}">
+              <a href="/1.0/tr/ornekler/kap-orgusu-esit-bolme">Eşit Bölme #1</a>
             </li>
-            <li class="{% if page.url == '/1.0/tr/ornekler/kap-orgusu-esit-bolme-2.html' %}etkin{% endif %}">
-              <a href="/1.0/tr/ornekler/kap-orgusu-esit-bolme-2.html">Eşit Bölme #2</a>
+            <li class="{% if page.url contains '/1.0/tr/ornekler/kap-orgusu-esit-bolme-2' %}etkin{% endif %}">
+              <a href="/1.0/tr/ornekler/kap-orgusu-esit-bolme-2">Eşit Bölme #2</a>
             </li>
           </ul>
         </li>
       </ul>
     </li>
     <!--
-    <li class="{% if page.url == '/1.0/tr/sekme-orgusu.html' %}etkin{% endif %}">
-      <a href="/1.0/tr/sekme-orgusu.html">Sekme Örgüsü</a>
+    <li class="{% if page.url contains '/1.0/tr/sekme-orgusu' %}etkin{% endif %}">
+      <a href="/1.0/tr/sekme-orgusu">Sekme Örgüsü</a>
     </li>
-    <li class="{% if page.url == '/1.0/tr/renk-orgusu.html' %}etkin{% endif %}">
-      <a href="/1.0/tr/renk-orgusu.html">Renk Örgüsü</a>
+    <li class="{% if page.url contains '/1.0/tr/renk-orgusu' %}etkin{% endif %}">
+      <a href="/1.0/tr/renk-orgusu">Renk Örgüsü</a>
     </li>
-    <li class="{% if page.url == '/1.0/tr/terimler.html' %}etkin{% endif %}">
-      <a href="/1.0/tr/terimler.html">Terimler</a>
+    <li class="{% if page.url contains '/1.0/tr/terimler' %}etkin{% endif %}">
+      <a href="/1.0/tr/terimler">Terimler</a>
     </li>
-    <li class="{% if page.url == '/1.0/tr/takim.html' %}etkin{% endif %}">
-      <a href="/1.0/tr/takim.html">Takım</a>
+    <li class="{% if page.url contains '/1.0/tr/takim' %}etkin{% endif %}">
+      <a href="/1.0/tr/takim">Takım</a>
     </li>
-    <li class="{% if page.url == '/1.0/tr/tarayici-destegi.html' %}etkin{% endif %}">
-      <a href="/1.0/tr/tarayici-destegi.html">Tarayıcı Desteği</a>
+    <li class="{% if page.url contains '/1.0/tr/tarayici-destegi' %}etkin{% endif %}">
+      <a href="/1.0/tr/tarayici-destegi">Tarayıcı Desteği</a>
     </li>-->
   </ul>
 </nav>
