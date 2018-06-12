@@ -1,11 +1,11 @@
-.önizleme .örnek{
+.örnek .önizleme {
   width:100%;
   padding:2rem;
   border: 2px solid #f0f0f0;
   display: flex;
   flex-wrap: wrap;
 }
-.önizleme .örnek div{
+.örnek .önizleme  div{
   border: 1px solid #2c2171;
   background-color: #4c41a1;
   padding: 10px;
