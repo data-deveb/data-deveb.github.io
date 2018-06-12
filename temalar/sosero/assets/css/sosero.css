@@ -139,6 +139,7 @@ html:not(.intro) body.ap-yok{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-size:16px;
 }
 header, footer{
   padding:0 20px;
