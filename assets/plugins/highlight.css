@@ -1,34 +1,15 @@
-
-
-@-webkit-keyframes devebcan {
-   0%{background-position:93% 0%}
-   50%{background-position:0% 100%}
-   100%{background-position:93% 0%}
+.önizleme .örnek{
+  width:100%;
+  padding:2rem;
+  border: 2px solid #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
 }
-@-moz-keyframes devebcan {
-   0%{background-position:93% 0%}
-   50%{background-position:0% 100%}
-   100%{background-position:93% 0%}
-}
-@-o-keyframes devebcan {
-   0%{background-position:93% 0%}
-   50%{background-position:0% 100%}
-   100%{background-position:93% 0%}
-}
-@keyframes devebcan {
-   0%{background-position:93% 0%}
-   50%{background-position:0% 100%}
-   100%{background-position:93% 0%}
-}
-
-.önizleme div{
-  -webkit-animation: devebcan 24s ease infinite;
-  -moz-animation: devebcan 24s ease infinite;
-  -o-animation: devebcan 24s ease infinite;
-  animation: devebcan 24s ease infinite;
-  background: linear-gradient(225deg, #373086, #000000, #3242af);
-background-size: 600% 600%;
-  color:#fff;
+.önizleme .örnek div{
+  border: 1px solid #2c2171;
+  background-color: #4c41a1;
+  padding: 10px;
+  color: #eee;
 }
 
 .highlight  { background: #f5f5f5;
