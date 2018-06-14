@@ -3,11 +3,11 @@
 <head>
 {% include s1n0/head.html %}
 </head>
-<body data-gnl="sütun sığdır">
+<body data-gnl="sütun sığ">
 
-  <div data-gnl="1 1p sığdır oluk-çevre">
-    <div id="sol-alan" data-gnl="1 1p üstte" data-kçk="4 22p sığdır oluk-çevre">
-      <div data-gnl="1 1p göbekte geniş-aralıklı" data-dev="2 3p sağda-ol göbekte-ol">
+  <div data-gnl="sığ oluk-çevre">
+    <div id="sol-alan" data-gnl="üstte" data-kçk="4 22p sığ oluk-çevre">
+      <div data-gnl=" göbekte geniş-aralıklı" data-dev="2 3p sağda-ol göbekte-ol">
         <a data-gnl="0" href="/" class="logo2">deveb</a>
         <span class="birincil" data-gnl="0 göbekte-ol" data-imgelik="kapsül küçük">
           {% if page.url contains '/tr/' %}Sürüm{% endif %}
@@ -21,12 +21,12 @@
         <label for="menü-ana">•••</label>
         <label for="menü-ana-çapraz">///</label>
       </div>
-      <div data-gnl="1 1p" data-dev="2 3p sağda-ol üstte-ol">
+      <div data-dev="2 3p sağda-ol üstte-ol">
         {% include s1n0/dallik.html %}
       </div>
     </div>
-    <div id="içerik" data-gnl="1 1p" data-kçk="18 22p sığdır oluk-çevre">
-      <div data-gnl="1 1p üstte" data-kçk="20 24p" style="padding-left:30px; padding-right:30px;">
+    <div id="içerik" data-kçk="18 22p sığ oluk-çevre">
+      <div data-gnl="üstte" data-kçk="20 24p" style="padding-left:30px; padding-right:30px;">
         {% if page.title %}
           <h1 class="sayfa">{{ page.title }}</h1>
         {% endif %}
@@ -34,8 +34,8 @@
       </div>
     </div>
   </div>
-  <footer data-gnl="24 24p">
-  {% include foot.html %}
+  <footer>
+  {% include s1n0/foot.html %}
   </footer>
 </body>
 </html>

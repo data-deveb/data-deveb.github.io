@@ -218,6 +218,9 @@ Düzenler //////////////////////////////////
   /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
   /*  GS1 KAP ÖRGÜSÜ */
 
+    [data-#{$gnl}]{
+      --parça: 1; --parçalık:1;
+    }
     [data-#{$gnl}],[data-#{$ufk}],[data-#{$kçk}],[data-#{$ort}],[data-#{$byk}],[data-#{$kcm}],[data-#{$dev}]{
       display:flex;
       flex-wrap:wrap;

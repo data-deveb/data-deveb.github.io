@@ -9,6 +9,11 @@
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 G00 [data-gnl] | Ekran ölçeği: 0 ≤ * < ∞
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+[data-gnl] {
+  width: 100%;
+  max-width: 100%;
+}
+
 [data-gnl~="1"][data-gnl~="24p"] {
   width: 4.1666666667%;
   max-width: 4.1666666667%;
@@ -2700,6 +2705,11 @@ G00 [data-gnl] | Ekran ölçeği: 0 ≤ * < ∞
 S01 [data-ufk] | Ekran ölçeği: 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 300px) {
+  [data-ufk] {
+    width: 100%;
+    max-width: 100%;
+  }
+
   [data-ufk~="1"][data-ufk~="24p"] {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
@@ -5391,6 +5401,11 @@ S01 [data-ufk] | Ekran ölçeği: 300px ≤ *
 S02 [data-kçk] | Ekran ölçeği: 576px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 576px) {
+  [data-kçk] {
+    width: 100%;
+    max-width: 100%;
+  }
+
   [data-kçk~="1"][data-kçk~="24p"] {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
@@ -8082,6 +8097,11 @@ S02 [data-kçk] | Ekran ölçeği: 576px ≤ *
 S03 [data-ort] | Ekran ölçeği: 768px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 768px) {
+  [data-ort] {
+    width: 100%;
+    max-width: 100%;
+  }
+
   [data-ort~="1"][data-ort~="24p"] {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
@@ -10773,6 +10793,11 @@ S03 [data-ort] | Ekran ölçeği: 768px ≤ *
 S04 [data-byk] | Ekran ölçeği: 992px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 992px) {
+  [data-byk] {
+    width: 100%;
+    max-width: 100%;
+  }
+
   [data-byk~="1"][data-byk~="24p"] {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
@@ -13464,6 +13489,11 @@ S04 [data-byk] | Ekran ölçeği: 992px ≤ *
 S05 [data-kcm] | Ekran ölçeği: 1200px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1200px) {
+  [data-kcm] {
+    width: 100%;
+    max-width: 100%;
+  }
+
   [data-kcm~="1"][data-kcm~="24p"] {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
@@ -16155,6 +16185,11 @@ S05 [data-kcm] | Ekran ölçeği: 1200px ≤ *
 S06 [data-dev] | Ekran ölçeği: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1900px) {
+  [data-dev] {
+    width: 100%;
+    max-width: 100%;
+  }
+
   [data-dev~="1"][data-dev~="24p"] {
     width: 4.1666666667%;
     max-width: 4.1666666667%;

@@ -1,5 +1,6 @@
 
 @mixin parça-düzeni($ekran){
+  [data-#{$ekran}]{width: 100%;max-width: 100%;}
   [data-#{$ekran}~="1"][data-#{$ekran}~="24p"] {width: 4.1666666667%;max-width: 4.1666666667%;}
   [data-#{$ekran}~="1"][data-#{$ekran}~="23p"] {width: 4.347826087%;max-width: 4.347826087%;}
   [data-#{$ekran}~="1"][data-#{$ekran}~="22p"] {width: 4.5454545455%;max-width: 4.5454545455%;}
