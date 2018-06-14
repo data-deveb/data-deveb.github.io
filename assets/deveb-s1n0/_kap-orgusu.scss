@@ -24,7 +24,7 @@ Giriş notları //////////////////////////////////
 | sol-aralık     | sol-kemer    | sol-kenar    |
 +----------------+--------------+--------------+
 
-sığdır
+sığ
 
 Düzenler //////////////////////////////////
   parça-düzeni
@@ -154,11 +154,18 @@ Düzenler //////////////////////////////////
     }
   }
 
-  @mixin sığdır($ekran) {
-    [data-#{$ekran}~="sığdır"]{
+  @mixin sığ($ekran) {
+    [data-#{$ekran}~="sığ"]{
       flex: 1 1 0 !important;
       overflow: auto;
       max-height: 100%;
+    }
+    body[data-#{$ekran}~="tamekran"]{
+      flex: 1 1 0 !important;
+      overflow: auto;
+      max-height: 100%;
+      flex-direction: column;
+      min-height: 100vh;
     }
   }
 
@@ -233,11 +240,9 @@ Düzenler //////////////////////////////////
       flex-direction: row
     }
 
-    @include sığdır($gnl);
+    @include sığ($gnl);
 
-    body[data-#{$gnl}~="sütun"]{
-      min-height: 100vh
-    }
+
 
     body[data-#{$gnl}~="sütun"] > footer{
       margin-top: auto
@@ -269,7 +274,7 @@ S01 [data-#{$ufk}] UFAK-BÜYÜKLERİYLE | 300px ≤ *
         --ara:10px;
         }
 
-      @include sığdır($ufk);
+      @include sığ($ufk);
 
       @include parça-düzeni($ufk);
       @include genleşme-düzeni($ufk);
@@ -287,7 +292,7 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) {
 
-      @include sığdır($kçk);
+      @include sığ($kçk);
 
       @include parça-düzeni($kçk);
       @include genleşme-düzeni($kçk);
@@ -306,7 +311,7 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) {
 
-      @include sığdır($ort);
+      @include sığ($ort);
 
       @include parça-düzeni($ort);
       @include genleşme-düzeni($ort);
@@ -324,7 +329,7 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) {
 
-      @include sığdır($byk);
+      @include sığ($byk);
 
       @include parça-düzeni($byk);
       @include genleşme-düzeni($byk);
@@ -342,7 +347,7 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) {
 
-      @include sığdır($kcm);
+      @include sığ($kcm);
 
       @include parça-düzeni($kcm);
       @include genleşme-düzeni($kcm);
@@ -360,7 +365,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1900px) {
 
-      @include sığdır($dev);
+      @include sığ($dev);
 
       @include parça-düzeni($dev);
       @include genleşme-düzeni($dev);

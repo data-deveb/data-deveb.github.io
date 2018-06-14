@@ -15,12 +15,33 @@ title: Biçim Düzeni - Kap Örgüsü
   istediğiniz ekran aralığını belirterek kullanabilirsiniz.
 </p>
 
-<div class="örnek" data-gnl="1 1p">
+<div class="örnek">
   <h3>Örnek</h3>
   <a href="#">Bu örneğin canlı durumunu görmek için tıklayın.</a> <br><br>
   {% highlight html %}
   <body data-gnl="tamekran">
     Bu alanda bulunan her şey tam ekran düzeni içerisinde kalır.
+  </body>
+  {% endhighlight %}
+</div>
+
+<h2>Sığ</h2>
+<p>
+  Tasarımlarınızda yeri geldiğinde bir alana enine boyuna bir alan sığdırmak isteyebilirsiniz.
+  O zaman geldiğinde ekran örgüsü içerisinde "sığ" değiştirgesini kullanmanız yeterli
+  olacaktır. Böylelikle alan bulunduğu alana sığmış durumda olacaktır. Bazı durumlarda
+  "sütun" değiştirgesiyle birlikte kullanmanız gerekebilir. Daha iyi anlamak için
+  örnekleri inceleyiniz.
+</p>
+
+<div class="örnek">
+  <h3>Örnek</h3>
+  <a href="#">Bu örneğin canlı durumunu görmek için tıklayın.</a> <br><br>
+  {% highlight html %}
+  <body data-gnl="tamekran">
+    <div data-gnl="sığ">
+      Bu alan tam ekrana göre sığdırılmıştır.
+    </div>
   </body>
   {% endhighlight %}
 </div>

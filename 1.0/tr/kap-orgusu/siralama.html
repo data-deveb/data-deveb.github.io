@@ -8,29 +8,29 @@ title: Kap Örgüsü Sıralama
   <p>Sıralama işlemi 1'den 24'e kadar gruplandırılabilir. Bir HTML etiketine 1nc ve 2nc tanımlaması yaptığınızda birbirleri arasında sıralama yapılır. Ekran örgüsüyle uyumludur. Mesela telefon ekranlarında bir nesneyi 2nc sırada gösterebilirken geniş ekranlarda başka bir sırada gösterebilirsiniz.</p>
   <p></p>
 
-  <div class="örnek" data-gnl="1 1p">
+  <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
-      <div data-gnl="1 1p 2nc">
+      <div data-gnl="2nc">
         2nc: kaynak kodunda birinci sırada, görüntülemede ikinci sırada.
       </div>
-      <div data-gnl="1 1p 1nc" data-kçk="3nc">
+      <div data-gnl="1nc" data-kçk="3nc">
         3nc: kaynak kodunda ikinci sırada, görüntülemede üçüncü sırada. Telefon ekranlarında ise birinci sırada.
       </div>
-      <div data-gnl="1 1p 1nc">
+      <div data-gnl="1nc">
         1nc: kaynak kodunda üçüncü sırada, görüntülemede birinci sırada.
       </div>
     </div>
   </div>
 
     {% highlight html %}
-      <div data-gnl="1 1p 2nc">
+      <div data-gnl="2nc">
         2nc: kaynak kodunda birinci sırada, görüntülemede ikinci sırada.
       </div>
-      <div data-gnl="1 1p 1nc" data-kçk="3nc">
+      <div data-gnl="1nc" data-kçk="3nc">
         3nc: kaynak kodunda ikinci sırada, görüntülemede üçüncü sırada. Telefon ekranlarında ise birinci sırada.
       </div>
-      <div data-gnl="1 1p 1nc">
+      <div data-gnl="1nc">
         1nc: kaynak kodunda üçüncü sırada, görüntülemede birinci sırada.
       </div>
     {% endhighlight %}

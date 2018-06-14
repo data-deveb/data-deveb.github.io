@@ -23,7 +23,7 @@ title: Parça Düzeni - Kap Örgüsü
 
   <p>Dilediğimiz parça düzenini kullanmaya başlamadan önce örnek bir şablonu hayal edelim. Bir çalışmamız 3 eşit genişliğe parçalanmış olsun, bir çalışmamızda 20 parça düzeni kullanılarak kendi aralarında farklı genişliklere sahip 3 sütun şeklinde olsun. İlk örneğimizi "1 3p" değerini uygun yerlere yazarak yapabiliriz. Diğerini ise "3 20p", "10 20p", "7 20p" olarak hazırlayalım.</p>
   <p></p>
-  <div class="örnek" data-gnl="1 1p">
+  <div class="örnek">
     <h3>Önizleme: Örnek 1</h3>
     <div class="önizleme">
       <div data-gnl="1 3p">
@@ -49,7 +49,7 @@ title: Parça Düzeni - Kap Örgüsü
     {% endhighlight %}
   </div>
 
-  <div class="örnek" data-gnl="1 1p">
+  <div class="örnek">
     <h3>Önizleme: Örnek 2</h3>
     <div class="önizleme">
       <div data-gnl="3 20p">
@@ -75,7 +75,7 @@ title: Parça Düzeni - Kap Örgüsü
     {% endhighlight %}
   </div>
 
-  <div class="örnek" data-gnl="1 1p">
+  <div class="örnek">
     <h3>Önizleme: Örnek 3</h3>
     <p>Örnek 1 ve 2'yi bir arada işlemek</p>
     <div class="önizleme">
@@ -126,7 +126,7 @@ title: Parça Düzeni - Kap Örgüsü
 
   <p>Bu düzeni kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Ana html etiketinde belirttiğim SAYIp yavru etiketlerin varsayılan değeri haline gelmiştir. Aynı zamanda ana etikette belirttiğim SAYI etiketin genişliğidir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzenine göre ölçeklenecektir. Yavru etiketlerde SAYI yazarak genişliklerimi belirtebilirim. Eğer yavru etiketlerden en az birinde SAYIp belirttiysem, bu belirttiğim değer etiketin yeni parça düzeni olurken SAYI değeri de yeni düzenin parça miktarı olacaktır."</p>
   <p></p>
-  <div class="örnek" data-gnl="1 1p">
+  <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
       <div data-gnl="2 2p">
@@ -168,7 +168,7 @@ title: Parça Düzeni - Kap Örgüsü
 
   <p>Bu düzeni kullanarak bir kap yazdığınız an tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim." <span data-metin="dikkat">Uyarı: Eski internet tarayıcılarını önemseyerek oluşturduğunuz çalışmalarınızda bu yöntem bazı şartları aşması durumunda istenildiği gibi çalışmayabilir. Bu yüzden eski tarayıcıları önemsiyorsanız her zaman "SAYI SAYIp" tanımlaması yaparak kullanılmanızı tavsiye ederiz.</span></p>
   <p></p>
-  <div class="örnek" data-gnl="1 1p">
+  <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
       <div data-gnl="2 2p">
@@ -197,10 +197,10 @@ title: Parça Düzeni - Kap Örgüsü
   <h3>Genleşme Ve Parça Düzeni Kıyaslaması</h3>
   <p>Genleşme düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Genleşme düzeninde her genleşme birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.</p>
   <p></p>
-  <div class="örnek" data-gnl="1 1p">
+  <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
-      <div data-gnl="1 1p">
+      <div>
         <div data-gnl="1g">
           1g
         </div>
@@ -211,7 +211,7 @@ title: Parça Düzeni - Kap Örgüsü
           2g
         </div>
       </div>
-      <div data-gnl="1 1p">
+      <div>
         <div data-gnl="1 7p">
           1 7p
         </div>
@@ -224,7 +224,7 @@ title: Parça Düzeni - Kap Örgüsü
       </div>
     </div>
     {% highlight html %}
-    <div data-gnl="1 1p">
+    <div>
       <div data-gnl="1g">
         1g
       </div>
@@ -235,7 +235,7 @@ title: Parça Düzeni - Kap Örgüsü
         2g
       </div>
     </div>
-    <div data-gnl="1 1p">
+    <div>
       <div data-gnl="1 7p">
         1 7p
       </div>
