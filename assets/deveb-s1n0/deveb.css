@@ -26,8 +26,15 @@ body {
 }
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, section, menu, main, nav {
+hgroup, section, menu, nav {
   display: block;
+}
+
+div, footer, main, header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
 }
 
 a, button, input, textarea {
