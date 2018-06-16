@@ -153,6 +153,32 @@ Düzenler //////////////////////////////////
       padding: 0
     }
   }
+  @mixin r-düzeni($ekran){
+    [data-#{$ekran}~="1r"] > div{   width: calc(100% / 1); max-width: calc(100% / 1);    }
+    [data-#{$ekran}~="2r"] > div{   width: calc(100% / 2); max-width: calc(100% / 2);    }
+    [data-#{$ekran}~="3r"] > div{   width: calc(100% / 3); max-width: calc(100% / 3);    }
+    [data-#{$ekran}~="4r"] > div{   width: calc(100% / 4); max-width: calc(100% / 4);    }
+    [data-#{$ekran}~="5r"] > div{   width: calc(100% / 5); max-width: calc(100% / 5);    }
+    [data-#{$ekran}~="6r"] > div{   width: calc(100% / 6); max-width: calc(100% / 6);    }
+    [data-#{$ekran}~="7r"] > div{   width: calc(100% / 7); max-width: calc(100% / 7);    }
+    [data-#{$ekran}~="8r"] > div{   width: calc(100% / 8); max-width: calc(100% / 8);    }
+    [data-#{$ekran}~="9r"] > div{   width: calc(100% / 9); max-width: calc(100% / 9);    }
+    [data-#{$ekran}~="10r"] > div{   width: calc(100% / 10); max-width: calc(100% / 10);    }
+    [data-#{$ekran}~="11r"] > div{   width: calc(100% / 11); max-width: calc(100% / 11);    }
+    [data-#{$ekran}~="12r"] > div{   width: calc(100% / 12); max-width: calc(100% / 12);    }
+    [data-#{$ekran}~="13r"] > div{   width: calc(100% / 13); max-width: calc(100% / 13);    }
+    [data-#{$ekran}~="14r"] > div{   width: calc(100% / 14); max-width: calc(100% / 14);    }
+    [data-#{$ekran}~="15r"] > div{   width: calc(100% / 15); max-width: calc(100% / 15);    }
+    [data-#{$ekran}~="16r"] > div{   width: calc(100% / 16); max-width: calc(100% / 16);    }
+    [data-#{$ekran}~="17r"] > div{   width: calc(100% / 17); max-width: calc(100% / 17);    }
+    [data-#{$ekran}~="18r"] > div{   width: calc(100% / 18); max-width: calc(100% / 18);    }
+    [data-#{$ekran}~="19r"] > div{   width: calc(100% / 19); max-width: calc(100% / 19);    }
+    [data-#{$ekran}~="20r"] > div{   width: calc(100% / 20); max-width: calc(100% / 20);    }
+    [data-#{$ekran}~="21r"] > div{   width: calc(100% / 21); max-width: calc(100% / 21);    }
+    [data-#{$ekran}~="22r"] > div{   width: calc(100% / 22); max-width: calc(100% / 22);    }
+    [data-#{$ekran}~="23r"] > div{   width: calc(100% / 23); max-width: calc(100% / 23);    }
+    [data-#{$ekran}~="24r"] > div{   width: calc(100% / 24); max-width: calc(100% / 24);    }
+  }
 
   @mixin sığ($ekran) {
     [data-#{$ekran}~="sığ"]{
@@ -249,7 +275,7 @@ Düzenler //////////////////////////////////
     }
 
     @include parça-düzeni($gnl);
-
+    @include r-düzeni($gnl);
     /* Kap Örgüsü Ek Etkiler */
     @include aralık-düzeni($gnl);
 
@@ -277,6 +303,7 @@ S01 [data-#{$ufk}] UFAK-BÜYÜKLERİYLE | 300px ≤ *
       @include sığ($ufk);
 
       @include parça-düzeni($ufk);
+      @include r-düzeni($ufk);
       @include genleşme-düzeni($ufk);
       @include sıralama-düzeni($ufk);
       @include konumlama($ufk);
@@ -295,6 +322,7 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
       @include sığ($kçk);
 
       @include parça-düzeni($kçk);
+      @include r-düzeni($kçk);
       @include genleşme-düzeni($kçk);
       @include sıralama-düzeni($kçk);
 
@@ -314,6 +342,7 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
       @include sığ($ort);
 
       @include parça-düzeni($ort);
+      @include r-düzeni($ort);
       @include genleşme-düzeni($ort);
       @include sıralama-düzeni($ort);
       @include konumlama($ort);
@@ -332,6 +361,7 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
       @include sığ($byk);
 
       @include parça-düzeni($byk);
+      @include r-düzeni($byk);
       @include genleşme-düzeni($byk);
       @include sıralama-düzeni($byk);
       @include konumlama($byk);
@@ -350,6 +380,7 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
       @include sığ($kcm);
 
       @include parça-düzeni($kcm);
+      @include r-düzeni($kcm);
       @include genleşme-düzeni($kcm);
       @include sıralama-düzeni($kcm);
       @include konumlama($kcm);
@@ -368,6 +399,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       @include sığ($dev);
 
       @include parça-düzeni($dev);
+      @include r-düzeni($dev);
       @include genleşme-düzeni($dev);
       @include sıralama-düzeni($dev);
       @include konumlama($dev);
