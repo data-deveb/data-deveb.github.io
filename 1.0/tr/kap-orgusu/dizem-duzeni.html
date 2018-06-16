@@ -1,0 +1,110 @@
+---
+layout: s1n0/varsayilan
+title: Dizem Düzeni - Kap Örgüsü
+---
+<p class="girlik">
+  Düzenli bir biçimde tekrar eden aynı genişliklere sahip kapsamlar oluşturmak için dizem
+  düzeni geliştirilmiştir. Birer birer, ikişer ikişer, üçer üçer, ... oluşturmak
+  isterseniz 1r~24r arasındaki değiştirgeyi kullanmanız yeterlidir.
+</p>
+<div class="örnek">
+  <h3>Önizleme: Örnek 1</h3>
+  <div class="önizleme">
+    <div data-gnl="2r">
+      <div>
+        ikişer ikişer
+      </div>
+      <div>
+        ikişer ikişer
+      </div>
+      <div>
+        ikişer ikişer
+      </div>
+      <div>
+        ikişer ikişer
+      </div>
+      <div>
+        ikişer ikişer
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="2r">
+    <div>
+      ikişer ikişer
+    </div>
+    <div>
+      ikişer ikişer
+    </div>
+    <div>
+      ikişer ikişer
+    </div>
+    <div>
+      ikişer ikişer
+    </div>
+    <div>
+      ikişer ikişer
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+<h2>Parça Düzeniyle Birlikte Kullanım</h2>
+<p>
+  Dizem düzenini parça düzeniyle birlikte kullanabilirsiniz. Düzenli genişlik tekrarları
+  birbirleriyle tam uyumlu olmak zorunda değildir. Neler yapabileceğiniz konusunda
+  güzel bir örneği hemen aşağıda inceleyebilirsiniz.
+</p>
+<div class="örnek">
+  <h3>Önizleme: Örnek 2</h3>
+  <div class="önizleme">
+    <div data-gnl="4r">
+      <div>
+        dörder dörder
+      </div>
+      <div data-byk="2 4p">
+        2 4p
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="4r">
+    <div>
+      dörder dörder
+    </div>
+    <div data-byk="2 4p">
+      2 4p
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+  </div>
+  {% endhighlight %}
+</div>

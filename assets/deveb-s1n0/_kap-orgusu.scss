@@ -39,7 +39,7 @@ Düzenler //////////////////////////////////
       [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
       [data-#{$ekran}~="#{$i}p"]{--parçalık: #{$i};}
     }
-    [data-#{$ekran}]{
+    [data-#{$ekran}][data-#{$ekran}]{
       width: calc(100% / var(--parçalık) * var(--parça));
       max-width: calc(100% / var(--parçalık) * var(--parça));
     }
@@ -153,7 +153,7 @@ Düzenler //////////////////////////////////
       padding: 0
     }
   }
-  @mixin r-düzeni($ekran){
+  @mixin dizem-düzeni($ekran){
     [data-#{$ekran}~="1r"] > div{   width: calc(100% / 1); max-width: calc(100% / 1);    }
     [data-#{$ekran}~="2r"] > div{   width: calc(100% / 2); max-width: calc(100% / 2);    }
     [data-#{$ekran}~="3r"] > div{   width: calc(100% / 3); max-width: calc(100% / 3);    }
@@ -274,8 +274,8 @@ Düzenler //////////////////////////////////
       margin-top: auto
     }
 
+    @include dizem-düzeni($gnl);
     @include parça-düzeni($gnl);
-    @include r-düzeni($gnl);
     /* Kap Örgüsü Ek Etkiler */
     @include aralık-düzeni($gnl);
 
@@ -302,8 +302,8 @@ S01 [data-#{$ufk}] UFAK-BÜYÜKLERİYLE | 300px ≤ *
 
       @include sığ($ufk);
 
+      @include dizem-düzeni($ufk);
       @include parça-düzeni($ufk);
-      @include r-düzeni($ufk);
       @include genleşme-düzeni($ufk);
       @include sıralama-düzeni($ufk);
       @include konumlama($ufk);
@@ -321,8 +321,8 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
 
       @include sığ($kçk);
 
+      @include dizem-düzeni($kçk);
       @include parça-düzeni($kçk);
-      @include r-düzeni($kçk);
       @include genleşme-düzeni($kçk);
       @include sıralama-düzeni($kçk);
 
@@ -341,8 +341,8 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
 
       @include sığ($ort);
 
+      @include dizem-düzeni($ort);
       @include parça-düzeni($ort);
-      @include r-düzeni($ort);
       @include genleşme-düzeni($ort);
       @include sıralama-düzeni($ort);
       @include konumlama($ort);
@@ -360,8 +360,8 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
 
       @include sığ($byk);
 
+      @include dizem-düzeni($byk);
       @include parça-düzeni($byk);
-      @include r-düzeni($byk);
       @include genleşme-düzeni($byk);
       @include sıralama-düzeni($byk);
       @include konumlama($byk);
@@ -379,8 +379,8 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
 
       @include sığ($kcm);
 
+      @include dizem-düzeni($kcm);
       @include parça-düzeni($kcm);
-      @include r-düzeni($kcm);
       @include genleşme-düzeni($kcm);
       @include sıralama-düzeni($kcm);
       @include konumlama($kcm);
@@ -398,8 +398,8 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
 
       @include sığ($dev);
 
+      @include dizem-düzeni($dev);
       @include parça-düzeni($dev);
-      @include r-düzeni($dev);
       @include genleşme-düzeni($dev);
       @include sıralama-düzeni($dev);
       @include konumlama($dev);
