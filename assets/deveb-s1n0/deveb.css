@@ -1240,7 +1240,7 @@ body[data-gnl~="sütun"] > footer {
   flex: 24;
 }
 
-[data-gnl~="0"] {
+[data-gnl~="0"][data-gnl~="0"] {
   flex-basis: auto;
   max-width: none;
   width: auto;
@@ -1922,7 +1922,7 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     flex: 24;
   }
 
-  [data-ufk~="0"] {
+  [data-ufk~="0"][data-ufk~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
@@ -2601,7 +2601,7 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     flex: 24;
   }
 
-  [data-kçk~="0"] {
+  [data-kçk~="0"][data-kçk~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
@@ -3280,7 +3280,7 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     flex: 24;
   }
 
-  [data-ort~="0"] {
+  [data-ort~="0"][data-ort~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
@@ -3959,7 +3959,7 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     flex: 24;
   }
 
-  [data-byk~="0"] {
+  [data-byk~="0"][data-byk~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
@@ -4638,7 +4638,7 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     flex: 24;
   }
 
-  [data-kcm~="0"] {
+  [data-kcm~="0"][data-kcm~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
@@ -5317,7 +5317,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     flex: 24;
   }
 
-  [data-dev~="0"] {
+  [data-dev~="0"][data-dev~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;

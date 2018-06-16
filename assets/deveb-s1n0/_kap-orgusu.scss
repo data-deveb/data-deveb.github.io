@@ -50,7 +50,7 @@ Düzenler //////////////////////////////////
         flex: #{$i};
       }
     }
-    [data-#{$ekran}~="0"]{
+    [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
       flex-basis: auto;
       max-width: none;
       width: auto;
