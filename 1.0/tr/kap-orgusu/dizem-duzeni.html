@@ -8,7 +8,7 @@ title: Dizem Düzeni - Kap Örgüsü
   isterseniz 1r~24r arasındaki değiştirgeyi kullanmanız yeterlidir.
 </p>
 <div class="örnek">
-  <h3>Önizleme: Örnek 1</h3>
+  <h3>Örnek</h3>
   <div class="önizleme">
     <div data-gnl="2r">
       <div>
@@ -56,13 +56,13 @@ title: Dizem Düzeni - Kap Örgüsü
   güzel bir örneği hemen aşağıda inceleyebilirsiniz.
 </p>
 <div class="örnek">
-  <h3>Önizleme: Örnek 2</h3>
+  <h3>Örnek</h3>
   <div class="önizleme">
     <div data-gnl="4r">
       <div>
         dörder dörder
       </div>
-      <div data-byk="2 4p">
+      <div data-gnl="2 4p">
         2 4p
       </div>
       <div>
@@ -87,11 +87,130 @@ title: Dizem Düzeni - Kap Örgüsü
     <div>
       dörder dörder
     </div>
-    <div data-byk="2 4p">
+    <div data-gnl="2 4p">
       2 4p
     </div>
     <div>
       dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+<h2>Genleşme Düzeniyle Birlikte Kullanım</h2>
+<p>
+  Dizem düzenini genleşme düzeniyle birlikte kullanabilirsiniz. Düzenli genişlik tekrarları
+  birbirleriyle tam uyumlu olmak zorunda değildir. Neler yapabileceğiniz konusunda
+  güzel bir örneği hemen aşağıda inceleyebilirsiniz.
+</p>
+<div class="örnek">
+  <h3>Örnek</h3>
+  <div class="önizleme">
+    <div data-gnl="4r">
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="4r">
+    <div data-gnl="1g">
+      1g
+    </div>
+    <div data-gnl="2g">
+      2g
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+<h2>Parça ve Genleşme Düzeniyle Birlikte Kullanım</h2>
+<p>
+  Dizem düzenini parça ve genleşme düzeniyle birlikte kullanabilirsiniz. Düzenli genişlik tekrarları
+  birbirleriyle tam uyumlu olmak zorunda değildir. Neler yapabileceğiniz konusunda
+  güzel bir örneği hemen aşağıda inceleyebilirsiniz.
+</p>
+<div class="örnek">
+  <h3>Örnek</h3>
+  <div class="önizleme">
+    <div data-gnl="4r">
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+      <div data-gnl="2 4p">
+        2 4p
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="4r">
+    <div data-gnl="1g">
+      1g
+    </div>
+    <div data-gnl="2g">
+      2g
+    </div>
+    <div data-gnl="2 4p">
+      2 4p
     </div>
     <div>
       dörder dörder
