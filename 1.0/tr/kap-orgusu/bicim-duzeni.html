@@ -26,9 +26,9 @@ title: Biçim Düzeni - Kap Örgüsü
 </div>
 <h2>Kap</h2>
 <p>
-  Tasarımlarınızı yaparken sabit genişlikte çalışmak isteyebilirsiniz. Aynı zamanda
-  bu genişliklerin ekran genişliğine göre yeni sabit genişliklere sahip olmasını
-  isteyebilirsiniz. Bunun için "kap" değiştirgesini kullanmanız yeterlidir.
+  Tasarımlarınızı yaparken ana genişliği sabit genişlik olan tasarımlar yapın.
+  Aynı zamanda bu genişlikler ekran genişliğine göre uyarlanmıl sabit genişliklerde olsun.
+  Bunun için "kap" değiştirgesini kullanmanız yeterlidir.
 </p>
 <div class="örnek">
   <h3>Örnek</h3>
@@ -37,7 +37,7 @@ title: Biçim Düzeni - Kap Örgüsü
       <div data-gnl="1 3p">
         1 3p
       </div>
-      <div data-gnl="1 3p o">
+      <div data-gnl="1 3p">
         1 3p
       </div>
       <div data-gnl="1 3p">
@@ -78,5 +78,36 @@ title: Biçim Düzeni - Kap Örgüsü
       Bu alan tam ekrana göre sığdırılmıştır.
     </div>
   </body>
+  {% endhighlight %}
+</div>
+
+<h2>0 (sıfır)</h2>
+<p>
+  Tasarımlarınızı yaparken içeriğe göre genişlik kullanmak isteyebilrsiniz.
+  Bunun için "0" değiştirgesini kullanmanız yeterlidir.
+</p>
+<div class="örnek">
+  <h3>Örnek</h3>
+  <div class="önizleme">
+    <div data-gnl="0">
+      0
+    </div>
+    <div data-gnl="1 3p">
+      1 3p
+    </div>
+    <div data-gnl="1 3p">
+      1 3p
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="0">
+    0
+  </div>
+  <div data-gnl="1 3p">
+    1 3p
+  </div>
+  <div data-gnl="1 3p">
+    1 3p
+  </div>
   {% endhighlight %}
 </div>
