@@ -279,7 +279,7 @@ Düzenler //////////////////////////////////
     /* Kap Örgüsü Ek Etkiler */
     @include aralık-düzeni($gnl);
 
-    [data-#{$gnl}~="#{$kaplama}"]{
+    [data-#{$gnl}~="#{$kap}"]{
       margin-left: auto;
       margin-right: auto;}
 
@@ -404,13 +404,13 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       @include sıralama-düzeni($dev);
       @include konumlama($dev);
 
-      [data-#{$gnl}~="#{$kaplama}"],[data-#{$dev}~="#{$kaplama}"],
-      [data-#{$kcm}~="#{$büyükleri-kaplama}"],[data-#{$kcm}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$byk}~="#{$büyükleri-kaplama}"],[data-#{$byk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ort}~="#{$büyükleri-kaplama}"],[data-#{$ort}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$kçk}~="#{$büyükleri-kaplama}"],[data-#{$kçk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ufk}~="#{$büyükleri-kaplama}"],[data-#{$ufk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$mnk}~="#{$büyükleri-kaplama}"],[data-#{$mnk}~="#{$büyükleriyle-kaplama}"]{
+      [data-#{$gnl}~="#{$kap}"],[data-#{$dev}~="#{$kap}"],
+      [data-#{$kcm}~="#{$büyükleri-kap}"],[data-#{$kcm}~="#{$büyükleriyle-kap}"],
+      [data-#{$byk}~="#{$büyükleri-kap}"],[data-#{$byk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ort}~="#{$büyükleri-kap}"],[data-#{$ort}~="#{$büyükleriyle-kap}"],
+      [data-#{$kçk}~="#{$büyükleri-kap}"],[data-#{$kçk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ufk}~="#{$büyükleri-kap}"],[data-#{$ufk}~="#{$büyükleriyle-kap}"],
+      [data-#{$mnk}~="#{$büyükleri-kap}"],[data-#{$mnk}~="#{$büyükleriyle-kap}"]{
         max-width: 1890px;
       }
 
@@ -489,16 +489,16 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     MİNİK-YALIN ($mnk) veya (mnk-yalın) | Ekran ölçeği: 0 ≤ * < 300px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (max-width:300px) {
-      [data-#{$gnl}~="#{$kaplama}"],
-      [data-#{$mnk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$mnk}~="#{$bunu-kaplama}"],
-      [data-#{$mnk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$ufk}~="#{$küçükleri-kaplama}"],[data-#{$ufk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$kçk}~="#{$küçükleri-kaplama}"],[data-#{$kçk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$ort}~="#{$küçükleri-kaplama}"],[data-#{$ort}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$byk}~="#{$küçükleri-kaplama}"],[data-#{$byk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$kcm}~="#{$küçükleri-kaplama}"],[data-#{$kcm}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$dev}~="#{$küçükleri-kaplama}"],[data-#{$dev}~="#{$küçükleriyle-kaplama}"]{
+      [data-#{$gnl}~="#{$kap}"],
+      [data-#{$mnk}~="#{$büyükleriyle-kap}"],
+      [data-#{$mnk}~="#{$bunu-kap}"],
+      [data-#{$mnk}~="#{$küçükleriyle-kap}"],
+      [data-#{$ufk}~="#{$küçükleri-kap}"],[data-#{$ufk}~="#{$küçükleriyle-kap}"],
+      [data-#{$kçk}~="#{$küçükleri-kap}"],[data-#{$kçk}~="#{$küçükleriyle-kap}"],
+      [data-#{$ort}~="#{$küçükleri-kap}"],[data-#{$ort}~="#{$küçükleriyle-kap}"],
+      [data-#{$byk}~="#{$küçükleri-kap}"],[data-#{$byk}~="#{$küçükleriyle-kap}"],
+      [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
+      [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
         width: 100%;
         max-width: 100%;
       }
@@ -510,16 +510,16 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     UFAK-YALIN ($ufk) veya (ufk-yalın) | Ekran ölçeği: 300px ≤ * < 576px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:300px) and (max-width:576px) {
-      [data-#{$gnl}~="#{$kaplama}"],
-      [data-#{$mnk}~="#{$büyükleri-kaplama}"],[data-#{$mnk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ufk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ufk}~="#{$bunu-kaplama}"],
-      [data-#{$ufk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$kçk}~="#{$küçükleri-kaplama}"],[data-#{$kçk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$ort}~="#{$küçükleri-kaplama}"],[data-#{$ort}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$byk}~="#{$küçükleri-kaplama}"],[data-#{$byk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$kcm}~="#{$küçükleri-kaplama}"],[data-#{$kcm}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$dev}~="#{$küçükleri-kaplama}"],[data-#{$dev}~="#{$küçükleriyle-kaplama}"]{
+      [data-#{$gnl}~="#{$kap}"],
+      [data-#{$mnk}~="#{$büyükleri-kap}"],[data-#{$mnk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ufk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ufk}~="#{$bunu-kap}"],
+      [data-#{$ufk}~="#{$küçükleriyle-kap}"],
+      [data-#{$kçk}~="#{$küçükleri-kap}"],[data-#{$kçk}~="#{$küçükleriyle-kap}"],
+      [data-#{$ort}~="#{$küçükleri-kap}"],[data-#{$ort}~="#{$küçükleriyle-kap}"],
+      [data-#{$byk}~="#{$küçükleri-kap}"],[data-#{$byk}~="#{$küçükleriyle-kap}"],
+      [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
+      [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
         width: calc(100% - 20px);
         max-width: calc(100% - 20px);
       }
@@ -531,16 +531,16 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     KÇK-YALIN ($kçk) veya (kçk-yalın) | Ekran ölçeği: 576px ≤ * < 768px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:576px) and (max-width:768px) {
-      [data-#{$gnl}~="#{$kaplama}"],
-      [data-#{$mnk}~="#{$büyükleri-kaplama}"],[data-#{$mnk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ufk}~="#{$büyükleri-kaplama}"],[data-#{$ufk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$kçk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$kçk}~="#{$bunu-kaplama}"],
-      [data-#{$kçk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$ort}~="#{$küçükleri-kaplama}"],[data-#{$ort}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$byk}~="#{$küçükleri-kaplama}"],[data-#{$byk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$kcm}~="#{$küçükleri-kaplama}"],[data-#{$kcm}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$dev}~="#{$küçükleri-kaplama}"],[data-#{$dev}~="#{$küçükleriyle-kaplama}"]{
+      [data-#{$gnl}~="#{$kap}"],
+      [data-#{$mnk}~="#{$büyükleri-kap}"],[data-#{$mnk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ufk}~="#{$büyükleri-kap}"],[data-#{$ufk}~="#{$büyükleriyle-kap}"],
+      [data-#{$kçk}~="#{$büyükleriyle-kap}"],
+      [data-#{$kçk}~="#{$bunu-kap}"],
+      [data-#{$kçk}~="#{$küçükleriyle-kap}"],
+      [data-#{$ort}~="#{$küçükleri-kap}"],[data-#{$ort}~="#{$küçükleriyle-kap}"],
+      [data-#{$byk}~="#{$küçükleri-kap}"],[data-#{$byk}~="#{$küçükleriyle-kap}"],
+      [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
+      [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
         width: 566px;
         max-width: 566px;
       }
@@ -553,16 +553,16 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     Ekran ölçeği: 768px ≤ * < 992px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:768px) and (max-width:992px) {
-      [data-#{$gnl}~="#{$kaplama}"],
-      [data-#{$mnk}~="#{$büyükleri-kaplama}"],[data-#{$mnk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ufk}~="#{$büyükleri-kaplama}"],[data-#{$ufk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$kçk}~="#{$büyükleri-kaplama}"],[data-#{$kçk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ort}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ort}~="#{$bunu-kaplama}"],
-      [data-#{$ort}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$byk}~="#{$küçükleri-kaplama}"],[data-#{$byk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$kcm}~="#{$küçükleri-kaplama}"],[data-#{$kcm}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$dev}~="#{$küçükleri-kaplama}"],[data-#{$dev}~="#{$küçükleriyle-kaplama}"]{
+      [data-#{$gnl}~="#{$kap}"],
+      [data-#{$mnk}~="#{$büyükleri-kap}"],[data-#{$mnk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ufk}~="#{$büyükleri-kap}"],[data-#{$ufk}~="#{$büyükleriyle-kap}"],
+      [data-#{$kçk}~="#{$büyükleri-kap}"],[data-#{$kçk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ort}~="#{$büyükleriyle-kap}"],
+      [data-#{$ort}~="#{$bunu-kap}"],
+      [data-#{$ort}~="#{$küçükleriyle-kap}"],
+      [data-#{$byk}~="#{$küçükleri-kap}"],[data-#{$byk}~="#{$küçükleriyle-kap}"],
+      [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
+      [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
         width: 760px;
         max-width: 760px;
       }
@@ -574,16 +574,16 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     BÜYÜK-YALIN ($byk) veya (byk-yalın) | Ekran ölçeği: 992px ≤ * < 1200px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:992px) and (max-width:1200px) {
-      [data-#{$gnl}~="#{$kaplama}"],
-      [data-#{$mnk}~="#{$büyükleri-kaplama}"],[data-#{$mnk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ufk}~="#{$büyükleri-kaplama}"],[data-#{$ufk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$kçk}~="#{$büyükleri-kaplama}"],[data-#{$kçk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ort}~="#{$büyükleri-kaplama}"],[data-#{$ort}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$byk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$byk}~="#{$bunu-kaplama}"],
-      [data-#{$byk}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$kcm}~="#{$küçükleri-kaplama}"],[data-#{$kcm}~="#{$küçükleriyle-kaplama}"],
-      [data-#{$dev}~="#{$küçükleri-kaplama}"],[data-#{$dev}~="#{$küçükleriyle-kaplama}"]{
+      [data-#{$gnl}~="#{$kap}"],
+      [data-#{$mnk}~="#{$büyükleri-kap}"],[data-#{$mnk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ufk}~="#{$büyükleri-kap}"],[data-#{$ufk}~="#{$büyükleriyle-kap}"],
+      [data-#{$kçk}~="#{$büyükleri-kap}"],[data-#{$kçk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ort}~="#{$büyükleri-kap}"],[data-#{$ort}~="#{$büyükleriyle-kap}"],
+      [data-#{$byk}~="#{$büyükleriyle-kap}"],
+      [data-#{$byk}~="#{$bunu-kap}"],
+      [data-#{$byk}~="#{$küçükleriyle-kap}"],
+      [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
+      [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
         width: 960px;
         max-width: 960px;
       }
@@ -595,15 +595,15 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     KOCAMAN-YALIN ($kcm) veya (kcm-yalın) | Ekran ölçeği: 1200px ≤ * < 1900px
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1200px) and (max-width:1900px) {
-      [data-#{$gnl}~="#{$kaplama}"],
-      [data-#{$mnk}~="#{$büyükleri-kaplama}"],[data-#{$mnk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ufk}~="#{$büyükleri-kaplama}"],[data-#{$ufk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$kçk}~="#{$büyükleri-kaplama}"],[data-#{$kçk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$ort}~="#{$büyükleri-kaplama}"],[data-#{$ort}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$byk}~="#{$büyükleri-kaplama}"],[data-#{$byk}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$kcm}~="#{$büyükleriyle-kaplama}"],
-      [data-#{$kcm}~="#{$bunu-kaplama}"],
-      [data-#{$kcm}~="#{$küçükleriyle-kaplama}"]{
+      [data-#{$gnl}~="#{$kap}"],
+      [data-#{$mnk}~="#{$büyükleri-kap}"],[data-#{$mnk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ufk}~="#{$büyükleri-kap}"],[data-#{$ufk}~="#{$büyükleriyle-kap}"],
+      [data-#{$kçk}~="#{$büyükleri-kap}"],[data-#{$kçk}~="#{$büyükleriyle-kap}"],
+      [data-#{$ort}~="#{$büyükleri-kap}"],[data-#{$ort}~="#{$büyükleriyle-kap}"],
+      [data-#{$byk}~="#{$büyükleri-kap}"],[data-#{$byk}~="#{$büyükleriyle-kap}"],
+      [data-#{$kcm}~="#{$büyükleriyle-kap}"],
+      [data-#{$kcm}~="#{$bunu-kap}"],
+      [data-#{$kcm}~="#{$küçükleriyle-kap}"]{
         width: 1140px;
         max-width: 1140px;
       }
