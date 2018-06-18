@@ -520,7 +520,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-#{$byk}~="#{$küçükleri-kap}"],[data-#{$byk}~="#{$küçükleriyle-kap}"],
       [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
       [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
-        width: calc(100% - 20px);
+        width: 100%;
         max-width: calc(100% - 20px);
       }
       /* Gizleme */
@@ -541,7 +541,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-#{$byk}~="#{$küçükleri-kap}"],[data-#{$byk}~="#{$küçükleriyle-kap}"],
       [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
       [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
-        width: 566px;
+        width: 100%;
         max-width: 566px;
       }
       /* Gizleme */
@@ -563,7 +563,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-#{$byk}~="#{$küçükleri-kap}"],[data-#{$byk}~="#{$küçükleriyle-kap}"],
       [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
       [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
-        width: 760px;
+        width: 100%;
         max-width: 760px;
       }
       /* Gizleme */
@@ -584,7 +584,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-#{$byk}~="#{$küçükleriyle-kap}"],
       [data-#{$kcm}~="#{$küçükleri-kap}"],[data-#{$kcm}~="#{$küçükleriyle-kap}"],
       [data-#{$dev}~="#{$küçükleri-kap}"],[data-#{$dev}~="#{$küçükleriyle-kap}"]{
-        width: 960px;
+        width: 100%;
         max-width: 960px;
       }
       /* Gizleme */
@@ -604,7 +604,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
       [data-#{$kcm}~="#{$büyükleriyle-kap}"],
       [data-#{$kcm}~="#{$bunu-kap}"],
       [data-#{$kcm}~="#{$küçükleriyle-kap}"]{
-        width: 1140px;
+        width: 100%;
         max-width: 1140px;
       }
       /* Gizleme */
