@@ -100,7 +100,7 @@
 
 /* Genel Özellikler */
 body {
-	background-color: #f8f8f8;
+	background-color: #f7fafc;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
@@ -369,6 +369,12 @@ ul.liste-temiz li{
   margin:2px;
   padding:5px;
   background-color: #fff;
+}
+[data-kart]{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin-top: 30px;
+padding: 20px 15px;
+transition: all 0.5s ease 0s;
 }
 [data-kart~="haber"]{
 	display: flex;
