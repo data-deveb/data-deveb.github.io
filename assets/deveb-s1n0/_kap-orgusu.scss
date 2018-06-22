@@ -1,36 +1,18 @@
 /*
+◘ KAP ÖRGÜSÜ 1.0
+◘ Giriş notları //////////////////////////////////
 
-KAP ÖRGÜSÜ 0.9
+lt  t   ts
+l   o   s
+la  a   as
 
-Giriş notları //////////////////////////////////
+düzme (sarmak, dürmek)
+dizme (satır)
+dikme (sütun)
 
-+----------------+--------------+--------------+
-| araları-aralık |              |              |
-+----------------+--------------+--------------+
-| dengeli-aralık |              |              |
-+----------------+--------------+--------------+
-| aralık         | kemer        | kenar        |
-+----------------+--------------+--------------+
-| altüst-aralık  | altüst-kemer | altüst-kenar |
-+----------------+--------------+--------------+
-| sağsol-aralık  | sağsol-kemer | sağsol-kenar |
-+----------------+--------------+--------------+
-| üst-aralık     | üst-kemer    | üst-kenar    |
-+----------------+--------------+--------------+
-| sağ-aralık     | sağ-kemer    | sağ-kenar    |
-+----------------+--------------+--------------+
-| alt-aralık     | alt-kemer    | alt-kenar    |
-+----------------+--------------+--------------+
-| sol-aralık     | sol-kemer    | sol-kenar    |
-+----------------+--------------+--------------+
-
-sığ
-
-Düzenler //////////////////////////////////
-  parça-düzeni
-  genleşme-düzeni
-  sıralama-düzeni
-  konumlama
+ters-düzme
+ters-dizme
+ters-dikme
 
 */
 
@@ -244,6 +226,177 @@ Düzenler //////////////////////////////////
     [data-#{$ekran}~="#{$metin-sağda}"]{text-align: right}
     [data-#{$ekran}~="#{$metin-ortada}"]{text-align: center}
     [data-#{$ekran}~="#{$metin-solda}"]{text-align: left}
+
+    [data-#{$ekran}~="#{$solüst}"],
+    [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$solalt}"],
+    [data-#{$ekran}~="#{$sol}"],
+    .lt,
+    .t.sütun,
+    .ts.sütun,
+    .la,
+    .l {
+      justify-content: flex-start
+    }
+
+    [data-#{$ekran}~="#{$üst}"],
+    [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$alt}"],
+    [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$orta}"],
+    .t,
+    .s.sütun,
+    .a,
+    .l.sütun,
+    .o {
+      justify-content: center
+    }
+
+    [data-#{$ekran}~="#{$üstsağ}"],
+    [data-#{$ekran}~="#{$sağ}"],
+    [data-#{$ekran}~="#{$altsağ}"],
+    [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"],
+    .ts,
+    .s,
+    .as,
+    .a.sütun,
+    .la.sütun {
+      justify-content: flex-end
+    }
+
+    [data-#{$ekran}~="#{$solüst}"],
+    [data-#{$ekran}~="#{$üst}"],
+    [data-#{$ekran}~="#{$üstsağ}"],
+    [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"],
+    .lt,
+    .t,
+    .ts,
+    .la.sütun,
+    .l.sütun {
+      align-content: flex-start;
+      align-items: flex-start;
+    }
+
+    [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$sağ}"],
+    [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$sol}"],
+    .t.sütun,
+    .s,
+    .a.sütun,
+    .l {
+      align-content: inherit;
+      align-items: center;
+    }
+
+    [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
+    [data-#{$ekran}~="#{$altsağ}"],
+    [data-#{$ekran}~="#{$alt}"],
+    [data-#{$ekran}~="#{$solalt}"],
+    .ts.sütun,
+    .s.sütun,
+    .as,
+    .a,
+    .la {
+      align-content: flex-end;
+      align-items: flex-end;
+    }
+
+    [data-#{$ekran}~="#{$orta}"],
+    .o {
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+
+    [data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]),
+    ._o:not(._l):not(._s):not(._t):not(._a) {
+      align-self: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    [data-#{$ekran}~="_#{$orta}"],
+    [data-#{$ekran}~="_#{$sol}"],
+    [data-#{$ekran}~="_#{$sağ}"],
+    ._o,
+    ._l,
+    ._s {
+      align-self: center
+    }
+
+    :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$üst}"],
+    [data-#{$ekran}~="_#{$solüst}"],
+    [data-#{$ekran}~="_#{$üstsağ}"],
+    :not(.sütun)>._t,
+    ._lt,
+    ._ts {
+      align-self: flex-start
+    }
+
+    :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$alt}"],
+    [data-#{$ekran}~="_#{$solalt}"],
+    [data-#{$ekran}~="_#{$altsağ}"],
+    :not(.sütun)>._a,
+    ._la,
+    ._as {
+      align-self: flex-end
+    }
+
+    [data-#{$ekran}~="_#{$sol}"],
+    [data-#{$ekran}~="_#{$solüst}"],
+    [data-#{$ekran}~="_#{$solalt}"],
+    ._l,
+    ._lt,
+    ._la {
+      margin-right: auto
+    }
+
+    [data-#{$ekran}~="_#{$sağ}"],
+    [data-#{$ekran}~="_#{$üstsağ}"],
+    [data-#{$ekran}~="_#{$altsağ}"],
+    ._s,
+    ._ts,
+    ._as {
+      margin-left: auto
+    }
+
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üst}"],
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solüst}"],
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üstsağ}"],
+    .sütun>._t,
+    .sütun>._lt,
+    .sütun>._ts {
+      margin-bottom: auto;
+    }
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$alt}"],
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solalt}"],
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$altsağ}"],
+    .sütun>._a,
+    .sütun>._la,
+    .sütun>._as {
+      margin-top: auto;
+    }
+ 
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]),
+    .sütun>._o:not(._l):not(._s):not(._t):not(._a) {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    [data-#{$ekran}~="#{$üstalt}"],
+    .ta {
+      align-content: stretch !important;
+      align-items: stretch !important;
+    }
+
+    [data-#{$ekran}~="#{$solsağ}"],
+    .ls {
+      justify-content: stretch !important;
+    }
   }
 
   /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
