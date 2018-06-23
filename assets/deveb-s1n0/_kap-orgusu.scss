@@ -276,7 +276,7 @@ ters-dikme
     .ts,
     .la.sütun,
     .l.sütun {
-      align-content: flex-start;
+      /*align-content: flex-start;*/
       align-items: flex-start;
     }
 
@@ -288,7 +288,7 @@ ters-dikme
     .s,
     .a.sütun,
     .l {
-      align-content: inherit;
+      /*align-content: inherit;*/
       align-items: center;
     }
 
@@ -302,14 +302,14 @@ ters-dikme
     .as,
     .a,
     .la {
-      align-content: flex-end;
+      /*align-content: flex-end;*/
       align-items: flex-end;
     }
 
     [data-#{$ekran}~="#{$orta}"],
     .o {
       justify-content: center;
-      align-content: center;
+      /*align-content: center;*/
       align-items: center;
     }
 
@@ -335,7 +335,7 @@ ters-dikme
     ._lt,
     ._ts {
       align-self: flex-start
-    }
+    } 
 
     :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$alt}"],
     [data-#{$ekran}~="_#{$solalt}"],
@@ -380,7 +380,7 @@ ters-dikme
     .sütun>._as {
       margin-top: auto;
     }
- 
+
     [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]),
     .sütun>._o:not(._l):not(._s):not(._t):not(._a) {
       margin-top: auto;
