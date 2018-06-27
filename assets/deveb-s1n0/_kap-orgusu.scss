@@ -2,18 +2,6 @@
 ◘ KAP ÖRGÜSÜ 1.0
 ◘ Giriş notları //////////////////////////////////
 
-lt  t   ts
-l   o   s
-la  a   as
-
-düzme (sarmak, dürmek)
-dizme (satır)
-dikme (sütun)
-
-ters-düzme
-ters-dizme
-ters-dikme
-
 */
 
   @mixin parça-düzeni($ekran){
@@ -25,7 +13,8 @@ ters-dikme
       width: calc(100% / var(--parçalık) * var(--parça));
       max-width: calc(100% / var(--parçalık) * var(--parça));
     }
-  }
+  }  
+
   @mixin genleşme-düzeni($ekran) {
     @for $i from 1 through 24{
       [data-#{$ekran}~="#{$i}g"]{
@@ -65,55 +54,55 @@ ters-dikme
       margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
     }
 
-    [data-#{$ekran}*="#{aralık}-1"]{margin: 10px;}
-    [data-#{$ekran}*="#{aralık}-2"]{margin: 15px;}
-    [data-#{$ekran}*="#{aralık}-3"]{margin: 20px;}
-    [data-#{$ekran}*="#{aralık}-l1"]{margin-left: 10px;}
-    [data-#{$ekran}*="#{aralık}-l2"]{margin-left: 15px;}
-    [data-#{$ekran}*="#{aralık}-l3"]{margin-left: 20px;}
-    [data-#{$ekran}*="#{aralık}-s1"]{margin-right: 10px;}
-    [data-#{$ekran}*="#{aralık}-s2"]{margin-right: 15px;}
-    [data-#{$ekran}*="#{aralık}-s3"]{margin-right: 20px;}
-    [data-#{$ekran}*="#{aralık}-t1"]{margin-top: 10px;}
-    [data-#{$ekran}*="#{aralık}-t2"]{margin-top: 15px;}
-    [data-#{$ekran}*="#{aralık}-t3"]{margin-top: 20px;}
-    [data-#{$ekran}*="#{aralık}-a1"]{margin-bottom: 10px;}
-    [data-#{$ekran}*="#{aralık}-a2"]{margin-bottom: 15px;}
-    [data-#{$ekran}*="#{aralık}-a3"]{margin-bottom: 20px;}
-    [data-#{$ekran}*="#{aralık}-ls1"]{margin-left: 10px;margin-right: 10px;}
-    [data-#{$ekran}*="#{aralık}-ls2"]{margin-left: 15px;margin-right: 15px;}
-    [data-#{$ekran}*="#{aralık}-ls3"]{margin-left: 20px;margin-right: 20px;}
-    [data-#{$ekran}*="#{aralık}-ta1"]{margin-top: 10px;margin-bottom: 10px;}
-    [data-#{$ekran}*="#{aralık}-ta2"]{margin-top: 15px;margin-bottom: 15px;}
-    [data-#{$ekran}*="#{aralık}-ta3"]{margin-top: 20px;margin-bottom: 20px;}
+    [data-#{$ekran}*="#{$aralık}-1"]{margin: 10px;}
+    [data-#{$ekran}*="#{$aralık}-2"]{margin: 15px;}
+    [data-#{$ekran}*="#{$aralık}-3"]{margin: 20px;}
+    [data-#{$ekran}*="#{$aralık}-l1"]{margin-left: 10px;}
+    [data-#{$ekran}*="#{$aralık}-l2"]{margin-left: 15px;}
+    [data-#{$ekran}*="#{$aralık}-l3"]{margin-left: 20px;}
+    [data-#{$ekran}*="#{$aralık}-s1"]{margin-right: 10px;}
+    [data-#{$ekran}*="#{$aralık}-s2"]{margin-right: 15px;}
+    [data-#{$ekran}*="#{$aralık}-s3"]{margin-right: 20px;}
+    [data-#{$ekran}*="#{$aralık}-t1"]{margin-top: 10px;}
+    [data-#{$ekran}*="#{$aralık}-t2"]{margin-top: 15px;}
+    [data-#{$ekran}*="#{$aralık}-t3"]{margin-top: 20px;}
+    [data-#{$ekran}*="#{$aralık}-a1"]{margin-bottom: 10px;}
+    [data-#{$ekran}*="#{$aralık}-a2"]{margin-bottom: 15px;}
+    [data-#{$ekran}*="#{$aralık}-a3"]{margin-bottom: 20px;}
+    [data-#{$ekran}*="#{$aralık}-ls1"]{margin-left: 10px;margin-right: 10px;}
+    [data-#{$ekran}*="#{$aralık}-ls2"]{margin-left: 15px;margin-right: 15px;}
+    [data-#{$ekran}*="#{$aralık}-ls3"]{margin-left: 20px;margin-right: 20px;}
+    [data-#{$ekran}*="#{$aralık}-ta1"]{margin-top: 10px;margin-bottom: 10px;}
+    [data-#{$ekran}*="#{$aralık}-ta2"]{margin-top: 15px;margin-bottom: 15px;}
+    [data-#{$ekran}*="#{$aralık}-ta3"]{margin-top: 20px;margin-bottom: 20px;}
 
-    [data-#{$ekran}*="araları-#{aralık}-1"]{margin: -10px 0 0 -5px;}
-    [data-#{$ekran}*="araları-#{aralık}-2"]{margin: -15px 0 0 -7.5px;}
-    [data-#{$ekran}*="araları-#{aralık}-3"]{margin: -20px 0 0 -10px;}
-    [data-#{$ekran}*="araları-#{aralık}-1"] > *{padding-left:10px;padding-top:10px;}
-    [data-#{$ekran}*="araları-#{aralık}-2"] > *{padding-left:15px;padding-top:15px;}
-    [data-#{$ekran}*="araları-#{aralık}-3"] > *{padding-left:20px;padding-top:20px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-1"] > *{padding:10px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-2"] > *{padding:15px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-3"] > *{padding:20px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-l1"] > *{padding-left: 10px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-l2"] > *{padding-left: 15px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-l3"] > *{padding-left: 20px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-s1"] > *{padding-right: 10px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-s2"] > *{padding-right: 15px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-s3"] > *{padding-right: 20px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-t1"] > *{padding-top: 10px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-t2"] > *{padding-top: 15px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-t3"] > *{padding-top: 20px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-a1"] > *{padding-bottom: 10px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-a2"] > *{padding-bottom: 15px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-a3"] > *{padding-bottom: 20px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
-    [data-#{$ekran}*="dengeli-#{aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
+    [data-#{$ekran}*="araları-#{$aralık}-1"]{margin: -10px 0 0 -5px;}
+    [data-#{$ekran}*="araları-#{$aralık}-2"]{margin: -15px 0 0 -7.5px;}
+    [data-#{$ekran}*="araları-#{$aralık}-3"]{margin: -20px 0 0 -10px;}
+    [data-#{$ekran}*="araları-#{$aralık}-1"] > *{padding-left:10px;padding-top:10px;}
+    [data-#{$ekran}*="araları-#{$aralık}-2"] > *{padding-left:15px;padding-top:15px;}
+    [data-#{$ekran}*="araları-#{$aralık}-3"] > *{padding-left:20px;padding-top:20px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-1"] > *{padding:10px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-2"] > *{padding:15px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-3"] > *{padding:20px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-l1"] > *{padding-left: 10px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-l2"] > *{padding-left: 15px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-l3"] > *{padding-left: 20px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-s1"] > *{padding-right: 10px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-s2"] > *{padding-right: 15px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-s3"] > *{padding-right: 20px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-t1"] > *{padding-top: 10px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-t2"] > *{padding-top: 15px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-t3"] > *{padding-top: 20px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-a1"] > *{padding-bottom: 10px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-a2"] > *{padding-bottom: 15px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-a3"] > *{padding-bottom: 20px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
+    [data-#{$ekran}*="dengeli-#{$aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
 
     [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
       margin: var(--aralık);
@@ -231,12 +220,7 @@ ters-dikme
     [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
     [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
     [data-#{$ekran}~="#{$solalt}"],
-    [data-#{$ekran}~="#{$sol}"],
-    .lt,
-    .t.sütun,
-    .ts.sütun,
-    .la,
-    .l {
+    [data-#{$ekran}~="#{$sol}"]{
       justify-content: flex-start
     }
 
@@ -244,12 +228,7 @@ ters-dikme
     [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
     [data-#{$ekran}~="#{$alt}"],
     [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$orta}"],
-    .t,
-    .s.sütun,
-    .a,
-    .l.sütun,
-    .o {
+    [data-#{$ekran}~="#{$orta}"]{
       justify-content: center
     }
 
@@ -257,12 +236,7 @@ ters-dikme
     [data-#{$ekran}~="#{$sağ}"],
     [data-#{$ekran}~="#{$altsağ}"],
     [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"],
-    .ts,
-    .s,
-    .as,
-    .a.sütun,
-    .la.sütun {
+    [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"]{
       justify-content: flex-end
     }
 
@@ -270,12 +244,7 @@ ters-dikme
     [data-#{$ekran}~="#{$üst}"],
     [data-#{$ekran}~="#{$üstsağ}"],
     [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"],
-    .lt,
-    .t,
-    .ts,
-    .la.sütun,
-    .l.sütun {
+    [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"]{
       /*align-content: flex-start;*/
       align-items: flex-start;
     }
@@ -283,11 +252,7 @@ ters-dikme
     [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
     [data-#{$ekran}~="#{$sağ}"],
     [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$sol}"],
-    .t.sütun,
-    .s,
-    .a.sütun,
-    .l {
+    [data-#{$ekran}~="#{$sol}"]{
       /*align-content: inherit;*/
       align-items: center;
     }
@@ -296,105 +261,74 @@ ters-dikme
     [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
     [data-#{$ekran}~="#{$altsağ}"],
     [data-#{$ekran}~="#{$alt}"],
-    [data-#{$ekran}~="#{$solalt}"],
-    .ts.sütun,
-    .s.sütun,
-    .as,
-    .a,
-    .la {
+    [data-#{$ekran}~="#{$solalt}"]{
       /*align-content: flex-end;*/
       align-items: flex-end;
     }
 
-    [data-#{$ekran}~="#{$orta}"],
-    .o {
+    [data-#{$ekran}~="#{$orta}"]{
       justify-content: center;
       /*align-content: center;*/
       align-items: center;
     }
 
-    [data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]),
-    ._o:not(._l):not(._s):not(._t):not(._a) {
+    [data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]){
       align-self: center;
       margin-right: auto;
       margin-left: auto;
     }
     [data-#{$ekran}~="_#{$orta}"],
     [data-#{$ekran}~="_#{$sol}"],
-    [data-#{$ekran}~="_#{$sağ}"],
-    ._o,
-    ._l,
-    ._s {
+    [data-#{$ekran}~="_#{$sağ}"]{
       align-self: center
     }
 
     :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$üst}"],
     [data-#{$ekran}~="_#{$solüst}"],
-    [data-#{$ekran}~="_#{$üstsağ}"],
-    :not(.sütun)>._t,
-    ._lt,
-    ._ts {
+    [data-#{$ekran}~="_#{$üstsağ}"]{
       align-self: flex-start
     } 
 
     :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$alt}"],
     [data-#{$ekran}~="_#{$solalt}"],
-    [data-#{$ekran}~="_#{$altsağ}"],
-    :not(.sütun)>._a,
-    ._la,
-    ._as {
+    [data-#{$ekran}~="_#{$altsağ}"]{
       align-self: flex-end
     }
 
     [data-#{$ekran}~="_#{$sol}"],
     [data-#{$ekran}~="_#{$solüst}"],
-    [data-#{$ekran}~="_#{$solalt}"],
-    ._l,
-    ._lt,
-    ._la {
+    [data-#{$ekran}~="_#{$solalt}"]{
       margin-right: auto
     }
 
     [data-#{$ekran}~="_#{$sağ}"],
     [data-#{$ekran}~="_#{$üstsağ}"],
-    [data-#{$ekran}~="_#{$altsağ}"],
-    ._s,
-    ._ts,
-    ._as {
+    [data-#{$ekran}~="_#{$altsağ}"]{
       margin-left: auto
     }
 
     [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üst}"],
     [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solüst}"],
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üstsağ}"],
-    .sütun>._t,
-    .sütun>._lt,
-    .sütun>._ts {
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üstsağ}"]{
       margin-bottom: auto;
     }
     [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$alt}"],
     [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solalt}"],
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$altsağ}"],
-    .sütun>._a,
-    .sütun>._la,
-    .sütun>._as {
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$altsağ}"]{
       margin-top: auto;
     }
 
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]),
-    .sütun>._o:not(._l):not(._s):not(._t):not(._a) {
+    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]){
       margin-top: auto;
       margin-bottom: auto;
     }
 
-    [data-#{$ekran}~="#{$üstalt}"],
-    .ta {
+    [data-#{$ekran}~="#{$üstalt}"]{
       align-content: stretch !important;
       align-items: stretch !important;
     }
 
-    [data-#{$ekran}~="#{$solsağ}"],
-    .ls {
+    [data-#{$ekran}~="#{$solsağ}"]{
       justify-content: stretch !important;
     }
   }

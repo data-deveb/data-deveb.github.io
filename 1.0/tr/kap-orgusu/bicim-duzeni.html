@@ -99,7 +99,8 @@ title: Biçim Düzeni - Kap Örgüsü
       1 3p
     </div>
   </div>
-  {% highlight html %}
+</div>  
+{% highlight html %}
   <div data-gnl="0">
     0
   </div>
@@ -109,5 +110,52 @@ title: Biçim Düzeni - Kap Örgüsü
   <div data-gnl="1 3p">
     1 3p
   </div>
+{% endhighlight %}
+
+
+<h3>Kaymadan & Dürmeden</h3>
+  <p>"kaymadan" içeriği dışarı taşmasını engeller.</p>
+  <p>"dürmeden" içeriği alt satırlara dürülmesini engeller ve tek satırda gösterir.</p>
+  
+  <div class="örnek">
+    <h3>Önizleme</h3>
+    <div class="önizleme">
+      <div data-gnl="1 24p kaymadan">
+        Taşmadan yazamadıklarımızdan mısınız?
+      </div>
+      <div data-gnl="dürmeden">
+        <div>
+          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        </div>
+        <div>
+          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        </div>
+        <div>
+          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        </div>
+        <div>
+          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        </div>
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+    <div data-gnl="1 24p kaymadan">
+      Taşmadan yazamadıklarımızdan mısınız?
+    </div>
+    <div data-gnl="dürmeden">
+      <div>
+        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+      </div>
+      <div>
+        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+      </div>
+      <div>
+        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+      </div>
+      <div>
+        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+      </div>
+    </div>
   {% endhighlight %}
-</div>
+

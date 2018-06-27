@@ -125,6 +125,38 @@ p {
 	background-image: url(../img/bg.png),linear-gradient(#2c2171, #292070 15%);
 }
 
+.örnek .önizleme {
+  width:100%;
+  padding:2rem;
+  border: 2px solid #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.örnek .önizleme  div{
+  border: 1px solid #2c2171;
+  background-color: #4c41a1;
+  padding: 10px;
+  color: #eee;
+}
+
+.örnek .önizleme-1 {
+  width:100%;
+  padding:2rem;
+  border: 2px solid #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.örnek .önizleme-1 .kart{
+	border: 1px solid #2c2171;
+	background-color: #4c41a1;
+	padding: 10px;
+	color: #eee;
+}
+.örnek + figure{
+	max-height: 50vh;
+	overflow: auto;
+}
+
 /* Eski tasarımdan */
 
 #sol-alan{
