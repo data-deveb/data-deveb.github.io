@@ -125,31 +125,32 @@
     }
   }
   @mixin dizem-düzeni($ekran){
-    [data-#{$ekran}~="1r"] > div{   width: calc(100% / 1); max-width: calc(100% / 1);    }
-    [data-#{$ekran}~="2r"] > div{   width: calc(100% / 2); max-width: calc(100% / 2);    }
-    [data-#{$ekran}~="3r"] > div{   width: calc(100% / 3); max-width: calc(100% / 3);    }
-    [data-#{$ekran}~="4r"] > div{   width: calc(100% / 4); max-width: calc(100% / 4);    }
-    [data-#{$ekran}~="5r"] > div{   width: calc(100% / 5); max-width: calc(100% / 5);    }
-    [data-#{$ekran}~="6r"] > div{   width: calc(100% / 6); max-width: calc(100% / 6);    }
-    [data-#{$ekran}~="7r"] > div{   width: calc(100% / 7); max-width: calc(100% / 7);    }
-    [data-#{$ekran}~="8r"] > div{   width: calc(100% / 8); max-width: calc(100% / 8);    }
-    [data-#{$ekran}~="9r"] > div{   width: calc(100% / 9); max-width: calc(100% / 9);    }
-    [data-#{$ekran}~="10r"] > div{   width: calc(100% / 10); max-width: calc(100% / 10);    }
-    [data-#{$ekran}~="11r"] > div{   width: calc(100% / 11); max-width: calc(100% / 11);    }
-    [data-#{$ekran}~="12r"] > div{   width: calc(100% / 12); max-width: calc(100% / 12);    }
-    [data-#{$ekran}~="13r"] > div{   width: calc(100% / 13); max-width: calc(100% / 13);    }
-    [data-#{$ekran}~="14r"] > div{   width: calc(100% / 14); max-width: calc(100% / 14);    }
-    [data-#{$ekran}~="15r"] > div{   width: calc(100% / 15); max-width: calc(100% / 15);    }
-    [data-#{$ekran}~="16r"] > div{   width: calc(100% / 16); max-width: calc(100% / 16);    }
-    [data-#{$ekran}~="17r"] > div{   width: calc(100% / 17); max-width: calc(100% / 17);    }
-    [data-#{$ekran}~="18r"] > div{   width: calc(100% / 18); max-width: calc(100% / 18);    }
-    [data-#{$ekran}~="19r"] > div{   width: calc(100% / 19); max-width: calc(100% / 19);    }
-    [data-#{$ekran}~="20r"] > div{   width: calc(100% / 20); max-width: calc(100% / 20);    }
-    [data-#{$ekran}~="21r"] > div{   width: calc(100% / 21); max-width: calc(100% / 21);    }
-    [data-#{$ekran}~="22r"] > div{   width: calc(100% / 22); max-width: calc(100% / 22);    }
-    [data-#{$ekran}~="23r"] > div{   width: calc(100% / 23); max-width: calc(100% / 23);    }
-    [data-#{$ekran}~="24r"] > div{   width: calc(100% / 24); max-width: calc(100% / 24);    }
+    [data-#{$ekran}~="1r"] > div, [data-#{$ekran}~="1r"] > [data-gnl]{   width: calc(100% / 1); max-width: calc(100% / 1);    }
+    [data-#{$ekran}~="2r"] > div, [data-#{$ekran}~="2r"] > [data-gnl]{   width: calc(100% / 2); max-width: calc(100% / 2);    }
+    [data-#{$ekran}~="3r"] > div, [data-#{$ekran}~="3r"] > [data-gnl]{   width: calc(100% / 3); max-width: calc(100% / 3);    }
+    [data-#{$ekran}~="4r"] > div, [data-#{$ekran}~="4r"] > [data-gnl]{   width: calc(100% / 4); max-width: calc(100% / 4);    }
+    [data-#{$ekran}~="5r"] > div, [data-#{$ekran}~="5r"] > [data-gnl]{   width: calc(100% / 5); max-width: calc(100% / 5);    }
+    [data-#{$ekran}~="6r"] > div, [data-#{$ekran}~="6r"] > [data-gnl]{   width: calc(100% / 6); max-width: calc(100% / 6);    }
+    [data-#{$ekran}~="7r"] > div, [data-#{$ekran}~="7r"] > [data-gnl]{   width: calc(100% / 7); max-width: calc(100% / 7);    }
+    [data-#{$ekran}~="8r"] > div, [data-#{$ekran}~="8r"] > [data-gnl]{   width: calc(100% / 8); max-width: calc(100% / 8);    }
+    [data-#{$ekran}~="9r"] > div, [data-#{$ekran}~="9r"] > [data-gnl]{   width: calc(100% / 9); max-width: calc(100% / 9);    }
+    [data-#{$ekran}~="10r"] > div, [data-#{$ekran}~="10r"] > [data-gnl]{   width: calc(100% / 10); max-width: calc(100% / 10);    }
+    [data-#{$ekran}~="11r"] > div, [data-#{$ekran}~="11r"] > [data-gnl]{   width: calc(100% / 11); max-width: calc(100% / 11);    }
+    [data-#{$ekran}~="12r"] > div, [data-#{$ekran}~="12r"] > [data-gnl]{   width: calc(100% / 12); max-width: calc(100% / 12);    }
+    [data-#{$ekran}~="13r"] > div, [data-#{$ekran}~="13r"] > [data-gnl]{   width: calc(100% / 13); max-width: calc(100% / 13);    }
+    [data-#{$ekran}~="14r"] > div, [data-#{$ekran}~="14r"] > [data-gnl]{   width: calc(100% / 14); max-width: calc(100% / 14);    }
+    [data-#{$ekran}~="15r"] > div, [data-#{$ekran}~="15r"] > [data-gnl]{   width: calc(100% / 15); max-width: calc(100% / 15);    }
+    [data-#{$ekran}~="16r"] > div, [data-#{$ekran}~="16r"] > [data-gnl]{   width: calc(100% / 16); max-width: calc(100% / 16);    }
+    [data-#{$ekran}~="17r"] > div, [data-#{$ekran}~="17r"] > [data-gnl]{   width: calc(100% / 17); max-width: calc(100% / 17);    }
+    [data-#{$ekran}~="18r"] > div, [data-#{$ekran}~="18r"] > [data-gnl]{   width: calc(100% / 18); max-width: calc(100% / 18);    }
+    [data-#{$ekran}~="19r"] > div, [data-#{$ekran}~="19r"] > [data-gnl]{   width: calc(100% / 19); max-width: calc(100% / 19);    }
+    [data-#{$ekran}~="20r"] > div, [data-#{$ekran}~="20r"] > [data-gnl]{   width: calc(100% / 20); max-width: calc(100% / 20);    }
+    [data-#{$ekran}~="21r"] > div, [data-#{$ekran}~="21r"] > [data-gnl]{   width: calc(100% / 21); max-width: calc(100% / 21);    }
+    [data-#{$ekran}~="22r"] > div, [data-#{$ekran}~="22r"] > [data-gnl]{   width: calc(100% / 22); max-width: calc(100% / 22);    }
+    [data-#{$ekran}~="23r"] > div, [data-#{$ekran}~="23r"] > [data-gnl]{   width: calc(100% / 23); max-width: calc(100% / 23);    }
+    [data-#{$ekran}~="24r"] > div, [data-#{$ekran}~="24r"] > [data-gnl]{   width: calc(100% / 24); max-width: calc(100% / 24);    }
   }
+  
 
   @mixin sığ($ekran) {
     [data-#{$ekran}~="sığ"]{
