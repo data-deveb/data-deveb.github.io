@@ -1,0 +1,202 @@
+---
+layout: s1n0/varsayilan
+title: Aralık Düzeni
+---
+	<p class="girlik">
+		Ögeler arası boşluklar bırakarak estetik bir görünüme erişmenin kolay yolları var. Sabit genişlikte ögeleriniz varsa içinde bulunduğu ekran genişliğine göre doğal bir şekilde aralıklarla ögelerinizi yerleştirebilirsiniz. Dış sınırlardan başlayan bir düzen veya dengeli aralık verilen bir düzen yapabilirsiniz. Daha fazlası aşağıda.
+	</p>
+
+	<h3>araları-aralık & dengeli-aralık</h3>
+	<p>
+		Sadece ögelerin birbirleri arasında aralık bırakılması istenildiği zaman kullanılması gereken değiştirge  "araları-aralık" değiştirgesidir. Ekran genişliğine göre ögeler sabit genişlikteyse veya yüzdesel olarak aralıklı yayılabilecek durumdaysa kendiliğinden bir aralık oluşturur.
+	</p>
+	<p>
+		Ögelerin her iki yandan aralık bırakmasını istiyorsanız  "dengeli-aralık" değiştirgesini kullanın. Ekran genişliğine göre ögeler sağ ve sol yanlarından bulundukları şartlara göre aralık alırlar. Kenar ile öge arası aralık uzunluğu iki öge arası aralık uzunluğunun yarısı olacaktır.
+	</p>
+	<div class="örnek">
+	<h3>Önizleme</h3>
+	<div class="önizleme">
+	  <div data-gnl="araları-aralık">
+	    <div data-gnl="1 8p">
+	      araları-aralık
+	    </div>
+	    <div data-gnl="1 8p">
+	      araları-aralık
+	    </div>
+	    <div data-gnl="1 8p">
+	      araları-aralık
+	    </div>
+	  </div>
+	  <div data-gnl="dengeli-aralık">
+	    <div data-gnl="1 8p">
+	      dengeli-aralık
+	    </div>
+	    <div data-gnl="1 8p">
+	      dengeli-aralık
+	    </div>
+	    <div data-gnl="1 8p">
+	      dengeli-aralık
+	    </div>
+	  </div>
+	</div>
+	</div>
+	{% highlight html %}
+	<div data-gnl="araları-aralık">
+	  <div data-gnl="1 8p">
+	    araları-aralık
+	  </div>
+	  <div data-gnl="1 8p">
+	    araları-aralık
+	  </div>
+	  <div data-gnl="1 8p">
+	    araları-aralık
+	  </div>
+	</div>
+	<div data-gnl="dengeli-aralık">
+	  <div data-gnl="1 8p">
+	    dengeli-aralık
+	  </div>
+	  <div data-gnl="1 8p">
+	    dengeli-aralık
+	  </div>
+	  <div data-gnl="1 8p">
+	    dengeli-aralık
+	  </div>
+	</div>
+	{% endhighlight %}
+
+	<h3>araları-aralık-SAYI</h3>
+	<p>
+		Ögeler arasında dış yanlarda aralık olmaksızın sabit genişlikte aralık bırakmak için bu özellik tam size göre. Kapsayıcı etikete "araları-aralık-1" değiştirgesini doğru şekilde yazdıktan sonra aşağıdaki gibi bir örneğe sahip olacaksınız. Sayı değerini 1~3 arasında girebilirsiniz.
+	</p>
+	<div class="örnek">
+	<h3>Önizleme</h3>
+	<div class="önizleme-1">
+	  <div data-gnl="araları-aralık-1">
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	    <div data-gnl="1 4p">
+	      <div class="kart">
+	        Kart
+	      </div>
+	    </div>
+	  </div>      
+	</div>
+	</div>
+	{% highlight html %}
+	<div data-gnl="araları-aralık-1">
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	  <div data-gnl="1 4p">
+	    <div class="kart">
+	      Kart
+	    </div>
+	  </div>
+	</div>
+	{% endhighlight %}
