@@ -1,0 +1,250 @@
+---
+layout: s1n0/varsayilan
+title: Parça Düzeni - Kap Örgüsü
+---
+  <p>
+    Kap örgüsünün en çok kullanılan özelliği parça düzenidir. Parça düzeni kararlı
+    yüzdesel genişliklerle şablonlar oluşturmanız için hazırlanmıştır. Tek parçadan
+    yani 1 parçadan 24 parçaya kadar tüm parça düzenlerini kullanıma sunar.
+    "<span data-metin="ana">SAYI SAYIp</span>" değerleri html dosyasında istenilen
+    ekran örgüsüne yazılarak kullanılır. SAYI 1 ile 24 arasında değer alabilir.
+    Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş
+    olmasını istiyorsunuz. Bunun için <a href="/1.0/tr/ekran-orgusu.html">data-gnl</a>="2 3p"
+     <a href="/1.0/tr/ekran-orgusu.html">data-gnl</a>="1 3p" değerlerini tanımlaybilirsiniz.
+   </p>
+
+  <div data-gnl="1 1p ortada">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NKGZ8HWdnFw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <h3>Parça Düzeni "SAYI SAYIp" Kullanım Yöntemi</h3>
+
+  <p>Kap oluşturmak için bir parça düzeni yazdığınız an tarayıcılara şunu dersiniz; "Bulunduğum genişliği SAYIp kadar eşit parçaya bölerek SAYI kadar parça genişliğini kullanacağım". Örneğin siz bulunduğunuz genişliğin yarısı kadar bir genişlik kullanmak istiyorsanız "1 2p", "2 4p", "3 6p", "4 8p", "5 10p", "6 12p", "7 14p", "8 16p", "9 18p", "10 20p", "11 22p" veya "12 24p" değerlerinden dilediğiniz bir tanesini kullanmanız yeterlidir.</p>
+
+  <p>Dilediğimiz parça düzenini kullanmaya başlamadan önce örnek bir şablonu hayal edelim. Bir çalışmamız 3 eşit genişliğe parçalanmış olsun, bir çalışmamızda 20 parça düzeni kullanılarak kendi aralarında farklı genişliklere sahip 3 sütun şeklinde olsun. İlk örneğimizi "1 3p" değerini uygun yerlere yazarak yapabiliriz. Diğerini ise "3 20p", "10 20p", "7 20p" olarak hazırlayalım.</p>
+  <p></p>
+  <div class="örnek">
+    <h3>Önizleme: Örnek 1</h3>
+    <div class="önizleme">
+      <div data-gnl="1 3p">
+        1 3p
+      </div>
+      <div data-gnl="1 3p">
+        1 3p
+      </div>
+      <div data-gnl="1 3p">
+        1 3p
+      </div>
+    </div>
+    {% highlight html %}
+    <div data-gnl="1 3p">
+      1 3p
+    </div>
+    <div data-gnl="1 3p">
+      1 3p
+    </div>
+    <div data-gnl="1 3p">
+      1 3p
+    </div>
+    {% endhighlight %}
+  </div>
+
+  <div class="örnek">
+    <h3>Önizleme: Örnek 2</h3>
+    <div class="önizleme">
+      <div data-gnl="3 20p">
+        3 20p
+      </div>
+      <div data-gnl="10 20p">
+        10 20p
+      </div>
+      <div data-gnl="7 20p">
+        7 20p
+      </div>
+    </div>
+    {% highlight html %}
+    <div data-gnl="3 20p">
+      3 20p
+    </div>
+    <div data-gnl="10 20p">
+      10 20p
+    </div>
+    <div data-gnl="7 20p">
+      7 20p
+    </div>
+    {% endhighlight %}
+  </div>
+
+  <div class="örnek">
+    <h3>Önizleme: Örnek 3</h3>
+    <p>Örnek 1 ve 2'yi bir arada işlemek</p>
+    <div class="önizleme">
+      <div data-gnl="1 3p">
+        1 3p
+      </div>
+      <div data-gnl="1 3p">
+        1 3p
+      </div>
+      <div data-gnl="1 3p">
+        1 3p
+      </div>
+      <div data-gnl="3 20p">
+        3 20p
+      </div>
+      <div data-gnl="10 20p">
+        10 20p
+      </div>
+      <div data-gnl="7 20p">
+        7 20p
+      </div>
+    </div>
+    {% highlight html %}
+    <div data-gnl="1 3p">
+      1 3p
+    </div>
+    <div data-gnl="1 3p">
+      1 3p
+    </div>
+    <div data-gnl="1 3p">
+      1 3p
+    </div>
+    <div data-gnl="3 20p">
+      3 20p
+    </div>
+    <div data-gnl="10 20p">
+      10 20p
+    </div>
+    <div data-gnl="7 20p">
+      7 20p
+    </div>
+    {% endhighlight %}
+  </div>
+
+  <p></p>
+
+  <h3>"SAYI SAYIp" >> "SAYI SAYIp" Kullanım Yöntemi</h3>
+
+  <p>Bu düzeni kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Ana html etiketinde belirttiğim SAYIp yavru etiketlerin varsayılan değeri haline gelmiştir. Aynı zamanda ana etikette belirttiğim SAYI etiketin genişliğidir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzenine göre ölçeklenecektir. Yavru etiketlerde SAYI yazarak genişliklerimi belirtebilirim. Eğer yavru etiketlerden en az birinde SAYIp belirttiysem, bu belirttiğim değer etiketin yeni parça düzeni olurken SAYI değeri de yeni düzenin parça miktarı olacaktır."</p>
+  <p></p>
+  <div class="örnek">
+    <h3>Önizleme</h3>
+    <div class="önizleme">
+      <div data-gnl="2 2p">
+        <div data-gnl="1 4p">
+          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        </div>
+        <div data-gnl="1 4p">
+          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        </div>
+        <div data-gnl="1 4p">
+          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        </div>
+        <div data-gnl="1 4p">
+          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        </div>
+      </div>
+    </div>
+    {% highlight html %}
+    <div data-gnl="2 2p">
+      <div data-gnl="1 4p">
+        Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+      </div>
+      <div data-gnl="1 4p">
+        Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+      </div>
+      <div data-gnl="1 4p">
+        Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+      </div>
+      <div data-gnl="1 4p">
+        Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+      </div>
+    </div>
+    {% endhighlight %}
+  </div>
+
+  <p></p>
+
+  <h3>"SAYI SAYIp" > "SAYI" Kullanım Yöntemi</h3>
+
+  <p>Bu düzeni kullanarak bir kap yazdığınız an tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim." <span data-metin="dikkat">Uyarı: Eski internet tarayıcılarını önemseyerek oluşturduğunuz çalışmalarınızda bu yöntem bazı şartları aşması durumunda istenildiği gibi çalışmayabilir. Bu yüzden eski tarayıcıları önemsiyorsanız her zaman "SAYI SAYIp" tanımlaması yaparak kullanılmanızı tavsiye ederiz.</span></p>
+  <p></p>
+  <div class="örnek">
+    <h3>Önizleme</h3>
+    <div class="önizleme">
+      <div data-gnl="2 2p">
+        <div data-gnl="1">
+          Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+        </div>
+        <div data-gnl="1">
+          Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+        </div>
+      </div>
+    </div>
+    {% highlight html %}
+    <div data-gnl="2 2p">
+      <div data-gnl="1">
+        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+      </div>
+      <div data-gnl="1">
+        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+      </div>
+    </div>
+    {% endhighlight %}
+  </div>
+
+  <p></p>
+
+  <h3>Genleşme Ve Parça Düzeni Kıyaslaması</h3>
+  <p>Genleşme düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Genleşme düzeninde her genleşme birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.</p>
+  <p></p>
+  <div class="örnek">
+    <h3>Önizleme</h3>
+    <div class="önizleme">
+      <div>
+        <div data-gnl="1g">
+          1g
+        </div>
+        <div data-gnl="4g">
+          4g
+        </div>
+        <div data-gnl="2g">
+          2g
+        </div>
+      </div>
+      <div>
+        <div data-gnl="1 7p">
+          1 7p
+        </div>
+        <div data-gnl="4 7p">
+          4 7p
+        </div>
+        <div data-gnl="2 7p">
+          2 7p
+        </div>
+      </div>
+    </div>
+    {% highlight html %}
+    <div>
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="4g">
+        4g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+    </div>
+    <div>
+      <div data-gnl="1 7p">
+        1 7p
+      </div>
+      <div data-gnl="4 7p">
+        4 7p
+      </div>
+      <div data-gnl="2 7p">
+        2 7p
+      </div>
+    </div>
+    {% endhighlight %}
+  </div>

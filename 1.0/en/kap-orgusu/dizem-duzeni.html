@@ -1,0 +1,229 @@
+---
+layout: s1n0/varsayilan
+title: Dizem Düzeni - Kap Örgüsü
+---
+<p class="girlik">
+  Düzenli bir biçimde tekrar eden aynı genişliklere sahip kapsamlar oluşturmak için dizem
+  düzeni geliştirilmiştir. Birer birer, ikişer ikişer, üçer üçer, ... oluşturmak
+  isterseniz 1r~24r arasındaki değiştirgeyi kullanmanız yeterlidir.
+</p>
+<div class="örnek">
+  <h3>Örnek</h3>
+  <div class="önizleme">
+    <div data-gnl="2r">
+      <div>
+        ikişer ikişer
+      </div>
+      <div>
+        ikişer ikişer
+      </div>
+      <div>
+        ikişer ikişer
+      </div>
+      <div>
+        ikişer ikişer
+      </div>
+      <div>
+        ikişer ikişer
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="2r">
+    <div>
+      ikişer ikişer
+    </div>
+    <div>
+      ikişer ikişer
+    </div>
+    <div>
+      ikişer ikişer
+    </div>
+    <div>
+      ikişer ikişer
+    </div>
+    <div>
+      ikişer ikişer
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+<h2>Parça Düzeniyle Birlikte Kullanım</h2>
+<p>
+  Dizem düzenini parça düzeniyle birlikte kullanabilirsiniz. Düzenli genişlik tekrarları
+  birbirleriyle tam uyumlu olmak zorunda değildir. Neler yapabileceğiniz konusunda
+  güzel bir örneği hemen aşağıda inceleyebilirsiniz.
+</p>
+<div class="örnek">
+  <h3>Örnek</h3>
+  <div class="önizleme">
+    <div data-gnl="4r">
+      <div>
+        dörder dörder
+      </div>
+      <div data-gnl="2 4p">
+        2 4p
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="4r">
+    <div>
+      dörder dörder
+    </div>
+    <div data-gnl="2 4p">
+      2 4p
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+
+<h2>Genleşme Düzeniyle Birlikte Kullanım</h2>
+<p>
+  Dizem düzenini genleşme düzeniyle birlikte kullanabilirsiniz. Düzenli genişlik tekrarları
+  birbirleriyle tam uyumlu olmak zorunda değildir. Neler yapabileceğiniz konusunda
+  güzel bir örneği hemen aşağıda inceleyebilirsiniz.
+</p>
+<div class="örnek">
+  <h3>Örnek</h3>
+  <div class="önizleme">
+    <div data-gnl="4r">
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="4r">
+    <div data-gnl="1g">
+      1g
+    </div>
+    <div data-gnl="2g">
+      2g
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
+<h2>Parça ve Genleşme Düzeniyle Birlikte Kullanım</h2>
+<p>
+  Dizem düzenini parça ve genleşme düzeniyle birlikte kullanabilirsiniz. Düzenli genişlik tekrarları
+  birbirleriyle tam uyumlu olmak zorunda değildir. Neler yapabileceğiniz konusunda
+  güzel bir örneği hemen aşağıda inceleyebilirsiniz.
+</p>
+<div class="örnek">
+  <h3>Örnek</h3>
+  <div class="önizleme">
+    <div data-gnl="4r">
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+      <div data-gnl="2 4p">
+        2 4p
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+      <div>
+        dörder dörder
+      </div>
+    </div>
+  </div>
+  {% highlight html %}
+  <div data-gnl="4r">
+    <div data-gnl="1g">
+      1g
+    </div>
+    <div data-gnl="2g">
+      2g
+    </div>
+    <div data-gnl="2 4p">
+      2 4p
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+    <div>
+      dörder dörder
+    </div>
+  </div>
+  {% endhighlight %}
+</div>
