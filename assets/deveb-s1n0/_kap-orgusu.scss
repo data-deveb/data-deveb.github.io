@@ -76,33 +76,47 @@
     [data-#{$ekran}*="#{$aralık}-ta2"]{margin-top: 15px;margin-bottom: 15px;}
     [data-#{$ekran}*="#{$aralık}-ta3"]{margin-top: 20px;margin-bottom: 20px;}
 
-    [data-#{$ekran}*="araları-#{$aralık}-1"]{margin: -10px 0 0 -10px;}
-    [data-#{$ekran}*="araları-#{$aralık}-2"]{margin: -15px 0 0 -15px;}
-    [data-#{$ekran}*="araları-#{$aralık}-3"]{margin: -20px 0 0 -20px;}
-    [data-#{$ekran}*="araları-#{$aralık}-1"] > *{padding-left:10px;padding-top:10px;}
-    [data-#{$ekran}*="araları-#{$aralık}-2"] > *{padding-left:15px;padding-top:15px;}
-    [data-#{$ekran}*="araları-#{$aralık}-3"] > *{padding-left:20px;padding-top:20px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-1"] > *{padding:10px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-2"] > *{padding:15px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-3"] > *{padding:20px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-l1"] > *{padding-left: 10px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-l2"] > *{padding-left: 15px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-l3"] > *{padding-left: 20px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-s1"] > *{padding-right: 10px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-s2"] > *{padding-right: 15px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-s3"] > *{padding-right: 20px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-t1"] > *{padding-top: 10px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-t2"] > *{padding-top: 15px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-t3"] > *{padding-top: 20px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-a1"] > *{padding-bottom: 10px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-a2"] > *{padding-bottom: 15px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-a3"] > *{padding-bottom: 20px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
-    [data-#{$ekran}*="dengeli-#{$aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
+
+    [data-#{$ekran}~="araları-#{$aralık}-1"][data-#{$ekran}]{
+      width: calc(100% / var(--parçalık) * var(--parça) + 10px);
+      max-width: calc(100% / var(--parçalık) * var(--parça) + 10px);
+      margin: -10px 0 0 -10px;
+    }
+    [data-#{$ekran}~="araları-#{$aralık}-2"][data-#{$ekran}]{
+      width: calc(100% / var(--parçalık) * var(--parça) + 15px);
+      max-width: calc(100% / var(--parçalık) * var(--parça) + 15px);
+      margin: -15px 0 0 -15px;
+    }
+    [data-#{$ekran}~="araları-#{$aralık}-3"][data-#{$ekran}]{
+      width: calc(100% / var(--parçalık) * var(--parça) + 20px);
+      max-width: calc(100% / var(--parçalık) * var(--parça) + 20px);
+      margin: -20px 0 0 -20px;
+    }
+
+    [data-#{$ekran}~="araları-#{$aralık}-1"] > *{padding-left:10px;padding-top:10px;}
+    [data-#{$ekran}~="araları-#{$aralık}-2"] > *{padding-left:15px;padding-top:15px;}
+    [data-#{$ekran}~="araları-#{$aralık}-3"] > *{padding-left:20px;padding-top:20px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-1"] > *{padding:10px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-2"] > *{padding:15px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-3"] > *{padding:20px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-l1"] > *{padding-left: 10px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-l2"] > *{padding-left: 15px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-l3"] > *{padding-left: 20px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-s1"] > *{padding-right: 10px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-s2"] > *{padding-right: 15px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-s3"] > *{padding-right: 20px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-t1"] > *{padding-top: 10px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-t2"] > *{padding-top: 15px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-t3"] > *{padding-top: 20px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-a1"] > *{padding-bottom: 10px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-a2"] > *{padding-bottom: 15px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-a3"] > *{padding-bottom: 20px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
+    [data-#{$ekran}~="dengeli-#{$aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
 
     [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
       margin: var(--aralık);
