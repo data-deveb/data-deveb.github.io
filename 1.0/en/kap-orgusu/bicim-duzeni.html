@@ -4,36 +4,30 @@ title: Type System - Grid System
 ---
 
 <p class="girlik">
-  Varsayılan olarak bazı biçimlerde tasarımlarınızı geliştirirsiniz. Yeri geldiğinde
-  farklı biçimleri kullanırsınız. İşte bu bölümde bulunan biçim çeşitleri işlerinizi
-  kolaylaştıracaktır.
+  By default, you improve your designs in some types. When you arrive, you will use different types. The types of shapes found in this section will make your work easier.
 </p>
-<h2>Tam Ekran</h2>
+<h2>Full Screen</h2>
 <p>
-  Tasarımlarınızı tam ekran düzeninde yapmak istiyorsanız <span class="simget">deveb</span>
-  tarafından hazırlanan "tamekran" değiştirgesini kullanacaksınız demektir. HTML body etiketine
-  istediğiniz ekran aralığını belirterek kullanabilirsiniz.
+  If you want to make your designs in fullscreen layout, you will use the "fullscreen" parameter prepared by <span class="simget">deveb</span>. You can use the HTML body tag to specify the screen range you want.
 </p>
 
 <div class="örnek">
-  <h3>Örnek</h3>
-  <a href="#">Bu örneğin canlı durumunu görmek için tıklayın.</a> <br><br>
+  <h3>Preview</h3>
+  <a href="#">If you want to demo, click here.</a> <br><br>
   {% highlight html %}
-  <body data-gnl="tamekran">
-    Bu alanda bulunan her şey tam ekran düzeni içerisinde kalır.
+  <body data-gnl="fullscreen">
+    Everything in this area remains in full-screen layout.
   </body>
   {% endhighlight %}
 </div>
-<h2>Kap</h2>
+<h2>Container</h2>
 <p>
-  Tasarımlarınızı yaparken ana genişliği sabit genişlik olan tasarımlar yapın.
-  Aynı zamanda bu genişlikler ekran genişliğine göre uyarlanmıl sabit genişliklerde olsun.
-  Bunun için "kap" değiştirgesini kullanmanız yeterlidir.
+  Use static widths according to the screens when making your designs. You only need to use the "container" parameter for this.
 </p>
 <div class="örnek">
-  <h3>Örnek</h3>
+  <h3>Example</h3>
   <div class="önizleme">
-    <div data-gnl="kap">
+    <div data-gnl="container">
       <div data-gnl="1 3p">
         1 3p
       </div>
@@ -46,7 +40,7 @@ title: Type System - Grid System
     </div>
   </div>
   {% highlight html %}
-  <div data-gnl="kap">
+  <div data-gnl="container">
     <div data-gnl="1 3p">
       1 3p
     </div>
@@ -60,34 +54,29 @@ title: Type System - Grid System
   {% endhighlight %}
 </div>
 
-<h2>Sığ</h2>
+<h2>Fit</h2>
 <p>
-  Tasarımlarınızda yeri geldiğinde bir alana enine boyuna bir alan sığdırmak isteyebilirsiniz.
-  O zaman geldiğinde ekran örgüsü içerisinde "sığ" değiştirgesini kullanmanız yeterli
-  olacaktır. Böylelikle alan bulunduğu alana sığmış durumda olacaktır. Bazı durumlarda
-  "sütun" değiştirgesiyle birlikte kullanmanız gerekebilir. Daha iyi anlamak için
-  örnekleri inceleyiniz.
+  You may have designs that you want to fit where you have a transversal area. Then you only need to use the "fit" parameter. In some cases you may need to use it with the "column" parameter. Examine the examples to better understand them.
 </p>
 
 <div class="örnek">
-  <h3>Örnek</h3>
-  <a href="#">Bu örneğin canlı durumunu görmek için tıklayın.</a> <br><br>
+  <h3>Example</h3>
+  <a href="#">If you want to demo, click here.</a> <br><br>
   {% highlight html %}
-  <body data-gnl="tamekran">
-    <div data-gnl="sığ">
-      Bu alan tam ekrana göre sığdırılmıştır.
+  <body data-gnl="fullscreen">
+    <div data-gnl="fit">
+      This area is fit to full screen.
     </div>
   </body>
   {% endhighlight %}
 </div>
 
-<h2>0 (sıfır)</h2>
+<h2>0 (zero)</h2>
 <p>
-  Tasarımlarınızı yaparken içeriğe göre genişlik kullanmak isteyebilrsiniz.
-  Bunun için "0" değiştirgesini kullanmanız yeterlidir.
+  You may want to use the width according to the content when making your designs. You only need to use the "0" parameter for this.
 </p>
 <div class="örnek">
-  <h3>Örnek</h3>
+  <h3>Example</h3>
   <div class="önizleme">
     <div data-gnl="0">
       0
@@ -113,48 +102,48 @@ title: Type System - Grid System
 {% endhighlight %}
 
 
-<h3>Kaymadan & Dürmeden</h3>
-  <p>"kaymadan" içeriği dışarı taşmasını engeller.</p>
-  <p>"dürmeden" içeriği alt satırlara dürülmesini engeller ve tek satırda gösterir.</p>
+<h3>no-overflow & no-wrap</h3>
+  <p>"no-overflow" prevents content from overflowing.</p>
+  <p>"no-wrap" prevents the content from being moved to the bottom line and displays it on one line.</p>
   
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
-      <div data-gnl="1 24p kaymadan">
-        Taşmadan yazamadıklarımızdan mısınız?
+      <div data-gnl="1 24p no-overflow">
+        Are you the one we can not write over?
       </div>
-      <div data-gnl="dürmeden">
+      <div data-gnl="no-wrap">
         <div>
-          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+          These contents are displayed under no-wrap effect.
         </div>
         <div>
-          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+          These contents are displayed under no-wrap effect.
         </div>
         <div>
-          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+          These contents are displayed under no-wrap effect.
         </div>
         <div>
-          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+          These contents are displayed under no-wrap effect.
         </div>
       </div>
     </div>
   </div>
   {% highlight html %}
-    <div data-gnl="1 24p kaymadan">
-      Taşmadan yazamadıklarımızdan mısınız?
+    <div data-gnl="1 24p no-overflow">
+      Are you the one we can not write over?
     </div>
-    <div data-gnl="dürmeden">
+    <div data-gnl="no-wrap">
       <div>
-        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        These contents are displayed under no-wrap effect.
       </div>
       <div>
-        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        These contents are displayed under no-wrap effect.
       </div>
       <div>
-        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        These contents are displayed under no-wrap effect.
       </div>
       <div>
-        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        These contents are displayed under no-wrap effect.
       </div>
     </div>
   {% endhighlight %}
