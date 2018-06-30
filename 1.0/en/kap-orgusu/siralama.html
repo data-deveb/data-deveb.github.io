@@ -2,36 +2,35 @@
 layout: s1n0/varsayilan
 title: Order - Grid System
 ---
-  <p class="girlik">Deveb kap örgüsünün sıralama özellikleri nesneleri kendi aralarında yazılış sırasından kopararay yeniden sıralandırmaya yarar ve nc birimiyle kullanılır.</p>
+  <p class="girlik">The order feature of the grid system removes items from the spelling order and reorders them among themselves. It is used with th unit.</p>
 
-  <h3>Sıralama: <span data-metin="dikkat">1nc~24nc</span></h3>
-  <p>Sıralama işlemi 1'den 24'e kadar gruplandırılabilir. Bir HTML etiketine 1nc ve 2nc tanımlaması yaptığınızda birbirleri arasında sıralama yapılır. Ekran örgüsüyle uyumludur. Mesela telefon ekranlarında bir nesneyi 2nc sırada gösterebilirken geniş ekranlarda başka bir sırada gösterebilirsiniz.</p>
-  <p></p>
+  <h3>Order: <span data-metin="dikkat">1th~24th</span></h3>
+  <p>Ordering can be grouped from 1 to 24. When an HTML tag is defined as 1th and 2th, it is sorted among each other. The screen is bound to the braid. For example, you can display the item on the phone screens in the 2th row while you can show it on the wide screen in another row.</p>
 
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
-      <div data-gnl="2nc">
-        2nc: kaynak kodunda birinci sırada, görüntülemede ikinci sırada.
+      <div data-gnl="2th">
+        2th: source code 1th order, view 2th order.
       </div>
-      <div data-gnl="1nc" data-kçk="3nc">
-        3nc: kaynak kodunda ikinci sırada, görüntülemede üçüncü sırada. Telefon ekranlarında ise birinci sırada.
+      <div data-gnl="1th" data-kçk="3th">
+        3th: source code 2th order, view 3th order. In mobile, 1th order.
       </div>
-      <div data-gnl="1nc">
-        1nc: kaynak kodunda üçüncü sırada, görüntülemede birinci sırada.
+      <div data-gnl="1th">
+        1th: source code 3th order, view 1th order.
       </div>
     </div>
   </div>
 
     {% highlight html %}
-      <div data-gnl="2nc">
-        2nc: kaynak kodunda birinci sırada, görüntülemede ikinci sırada.
+      <div data-gnl="2th">
+        2th: source code 1th order, view 2th order.
       </div>
-      <div data-gnl="1nc" data-kçk="3nc">
-        3nc: kaynak kodunda ikinci sırada, görüntülemede üçüncü sırada. Telefon ekranlarında ise birinci sırada.
+      <div data-gnl="1th" data-kçk="3th">
+        3th: source code 2th order, view 3th order. In mobile, 1th order.
       </div>
-      <div data-gnl="1nc">
-        1nc: kaynak kodunda üçüncü sırada, görüntülemede birinci sırada.
+      <div data-gnl="1th">
+        1th: source code 3th order, view 1th order.
       </div>
     {% endhighlight %}
   <p></p>
