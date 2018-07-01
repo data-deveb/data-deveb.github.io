@@ -2,29 +2,29 @@
 layout: s1n0/default
 title: Piece Layout - Grid System
 ---
+  <p class="girlik">
+    The most used feature of the grid system is the piece layout. The piece layout is designed for you to create templates with stable percentage width. It offers use of all part layouts from 1 piece to 24 pieces. 
+  </p>
   <p>
-    Kap örgüsünün en çok kullanılan özelliği parça düzenidir. Parça düzeni kararlı
-    yüzdesel genişliklerle şablonlar oluşturmanız için hazırlanmıştır. Tek parçadan
-    yani 1 parçadan 24 parçaya kadar tüm parça düzenlerini kullanıma sunar.
-    "<span data-metin="ana">SAYI SAYIp</span>" değerleri html dosyasında istenilen
-    ekran örgüsüne yazılarak kullanılır. SAYI 1 ile 24 arasında değer alabilir.
-    Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş
-    olmasını istiyorsunuz. Bunun için <a href="/1.0/tr/ekran-orgusu.html">data-gnl</a>="2 3p"
-     <a href="/1.0/tr/ekran-orgusu.html">data-gnl</a>="1 3p" değerlerini tanımlaybilirsiniz.
-   </p>
+    "NUMBER NUMBERp" values are used in the html file by writing to the desired display system. NUMBER can be between 1 and 24. For example, you want to divide the page into two and make the left side twice as wide as the right side. For this you can define the values data-gnl="2 3p" data-gnl="1 3p".
+  </p>
 
   <div data-gnl="1 1p ortada">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NKGZ8HWdnFw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 
-  <h3>Parça Düzeni "SAYI SAYIp" Kullanım Yöntemi</h3>
+  <h3>Piece Layout "NUMBER NUMBERp" Usage</h3>
 
-  <p>Kap oluşturmak için bir parça düzeni yazdığınız an tarayıcılara şunu dersiniz; "Bulunduğum genişliği SAYIp kadar eşit parçaya bölerek SAYI kadar parça genişliğini kullanacağım". Örneğin siz bulunduğunuz genişliğin yarısı kadar bir genişlik kullanmak istiyorsanız "1 2p", "2 4p", "3 6p", "4 8p", "5 10p", "6 12p", "7 14p", "8 16p", "9 18p", "10 20p", "11 22p" veya "12 24p" değerlerinden dilediğiniz bir tanesini kullanmanız yeterlidir.</p>
+  <p>
+    When you write a piece layout to create a grid, you say something to the browser; "I will use the width of the piece as NUMBER by dividing the width I find into equal parts as NUMBER".For example, if you want to use half of the main width, you can use "1 2p", "2 4p", "3 6p", "4 8p", "5 10p", "6 12p", "7 14p", "8 16p", "9 18p", "10 20p", "11 22p" or "12 24p".
+  </p>
 
-  <p>Dilediğimiz parça düzenini kullanmaya başlamadan önce örnek bir şablonu hayal edelim. Bir çalışmamız 3 eşit genişliğe parçalanmış olsun, bir çalışmamızda 20 parça düzeni kullanılarak kendi aralarında farklı genişliklere sahip 3 sütun şeklinde olsun. İlk örneğimizi "1 3p" değerini uygun yerlere yazarak yapabiliriz. Diğerini ise "3 20p", "10 20p", "7 20p" olarak hazırlayalım.</p>
+  <p>
+    Let's imagine a sample template before we start using the Piece layout. Have a place torn into 3 equal widths. In a place using a 20 piece arrangement, take the form of 3 columns with different widths between them. We can write our first example with the value "1 3p". We can write the other as "3 20p", "10 20p", "7 20p".
+  </p>
   <p></p>
   <div class="örnek">
-    <h3>Önizleme: Örnek 1</h3>
+    <h3>Preview: Example 1</h3>
     <div class="önizleme">
       <div data-gnl="1 3p">
         1 3p
@@ -50,7 +50,7 @@ title: Piece Layout - Grid System
   </div>
 
   <div class="örnek">
-    <h3>Önizleme: Örnek 2</h3>
+    <h3>Preview: Example 2</h3>
     <div class="önizleme">
       <div data-gnl="3 20p">
         3 20p
@@ -76,8 +76,8 @@ title: Piece Layout - Grid System
   </div>
 
   <div class="örnek">
-    <h3>Önizleme: Örnek 3</h3>
-    <p>Örnek 1 ve 2'yi bir arada işlemek</p>
+    <h3>Preview: Example 3</h3>
+    <p>Example 1 and 2 together.</p>
     <div class="önizleme">
       <div data-gnl="1 3p">
         1 3p
@@ -120,43 +120,43 @@ title: Piece Layout - Grid System
     {% endhighlight %}
   </div>
 
-  <p></p>
+  <h3>"NUMBER NUMBERp" >> "NUMBER NUMBERp" Usage</h3>
 
-  <h3>"SAYI SAYIp" >> "SAYI SAYIp" Kullanım Yöntemi</h3>
-
-  <p>Bu düzeni kullanarak bir kap yazdığınızda tarayıcıya şunu dersiniz; "Ana html etiketinde belirttiğim SAYIp yavru etiketlerin varsayılan değeri haline gelmiştir. Aynı zamanda ana etikette belirttiğim SAYI etiketin genişliğidir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzenine göre ölçeklenecektir. Yavru etiketlerde SAYI yazarak genişliklerimi belirtebilirim. Eğer yavru etiketlerden en az birinde SAYIp belirttiysem, bu belirttiğim değer etiketin yeni parça düzeni olurken SAYI değeri de yeni düzenin parça miktarı olacaktır."</p>
+  <p>
+    By using this scheme, you tell the browser: "NUMBERp in the parent html tag is the default value for child tags. At the same time, the NUMBER I mention at the same time as the parent is the width of this label. All child tags are in this track order until the axel is specified. I can specify the width by typing NUMBER in the Child tags. If you specify NUMBERp in at least one child tag, this value becomes the new tag. The number value will also be the amount of parts of the new order."
+  </p>
   <p></p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
       <div data-gnl="2 2p">
         <div data-gnl="1 4p">
-          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+          1/4 piece of screens width.
         </div>
         <div data-gnl="1 4p">
-          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+          1/4 piece of screens width.
         </div>
         <div data-gnl="1 4p">
-          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+          1/4 piece of screens width.
         </div>
         <div data-gnl="1 4p">
-          Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+          1/4 piece of screens width.
         </div>
       </div>
     </div>
     {% highlight html %}
     <div data-gnl="2 2p">
       <div data-gnl="1 4p">
-        Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        1/4 piece of screens width.
       </div>
       <div data-gnl="1 4p">
-        Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        1/4 piece of screens width.
       </div>
       <div data-gnl="1 4p">
-        Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        1/4 piece of screens width.
       </div>
       <div data-gnl="1 4p">
-        Tüm ekranlarda bulunduğu genişliğin 1/4'ünü kapla.
+        1/4 piece of screens width.
       </div>
     </div>
     {% endhighlight %}
@@ -164,29 +164,31 @@ title: Piece Layout - Grid System
 
   <p></p>
 
-  <h3>"SAYI SAYIp" > "SAYI" Kullanım Yöntemi</h3>
+  <h3>"NUMBER NUMBERp" > "NUMBER" Usage</h3>
 
-  <p>Bu düzeni kullanarak bir kap yazdığınız an tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim." <span data-metin="dikkat">Uyarı: Eski internet tarayıcılarını önemseyerek oluşturduğunuz çalışmalarınızda bu yöntem bazı şartları aşması durumunda istenildiği gibi çalışmayabilir. Bu yüzden eski tarayıcıları önemsiyorsanız her zaman "SAYI SAYIp" tanımlaması yaparak kullanılmanızı tavsiye ederiz.</span></p>
+  <p>
+    Bu düzeni kullanarak bir kap yazdığınız an tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim." <span data-metin="dikkat">Uyarı: Eski internet tarayıcılarını önemseyerek oluşturduğunuz çalışmalarınızda bu yöntem bazı şartları aşması durumunda istenildiği gibi çalışmayabilir. Bu yüzden eski tarayıcıları önemsiyorsanız her zaman "SAYI SAYIp" tanımlaması yaparak kullanılmanızı tavsiye ederiz.</span>
+  </p>
   <p></p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
       <div data-gnl="2 2p">
         <div data-gnl="1">
-          Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+          Half of screens width.
         </div>
         <div data-gnl="1">
-          Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+          Half of screens width.
         </div>
       </div>
     </div>
     {% highlight html %}
     <div data-gnl="2 2p">
       <div data-gnl="1">
-        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+        Half of screens width.
       </div>
       <div data-gnl="1">
-        Tüm ekranlarda bulunduğu genişliğin yarısını kapla.
+        Half of screens width.
       </div>
     </div>
     {% endhighlight %}
@@ -194,11 +196,13 @@ title: Piece Layout - Grid System
 
   <p></p>
 
-  <h3>Genleşme Ve Parça Düzeni Kıyaslaması</h3>
-  <p>Genleşme düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Genleşme düzeninde her genleşme birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.</p>
+  <h3>Grow vs Piece Layout</h3>
+  <p>
+    Genleşme düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Genleşme düzeninde her genleşme birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.
+  </p>
   <p></p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
       <div>
         <div data-gnl="1g">
