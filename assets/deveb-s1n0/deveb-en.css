@@ -1,0 +1,6801 @@
+@charset "UTF-8";
+/* Türkçe http://www.objgen.com/json/models/nuZ   */
+/* Ekran Örgüsü */
+/* Kap Örgüsü */
+/* Konumlama - Kap Örgüsü */
+/* Durumlama - Kap Örgüsü */
+/* */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  AYARLAR & TEMİZLEME
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article, aside, details, figcaption, figure,
+hgroup, section, menu, nav {
+  display: block;
+}
+
+div, footer, main, header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+}
+
+a, button, input, textarea {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  Başlık ayarları */
+h1, h2, h3, h4, h5, h6 {
+  width: 100%;
+  display: block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  margin: 1em 0 0.5em 0;
+  color: #333;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1.15em;
+}
+
+h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
+  margin-top: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+table {
+  display: table !important;
+  width: 100%;
+}
+
+/* Paragraf ayarları */
+p {
+  display: block;
+  width: 100%;
+}
+
+p + p {
+  /* İki paragraf arasına mesafe verme ayarı */
+  margin-top: 14px;
+  margin-top: 1rem;
+}
+
+/* Liste ayarları */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+ul ul {
+  margin-left: 15px;
+}
+ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
+  margin: 0;
+}
+
+/*
+◘ KAP ÖRGÜSÜ 1.0
+◘ Giriş notları //////////////////////////////////
+
+*/
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*  GS1 KAP ÖRGÜSÜ */
+[data-gnl] {
+  --parça: 1;
+  --parçalık:1;
+}
+
+[data-gnl], [data-xs], [data-sm], [data-md], [data-lg], [data-xl], [data-hg] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[data-gnl~="sütun"] {
+  flex-direction: column;
+}
+
+[data-gnl~="satır"] {
+  flex-direction: row;
+}
+
+[data-gnl~="sığ"] {
+  flex: 1 1 0 !important;
+  overflow: auto;
+  max-height: 100%;
+}
+
+body[data-gnl~="tamekran"] {
+  flex: 1 1 0 !important;
+  overflow: auto;
+  max-height: 100%;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body[data-gnl~="sütun"] > footer {
+  margin-top: auto;
+}
+
+[data-gnl~="1r"] > div, [data-gnl~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 1);
+  max-width: calc(100% / 1);
+}
+
+[data-gnl~="2r"] > div, [data-gnl~="2r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 2);
+  max-width: calc(100% / 2);
+}
+
+[data-gnl~="3r"] > div, [data-gnl~="3r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 3);
+  max-width: calc(100% / 3);
+}
+
+[data-gnl~="4r"] > div, [data-gnl~="4r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 4);
+  max-width: calc(100% / 4);
+}
+
+[data-gnl~="5r"] > div, [data-gnl~="5r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 5);
+  max-width: calc(100% / 5);
+}
+
+[data-gnl~="6r"] > div, [data-gnl~="6r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 6);
+  max-width: calc(100% / 6);
+}
+
+[data-gnl~="7r"] > div, [data-gnl~="7r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 7);
+  max-width: calc(100% / 7);
+}
+
+[data-gnl~="8r"] > div, [data-gnl~="8r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 8);
+  max-width: calc(100% / 8);
+}
+
+[data-gnl~="9r"] > div, [data-gnl~="9r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 9);
+  max-width: calc(100% / 9);
+}
+
+[data-gnl~="10r"] > div, [data-gnl~="10r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 10);
+  max-width: calc(100% / 10);
+}
+
+[data-gnl~="11r"] > div, [data-gnl~="11r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 11);
+  max-width: calc(100% / 11);
+}
+
+[data-gnl~="12r"] > div, [data-gnl~="12r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 12);
+  max-width: calc(100% / 12);
+}
+
+[data-gnl~="13r"] > div, [data-gnl~="13r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 13);
+  max-width: calc(100% / 13);
+}
+
+[data-gnl~="14r"] > div, [data-gnl~="14r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 14);
+  max-width: calc(100% / 14);
+}
+
+[data-gnl~="15r"] > div, [data-gnl~="15r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 15);
+  max-width: calc(100% / 15);
+}
+
+[data-gnl~="16r"] > div, [data-gnl~="16r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 16);
+  max-width: calc(100% / 16);
+}
+
+[data-gnl~="17r"] > div, [data-gnl~="17r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 17);
+  max-width: calc(100% / 17);
+}
+
+[data-gnl~="18r"] > div, [data-gnl~="18r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 18);
+  max-width: calc(100% / 18);
+}
+
+[data-gnl~="19r"] > div, [data-gnl~="19r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 19);
+  max-width: calc(100% / 19);
+}
+
+[data-gnl~="20r"] > div, [data-gnl~="20r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 20);
+  max-width: calc(100% / 20);
+}
+
+[data-gnl~="21r"] > div, [data-gnl~="21r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 21);
+  max-width: calc(100% / 21);
+}
+
+[data-gnl~="22r"] > div, [data-gnl~="22r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 22);
+  max-width: calc(100% / 22);
+}
+
+[data-gnl~="23r"] > div, [data-gnl~="23r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 23);
+  max-width: calc(100% / 23);
+}
+
+[data-gnl~="24r"] > div, [data-gnl~="24r"] > [data-gnl]:not([data-gnl*="p"]) {
+  width: calc(100% / 24);
+  max-width: calc(100% / 24);
+}
+
+[data-gnl~="1"] {
+  --parça: 1;
+}
+
+[data-gnl~="1p"] {
+  --parçalık: 1;
+}
+
+[data-gnl~="2"] {
+  --parça: 2;
+}
+
+[data-gnl~="2p"] {
+  --parçalık: 2;
+}
+
+[data-gnl~="3"] {
+  --parça: 3;
+}
+
+[data-gnl~="3p"] {
+  --parçalık: 3;
+}
+
+[data-gnl~="4"] {
+  --parça: 4;
+}
+
+[data-gnl~="4p"] {
+  --parçalık: 4;
+}
+
+[data-gnl~="5"] {
+  --parça: 5;
+}
+
+[data-gnl~="5p"] {
+  --parçalık: 5;
+}
+
+[data-gnl~="6"] {
+  --parça: 6;
+}
+
+[data-gnl~="6p"] {
+  --parçalık: 6;
+}
+
+[data-gnl~="7"] {
+  --parça: 7;
+}
+
+[data-gnl~="7p"] {
+  --parçalık: 7;
+}
+
+[data-gnl~="8"] {
+  --parça: 8;
+}
+
+[data-gnl~="8p"] {
+  --parçalık: 8;
+}
+
+[data-gnl~="9"] {
+  --parça: 9;
+}
+
+[data-gnl~="9p"] {
+  --parçalık: 9;
+}
+
+[data-gnl~="10"] {
+  --parça: 10;
+}
+
+[data-gnl~="10p"] {
+  --parçalık: 10;
+}
+
+[data-gnl~="11"] {
+  --parça: 11;
+}
+
+[data-gnl~="11p"] {
+  --parçalık: 11;
+}
+
+[data-gnl~="12"] {
+  --parça: 12;
+}
+
+[data-gnl~="12p"] {
+  --parçalık: 12;
+}
+
+[data-gnl~="13"] {
+  --parça: 13;
+}
+
+[data-gnl~="13p"] {
+  --parçalık: 13;
+}
+
+[data-gnl~="14"] {
+  --parça: 14;
+}
+
+[data-gnl~="14p"] {
+  --parçalık: 14;
+}
+
+[data-gnl~="15"] {
+  --parça: 15;
+}
+
+[data-gnl~="15p"] {
+  --parçalık: 15;
+}
+
+[data-gnl~="16"] {
+  --parça: 16;
+}
+
+[data-gnl~="16p"] {
+  --parçalık: 16;
+}
+
+[data-gnl~="17"] {
+  --parça: 17;
+}
+
+[data-gnl~="17p"] {
+  --parçalık: 17;
+}
+
+[data-gnl~="18"] {
+  --parça: 18;
+}
+
+[data-gnl~="18p"] {
+  --parçalık: 18;
+}
+
+[data-gnl~="19"] {
+  --parça: 19;
+}
+
+[data-gnl~="19p"] {
+  --parçalık: 19;
+}
+
+[data-gnl~="20"] {
+  --parça: 20;
+}
+
+[data-gnl~="20p"] {
+  --parçalık: 20;
+}
+
+[data-gnl~="21"] {
+  --parça: 21;
+}
+
+[data-gnl~="21p"] {
+  --parçalık: 21;
+}
+
+[data-gnl~="22"] {
+  --parça: 22;
+}
+
+[data-gnl~="22p"] {
+  --parçalık: 22;
+}
+
+[data-gnl~="23"] {
+  --parça: 23;
+}
+
+[data-gnl~="23p"] {
+  --parçalık: 23;
+}
+
+[data-gnl~="24"] {
+  --parça: 24;
+}
+
+[data-gnl~="24p"] {
+  --parçalık: 24;
+}
+
+[data-gnl][data-gnl] {
+  width: calc(100% / var(--parçalık) * var(--parça));
+  max-width: calc(100% / var(--parçalık) * var(--parça));
+}
+
+/* Kap Örgüsü Ek Etkiler */
+[data-gnl~="soldan-1"] {
+  --parça-soldan: 1;
+}
+
+[data-gnl~="1p-aralık"] {
+  --parçalık-soldan: 1;
+}
+
+[data-gnl~="sağdan-1"] {
+  --parça-sağdan: 1;
+}
+
+[data-gnl~="1p-aralık"] {
+  --parçalık-sağdan: 1;
+}
+
+[data-gnl~="soldan-2"] {
+  --parça-soldan: 2;
+}
+
+[data-gnl~="2p-aralık"] {
+  --parçalık-soldan: 2;
+}
+
+[data-gnl~="sağdan-2"] {
+  --parça-sağdan: 2;
+}
+
+[data-gnl~="2p-aralık"] {
+  --parçalık-sağdan: 2;
+}
+
+[data-gnl~="soldan-3"] {
+  --parça-soldan: 3;
+}
+
+[data-gnl~="3p-aralık"] {
+  --parçalık-soldan: 3;
+}
+
+[data-gnl~="sağdan-3"] {
+  --parça-sağdan: 3;
+}
+
+[data-gnl~="3p-aralık"] {
+  --parçalık-sağdan: 3;
+}
+
+[data-gnl~="soldan-4"] {
+  --parça-soldan: 4;
+}
+
+[data-gnl~="4p-aralık"] {
+  --parçalık-soldan: 4;
+}
+
+[data-gnl~="sağdan-4"] {
+  --parça-sağdan: 4;
+}
+
+[data-gnl~="4p-aralık"] {
+  --parçalık-sağdan: 4;
+}
+
+[data-gnl~="soldan-5"] {
+  --parça-soldan: 5;
+}
+
+[data-gnl~="5p-aralık"] {
+  --parçalık-soldan: 5;
+}
+
+[data-gnl~="sağdan-5"] {
+  --parça-sağdan: 5;
+}
+
+[data-gnl~="5p-aralık"] {
+  --parçalık-sağdan: 5;
+}
+
+[data-gnl~="soldan-6"] {
+  --parça-soldan: 6;
+}
+
+[data-gnl~="6p-aralık"] {
+  --parçalık-soldan: 6;
+}
+
+[data-gnl~="sağdan-6"] {
+  --parça-sağdan: 6;
+}
+
+[data-gnl~="6p-aralık"] {
+  --parçalık-sağdan: 6;
+}
+
+[data-gnl~="soldan-7"] {
+  --parça-soldan: 7;
+}
+
+[data-gnl~="7p-aralık"] {
+  --parçalık-soldan: 7;
+}
+
+[data-gnl~="sağdan-7"] {
+  --parça-sağdan: 7;
+}
+
+[data-gnl~="7p-aralık"] {
+  --parçalık-sağdan: 7;
+}
+
+[data-gnl~="soldan-8"] {
+  --parça-soldan: 8;
+}
+
+[data-gnl~="8p-aralık"] {
+  --parçalık-soldan: 8;
+}
+
+[data-gnl~="sağdan-8"] {
+  --parça-sağdan: 8;
+}
+
+[data-gnl~="8p-aralık"] {
+  --parçalık-sağdan: 8;
+}
+
+[data-gnl~="soldan-9"] {
+  --parça-soldan: 9;
+}
+
+[data-gnl~="9p-aralık"] {
+  --parçalık-soldan: 9;
+}
+
+[data-gnl~="sağdan-9"] {
+  --parça-sağdan: 9;
+}
+
+[data-gnl~="9p-aralık"] {
+  --parçalık-sağdan: 9;
+}
+
+[data-gnl~="soldan-10"] {
+  --parça-soldan: 10;
+}
+
+[data-gnl~="10p-aralık"] {
+  --parçalık-soldan: 10;
+}
+
+[data-gnl~="sağdan-10"] {
+  --parça-sağdan: 10;
+}
+
+[data-gnl~="10p-aralık"] {
+  --parçalık-sağdan: 10;
+}
+
+[data-gnl~="soldan-11"] {
+  --parça-soldan: 11;
+}
+
+[data-gnl~="11p-aralık"] {
+  --parçalık-soldan: 11;
+}
+
+[data-gnl~="sağdan-11"] {
+  --parça-sağdan: 11;
+}
+
+[data-gnl~="11p-aralık"] {
+  --parçalık-sağdan: 11;
+}
+
+[data-gnl~="soldan-12"] {
+  --parça-soldan: 12;
+}
+
+[data-gnl~="12p-aralık"] {
+  --parçalık-soldan: 12;
+}
+
+[data-gnl~="sağdan-12"] {
+  --parça-sağdan: 12;
+}
+
+[data-gnl~="12p-aralık"] {
+  --parçalık-sağdan: 12;
+}
+
+[data-gnl~="soldan-13"] {
+  --parça-soldan: 13;
+}
+
+[data-gnl~="13p-aralık"] {
+  --parçalık-soldan: 13;
+}
+
+[data-gnl~="sağdan-13"] {
+  --parça-sağdan: 13;
+}
+
+[data-gnl~="13p-aralık"] {
+  --parçalık-sağdan: 13;
+}
+
+[data-gnl~="soldan-14"] {
+  --parça-soldan: 14;
+}
+
+[data-gnl~="14p-aralık"] {
+  --parçalık-soldan: 14;
+}
+
+[data-gnl~="sağdan-14"] {
+  --parça-sağdan: 14;
+}
+
+[data-gnl~="14p-aralık"] {
+  --parçalık-sağdan: 14;
+}
+
+[data-gnl~="soldan-15"] {
+  --parça-soldan: 15;
+}
+
+[data-gnl~="15p-aralık"] {
+  --parçalık-soldan: 15;
+}
+
+[data-gnl~="sağdan-15"] {
+  --parça-sağdan: 15;
+}
+
+[data-gnl~="15p-aralık"] {
+  --parçalık-sağdan: 15;
+}
+
+[data-gnl~="soldan-16"] {
+  --parça-soldan: 16;
+}
+
+[data-gnl~="16p-aralık"] {
+  --parçalık-soldan: 16;
+}
+
+[data-gnl~="sağdan-16"] {
+  --parça-sağdan: 16;
+}
+
+[data-gnl~="16p-aralık"] {
+  --parçalık-sağdan: 16;
+}
+
+[data-gnl~="soldan-17"] {
+  --parça-soldan: 17;
+}
+
+[data-gnl~="17p-aralık"] {
+  --parçalık-soldan: 17;
+}
+
+[data-gnl~="sağdan-17"] {
+  --parça-sağdan: 17;
+}
+
+[data-gnl~="17p-aralık"] {
+  --parçalık-sağdan: 17;
+}
+
+[data-gnl~="soldan-18"] {
+  --parça-soldan: 18;
+}
+
+[data-gnl~="18p-aralık"] {
+  --parçalık-soldan: 18;
+}
+
+[data-gnl~="sağdan-18"] {
+  --parça-sağdan: 18;
+}
+
+[data-gnl~="18p-aralık"] {
+  --parçalık-sağdan: 18;
+}
+
+[data-gnl~="soldan-19"] {
+  --parça-soldan: 19;
+}
+
+[data-gnl~="19p-aralık"] {
+  --parçalık-soldan: 19;
+}
+
+[data-gnl~="sağdan-19"] {
+  --parça-sağdan: 19;
+}
+
+[data-gnl~="19p-aralık"] {
+  --parçalık-sağdan: 19;
+}
+
+[data-gnl~="soldan-20"] {
+  --parça-soldan: 20;
+}
+
+[data-gnl~="20p-aralık"] {
+  --parçalık-soldan: 20;
+}
+
+[data-gnl~="sağdan-20"] {
+  --parça-sağdan: 20;
+}
+
+[data-gnl~="20p-aralık"] {
+  --parçalık-sağdan: 20;
+}
+
+[data-gnl~="soldan-21"] {
+  --parça-soldan: 21;
+}
+
+[data-gnl~="21p-aralık"] {
+  --parçalık-soldan: 21;
+}
+
+[data-gnl~="sağdan-21"] {
+  --parça-sağdan: 21;
+}
+
+[data-gnl~="21p-aralık"] {
+  --parçalık-sağdan: 21;
+}
+
+[data-gnl~="soldan-22"] {
+  --parça-soldan: 22;
+}
+
+[data-gnl~="22p-aralık"] {
+  --parçalık-soldan: 22;
+}
+
+[data-gnl~="sağdan-22"] {
+  --parça-sağdan: 22;
+}
+
+[data-gnl~="22p-aralık"] {
+  --parçalık-sağdan: 22;
+}
+
+[data-gnl~="soldan-23"] {
+  --parça-soldan: 23;
+}
+
+[data-gnl~="23p-aralık"] {
+  --parçalık-soldan: 23;
+}
+
+[data-gnl~="sağdan-23"] {
+  --parça-sağdan: 23;
+}
+
+[data-gnl~="23p-aralık"] {
+  --parçalık-sağdan: 23;
+}
+
+[data-gnl~="soldan-24"] {
+  --parça-soldan: 24;
+}
+
+[data-gnl~="24p-aralık"] {
+  --parçalık-soldan: 24;
+}
+
+[data-gnl~="sağdan-24"] {
+  --parça-sağdan: 24;
+}
+
+[data-gnl~="24p-aralık"] {
+  --parçalık-sağdan: 24;
+}
+
+[data-gnl*="soldan-"] {
+  margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
+}
+
+[data-gnl*="sağdan-"] {
+  margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
+}
+
+[data-gnl*="soldan-"][data-gnl*="p-aralık"] {
+  margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
+}
+
+[data-gnl*="sağdan-"][data-gnl*="p-aralık"] {
+  margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
+}
+
+[data-gnl*="aralık-1"] {
+  margin: 10px;
+}
+
+[data-gnl*="aralık-2"] {
+  margin: 15px;
+}
+
+[data-gnl*="aralık-3"] {
+  margin: 20px;
+}
+
+[data-gnl*="aralık-l1"] {
+  margin-left: 10px;
+}
+
+[data-gnl*="aralık-l2"] {
+  margin-left: 15px;
+}
+
+[data-gnl*="aralık-l3"] {
+  margin-left: 20px;
+}
+
+[data-gnl*="aralık-s1"] {
+  margin-right: 10px;
+}
+
+[data-gnl*="aralık-s2"] {
+  margin-right: 15px;
+}
+
+[data-gnl*="aralık-s3"] {
+  margin-right: 20px;
+}
+
+[data-gnl*="aralık-t1"] {
+  margin-top: 10px;
+}
+
+[data-gnl*="aralık-t2"] {
+  margin-top: 15px;
+}
+
+[data-gnl*="aralık-t3"] {
+  margin-top: 20px;
+}
+
+[data-gnl*="aralık-a1"] {
+  margin-bottom: 10px;
+}
+
+[data-gnl*="aralık-a2"] {
+  margin-bottom: 15px;
+}
+
+[data-gnl*="aralık-a3"] {
+  margin-bottom: 20px;
+}
+
+[data-gnl*="aralık-ls1"] {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+[data-gnl*="aralık-ls2"] {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+[data-gnl*="aralık-ls3"] {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+[data-gnl*="aralık-ta1"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+[data-gnl*="aralık-ta2"] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+[data-gnl*="aralık-ta3"] {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+[data-gnl~="araları-aralık-1"][data-gnl] {
+  width: calc(100% / var(--parçalık) * var(--parça) + 10px);
+  max-width: calc(100% / var(--parçalık) * var(--parça) + 10px);
+  margin: -10px 0 0 -10px;
+}
+
+[data-gnl~="araları-aralık-2"][data-gnl] {
+  width: calc(100% / var(--parçalık) * var(--parça) + 15px);
+  max-width: calc(100% / var(--parçalık) * var(--parça) + 15px);
+  margin: -15px 0 0 -15px;
+}
+
+[data-gnl~="araları-aralık-3"][data-gnl] {
+  width: calc(100% / var(--parçalık) * var(--parça) + 20px);
+  max-width: calc(100% / var(--parçalık) * var(--parça) + 20px);
+  margin: -20px 0 0 -20px;
+}
+
+[data-gnl~="araları-aralık-1"] > * {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+[data-gnl~="araları-aralık-2"] > * {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+[data-gnl~="araları-aralık-3"] > * {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+[data-gnl~="dengeli-aralık-1"] > * {
+  padding: 10px;
+}
+
+[data-gnl~="dengeli-aralık-2"] > * {
+  padding: 15px;
+}
+
+[data-gnl~="dengeli-aralık-3"] > * {
+  padding: 20px;
+}
+
+[data-gnl~="dengeli-aralık-l1"] > * {
+  padding-left: 10px;
+}
+
+[data-gnl~="dengeli-aralık-l2"] > * {
+  padding-left: 15px;
+}
+
+[data-gnl~="dengeli-aralık-l3"] > * {
+  padding-left: 20px;
+}
+
+[data-gnl~="dengeli-aralık-s1"] > * {
+  padding-right: 10px;
+}
+
+[data-gnl~="dengeli-aralık-s2"] > * {
+  padding-right: 15px;
+}
+
+[data-gnl~="dengeli-aralık-s3"] > * {
+  padding-right: 20px;
+}
+
+[data-gnl~="dengeli-aralık-t1"] > * {
+  padding-top: 10px;
+}
+
+[data-gnl~="dengeli-aralık-t2"] > * {
+  padding-top: 15px;
+}
+
+[data-gnl~="dengeli-aralık-t3"] > * {
+  padding-top: 20px;
+}
+
+[data-gnl~="dengeli-aralık-a1"] > * {
+  padding-bottom: 10px;
+}
+
+[data-gnl~="dengeli-aralık-a2"] > * {
+  padding-bottom: 15px;
+}
+
+[data-gnl~="dengeli-aralık-a3"] > * {
+  padding-bottom: 20px;
+}
+
+[data-gnl~="dengeli-aralık-ls1"] > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+[data-gnl~="dengeli-aralık-ls2"] > * {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+[data-gnl~="dengeli-aralık-ls3"] > * {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+[data-gnl~="dengeli-aralık-ta1"] > * {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+[data-gnl~="dengeli-aralık-ta2"] > * {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+[data-gnl~="dengeli-aralık-ta3"] > * {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+[data-gnl~="aralık"] > [data-gnl] {
+  margin: var(--aralık);
+  flex-basis: calc(100% / var(--parçalık) * var(--parça) - var(--ara) - var(--ara));
+  width: calc(100% / var(--parçalık) * var(--parça) - var(--ara) - var(--ara));
+  max-width: calc(100% / var(--parçalık) * var(--parça) - var(--ara) - var(--ara));
+}
+
+[data-gnl~="oluk-çevre"] > [data-gnl] {
+  padding: var(--oluk);
+}
+
+[data-gnl~="oluk"] > [data-gnl] {
+  padding-left: var(--oluk);
+  padding-right: var(--oluk);
+}
+
+[data-gnl~="oluk-yok"] > [data-gnl] {
+  padding: 0;
+}
+
+[data-gnl~="kap"] {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-gnl~="1g"] {
+  flex: 1;
+}
+
+[data-gnl~="2g"] {
+  flex: 2;
+}
+
+[data-gnl~="3g"] {
+  flex: 3;
+}
+
+[data-gnl~="4g"] {
+  flex: 4;
+}
+
+[data-gnl~="5g"] {
+  flex: 5;
+}
+
+[data-gnl~="6g"] {
+  flex: 6;
+}
+
+[data-gnl~="7g"] {
+  flex: 7;
+}
+
+[data-gnl~="8g"] {
+  flex: 8;
+}
+
+[data-gnl~="9g"] {
+  flex: 9;
+}
+
+[data-gnl~="10g"] {
+  flex: 10;
+}
+
+[data-gnl~="11g"] {
+  flex: 11;
+}
+
+[data-gnl~="12g"] {
+  flex: 12;
+}
+
+[data-gnl~="13g"] {
+  flex: 13;
+}
+
+[data-gnl~="14g"] {
+  flex: 14;
+}
+
+[data-gnl~="15g"] {
+  flex: 15;
+}
+
+[data-gnl~="16g"] {
+  flex: 16;
+}
+
+[data-gnl~="17g"] {
+  flex: 17;
+}
+
+[data-gnl~="18g"] {
+  flex: 18;
+}
+
+[data-gnl~="19g"] {
+  flex: 19;
+}
+
+[data-gnl~="20g"] {
+  flex: 20;
+}
+
+[data-gnl~="21g"] {
+  flex: 21;
+}
+
+[data-gnl~="22g"] {
+  flex: 22;
+}
+
+[data-gnl~="23g"] {
+  flex: 23;
+}
+
+[data-gnl~="24g"] {
+  flex: 24;
+}
+
+[data-gnl~="0"][data-gnl~="0"] {
+  flex-basis: auto;
+  max-width: none;
+  width: auto;
+}
+
+[data-gnl~="1nc"] {
+  order: 1;
+}
+
+[data-gnl~="2nc"] {
+  order: 2;
+}
+
+[data-gnl~="3nc"] {
+  order: 3;
+}
+
+[data-gnl~="4nc"] {
+  order: 4;
+}
+
+[data-gnl~="5nc"] {
+  order: 5;
+}
+
+[data-gnl~="6nc"] {
+  order: 6;
+}
+
+[data-gnl~="7nc"] {
+  order: 7;
+}
+
+[data-gnl~="8nc"] {
+  order: 8;
+}
+
+[data-gnl~="9nc"] {
+  order: 9;
+}
+
+[data-gnl~="10nc"] {
+  order: 10;
+}
+
+[data-gnl~="11nc"] {
+  order: 11;
+}
+
+[data-gnl~="12nc"] {
+  order: 12;
+}
+
+[data-gnl~="13nc"] {
+  order: 13;
+}
+
+[data-gnl~="14nc"] {
+  order: 14;
+}
+
+[data-gnl~="15nc"] {
+  order: 15;
+}
+
+[data-gnl~="16nc"] {
+  order: 16;
+}
+
+[data-gnl~="17nc"] {
+  order: 17;
+}
+
+[data-gnl~="18nc"] {
+  order: 18;
+}
+
+[data-gnl~="19nc"] {
+  order: 19;
+}
+
+[data-gnl~="20nc"] {
+  order: 20;
+}
+
+[data-gnl~="21nc"] {
+  order: 21;
+}
+
+[data-gnl~="22nc"] {
+  order: 22;
+}
+
+[data-gnl~="23nc"] {
+  order: 23;
+}
+
+[data-gnl~="24nc"] {
+  order: 24;
+}
+
+[data-gnl~="col"] {
+  flex-direction: column;
+}
+
+[data-gnl~="row"] {
+  flex-direction: row;
+}
+
+[data-gnl~="col-reverse"] {
+  flex-direction: column-reverse;
+}
+
+[data-gnl~="row-reverse"] {
+  flex-direction: row-reverse;
+}
+
+[data-gnl~="no-overflow"] {
+  overflow: hidden;
+}
+
+[data-gnl~="overflow-x"] {
+  overflow-x: auto;
+}
+
+[data-gnl~="no-wrap"] {
+  flex-wrap: nowrap;
+}
+
+[data-gnl~="wrap-reverse"] {
+  flex-wrap: wrap-reverse;
+}
+
+[data-gnl~="col"][data-gnl~="üstte"],
+[data-gnl~="solda"]:not([data-gnl~="col"]) {
+  justify-content: flex-start;
+}
+
+[data-gnl~="col"][data-gnl~="göbekte"],
+[data-gnl~="ortada"]:not([data-gnl~="col"]) {
+  justify-content: center;
+}
+
+[data-gnl~="col"][data-gnl~="altta"],
+[data-gnl~="sağda"]:not([data-gnl~="col"]) {
+  justify-content: flex-end;
+}
+
+[data-gnl~="col"][data-gnl~="solda"],
+[data-gnl~="üstte"]:not([data-gnl~="col"]) {
+  align-content: flex-start;
+}
+
+[data-gnl~="col"][data-gnl~="ortada"],
+[data-gnl~="göbekte"]:not([data-gnl~="col"]) {
+  align-content: center;
+}
+
+[data-gnl~="col"][data-gnl~="sağda"],
+[data-gnl~="altta"]:not([data-gnl~="col"]) {
+  align-content: flex-end;
+}
+
+[data-gnl~="merkezde"] {
+  align-items: center;
+  justify-content: center;
+}
+
+[data-gnl~="üstte-ol"] {
+  align-self: flex-start;
+}
+
+[data-gnl~="göbekte-ol"] {
+  align-self: center;
+}
+
+[data-gnl~="altta-ol"] {
+  margin-top: auto;
+}
+
+[data-gnl~="sağda-ol"] {
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+[data-gnl~="ortada-ol"] {
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+
+[data-gnl~="solda-ol"] {
+  margin-right: auto;
+  align-self: flex-start;
+}
+
+[data-gnl~="araları-aralık"]:not([data-gnl~="col"]) {
+  justify-content: space-between;
+}
+
+[data-gnl~="dengeli-aralık"]:not([data-gnl~="col"]) {
+  justify-content: space-around;
+}
+
+[data-gnl~="col"][data-gnl~="araları-aralık"] {
+  align-content: space-around;
+}
+
+[data-gnl~="col"][data-gnl~="dengeli-aralık"] {
+  align-content: space-around;
+}
+
+[data-gnl~="uzat"] {
+  align-items: stretch;
+}
+
+[data-gnl~="uzun-ol"] {
+  align-self: stretch;
+}
+
+[data-gnl~="satırda"] {
+  align-items: baseline;
+}
+
+[data-gnl~="satırda-ol"] {
+  align-self: baseline;
+}
+
+[data-gnl~="metin-sağda"] {
+  text-align: right;
+}
+
+[data-gnl~="metin-ortada"] {
+  text-align: center;
+}
+
+[data-gnl~="metin-solda"] {
+  text-align: left;
+}
+
+[data-gnl~="lt"],
+[data-gnl~="t"][data-gnl~="col"],
+[data-gnl~="ts"][data-gnl~="col"],
+[data-gnl~="la"],
+[data-gnl~="l"] {
+  justify-content: flex-start;
+}
+
+[data-gnl~="t"],
+[data-gnl~="s"][data-gnl~="col"],
+[data-gnl~="a"],
+[data-gnl~="l"][data-gnl~="col"],
+[data-gnl~="o"] {
+  justify-content: center;
+}
+
+[data-gnl~="ts"],
+[data-gnl~="s"],
+[data-gnl~="as"],
+[data-gnl~="a"][data-gnl~="col"],
+[data-gnl~="la"][data-gnl~="col"] {
+  justify-content: flex-end;
+}
+
+[data-gnl~="lt"],
+[data-gnl~="t"],
+[data-gnl~="ts"],
+[data-gnl~="la"][data-gnl~="col"],
+[data-gnl~="l"][data-gnl~="col"] {
+  /*align-content: flex-start;*/
+  align-items: flex-start;
+}
+
+[data-gnl~="t"][data-gnl~="col"],
+[data-gnl~="s"],
+[data-gnl~="a"][data-gnl~="col"],
+[data-gnl~="l"] {
+  /*align-content: inherit;*/
+  align-items: center;
+}
+
+[data-gnl~="ts"][data-gnl~="col"],
+[data-gnl~="s"][data-gnl~="col"],
+[data-gnl~="as"],
+[data-gnl~="a"],
+[data-gnl~="la"] {
+  /*align-content: flex-end;*/
+  align-items: flex-end;
+}
+
+[data-gnl~="o"] {
+  justify-content: center;
+  /*align-content: center;*/
+  align-items: center;
+}
+
+[data-gnl~="_o"]:not([data-gnl~="_l"]):not([data-gnl~="_s"]):not([data-gnl~="_t"]):not([data-gnl~="_a"]) {
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+[data-gnl~="_o"],
+[data-gnl~="_l"],
+[data-gnl~="_s"] {
+  align-self: center;
+}
+
+:not([data-gnl~="col"]) > [data-gnl~="_t"],
+[data-gnl~="_lt"],
+[data-gnl~="_ts"] {
+  align-self: flex-start;
+}
+
+:not([data-gnl~="col"]) > [data-gnl~="_a"],
+[data-gnl~="_la"],
+[data-gnl~="_as"] {
+  align-self: flex-end;
+}
+
+[data-gnl~="_l"],
+[data-gnl~="_lt"],
+[data-gnl~="_la"] {
+  margin-right: auto;
+}
+
+[data-gnl~="_s"],
+[data-gnl~="_ts"],
+[data-gnl~="_as"] {
+  margin-left: auto;
+}
+
+[data-gnl~="col"] > [data-gnl~="_t"],
+[data-gnl~="col"] > [data-gnl~="_lt"],
+[data-gnl~="col"] > [data-gnl~="_ts"] {
+  margin-bottom: auto;
+}
+
+[data-gnl~="col"] > [data-gnl~="_a"],
+[data-gnl~="col"] > [data-gnl~="_la"],
+[data-gnl~="col"] > [data-gnl~="_as"] {
+  margin-top: auto;
+}
+
+[data-gnl~="col"] > [data-gnl~="_o"]:not([data-gnl~="_l"]):not([data-gnl~="_s"]):not([data-gnl~="_t"]):not([data-gnl~="_a"]) {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+[data-gnl~="ta"] {
+  align-content: stretch !important;
+  align-items: stretch !important;
+}
+
+[data-gnl~="ls"] {
+  justify-content: stretch !important;
+}
+
+[data-gnl~="hide"],
+[data-mn~="hide"] {
+  display: none !important;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 300px) {
+  :root {
+    --oluk:10px;
+    --ara:10px;
+  }
+
+  [data-xs~="sığ"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+  }
+
+  body[data-xs~="tamekran"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  [data-xs~="1r"] > div, [data-xs~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
+
+  [data-xs~="2r"] > div, [data-xs~="2r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  [data-xs~="3r"] > div, [data-xs~="3r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+
+  [data-xs~="4r"] > div, [data-xs~="4r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+
+  [data-xs~="5r"] > div, [data-xs~="5r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 5);
+    max-width: calc(100% / 5);
+  }
+
+  [data-xs~="6r"] > div, [data-xs~="6r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 6);
+    max-width: calc(100% / 6);
+  }
+
+  [data-xs~="7r"] > div, [data-xs~="7r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 7);
+    max-width: calc(100% / 7);
+  }
+
+  [data-xs~="8r"] > div, [data-xs~="8r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 8);
+    max-width: calc(100% / 8);
+  }
+
+  [data-xs~="9r"] > div, [data-xs~="9r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 9);
+    max-width: calc(100% / 9);
+  }
+
+  [data-xs~="10r"] > div, [data-xs~="10r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 10);
+    max-width: calc(100% / 10);
+  }
+
+  [data-xs~="11r"] > div, [data-xs~="11r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 11);
+    max-width: calc(100% / 11);
+  }
+
+  [data-xs~="12r"] > div, [data-xs~="12r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 12);
+    max-width: calc(100% / 12);
+  }
+
+  [data-xs~="13r"] > div, [data-xs~="13r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 13);
+    max-width: calc(100% / 13);
+  }
+
+  [data-xs~="14r"] > div, [data-xs~="14r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 14);
+    max-width: calc(100% / 14);
+  }
+
+  [data-xs~="15r"] > div, [data-xs~="15r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 15);
+    max-width: calc(100% / 15);
+  }
+
+  [data-xs~="16r"] > div, [data-xs~="16r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 16);
+    max-width: calc(100% / 16);
+  }
+
+  [data-xs~="17r"] > div, [data-xs~="17r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 17);
+    max-width: calc(100% / 17);
+  }
+
+  [data-xs~="18r"] > div, [data-xs~="18r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 18);
+    max-width: calc(100% / 18);
+  }
+
+  [data-xs~="19r"] > div, [data-xs~="19r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 19);
+    max-width: calc(100% / 19);
+  }
+
+  [data-xs~="20r"] > div, [data-xs~="20r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 20);
+    max-width: calc(100% / 20);
+  }
+
+  [data-xs~="21r"] > div, [data-xs~="21r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 21);
+    max-width: calc(100% / 21);
+  }
+
+  [data-xs~="22r"] > div, [data-xs~="22r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 22);
+    max-width: calc(100% / 22);
+  }
+
+  [data-xs~="23r"] > div, [data-xs~="23r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 23);
+    max-width: calc(100% / 23);
+  }
+
+  [data-xs~="24r"] > div, [data-xs~="24r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 24);
+    max-width: calc(100% / 24);
+  }
+
+  [data-xs~="1"] {
+    --parça: 1;
+  }
+
+  [data-xs~="1p"] {
+    --parçalık: 1;
+  }
+
+  [data-xs~="2"] {
+    --parça: 2;
+  }
+
+  [data-xs~="2p"] {
+    --parçalık: 2;
+  }
+
+  [data-xs~="3"] {
+    --parça: 3;
+  }
+
+  [data-xs~="3p"] {
+    --parçalık: 3;
+  }
+
+  [data-xs~="4"] {
+    --parça: 4;
+  }
+
+  [data-xs~="4p"] {
+    --parçalık: 4;
+  }
+
+  [data-xs~="5"] {
+    --parça: 5;
+  }
+
+  [data-xs~="5p"] {
+    --parçalık: 5;
+  }
+
+  [data-xs~="6"] {
+    --parça: 6;
+  }
+
+  [data-xs~="6p"] {
+    --parçalık: 6;
+  }
+
+  [data-xs~="7"] {
+    --parça: 7;
+  }
+
+  [data-xs~="7p"] {
+    --parçalık: 7;
+  }
+
+  [data-xs~="8"] {
+    --parça: 8;
+  }
+
+  [data-xs~="8p"] {
+    --parçalık: 8;
+  }
+
+  [data-xs~="9"] {
+    --parça: 9;
+  }
+
+  [data-xs~="9p"] {
+    --parçalık: 9;
+  }
+
+  [data-xs~="10"] {
+    --parça: 10;
+  }
+
+  [data-xs~="10p"] {
+    --parçalık: 10;
+  }
+
+  [data-xs~="11"] {
+    --parça: 11;
+  }
+
+  [data-xs~="11p"] {
+    --parçalık: 11;
+  }
+
+  [data-xs~="12"] {
+    --parça: 12;
+  }
+
+  [data-xs~="12p"] {
+    --parçalık: 12;
+  }
+
+  [data-xs~="13"] {
+    --parça: 13;
+  }
+
+  [data-xs~="13p"] {
+    --parçalık: 13;
+  }
+
+  [data-xs~="14"] {
+    --parça: 14;
+  }
+
+  [data-xs~="14p"] {
+    --parçalık: 14;
+  }
+
+  [data-xs~="15"] {
+    --parça: 15;
+  }
+
+  [data-xs~="15p"] {
+    --parçalık: 15;
+  }
+
+  [data-xs~="16"] {
+    --parça: 16;
+  }
+
+  [data-xs~="16p"] {
+    --parçalık: 16;
+  }
+
+  [data-xs~="17"] {
+    --parça: 17;
+  }
+
+  [data-xs~="17p"] {
+    --parçalık: 17;
+  }
+
+  [data-xs~="18"] {
+    --parça: 18;
+  }
+
+  [data-xs~="18p"] {
+    --parçalık: 18;
+  }
+
+  [data-xs~="19"] {
+    --parça: 19;
+  }
+
+  [data-xs~="19p"] {
+    --parçalık: 19;
+  }
+
+  [data-xs~="20"] {
+    --parça: 20;
+  }
+
+  [data-xs~="20p"] {
+    --parçalık: 20;
+  }
+
+  [data-xs~="21"] {
+    --parça: 21;
+  }
+
+  [data-xs~="21p"] {
+    --parçalık: 21;
+  }
+
+  [data-xs~="22"] {
+    --parça: 22;
+  }
+
+  [data-xs~="22p"] {
+    --parçalık: 22;
+  }
+
+  [data-xs~="23"] {
+    --parça: 23;
+  }
+
+  [data-xs~="23p"] {
+    --parçalık: 23;
+  }
+
+  [data-xs~="24"] {
+    --parça: 24;
+  }
+
+  [data-xs~="24p"] {
+    --parçalık: 24;
+  }
+
+  [data-xs][data-xs] {
+    width: calc(100% / var(--parçalık) * var(--parça));
+    max-width: calc(100% / var(--parçalık) * var(--parça));
+  }
+
+  [data-xs~="1g"] {
+    flex: 1;
+  }
+
+  [data-xs~="2g"] {
+    flex: 2;
+  }
+
+  [data-xs~="3g"] {
+    flex: 3;
+  }
+
+  [data-xs~="4g"] {
+    flex: 4;
+  }
+
+  [data-xs~="5g"] {
+    flex: 5;
+  }
+
+  [data-xs~="6g"] {
+    flex: 6;
+  }
+
+  [data-xs~="7g"] {
+    flex: 7;
+  }
+
+  [data-xs~="8g"] {
+    flex: 8;
+  }
+
+  [data-xs~="9g"] {
+    flex: 9;
+  }
+
+  [data-xs~="10g"] {
+    flex: 10;
+  }
+
+  [data-xs~="11g"] {
+    flex: 11;
+  }
+
+  [data-xs~="12g"] {
+    flex: 12;
+  }
+
+  [data-xs~="13g"] {
+    flex: 13;
+  }
+
+  [data-xs~="14g"] {
+    flex: 14;
+  }
+
+  [data-xs~="15g"] {
+    flex: 15;
+  }
+
+  [data-xs~="16g"] {
+    flex: 16;
+  }
+
+  [data-xs~="17g"] {
+    flex: 17;
+  }
+
+  [data-xs~="18g"] {
+    flex: 18;
+  }
+
+  [data-xs~="19g"] {
+    flex: 19;
+  }
+
+  [data-xs~="20g"] {
+    flex: 20;
+  }
+
+  [data-xs~="21g"] {
+    flex: 21;
+  }
+
+  [data-xs~="22g"] {
+    flex: 22;
+  }
+
+  [data-xs~="23g"] {
+    flex: 23;
+  }
+
+  [data-xs~="24g"] {
+    flex: 24;
+  }
+
+  [data-xs~="0"][data-xs~="0"] {
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  [data-xs~="1nc"] {
+    order: 1;
+  }
+
+  [data-xs~="2nc"] {
+    order: 2;
+  }
+
+  [data-xs~="3nc"] {
+    order: 3;
+  }
+
+  [data-xs~="4nc"] {
+    order: 4;
+  }
+
+  [data-xs~="5nc"] {
+    order: 5;
+  }
+
+  [data-xs~="6nc"] {
+    order: 6;
+  }
+
+  [data-xs~="7nc"] {
+    order: 7;
+  }
+
+  [data-xs~="8nc"] {
+    order: 8;
+  }
+
+  [data-xs~="9nc"] {
+    order: 9;
+  }
+
+  [data-xs~="10nc"] {
+    order: 10;
+  }
+
+  [data-xs~="11nc"] {
+    order: 11;
+  }
+
+  [data-xs~="12nc"] {
+    order: 12;
+  }
+
+  [data-xs~="13nc"] {
+    order: 13;
+  }
+
+  [data-xs~="14nc"] {
+    order: 14;
+  }
+
+  [data-xs~="15nc"] {
+    order: 15;
+  }
+
+  [data-xs~="16nc"] {
+    order: 16;
+  }
+
+  [data-xs~="17nc"] {
+    order: 17;
+  }
+
+  [data-xs~="18nc"] {
+    order: 18;
+  }
+
+  [data-xs~="19nc"] {
+    order: 19;
+  }
+
+  [data-xs~="20nc"] {
+    order: 20;
+  }
+
+  [data-xs~="21nc"] {
+    order: 21;
+  }
+
+  [data-xs~="22nc"] {
+    order: 22;
+  }
+
+  [data-xs~="23nc"] {
+    order: 23;
+  }
+
+  [data-xs~="24nc"] {
+    order: 24;
+  }
+
+  [data-xs~="col"] {
+    flex-direction: column;
+  }
+
+  [data-xs~="row"] {
+    flex-direction: row;
+  }
+
+  [data-xs~="col-reverse"] {
+    flex-direction: column-reverse;
+  }
+
+  [data-xs~="row-reverse"] {
+    flex-direction: row-reverse;
+  }
+
+  [data-xs~="no-overflow"] {
+    overflow: hidden;
+  }
+
+  [data-xs~="overflow-x"] {
+    overflow-x: auto;
+  }
+
+  [data-xs~="no-wrap"] {
+    flex-wrap: nowrap;
+  }
+
+  [data-xs~="wrap-reverse"] {
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-xs~="col"][data-xs~="üstte"],
+  [data-xs~="solda"]:not([data-xs~="col"]) {
+    justify-content: flex-start;
+  }
+
+  [data-xs~="col"][data-xs~="göbekte"],
+  [data-xs~="ortada"]:not([data-xs~="col"]) {
+    justify-content: center;
+  }
+
+  [data-xs~="col"][data-xs~="altta"],
+  [data-xs~="sağda"]:not([data-xs~="col"]) {
+    justify-content: flex-end;
+  }
+
+  [data-xs~="col"][data-xs~="solda"],
+  [data-xs~="üstte"]:not([data-xs~="col"]) {
+    align-content: flex-start;
+  }
+
+  [data-xs~="col"][data-xs~="ortada"],
+  [data-xs~="göbekte"]:not([data-xs~="col"]) {
+    align-content: center;
+  }
+
+  [data-xs~="col"][data-xs~="sağda"],
+  [data-xs~="altta"]:not([data-xs~="col"]) {
+    align-content: flex-end;
+  }
+
+  [data-xs~="merkezde"] {
+    align-items: center;
+    justify-content: center;
+  }
+
+  [data-xs~="üstte-ol"] {
+    align-self: flex-start;
+  }
+
+  [data-xs~="göbekte-ol"] {
+    align-self: center;
+  }
+
+  [data-xs~="altta-ol"] {
+    margin-top: auto;
+  }
+
+  [data-xs~="sağda-ol"] {
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  [data-xs~="ortada-ol"] {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+
+  [data-xs~="solda-ol"] {
+    margin-right: auto;
+    align-self: flex-start;
+  }
+
+  [data-xs~="araları-aralık"]:not([data-xs~="col"]) {
+    justify-content: space-between;
+  }
+
+  [data-xs~="dengeli-aralık"]:not([data-xs~="col"]) {
+    justify-content: space-around;
+  }
+
+  [data-xs~="col"][data-xs~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-xs~="col"][data-xs~="dengeli-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-xs~="uzat"] {
+    align-items: stretch;
+  }
+
+  [data-xs~="uzun-ol"] {
+    align-self: stretch;
+  }
+
+  [data-xs~="satırda"] {
+    align-items: baseline;
+  }
+
+  [data-xs~="satırda-ol"] {
+    align-self: baseline;
+  }
+
+  [data-xs~="metin-sağda"] {
+    text-align: right;
+  }
+
+  [data-xs~="metin-ortada"] {
+    text-align: center;
+  }
+
+  [data-xs~="metin-solda"] {
+    text-align: left;
+  }
+
+  [data-xs~="lt"],
+  [data-xs~="t"][data-xs~="col"],
+  [data-xs~="ts"][data-xs~="col"],
+  [data-xs~="la"],
+  [data-xs~="l"] {
+    justify-content: flex-start;
+  }
+
+  [data-xs~="t"],
+  [data-xs~="s"][data-xs~="col"],
+  [data-xs~="a"],
+  [data-xs~="l"][data-xs~="col"],
+  [data-xs~="o"] {
+    justify-content: center;
+  }
+
+  [data-xs~="ts"],
+  [data-xs~="s"],
+  [data-xs~="as"],
+  [data-xs~="a"][data-xs~="col"],
+  [data-xs~="la"][data-xs~="col"] {
+    justify-content: flex-end;
+  }
+
+  [data-xs~="lt"],
+  [data-xs~="t"],
+  [data-xs~="ts"],
+  [data-xs~="la"][data-xs~="col"],
+  [data-xs~="l"][data-xs~="col"] {
+    /*align-content: flex-start;*/
+    align-items: flex-start;
+  }
+
+  [data-xs~="t"][data-xs~="col"],
+  [data-xs~="s"],
+  [data-xs~="a"][data-xs~="col"],
+  [data-xs~="l"] {
+    /*align-content: inherit;*/
+    align-items: center;
+  }
+
+  [data-xs~="ts"][data-xs~="col"],
+  [data-xs~="s"][data-xs~="col"],
+  [data-xs~="as"],
+  [data-xs~="a"],
+  [data-xs~="la"] {
+    /*align-content: flex-end;*/
+    align-items: flex-end;
+  }
+
+  [data-xs~="o"] {
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center;
+  }
+
+  [data-xs~="_o"]:not([data-xs~="_l"]):not([data-xs~="_s"]):not([data-xs~="_t"]):not([data-xs~="_a"]) {
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  [data-xs~="_o"],
+  [data-xs~="_l"],
+  [data-xs~="_s"] {
+    align-self: center;
+  }
+
+  :not([data-xs~="col"]) > [data-xs~="_t"],
+  [data-xs~="_lt"],
+  [data-xs~="_ts"] {
+    align-self: flex-start;
+  }
+
+  :not([data-xs~="col"]) > [data-xs~="_a"],
+  [data-xs~="_la"],
+  [data-xs~="_as"] {
+    align-self: flex-end;
+  }
+
+  [data-xs~="_l"],
+  [data-xs~="_lt"],
+  [data-xs~="_la"] {
+    margin-right: auto;
+  }
+
+  [data-xs~="_s"],
+  [data-xs~="_ts"],
+  [data-xs~="_as"] {
+    margin-left: auto;
+  }
+
+  [data-xs~="col"] > [data-xs~="_t"],
+  [data-xs~="col"] > [data-xs~="_lt"],
+  [data-xs~="col"] > [data-xs~="_ts"] {
+    margin-bottom: auto;
+  }
+
+  [data-xs~="col"] > [data-xs~="_a"],
+  [data-xs~="col"] > [data-xs~="_la"],
+  [data-xs~="col"] > [data-xs~="_as"] {
+    margin-top: auto;
+  }
+
+  [data-xs~="col"] > [data-xs~="_o"]:not([data-xs~="_l"]):not([data-xs~="_s"]):not([data-xs~="_t"]):not([data-xs~="_a"]) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  [data-xs~="ta"] {
+    align-content: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-xs~="ls"] {
+    justify-content: stretch !important;
+  }
+
+  [data-xs~="hide"],
+  [data-xs~="hide-with-bigger"],
+  [data-mn~="hide-bigger"],
+  [data-mn~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 576px) {
+  [data-sm~="sığ"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+  }
+
+  body[data-sm~="tamekran"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  [data-sm~="1r"] > div, [data-sm~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
+
+  [data-sm~="2r"] > div, [data-sm~="2r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  [data-sm~="3r"] > div, [data-sm~="3r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+
+  [data-sm~="4r"] > div, [data-sm~="4r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+
+  [data-sm~="5r"] > div, [data-sm~="5r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 5);
+    max-width: calc(100% / 5);
+  }
+
+  [data-sm~="6r"] > div, [data-sm~="6r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 6);
+    max-width: calc(100% / 6);
+  }
+
+  [data-sm~="7r"] > div, [data-sm~="7r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 7);
+    max-width: calc(100% / 7);
+  }
+
+  [data-sm~="8r"] > div, [data-sm~="8r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 8);
+    max-width: calc(100% / 8);
+  }
+
+  [data-sm~="9r"] > div, [data-sm~="9r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 9);
+    max-width: calc(100% / 9);
+  }
+
+  [data-sm~="10r"] > div, [data-sm~="10r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 10);
+    max-width: calc(100% / 10);
+  }
+
+  [data-sm~="11r"] > div, [data-sm~="11r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 11);
+    max-width: calc(100% / 11);
+  }
+
+  [data-sm~="12r"] > div, [data-sm~="12r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 12);
+    max-width: calc(100% / 12);
+  }
+
+  [data-sm~="13r"] > div, [data-sm~="13r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 13);
+    max-width: calc(100% / 13);
+  }
+
+  [data-sm~="14r"] > div, [data-sm~="14r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 14);
+    max-width: calc(100% / 14);
+  }
+
+  [data-sm~="15r"] > div, [data-sm~="15r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 15);
+    max-width: calc(100% / 15);
+  }
+
+  [data-sm~="16r"] > div, [data-sm~="16r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 16);
+    max-width: calc(100% / 16);
+  }
+
+  [data-sm~="17r"] > div, [data-sm~="17r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 17);
+    max-width: calc(100% / 17);
+  }
+
+  [data-sm~="18r"] > div, [data-sm~="18r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 18);
+    max-width: calc(100% / 18);
+  }
+
+  [data-sm~="19r"] > div, [data-sm~="19r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 19);
+    max-width: calc(100% / 19);
+  }
+
+  [data-sm~="20r"] > div, [data-sm~="20r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 20);
+    max-width: calc(100% / 20);
+  }
+
+  [data-sm~="21r"] > div, [data-sm~="21r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 21);
+    max-width: calc(100% / 21);
+  }
+
+  [data-sm~="22r"] > div, [data-sm~="22r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 22);
+    max-width: calc(100% / 22);
+  }
+
+  [data-sm~="23r"] > div, [data-sm~="23r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 23);
+    max-width: calc(100% / 23);
+  }
+
+  [data-sm~="24r"] > div, [data-sm~="24r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 24);
+    max-width: calc(100% / 24);
+  }
+
+  [data-sm~="1"] {
+    --parça: 1;
+  }
+
+  [data-sm~="1p"] {
+    --parçalık: 1;
+  }
+
+  [data-sm~="2"] {
+    --parça: 2;
+  }
+
+  [data-sm~="2p"] {
+    --parçalık: 2;
+  }
+
+  [data-sm~="3"] {
+    --parça: 3;
+  }
+
+  [data-sm~="3p"] {
+    --parçalık: 3;
+  }
+
+  [data-sm~="4"] {
+    --parça: 4;
+  }
+
+  [data-sm~="4p"] {
+    --parçalık: 4;
+  }
+
+  [data-sm~="5"] {
+    --parça: 5;
+  }
+
+  [data-sm~="5p"] {
+    --parçalık: 5;
+  }
+
+  [data-sm~="6"] {
+    --parça: 6;
+  }
+
+  [data-sm~="6p"] {
+    --parçalık: 6;
+  }
+
+  [data-sm~="7"] {
+    --parça: 7;
+  }
+
+  [data-sm~="7p"] {
+    --parçalık: 7;
+  }
+
+  [data-sm~="8"] {
+    --parça: 8;
+  }
+
+  [data-sm~="8p"] {
+    --parçalık: 8;
+  }
+
+  [data-sm~="9"] {
+    --parça: 9;
+  }
+
+  [data-sm~="9p"] {
+    --parçalık: 9;
+  }
+
+  [data-sm~="10"] {
+    --parça: 10;
+  }
+
+  [data-sm~="10p"] {
+    --parçalık: 10;
+  }
+
+  [data-sm~="11"] {
+    --parça: 11;
+  }
+
+  [data-sm~="11p"] {
+    --parçalık: 11;
+  }
+
+  [data-sm~="12"] {
+    --parça: 12;
+  }
+
+  [data-sm~="12p"] {
+    --parçalık: 12;
+  }
+
+  [data-sm~="13"] {
+    --parça: 13;
+  }
+
+  [data-sm~="13p"] {
+    --parçalık: 13;
+  }
+
+  [data-sm~="14"] {
+    --parça: 14;
+  }
+
+  [data-sm~="14p"] {
+    --parçalık: 14;
+  }
+
+  [data-sm~="15"] {
+    --parça: 15;
+  }
+
+  [data-sm~="15p"] {
+    --parçalık: 15;
+  }
+
+  [data-sm~="16"] {
+    --parça: 16;
+  }
+
+  [data-sm~="16p"] {
+    --parçalık: 16;
+  }
+
+  [data-sm~="17"] {
+    --parça: 17;
+  }
+
+  [data-sm~="17p"] {
+    --parçalık: 17;
+  }
+
+  [data-sm~="18"] {
+    --parça: 18;
+  }
+
+  [data-sm~="18p"] {
+    --parçalık: 18;
+  }
+
+  [data-sm~="19"] {
+    --parça: 19;
+  }
+
+  [data-sm~="19p"] {
+    --parçalık: 19;
+  }
+
+  [data-sm~="20"] {
+    --parça: 20;
+  }
+
+  [data-sm~="20p"] {
+    --parçalık: 20;
+  }
+
+  [data-sm~="21"] {
+    --parça: 21;
+  }
+
+  [data-sm~="21p"] {
+    --parçalık: 21;
+  }
+
+  [data-sm~="22"] {
+    --parça: 22;
+  }
+
+  [data-sm~="22p"] {
+    --parçalık: 22;
+  }
+
+  [data-sm~="23"] {
+    --parça: 23;
+  }
+
+  [data-sm~="23p"] {
+    --parçalık: 23;
+  }
+
+  [data-sm~="24"] {
+    --parça: 24;
+  }
+
+  [data-sm~="24p"] {
+    --parçalık: 24;
+  }
+
+  [data-sm][data-sm] {
+    width: calc(100% / var(--parçalık) * var(--parça));
+    max-width: calc(100% / var(--parçalık) * var(--parça));
+  }
+
+  [data-sm~="1g"] {
+    flex: 1;
+  }
+
+  [data-sm~="2g"] {
+    flex: 2;
+  }
+
+  [data-sm~="3g"] {
+    flex: 3;
+  }
+
+  [data-sm~="4g"] {
+    flex: 4;
+  }
+
+  [data-sm~="5g"] {
+    flex: 5;
+  }
+
+  [data-sm~="6g"] {
+    flex: 6;
+  }
+
+  [data-sm~="7g"] {
+    flex: 7;
+  }
+
+  [data-sm~="8g"] {
+    flex: 8;
+  }
+
+  [data-sm~="9g"] {
+    flex: 9;
+  }
+
+  [data-sm~="10g"] {
+    flex: 10;
+  }
+
+  [data-sm~="11g"] {
+    flex: 11;
+  }
+
+  [data-sm~="12g"] {
+    flex: 12;
+  }
+
+  [data-sm~="13g"] {
+    flex: 13;
+  }
+
+  [data-sm~="14g"] {
+    flex: 14;
+  }
+
+  [data-sm~="15g"] {
+    flex: 15;
+  }
+
+  [data-sm~="16g"] {
+    flex: 16;
+  }
+
+  [data-sm~="17g"] {
+    flex: 17;
+  }
+
+  [data-sm~="18g"] {
+    flex: 18;
+  }
+
+  [data-sm~="19g"] {
+    flex: 19;
+  }
+
+  [data-sm~="20g"] {
+    flex: 20;
+  }
+
+  [data-sm~="21g"] {
+    flex: 21;
+  }
+
+  [data-sm~="22g"] {
+    flex: 22;
+  }
+
+  [data-sm~="23g"] {
+    flex: 23;
+  }
+
+  [data-sm~="24g"] {
+    flex: 24;
+  }
+
+  [data-sm~="0"][data-sm~="0"] {
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  [data-sm~="1nc"] {
+    order: 1;
+  }
+
+  [data-sm~="2nc"] {
+    order: 2;
+  }
+
+  [data-sm~="3nc"] {
+    order: 3;
+  }
+
+  [data-sm~="4nc"] {
+    order: 4;
+  }
+
+  [data-sm~="5nc"] {
+    order: 5;
+  }
+
+  [data-sm~="6nc"] {
+    order: 6;
+  }
+
+  [data-sm~="7nc"] {
+    order: 7;
+  }
+
+  [data-sm~="8nc"] {
+    order: 8;
+  }
+
+  [data-sm~="9nc"] {
+    order: 9;
+  }
+
+  [data-sm~="10nc"] {
+    order: 10;
+  }
+
+  [data-sm~="11nc"] {
+    order: 11;
+  }
+
+  [data-sm~="12nc"] {
+    order: 12;
+  }
+
+  [data-sm~="13nc"] {
+    order: 13;
+  }
+
+  [data-sm~="14nc"] {
+    order: 14;
+  }
+
+  [data-sm~="15nc"] {
+    order: 15;
+  }
+
+  [data-sm~="16nc"] {
+    order: 16;
+  }
+
+  [data-sm~="17nc"] {
+    order: 17;
+  }
+
+  [data-sm~="18nc"] {
+    order: 18;
+  }
+
+  [data-sm~="19nc"] {
+    order: 19;
+  }
+
+  [data-sm~="20nc"] {
+    order: 20;
+  }
+
+  [data-sm~="21nc"] {
+    order: 21;
+  }
+
+  [data-sm~="22nc"] {
+    order: 22;
+  }
+
+  [data-sm~="23nc"] {
+    order: 23;
+  }
+
+  [data-sm~="24nc"] {
+    order: 24;
+  }
+
+  [data-sm~="col"] {
+    flex-direction: column;
+  }
+
+  [data-sm~="row"] {
+    flex-direction: row;
+  }
+
+  [data-sm~="col-reverse"] {
+    flex-direction: column-reverse;
+  }
+
+  [data-sm~="row-reverse"] {
+    flex-direction: row-reverse;
+  }
+
+  [data-sm~="no-overflow"] {
+    overflow: hidden;
+  }
+
+  [data-sm~="overflow-x"] {
+    overflow-x: auto;
+  }
+
+  [data-sm~="no-wrap"] {
+    flex-wrap: nowrap;
+  }
+
+  [data-sm~="wrap-reverse"] {
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-sm~="col"][data-sm~="üstte"],
+  [data-sm~="solda"]:not([data-sm~="col"]) {
+    justify-content: flex-start;
+  }
+
+  [data-sm~="col"][data-sm~="göbekte"],
+  [data-sm~="ortada"]:not([data-sm~="col"]) {
+    justify-content: center;
+  }
+
+  [data-sm~="col"][data-sm~="altta"],
+  [data-sm~="sağda"]:not([data-sm~="col"]) {
+    justify-content: flex-end;
+  }
+
+  [data-sm~="col"][data-sm~="solda"],
+  [data-sm~="üstte"]:not([data-sm~="col"]) {
+    align-content: flex-start;
+  }
+
+  [data-sm~="col"][data-sm~="ortada"],
+  [data-sm~="göbekte"]:not([data-sm~="col"]) {
+    align-content: center;
+  }
+
+  [data-sm~="col"][data-sm~="sağda"],
+  [data-sm~="altta"]:not([data-sm~="col"]) {
+    align-content: flex-end;
+  }
+
+  [data-sm~="merkezde"] {
+    align-items: center;
+    justify-content: center;
+  }
+
+  [data-sm~="üstte-ol"] {
+    align-self: flex-start;
+  }
+
+  [data-sm~="göbekte-ol"] {
+    align-self: center;
+  }
+
+  [data-sm~="altta-ol"] {
+    margin-top: auto;
+  }
+
+  [data-sm~="sağda-ol"] {
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  [data-sm~="ortada-ol"] {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+
+  [data-sm~="solda-ol"] {
+    margin-right: auto;
+    align-self: flex-start;
+  }
+
+  [data-sm~="araları-aralık"]:not([data-sm~="col"]) {
+    justify-content: space-between;
+  }
+
+  [data-sm~="dengeli-aralık"]:not([data-sm~="col"]) {
+    justify-content: space-around;
+  }
+
+  [data-sm~="col"][data-sm~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-sm~="col"][data-sm~="dengeli-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-sm~="uzat"] {
+    align-items: stretch;
+  }
+
+  [data-sm~="uzun-ol"] {
+    align-self: stretch;
+  }
+
+  [data-sm~="satırda"] {
+    align-items: baseline;
+  }
+
+  [data-sm~="satırda-ol"] {
+    align-self: baseline;
+  }
+
+  [data-sm~="metin-sağda"] {
+    text-align: right;
+  }
+
+  [data-sm~="metin-ortada"] {
+    text-align: center;
+  }
+
+  [data-sm~="metin-solda"] {
+    text-align: left;
+  }
+
+  [data-sm~="lt"],
+  [data-sm~="t"][data-sm~="col"],
+  [data-sm~="ts"][data-sm~="col"],
+  [data-sm~="la"],
+  [data-sm~="l"] {
+    justify-content: flex-start;
+  }
+
+  [data-sm~="t"],
+  [data-sm~="s"][data-sm~="col"],
+  [data-sm~="a"],
+  [data-sm~="l"][data-sm~="col"],
+  [data-sm~="o"] {
+    justify-content: center;
+  }
+
+  [data-sm~="ts"],
+  [data-sm~="s"],
+  [data-sm~="as"],
+  [data-sm~="a"][data-sm~="col"],
+  [data-sm~="la"][data-sm~="col"] {
+    justify-content: flex-end;
+  }
+
+  [data-sm~="lt"],
+  [data-sm~="t"],
+  [data-sm~="ts"],
+  [data-sm~="la"][data-sm~="col"],
+  [data-sm~="l"][data-sm~="col"] {
+    /*align-content: flex-start;*/
+    align-items: flex-start;
+  }
+
+  [data-sm~="t"][data-sm~="col"],
+  [data-sm~="s"],
+  [data-sm~="a"][data-sm~="col"],
+  [data-sm~="l"] {
+    /*align-content: inherit;*/
+    align-items: center;
+  }
+
+  [data-sm~="ts"][data-sm~="col"],
+  [data-sm~="s"][data-sm~="col"],
+  [data-sm~="as"],
+  [data-sm~="a"],
+  [data-sm~="la"] {
+    /*align-content: flex-end;*/
+    align-items: flex-end;
+  }
+
+  [data-sm~="o"] {
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center;
+  }
+
+  [data-sm~="_o"]:not([data-sm~="_l"]):not([data-sm~="_s"]):not([data-sm~="_t"]):not([data-sm~="_a"]) {
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  [data-sm~="_o"],
+  [data-sm~="_l"],
+  [data-sm~="_s"] {
+    align-self: center;
+  }
+
+  :not([data-sm~="col"]) > [data-sm~="_t"],
+  [data-sm~="_lt"],
+  [data-sm~="_ts"] {
+    align-self: flex-start;
+  }
+
+  :not([data-sm~="col"]) > [data-sm~="_a"],
+  [data-sm~="_la"],
+  [data-sm~="_as"] {
+    align-self: flex-end;
+  }
+
+  [data-sm~="_l"],
+  [data-sm~="_lt"],
+  [data-sm~="_la"] {
+    margin-right: auto;
+  }
+
+  [data-sm~="_s"],
+  [data-sm~="_ts"],
+  [data-sm~="_as"] {
+    margin-left: auto;
+  }
+
+  [data-sm~="col"] > [data-sm~="_t"],
+  [data-sm~="col"] > [data-sm~="_lt"],
+  [data-sm~="col"] > [data-sm~="_ts"] {
+    margin-bottom: auto;
+  }
+
+  [data-sm~="col"] > [data-sm~="_a"],
+  [data-sm~="col"] > [data-sm~="_la"],
+  [data-sm~="col"] > [data-sm~="_as"] {
+    margin-top: auto;
+  }
+
+  [data-sm~="col"] > [data-sm~="_o"]:not([data-sm~="_l"]):not([data-sm~="_s"]):not([data-sm~="_t"]):not([data-sm~="_a"]) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  [data-sm~="ta"] {
+    align-content: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-sm~="ls"] {
+    justify-content: stretch !important;
+  }
+
+  [data-sm~="hide"],
+  [data-sm~="hide-with-bigger"],
+  [data-xs~="hide-bigger"],
+  [data-xs~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 768px) {
+  [data-md~="sığ"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+  }
+
+  body[data-md~="tamekran"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  [data-md~="1r"] > div, [data-md~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
+
+  [data-md~="2r"] > div, [data-md~="2r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  [data-md~="3r"] > div, [data-md~="3r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+
+  [data-md~="4r"] > div, [data-md~="4r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+
+  [data-md~="5r"] > div, [data-md~="5r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 5);
+    max-width: calc(100% / 5);
+  }
+
+  [data-md~="6r"] > div, [data-md~="6r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 6);
+    max-width: calc(100% / 6);
+  }
+
+  [data-md~="7r"] > div, [data-md~="7r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 7);
+    max-width: calc(100% / 7);
+  }
+
+  [data-md~="8r"] > div, [data-md~="8r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 8);
+    max-width: calc(100% / 8);
+  }
+
+  [data-md~="9r"] > div, [data-md~="9r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 9);
+    max-width: calc(100% / 9);
+  }
+
+  [data-md~="10r"] > div, [data-md~="10r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 10);
+    max-width: calc(100% / 10);
+  }
+
+  [data-md~="11r"] > div, [data-md~="11r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 11);
+    max-width: calc(100% / 11);
+  }
+
+  [data-md~="12r"] > div, [data-md~="12r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 12);
+    max-width: calc(100% / 12);
+  }
+
+  [data-md~="13r"] > div, [data-md~="13r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 13);
+    max-width: calc(100% / 13);
+  }
+
+  [data-md~="14r"] > div, [data-md~="14r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 14);
+    max-width: calc(100% / 14);
+  }
+
+  [data-md~="15r"] > div, [data-md~="15r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 15);
+    max-width: calc(100% / 15);
+  }
+
+  [data-md~="16r"] > div, [data-md~="16r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 16);
+    max-width: calc(100% / 16);
+  }
+
+  [data-md~="17r"] > div, [data-md~="17r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 17);
+    max-width: calc(100% / 17);
+  }
+
+  [data-md~="18r"] > div, [data-md~="18r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 18);
+    max-width: calc(100% / 18);
+  }
+
+  [data-md~="19r"] > div, [data-md~="19r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 19);
+    max-width: calc(100% / 19);
+  }
+
+  [data-md~="20r"] > div, [data-md~="20r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 20);
+    max-width: calc(100% / 20);
+  }
+
+  [data-md~="21r"] > div, [data-md~="21r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 21);
+    max-width: calc(100% / 21);
+  }
+
+  [data-md~="22r"] > div, [data-md~="22r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 22);
+    max-width: calc(100% / 22);
+  }
+
+  [data-md~="23r"] > div, [data-md~="23r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 23);
+    max-width: calc(100% / 23);
+  }
+
+  [data-md~="24r"] > div, [data-md~="24r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 24);
+    max-width: calc(100% / 24);
+  }
+
+  [data-md~="1"] {
+    --parça: 1;
+  }
+
+  [data-md~="1p"] {
+    --parçalık: 1;
+  }
+
+  [data-md~="2"] {
+    --parça: 2;
+  }
+
+  [data-md~="2p"] {
+    --parçalık: 2;
+  }
+
+  [data-md~="3"] {
+    --parça: 3;
+  }
+
+  [data-md~="3p"] {
+    --parçalık: 3;
+  }
+
+  [data-md~="4"] {
+    --parça: 4;
+  }
+
+  [data-md~="4p"] {
+    --parçalık: 4;
+  }
+
+  [data-md~="5"] {
+    --parça: 5;
+  }
+
+  [data-md~="5p"] {
+    --parçalık: 5;
+  }
+
+  [data-md~="6"] {
+    --parça: 6;
+  }
+
+  [data-md~="6p"] {
+    --parçalık: 6;
+  }
+
+  [data-md~="7"] {
+    --parça: 7;
+  }
+
+  [data-md~="7p"] {
+    --parçalık: 7;
+  }
+
+  [data-md~="8"] {
+    --parça: 8;
+  }
+
+  [data-md~="8p"] {
+    --parçalık: 8;
+  }
+
+  [data-md~="9"] {
+    --parça: 9;
+  }
+
+  [data-md~="9p"] {
+    --parçalık: 9;
+  }
+
+  [data-md~="10"] {
+    --parça: 10;
+  }
+
+  [data-md~="10p"] {
+    --parçalık: 10;
+  }
+
+  [data-md~="11"] {
+    --parça: 11;
+  }
+
+  [data-md~="11p"] {
+    --parçalık: 11;
+  }
+
+  [data-md~="12"] {
+    --parça: 12;
+  }
+
+  [data-md~="12p"] {
+    --parçalık: 12;
+  }
+
+  [data-md~="13"] {
+    --parça: 13;
+  }
+
+  [data-md~="13p"] {
+    --parçalık: 13;
+  }
+
+  [data-md~="14"] {
+    --parça: 14;
+  }
+
+  [data-md~="14p"] {
+    --parçalık: 14;
+  }
+
+  [data-md~="15"] {
+    --parça: 15;
+  }
+
+  [data-md~="15p"] {
+    --parçalık: 15;
+  }
+
+  [data-md~="16"] {
+    --parça: 16;
+  }
+
+  [data-md~="16p"] {
+    --parçalık: 16;
+  }
+
+  [data-md~="17"] {
+    --parça: 17;
+  }
+
+  [data-md~="17p"] {
+    --parçalık: 17;
+  }
+
+  [data-md~="18"] {
+    --parça: 18;
+  }
+
+  [data-md~="18p"] {
+    --parçalık: 18;
+  }
+
+  [data-md~="19"] {
+    --parça: 19;
+  }
+
+  [data-md~="19p"] {
+    --parçalık: 19;
+  }
+
+  [data-md~="20"] {
+    --parça: 20;
+  }
+
+  [data-md~="20p"] {
+    --parçalık: 20;
+  }
+
+  [data-md~="21"] {
+    --parça: 21;
+  }
+
+  [data-md~="21p"] {
+    --parçalık: 21;
+  }
+
+  [data-md~="22"] {
+    --parça: 22;
+  }
+
+  [data-md~="22p"] {
+    --parçalık: 22;
+  }
+
+  [data-md~="23"] {
+    --parça: 23;
+  }
+
+  [data-md~="23p"] {
+    --parçalık: 23;
+  }
+
+  [data-md~="24"] {
+    --parça: 24;
+  }
+
+  [data-md~="24p"] {
+    --parçalık: 24;
+  }
+
+  [data-md][data-md] {
+    width: calc(100% / var(--parçalık) * var(--parça));
+    max-width: calc(100% / var(--parçalık) * var(--parça));
+  }
+
+  [data-md~="1g"] {
+    flex: 1;
+  }
+
+  [data-md~="2g"] {
+    flex: 2;
+  }
+
+  [data-md~="3g"] {
+    flex: 3;
+  }
+
+  [data-md~="4g"] {
+    flex: 4;
+  }
+
+  [data-md~="5g"] {
+    flex: 5;
+  }
+
+  [data-md~="6g"] {
+    flex: 6;
+  }
+
+  [data-md~="7g"] {
+    flex: 7;
+  }
+
+  [data-md~="8g"] {
+    flex: 8;
+  }
+
+  [data-md~="9g"] {
+    flex: 9;
+  }
+
+  [data-md~="10g"] {
+    flex: 10;
+  }
+
+  [data-md~="11g"] {
+    flex: 11;
+  }
+
+  [data-md~="12g"] {
+    flex: 12;
+  }
+
+  [data-md~="13g"] {
+    flex: 13;
+  }
+
+  [data-md~="14g"] {
+    flex: 14;
+  }
+
+  [data-md~="15g"] {
+    flex: 15;
+  }
+
+  [data-md~="16g"] {
+    flex: 16;
+  }
+
+  [data-md~="17g"] {
+    flex: 17;
+  }
+
+  [data-md~="18g"] {
+    flex: 18;
+  }
+
+  [data-md~="19g"] {
+    flex: 19;
+  }
+
+  [data-md~="20g"] {
+    flex: 20;
+  }
+
+  [data-md~="21g"] {
+    flex: 21;
+  }
+
+  [data-md~="22g"] {
+    flex: 22;
+  }
+
+  [data-md~="23g"] {
+    flex: 23;
+  }
+
+  [data-md~="24g"] {
+    flex: 24;
+  }
+
+  [data-md~="0"][data-md~="0"] {
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  [data-md~="1nc"] {
+    order: 1;
+  }
+
+  [data-md~="2nc"] {
+    order: 2;
+  }
+
+  [data-md~="3nc"] {
+    order: 3;
+  }
+
+  [data-md~="4nc"] {
+    order: 4;
+  }
+
+  [data-md~="5nc"] {
+    order: 5;
+  }
+
+  [data-md~="6nc"] {
+    order: 6;
+  }
+
+  [data-md~="7nc"] {
+    order: 7;
+  }
+
+  [data-md~="8nc"] {
+    order: 8;
+  }
+
+  [data-md~="9nc"] {
+    order: 9;
+  }
+
+  [data-md~="10nc"] {
+    order: 10;
+  }
+
+  [data-md~="11nc"] {
+    order: 11;
+  }
+
+  [data-md~="12nc"] {
+    order: 12;
+  }
+
+  [data-md~="13nc"] {
+    order: 13;
+  }
+
+  [data-md~="14nc"] {
+    order: 14;
+  }
+
+  [data-md~="15nc"] {
+    order: 15;
+  }
+
+  [data-md~="16nc"] {
+    order: 16;
+  }
+
+  [data-md~="17nc"] {
+    order: 17;
+  }
+
+  [data-md~="18nc"] {
+    order: 18;
+  }
+
+  [data-md~="19nc"] {
+    order: 19;
+  }
+
+  [data-md~="20nc"] {
+    order: 20;
+  }
+
+  [data-md~="21nc"] {
+    order: 21;
+  }
+
+  [data-md~="22nc"] {
+    order: 22;
+  }
+
+  [data-md~="23nc"] {
+    order: 23;
+  }
+
+  [data-md~="24nc"] {
+    order: 24;
+  }
+
+  [data-md~="col"] {
+    flex-direction: column;
+  }
+
+  [data-md~="row"] {
+    flex-direction: row;
+  }
+
+  [data-md~="col-reverse"] {
+    flex-direction: column-reverse;
+  }
+
+  [data-md~="row-reverse"] {
+    flex-direction: row-reverse;
+  }
+
+  [data-md~="no-overflow"] {
+    overflow: hidden;
+  }
+
+  [data-md~="overflow-x"] {
+    overflow-x: auto;
+  }
+
+  [data-md~="no-wrap"] {
+    flex-wrap: nowrap;
+  }
+
+  [data-md~="wrap-reverse"] {
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-md~="col"][data-md~="üstte"],
+  [data-md~="solda"]:not([data-md~="col"]) {
+    justify-content: flex-start;
+  }
+
+  [data-md~="col"][data-md~="göbekte"],
+  [data-md~="ortada"]:not([data-md~="col"]) {
+    justify-content: center;
+  }
+
+  [data-md~="col"][data-md~="altta"],
+  [data-md~="sağda"]:not([data-md~="col"]) {
+    justify-content: flex-end;
+  }
+
+  [data-md~="col"][data-md~="solda"],
+  [data-md~="üstte"]:not([data-md~="col"]) {
+    align-content: flex-start;
+  }
+
+  [data-md~="col"][data-md~="ortada"],
+  [data-md~="göbekte"]:not([data-md~="col"]) {
+    align-content: center;
+  }
+
+  [data-md~="col"][data-md~="sağda"],
+  [data-md~="altta"]:not([data-md~="col"]) {
+    align-content: flex-end;
+  }
+
+  [data-md~="merkezde"] {
+    align-items: center;
+    justify-content: center;
+  }
+
+  [data-md~="üstte-ol"] {
+    align-self: flex-start;
+  }
+
+  [data-md~="göbekte-ol"] {
+    align-self: center;
+  }
+
+  [data-md~="altta-ol"] {
+    margin-top: auto;
+  }
+
+  [data-md~="sağda-ol"] {
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  [data-md~="ortada-ol"] {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+
+  [data-md~="solda-ol"] {
+    margin-right: auto;
+    align-self: flex-start;
+  }
+
+  [data-md~="araları-aralık"]:not([data-md~="col"]) {
+    justify-content: space-between;
+  }
+
+  [data-md~="dengeli-aralık"]:not([data-md~="col"]) {
+    justify-content: space-around;
+  }
+
+  [data-md~="col"][data-md~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-md~="col"][data-md~="dengeli-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-md~="uzat"] {
+    align-items: stretch;
+  }
+
+  [data-md~="uzun-ol"] {
+    align-self: stretch;
+  }
+
+  [data-md~="satırda"] {
+    align-items: baseline;
+  }
+
+  [data-md~="satırda-ol"] {
+    align-self: baseline;
+  }
+
+  [data-md~="metin-sağda"] {
+    text-align: right;
+  }
+
+  [data-md~="metin-ortada"] {
+    text-align: center;
+  }
+
+  [data-md~="metin-solda"] {
+    text-align: left;
+  }
+
+  [data-md~="lt"],
+  [data-md~="t"][data-md~="col"],
+  [data-md~="ts"][data-md~="col"],
+  [data-md~="la"],
+  [data-md~="l"] {
+    justify-content: flex-start;
+  }
+
+  [data-md~="t"],
+  [data-md~="s"][data-md~="col"],
+  [data-md~="a"],
+  [data-md~="l"][data-md~="col"],
+  [data-md~="o"] {
+    justify-content: center;
+  }
+
+  [data-md~="ts"],
+  [data-md~="s"],
+  [data-md~="as"],
+  [data-md~="a"][data-md~="col"],
+  [data-md~="la"][data-md~="col"] {
+    justify-content: flex-end;
+  }
+
+  [data-md~="lt"],
+  [data-md~="t"],
+  [data-md~="ts"],
+  [data-md~="la"][data-md~="col"],
+  [data-md~="l"][data-md~="col"] {
+    /*align-content: flex-start;*/
+    align-items: flex-start;
+  }
+
+  [data-md~="t"][data-md~="col"],
+  [data-md~="s"],
+  [data-md~="a"][data-md~="col"],
+  [data-md~="l"] {
+    /*align-content: inherit;*/
+    align-items: center;
+  }
+
+  [data-md~="ts"][data-md~="col"],
+  [data-md~="s"][data-md~="col"],
+  [data-md~="as"],
+  [data-md~="a"],
+  [data-md~="la"] {
+    /*align-content: flex-end;*/
+    align-items: flex-end;
+  }
+
+  [data-md~="o"] {
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center;
+  }
+
+  [data-md~="_o"]:not([data-md~="_l"]):not([data-md~="_s"]):not([data-md~="_t"]):not([data-md~="_a"]) {
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  [data-md~="_o"],
+  [data-md~="_l"],
+  [data-md~="_s"] {
+    align-self: center;
+  }
+
+  :not([data-md~="col"]) > [data-md~="_t"],
+  [data-md~="_lt"],
+  [data-md~="_ts"] {
+    align-self: flex-start;
+  }
+
+  :not([data-md~="col"]) > [data-md~="_a"],
+  [data-md~="_la"],
+  [data-md~="_as"] {
+    align-self: flex-end;
+  }
+
+  [data-md~="_l"],
+  [data-md~="_lt"],
+  [data-md~="_la"] {
+    margin-right: auto;
+  }
+
+  [data-md~="_s"],
+  [data-md~="_ts"],
+  [data-md~="_as"] {
+    margin-left: auto;
+  }
+
+  [data-md~="col"] > [data-md~="_t"],
+  [data-md~="col"] > [data-md~="_lt"],
+  [data-md~="col"] > [data-md~="_ts"] {
+    margin-bottom: auto;
+  }
+
+  [data-md~="col"] > [data-md~="_a"],
+  [data-md~="col"] > [data-md~="_la"],
+  [data-md~="col"] > [data-md~="_as"] {
+    margin-top: auto;
+  }
+
+  [data-md~="col"] > [data-md~="_o"]:not([data-md~="_l"]):not([data-md~="_s"]):not([data-md~="_t"]):not([data-md~="_a"]) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  [data-md~="ta"] {
+    align-content: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-md~="ls"] {
+    justify-content: stretch !important;
+  }
+
+  [data-md~="hide"],
+  [data-md~="hide-with-bigger"],
+  [data-sm~="hide-bigger"],
+  [data-sm~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 992px) {
+  [data-lg~="sığ"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+  }
+
+  body[data-lg~="tamekran"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  [data-lg~="1r"] > div, [data-lg~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
+
+  [data-lg~="2r"] > div, [data-lg~="2r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  [data-lg~="3r"] > div, [data-lg~="3r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+
+  [data-lg~="4r"] > div, [data-lg~="4r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+
+  [data-lg~="5r"] > div, [data-lg~="5r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 5);
+    max-width: calc(100% / 5);
+  }
+
+  [data-lg~="6r"] > div, [data-lg~="6r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 6);
+    max-width: calc(100% / 6);
+  }
+
+  [data-lg~="7r"] > div, [data-lg~="7r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 7);
+    max-width: calc(100% / 7);
+  }
+
+  [data-lg~="8r"] > div, [data-lg~="8r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 8);
+    max-width: calc(100% / 8);
+  }
+
+  [data-lg~="9r"] > div, [data-lg~="9r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 9);
+    max-width: calc(100% / 9);
+  }
+
+  [data-lg~="10r"] > div, [data-lg~="10r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 10);
+    max-width: calc(100% / 10);
+  }
+
+  [data-lg~="11r"] > div, [data-lg~="11r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 11);
+    max-width: calc(100% / 11);
+  }
+
+  [data-lg~="12r"] > div, [data-lg~="12r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 12);
+    max-width: calc(100% / 12);
+  }
+
+  [data-lg~="13r"] > div, [data-lg~="13r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 13);
+    max-width: calc(100% / 13);
+  }
+
+  [data-lg~="14r"] > div, [data-lg~="14r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 14);
+    max-width: calc(100% / 14);
+  }
+
+  [data-lg~="15r"] > div, [data-lg~="15r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 15);
+    max-width: calc(100% / 15);
+  }
+
+  [data-lg~="16r"] > div, [data-lg~="16r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 16);
+    max-width: calc(100% / 16);
+  }
+
+  [data-lg~="17r"] > div, [data-lg~="17r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 17);
+    max-width: calc(100% / 17);
+  }
+
+  [data-lg~="18r"] > div, [data-lg~="18r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 18);
+    max-width: calc(100% / 18);
+  }
+
+  [data-lg~="19r"] > div, [data-lg~="19r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 19);
+    max-width: calc(100% / 19);
+  }
+
+  [data-lg~="20r"] > div, [data-lg~="20r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 20);
+    max-width: calc(100% / 20);
+  }
+
+  [data-lg~="21r"] > div, [data-lg~="21r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 21);
+    max-width: calc(100% / 21);
+  }
+
+  [data-lg~="22r"] > div, [data-lg~="22r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 22);
+    max-width: calc(100% / 22);
+  }
+
+  [data-lg~="23r"] > div, [data-lg~="23r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 23);
+    max-width: calc(100% / 23);
+  }
+
+  [data-lg~="24r"] > div, [data-lg~="24r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 24);
+    max-width: calc(100% / 24);
+  }
+
+  [data-lg~="1"] {
+    --parça: 1;
+  }
+
+  [data-lg~="1p"] {
+    --parçalık: 1;
+  }
+
+  [data-lg~="2"] {
+    --parça: 2;
+  }
+
+  [data-lg~="2p"] {
+    --parçalık: 2;
+  }
+
+  [data-lg~="3"] {
+    --parça: 3;
+  }
+
+  [data-lg~="3p"] {
+    --parçalık: 3;
+  }
+
+  [data-lg~="4"] {
+    --parça: 4;
+  }
+
+  [data-lg~="4p"] {
+    --parçalık: 4;
+  }
+
+  [data-lg~="5"] {
+    --parça: 5;
+  }
+
+  [data-lg~="5p"] {
+    --parçalık: 5;
+  }
+
+  [data-lg~="6"] {
+    --parça: 6;
+  }
+
+  [data-lg~="6p"] {
+    --parçalık: 6;
+  }
+
+  [data-lg~="7"] {
+    --parça: 7;
+  }
+
+  [data-lg~="7p"] {
+    --parçalık: 7;
+  }
+
+  [data-lg~="8"] {
+    --parça: 8;
+  }
+
+  [data-lg~="8p"] {
+    --parçalık: 8;
+  }
+
+  [data-lg~="9"] {
+    --parça: 9;
+  }
+
+  [data-lg~="9p"] {
+    --parçalık: 9;
+  }
+
+  [data-lg~="10"] {
+    --parça: 10;
+  }
+
+  [data-lg~="10p"] {
+    --parçalık: 10;
+  }
+
+  [data-lg~="11"] {
+    --parça: 11;
+  }
+
+  [data-lg~="11p"] {
+    --parçalık: 11;
+  }
+
+  [data-lg~="12"] {
+    --parça: 12;
+  }
+
+  [data-lg~="12p"] {
+    --parçalık: 12;
+  }
+
+  [data-lg~="13"] {
+    --parça: 13;
+  }
+
+  [data-lg~="13p"] {
+    --parçalık: 13;
+  }
+
+  [data-lg~="14"] {
+    --parça: 14;
+  }
+
+  [data-lg~="14p"] {
+    --parçalık: 14;
+  }
+
+  [data-lg~="15"] {
+    --parça: 15;
+  }
+
+  [data-lg~="15p"] {
+    --parçalık: 15;
+  }
+
+  [data-lg~="16"] {
+    --parça: 16;
+  }
+
+  [data-lg~="16p"] {
+    --parçalık: 16;
+  }
+
+  [data-lg~="17"] {
+    --parça: 17;
+  }
+
+  [data-lg~="17p"] {
+    --parçalık: 17;
+  }
+
+  [data-lg~="18"] {
+    --parça: 18;
+  }
+
+  [data-lg~="18p"] {
+    --parçalık: 18;
+  }
+
+  [data-lg~="19"] {
+    --parça: 19;
+  }
+
+  [data-lg~="19p"] {
+    --parçalık: 19;
+  }
+
+  [data-lg~="20"] {
+    --parça: 20;
+  }
+
+  [data-lg~="20p"] {
+    --parçalık: 20;
+  }
+
+  [data-lg~="21"] {
+    --parça: 21;
+  }
+
+  [data-lg~="21p"] {
+    --parçalık: 21;
+  }
+
+  [data-lg~="22"] {
+    --parça: 22;
+  }
+
+  [data-lg~="22p"] {
+    --parçalık: 22;
+  }
+
+  [data-lg~="23"] {
+    --parça: 23;
+  }
+
+  [data-lg~="23p"] {
+    --parçalık: 23;
+  }
+
+  [data-lg~="24"] {
+    --parça: 24;
+  }
+
+  [data-lg~="24p"] {
+    --parçalık: 24;
+  }
+
+  [data-lg][data-lg] {
+    width: calc(100% / var(--parçalık) * var(--parça));
+    max-width: calc(100% / var(--parçalık) * var(--parça));
+  }
+
+  [data-lg~="1g"] {
+    flex: 1;
+  }
+
+  [data-lg~="2g"] {
+    flex: 2;
+  }
+
+  [data-lg~="3g"] {
+    flex: 3;
+  }
+
+  [data-lg~="4g"] {
+    flex: 4;
+  }
+
+  [data-lg~="5g"] {
+    flex: 5;
+  }
+
+  [data-lg~="6g"] {
+    flex: 6;
+  }
+
+  [data-lg~="7g"] {
+    flex: 7;
+  }
+
+  [data-lg~="8g"] {
+    flex: 8;
+  }
+
+  [data-lg~="9g"] {
+    flex: 9;
+  }
+
+  [data-lg~="10g"] {
+    flex: 10;
+  }
+
+  [data-lg~="11g"] {
+    flex: 11;
+  }
+
+  [data-lg~="12g"] {
+    flex: 12;
+  }
+
+  [data-lg~="13g"] {
+    flex: 13;
+  }
+
+  [data-lg~="14g"] {
+    flex: 14;
+  }
+
+  [data-lg~="15g"] {
+    flex: 15;
+  }
+
+  [data-lg~="16g"] {
+    flex: 16;
+  }
+
+  [data-lg~="17g"] {
+    flex: 17;
+  }
+
+  [data-lg~="18g"] {
+    flex: 18;
+  }
+
+  [data-lg~="19g"] {
+    flex: 19;
+  }
+
+  [data-lg~="20g"] {
+    flex: 20;
+  }
+
+  [data-lg~="21g"] {
+    flex: 21;
+  }
+
+  [data-lg~="22g"] {
+    flex: 22;
+  }
+
+  [data-lg~="23g"] {
+    flex: 23;
+  }
+
+  [data-lg~="24g"] {
+    flex: 24;
+  }
+
+  [data-lg~="0"][data-lg~="0"] {
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  [data-lg~="1nc"] {
+    order: 1;
+  }
+
+  [data-lg~="2nc"] {
+    order: 2;
+  }
+
+  [data-lg~="3nc"] {
+    order: 3;
+  }
+
+  [data-lg~="4nc"] {
+    order: 4;
+  }
+
+  [data-lg~="5nc"] {
+    order: 5;
+  }
+
+  [data-lg~="6nc"] {
+    order: 6;
+  }
+
+  [data-lg~="7nc"] {
+    order: 7;
+  }
+
+  [data-lg~="8nc"] {
+    order: 8;
+  }
+
+  [data-lg~="9nc"] {
+    order: 9;
+  }
+
+  [data-lg~="10nc"] {
+    order: 10;
+  }
+
+  [data-lg~="11nc"] {
+    order: 11;
+  }
+
+  [data-lg~="12nc"] {
+    order: 12;
+  }
+
+  [data-lg~="13nc"] {
+    order: 13;
+  }
+
+  [data-lg~="14nc"] {
+    order: 14;
+  }
+
+  [data-lg~="15nc"] {
+    order: 15;
+  }
+
+  [data-lg~="16nc"] {
+    order: 16;
+  }
+
+  [data-lg~="17nc"] {
+    order: 17;
+  }
+
+  [data-lg~="18nc"] {
+    order: 18;
+  }
+
+  [data-lg~="19nc"] {
+    order: 19;
+  }
+
+  [data-lg~="20nc"] {
+    order: 20;
+  }
+
+  [data-lg~="21nc"] {
+    order: 21;
+  }
+
+  [data-lg~="22nc"] {
+    order: 22;
+  }
+
+  [data-lg~="23nc"] {
+    order: 23;
+  }
+
+  [data-lg~="24nc"] {
+    order: 24;
+  }
+
+  [data-lg~="col"] {
+    flex-direction: column;
+  }
+
+  [data-lg~="row"] {
+    flex-direction: row;
+  }
+
+  [data-lg~="col-reverse"] {
+    flex-direction: column-reverse;
+  }
+
+  [data-lg~="row-reverse"] {
+    flex-direction: row-reverse;
+  }
+
+  [data-lg~="no-overflow"] {
+    overflow: hidden;
+  }
+
+  [data-lg~="overflow-x"] {
+    overflow-x: auto;
+  }
+
+  [data-lg~="no-wrap"] {
+    flex-wrap: nowrap;
+  }
+
+  [data-lg~="wrap-reverse"] {
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-lg~="col"][data-lg~="üstte"],
+  [data-lg~="solda"]:not([data-lg~="col"]) {
+    justify-content: flex-start;
+  }
+
+  [data-lg~="col"][data-lg~="göbekte"],
+  [data-lg~="ortada"]:not([data-lg~="col"]) {
+    justify-content: center;
+  }
+
+  [data-lg~="col"][data-lg~="altta"],
+  [data-lg~="sağda"]:not([data-lg~="col"]) {
+    justify-content: flex-end;
+  }
+
+  [data-lg~="col"][data-lg~="solda"],
+  [data-lg~="üstte"]:not([data-lg~="col"]) {
+    align-content: flex-start;
+  }
+
+  [data-lg~="col"][data-lg~="ortada"],
+  [data-lg~="göbekte"]:not([data-lg~="col"]) {
+    align-content: center;
+  }
+
+  [data-lg~="col"][data-lg~="sağda"],
+  [data-lg~="altta"]:not([data-lg~="col"]) {
+    align-content: flex-end;
+  }
+
+  [data-lg~="merkezde"] {
+    align-items: center;
+    justify-content: center;
+  }
+
+  [data-lg~="üstte-ol"] {
+    align-self: flex-start;
+  }
+
+  [data-lg~="göbekte-ol"] {
+    align-self: center;
+  }
+
+  [data-lg~="altta-ol"] {
+    margin-top: auto;
+  }
+
+  [data-lg~="sağda-ol"] {
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  [data-lg~="ortada-ol"] {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+
+  [data-lg~="solda-ol"] {
+    margin-right: auto;
+    align-self: flex-start;
+  }
+
+  [data-lg~="araları-aralık"]:not([data-lg~="col"]) {
+    justify-content: space-between;
+  }
+
+  [data-lg~="dengeli-aralık"]:not([data-lg~="col"]) {
+    justify-content: space-around;
+  }
+
+  [data-lg~="col"][data-lg~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-lg~="col"][data-lg~="dengeli-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-lg~="uzat"] {
+    align-items: stretch;
+  }
+
+  [data-lg~="uzun-ol"] {
+    align-self: stretch;
+  }
+
+  [data-lg~="satırda"] {
+    align-items: baseline;
+  }
+
+  [data-lg~="satırda-ol"] {
+    align-self: baseline;
+  }
+
+  [data-lg~="metin-sağda"] {
+    text-align: right;
+  }
+
+  [data-lg~="metin-ortada"] {
+    text-align: center;
+  }
+
+  [data-lg~="metin-solda"] {
+    text-align: left;
+  }
+
+  [data-lg~="lt"],
+  [data-lg~="t"][data-lg~="col"],
+  [data-lg~="ts"][data-lg~="col"],
+  [data-lg~="la"],
+  [data-lg~="l"] {
+    justify-content: flex-start;
+  }
+
+  [data-lg~="t"],
+  [data-lg~="s"][data-lg~="col"],
+  [data-lg~="a"],
+  [data-lg~="l"][data-lg~="col"],
+  [data-lg~="o"] {
+    justify-content: center;
+  }
+
+  [data-lg~="ts"],
+  [data-lg~="s"],
+  [data-lg~="as"],
+  [data-lg~="a"][data-lg~="col"],
+  [data-lg~="la"][data-lg~="col"] {
+    justify-content: flex-end;
+  }
+
+  [data-lg~="lt"],
+  [data-lg~="t"],
+  [data-lg~="ts"],
+  [data-lg~="la"][data-lg~="col"],
+  [data-lg~="l"][data-lg~="col"] {
+    /*align-content: flex-start;*/
+    align-items: flex-start;
+  }
+
+  [data-lg~="t"][data-lg~="col"],
+  [data-lg~="s"],
+  [data-lg~="a"][data-lg~="col"],
+  [data-lg~="l"] {
+    /*align-content: inherit;*/
+    align-items: center;
+  }
+
+  [data-lg~="ts"][data-lg~="col"],
+  [data-lg~="s"][data-lg~="col"],
+  [data-lg~="as"],
+  [data-lg~="a"],
+  [data-lg~="la"] {
+    /*align-content: flex-end;*/
+    align-items: flex-end;
+  }
+
+  [data-lg~="o"] {
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center;
+  }
+
+  [data-lg~="_o"]:not([data-lg~="_l"]):not([data-lg~="_s"]):not([data-lg~="_t"]):not([data-lg~="_a"]) {
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  [data-lg~="_o"],
+  [data-lg~="_l"],
+  [data-lg~="_s"] {
+    align-self: center;
+  }
+
+  :not([data-lg~="col"]) > [data-lg~="_t"],
+  [data-lg~="_lt"],
+  [data-lg~="_ts"] {
+    align-self: flex-start;
+  }
+
+  :not([data-lg~="col"]) > [data-lg~="_a"],
+  [data-lg~="_la"],
+  [data-lg~="_as"] {
+    align-self: flex-end;
+  }
+
+  [data-lg~="_l"],
+  [data-lg~="_lt"],
+  [data-lg~="_la"] {
+    margin-right: auto;
+  }
+
+  [data-lg~="_s"],
+  [data-lg~="_ts"],
+  [data-lg~="_as"] {
+    margin-left: auto;
+  }
+
+  [data-lg~="col"] > [data-lg~="_t"],
+  [data-lg~="col"] > [data-lg~="_lt"],
+  [data-lg~="col"] > [data-lg~="_ts"] {
+    margin-bottom: auto;
+  }
+
+  [data-lg~="col"] > [data-lg~="_a"],
+  [data-lg~="col"] > [data-lg~="_la"],
+  [data-lg~="col"] > [data-lg~="_as"] {
+    margin-top: auto;
+  }
+
+  [data-lg~="col"] > [data-lg~="_o"]:not([data-lg~="_l"]):not([data-lg~="_s"]):not([data-lg~="_t"]):not([data-lg~="_a"]) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  [data-lg~="ta"] {
+    align-content: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-lg~="ls"] {
+    justify-content: stretch !important;
+  }
+
+  [data-lg~="hide"],
+  [data-lg~="hide-with-bigger"],
+  [data-md~="hide-bigger"],
+  [data-md~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 1200px) {
+  [data-xl~="sığ"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+  }
+
+  body[data-xl~="tamekran"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  [data-xl~="1r"] > div, [data-xl~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
+
+  [data-xl~="2r"] > div, [data-xl~="2r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  [data-xl~="3r"] > div, [data-xl~="3r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+
+  [data-xl~="4r"] > div, [data-xl~="4r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+
+  [data-xl~="5r"] > div, [data-xl~="5r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 5);
+    max-width: calc(100% / 5);
+  }
+
+  [data-xl~="6r"] > div, [data-xl~="6r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 6);
+    max-width: calc(100% / 6);
+  }
+
+  [data-xl~="7r"] > div, [data-xl~="7r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 7);
+    max-width: calc(100% / 7);
+  }
+
+  [data-xl~="8r"] > div, [data-xl~="8r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 8);
+    max-width: calc(100% / 8);
+  }
+
+  [data-xl~="9r"] > div, [data-xl~="9r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 9);
+    max-width: calc(100% / 9);
+  }
+
+  [data-xl~="10r"] > div, [data-xl~="10r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 10);
+    max-width: calc(100% / 10);
+  }
+
+  [data-xl~="11r"] > div, [data-xl~="11r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 11);
+    max-width: calc(100% / 11);
+  }
+
+  [data-xl~="12r"] > div, [data-xl~="12r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 12);
+    max-width: calc(100% / 12);
+  }
+
+  [data-xl~="13r"] > div, [data-xl~="13r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 13);
+    max-width: calc(100% / 13);
+  }
+
+  [data-xl~="14r"] > div, [data-xl~="14r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 14);
+    max-width: calc(100% / 14);
+  }
+
+  [data-xl~="15r"] > div, [data-xl~="15r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 15);
+    max-width: calc(100% / 15);
+  }
+
+  [data-xl~="16r"] > div, [data-xl~="16r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 16);
+    max-width: calc(100% / 16);
+  }
+
+  [data-xl~="17r"] > div, [data-xl~="17r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 17);
+    max-width: calc(100% / 17);
+  }
+
+  [data-xl~="18r"] > div, [data-xl~="18r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 18);
+    max-width: calc(100% / 18);
+  }
+
+  [data-xl~="19r"] > div, [data-xl~="19r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 19);
+    max-width: calc(100% / 19);
+  }
+
+  [data-xl~="20r"] > div, [data-xl~="20r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 20);
+    max-width: calc(100% / 20);
+  }
+
+  [data-xl~="21r"] > div, [data-xl~="21r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 21);
+    max-width: calc(100% / 21);
+  }
+
+  [data-xl~="22r"] > div, [data-xl~="22r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 22);
+    max-width: calc(100% / 22);
+  }
+
+  [data-xl~="23r"] > div, [data-xl~="23r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 23);
+    max-width: calc(100% / 23);
+  }
+
+  [data-xl~="24r"] > div, [data-xl~="24r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 24);
+    max-width: calc(100% / 24);
+  }
+
+  [data-xl~="1"] {
+    --parça: 1;
+  }
+
+  [data-xl~="1p"] {
+    --parçalık: 1;
+  }
+
+  [data-xl~="2"] {
+    --parça: 2;
+  }
+
+  [data-xl~="2p"] {
+    --parçalık: 2;
+  }
+
+  [data-xl~="3"] {
+    --parça: 3;
+  }
+
+  [data-xl~="3p"] {
+    --parçalık: 3;
+  }
+
+  [data-xl~="4"] {
+    --parça: 4;
+  }
+
+  [data-xl~="4p"] {
+    --parçalık: 4;
+  }
+
+  [data-xl~="5"] {
+    --parça: 5;
+  }
+
+  [data-xl~="5p"] {
+    --parçalık: 5;
+  }
+
+  [data-xl~="6"] {
+    --parça: 6;
+  }
+
+  [data-xl~="6p"] {
+    --parçalık: 6;
+  }
+
+  [data-xl~="7"] {
+    --parça: 7;
+  }
+
+  [data-xl~="7p"] {
+    --parçalık: 7;
+  }
+
+  [data-xl~="8"] {
+    --parça: 8;
+  }
+
+  [data-xl~="8p"] {
+    --parçalık: 8;
+  }
+
+  [data-xl~="9"] {
+    --parça: 9;
+  }
+
+  [data-xl~="9p"] {
+    --parçalık: 9;
+  }
+
+  [data-xl~="10"] {
+    --parça: 10;
+  }
+
+  [data-xl~="10p"] {
+    --parçalık: 10;
+  }
+
+  [data-xl~="11"] {
+    --parça: 11;
+  }
+
+  [data-xl~="11p"] {
+    --parçalık: 11;
+  }
+
+  [data-xl~="12"] {
+    --parça: 12;
+  }
+
+  [data-xl~="12p"] {
+    --parçalık: 12;
+  }
+
+  [data-xl~="13"] {
+    --parça: 13;
+  }
+
+  [data-xl~="13p"] {
+    --parçalık: 13;
+  }
+
+  [data-xl~="14"] {
+    --parça: 14;
+  }
+
+  [data-xl~="14p"] {
+    --parçalık: 14;
+  }
+
+  [data-xl~="15"] {
+    --parça: 15;
+  }
+
+  [data-xl~="15p"] {
+    --parçalık: 15;
+  }
+
+  [data-xl~="16"] {
+    --parça: 16;
+  }
+
+  [data-xl~="16p"] {
+    --parçalık: 16;
+  }
+
+  [data-xl~="17"] {
+    --parça: 17;
+  }
+
+  [data-xl~="17p"] {
+    --parçalık: 17;
+  }
+
+  [data-xl~="18"] {
+    --parça: 18;
+  }
+
+  [data-xl~="18p"] {
+    --parçalık: 18;
+  }
+
+  [data-xl~="19"] {
+    --parça: 19;
+  }
+
+  [data-xl~="19p"] {
+    --parçalık: 19;
+  }
+
+  [data-xl~="20"] {
+    --parça: 20;
+  }
+
+  [data-xl~="20p"] {
+    --parçalık: 20;
+  }
+
+  [data-xl~="21"] {
+    --parça: 21;
+  }
+
+  [data-xl~="21p"] {
+    --parçalık: 21;
+  }
+
+  [data-xl~="22"] {
+    --parça: 22;
+  }
+
+  [data-xl~="22p"] {
+    --parçalık: 22;
+  }
+
+  [data-xl~="23"] {
+    --parça: 23;
+  }
+
+  [data-xl~="23p"] {
+    --parçalık: 23;
+  }
+
+  [data-xl~="24"] {
+    --parça: 24;
+  }
+
+  [data-xl~="24p"] {
+    --parçalık: 24;
+  }
+
+  [data-xl][data-xl] {
+    width: calc(100% / var(--parçalık) * var(--parça));
+    max-width: calc(100% / var(--parçalık) * var(--parça));
+  }
+
+  [data-xl~="1g"] {
+    flex: 1;
+  }
+
+  [data-xl~="2g"] {
+    flex: 2;
+  }
+
+  [data-xl~="3g"] {
+    flex: 3;
+  }
+
+  [data-xl~="4g"] {
+    flex: 4;
+  }
+
+  [data-xl~="5g"] {
+    flex: 5;
+  }
+
+  [data-xl~="6g"] {
+    flex: 6;
+  }
+
+  [data-xl~="7g"] {
+    flex: 7;
+  }
+
+  [data-xl~="8g"] {
+    flex: 8;
+  }
+
+  [data-xl~="9g"] {
+    flex: 9;
+  }
+
+  [data-xl~="10g"] {
+    flex: 10;
+  }
+
+  [data-xl~="11g"] {
+    flex: 11;
+  }
+
+  [data-xl~="12g"] {
+    flex: 12;
+  }
+
+  [data-xl~="13g"] {
+    flex: 13;
+  }
+
+  [data-xl~="14g"] {
+    flex: 14;
+  }
+
+  [data-xl~="15g"] {
+    flex: 15;
+  }
+
+  [data-xl~="16g"] {
+    flex: 16;
+  }
+
+  [data-xl~="17g"] {
+    flex: 17;
+  }
+
+  [data-xl~="18g"] {
+    flex: 18;
+  }
+
+  [data-xl~="19g"] {
+    flex: 19;
+  }
+
+  [data-xl~="20g"] {
+    flex: 20;
+  }
+
+  [data-xl~="21g"] {
+    flex: 21;
+  }
+
+  [data-xl~="22g"] {
+    flex: 22;
+  }
+
+  [data-xl~="23g"] {
+    flex: 23;
+  }
+
+  [data-xl~="24g"] {
+    flex: 24;
+  }
+
+  [data-xl~="0"][data-xl~="0"] {
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  [data-xl~="1nc"] {
+    order: 1;
+  }
+
+  [data-xl~="2nc"] {
+    order: 2;
+  }
+
+  [data-xl~="3nc"] {
+    order: 3;
+  }
+
+  [data-xl~="4nc"] {
+    order: 4;
+  }
+
+  [data-xl~="5nc"] {
+    order: 5;
+  }
+
+  [data-xl~="6nc"] {
+    order: 6;
+  }
+
+  [data-xl~="7nc"] {
+    order: 7;
+  }
+
+  [data-xl~="8nc"] {
+    order: 8;
+  }
+
+  [data-xl~="9nc"] {
+    order: 9;
+  }
+
+  [data-xl~="10nc"] {
+    order: 10;
+  }
+
+  [data-xl~="11nc"] {
+    order: 11;
+  }
+
+  [data-xl~="12nc"] {
+    order: 12;
+  }
+
+  [data-xl~="13nc"] {
+    order: 13;
+  }
+
+  [data-xl~="14nc"] {
+    order: 14;
+  }
+
+  [data-xl~="15nc"] {
+    order: 15;
+  }
+
+  [data-xl~="16nc"] {
+    order: 16;
+  }
+
+  [data-xl~="17nc"] {
+    order: 17;
+  }
+
+  [data-xl~="18nc"] {
+    order: 18;
+  }
+
+  [data-xl~="19nc"] {
+    order: 19;
+  }
+
+  [data-xl~="20nc"] {
+    order: 20;
+  }
+
+  [data-xl~="21nc"] {
+    order: 21;
+  }
+
+  [data-xl~="22nc"] {
+    order: 22;
+  }
+
+  [data-xl~="23nc"] {
+    order: 23;
+  }
+
+  [data-xl~="24nc"] {
+    order: 24;
+  }
+
+  [data-xl~="col"] {
+    flex-direction: column;
+  }
+
+  [data-xl~="row"] {
+    flex-direction: row;
+  }
+
+  [data-xl~="col-reverse"] {
+    flex-direction: column-reverse;
+  }
+
+  [data-xl~="row-reverse"] {
+    flex-direction: row-reverse;
+  }
+
+  [data-xl~="no-overflow"] {
+    overflow: hidden;
+  }
+
+  [data-xl~="overflow-x"] {
+    overflow-x: auto;
+  }
+
+  [data-xl~="no-wrap"] {
+    flex-wrap: nowrap;
+  }
+
+  [data-xl~="wrap-reverse"] {
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-xl~="col"][data-xl~="üstte"],
+  [data-xl~="solda"]:not([data-xl~="col"]) {
+    justify-content: flex-start;
+  }
+
+  [data-xl~="col"][data-xl~="göbekte"],
+  [data-xl~="ortada"]:not([data-xl~="col"]) {
+    justify-content: center;
+  }
+
+  [data-xl~="col"][data-xl~="altta"],
+  [data-xl~="sağda"]:not([data-xl~="col"]) {
+    justify-content: flex-end;
+  }
+
+  [data-xl~="col"][data-xl~="solda"],
+  [data-xl~="üstte"]:not([data-xl~="col"]) {
+    align-content: flex-start;
+  }
+
+  [data-xl~="col"][data-xl~="ortada"],
+  [data-xl~="göbekte"]:not([data-xl~="col"]) {
+    align-content: center;
+  }
+
+  [data-xl~="col"][data-xl~="sağda"],
+  [data-xl~="altta"]:not([data-xl~="col"]) {
+    align-content: flex-end;
+  }
+
+  [data-xl~="merkezde"] {
+    align-items: center;
+    justify-content: center;
+  }
+
+  [data-xl~="üstte-ol"] {
+    align-self: flex-start;
+  }
+
+  [data-xl~="göbekte-ol"] {
+    align-self: center;
+  }
+
+  [data-xl~="altta-ol"] {
+    margin-top: auto;
+  }
+
+  [data-xl~="sağda-ol"] {
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  [data-xl~="ortada-ol"] {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+
+  [data-xl~="solda-ol"] {
+    margin-right: auto;
+    align-self: flex-start;
+  }
+
+  [data-xl~="araları-aralık"]:not([data-xl~="col"]) {
+    justify-content: space-between;
+  }
+
+  [data-xl~="dengeli-aralık"]:not([data-xl~="col"]) {
+    justify-content: space-around;
+  }
+
+  [data-xl~="col"][data-xl~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-xl~="col"][data-xl~="dengeli-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-xl~="uzat"] {
+    align-items: stretch;
+  }
+
+  [data-xl~="uzun-ol"] {
+    align-self: stretch;
+  }
+
+  [data-xl~="satırda"] {
+    align-items: baseline;
+  }
+
+  [data-xl~="satırda-ol"] {
+    align-self: baseline;
+  }
+
+  [data-xl~="metin-sağda"] {
+    text-align: right;
+  }
+
+  [data-xl~="metin-ortada"] {
+    text-align: center;
+  }
+
+  [data-xl~="metin-solda"] {
+    text-align: left;
+  }
+
+  [data-xl~="lt"],
+  [data-xl~="t"][data-xl~="col"],
+  [data-xl~="ts"][data-xl~="col"],
+  [data-xl~="la"],
+  [data-xl~="l"] {
+    justify-content: flex-start;
+  }
+
+  [data-xl~="t"],
+  [data-xl~="s"][data-xl~="col"],
+  [data-xl~="a"],
+  [data-xl~="l"][data-xl~="col"],
+  [data-xl~="o"] {
+    justify-content: center;
+  }
+
+  [data-xl~="ts"],
+  [data-xl~="s"],
+  [data-xl~="as"],
+  [data-xl~="a"][data-xl~="col"],
+  [data-xl~="la"][data-xl~="col"] {
+    justify-content: flex-end;
+  }
+
+  [data-xl~="lt"],
+  [data-xl~="t"],
+  [data-xl~="ts"],
+  [data-xl~="la"][data-xl~="col"],
+  [data-xl~="l"][data-xl~="col"] {
+    /*align-content: flex-start;*/
+    align-items: flex-start;
+  }
+
+  [data-xl~="t"][data-xl~="col"],
+  [data-xl~="s"],
+  [data-xl~="a"][data-xl~="col"],
+  [data-xl~="l"] {
+    /*align-content: inherit;*/
+    align-items: center;
+  }
+
+  [data-xl~="ts"][data-xl~="col"],
+  [data-xl~="s"][data-xl~="col"],
+  [data-xl~="as"],
+  [data-xl~="a"],
+  [data-xl~="la"] {
+    /*align-content: flex-end;*/
+    align-items: flex-end;
+  }
+
+  [data-xl~="o"] {
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center;
+  }
+
+  [data-xl~="_o"]:not([data-xl~="_l"]):not([data-xl~="_s"]):not([data-xl~="_t"]):not([data-xl~="_a"]) {
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  [data-xl~="_o"],
+  [data-xl~="_l"],
+  [data-xl~="_s"] {
+    align-self: center;
+  }
+
+  :not([data-xl~="col"]) > [data-xl~="_t"],
+  [data-xl~="_lt"],
+  [data-xl~="_ts"] {
+    align-self: flex-start;
+  }
+
+  :not([data-xl~="col"]) > [data-xl~="_a"],
+  [data-xl~="_la"],
+  [data-xl~="_as"] {
+    align-self: flex-end;
+  }
+
+  [data-xl~="_l"],
+  [data-xl~="_lt"],
+  [data-xl~="_la"] {
+    margin-right: auto;
+  }
+
+  [data-xl~="_s"],
+  [data-xl~="_ts"],
+  [data-xl~="_as"] {
+    margin-left: auto;
+  }
+
+  [data-xl~="col"] > [data-xl~="_t"],
+  [data-xl~="col"] > [data-xl~="_lt"],
+  [data-xl~="col"] > [data-xl~="_ts"] {
+    margin-bottom: auto;
+  }
+
+  [data-xl~="col"] > [data-xl~="_a"],
+  [data-xl~="col"] > [data-xl~="_la"],
+  [data-xl~="col"] > [data-xl~="_as"] {
+    margin-top: auto;
+  }
+
+  [data-xl~="col"] > [data-xl~="_o"]:not([data-xl~="_l"]):not([data-xl~="_s"]):not([data-xl~="_t"]):not([data-xl~="_a"]) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  [data-xl~="ta"] {
+    align-content: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-xl~="ls"] {
+    justify-content: stretch !important;
+  }
+
+  [data-xl~="hide"],
+  [data-xl~="hide-with-bigger"],
+  [data-lg~="hide-bigger"],
+  [data-lg~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 1900px) {
+  [data-hg~="sığ"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+  }
+
+  body[data-hg~="tamekran"] {
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  [data-hg~="1r"] > div, [data-hg~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 1);
+    max-width: calc(100% / 1);
+  }
+
+  [data-hg~="2r"] > div, [data-hg~="2r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  [data-hg~="3r"] > div, [data-hg~="3r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+
+  [data-hg~="4r"] > div, [data-hg~="4r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 4);
+    max-width: calc(100% / 4);
+  }
+
+  [data-hg~="5r"] > div, [data-hg~="5r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 5);
+    max-width: calc(100% / 5);
+  }
+
+  [data-hg~="6r"] > div, [data-hg~="6r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 6);
+    max-width: calc(100% / 6);
+  }
+
+  [data-hg~="7r"] > div, [data-hg~="7r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 7);
+    max-width: calc(100% / 7);
+  }
+
+  [data-hg~="8r"] > div, [data-hg~="8r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 8);
+    max-width: calc(100% / 8);
+  }
+
+  [data-hg~="9r"] > div, [data-hg~="9r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 9);
+    max-width: calc(100% / 9);
+  }
+
+  [data-hg~="10r"] > div, [data-hg~="10r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 10);
+    max-width: calc(100% / 10);
+  }
+
+  [data-hg~="11r"] > div, [data-hg~="11r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 11);
+    max-width: calc(100% / 11);
+  }
+
+  [data-hg~="12r"] > div, [data-hg~="12r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 12);
+    max-width: calc(100% / 12);
+  }
+
+  [data-hg~="13r"] > div, [data-hg~="13r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 13);
+    max-width: calc(100% / 13);
+  }
+
+  [data-hg~="14r"] > div, [data-hg~="14r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 14);
+    max-width: calc(100% / 14);
+  }
+
+  [data-hg~="15r"] > div, [data-hg~="15r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 15);
+    max-width: calc(100% / 15);
+  }
+
+  [data-hg~="16r"] > div, [data-hg~="16r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 16);
+    max-width: calc(100% / 16);
+  }
+
+  [data-hg~="17r"] > div, [data-hg~="17r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 17);
+    max-width: calc(100% / 17);
+  }
+
+  [data-hg~="18r"] > div, [data-hg~="18r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 18);
+    max-width: calc(100% / 18);
+  }
+
+  [data-hg~="19r"] > div, [data-hg~="19r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 19);
+    max-width: calc(100% / 19);
+  }
+
+  [data-hg~="20r"] > div, [data-hg~="20r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 20);
+    max-width: calc(100% / 20);
+  }
+
+  [data-hg~="21r"] > div, [data-hg~="21r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 21);
+    max-width: calc(100% / 21);
+  }
+
+  [data-hg~="22r"] > div, [data-hg~="22r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 22);
+    max-width: calc(100% / 22);
+  }
+
+  [data-hg~="23r"] > div, [data-hg~="23r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 23);
+    max-width: calc(100% / 23);
+  }
+
+  [data-hg~="24r"] > div, [data-hg~="24r"] > [data-gnl]:not([data-gnl*="p"]) {
+    width: calc(100% / 24);
+    max-width: calc(100% / 24);
+  }
+
+  [data-hg~="1"] {
+    --parça: 1;
+  }
+
+  [data-hg~="1p"] {
+    --parçalık: 1;
+  }
+
+  [data-hg~="2"] {
+    --parça: 2;
+  }
+
+  [data-hg~="2p"] {
+    --parçalık: 2;
+  }
+
+  [data-hg~="3"] {
+    --parça: 3;
+  }
+
+  [data-hg~="3p"] {
+    --parçalık: 3;
+  }
+
+  [data-hg~="4"] {
+    --parça: 4;
+  }
+
+  [data-hg~="4p"] {
+    --parçalık: 4;
+  }
+
+  [data-hg~="5"] {
+    --parça: 5;
+  }
+
+  [data-hg~="5p"] {
+    --parçalık: 5;
+  }
+
+  [data-hg~="6"] {
+    --parça: 6;
+  }
+
+  [data-hg~="6p"] {
+    --parçalık: 6;
+  }
+
+  [data-hg~="7"] {
+    --parça: 7;
+  }
+
+  [data-hg~="7p"] {
+    --parçalık: 7;
+  }
+
+  [data-hg~="8"] {
+    --parça: 8;
+  }
+
+  [data-hg~="8p"] {
+    --parçalık: 8;
+  }
+
+  [data-hg~="9"] {
+    --parça: 9;
+  }
+
+  [data-hg~="9p"] {
+    --parçalık: 9;
+  }
+
+  [data-hg~="10"] {
+    --parça: 10;
+  }
+
+  [data-hg~="10p"] {
+    --parçalık: 10;
+  }
+
+  [data-hg~="11"] {
+    --parça: 11;
+  }
+
+  [data-hg~="11p"] {
+    --parçalık: 11;
+  }
+
+  [data-hg~="12"] {
+    --parça: 12;
+  }
+
+  [data-hg~="12p"] {
+    --parçalık: 12;
+  }
+
+  [data-hg~="13"] {
+    --parça: 13;
+  }
+
+  [data-hg~="13p"] {
+    --parçalık: 13;
+  }
+
+  [data-hg~="14"] {
+    --parça: 14;
+  }
+
+  [data-hg~="14p"] {
+    --parçalık: 14;
+  }
+
+  [data-hg~="15"] {
+    --parça: 15;
+  }
+
+  [data-hg~="15p"] {
+    --parçalık: 15;
+  }
+
+  [data-hg~="16"] {
+    --parça: 16;
+  }
+
+  [data-hg~="16p"] {
+    --parçalık: 16;
+  }
+
+  [data-hg~="17"] {
+    --parça: 17;
+  }
+
+  [data-hg~="17p"] {
+    --parçalık: 17;
+  }
+
+  [data-hg~="18"] {
+    --parça: 18;
+  }
+
+  [data-hg~="18p"] {
+    --parçalık: 18;
+  }
+
+  [data-hg~="19"] {
+    --parça: 19;
+  }
+
+  [data-hg~="19p"] {
+    --parçalık: 19;
+  }
+
+  [data-hg~="20"] {
+    --parça: 20;
+  }
+
+  [data-hg~="20p"] {
+    --parçalık: 20;
+  }
+
+  [data-hg~="21"] {
+    --parça: 21;
+  }
+
+  [data-hg~="21p"] {
+    --parçalık: 21;
+  }
+
+  [data-hg~="22"] {
+    --parça: 22;
+  }
+
+  [data-hg~="22p"] {
+    --parçalık: 22;
+  }
+
+  [data-hg~="23"] {
+    --parça: 23;
+  }
+
+  [data-hg~="23p"] {
+    --parçalık: 23;
+  }
+
+  [data-hg~="24"] {
+    --parça: 24;
+  }
+
+  [data-hg~="24p"] {
+    --parçalık: 24;
+  }
+
+  [data-hg][data-hg] {
+    width: calc(100% / var(--parçalık) * var(--parça));
+    max-width: calc(100% / var(--parçalık) * var(--parça));
+  }
+
+  [data-hg~="1g"] {
+    flex: 1;
+  }
+
+  [data-hg~="2g"] {
+    flex: 2;
+  }
+
+  [data-hg~="3g"] {
+    flex: 3;
+  }
+
+  [data-hg~="4g"] {
+    flex: 4;
+  }
+
+  [data-hg~="5g"] {
+    flex: 5;
+  }
+
+  [data-hg~="6g"] {
+    flex: 6;
+  }
+
+  [data-hg~="7g"] {
+    flex: 7;
+  }
+
+  [data-hg~="8g"] {
+    flex: 8;
+  }
+
+  [data-hg~="9g"] {
+    flex: 9;
+  }
+
+  [data-hg~="10g"] {
+    flex: 10;
+  }
+
+  [data-hg~="11g"] {
+    flex: 11;
+  }
+
+  [data-hg~="12g"] {
+    flex: 12;
+  }
+
+  [data-hg~="13g"] {
+    flex: 13;
+  }
+
+  [data-hg~="14g"] {
+    flex: 14;
+  }
+
+  [data-hg~="15g"] {
+    flex: 15;
+  }
+
+  [data-hg~="16g"] {
+    flex: 16;
+  }
+
+  [data-hg~="17g"] {
+    flex: 17;
+  }
+
+  [data-hg~="18g"] {
+    flex: 18;
+  }
+
+  [data-hg~="19g"] {
+    flex: 19;
+  }
+
+  [data-hg~="20g"] {
+    flex: 20;
+  }
+
+  [data-hg~="21g"] {
+    flex: 21;
+  }
+
+  [data-hg~="22g"] {
+    flex: 22;
+  }
+
+  [data-hg~="23g"] {
+    flex: 23;
+  }
+
+  [data-hg~="24g"] {
+    flex: 24;
+  }
+
+  [data-hg~="0"][data-hg~="0"] {
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+  [data-hg~="1nc"] {
+    order: 1;
+  }
+
+  [data-hg~="2nc"] {
+    order: 2;
+  }
+
+  [data-hg~="3nc"] {
+    order: 3;
+  }
+
+  [data-hg~="4nc"] {
+    order: 4;
+  }
+
+  [data-hg~="5nc"] {
+    order: 5;
+  }
+
+  [data-hg~="6nc"] {
+    order: 6;
+  }
+
+  [data-hg~="7nc"] {
+    order: 7;
+  }
+
+  [data-hg~="8nc"] {
+    order: 8;
+  }
+
+  [data-hg~="9nc"] {
+    order: 9;
+  }
+
+  [data-hg~="10nc"] {
+    order: 10;
+  }
+
+  [data-hg~="11nc"] {
+    order: 11;
+  }
+
+  [data-hg~="12nc"] {
+    order: 12;
+  }
+
+  [data-hg~="13nc"] {
+    order: 13;
+  }
+
+  [data-hg~="14nc"] {
+    order: 14;
+  }
+
+  [data-hg~="15nc"] {
+    order: 15;
+  }
+
+  [data-hg~="16nc"] {
+    order: 16;
+  }
+
+  [data-hg~="17nc"] {
+    order: 17;
+  }
+
+  [data-hg~="18nc"] {
+    order: 18;
+  }
+
+  [data-hg~="19nc"] {
+    order: 19;
+  }
+
+  [data-hg~="20nc"] {
+    order: 20;
+  }
+
+  [data-hg~="21nc"] {
+    order: 21;
+  }
+
+  [data-hg~="22nc"] {
+    order: 22;
+  }
+
+  [data-hg~="23nc"] {
+    order: 23;
+  }
+
+  [data-hg~="24nc"] {
+    order: 24;
+  }
+
+  [data-hg~="col"] {
+    flex-direction: column;
+  }
+
+  [data-hg~="row"] {
+    flex-direction: row;
+  }
+
+  [data-hg~="col-reverse"] {
+    flex-direction: column-reverse;
+  }
+
+  [data-hg~="row-reverse"] {
+    flex-direction: row-reverse;
+  }
+
+  [data-hg~="no-overflow"] {
+    overflow: hidden;
+  }
+
+  [data-hg~="overflow-x"] {
+    overflow-x: auto;
+  }
+
+  [data-hg~="no-wrap"] {
+    flex-wrap: nowrap;
+  }
+
+  [data-hg~="wrap-reverse"] {
+    flex-wrap: wrap-reverse;
+  }
+
+  [data-hg~="col"][data-hg~="üstte"],
+  [data-hg~="solda"]:not([data-hg~="col"]) {
+    justify-content: flex-start;
+  }
+
+  [data-hg~="col"][data-hg~="göbekte"],
+  [data-hg~="ortada"]:not([data-hg~="col"]) {
+    justify-content: center;
+  }
+
+  [data-hg~="col"][data-hg~="altta"],
+  [data-hg~="sağda"]:not([data-hg~="col"]) {
+    justify-content: flex-end;
+  }
+
+  [data-hg~="col"][data-hg~="solda"],
+  [data-hg~="üstte"]:not([data-hg~="col"]) {
+    align-content: flex-start;
+  }
+
+  [data-hg~="col"][data-hg~="ortada"],
+  [data-hg~="göbekte"]:not([data-hg~="col"]) {
+    align-content: center;
+  }
+
+  [data-hg~="col"][data-hg~="sağda"],
+  [data-hg~="altta"]:not([data-hg~="col"]) {
+    align-content: flex-end;
+  }
+
+  [data-hg~="merkezde"] {
+    align-items: center;
+    justify-content: center;
+  }
+
+  [data-hg~="üstte-ol"] {
+    align-self: flex-start;
+  }
+
+  [data-hg~="göbekte-ol"] {
+    align-self: center;
+  }
+
+  [data-hg~="altta-ol"] {
+    margin-top: auto;
+  }
+
+  [data-hg~="sağda-ol"] {
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  [data-hg~="ortada-ol"] {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+
+  [data-hg~="solda-ol"] {
+    margin-right: auto;
+    align-self: flex-start;
+  }
+
+  [data-hg~="araları-aralık"]:not([data-hg~="col"]) {
+    justify-content: space-between;
+  }
+
+  [data-hg~="dengeli-aralık"]:not([data-hg~="col"]) {
+    justify-content: space-around;
+  }
+
+  [data-hg~="col"][data-hg~="araları-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-hg~="col"][data-hg~="dengeli-aralık"] {
+    align-content: space-around;
+  }
+
+  [data-hg~="uzat"] {
+    align-items: stretch;
+  }
+
+  [data-hg~="uzun-ol"] {
+    align-self: stretch;
+  }
+
+  [data-hg~="satırda"] {
+    align-items: baseline;
+  }
+
+  [data-hg~="satırda-ol"] {
+    align-self: baseline;
+  }
+
+  [data-hg~="metin-sağda"] {
+    text-align: right;
+  }
+
+  [data-hg~="metin-ortada"] {
+    text-align: center;
+  }
+
+  [data-hg~="metin-solda"] {
+    text-align: left;
+  }
+
+  [data-hg~="lt"],
+  [data-hg~="t"][data-hg~="col"],
+  [data-hg~="ts"][data-hg~="col"],
+  [data-hg~="la"],
+  [data-hg~="l"] {
+    justify-content: flex-start;
+  }
+
+  [data-hg~="t"],
+  [data-hg~="s"][data-hg~="col"],
+  [data-hg~="a"],
+  [data-hg~="l"][data-hg~="col"],
+  [data-hg~="o"] {
+    justify-content: center;
+  }
+
+  [data-hg~="ts"],
+  [data-hg~="s"],
+  [data-hg~="as"],
+  [data-hg~="a"][data-hg~="col"],
+  [data-hg~="la"][data-hg~="col"] {
+    justify-content: flex-end;
+  }
+
+  [data-hg~="lt"],
+  [data-hg~="t"],
+  [data-hg~="ts"],
+  [data-hg~="la"][data-hg~="col"],
+  [data-hg~="l"][data-hg~="col"] {
+    /*align-content: flex-start;*/
+    align-items: flex-start;
+  }
+
+  [data-hg~="t"][data-hg~="col"],
+  [data-hg~="s"],
+  [data-hg~="a"][data-hg~="col"],
+  [data-hg~="l"] {
+    /*align-content: inherit;*/
+    align-items: center;
+  }
+
+  [data-hg~="ts"][data-hg~="col"],
+  [data-hg~="s"][data-hg~="col"],
+  [data-hg~="as"],
+  [data-hg~="a"],
+  [data-hg~="la"] {
+    /*align-content: flex-end;*/
+    align-items: flex-end;
+  }
+
+  [data-hg~="o"] {
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center;
+  }
+
+  [data-hg~="_o"]:not([data-hg~="_l"]):not([data-hg~="_s"]):not([data-hg~="_t"]):not([data-hg~="_a"]) {
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  [data-hg~="_o"],
+  [data-hg~="_l"],
+  [data-hg~="_s"] {
+    align-self: center;
+  }
+
+  :not([data-hg~="col"]) > [data-hg~="_t"],
+  [data-hg~="_lt"],
+  [data-hg~="_ts"] {
+    align-self: flex-start;
+  }
+
+  :not([data-hg~="col"]) > [data-hg~="_a"],
+  [data-hg~="_la"],
+  [data-hg~="_as"] {
+    align-self: flex-end;
+  }
+
+  [data-hg~="_l"],
+  [data-hg~="_lt"],
+  [data-hg~="_la"] {
+    margin-right: auto;
+  }
+
+  [data-hg~="_s"],
+  [data-hg~="_ts"],
+  [data-hg~="_as"] {
+    margin-left: auto;
+  }
+
+  [data-hg~="col"] > [data-hg~="_t"],
+  [data-hg~="col"] > [data-hg~="_lt"],
+  [data-hg~="col"] > [data-hg~="_ts"] {
+    margin-bottom: auto;
+  }
+
+  [data-hg~="col"] > [data-hg~="_a"],
+  [data-hg~="col"] > [data-hg~="_la"],
+  [data-hg~="col"] > [data-hg~="_as"] {
+    margin-top: auto;
+  }
+
+  [data-hg~="col"] > [data-hg~="_o"]:not([data-hg~="_l"]):not([data-hg~="_s"]):not([data-hg~="_t"]):not([data-hg~="_a"]) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  [data-hg~="ta"] {
+    align-content: stretch !important;
+    align-items: stretch !important;
+  }
+
+  [data-hg~="ls"] {
+    justify-content: stretch !important;
+  }
+
+  [data-gnl~="kap"], [data-hg~="kap"],
+  [data-xl~="büyükleri-kap"], [data-xl~="büyükleriyle-kap"],
+  [data-lg~="büyükleri-kap"], [data-lg~="büyükleriyle-kap"],
+  [data-md~="büyükleri-kap"], [data-md~="büyükleriyle-kap"],
+  [data-sm~="büyükleri-kap"], [data-sm~="büyükleriyle-kap"],
+  [data-xs~="büyükleri-kap"], [data-xs~="büyükleriyle-kap"],
+  [data-mn~="büyükleri-kap"], [data-mn~="büyükleriyle-kap"] {
+    max-width: 1890px !important;
+  }
+
+  [data-hg~="hide"],
+  [data-hg~="hide-with-bigger"],
+  [data-xl~="hide-bigger"],
+  [data-xl~="hide-other"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KOCAMAN-soner ($kcm) veya (kcm-soner) | Ekran ölçeği: 0 < 1900px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1900px) {
+  [data-hg~="hide-smaller"],
+  [data-hg~="hide-other"],
+  [data-xl~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    BÜYÜK-soner ($byk) veya (byk-soner) | Ekran ölçeği: 0 < 1200px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 1200px) {
+  [data-xl~="hide-smaller"],
+  [data-xl~="hide-other"],
+  [data-lg~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ORTA-soner ($ort) veya (ort-soner) | Ekran ölçeği: 0 < 992px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 993px) {
+  [data-lg~="hide-smaller"],
+  [data-lg~="hide-other"],
+  [data-md~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KÜÇÜK-soner ($kçk) veya (kçk-soner) | Ekran ölçeği: 0 < 768px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  [data-md~="hide-smaller"],
+  [data-md~="hide-other"],
+  [data-sm~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    UFAK-soner ($ufk) veya (ufk-soner) | Ekran ölçeği: 0 < 576px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 13px !important;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+
+  h6 {
+    font-size: 1.1em;
+  }
+
+  [data-sm~="hide-smaller"],
+  [data-sm~="hide-other"],
+  [data-xs~="hide-with-smaller"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MİNİK-soner ($mnk) veya (mnk-soner) | Ekran ölçeği: 0 < 300px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 300px) {
+  [data-xs~="hide-smaller"],
+  [data-xs~="hide-other"],
+  [data-mn~="hide-with-smaller"],
+  [data-mn~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  DUYARLI TİP - YALIN |< * >| */
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MİNİK-YALIN ($mnk) veya (mnk-yalın) | Ekran ölçeği: 0 ≤ * < 300px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 300px) {
+  [data-gnl~="kap"],
+  [data-mn~="büyükleriyle-kap"],
+  [data-mn~="bunu-kap"],
+  [data-mn~="küçükleriyle-kap"],
+  [data-xs~="küçükleri-kap"], [data-xs~="küçükleriyle-kap"],
+  [data-sm~="küçükleri-kap"], [data-sm~="küçükleriyle-kap"],
+  [data-md~="küçükleri-kap"], [data-md~="küçükleriyle-kap"],
+  [data-lg~="küçükleri-kap"], [data-lg~="küçükleriyle-kap"],
+  [data-xl~="küçükleri-kap"], [data-xl~="küçükleriyle-kap"],
+  [data-hg~="küçükleri-kap"], [data-hg~="küçükleriyle-kap"] {
+    width: 100%;
+    max-width: 100% !important;
+  }
+
+  /* Gizleme */
+  [data-mn~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    UFAK-YALIN ($ufk) veya (ufk-yalın) | Ekran ölçeği: 300px ≤ * < 576px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  [data-gnl~="kap"],
+  [data-mn~="büyükleri-kap"], [data-mn~="büyükleriyle-kap"],
+  [data-xs~="büyükleriyle-kap"],
+  [data-xs~="bunu-kap"],
+  [data-xs~="küçükleriyle-kap"],
+  [data-sm~="küçükleri-kap"], [data-sm~="küçükleriyle-kap"],
+  [data-md~="küçükleri-kap"], [data-md~="küçükleriyle-kap"],
+  [data-lg~="küçükleri-kap"], [data-lg~="küçükleriyle-kap"],
+  [data-xl~="küçükleri-kap"], [data-xl~="küçükleriyle-kap"],
+  [data-hg~="küçükleri-kap"], [data-hg~="küçükleriyle-kap"] {
+    width: 100%;
+    max-width: calc(100% - 20px) !important;
+  }
+
+  /* Gizleme */
+  [data-xs~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KÇK-YALIN ($kçk) veya (kçk-yalın) | Ekran ölçeği: 576px ≤ * < 768px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  [data-gnl~="kap"],
+  [data-mn~="büyükleri-kap"], [data-mn~="büyükleriyle-kap"],
+  [data-xs~="büyükleri-kap"], [data-xs~="büyükleriyle-kap"],
+  [data-sm~="büyükleriyle-kap"],
+  [data-sm~="bunu-kap"],
+  [data-sm~="küçükleriyle-kap"],
+  [data-md~="küçükleri-kap"], [data-md~="küçükleriyle-kap"],
+  [data-lg~="küçükleri-kap"], [data-lg~="küçükleriyle-kap"],
+  [data-xl~="küçükleri-kap"], [data-xl~="küçükleriyle-kap"],
+  [data-hg~="küçükleri-kap"], [data-hg~="küçükleriyle-kap"] {
+    width: 100%;
+    max-width: 566px !important;
+  }
+
+  /* Gizleme */
+  [data-sm~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ORTA-YALIN ($ort) veya (ort-yalın)
+    Ekran ölçeği: 768px ≤ * < 992px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  [data-gnl~="kap"],
+  [data-mn~="büyükleri-kap"], [data-mn~="büyükleriyle-kap"],
+  [data-xs~="büyükleri-kap"], [data-xs~="büyükleriyle-kap"],
+  [data-sm~="büyükleri-kap"], [data-sm~="büyükleriyle-kap"],
+  [data-md~="büyükleriyle-kap"],
+  [data-md~="bunu-kap"],
+  [data-md~="küçükleriyle-kap"],
+  [data-lg~="küçükleri-kap"], [data-lg~="küçükleriyle-kap"],
+  [data-xl~="küçükleri-kap"], [data-xl~="küçükleriyle-kap"],
+  [data-hg~="küçükleri-kap"], [data-hg~="küçükleriyle-kap"] {
+    width: 100%;
+    max-width: 760px !important;
+  }
+
+  /* Gizleme */
+  [data-md~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    BÜYÜK-YALIN ($byk) veya (byk-yalın) | Ekran ölçeği: 992px ≤ * < 1200px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  [data-gnl~="kap"],
+  [data-mn~="büyükleri-kap"], [data-mn~="büyükleriyle-kap"],
+  [data-xs~="büyükleri-kap"], [data-xs~="büyükleriyle-kap"],
+  [data-sm~="büyükleri-kap"], [data-sm~="büyükleriyle-kap"],
+  [data-md~="büyükleri-kap"], [data-md~="büyükleriyle-kap"],
+  [data-lg~="büyükleriyle-kap"],
+  [data-lg~="bunu-kap"],
+  [data-lg~="küçükleriyle-kap"],
+  [data-xl~="küçükleri-kap"], [data-xl~="küçükleriyle-kap"],
+  [data-hg~="küçükleri-kap"], [data-hg~="küçükleriyle-kap"] {
+    width: 100%;
+    max-width: 960px !important;
+  }
+
+  /* Gizleme */
+  [data-lg~="hide-this"] {
+    display: none !important;
+  }
+}
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    KOCAMAN-YALIN ($kcm) veya (kcm-yalın) | Ekran ölçeği: 1200px ≤ * < 1900px
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media screen and (min-width: 1200px) and (max-width: 1900px) {
+  [data-gnl~="kap"],
+  [data-mn~="büyükleri-kap"], [data-mn~="büyükleriyle-kap"],
+  [data-xs~="büyükleri-kap"], [data-xs~="büyükleriyle-kap"],
+  [data-sm~="büyükleri-kap"], [data-sm~="büyükleriyle-kap"],
+  [data-md~="büyükleri-kap"], [data-md~="büyükleriyle-kap"],
+  [data-lg~="büyükleri-kap"], [data-lg~="büyükleriyle-kap"],
+  [data-xl~="büyükleriyle-kap"],
+  [data-xl~="bunu-kap"],
+  [data-xl~="küçükleriyle-kap"] {
+    width: 100%;
+    max-width: 1140px !important;
+  }
+
+  /* Gizleme */
+  [data-xl~="hide-this"] {
+    display: none !important;
+  }
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.imge[data-menü] li {
+  margin-bottom: 5px;
+}
+
+.imge[data-menü] li > ul {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.imge[data-menü] li.etkin > a {
+  background-color: #dddddd;
+  border-radius: 8px;
+}
+
+.imge[data-menü] li > a:hover {
+  background-color: #ededed;
+  border-radius: 8px;
+}
+
+.imge[data-menü] li > a,
+.imge[data-menü] li > label {
+  padding: 5px 10px;
+}
+
+/* -----------------------------------
+    MENÜ 0.01
+   ----------------------------------- */
+/* Genel */
+ul[data-menü],
+[data-menü] ul {
+  padding: 0;
+  margin: 0;
+}
+
+[data-menü] li {
+  display: flex;
+}
+
+[data-kapaç] {
+  display: none;
+  /* input her zaman gizlenir. */
+}
+
+[data-menü] li > label,
+[data-menü] li > a {
+  display: flex;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+[data-kapaç] + label {
+  display: flex;
+}
+
+[data-kapaç] + label + label {
+  display: none;
+}
+
+a + [data-kapaç] + label,
+a + [data-kapaç] + label + label {
+  flex: 0 0 auto !important;
+  width: auto;
+}
+
+[data-kapaç]:checked + label,
+[data-kapaç] + label + label {
+  display: none;
+}
+
+[data-kapaç] + label,
+[data-kapaç]:checked + label + label {
+  display: flex;
+}
+
+[data-kapaç~="sağda"] + label,
+[data-kapaç~="sağda"] + label + label {
+  margin-left: auto;
+  /* menü kapacı sağa ötelenir */
+  order: 98;
+  /* menü kapacı nerede olursa olsun en sondadır */
+}
+
+[data-kapaç~="sağda"] + label > a,
+[data-kapaç~="sağda"] + label + label > a {
+  margin-right: auto;
+}
+
+[data-kapaç~="solda"] + label > a,
+[data-kapaç~="solda"] + label + label > a {
+  margin-left: auto;
+}
+
+[data-kapaç~="solda"] + label,
+[data-kapaç~="solda"] + label + label {
+  margin-right: auto;
+  /* menü kapacı sola ötelenir */
+  order: -98;
+  /* menü kapacı nerede olursa olsun en baştadır */
+}
+
+[data-kapaç] + label + label + ul {
+  display: none;
+  /* Varsayılan olarak gizli */
+  width: 100%;
+  /* Tam genişlik sebebiyle altta görünecek */
+  order: 99;
+  /* En son sırada olacağı için kod sırası önemsiz, karmaşa olmayacak. */
+}
+
+[data-kapaç]:checked + label + ul,
+[data-kapaç]:checked + label + label + ul {
+  display: flex;
+  /* kapaç tetiklendiğinde menü görünür olur */
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+[data-menü~="dikey"] {
+  flex-direction: column;
+}
+
+[data-menü~="dikey"] li {
+  display: flex;
+  /* en dış li hariç içerdeki liler flex olacak */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+[data-menü~="dikey"] li > ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+[data-kapaç~="çaprazlama"]:checked + label,
+[data-kapaç~="çaprazlama"] + label + label {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  flex-wrap: nowrap;
+}
+
+[data-kapaç~="çaprazlama"] + label,
+[data-kapaç~="çaprazlama"]:checked + label + label {
+  display: none;
+}
+
+[data-kapaç~="çaprazlama"][data-kapaç~="gizle"] + label,
+[data-kapaç~="çaprazlama"][data-kapaç~="gizle"] + label + label {
+  display: none;
+}
+
+/* KÜÇÜK EKRANLAR */
+/* BÜYÜK EKRANLAR */
+@media screen and (min-width: 576px) {
+  [data-kapaç] + label,
+  [data-kapaç] + label + label,
+  [data-kapaç]:checked + label + label {
+    display: none;
+  }
+
+  [data-kapaç~="çaprazlama"]:checked + label,
+  [data-kapaç~="çaprazlama"] + label + label {
+    display: none;
+  }
+
+  [data-kapaç]:checked + label + ul,
+  [data-menü] [data-kapaç]:checked + label + label + ul,
+  [data-menü] [data-kapaç]:checked + label + label {
+    display: flex;
+  }
+
+  [data-menü] {
+    display: flex !important;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=deveb-en.css.map */
