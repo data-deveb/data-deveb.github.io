@@ -192,7 +192,7 @@
     [data-#{$ekran}~="#{$kaymadan}"]{overflow: hidden;}
     [data-#{$ekran}~="#{$yatay-kayma}"]{overflow-x: auto;}
 
-    [data-#{$ekran}~="#{$dürmeden}"]{flex-wrap: nowrap;}
+    [data-#{$ekran}~="#{$dürmeden}"]{flex-wrap: nowrap !important;}
     [data-#{$ekran}~="#{$ters-dürme}"]{flex-wrap: wrap-reverse;}
 
     [data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$üstte}"],
