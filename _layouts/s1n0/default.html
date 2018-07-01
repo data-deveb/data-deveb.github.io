@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include s1n0/head-en.html %}
+</head>
+<body data-gnl="tamekran">
+  <div data-gnl="sığ oluk-çevre">
+    <div id="sol-alan" data-gnl="üstte" data-kçk="4 22p sığ oluk-çevre">
+      <div data-gnl=" göbekte geniş-aralıklı" data-dev="2 3p sağda-ol göbekte-ol">
+        <a data-gnl="0" href="/" class="logo2">deveb</a>
+        <span class="birincil" data-gnl="0 göbekte-ol" data-imgelik="kapsül küçük">
+          {% if page.url contains '/tr/' %}Sürüm{% endif %}
+          {% if page.url contains '/en/' %}Version{% endif %} 1.0
+        </span>
+        <span class="birincil" data-gnl="0 göbekte-ol" data-imgelik="kapsül küçük">
+          {% if page.url contains '/tr/' %}Türkçe{% endif %}
+          {% if page.url contains '/en/' %}English{% endif %}
+        </span>
+        <input id="menü-ana-çapraz" checked type="radio" name="ana-menü" data-kapaç="sağda çaprazlama">
+        <label for="menü-ana">•••</label>
+        <label for="menü-ana-çapraz">///</label>
+      </div>
+      <div data-dev="2 3p sağda-ol üstte-ol">
+        {% include s1n0/dallik.html %}
+      </div>
+    </div>
+    <div id="içerik" data-kçk="18 22p sığ oluk-çevre">
+      <div data-gnl="üstte" data-kçk="20 24p" style="padding-left:30px; padding-right:30px;">
+        {% if page.title %}
+          <h1 class="sayfa">{{ page.title }}</h1>
+        {% endif %}
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  <footer>
+  {% include s1n0/foot.html %}
+  </footer>
+</body>
+</html>
