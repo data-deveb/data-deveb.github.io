@@ -1,82 +1,78 @@
 --- 
 layout: s1n0/varsayilan 
-title: Space System - Grid System
+title: Space Layout - Grid System
 ---
 	<p class="girlik">
-	  Ögeler arası boşluklar bırakarak estetik bir görünüme erişmenin kolay yolları var. Sabit genişlikte ögeleriniz varsa içinde bulunduğu ekran genişliğine göre doğal bir şekilde aralıklarla ögelerinizi yerleştirebilirsiniz. Dış sınırlardan başlayan bir düzen
-	  veya dengeli aralık verilen bir düzen yapabilirsiniz. Daha fazlası aşağıda.
+	  Create a more aesthetic look by leaving spacings between objects. Use several options, such as self-calculated range widths, constant range widths, and so on. More below.
 	</p>
 
-	<h3>araları-aralık & dengeli-aralık</h3>
+	<h3>space-between & space-around</h3>
 	<p>
-	  Sadece ögelerin birbirleri arasında aralık bırakılması istenildiği zaman kullanılması gereken değiştirge "araları-aralık" değiştirgesidir. Ekran genişliğine göre ögeler sabit genişlikteyse veya yüzdesel olarak aralıklı yayılabilecek durumdaysa kendiliğinden
-	  bir aralık oluşturur.
+	  The "space-between" parameter is used when it is desired to create a space between objects. The range width automatically changes according to the width of the container label.
 	</p>
 	<p>
-	  Ögelerin her iki yandan aralık bırakmasını istiyorsanız "dengeli-aralık" değiştirgesini kullanın. Ekran genişliğine göre ögeler sağ ve sol yanlarından bulundukları şartlara göre aralık alırlar. Kenar ile öge arası aralık uzunluğu iki öge arası aralık
-	  uzunluğunun yarısı olacaktır.
+	  Use the "space-around" parameter if you want to leave a space around the objects. The range is automatically set according to the width of the container label. The interval between objects is twice that between the outer edge and the outer edge.
 	</p>
 	<div class="örnek">
-	  <h3>Önizleme</h3>
+	  <h3>Preview</h3>
 	  <div class="önizleme">
-	    <div data-gnl="araları-aralık">
+	    <div data-gnl="space-between">
 	      <div data-gnl="1 8p">
-	        araları-aralık
+	        space-between
 	      </div>
 	      <div data-gnl="1 8p">
-	        araları-aralık
+	        space-between
 	      </div>
 	      <div data-gnl="1 8p">
-	        araları-aralık
+	        space-between
 	      </div>
 	    </div>
-	    <div data-gnl="dengeli-aralık">
+	    <div data-gnl="space-around">
 	      <div data-gnl="1 8p">
-	        dengeli-aralık
+	        space-around
 	      </div>
 	      <div data-gnl="1 8p">
-	        dengeli-aralık
+	        space-around
 	      </div>
 	      <div data-gnl="1 8p">
-	        dengeli-aralık
+	        space-around
 	      </div>
 	    </div>
 	  </div>
 	</div>
 	{% highlight html %}
-	<div data-gnl="araları-aralık">
-	  <div data-gnl="1 8p">
-	    araları-aralık
-	  </div>
-	  <div data-gnl="1 8p">
-	    araları-aralık
-	  </div>
-	  <div data-gnl="1 8p">
-	    araları-aralık
-	  </div>
-	</div>
-	<div data-gnl="dengeli-aralık">
-	  <div data-gnl="1 8p">
-	    dengeli-aralık
-	  </div>
-	  <div data-gnl="1 8p">
-	    dengeli-aralık
-	  </div>
-	  <div data-gnl="1 8p">
-	    dengeli-aralık
-	  </div>
-	</div>
+	<div data-gnl="space-between">
+      <div data-gnl="1 8p">
+        space-between
+      </div>
+      <div data-gnl="1 8p">
+        space-between
+      </div>
+      <div data-gnl="1 8p">
+        space-between
+      </div>
+    </div>
+    <div data-gnl="space-around">
+      <div data-gnl="1 8p">
+        space-around
+      </div>
+      <div data-gnl="1 8p">
+        space-around
+      </div>
+      <div data-gnl="1 8p">
+        space-around
+      </div>
+    </div>
 	{% endhighlight %}
 
-	<h3>araları-aralık-SAYI</h3>
+	<h3>space-between-NUMBER</h3>
 	<p>
-	  Ögeler arasında dış yanlarda aralık olmaksızın sabit genişlikte aralık bırakmak için bu özellik tam size göre. Kapsayıcı etikete "araları-aralık-1" değiştirgesini doğru şekilde yazdıktan sonra aşağıdaki gibi bir örneğe sahip olacaksınız. Sayı değerini
-	  1~3 arasında girebilirsiniz.
+	  Use this feature to leave a gap in the static width between objects. Width values are indicated by 1, 2, 3 numbers. By typing "space-between-1", you get a result like this:
 	</p>
 	<div class="örnek">
-	  <h3>Önizleme</h3>
+	  <h3>Preview</h3>
 	  <div class="önizleme-1">
-	    <div data-gnl="araları-aralık-1 5r">
+	    <div data-gnl="space-between-1 5r">
 	      <div>
 	        <div class="kart">1</div>
 	      </div>
@@ -117,7 +113,7 @@ title: Space System - Grid System
 	  </div>
 	</div>
 	{% highlight html %}
-    <div data-gnl="araları-aralık-1 5r">
+    <div data-gnl="space-between-1 5r">
       <div>
         <div class="kart">1</div>
       </div>
