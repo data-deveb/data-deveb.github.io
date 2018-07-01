@@ -976,35 +976,35 @@ body[data-gnl~="sütun"] > footer {
   margin-bottom: 20px;
 }
 
-[data-gnl~="araları-aralık-1"][data-gnl] {
+[data-gnl~="space-between-1"][data-gnl] {
   width: calc(100% / var(--parçalık) * var(--parça) + 10px);
   max-width: calc(100% / var(--parçalık) * var(--parça) + 10px);
   margin: -10px 0 0 -10px;
 }
 
-[data-gnl~="araları-aralık-2"][data-gnl] {
+[data-gnl~="space-between-2"][data-gnl] {
   width: calc(100% / var(--parçalık) * var(--parça) + 15px);
   max-width: calc(100% / var(--parçalık) * var(--parça) + 15px);
   margin: -15px 0 0 -15px;
 }
 
-[data-gnl~="araları-aralık-3"][data-gnl] {
+[data-gnl~="space-between-3"][data-gnl] {
   width: calc(100% / var(--parçalık) * var(--parça) + 20px);
   max-width: calc(100% / var(--parçalık) * var(--parça) + 20px);
   margin: -20px 0 0 -20px;
 }
 
-[data-gnl~="araları-aralık-1"] > * {
+[data-gnl~="space-between-1"] > * {
   padding-left: 10px;
   padding-top: 10px;
 }
 
-[data-gnl~="araları-aralık-2"] > * {
+[data-gnl~="space-between-2"] > * {
   padding-left: 15px;
   padding-top: 15px;
 }
 
-[data-gnl~="araları-aralık-3"] > * {
+[data-gnl~="space-between-3"] > * {
   padding-left: 20px;
   padding-top: 20px;
 }
@@ -1417,7 +1417,7 @@ body[data-gnl~="sütun"] > footer {
   align-self: flex-start;
 }
 
-[data-gnl~="araları-aralık"]:not([data-gnl~="col"]) {
+[data-gnl~="space-between"]:not([data-gnl~="col"]) {
   justify-content: space-between;
 }
 
@@ -1425,7 +1425,7 @@ body[data-gnl~="sütun"] > footer {
   justify-content: space-around;
 }
 
-[data-gnl~="col"][data-gnl~="araları-aralık"] {
+[data-gnl~="col"][data-gnl~="space-between"] {
   align-content: space-around;
 }
 
@@ -2217,7 +2217,7 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     align-self: flex-start;
   }
 
-  [data-xs~="araları-aralık"]:not([data-xs~="col"]) {
+  [data-xs~="space-between"]:not([data-xs~="col"]) {
     justify-content: space-between;
   }
 
@@ -2225,7 +2225,7 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     justify-content: space-around;
   }
 
-  [data-xs~="col"][data-xs~="araları-aralık"] {
+  [data-xs~="col"][data-xs~="space-between"] {
     align-content: space-around;
   }
 
@@ -3014,7 +3014,7 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     align-self: flex-start;
   }
 
-  [data-sm~="araları-aralık"]:not([data-sm~="col"]) {
+  [data-sm~="space-between"]:not([data-sm~="col"]) {
     justify-content: space-between;
   }
 
@@ -3022,7 +3022,7 @@ S02 KÇK-ilker ($kçk) veya (kçk-ilker) | Ekran ölçeği: 576px ≤ *
     justify-content: space-around;
   }
 
-  [data-sm~="col"][data-sm~="araları-aralık"] {
+  [data-sm~="col"][data-sm~="space-between"] {
     align-content: space-around;
   }
 
@@ -3811,7 +3811,7 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     align-self: flex-start;
   }
 
-  [data-md~="araları-aralık"]:not([data-md~="col"]) {
+  [data-md~="space-between"]:not([data-md~="col"]) {
     justify-content: space-between;
   }
 
@@ -3819,7 +3819,7 @@ S03 ORTA-ilker ($ort) veya (ort-ilker) | Ekran ölçeği: 768px ≤ *
     justify-content: space-around;
   }
 
-  [data-md~="col"][data-md~="araları-aralık"] {
+  [data-md~="col"][data-md~="space-between"] {
     align-content: space-around;
   }
 
@@ -4608,7 +4608,7 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     align-self: flex-start;
   }
 
-  [data-lg~="araları-aralık"]:not([data-lg~="col"]) {
+  [data-lg~="space-between"]:not([data-lg~="col"]) {
     justify-content: space-between;
   }
 
@@ -4616,7 +4616,7 @@ S04 BÜYÜK-ilker ($byk) veya (byk-ilker) | Ekran ölçeği: 992px ≤ *
     justify-content: space-around;
   }
 
-  [data-lg~="col"][data-lg~="araları-aralık"] {
+  [data-lg~="col"][data-lg~="space-between"] {
     align-content: space-around;
   }
 
@@ -5405,7 +5405,7 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     align-self: flex-start;
   }
 
-  [data-xl~="araları-aralık"]:not([data-xl~="col"]) {
+  [data-xl~="space-between"]:not([data-xl~="col"]) {
     justify-content: space-between;
   }
 
@@ -5413,7 +5413,7 @@ S05 KOCAMAN-ilker ($kcm) veya (kcm-ilker) | Ekran ölçeği: 1200px ≤ *
     justify-content: space-around;
   }
 
-  [data-xl~="col"][data-xl~="araları-aralık"] {
+  [data-xl~="col"][data-xl~="space-between"] {
     align-content: space-around;
   }
 
@@ -6202,7 +6202,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     align-self: flex-start;
   }
 
-  [data-hg~="araları-aralık"]:not([data-hg~="col"]) {
+  [data-hg~="space-between"]:not([data-hg~="col"]) {
     justify-content: space-between;
   }
 
@@ -6210,7 +6210,7 @@ S06 DEV-ilker ($dev) veya (dev-ilker) veya (hgo) | Ekran ölçeği: 1900px ≤ *
     justify-content: space-around;
   }
 
-  [data-hg~="col"][data-hg~="araları-aralık"] {
+  [data-hg~="col"][data-hg~="space-between"] {
     align-content: space-around;
   }
 
