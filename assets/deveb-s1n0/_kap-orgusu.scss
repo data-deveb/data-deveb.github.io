@@ -138,7 +138,7 @@
       padding: 0
     }
   }
-  
+
   @mixin dizem-düzeni($ekran){
     [data-#{$ekran}~="1r"] > div, [data-#{$ekran}~="1r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 1); max-width: calc(100% / 1);    }
     [data-#{$ekran}~="2r"] > div, [data-#{$ekran}~="2r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 2); max-width: calc(100% / 2);    }
@@ -261,7 +261,7 @@
     [data-#{$ekran}~="#{$üstsağ}"],
     [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"],
     [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"]{
-      /*align-content: flex-start;*/
+      align-content: flex-start;
       align-items: flex-start;
     }
 
@@ -278,7 +278,7 @@
     [data-#{$ekran}~="#{$altsağ}"],
     [data-#{$ekran}~="#{$alt}"],
     [data-#{$ekran}~="#{$solalt}"]{
-      /*align-content: flex-end;*/
+      align-content: flex-end;
       align-items: flex-end;
     }
 
