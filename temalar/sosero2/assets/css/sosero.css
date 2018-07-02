@@ -1,0 +1,1454 @@
+/* SİMGELER BAŞI */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?jcfovk');
+  src:  url('fonts/icomoon.eot?jcfovk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jcfovk') format('truetype'),
+    url('fonts/icomoon.woff?jcfovk') format('woff'),
+    url('fonts/icomoon.svg?jcfovk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin-ext');
+
+[class^="simge-"], [class*=" simge-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width:34px;
+  height:34px;
+  text-align:center;
+}
+
+.simge-ok-alt:before {
+  content: "\e90c";
+  color: #fff;
+}
+.simge-haberler:before {
+  content: "\e900";
+  color: #fff;
+}
+.simge-hakkimizda:before {
+  content: "\e901";
+  color: #fff;
+}
+.simge-hamburger:before {
+  content: "\e902";
+  color: #fff;
+}
+.simge-hamburger-x:before {
+  content: "\e903";
+  color: #fff;
+}
+.simge-iletisim:before {
+  content: "\e904";
+  color: #fff;
+}
+.simge-katalog:before {
+  content: "\e905";
+  color: #fff;
+}
+.simge-ok:before {
+  content: "\e906";
+  color: #fff;
+}
+.simge-ok-sol:before {
+  content: "\e907";
+  color: #fff;
+}
+.simge-satis-noktalari:before {
+  content: "\e908";
+  color: #fff;
+}
+.simge-uretim-tesisleri:before {
+  content: "\e909";
+  color: #fff;
+}
+.simge-urunler:before {
+  content: "\e90a";
+  color: #fff;
+}
+.simge-yemek-tarifleri:before {
+  content: "\e90b";
+  color: #fff;
+}
+
+/* SİMGELER SONU */
+
+
+@keyframes move {
+
+	25% {
+		background-position:-15% 19%, 9% 124%, 79% -35%, 34% -12%, 94% 99%, -39% 16%, -2% 69%, 103% 11%, 31% -119%, 106% 29%,center;
+	}
+
+	50% {
+		background-position:-15% 20%, 9% 125%, 79% -35%, 35% -12%, 96% 99%, -39% 15%, -3% 69%, 103% 10%, 30% -121%, 108% 31%,center;
+	}
+
+	75% {
+		background-position:-15% 21%, 10% 124%, 80% -35%, 36% -11%, 94% 101%, -39% 16%, -1% 70%, 104% 9%, 31% -120%, 106% 31%,center;
+	}
+
+}
+
+
+
+
+
+.dallık{
+  background-color: #000;
+  color:#fff;
+}
+
+
+
+.main{
+
+}
+.paketler{
+  background: url('/temalar/sosero/assets/img/arkaplan-a.png') no-repeat top, url('/temalar/sosero/assets/img/arkaplan-b.png') no-repeat right bottom, url('/temalar/sosero/assets/img/arkaplan-c.png') no-repeat bottom, url('/temalar/sosero/assets/img/arkaplan-d.png') no-repeat left;
+  -webkit-background-size:  auto, auto, auto, auto;
+  -moz-background-size: auto, auto, auto, auto;
+  -o-background-size: auto, auto, auto, auto;
+  background-size: auto, auto, auto, auto;
+  background-color: rgba(55,138,0,.8);
+}
+.gelgit-etkin{
+  overflow: hidden;
+}
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:16px;
+}
+html:not(.intro) body.ap-yok{
+  background-color: #ddd;
+  /*background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+  */
+  background: url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header, footer{
+  padding:0 20px;
+  flex-shrink: 20;
+}
+
+footer{
+  position:absolute; bottom:0; z-index:999;
+}
+header, main, footer{
+  padding: 0 4%;
+}
+
+[data-menü~="sağ-kaval"]{
+  z-index: 999;
+}
+[data-menü~="sağ-kaval"] > li a{
+  position: relative;
+  padding:15px;
+  display:flex;
+  justify-content: center;
+}
+[data-menü~="sağ-kaval"] li a i::before{
+  font-size: 30px;
+}
+[data-menü~="sağ-kaval"] > li a span{
+  display:none;
+  position: absolute;
+  right:100%;
+  top:0;
+  padding:5px 10px;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+[data-menü~="sağ-kaval"] > li:hover a span{
+  display:flex;
+  align-items: center;
+  background-color: #13672f;
+    height: 100%;
+    padding:0 10px;
+}
+[data-menü~="sağ-kaval"] > li:hover a{
+  background-color: #13672f;
+  color:#fff;
+}
+.logo{
+  width:182px;
+  margin-right: 50px;
+}
+.intro .logo{
+  margin-right: 0;
+}
+  .logo img{}
+.intro-text{
+  color:#fff;
+  font-size:28px;
+  font-weight: bold;
+}
+@media screen and (max-width:991.9px) {
+
+.logo{
+  margin-right: 40px;
+}
+  .logo img{}
+label[for*="menü-ana"]{
+  background: black;
+  align-self: center;
+  color: #fff;
+  padding: 8px;
+}
+
+[data-menü~="sağ-kaval"]{
+  position: fixed;
+  height: 100%;
+  width:100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 998;
+  padding: 0 20px !important;
+  background: url('/temalar/sosero/assets/img/arkaplant.png') repeat left fixed;
+  overflow-y: scroll;
+  flex-wrap: nowrap !important;
+  z-index: 1001;
+overflow-x: hidden;
+}
+[data-menü~="sağ-kaval"]::before{
+  content: '';
+  display: block;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  left:0;
+  right:0;
+}
+[data-menü~="sağ-kaval"] li a.baş,
+[data-menü~="sağ-kaval"] li a.baş:hover{
+  background: transparent;
+}
+[data-menü~="sağ-kaval"] li{
+  width: 100%;
+  z-index: 1002;
+  flex-shrink: 0;
+}
+[data-menü~="sağ-kaval"] li a{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+[data-menü~="sağ-kaval"] li label[for*="-çapraz"]{
+flex: 0 0 auto;
+margin-right: 17px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+[data-menü~="sağ-kaval"] li a span{
+  display: inline-block;
+  position: static;
+  color:#fff;
+  margin-left:10px;
+}
+}
+[data-kapaç~="çaprazlama"]:checked+label,
+[data-kapaç~="çaprazlama"]+label+label{
+  display:flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  width:auto;
+  flex-wrap:nowrap;
+}
+[data-kapaç~="çaprazlama"]+label,
+[data-kapaç~="çaprazlama"]:checked+label+label{
+  display:none;
+}
+[data-kapaç~="çaprazlama"][data-kapaç~="gizle"]+label,
+[data-kapaç~="çaprazlama"][data-kapaç~="gizle"]+label+label{
+  display:none;
+}
+@media screen and (min-width:996px) {
+  html:not(.intro) body{
+    background-color: #ddd;
+    /*background: url('/temalar/sosero/assets/img/arkaplan.png') no-repeat center center fixed,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+    */
+    background: url('/temalar/sosero/assets/img/arkaplan/k1.png'), url('/temalar/sosero/assets/img/arkaplan/k2.png'), url('/temalar/sosero/assets/img/arkaplan/k3.png'), url('/temalar/sosero/assets/img/arkaplan/k4.png'), url('/temalar/sosero/assets/img/arkaplan/k5.png'), url('/temalar/sosero/assets/img/arkaplan/k6.png'), url('/temalar/sosero/assets/img/arkaplan/k7.png'), url('/temalar/sosero/assets/img/arkaplan/k8.png'), url('/temalar/sosero/assets/img/arkaplan/k9.png'), url('/temalar/sosero/assets/img/arkaplan/k0.png'),url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat  fixed;
+    /*background: url('/temalar/sosero/assets/img/arkaplan-a.png') no-repeat top, url('/temalar/sosero/assets/img/arkaplan-b.png') no-repeat right bottom, url('/temalar/sosero/assets/img/arkaplan-c.png') no-repeat bottom, url('/temalar/sosero/assets/img/arkaplan-d.png') no-repeat left,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+    */
+    background-position:-16% 20%, 10% 125%, 80% -36%, 35% -13%, 95% 100%, -40% 15%, -3% 70%, 101% 10%, 30% -110%, 107% 30%,center;
+    background-repeat: no-repeat;
+    -webkit-background-size:  auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    -webkit-animation:  move 10s linear infinite;
+    -moz-animation:  move 10s linear infinite;
+    animation: move 10s linear infinite;
+  }
+
+  [data-kapaç]+label,
+  [data-kapaç]+label+label,
+  [data-kapaç]:checked+label+label{
+    display: none;
+  }
+  [data-kapaç~="çaprazlama"]:checked+label,
+  [data-kapaç~="çaprazlama"]+label+label{
+    display:none;
+  }
+  [data-kapaç]:checked+label+ul,
+  [data-menü] [data-kapaç]:checked+label+label+ul,
+  [data-menü] [data-kapaç]:checked+label+label{
+    display:flex;
+  }
+  [data-menü] {
+    display: flex !important;
+    flex: 1;
+    flex-wrap:wrap;
+  }
+}
+@media screen and (max-width:995.9px){
+
+  html:not(.intro) body{
+    background-color: #ddd;
+    background:url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+
+    /*background: url('/temalar/sosero/assets/img/arkaplan/k1.png'), url('/temalar/sosero/assets/img/arkaplan/k2.png'), url('/temalar/sosero/assets/img/arkaplan/k3.png'), url('/temalar/sosero/assets/img/arkaplan/k4.png'), url('/temalar/sosero/assets/img/arkaplan/k5.png'), url('/temalar/sosero/assets/img/arkaplan/k6.png'), url('/temalar/sosero/assets/img/arkaplan/k7.png'), url('/temalar/sosero/assets/img/arkaplan/k8.png'), url('/temalar/sosero/assets/img/arkaplan/k9.png'), url('/temalar/sosero/assets/img/arkaplan/k0.png'),url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat  fixed;
+    /*background: url('/temalar/sosero/assets/img/arkaplan-a.png') no-repeat top, url('/temalar/sosero/assets/img/arkaplan-b.png') no-repeat right bottom, url('/temalar/sosero/assets/img/arkaplan-c.png') no-repeat bottom, url('/temalar/sosero/assets/img/arkaplan-d.png') no-repeat left,url('/temalar/sosero/assets/img/arkaplan0.png') no-repeat center center fixed;
+    */
+    background-repeat: no-repeat;
+    -webkit-background-size:  auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
+
+
+  [data-menü] {
+    display: none !important;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
+  @keyframes openit {
+
+  	0% { background-size:auto,0,0,0,0,0,0,0,0,0,0;}
+    10% { background-size:0,auto,0,0,0,0,0,0,0,0,0;}
+    20% {	background-size:0,0,auto,0,0,0,0,0,0,0,0;}
+    30% {	background-size:0,0,auto,0,0,0,0,0,0,0,0;}
+    40% {	background-size:0,0,0,auto,0,0,0,0,0,0,0;}
+    50% {	background-size:0,0,0,0,auto,0,0,0,0,0,0;}
+    60% {	background-size:0,0,0,0,0,auto,0,0,0,0,0;}
+    70% {	background-size:0,0,0,0,0,0,auto,0,0,0,0;}
+    80% {	background-size:0,0,0,0,0,0,0,auto,0,0,0;}
+    86% {	background-size:0,0,0,0,0,0,0,0,auto,0,0;}
+    94% {	background-size:0,0,0,0,0,0,0,0,0,auto,0;}
+    100% {background-size:0,0,0,0,0,0,0,0,0,auto,0;}
+  }
+  @keyframes merdiven{
+  /*  0%{display:none;opacity: 0;}
+    90%{display:none;opacity: 0;}
+    100%{display:flex;opacity:1;} */
+    0%{margin-left:-1000px;}
+    50%{margin-left:30px;}
+    100%{margin-left:0px;}
+  }
+  @keyframes show {
+      0%{opacity: 0;}
+      50%{opacity: 1;}
+      100%{opacity: 1;}
+  }
+
+  [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval iptalettik"]{
+    background:
+      url('/temalar/sosero/assets/img/menu/menu_00.png'),
+      url('/temalar/sosero/assets/img/menu/menu_01.png'),
+      url('/temalar/sosero/assets/img/menu/menu_02.png'),
+      url('/temalar/sosero/assets/img/menu/menu_03.png'),
+      url('/temalar/sosero/assets/img/menu/menu_04.png'),
+      url('/temalar/sosero/assets/img/menu/menu_05.png'),
+      url('/temalar/sosero/assets/img/menu/menu_06.png'),
+      url('/temalar/sosero/assets/img/menu/menu_07.png'),
+      url('/temalar/sosero/assets/img/menu/menu_08.png'),
+      url('/temalar/sosero/assets/img/menu/menu_09.png'),
+      url('/temalar/sosero/assets/img/menu/menu_10.png'),
+      url('/temalar/sosero/assets/img/menu/menu_11.png');
+
+    background-position:center;
+    background-repeat: no-repeat;
+    -webkit-background-size:  auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    -webkit-animation:  openit 1s ease;
+    -moz-animation:  openit 1s ease;
+    animation: openit 1s ease;
+
+  }
+  [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval"]::before{
+    display: flex;
+    -webkit-animation:  show 1s ease;
+    -moz-animation:  show 1s ease;
+    animation: show 1s ease;
+    animation-delay: -.05s;
+
+
+  }
+  [data-menü~="sağ-kaval"] > li{
+    display: flex;
+    -webkit-animation:  show 1.2s ease;
+    -moz-animation:  show 1.2s ease;
+    animation: show 1.2s ease;
+    animation-delay: -.3s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+1){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: -.3s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+2){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: -.2s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+3){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: -.1s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+4){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: 0s;
+  }
+  [data-menü~="sağ-kaval"] > li:nth-child(n+5){
+    -webkit-animation:  merdiven 1.2s ease;
+    -moz-animation:  merdiven 1.2s ease;
+    animation: merdiven 1.2s ease;
+    animation-delay: 0.1s;
+  }
+  [data-menü~="sağ-kavalx"]{
+    opacity: 0;
+
+    display: block !important;
+    z-index: -1000;
+    left:-1000px;
+    transition: all ease 0.6s;
+    width:0%;
+
+  }
+  [data-kapaç]:checked ~ [data-menü~="sağ-kavalx"]{
+    display: flex;
+    opacity: 1;
+
+    z-index: 1000;
+    left:0;
+    top:0;
+    width:100%;
+    transition: all ease 0.6s;
+    animation:   menemen .6s ease-in-out;
+    bottom:0;
+  }
+  input[id="menü-ana-çapraz"]:not(:checked) + label + label {
+    display: none;
+  }
+  /* Standard syntax */
+@keyframes menemen {
+    0%   {left: 0; }
+    1%{left: -110%; }
+    25%  {left: 10%; }
+    75%  {left: -60%; }
+    100% {left: 0;}
+}
+}
+[data-kapaç]:checked + label + ul, [data-kapaç]:checked + label + label + ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100%;}
+
+
+.tam{
+  width:auto;
+  min-width:100%;
+  min-height:100%;
+  display: block;
+  object-fit: cover;
+}
+/*****/
+.sosero{
+
+}
+.kesit{
+  width:0;
+  height: 100%;
+  border:2px solid green;
+  margin-right: -2px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.kesit::before,.kesit::after{
+  content:'';
+  border:4px solid #c70000;
+  border-radius: 50%;
+  margin-left:-4px;
+}
+.intro{
+  background: url('/temalar/sosero/assets/img/giri_ap.png') no-repeat center bottom fixed,url('/temalar/sosero/assets/img/giri_ap.jpg') no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.yemek-adi, .product-name{
+  padding-top:66px;
+  padding-left:10px;
+  font-size:36px;
+  line-height: 28px;
+  font-weight: bold;
+  margin:0;
+  border-left:4px solid #13672f;
+  color:#c70000;
+}
+.yemek-içeriği, .product-content{
+  padding-left:14px;
+  padding-right: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.product-content{
+  padding:0;
+  margin-bottom: 0;
+}
+.yemek-içeriği h2, .product-content h2{
+  font-size:16px;
+  font-weight: 600;
+  color:#13672f;
+  margin-top:30px;
+}
+.product, .product a{
+   color:#fff;
+   display:Flex !important;
+}
+.product-detail{
+  text-align: center;
+  border-collapse:collapse;border-spacing:0;
+}
+.product-detail td{
+  border:1px solid rgba(0,0,0,.3);
+  background-color: #fff;
+  width:25%;
+  color:#222;
+}
+.product-detail th{
+  background-color:#c70000;
+  color:#fff;
+  font-weight: bold;
+  border:1px solid #c70000;
+  padding:10px;
+}
+.product-detail  .pd-value{
+  font-weight: bold;
+  font-size:1.4em;
+  margin:0;
+}
+.product:nth-child(odd){
+  text-align: right;
+}
+.product:last-child .kesme,
+.product:nth-child(even) .kesme{
+  display:none;
+}
+
+.product.detail{
+  text-align:left;
+  margin-bottom:25px;
+  margin-top:20px;
+}
+.product.full-detail .content{
+  padding:30px;
+  text-align:left;
+  background-color:rgba(55,138,0,.9); color:#fff;
+}
+.product.full-detail .content h1{
+  color:#ffe400;
+  margin-top: 0;
+}
+.product.full-detail .content *:last-child{
+  padding-bottom: 20px;
+}
+.product-content-alt .date{
+  font-size:12px;
+  width:100%;
+}
+.product-content-alt h1{
+  margin:0;
+  font-size:20px;
+  font-weight: bold;
+  line-height: 1.8;
+  color:rgb(255,228,0);
+}
+.product-content-alt{
+  font-size:13px;
+  padding:20px;
+   background-color:rgba(55,138,0,.9);
+}
+.product-card{
+  display:flex !important;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  width:100%;
+  /*max-height: 400px;*/
+  outline: none;
+  align-content: center;
+}
+
+.product-card .product-img{
+  width:100%;
+  padding-top: 100%;
+  position: relative;
+}
+.product-card .product-img img{
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+}
+.product-card .product-info{
+  background-color: #ffc900;
+  color:#fff;
+  padding:20px;
+  width:100%;
+}
+.product-card:hover .product-info{
+  background-color: #13672f;
+  color:#000;
+}
+.product-card .product-info p,
+.product-card .product-info h2,
+.product-card .product-info .open-it{
+  color:#000;
+  border-color:#000;
+}
+.paket .product-card:hover .product-info p,
+.paket .product-card:hover .product-info h2,
+.paket .product-card:hover .product-info .open-it{
+  color: #000;
+  border-color: #000;
+}
+.product-card:hover .product-info p,
+.product-card:hover .product-info h2,
+.product-card:hover .product-info .open-it{
+  color:#fff;
+  border-color:#fff;
+}
+.product-card .product-info p{
+  margin:0;
+  font-size:14px;
+}
+.product-card .product-info h2{
+  margin:0;
+  font-size:18px;
+  font-weight: bold;
+}
+.product-card.beyaz .product-info,
+.product-card.beyaz .product-info h2,
+.product-card.beyaz .product-info p{
+  color:#222;
+  background-color: #fff;
+}
+.product-card .product-imgx{
+  overflow: hidden;
+    margin-top: -50px;
+  width: 100%;
+  display: inline-block;
+  height: 55px;
+
+}
+.product-card:hover .product-imgx::before{
+  /*background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.0) 50%, #13672f 50%);*/
+  border-color: transparent #13672f #13672f #13672f;
+}
+.product-card .product-imgx::before{
+  /*background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.0) 50%, #ffc900 50%);
+  height: 50px;
+  width: 100%;*/
+  border-color: transparent #ffc900 #ffc900 #ffc900;
+        border-width:50px 400px 10px 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        display: inline-block;
+        content: "";
+}
+@media screen and (min-width:1200px){
+  .product-card .product-imgx::before{
+          border-width:50px 800px 10px 0;
+  }
+}
+.product-card .open-it{
+  border:2px solid #fff;
+  padding: 10px;
+  line-height: 10px;
+  font-size:20px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.product-card.beyaz .open-it{
+  border:2px solid #222;
+  padding: 10px;
+  line-height: 10px;
+  font-size:20px;
+  font-weight: bold;
+  border-radius: 4px;
+  color:#222;
+}
+
+
+/* Slider */
+
+.slick-slider
+{
+    position: relative;
+
+    display: flex;
+    width:100%;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.regular .slick-list{
+  height: calc(100% - 116px);
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.regular .slick-track{
+  height:100%;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #13672f;
+    color: transparent;
+    border: none;
+    outline: none;
+    margin-top:auto;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: #fff;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+        color:#146830;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1.5;
+
+    opacity: .75;
+    color: white;
+
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: "\e907";
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: "\e907";
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: "\e906";
+}
+[dir='rtl'] .slick-next:before
+{
+    content: "\e907";
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+
+}
+
+.slick-dots
+{
+
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    content:'';
+    text-align: center;
+    transition: .3s ease;
+    opacity: .25;
+    color: black;
+
+    background-color: gray;
+
+    width: 10px;
+
+    height: 10px;
+
+    display: block;
+    border-radius:5px;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+    background-color:#c70000;
+    width:20px;
+    border-radius:5px;
+    margin-left: -5px;
+    opacity: 1;
+}
+
+.slick-slider{
+  display:flex;
+  flex-wrap: wrap;
+}
+.slick-list{
+  order:1;
+}
+.slick-dots{
+  order:2;
+}
+.slick-prev{
+  order: 3;
+  border:1px solid #146830;
+  margin-left:auto;
+  align-self: center;
+}
+.slick-next{
+  order: 3;
+  border:1px solid #146830;
+  margin-right: auto;
+  align-self: center;
+}
+.yemek .slick-prev{
+  order: 2;
+  margin-left:0;
+  margin:0;
+
+}
+.yemek .slick-next{
+  order: 2;
+  margin:0;
+
+}
+.yemek .slick-dots{
+flex: 1 1 0;
+align-self: center;
+}
+/* İLETİŞİM */
+.button-container {
+  text-align: right;
+}
+
+fieldset {
+  margin: 0 0 3rem;
+  padding: 0;
+  border: none;
+}
+
+.form-radio,
+.form-group {
+  position: relative;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.form-inline > .form-group,
+.form-inline > .btn {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.form-help {
+  margin-top: 0.125rem;
+  margin-left: 0.125rem;
+  color: #b3b3b3;
+  font-size: 0.8rem;
+}
+.checkbox .form-help, .form-radio .form-help, .form-group .form-help {
+  position: absolute;
+  width: 100%;
+}
+.checkbox .form-help {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-radio .form-help {
+  padding-top: 0.25rem;
+  margin-top: -1rem;
+}
+
+.form-group input {
+  height: 1.9rem;
+}
+.form-group textarea {
+  resize: none;
+}
+.form-group select {
+  width: 100%;
+  font-size: 1rem;
+  height: 1.6rem;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  background: none;
+  border: none;
+  line-height: 1.6;
+  box-shadow: none;
+}
+.form-group .control-label {
+  position: absolute;
+  top: 0.25rem;
+  pointer-events: none;
+  padding-left: 0.125rem;
+  z-index: 1;
+  color: #b3b3b3;
+  font-size: 1rem;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+.form-group .bar {
+  position: relative;
+  border-bottom: 0.0625rem solid #999;
+  display: block;
+}
+.form-group .bar::before {
+  content: '';
+  height: 0.125rem;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: green;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+.form-group input,
+.form-group textarea {
+  display: block;
+  background: none;
+  padding: 0.125rem 0.125rem 0.0625rem;
+  font-size: 1rem;
+  border-width: 0;
+  border-color: transparent;
+  line-height: 1.9;
+  width: 100%;
+  color: transparent;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  box-shadow: none;
+}
+.form-group input[type="file"] {
+  line-height: 1;
+}
+.form-group input[type="file"] ~ .bar {
+  display: none;
+}
+.form-group select,
+.form-group input:focus,
+.form-group input:valid,
+.form-group input.form-file,
+.form-group input.has-value,
+.form-group textarea:focus,
+.form-group textarea:valid,
+.form-group textarea.form-file,
+.form-group textarea.has-value {
+  color: #333;
+}
+.form-group select ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group input:valid ~ .control-label,
+.form-group input.form-file ~ .control-label,
+.form-group input.has-value ~ .control-label,
+.form-group textarea:focus ~ .control-label,
+.form-group textarea:valid ~ .control-label,
+.form-group textarea.form-file ~ .control-label,
+.form-group textarea.has-value ~ .control-label {
+  font-size: 0.8rem;
+  color: gray;
+  top: -1rem;
+  left: 0;
+}
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+.form-group select:focus ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group textarea:focus ~ .control-label {
+  color: green;
+}
+.form-group select:focus ~ .bar::before,
+.form-group input:focus ~ .bar::before,
+.form-group textarea:focus ~ .bar::before {
+  width: 100%;
+  left: 0;
+}
+
+.checkbox label,
+.form-radio label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 2rem;
+  text-align: left;
+  color: #333;
+  display: block;
+}
+.checkbox input,
+.form-radio input {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+}
+
+.radio {
+  margin-bottom: 1rem;
+}
+.radio .helper {
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #999;
+}
+.radio .helper::before, .radio .helper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  -webkit-transition: -webkit-transform 0.28s ease;
+  transition: -webkit-transform 0.28s ease;
+  transition: transform 0.28s ease;
+  transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+  border-radius: 50%;
+  border: 0.125rem solid currentColor;
+}
+.radio .helper::after {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.radio label:hover .helper {
+  color: #337ab7;
+}
+.radio input:checked ~ .helper::after {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+.radio input:checked ~ .helper::before {
+  color: #337ab7;
+}
+
+.checkbox {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.checkbox .helper {
+  color: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  z-index: 0;
+  border: 0.125rem solid currentColor;
+  border-radius: 0.0625rem;
+  -webkit-transition: border-color 0.28s ease;
+  transition: border-color 0.28s ease;
+}
+.checkbox .helper::before, .checkbox .helper::after {
+  position: absolute;
+  height: 0;
+  width: 0.2rem;
+  background-color: #337ab7;
+  display: block;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  border-radius: 0.25rem;
+  content: '';
+  -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+  transition: opacity 0.28s ease, height 0s linear 0.28s;
+  opacity: 0;
+}
+.checkbox .helper::before {
+  top: 0.65rem;
+  left: 0.38rem;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  box-shadow: 0 0 0 0.0625rem #fff;
+}
+.checkbox .helper::after {
+  top: 0.3rem;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.checkbox label:hover .helper {
+  color: green;
+}
+.checkbox input:checked ~ .helper {
+  color: green;
+}
+.checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
+  opacity: 1;
+  -webkit-transition: height 0.28s ease;
+  transition: height 0.28s ease;
+}
+.checkbox input:checked ~ .helper::after {
+  height: 0.5rem;
+}
+.checkbox input:checked ~ .helper::before {
+  height: 1.2rem;
+  -webkit-transition-delay: 0.28s;
+          transition-delay: 0.28s;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: 1rem;
+}
+
+.has-error .legend.legend, .has-error.form-group .control-label.control-label {
+  color: #d9534f;
+}
+.has-error.form-group .form-help,
+.has-error.form-group .helper, .has-error.checkbox .form-help,
+.has-error.checkbox .helper, .has-error.radio .form-help,
+.has-error.radio .helper, .has-error.form-radio .form-help,
+.has-error.form-radio .helper {
+  color: #d9534f;
+}
+.has-error .bar::before {
+  background: #d9534f;
+  left: 0;
+  width: 100%;
+}
+
+.button {
+  position: relative;
+  background: currentColor;
+  border: 1px solid currentColor;
+  font-size: 1.1rem;
+  color: #c70000;
+  margin: 0.5rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.button span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.button::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.button:hover {
+  color: green;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.button:active::before, .button:focus::before {
+  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+.button:focus {
+  outline: none;
+}
