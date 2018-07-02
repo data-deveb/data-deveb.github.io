@@ -162,43 +162,9 @@ title: Piece Layout - Grid System
     {% endhighlight %}
   </div>
 
-  <p></p>
-
-  <h3>"NUMBER NUMBERp" > "NUMBER" Usage</h3>
-
-  <p>
-    Bu düzeni kullanarak bir kap yazdığınız an tarayıcıya şunu dersiniz; "Benim varsayılan kap parçası düzenim ana html etiketinde belirttiğim SAYIp'dir. Bu etiketin kapsadığı tüm yavru etiketler ben aksini belirtene kadar bu parça düzeninde olacaktır. Yavru etiketlerde SAYI yazarak genişliklerimi belirteceğim." <span data-metin="dikkat">Uyarı: Eski internet tarayıcılarını önemseyerek oluşturduğunuz çalışmalarınızda bu yöntem bazı şartları aşması durumunda istenildiği gibi çalışmayabilir. Bu yüzden eski tarayıcıları önemsiyorsanız her zaman "SAYI SAYIp" tanımlaması yaparak kullanılmanızı tavsiye ederiz.</span>
-  </p>
-  <p></p>
-  <div class="örnek">
-    <h3>Preview</h3>
-    <div class="önizleme">
-      <div data-gnl="2 2p">
-        <div data-gnl="1">
-          Half of screens width.
-        </div>
-        <div data-gnl="1">
-          Half of screens width.
-        </div>
-      </div>
-    </div>
-    {% highlight html %}
-    <div data-gnl="2 2p">
-      <div data-gnl="1">
-        Half of screens width.
-      </div>
-      <div data-gnl="1">
-        Half of screens width.
-      </div>
-    </div>
-    {% endhighlight %}
-  </div>
-
-  <p></p>
-
   <h3>Grow vs Piece Layout</h3>
   <p>
-    Genleşme düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Genleşme düzeninde her genleşme birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.
+    The grow layout and the piece layout are not created with the same calculation balances. Each expansion in the layout will interact with each other. In Piece layout, stable width is created. Let's understand better by example.
   </p>
   <p></p>
   <div class="örnek">
