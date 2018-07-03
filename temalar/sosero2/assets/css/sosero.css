@@ -150,7 +150,7 @@ footer{
   position:absolute; bottom:0; z-index:999;
 }
 header, main, footer{
-  padding: 0 4%;
+  padding: 0 40px;
 }
 
 [data-menü~="sağ-kaval"]{
@@ -731,6 +731,10 @@ margin-bottom: 15px;
 
 
 /* Slider */
+.regular.slider{
+  margin:0 -20px;
+  width: calc(100% + 40px);
+}
 
 .slick-slider
 {
@@ -738,6 +742,7 @@ margin-bottom: 15px;
 
     display: flex;
     width:100%;
+    height: 100%;
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -765,6 +770,7 @@ margin-bottom: 15px;
 .regular .slick-list{
   height: calc(100% - 116px);
 }
+
 .slick-list:focus
 {
     outline: none;
@@ -794,6 +800,7 @@ margin-bottom: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: none;
 }
 .regular .slick-track{
   height:100%;
