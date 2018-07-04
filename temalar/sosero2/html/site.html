@@ -15,23 +15,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-          
-          <script src="/temalar/sosero2/assets/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
-          <script src="/temalar/sosero2/assets/js/slick.set.js" type="text/javascript" charset="utf-8"></script>
-            <script type="text/javascript">
-              $(document).on('ready', function() {
 
-                $('#content').load('/temalar/sosero2/html/urunler.html');
-
-                $('nav.dallık ul li a').click(function() {
-
-                  var page = $(this).attr('href');
-                  $('#content').load('/temalar/sosero2/html/'+ page);
-                  return false;
-                });
-              });
-            </script>
   </head>
 <body data-gnl="tamekran">
 
@@ -95,6 +79,30 @@
     </div>
 
   </div>
-  
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+          
+          <script src="/temalar/sosero2/assets/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+          <script src="/temalar/sosero2/assets/js/slick.set.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+              $(document).on('ready', function() {
+
+                $('#content').load('/temalar/sosero2/html/urunler.html', function(){
+                  $('.regular').slick();
+                  $('.regular2').slick();
+                  $('.news-slider').slick();
+                 });
+
+                $('nav.dallık ul li a').click(function() {
+
+                  var page = $(this).attr('href');
+                  $('#content').load('/temalar/sosero2/html/'+ page, function(){
+                     $('.regular').slick();
+                     $('.regular2').slick();
+                     $('.news-slider').slick();
+                  }); 
+                  return false;
+                });
+              });
+            </script>
 </body>
 </html>

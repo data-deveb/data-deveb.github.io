@@ -1,4 +1,4 @@
-$(document).on('ready', function slicky() {
+$(document).on('ready', function(){
   $('.regular').slick({
     dots: true,
     infinite: false,
