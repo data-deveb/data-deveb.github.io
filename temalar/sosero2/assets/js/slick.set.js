@@ -255,16 +255,22 @@ $('.regular').slick({
 $('nav.dallık ul li a').click(function() {
   // animate content
   $('#content').addClass('animate_content');
-  $('#content').fadeOut(100).delay(1000).fadeIn();
+  $('#content div').fadeOut(100).delay(2800).fadeIn();
 
   setTimeout(function() {
     $('#content').removeClass('animate_content');
-  }, 1200);
+  }, 3200);
 
   //remove fadeIn class after 1500ms
   setTimeout(function() {
     $('#content').removeClass('fadeIn');
   }, 1500);
 
+});
+
+$('nav.dallık ul li a').click(function() {
+  setTimeout(function() {
+    $('#content div div').addClass('fadeIn');
+  }, 1500);
 });
 
