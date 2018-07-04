@@ -82,7 +82,7 @@ $(document).on('ready', function slicky(){
 $(document).on('ready', function() {
 
                 $('#content').load('/temalar/sosero2/html/urunler.html', function(){
-                  
+                 
                   $('.regular').slick({
     dots: true,
     infinite: false,
@@ -251,3 +251,20 @@ $('.regular').slick({
                   return false;
                 });
               });
+
+$('nav.dallık ul li a').click(function() {
+  // animate content
+  $('#content').addClass('animate_content');
+  $('#content').fadeOut(100).delay(1000).fadeIn();
+
+  setTimeout(function() {
+    $('#content').removeClass('animate_content');
+  }, 1200);
+
+  //remove fadeIn class after 1500ms
+  setTimeout(function() {
+    $('#content').removeClass('fadeIn');
+  }, 1500);
+
+});
+
