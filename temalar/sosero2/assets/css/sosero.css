@@ -121,7 +121,7 @@
   -moz-background-size: auto, auto, auto, auto;
   -o-background-size: auto, auto, auto, auto;
   background-size: auto, auto, auto, auto;
-  background-color: rgba(55,138,0,.8);
+  background-color: rgba(55,138,0,1);
 }
 .gelgit-etkin{
   overflow: hidden;

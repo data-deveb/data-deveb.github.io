@@ -1,0 +1,33 @@
+---
+layout: sosero2/varsayilan
+title: SOSERO ÜRÜN PAKETLERİ
+---
+<div class="paketler" data-gnl="sığ">
+  <header data-gnl="_t">
+    <a class="logo" href="#">
+      <img src="/temalar/sosero2/assets/img/sosero.png" alt="SOSERO">
+    </a>
+    <h1 class="product-name" data-ort="1 3p _t küçükleri-gizle">ÜRÜNLER</h1>
+    {% include sosero2/hamburger-capraz.html %}
+  </header>
+  <main data-gnl="sığ">
+   <section class="regular slider paket">
+    {% for num in (1..20) %}
+    <a href="/temalar/sosero2/urun.html" class="product-card beyaz">
+      <div class="product-img">
+        <img src="/temalar/sosero2/assets/img/ege_zeytin_yagli.png" alt="">
+      </div>
+      <div class="product-info" data-gnl="1 1p">
+        <div data-gnl="1g">
+          <h2>AKDENİZ SALATASI</h2>
+          <p>ZEYTİN EZMESİ</p>
+        </div>
+        <div class="open-it" data-gnl="0 göbekte-ol">
+          +
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+    </section>
+  </main>
+</div>

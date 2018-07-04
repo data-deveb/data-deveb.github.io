@@ -1,0 +1,26 @@
+---
+layout: sosero2/varsayilan
+title: SOSERO Satış Noktaları
+---
+<div data-kçk="o sütun kaymadan">
+  <div id="map" data-gnl="sığ sütun"></div>
+  <script>
+
+        function initMap() {
+          var myLatLng = {lat: -25.363, lng: 131.044};
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: myLatLng
+          });
+
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+          });
+        }
+      </script>
+  <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIJ9XX2ZvRKCJcFRrl-lRanEtFUow4piM&amp;callback=initMap">
+    </script>
+</div>
