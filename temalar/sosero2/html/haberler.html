@@ -130,3 +130,32 @@
       </article>
   </div>
 </main>
+<section>
+  <script type="text/javascript">
+    window.sosero = function () {
+      // HABERLER slick fix
+      if ($('div.news-slider > article').length % 2 != 0) {
+        $('div.news-slider').append('<article></article>');
+        $('div.news-slider > article').eq(-2).find('.kesit').remove();
+      }
+
+      $('.news-slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+          responsive: [
+          {
+          breakpoint: 992,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          }]
+      });    
+    }
+  </script>
+</section>
