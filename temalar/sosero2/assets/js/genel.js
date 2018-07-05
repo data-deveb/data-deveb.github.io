@@ -1,7 +1,6 @@
 function sayfaYukle(adres, bittiktenSonra) {
-
-    icerikGoster();
-
+    
+    icerikGizle();
 
     sosero = null;
     $('#content').load(adres, function() {
@@ -11,8 +10,8 @@ function sayfaYukle(adres, bittiktenSonra) {
 
         // ekstradan bişeyler lazıms çalıştır...
         if (typeof bittiktenSonra === 'function') bittiktenSonra();
-
-        icerikGizle();
+        
+        icerikGoster();
 
     });
 
