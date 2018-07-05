@@ -6,14 +6,15 @@
     {% assign kurulum = 'Kurulum' %}
     {% assign ekran_orgusu = 'Ekran Örgüsü' %}
     {% assign kap_orgusu = 'Kap Örgüsü' %}
-    {% assign parca_duzeni = 'Parça Düzeni' %}
-    {% assign dizem_duzeni = 'Dizem Düzeni' %}
-    {% assign genlesme_duzeni = 'Genleşme Düzeni' %}
-    {% assign aralik_duzeni = 'Aralık Düzeni' %}
-    {% assign bicim_duzeni = 'Biçim Düzeni' %}
-    {% assign konumlama = 'Konumlama' %}
-    {% assign siralama = 'Sıralama' %}
-    {% assign olcekler = 'Ölçekler' %}
+      {% assign parca_duzeni = 'Parça Düzeni' %}
+      {% assign dizem_duzeni = 'Dizem Düzeni' %}
+      {% assign genlesme_duzeni = 'Genleşme Düzeni' %}
+      {% assign aralik_duzeni = 'Aralık Düzeni' %}
+      {% assign bicim_duzeni = 'Biçim Düzeni' %}
+      {% assign konumlama = 'Konumlama' %}
+      {% assign siralama = 'Sıralama' %}
+      {% assign olcekler = 'Ölçekler' %}
+    {% assign surumdene = 'Sürümü Dene' %}
 
 {% endif %}
 {% if page.url contains '/1.0/en/' %}
@@ -23,14 +24,15 @@
     {% assign kurulum = 'Installation' %}
     {% assign ekran_orgusu = 'Screen System' %}
     {% assign kap_orgusu = 'Grid System' %}
-    {% assign parca_duzeni = 'Piece Layout' %}
-    {% assign dizem_duzeni = 'Rhythm Layout' %}
-    {% assign genlesme_duzeni = 'Grow Layout' %}
-    {% assign aralik_duzeni = 'Space Layout' %}
-    {% assign bicim_duzeni = 'Type Layout' %}
-    {% assign konumlama = 'Positioning' %}
-    {% assign siralama = 'Order' %}
-    {% assign olcekler = 'Scales' %}
+      {% assign parca_duzeni = 'Piece Layout' %}
+      {% assign dizem_duzeni = 'Rhythm Layout' %}
+      {% assign genlesme_duzeni = 'Grow Layout' %}
+      {% assign aralik_duzeni = 'Space Layout' %}
+      {% assign bicim_duzeni = 'Type Layout' %}
+      {% assign konumlama = 'Positioning' %}
+      {% assign siralama = 'Order' %}
+      {% assign olcekler = 'Scales' %}
+      {% assign surumdene = 'Try It Version' %}
 
 {% endif %}
 
@@ -95,6 +97,9 @@
         </li>
         -->
       </ul>
+    </li>
+    <li>
+      <a href="https://jsfiddle.net/deveb/1mwjkctx/">{{ surumudene }}</a>
     </li>
     <!--
     <li class="{% if page.url contains '/sekme-orgusu' %}etkin{% endif %}">
