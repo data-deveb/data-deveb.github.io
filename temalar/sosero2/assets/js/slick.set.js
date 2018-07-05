@@ -164,10 +164,10 @@ $(document).on('ready', function() {
                  });
 
                 $('nav.dallık ul li a').click(function() {
-
+                  window.benimFonk = function() {}
                   var page = $(this).attr('href');
                   $('#content').load('/temalar/sosero2/html/'+ page, function(){
-                   window.benimFonk(); 
+                  window.benimFonk(); 
 
 $('.regular').slick({
     dots: true,
