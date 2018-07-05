@@ -40,6 +40,9 @@ function icerikGizle() {
     setTimeout(function() {
         $('#content').removeClass('fadeIn');
     }, 1500);
+    setTimeout(function() {
+      $('#content div div').addClass('fadeIn');
+    }, 1500);
 
 }
 
