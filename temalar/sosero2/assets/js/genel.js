@@ -1,11 +1,10 @@
-
 function sayfaYukle(adres, bittiktenSonra) {
 
     loadingGizle();
 
 
     sosero = null;
-    $.load(adres, function() {
+    $('#content').load(adres, function() {
 
         // ajax sonucunda sosero bir func ise çalıştır
         if (typeof sosero === 'function') sosero();
