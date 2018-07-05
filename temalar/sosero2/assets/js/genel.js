@@ -1,6 +1,6 @@
 function sayfaYukle(adres, bittiktenSonra) {
 
-    loadingGizle();
+    icerikGoster();
 
 
     sosero = null;
@@ -11,9 +11,11 @@ function sayfaYukle(adres, bittiktenSonra) {
 
         // ekstradan bişeyler lazıms çalıştır...
         if (typeof bittiktenSonra === 'function') bittiktenSonra();
+
+        icerikGizle();
+
     });
 
-    loadingGizle();
 }
 
 
@@ -21,7 +23,7 @@ function sayfaYukle(adres, bittiktenSonra) {
  * LOADING GOSTER
  *
  */
-function loadingGoster() {
+function icerikGoster() {
     $('#content').addClass('animate_content');
     $('#content div').fadeOut(100).delay(2800).fadeIn();
 }
@@ -30,10 +32,16 @@ function loadingGoster() {
  * LOADING KAPAT
  *
  */
-function loadingGizle() {
+function icerikGizle() {
+
+    setTimeout(function() {
+      $('#content').removeClass('animate_content');
+    }, 3200);
+
     setTimeout(function() {
         $('#content').removeClass('fadeIn');
     }, 1500);
+
 }
 
 
