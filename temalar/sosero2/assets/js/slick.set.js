@@ -269,7 +269,7 @@ $('nav.dallık ul li a').click(function(e) {
 
 });
 
-$('nav.dallık ul li a').click(function() {
+$('nav.dallık ul li a').click(function(e) {
   e.preventDefault();
   setTimeout(function() {
     $('#content div div').addClass('fadeIn');
