@@ -252,7 +252,8 @@ $('.regular').slick({
                 });
               });
 
-$('nav.dallık ul li a').click(function() {
+$('nav.dallık ul li a').click(function(e) {
+  e.preventDefault();
   // animate content
   $('#content').addClass('animate_content');
   $('#content div').fadeOut(100).delay(2800).fadeIn();
@@ -269,6 +270,7 @@ $('nav.dallık ul li a').click(function() {
 });
 
 $('nav.dallık ul li a').click(function() {
+  e.preventDefault();
   setTimeout(function() {
     $('#content div div').addClass('fadeIn');
   }, 1500);
