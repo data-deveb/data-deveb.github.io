@@ -167,7 +167,7 @@ $(document).on('ready', function() {
 
                   var page = $(this).attr('href');
                   $('#content').load('/temalar/sosero2/html/'+ page, function(){
-                    
+                   window.benimFonk(); 
 
 $('.regular').slick({
     dots: true,
