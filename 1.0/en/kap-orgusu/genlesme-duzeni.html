@@ -2,14 +2,16 @@
 layout: s1n0/default
 title: Grow Layout - Grid System
 ---
+  <p class="girlik">
+    You can create grid fields simply by specifying the expansion. Grow layout is based on "CSS FLEX" feature. It is enough to write "NUMBERg" class to display attributes (data-gnl, data-md ...) for Grow layout use. NUMBER can be a value between 1 and 24. For example, you want to divide the page into two and make the left side twice as wide as the right side. For this you can define the attributes data-gnl = "2g" data-gnl = "1g".
+  </p>
+  <h3>How to Use Grow Layout</h3>
+  <p>
+    Let's create a layout with three columns in all of the screens. As an example, let's make the layout distribution 1 4 2.
+  </p>
 
-  <p>Basit şekilde genleşmeler belirterek kap alanları oluşturabilirsiniz. Genleşme düzeni "CSS FLEX" özelliği üzerine geliştirilmiştir. genleşme örgüsünün kullanımı için ekran özniteliklerine (data-gnl, data-mnk ...) "<span data-metin="ana">SAYIg</span>" sınıfını yazmanız yeterlidir. SAYI 1 ile 24 arasında değer alabilir. Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş olmasını istiyorsunuz. Bunun için data-gnl="2g" data-gnl="1g" öznitelikleri tanımlaybilirsiniz.</p>
-
-  <h3>Genleşme Düzeni Nasıl Kullanılır?</h3>
-  <p>Ekranların hepsinde üç sütun görünümünde bir düzen oluşturalım. Örnek olarak düzen dağılımını 1 4 2 şeklinde yapalım.</p>
-  <p></p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
       <div data-gnl="1g">
         1g
@@ -33,14 +35,17 @@ title: Grow Layout - Grid System
       2g
     </div>
   {% endhighlight %}
-  <p></p>
 
-  <h3>Genleşme Düzenini Neden Kullanırız?</h3>
+  <h3>Why Use Grow Layout?</h3>
 
-  <p>Öncelikle <a href="/1.0/tr/kap-orgusu/parca-duzeni.html">parça düzenini</a> hatırlayalım. Parça düzeni yüzdesel olarak kararlı genişlikler tanımlamak için kullanılıyordu. Bu durum nedeniyle genişliğin içine dahil edilen parça genişlikler genişliğin sınırına dayandığında alt taraftan parçalar yer almaya devam ederler. Bu durumu göz önünde bulundurarak genleşme düzenine bakalım. Genleşme düzeni siz ne kadar genleşme kabı tanımlasanız tanımlayın alt satırdan devam etme söz konusu olmayacaktır. Yani her eklediğiniz bir genleşme kabı diğer kaplarla birlikte yeniden hesaplanıp genleşmelerin genişlikleri değişerek aynı satıra sıkışacaktır. Eğer alt satırdan devam eden genleşme kapları oluşturmak istiyorsanız burada 100% genişlikte boş bir parça kabı oluşturmanız gerekir. Böylelikle yeni genleşme kaplarınız alt satırdan devam edebilecektir.  </p>
-  <p>Bunların yanında parça düzeni ile genleşme düzenini iç içe kullanabilirsiniz. Ve yine özel genişliklerinizle birlikte dahi kullanabilirsiniz. Genleşme düzeni bulunduğu yapıya göre kendine bir yer edinecektir. Aşağıdaki karma kullanım örneğini inceleyin.</p>
+  <p>
+  Let's first remember piece layout. The piece layout was used to define the centrally defined widths. Because of this situation, the widths of the pieces included in the width continue to line up when they fill the width. Let's take a look at grow layout. Grow layout How much you add will not add to the bottom line. So every time you add it, it will be recalculated and grow widths will change and the same row will be recovered. If you want to continue from the bottom line, you need to create an empty item 100% wide. 
+</p>
+<p>
+  In addition to these, you can use piece layout and grow layout together. Including widths made with other methods. Grow layout will be a place for itself according to the structure. Examine the mixed use example below.
+</p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
     <div>
       <div data-gnl="1g">
@@ -52,7 +57,7 @@ title: Grow Layout - Grid System
       <div data-gnl="2g">
         2g
       </div>
-      <div><!--dürmek amacıyla oluşturulan 100% genişlik--></div>
+      <div><!--100% empty item--></div>
       <div data-gnl="1g">
         1g
       </div>
@@ -71,7 +76,7 @@ title: Grow Layout - Grid System
       <div data-gnl="2g">
         2g
       </div>
-      <div><!--dürmek amacıyla oluşturulan 100% genişlik--></div>
+      <div><!--100% empty item--></div>
       <div data-gnl="1g">
         1g
       </div>
@@ -98,7 +103,7 @@ title: Grow Layout - Grid System
       <div data-gnl="2g">
         2g
       </div>
-      <div><!--dürmek amacıyla oluşturulan 100% genişlik--></div>
+      <div><!--100% empty item--></div>
       <div data-gnl="1g">
         1g
       </div>
@@ -117,7 +122,7 @@ title: Grow Layout - Grid System
       <div data-gnl="2g">
         2g
       </div>
-      <div><!--dürmek amacıyla oluşturulan 100% genişlik--></div>
+      <div><!--100% empty item--></div>
       <div data-gnl="1g">
         1g
       </div>
@@ -132,14 +137,12 @@ title: Grow Layout - Grid System
       </div>
     </div>
   {% endhighlight %}
-  <p></p>
-
-
-  <h3>Genleşme Ve Parça Düzeni Kıyaslaması</h3>
-  <p>Genleşme düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Genleşme düzeninde her genleşme birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.</p>
-  <p></p>
+<h3>Grow vs Piece</h3>
+<p>
+  Grow layout and piece layout are not created with the same account balances. In grow layout, each width is interactive. In Piece layout, stable width is created. Let's understand better by example.
+</p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
     <div>
       <div data-gnl="1g">
@@ -189,4 +192,3 @@ title: Grow Layout - Grid System
       </div>
     </div>
   {% endhighlight %}
-  <p></p>
