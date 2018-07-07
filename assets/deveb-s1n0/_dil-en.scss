@@ -12,9 +12,8 @@ $kcm: xl;
 $dev: hg;
 
 /* Kap Örgüsü */
-
-$soldan: soldan;
-$sağdan: sağdan;
+$soldan: left;
+$sağdan: right;
 
 /* Konumlama - Kap Örgüsü */
 $sütun: col;
@@ -55,17 +54,17 @@ $metin-sağda: metin-sağda;
 $metin-ortada: metin-ortada;
 $metin-solda: metin-solda;
 
-$sol: l;
-$sağ: s;
+$sol: f;
+$sağ: h;
 $üst: t;
-$alt: a;
-$solüst: lt;
-$üstsağ: ts;
-$altsağ: as;
-$solalt: la;
-$orta: o;
-$üstalt: ta;
-$solsağ: ls;
+$alt: b;
+$solüst: ft;
+$üstsağ: th;
+$altsağ: bh;
+$solalt: fb;
+$orta: g;
+$üstalt: tb;
+$solsağ: fh;
 
 /* Durumlama - Kap Örgüsü */
 $gizle: hide;
@@ -77,12 +76,12 @@ $büyükleriyle-gizle: hide-with-bigger;
 $diğerlerini-gizle: hide-other;
 
 /* */
-$aralık: aralık;
+$aralık: offset;
 $araları: araları;
 $oluk-çevre: oluk-çevre;
 $oluk: oluk;
 $oluk-yok: oluk-yok;
-$kap: kap;
+$kap: container;
 $bunu-kap: bunu-kap;
 $küçükleri-kap: küçükleri-kap;
 $küçükleriyle-kap: küçükleriyle-kap;
