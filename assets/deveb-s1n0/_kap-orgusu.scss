@@ -41,16 +41,16 @@
       [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
       [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
     }
-    [data-#{$ekran}*="soldan-"]{
+    [data-#{$ekran}*="#{$soldan}-"]{
       margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
     }
-    [data-#{$ekran}*="sağdan-"]{
+    [data-#{$ekran}*="#{$sağdan}-"]{
       margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
     }
-    [data-#{$ekran}*="soldan-"][data-#{$ekran}*="p-aralık"]{
+    [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
       margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
     }
-    [data-#{$ekran}*="sağdan-"][data-#{$ekran}*="p-aralık"]{
+    [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
       margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
     }
 
