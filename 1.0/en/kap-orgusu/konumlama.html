@@ -306,90 +306,90 @@ title: Positioning - Grid System
   {% endhighlight %}
   <p></p>
 -->
-  <h3>Konumlama: <span data-metin="dikkat">uzat | uzun-ol</span></h3>
-  <p>"uzat" sınıfı bir HTML etiketindeki içeriği aşağıdan yukarıya uzatarak gösterir.</p>
-  <p>"uzun-ol" sınıfı bir tanımlandığı etiketi içinde bulunduğu etiketin durumuna göre uzatır.</p>
+  <h3>Positioning: <span data-metin="dikkat">stretch | stretch-it</span></h3>
+  <p>"stretch" value extends the item content along its length.</p>
+  <p>"stretch-it" value extends according to the state of the item in the item.</p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
-      <div data-gnl="1 2p uzat" style="height:500px;">
+      <div data-gnl="1 2p stretch" style="height:500px;">
         <div data-gnl="0">
-          uzat
+          stretch
         </div>
         <div data-gnl="0">
-          uzat
+          stretch
         </div>
         <div data-gnl="0">
-          uzat
+          stretch
         </div>
       </div>
       <div data-gnl="1 2p" style="height:500px;">
-        <div data-gnl="0 üstte-ol">
-          üstte-ol
+        <div data-gnl="0 lt">
+          lt: left-top
         </div>
         <div data-gnl="0">
-          varsayılan (uzat)
+          default (stretch)
         </div>
-        <div data-gnl="0 üstte-ol">
-          üstte-ol
+        <div data-gnl="0 lt">
+          lt: left-top
         </div>
       </div>
     </div>
   </div>
   {% highlight html %}
-    <div data-gnl="1 2p uzat" style="height:500px;">
+    <div data-gnl="1 2p stretch" style="height:500px;">
       <div data-gnl="0">
-        uzat
+        stretch
       </div>
       <div data-gnl="0">
-        uzat
+        stretch
       </div>
       <div data-gnl="0">
-        uzat
+        stretch
       </div>
     </div>
     <div data-gnl="1 2p" style="height:500px;">
-      <div data-gnl="0 üstte-ol">
-        üstte-ol
+      <div data-gnl="0 lt">
+        lt: left-top
       </div>
       <div data-gnl="0">
-        varsayılan (uzat)
+        default (stretch)
       </div>
-      <div data-gnl="0 üstte-ol">
-        üstte-ol
+      <div data-gnl="0 lt">
+        lt: left-top
       </div>
     </div>
   {% endhighlight %}
   <p></p>
 
-  <h3>Konumlama: <span data-metin="dikkat">satırda | satırda-ol</span></h3>
-  <p>"satırda" sınıfı bir HTML etiketindeki içeriği bir çizgiye dizerek gösterir.</p>
-  <p>"satırda-ol" sınıfı bir buldunduğu etiketi bir çizgi konumuna dizerek gösterir.</p>
+  <h3>Positioning: <span data-metin="dikkat">baseline | baseline-it</span></h3>
+  <p>"baseline" value indicates an item content with the main line.</p>
+  <p>"baseline-it" value indicates an item in the baseline position.</p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
       <div>
         <div data-gnl="0" style="font-size:2em">
-          Varsayılan örnek bir yazı.
+          Default example text.
         </div>
         <div data-gnl="0">
-          Varsayılan örnek bir yazı.
+          Default example text.
         </div>
       </div>
-      <div data-gnl="satırda">
+      <div data-gnl="baseline">
         <div data-gnl="0" style="font-size:2em">
-          Örnek bir yazı "satırda".
+          Example text "baseline".
         </div>
         <div data-gnl="0">
-          Örnek bir yazı "satırda".
+          Example text "baseline".
         </div>
       </div>
       <div>
-        <div data-gnl="0 satırda-ol" style="font-size:2em">
-          Örnek bir yazı "satırda-ol".
+        <div data-gnl="0 baseline-it" style="font-size:2em">
+          Example text "baseline-it".
         </div>
-        <div data-gnl="0 satırda-ol">
-          Örnek bir yazı "satırda-ol".
+        <div data-gnl="0 baseline-it">
+          Example text "baseline-it".
         </div>
       </div>
     </div>
@@ -397,35 +397,35 @@ title: Positioning - Grid System
   {% highlight html %}
     <div>
       <div data-gnl="0" style="font-size:2em">
-        Varsayılan örnek bir yazı.
+        Default example text.
       </div>
       <div data-gnl="0">
-        Varsayılan örnek bir yazı.
+        Default example text.
       </div>
     </div>
-    <div data-gnl="satırda">
+    <div data-gnl="baseline">
       <div data-gnl="0" style="font-size:2em">
-        Örnek bir yazı "satırda".
+        Example text "baseline".
       </div>
       <div data-gnl="0">
-        Örnek bir yazı "satırda".
+        Example text "baseline".
       </div>
     </div>
     <div>
-      <div data-gnl="0 satırda-ol" style="font-size:2em">
-        Örnek bir yazı "satırda-ol".
+      <div data-gnl="0 baseline-it" style="font-size:2em">
+        Example text "baseline-it".
       </div>
-      <div data-gnl="0 satırda-ol">
-        Örnek bir yazı "satırda-ol".
+      <div data-gnl="0 baseline-it">
+        Example text "baseline-it".
       </div>
     </div>
   {% endhighlight %}
   <p></p>
 
-  <h3>Konumlama: <span data-metin="dikkat">wrap-reverse | row-reverse | col-reverse</span></h3>
-  <p>"wrap-reverse" değeri bir item içeriğini ters yönde wrap gösterir.</p>
-  <p>"row-reverse" değeri bir item içeriğinin satırlarını ters yönden gösterir.</p>
-  <p>"col-reverse" değeri bir item içeriğinin sütunlarını ters yönden gösterir.</p>
+  <h3>Positioning: <span data-metin="dikkat">wrap-reverse | row-reverse | col-reverse</span></h3>
+  <p>"wrap-reverse" value indicates the item content in the reverse direction.</p>
+  <p>"row-reverse" value indicates the row of an item in the reverse direction.</p>
+  <p>"col-reverse" value indicates the column of an item content in the reverse direction.</p>
 
   <div class="örnek">
     <h3>Preview</h3>
