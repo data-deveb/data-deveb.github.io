@@ -29,7 +29,7 @@
   }
   @mixin sıralama-düzeni($ekran) {
     @for $i from 1 through 24{
-      [data-#{$ekran}~="#{$i}nc"]{
+      [data-#{$ekran}~="#{$i}#{$nc}"]{
         order: #{$i};
       }
     }
