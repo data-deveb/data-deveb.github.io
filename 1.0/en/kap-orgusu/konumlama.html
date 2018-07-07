@@ -4,140 +4,140 @@ title: Positioning - Grid System
 ---
   
   <p class="girlik">
-    Artık konumlama yapmak için daha fazla seçeneğiniz var. Sol, orta, sağ, solüst, üst, üstsağ, solalt, alt, altsağ, anaçizgi gibi konumlamalar yapabilirsiniz. Ayrıca aralık tanımlayarak bir yanı diğer yandan uzaklaştırabilirsiniz.
+    Now you have more options to position. You can do things like "Left, origin, right, left top, top, top right, left bottom, bottom, bottom right and baseline". You can also define offsets and move away from one side.
   </p>
 
-  <h3>Konumlama: l, lt, t, ts, s, as, a, la, o</h3>
+  <h3>Positioning: f, ft, t, th, h, bh, b, lb, g</h3>
   <p>
-    İçerikleri herhangi bir yana yerleştirmek için l, lt, t, ts, s, as, a, la, o değiştirgeleri kullanılır. Değiştirgelerin anlamları aşağıdaki gibidir. Soldan sağa ve üstten alta doğru yazma kuralına göre yanlara en yakın harfler hangi yan olduğunu tanımlamaktadır.
+    The parameters f, ft, t, th, h, bh, b, fb, g are used to position the contents on either side. The meanings of the parameters are described more clearly below. The f, t, g, b, h on the keyboard are determined by the physical location of the letters.
   </p>
 
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
       <div style="height:300px;">
-        <div data-gnl="1 3p lt">lt: solüst</div>
-        <div data-gnl="1 3p t">t: üst</div>
-        <div data-gnl="1 3p ts">ts: üstsağ</div>
-        <div data-gnl="1 3p l">l: sol</div>
-        <div data-gnl="1 3p o">o: orta</div>
-        <div data-gnl="1 3p s">s: sağ</div>
-        <div data-gnl="1 3p la">la: solalt</div>
-        <div data-gnl="1 3p a">a: alt</div>
-        <div data-gnl="1 3p as">as: altsağ</div>
+        <div data-gnl="1 3p ft">ft: leFt Top</div>
+        <div data-gnl="1 3p t">t: Top</div>
+        <div data-gnl="1 3p th">th: Top rigHt</div>
+        <div data-gnl="1 3p f">f: leFt</div>
+        <div data-gnl="1 3p g">g: oriGin</div>
+        <div data-gnl="1 3p h">h: rigHt</div>
+        <div data-gnl="1 3p fb">fb: leFt Bottom</div>
+        <div data-gnl="1 3p b">b: Bottom</div>
+        <div data-gnl="1 3p bh">bh: Bottom rigHt</div>
       </div>
     </div>
   </div>
   {% highlight html %}
     <div style="height:300px;">
-      <div data-gnl="1 3p lt">lt: solüst</div>
-      <div data-gnl="1 3p t">t: üst</div>
-      <div data-gnl="1 3p ts">ts: üstsağ</div>
-      <div data-gnl="1 3p l">l: sol</div>
-      <div data-gnl="1 3p o">o: orta</div>
-      <div data-gnl="1 3p s">s: sağ</div>
-      <div data-gnl="1 3p la">la: solalt</div>
-      <div data-gnl="1 3p a">a: alt</div>
-      <div data-gnl="1 3p as">as: altsağ</div>
+      <div data-gnl="1 3p ft">ft: leFt Top</div>
+      <div data-gnl="1 3p t">t: Top</div>
+      <div data-gnl="1 3p th">th: Top rigHt</div>
+      <div data-gnl="1 3p f">f: leFt</div>
+      <div data-gnl="1 3p g">g: oriGin</div>
+      <div data-gnl="1 3p h">h: rigHt</div>
+      <div data-gnl="1 3p fb">fb: leFt Bottom</div>
+      <div data-gnl="1 3p b">b: Bottom</div>
+      <div data-gnl="1 3p bh">bh: Bottom rigHt</div>
     </div>
   {% endhighlight %}
 
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
-      <div data-gnl="l">
-        <div data-gnl="1 3p">l: sol</div>
+      <div data-gnl="f">
+        <div data-gnl="1 3p">f: leFt</div>
       </div>
-      <div data-gnl="o">
-        <div data-gnl="1 3p">o: orta</div>
+      <div data-gnl="g">
+        <div data-gnl="1 3p">g: oriGin</div>
       </div>
-      <div data-gnl="s">
-        <div data-gnl="1 3p">s: sağ</div>
+      <div data-gnl="h">
+        <div data-gnl="1 3p">h: rigHt</div>
       </div>
     </div>
   </div>
   {% highlight html %}
-    <div data-gnl="l">
-      <div data-gnl="1 3p">l: sol</div>
+    <div data-gnl="f">
+      <div data-gnl="1 3p">f: leFt</div>
     </div>
-    <div data-gnl="o">
-      <div data-gnl="1 3p">o: orta</div>
+    <div data-gnl="g">
+      <div data-gnl="1 3p">g: oriGin</div>
     </div>
-    <div data-gnl="s">
-      <div data-gnl="1 3p">s: sağ</div>
+    <div data-gnl="h">
+      <div data-gnl="1 3p">h: rigHt</div>
     </div>
   {% endhighlight %}
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
       <div data-gnl="1 3p t" style="height:300px;">
-        <div>t: üst</div>
+        <div>t: Top</div>
       </div>
-      <div data-gnl="1 3p o" style="height:300px;">
-        <div>o: orta</div>
+      <div data-gnl="1 3p g" style="height:300px;">
+        <div>g: oriGin</div>
       </div>
-      <div data-gnl="1 3p a" style="height:300px;">
-        <div>a: alt</div>
+      <div data-gnl="1 3p b" style="height:300px;">
+        <div>b: Bottom</div>
       </div>
     </div>
   </div>
   {% highlight html %}
     <div data-gnl="1 3p t" style="height:300px;">
-      <div>t: üst</div>
+      <div>t: Top</div>
     </div>
-    <div data-gnl="1 3p o" style="height:300px;">
-      <div>o: orta</div>
+    <div data-gnl="1 3p g" style="height:300px;">
+      <div>g: oriGin</div>
     </div>
-    <div data-gnl="1 3p a" style="height:300px;">
-      <div>a: alt</div>
+    <div data-gnl="1 3p b" style="height:300px;">
+      <div>b: Bottom</div>
     </div>
   {% endhighlight %}
 
-  <h3>Konumlama: _l, _lt, _t, _ts, _s, _as, _a, _la, _o</h3>
+  <h3>Positioning: _f, _ft, _t, _th, _h, _bh, _b, _fb, _g</h3>
   <p>
-    Bir ögenin kendisini herhangi bir yana yerleştirmek için _l, _lt, _t, _ts, _s, _as, _a, _la, _o değiştirgeleri kullanılır. Değiştirgelerin anlamları aşağıdaki gibidir. Soldan sağa ve üstten alta doğru yazma kuralına göre yanlara en yakın harfler hangi yan olduğunu tanımlamaktadır.
+    _f, _ft, _t, _th, _h, _bh, _b, _fb, _g parameters are used to locate an item itself. The meanings of the parameters are described more clearly below. The f, t, g, b, h on the keyboard are determined by the physical location of the letters.
   </p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
       <div style="height:150px;">
-        <div data-gnl="3 10p _t">_t: kendisi üst</div>
-        <div data-gnl="3 10p _o">_o: kendisi orta</div>
-        <div data-gnl="3 10p _a">_a: kendisi alt</div>
+        <div data-gnl="3 10p _f">_f: Top itself</div>
+        <div data-gnl="3 10p _g">_g: oriGin itself</div>
+        <div data-gnl="3 10p _b">_b: Bottom itself</div>
       </div>
       <div style="height:150px;">
-        <div data-gnl="3 10p _l">_l: kendisi sol</div>
-        <div data-gnl="3 10p _o">_o: kendisi orta</div>
-        <div data-gnl="3 10p _s">_s: kendisi sağ</div>
+        <div data-gnl="3 10p _l">_f: leFt itself</div>
+        <div data-gnl="3 10p _o">_g: oriGin itself</div>
+        <div data-gnl="3 10p _s">_h: rigHt itself</div>
       </div>
       <div style="height:150px;">
-        <div data-gnl="3 10p _lt">_lt: kendisi solüst</div>
-        <div data-gnl="3 10p _as">_as: kendisi altsağ</div>
+        <div data-gnl="3 10p _lt">_ft: leFt Top itself</div>
+        <div data-gnl="3 10p _as">_bh: Bottom rigHt itself</div>
       </div>
       <div style="height:150px;">
-        <div data-gnl="3 10p _la">_la: kendisi solalt</div>
-        <div data-gnl="3 10p _ts">_ts: kendisi üstsağ</div>
+        <div data-gnl="3 10p _la">_fb: leFt Bottom itself</div>
+        <div data-gnl="3 10p _ts">_th: Top rigHt itself</div>
       </div>
     </div>
   </div>
   {% highlight html %}
     <div style="height:150px;">
-      <div data-gnl="3 10p _t">_t: kendisi üst</div>
-      <div data-gnl="3 10p _o">_o: kendisi orta</div>
-      <div data-gnl="3 10p _a">_a: kendisi alt</div>
+      <div data-gnl="3 10p _f">_f: Top itself</div>
+      <div data-gnl="3 10p _g">_g: oriGin itself</div>
+      <div data-gnl="3 10p _b">_b: Bottom itself</div>
     </div>
     <div style="height:150px;">
-      <div data-gnl="3 10p _l">_l: kendisi sol</div>
-      <div data-gnl="3 10p _o">_o: kendisi orta</div>
-      <div data-gnl="3 10p _s">_s: kendisi sağ</div>
+      <div data-gnl="3 10p _l">_f: leFt itself</div>
+      <div data-gnl="3 10p _o">_g: oriGin itself</div>
+      <div data-gnl="3 10p _s">_h: rigHt itself</div>
     </div>
     <div style="height:150px;">
-      <div data-gnl="3 10p _lt">_lt: kendisi solüst</div>
-      <div data-gnl="3 10p _as">_as: kendisi altsağ</div>
+      <div data-gnl="3 10p _lt">_ft: leFt Top itself</div>
+      <div data-gnl="3 10p _as">_bh: Bottom rigHt itself</div>
     </div>
     <div style="height:150px;">
-      <div data-gnl="3 10p _la">_la: kendisi solalt</div>
-      <div data-gnl="3 10p _ts">_ts: kendisi üstsağ</div>
+      <div data-gnl="3 10p _la">_fb: leFt Bottom itself</div>
+      <div data-gnl="3 10p _ts">_th: Top rigHt itself</div>
     </div>
   {% endhighlight %}
 
