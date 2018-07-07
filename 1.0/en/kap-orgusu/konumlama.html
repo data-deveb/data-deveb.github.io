@@ -422,118 +422,117 @@ title: Positioning - Grid System
   {% endhighlight %}
   <p></p>
 
-  <h3>Konumlama: <span data-metin="dikkat">ters-dürme | ters-satır | ters-sütun</span></h3>
-  <p>"ters-dürme" sınıfı bir HTML etiketindeki içeriği ters yönde dürerek gösterir.</p>
-  <p>"ters-satır" sınıfı bir HTML etiketindeki satırları aynalı olarak gösterir.</p>
-  <p>"ters-sütun" sınıfı bir HTML etiketindeki sütunları aynalı olarak gösterir.</p>
-  <p></p>
+  <h3>Konumlama: <span data-metin="dikkat">wrap-reverse | row-reverse | col-reverse</span></h3>
+  <p>"wrap-reverse" değeri bir item içeriğini ters yönde wrap gösterir.</p>
+  <p>"row-reverse" değeri bir item içeriğinin satırlarını ters yönden gösterir.</p>
+  <p>"col-reverse" değeri bir item içeriğinin sütunlarını ters yönden gösterir.</p>
+
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
-      <div data-gnl="ters-dürme">
+      <div data-gnl="wrap-reverse">
         <div data-gnl="1 3p">
-          ters-dürme #1
+          wrap-reverse #1
         </div>
         <div data-gnl="1 3p">
-          ters-dürme #2
+          wrap-reverse #2
         </div>
         <div data-gnl="1 3p">
-          ters-dürme #3
+          wrap-reverse #3
         </div>
         <div data-gnl="1 3p">
-          ters-dürme #4
+          wrap-reverse #4
         </div>
         <div data-gnl="1 3p">
-          ters-dürme #5
+          wrap-reverse #5
         </div>
         <div data-gnl="1 3p">
-          ters-dürme #6
-        </div>
-      </div>
-      <div data-gnl="ters-satır">
-        <div data-gnl="1 3p">
-          ters-satır #1
-        </div>
-        <div data-gnl="1 3p">
-          ters-satır #2
-        </div>
-        <div data-gnl="1 3p">
-          ters-satır #3
-        </div>
-        <div data-gnl="1 3p">
-          ters-satır #4
-        </div>
-        <div data-gnl="1 3p">
-          ters-satır #5
-        </div>
-        <div data-gnl="1 3p">
-          ters-satır #6
+          wrap-reverse #6
         </div>
       </div>
-      <div data-gnl="ters-sütun">
+      <div data-gnl="row-reverse">
         <div data-gnl="1 3p">
-          ters-sütun #1
+          row-reverse #1
         </div>
         <div data-gnl="1 3p">
-          ters-sütun #2
+          row-reverse #2
         </div>
         <div data-gnl="1 3p">
-          ters-sütun #3
+          row-reverse #3
+        </div>
+        <div data-gnl="1 3p">
+          row-reverse #4
+        </div>
+        <div data-gnl="1 3p">
+          row-reverse #5
+        </div>
+        <div data-gnl="1 3p">
+          row-reverse #6
+        </div>
+      </div>
+      <div data-gnl="col-reverse">
+        <div data-gnl="1 3p">
+          col-reverse #1
+        </div>
+        <div data-gnl="1 3p">
+          col-reverse #2
+        </div>
+        <div data-gnl="1 3p">
+          col-reverse #3
         </div>
       </div>
     </div>
   </div>
   {% highlight html %}
-    <div data-gnl="ters-dürme">
+    <div data-gnl="wrap-reverse">
       <div data-gnl="1 3p">
-        ters-dürme #1
+        wrap-reverse #1
       </div>
       <div data-gnl="1 3p">
-        ters-dürme #2
+        wrap-reverse #2
       </div>
       <div data-gnl="1 3p">
-        ters-dürme #3
+        wrap-reverse #3
       </div>
       <div data-gnl="1 3p">
-        ters-dürme #4
+        wrap-reverse #4
       </div>
       <div data-gnl="1 3p">
-        ters-dürme #5
+        wrap-reverse #5
       </div>
       <div data-gnl="1 3p">
-        ters-dürme #6
-      </div>
-    </div>
-    <div data-gnl="ters-satır">
-      <div data-gnl="1 3p">
-        ters-satır #1
-      </div>
-      <div data-gnl="1 3p">
-        ters-satır #2
-      </div>
-      <div data-gnl="1 3p">
-        ters-satır #3
-      </div>
-      <div data-gnl="1 3p">
-        ters-satır #4
-      </div>
-      <div data-gnl="1 3p">
-        ters-satır #5
-      </div>
-      <div data-gnl="1 3p">
-        ters-satır #6
+        wrap-reverse #6
       </div>
     </div>
-    <div data-gnl="ters-sütun">
+    <div data-gnl="row-reverse">
       <div data-gnl="1 3p">
-        ters-sütun #1
+        row-reverse #1
       </div>
       <div data-gnl="1 3p">
-        ters-sütun #2
+        row-reverse #2
       </div>
       <div data-gnl="1 3p">
-        ters-sütun #3
+        row-reverse #3
+      </div>
+      <div data-gnl="1 3p">
+        row-reverse #4
+      </div>
+      <div data-gnl="1 3p">
+        row-reverse #5
+      </div>
+      <div data-gnl="1 3p">
+        row-reverse #6
+      </div>
+    </div>
+    <div data-gnl="col-reverse">
+      <div data-gnl="1 3p">
+        col-reverse #1
+      </div>
+      <div data-gnl="1 3p">
+        col-reverse #2
+      </div>
+      <div data-gnl="1 3p">
+        col-reverse #3
       </div>
     </div>
   {% endhighlight %}
-  <p></p>  
