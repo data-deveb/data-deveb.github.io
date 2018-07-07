@@ -141,19 +141,21 @@ title: Positioning - Grid System
     </div>
   {% endhighlight %}
 
-  <h3>Konumlama: <span data-metin="dikkat">sağdan|soldan-SAYI SAYIp-aralık</span></h3>
-  <p>Bir ögeyi soldan veya sağdan parça düzenine göre aralık bırakmak istiyorsak bu konumlama özelliğini kullanırız. Eğer parça ölçeğinde değişiklik yapmak istemiyorsanız sadece sağdan|soldan-SAYI yazmanız yeterli olacaktır.</p>
+  <h3>Positioning: <span data-metin="dikkat">left|right-NUMBER NUMBERp-offset</span></h3>
+  <p>
+    If we want to offset an item relative to the left or right piece layout, we use this positioning feature. If you use it without changing the piece scale, it is enough to write left | right-NUMBER.
+  </p>
   <div class="örnek">
-    <h3>Önizleme</h3>
+    <h3>Preview</h3>
     <div class="önizleme">
-      <div data-gnl="1 3p soldan-1 6p-aralık">
-        1 3p soldan-1 6p-aralık
+      <div data-gnl="1 3p left-1 6p-offset">
+        1 3p left-1 6p-offset
       </div>
-      <div data-gnl="1 3p soldan-2 19p-aralık">
-        1 3p soldan-2 19p-aralık
+      <div data-gnl="1 3p left-2 19p-offset">
+        1 3p left-2 19p-offset
       </div>
-      <div data-gnl="1 3p sağdan-2">
-        1 3p sağdan-2
+      <div data-gnl="1 3p right-2">
+        1 3p right-2
       </div>
       <div data-gnl="2 3p">
         2 3p
@@ -161,14 +163,14 @@ title: Positioning - Grid System
     </div>
   </div>
   {% highlight html %}
-    <div data-gnl="1 3p soldan-1 6p-aralık">
-      1 3p soldan-1 6p-aralık
+    <div data-gnl="1 3p left-1 6p-offset">
+      1 3p left-1 6p-offset
     </div>
-    <div data-gnl="1 3p soldan-2 19p-aralık">
-      1 3p soldan-2 19p-aralık
+    <div data-gnl="1 3p left-2 19p-offset">
+      1 3p left-2 19p-offset
     </div>
-    <div data-gnl="1 3p sağdan-2">
-      1 3p sağdan-2
+    <div data-gnl="1 3p right-2">
+      1 3p right-2
     </div>
     <div data-gnl="2 3p">
       2 3p
