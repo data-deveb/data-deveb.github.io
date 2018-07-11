@@ -1,10 +1,16 @@
+{% if page.url contains '/1.0/tr/' %}
+  {% assign dil = 'tr' %}
+{% endif %}
+{% if page.url contains '/1.0/en/' %}
+  {% assign dil = 'en' %}
+{% endif %}
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="{{dil}}">
 <head>
 {% include s1n0/head.html %}
 </head>
-<body data-byk="tamekran">
-  <div data-gnl="oluk-çevre" data-byk="sığ">
+<body data-gnl="tamekran">
+  <div data-gnl="oluk-çevre sığ" data-byk="sığ">
     <div id="sol-alan" data-gnl="t" data-kçk="4 22p sığ oluk-çevre">
       <div data-gnl="o geniş-aralıklı" data-dev="2 3p _s _o">
         <a data-gnl="0" href="/" class="logo2">deveb</a>

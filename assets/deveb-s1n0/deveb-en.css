@@ -160,9 +160,10 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
 body[data-gnl~="fullscreen"] {
   flex: 1 1 0 !important;
   overflow: auto;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
-  min-height: 100vh;
+  position: fixed;
 }
 
 body[data-gnl~="col"] > footer {
@@ -1603,9 +1604,10 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
   body[data-xs~="fullscreen"] {
     flex: 1 1 0 !important;
     overflow: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    min-height: 100vh;
+    position: fixed;
   }
 
   [data-xs~="1r"] > div, [data-xs~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
@@ -2400,9 +2402,10 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
   body[data-sm~="fullscreen"] {
     flex: 1 1 0 !important;
     overflow: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    min-height: 100vh;
+    position: fixed;
   }
 
   [data-sm~="1r"] > div, [data-sm~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
@@ -3197,9 +3200,10 @@ S03 ort | Ekran ölçeği: 768px ≤ *
   body[data-md~="fullscreen"] {
     flex: 1 1 0 !important;
     overflow: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    min-height: 100vh;
+    position: fixed;
   }
 
   [data-md~="1r"] > div, [data-md~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
@@ -3994,9 +3998,10 @@ S04 byk | Ekran ölçeği: 992px ≤ *
   body[data-lg~="fullscreen"] {
     flex: 1 1 0 !important;
     overflow: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    min-height: 100vh;
+    position: fixed;
   }
 
   [data-lg~="1r"] > div, [data-lg~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
@@ -4791,9 +4796,10 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
   body[data-xl~="fullscreen"] {
     flex: 1 1 0 !important;
     overflow: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    min-height: 100vh;
+    position: fixed;
   }
 
   [data-xl~="1r"] > div, [data-xl~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
@@ -5588,9 +5594,10 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
   body[data-hg~="fullscreen"] {
     flex: 1 1 0 !important;
     overflow: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    min-height: 100vh;
+    position: fixed;
   }
 
   [data-hg~="1r"] > div, [data-hg~="1r"] > [data-gnl]:not([data-gnl*="p"]) {
