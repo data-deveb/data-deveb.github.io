@@ -279,19 +279,19 @@ header, main, footer{
   padding: 0 40px;
 }
 
-[data-menü~="sağ-kaval"]{
+[data-menü~="sag-kaval"]{
   z-index: 999;
 }
-[data-menü~="sağ-kaval"] > li a{
+[data-menü~="sag-kaval"] > li a{
   position: relative;
   padding:15px;
   display:flex;
   justify-content: center;
 }
-[data-menü~="sağ-kaval"] li a i::before{
+[data-menü~="sag-kaval"] li a i::before{
   font-size: 30px;
 }
-[data-menü~="sağ-kaval"] > li a span{
+[data-menü~="sag-kaval"] > li a span{
   display:none;
   position: absolute;
   right:100%;
@@ -303,14 +303,14 @@ header, main, footer{
   text-transform: uppercase;
   white-space: nowrap;
 }
-[data-menü~="sağ-kaval"] > li:hover a span{
+[data-menü~="sag-kaval"] > li:hover a span{
   display:flex;
   align-items: center;
   background-color: #13672f;
     height: 100%;
     padding:0 10px;
 }
-[data-menü~="sağ-kaval"] > li:hover a{
+[data-menü~="sag-kaval"] > li:hover a{
   background-color: #13672f;
   color:#fff;
 }
@@ -334,14 +334,14 @@ header, main, footer{
   margin-right: 40px;
 }
   .logo img{}
-label[for*="menü-ana"]{
+label[for*="menu"]{
   background: black;
   align-self: center;
   color: #fff;
   padding: 8px;
 }
 
-[data-menü~="sağ-kaval"]{
+[data-menü~="sag-kaval"]{
   position: fixed;
   height: 100%;
   width:100%;
@@ -356,7 +356,7 @@ label[for*="menü-ana"]{
   z-index: 1001;
 overflow-x: hidden;
 }
-[data-menü~="sağ-kaval"]::before{
+[data-menü~="sag-kaval"]::before{
   content: '';
   display: block;
   height: 100%;
@@ -365,28 +365,28 @@ overflow-x: hidden;
   left:0;
   right:0;
 }
-[data-menü~="sağ-kaval"] li a.baş,
-[data-menü~="sağ-kaval"] li a.baş:hover{
+[data-menü~="sag-kaval"] li a.baş,
+[data-menü~="sag-kaval"] li a.baş:hover{
   background: transparent;
 }
-[data-menü~="sağ-kaval"] li{
+[data-menü~="sag-kaval"] li{
   width: 100%;
   z-index: 1002;
   flex-shrink: 0;
 }
-[data-menü~="sağ-kaval"] li a{
+[data-menü~="sag-kaval"] li a{
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-[data-menü~="sağ-kaval"] li label[for*="-çapraz"]{
+[data-menü~="sag-kaval"] li label[for*="-capraz"]{
 flex: 0 0 auto;
 margin-right: 17px;
 margin-top: 15px;
 margin-bottom: 15px;
 }
-[data-menü~="sağ-kaval"] li a span{
+[data-menü~="sag-kaval"] li a span{
   display: inline-block;
   position: static;
   color:#fff;
@@ -501,7 +501,7 @@ margin-bottom: 15px;
       100%{opacity: 1;}
   }
 
-  [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval iptalettik"]{
+  [data-kapaç]:checked + label + label + [data-menü~="sag-kaval iptalettik"]{
     background:
       url('/temalar/sosero/assets/img/menu/menu_00.png'),
       url('/temalar/sosero/assets/img/menu/menu_01.png'),
@@ -527,7 +527,7 @@ margin-bottom: 15px;
     animation: openit 1s ease;
 
   }
-  [data-kapaç]:checked + label + label + [data-menü~="sağ-kaval"]::before{
+  [data-kapaç]:checked + label + label + [data-menü~="sag-kaval"]::before{
     display: flex;
     -webkit-animation:  show 1s ease;
     -moz-animation:  show 1s ease;
@@ -536,44 +536,44 @@ margin-bottom: 15px;
 
 
   }
-  [data-menü~="sağ-kaval"] > li{
+  [data-menü~="sag-kaval"] > li{
     display: flex;
     -webkit-animation:  show 1.2s ease;
     -moz-animation:  show 1.2s ease;
     animation: show 1.2s ease;
     animation-delay: -.3s;
   }
-  [data-menü~="sağ-kaval"] > li:nth-child(n+1){
+  [data-menü~="sag-kaval"] > li:nth-child(n+1){
     -webkit-animation:  merdiven 1.2s ease;
     -moz-animation:  merdiven 1.2s ease;
     animation: merdiven 1.2s ease;
     animation-delay: -.3s;
   }
-  [data-menü~="sağ-kaval"] > li:nth-child(n+2){
+  [data-menü~="sag-kaval"] > li:nth-child(n+2){
     -webkit-animation:  merdiven 1.2s ease;
     -moz-animation:  merdiven 1.2s ease;
     animation: merdiven 1.2s ease;
     animation-delay: -.2s;
   }
-  [data-menü~="sağ-kaval"] > li:nth-child(n+3){
+  [data-menü~="sag-kaval"] > li:nth-child(n+3){
     -webkit-animation:  merdiven 1.2s ease;
     -moz-animation:  merdiven 1.2s ease;
     animation: merdiven 1.2s ease;
     animation-delay: -.1s;
   }
-  [data-menü~="sağ-kaval"] > li:nth-child(n+4){
+  [data-menü~="sag-kaval"] > li:nth-child(n+4){
     -webkit-animation:  merdiven 1.2s ease;
     -moz-animation:  merdiven 1.2s ease;
     animation: merdiven 1.2s ease;
     animation-delay: 0s;
   }
-  [data-menü~="sağ-kaval"] > li:nth-child(n+5){
+  [data-menü~="sag-kaval"] > li:nth-child(n+5){
     -webkit-animation:  merdiven 1.2s ease;
     -moz-animation:  merdiven 1.2s ease;
     animation: merdiven 1.2s ease;
     animation-delay: 0.1s;
   }
-  [data-menü~="sağ-kavalx"]{
+  [data-menü~="sag-kavalx"]{
     opacity: 0;
 
     display: block !important;
@@ -583,7 +583,7 @@ margin-bottom: 15px;
     width:0%;
 
   }
-  [data-kapaç]:checked ~ [data-menü~="sağ-kavalx"]{
+  [data-kapaç]:checked ~ [data-menü~="sag-kavalx"]{
     display: flex;
     opacity: 1;
 
@@ -595,7 +595,7 @@ margin-bottom: 15px;
     animation:   menemen .6s ease-in-out;
     bottom:0;
   }
-  input[id="menü-ana-çapraz"]:not(:checked) + label + label {
+  input[id="menu-ana-capraz"]:not(:checked) + label + label {
     display: none;
   }
   /* Standard syntax */
