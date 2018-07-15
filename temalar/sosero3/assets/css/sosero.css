@@ -329,16 +329,22 @@ header, main, footer{
   padding:20px;
 }
 @media screen and (max-width:991.9px) {
-
+header, main, footer{
+  padding: 0 20px;
+}
 .logo{
-  margin-right: 40px;
+  margin-right: 30px;
+  width:120px;
 }
   .logo img{}
-label[for*="menu"]{
+label[for*="menu-ana"]{
   background: black;
   align-self: center;
   color: #fff;
   padding: 8px;
+  margin-bottom:10px;
+  height:41px; 
+  width:41px;
 }
 
 [data-menü~="sag-kaval"]{
