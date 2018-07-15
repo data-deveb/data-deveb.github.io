@@ -710,7 +710,7 @@ margin-bottom: 15px;
 }
 .product:last-child .kesme,
 .product:nth-child(even) .kesme{
-  display:none;
+  display:none !important;
 }
 
 .product.detail{
