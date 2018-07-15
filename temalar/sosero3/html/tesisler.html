@@ -1,20 +1,23 @@
 <div data-lg="fit">
-  <div data-lg="1 2p lt fit sütun kaymadan" style="min-height: 200px; background: url('/temalar/sosero2/assets/img/üretim_tesisleri.jpg') no-repeat center center;background-size:cover;">
+  <div data-lg="1 2p ft fit col no-overflow" style="min-height: 200px; background: url('/temalar/sosero2/assets/img/üretim_tesisleri.jpg') no-repeat center center;background-size:cover;">
 
     <header data-gnl="23 24p" data-lg="0" style="position:absolute; z-index:999;">
-      <a class="logo" href="#"><img src="/temalar/sosero2/assets/img/sosero.png" alt="SOSERO"></a>
+      <a class="logo" href="#"><img src="/temalar/sosero3/assets/img/sosero.png" alt="SOSERO"></a>
       <input id="menü-ana-çapraz" checked="" name="ana-menü" data-kapaç="sağda çaprazlama" type="radio">
-      <label for="menü-ana" onclick="document.body.classList.add('gelgit-etkin');" style="margin-bottom:10px;height:41px; width:41px;">
-        <img src="/temalar/sosero2/assets/img/menu/hamburger.svg" alt="">
+      <label 
+        for="menü-ana" onclick="document.body.classList.add('gelgit-etkin');" 
+        style="margin-bottom:10px;height:41px; width:41px;
+        ">
+        <img src="/temalar/sosero3/assets/img/menu/hamburger.svg" alt="">
       </label>
       <label for="menü-ana-çapraz">
-        <img src="/temalar/sosero2/assets/img/menu/hamburger-x.svg" alt="">
+        <img src="/temalar/sosero3/assets/img/menu/hamburger-x.svg" alt="">
       </label>
     </header>
 
   </div>
   <div data-lg="1 2p fit">
-    <div data-gnl="22 24p soldan-1 24p-aralık" data-lg="18 24p">
+    <div data-gnl="22 24p left-1 24p-spacing" data-lg="18 24p">
       <article class="yemek regular2 slider">
         <div>
           <h1 class="yemek-adi">ÜRETİM TESİSLERİ</h1>
@@ -101,3 +104,14 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+    window.sosero = function () {
+      $('.regular2').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });     
+    }
+</script>
