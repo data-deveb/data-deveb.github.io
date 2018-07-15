@@ -662,7 +662,7 @@ margin-bottom: 15px;
   border-left:4px solid #13672f;
   color:#c70000;
 }
-.yemek-içeriği, .product-content{
+.yemek-icerigi, .product-content{
   padding-left:14px;
   padding-right: 14px;
   line-height: 1.5;
@@ -673,7 +673,7 @@ margin-bottom: 15px;
   padding:0;
   margin-bottom: 0;
 }
-.yemek-içeriği h2, .product-content h2{
+.yemek-icerigi h2, .product-content h2{
   font-size:16px;
   font-weight: 600;
   color:#13672f;

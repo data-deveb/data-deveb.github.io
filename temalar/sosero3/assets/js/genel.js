@@ -1,5 +1,5 @@
 function sayfaYukle(adres, bittiktenSonra) {
-    
+
     icerikGizle();
 
     sosero = null;
@@ -48,6 +48,7 @@ function icerikGizle() {
 
 
 $(document).on('ready', function() {
+
 
     // sayfa yüklendiğinde
     var url = window.location.pathname;
