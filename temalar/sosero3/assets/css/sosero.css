@@ -673,6 +673,12 @@ margin-bottom: 15px;
   padding:0;
   margin-bottom: 0;
 }
+.yemek-icerigi h1{
+  font-size:24px;
+  font-weight: 600;
+  color:#13672f;
+  margin-top:30px;
+}
 .yemek-icerigi h2, .product-content h2{
   font-size:16px;
   font-weight: 600;
