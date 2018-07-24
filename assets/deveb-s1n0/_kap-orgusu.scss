@@ -4,16 +4,97 @@
 
 */
 
-  @mixin parça-düzeni($ekran){
+ /** @mixin parça-düzeni($ekran){
     @for $i from 1 through 24{
-      [data-#{$ekran}~="#{$i}"]{--parça: #{$i};}
-      [data-#{$ekran}~="#{$i}p"]{--parçalık: #{$i};}
+      [data-# {$ekran}~="# {$i}"]{--parça: # {$i};}
+      [data-# {$ekran}~="# {$i}p"]{--parçalık: # {$i};}
     }
-    [data-#{$ekran}][data-#{$ekran}]{
+    [data-# {$ekran}][data-# {$ekran}]{
       width: calc(100% / var(--parçalık) * var(--parça));
       max-width: calc(100% / var(--parçalık) * var(--parça));
     }
-  }  
+  }  **/
+  @mixin parça-düzeni($ekran){
+    [data-#{$ekran}~="1"],[data-#{$ekran}~="2"],
+    [data-#{$ekran}~="3"],[data-#{$ekran}~="4"]
+    {--aaa: 1; --a-a: 0}
+
+    [data-#{$ekran}~="5"],[data-#{$ekran}~="6"],
+    [data-#{$ekran}~="7"],[data-#{$ekran}~="8"]
+    {--aaa: 2; --a-a: 0}
+
+    [data-#{$ekran}~="9"],[data-#{$ekran}~="10"],
+    [data-#{$ekran}~="11"],[data-#{$ekran}~="12"]
+    {--aaa: 3; --a-a: 0}
+
+    [data-#{$ekran}~="13"],[data-#{$ekran}~="14"],
+    [data-#{$ekran}~="15"],[data-#{$ekran}~="16"]
+    {--aaa: 4; --a-a: 0}
+
+    [data-#{$ekran}~="17"],[data-#{$ekran}~="18"],
+    [data-#{$ekran}~="19"],[data-#{$ekran}~="20"]
+    {--aaa: 5}
+
+    [data-#{$ekran}~="21"],[data-#{$ekran}~="22"],
+    [data-#{$ekran}~="23"],[data-#{$ekran}~="24"]
+    {--aaa: 6; --a-a: 0}
+
+    [data-#{$ekran}~="1"],[data-#{$ekran}~="5"],
+    [data-#{$ekran}~="9"],[data-#{$ekran}~="13"],
+    [data-#{$ekran}~="17"],[data-#{$ekran}~="21"]
+    {--a-a: 3}
+
+    [data-#{$ekran}~="2"],[data-#{$ekran}~="6"],
+    [data-#{$ekran}~="10"],[data-#{$ekran}~="14"],
+    [data-#{$ekran}~="18"],[data-#{$ekran}~="22"]
+    {--a-a: 2}
+
+    [data-#{$ekran}~="3"],[data-#{$ekran}~="7"],
+    [data-#{$ekran}~="11"],[data-#{$ekran}~="15"],
+    [data-#{$ekran}~="19"],[data-#{$ekran}~="23"]
+    {--a-a: 1}
+
+    [data-#{$ekran}~="1p"],[data-#{$ekran}~="2p"],
+    [data-#{$ekran}~="3p"],[data-#{$ekran}~="4p"]
+    {--bbb: 1; --b-b: 0}
+
+    [data-#{$ekran}~="5p"],[data-#{$ekran}~="6p"],
+    [data-#{$ekran}~="7p"],[data-#{$ekran}~="8p"]
+    {--bbb: 2; --b-b: 0}
+
+    [data-#{$ekran}~="9p"],[data-#{$ekran}~="10p"],
+    [data-#{$ekran}~="11p"],[data-#{$ekran}~="12p"]
+    {--bbb: 3; --b-b: 0}
+
+    [data-#{$ekran}~="13p"],[data-#{$ekran}~="14p"],
+    [data-#{$ekran}~="15p"],[data-#{$ekran}~="16p"]
+    {--bbb: 4; --b-b: 0}
+
+    [data-#{$ekran}~="17p"],[data-#{$ekran}~="18p"],
+    [data-#{$ekran}~="19p"],[data-#{$ekran}~="20p"]
+    {--bbb: 5; --b-b: 0}
+
+    [data-#{$ekran}~="21p"],[data-#{$ekran}~="22p"],
+    [data-#{$ekran}~="23p"],[data-#{$ekran}~="24p"]
+    {--bbb: 6; --b-b: 0}
+
+    [data-#{$ekran}~="1p"],[data-#{$ekran}~="5p"],[data-#{$ekran}~="9p"],
+    [data-#{$ekran}~="13p"],[data-#{$ekran}~="17p"],[data-#{$ekran}~="21p"]
+    {--b-b: 3}
+
+    [data-#{$ekran}~="2p"],[data-#{$ekran}~="6p"],[data-#{$ekran}~="10p"],
+    [data-#{$ekran}~="14p"],[data-#{$ekran}~="18p"],[data-#{$ekran}~="22p"]
+    {--b-b: 2}
+
+    [data-#{$ekran}~="3p"],[data-#{$ekran}~="7p"],[data-#{$ekran}~="11p"],
+    [data-#{$ekran}~="15p"],[data-#{$ekran}~="19p"],[data-#{$ekran}~="23p"]
+    {--b-b: 1}
+
+    [data-#{$ekran}][data-#{$ekran}]{
+      width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+      max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+    }
+  } 
 
   @mixin genleşme-düzeni($ekran) {
     @for $i from 1 through 24{
@@ -96,27 +177,27 @@
     [data-#{$ekran}~="#{$araları-aralık}-1"] > *{padding-left:10px;padding-top:10px;}
     [data-#{$ekran}~="#{$araları-aralık}-2"] > *{padding-left:15px;padding-top:15px;}
     [data-#{$ekran}~="#{$araları-aralık}-3"] > *{padding-left:20px;padding-top:20px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-1"] > *{padding:10px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-2"] > *{padding:15px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-3"] > *{padding:20px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-l1"] > *{padding-left: 10px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-l2"] > *{padding-left: 15px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-l3"] > *{padding-left: 20px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-s1"] > *{padding-right: 10px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-s2"] > *{padding-right: 15px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-s3"] > *{padding-right: 20px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-t1"] > *{padding-top: 10px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-t2"] > *{padding-top: 15px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-t3"] > *{padding-top: 20px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-a1"] > *{padding-bottom: 10px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-a2"] > *{padding-bottom: 15px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-a3"] > *{padding-bottom: 20px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
-    [data-#{$ekran}~="dengeli-#{$aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-1"] > *{padding:10px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-2"] > *{padding:15px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-3"] > *{padding:20px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-l1"] > *{padding-left: 10px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-l2"] > *{padding-left: 15px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-l3"] > *{padding-left: 20px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-s1"] > *{padding-right: 10px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-s2"] > *{padding-right: 15px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-s3"] > *{padding-right: 20px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-t1"] > *{padding-top: 10px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-t2"] > *{padding-top: 15px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-t3"] > *{padding-top: 20px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-a1"] > *{padding-bottom: 10px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-a2"] > *{padding-bottom: 15px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-a3"] > *{padding-bottom: 20px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
+    [data-#{$ekran}~="#{$dengeli-aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
 
     [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
       margin: var(--aralık);

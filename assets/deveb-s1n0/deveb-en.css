@@ -129,6 +129,16 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
 ◘ Giriş notları //////////////////////////////////
 
 */
+/** @mixin parça-düzeni($ekran){
+   @for $i from 1 through 24{
+     [data-# {$ekran}~="# {$i}"]{--parça: # {$i};}
+     [data-# {$ekran}~="# {$i}p"]{--parçalık: # {$i};}
+   }
+   [data-# {$ekran}][data-# {$ekran}]{
+     width: calc(100% / var(--parçalık) * var(--parça));
+     max-width: calc(100% / var(--parçalık) * var(--parça));
+   }
+ }  **/
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*  G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -290,201 +300,113 @@ body[data-gnl~="col"] > footer {
   max-width: calc(100% / 24);
 }
 
-[data-gnl~="1"] {
-  --parça: 1;
+[data-gnl~="1"], [data-gnl~="2"],
+[data-gnl~="3"], [data-gnl~="4"] {
+  --aaa: 1;
+  --a-a: 0;
 }
 
-[data-gnl~="1p"] {
-  --parçalık: 1;
+[data-gnl~="5"], [data-gnl~="6"],
+[data-gnl~="7"], [data-gnl~="8"] {
+  --aaa: 2;
+  --a-a: 0;
 }
 
-[data-gnl~="2"] {
-  --parça: 2;
+[data-gnl~="9"], [data-gnl~="10"],
+[data-gnl~="11"], [data-gnl~="12"] {
+  --aaa: 3;
+  --a-a: 0;
 }
 
-[data-gnl~="2p"] {
-  --parçalık: 2;
+[data-gnl~="13"], [data-gnl~="14"],
+[data-gnl~="15"], [data-gnl~="16"] {
+  --aaa: 4;
+  --a-a: 0;
 }
 
-[data-gnl~="3"] {
-  --parça: 3;
+[data-gnl~="17"], [data-gnl~="18"],
+[data-gnl~="19"], [data-gnl~="20"] {
+  --aaa: 5;
 }
 
-[data-gnl~="3p"] {
-  --parçalık: 3;
+[data-gnl~="21"], [data-gnl~="22"],
+[data-gnl~="23"], [data-gnl~="24"] {
+  --aaa: 6;
+  --a-a: 0;
 }
 
-[data-gnl~="4"] {
-  --parça: 4;
+[data-gnl~="1"], [data-gnl~="5"],
+[data-gnl~="9"], [data-gnl~="13"],
+[data-gnl~="17"], [data-gnl~="21"] {
+  --a-a: 3;
 }
 
-[data-gnl~="4p"] {
-  --parçalık: 4;
+[data-gnl~="2"], [data-gnl~="6"],
+[data-gnl~="10"], [data-gnl~="14"],
+[data-gnl~="18"], [data-gnl~="22"] {
+  --a-a: 2;
 }
 
-[data-gnl~="5"] {
-  --parça: 5;
+[data-gnl~="3"], [data-gnl~="7"],
+[data-gnl~="11"], [data-gnl~="15"],
+[data-gnl~="19"], [data-gnl~="23"] {
+  --a-a: 1;
 }
 
-[data-gnl~="5p"] {
-  --parçalık: 5;
+[data-gnl~="1p"], [data-gnl~="2p"],
+[data-gnl~="3p"], [data-gnl~="4p"] {
+  --bbb: 1;
+  --b-b: 0;
 }
 
-[data-gnl~="6"] {
-  --parça: 6;
+[data-gnl~="5p"], [data-gnl~="6p"],
+[data-gnl~="7p"], [data-gnl~="8p"] {
+  --bbb: 2;
+  --b-b: 0;
 }
 
-[data-gnl~="6p"] {
-  --parçalık: 6;
+[data-gnl~="9p"], [data-gnl~="10p"],
+[data-gnl~="11p"], [data-gnl~="12p"] {
+  --bbb: 3;
+  --b-b: 0;
 }
 
-[data-gnl~="7"] {
-  --parça: 7;
+[data-gnl~="13p"], [data-gnl~="14p"],
+[data-gnl~="15p"], [data-gnl~="16p"] {
+  --bbb: 4;
+  --b-b: 0;
 }
 
-[data-gnl~="7p"] {
-  --parçalık: 7;
+[data-gnl~="17p"], [data-gnl~="18p"],
+[data-gnl~="19p"], [data-gnl~="20p"] {
+  --bbb: 5;
+  --b-b: 0;
 }
 
-[data-gnl~="8"] {
-  --parça: 8;
+[data-gnl~="21p"], [data-gnl~="22p"],
+[data-gnl~="23p"], [data-gnl~="24p"] {
+  --bbb: 6;
+  --b-b: 0;
 }
 
-[data-gnl~="8p"] {
-  --parçalık: 8;
+[data-gnl~="1p"], [data-gnl~="5p"], [data-gnl~="9p"],
+[data-gnl~="13p"], [data-gnl~="17p"], [data-gnl~="21p"] {
+  --b-b: 3;
 }
 
-[data-gnl~="9"] {
-  --parça: 9;
+[data-gnl~="2p"], [data-gnl~="6p"], [data-gnl~="10p"],
+[data-gnl~="14p"], [data-gnl~="18p"], [data-gnl~="22p"] {
+  --b-b: 2;
 }
 
-[data-gnl~="9p"] {
-  --parçalık: 9;
-}
-
-[data-gnl~="10"] {
-  --parça: 10;
-}
-
-[data-gnl~="10p"] {
-  --parçalık: 10;
-}
-
-[data-gnl~="11"] {
-  --parça: 11;
-}
-
-[data-gnl~="11p"] {
-  --parçalık: 11;
-}
-
-[data-gnl~="12"] {
-  --parça: 12;
-}
-
-[data-gnl~="12p"] {
-  --parçalık: 12;
-}
-
-[data-gnl~="13"] {
-  --parça: 13;
-}
-
-[data-gnl~="13p"] {
-  --parçalık: 13;
-}
-
-[data-gnl~="14"] {
-  --parça: 14;
-}
-
-[data-gnl~="14p"] {
-  --parçalık: 14;
-}
-
-[data-gnl~="15"] {
-  --parça: 15;
-}
-
-[data-gnl~="15p"] {
-  --parçalık: 15;
-}
-
-[data-gnl~="16"] {
-  --parça: 16;
-}
-
-[data-gnl~="16p"] {
-  --parçalık: 16;
-}
-
-[data-gnl~="17"] {
-  --parça: 17;
-}
-
-[data-gnl~="17p"] {
-  --parçalık: 17;
-}
-
-[data-gnl~="18"] {
-  --parça: 18;
-}
-
-[data-gnl~="18p"] {
-  --parçalık: 18;
-}
-
-[data-gnl~="19"] {
-  --parça: 19;
-}
-
-[data-gnl~="19p"] {
-  --parçalık: 19;
-}
-
-[data-gnl~="20"] {
-  --parça: 20;
-}
-
-[data-gnl~="20p"] {
-  --parçalık: 20;
-}
-
-[data-gnl~="21"] {
-  --parça: 21;
-}
-
-[data-gnl~="21p"] {
-  --parçalık: 21;
-}
-
-[data-gnl~="22"] {
-  --parça: 22;
-}
-
-[data-gnl~="22p"] {
-  --parçalık: 22;
-}
-
-[data-gnl~="23"] {
-  --parça: 23;
-}
-
-[data-gnl~="23p"] {
-  --parçalık: 23;
-}
-
-[data-gnl~="24"] {
-  --parça: 24;
-}
-
-[data-gnl~="24p"] {
-  --parçalık: 24;
+[data-gnl~="3p"], [data-gnl~="7p"], [data-gnl~="11p"],
+[data-gnl~="15p"], [data-gnl~="19p"], [data-gnl~="23p"] {
+  --b-b: 1;
 }
 
 [data-gnl][data-gnl] {
-  width: calc(100% / var(--parçalık) * var(--parça));
-  max-width: calc(100% / var(--parçalık) * var(--parça));
+  width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+  max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
 }
 
 /* Kap Örgüsü Ek Etkiler */
@@ -1011,92 +933,92 @@ body[data-gnl~="col"] > footer {
   padding-top: 20px;
 }
 
-[data-gnl~="dengeli-spacing-1"] > * {
+[data-gnl~="space-around-1"] > * {
   padding: 10px;
 }
 
-[data-gnl~="dengeli-spacing-2"] > * {
+[data-gnl~="space-around-2"] > * {
   padding: 15px;
 }
 
-[data-gnl~="dengeli-spacing-3"] > * {
+[data-gnl~="space-around-3"] > * {
   padding: 20px;
 }
 
-[data-gnl~="dengeli-spacing-l1"] > * {
+[data-gnl~="space-around-l1"] > * {
   padding-left: 10px;
 }
 
-[data-gnl~="dengeli-spacing-l2"] > * {
+[data-gnl~="space-around-l2"] > * {
   padding-left: 15px;
 }
 
-[data-gnl~="dengeli-spacing-l3"] > * {
+[data-gnl~="space-around-l3"] > * {
   padding-left: 20px;
 }
 
-[data-gnl~="dengeli-spacing-s1"] > * {
+[data-gnl~="space-around-s1"] > * {
   padding-right: 10px;
 }
 
-[data-gnl~="dengeli-spacing-s2"] > * {
+[data-gnl~="space-around-s2"] > * {
   padding-right: 15px;
 }
 
-[data-gnl~="dengeli-spacing-s3"] > * {
+[data-gnl~="space-around-s3"] > * {
   padding-right: 20px;
 }
 
-[data-gnl~="dengeli-spacing-t1"] > * {
+[data-gnl~="space-around-t1"] > * {
   padding-top: 10px;
 }
 
-[data-gnl~="dengeli-spacing-t2"] > * {
+[data-gnl~="space-around-t2"] > * {
   padding-top: 15px;
 }
 
-[data-gnl~="dengeli-spacing-t3"] > * {
+[data-gnl~="space-around-t3"] > * {
   padding-top: 20px;
 }
 
-[data-gnl~="dengeli-spacing-a1"] > * {
+[data-gnl~="space-around-a1"] > * {
   padding-bottom: 10px;
 }
 
-[data-gnl~="dengeli-spacing-a2"] > * {
+[data-gnl~="space-around-a2"] > * {
   padding-bottom: 15px;
 }
 
-[data-gnl~="dengeli-spacing-a3"] > * {
+[data-gnl~="space-around-a3"] > * {
   padding-bottom: 20px;
 }
 
-[data-gnl~="dengeli-spacing-ls1"] > * {
+[data-gnl~="space-around-ls1"] > * {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-[data-gnl~="dengeli-spacing-ls2"] > * {
+[data-gnl~="space-around-ls2"] > * {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-[data-gnl~="dengeli-spacing-ls3"] > * {
+[data-gnl~="space-around-ls3"] > * {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-[data-gnl~="dengeli-spacing-ta1"] > * {
+[data-gnl~="space-around-ta1"] > * {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-[data-gnl~="dengeli-spacing-ta2"] > * {
+[data-gnl~="space-around-ta2"] > * {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-[data-gnl~="dengeli-spacing-ta3"] > * {
+[data-gnl~="space-around-ta3"] > * {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -1730,201 +1652,113 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     max-width: calc(100% / 24);
   }
 
-  [data-xs~="1"] {
-    --parça: 1;
+  [data-xs~="1"], [data-xs~="2"],
+  [data-xs~="3"], [data-xs~="4"] {
+    --aaa: 1;
+    --a-a: 0;
   }
 
-  [data-xs~="1p"] {
-    --parçalık: 1;
+  [data-xs~="5"], [data-xs~="6"],
+  [data-xs~="7"], [data-xs~="8"] {
+    --aaa: 2;
+    --a-a: 0;
   }
 
-  [data-xs~="2"] {
-    --parça: 2;
+  [data-xs~="9"], [data-xs~="10"],
+  [data-xs~="11"], [data-xs~="12"] {
+    --aaa: 3;
+    --a-a: 0;
   }
 
-  [data-xs~="2p"] {
-    --parçalık: 2;
+  [data-xs~="13"], [data-xs~="14"],
+  [data-xs~="15"], [data-xs~="16"] {
+    --aaa: 4;
+    --a-a: 0;
   }
 
-  [data-xs~="3"] {
-    --parça: 3;
+  [data-xs~="17"], [data-xs~="18"],
+  [data-xs~="19"], [data-xs~="20"] {
+    --aaa: 5;
   }
 
-  [data-xs~="3p"] {
-    --parçalık: 3;
+  [data-xs~="21"], [data-xs~="22"],
+  [data-xs~="23"], [data-xs~="24"] {
+    --aaa: 6;
+    --a-a: 0;
   }
 
-  [data-xs~="4"] {
-    --parça: 4;
+  [data-xs~="1"], [data-xs~="5"],
+  [data-xs~="9"], [data-xs~="13"],
+  [data-xs~="17"], [data-xs~="21"] {
+    --a-a: 3;
   }
 
-  [data-xs~="4p"] {
-    --parçalık: 4;
+  [data-xs~="2"], [data-xs~="6"],
+  [data-xs~="10"], [data-xs~="14"],
+  [data-xs~="18"], [data-xs~="22"] {
+    --a-a: 2;
   }
 
-  [data-xs~="5"] {
-    --parça: 5;
+  [data-xs~="3"], [data-xs~="7"],
+  [data-xs~="11"], [data-xs~="15"],
+  [data-xs~="19"], [data-xs~="23"] {
+    --a-a: 1;
   }
 
-  [data-xs~="5p"] {
-    --parçalık: 5;
+  [data-xs~="1p"], [data-xs~="2p"],
+  [data-xs~="3p"], [data-xs~="4p"] {
+    --bbb: 1;
+    --b-b: 0;
   }
 
-  [data-xs~="6"] {
-    --parça: 6;
+  [data-xs~="5p"], [data-xs~="6p"],
+  [data-xs~="7p"], [data-xs~="8p"] {
+    --bbb: 2;
+    --b-b: 0;
   }
 
-  [data-xs~="6p"] {
-    --parçalık: 6;
+  [data-xs~="9p"], [data-xs~="10p"],
+  [data-xs~="11p"], [data-xs~="12p"] {
+    --bbb: 3;
+    --b-b: 0;
   }
 
-  [data-xs~="7"] {
-    --parça: 7;
+  [data-xs~="13p"], [data-xs~="14p"],
+  [data-xs~="15p"], [data-xs~="16p"] {
+    --bbb: 4;
+    --b-b: 0;
   }
 
-  [data-xs~="7p"] {
-    --parçalık: 7;
+  [data-xs~="17p"], [data-xs~="18p"],
+  [data-xs~="19p"], [data-xs~="20p"] {
+    --bbb: 5;
+    --b-b: 0;
   }
 
-  [data-xs~="8"] {
-    --parça: 8;
+  [data-xs~="21p"], [data-xs~="22p"],
+  [data-xs~="23p"], [data-xs~="24p"] {
+    --bbb: 6;
+    --b-b: 0;
   }
 
-  [data-xs~="8p"] {
-    --parçalık: 8;
+  [data-xs~="1p"], [data-xs~="5p"], [data-xs~="9p"],
+  [data-xs~="13p"], [data-xs~="17p"], [data-xs~="21p"] {
+    --b-b: 3;
   }
 
-  [data-xs~="9"] {
-    --parça: 9;
+  [data-xs~="2p"], [data-xs~="6p"], [data-xs~="10p"],
+  [data-xs~="14p"], [data-xs~="18p"], [data-xs~="22p"] {
+    --b-b: 2;
   }
 
-  [data-xs~="9p"] {
-    --parçalık: 9;
-  }
-
-  [data-xs~="10"] {
-    --parça: 10;
-  }
-
-  [data-xs~="10p"] {
-    --parçalık: 10;
-  }
-
-  [data-xs~="11"] {
-    --parça: 11;
-  }
-
-  [data-xs~="11p"] {
-    --parçalık: 11;
-  }
-
-  [data-xs~="12"] {
-    --parça: 12;
-  }
-
-  [data-xs~="12p"] {
-    --parçalık: 12;
-  }
-
-  [data-xs~="13"] {
-    --parça: 13;
-  }
-
-  [data-xs~="13p"] {
-    --parçalık: 13;
-  }
-
-  [data-xs~="14"] {
-    --parça: 14;
-  }
-
-  [data-xs~="14p"] {
-    --parçalık: 14;
-  }
-
-  [data-xs~="15"] {
-    --parça: 15;
-  }
-
-  [data-xs~="15p"] {
-    --parçalık: 15;
-  }
-
-  [data-xs~="16"] {
-    --parça: 16;
-  }
-
-  [data-xs~="16p"] {
-    --parçalık: 16;
-  }
-
-  [data-xs~="17"] {
-    --parça: 17;
-  }
-
-  [data-xs~="17p"] {
-    --parçalık: 17;
-  }
-
-  [data-xs~="18"] {
-    --parça: 18;
-  }
-
-  [data-xs~="18p"] {
-    --parçalık: 18;
-  }
-
-  [data-xs~="19"] {
-    --parça: 19;
-  }
-
-  [data-xs~="19p"] {
-    --parçalık: 19;
-  }
-
-  [data-xs~="20"] {
-    --parça: 20;
-  }
-
-  [data-xs~="20p"] {
-    --parçalık: 20;
-  }
-
-  [data-xs~="21"] {
-    --parça: 21;
-  }
-
-  [data-xs~="21p"] {
-    --parçalık: 21;
-  }
-
-  [data-xs~="22"] {
-    --parça: 22;
-  }
-
-  [data-xs~="22p"] {
-    --parçalık: 22;
-  }
-
-  [data-xs~="23"] {
-    --parça: 23;
-  }
-
-  [data-xs~="23p"] {
-    --parçalık: 23;
-  }
-
-  [data-xs~="24"] {
-    --parça: 24;
-  }
-
-  [data-xs~="24p"] {
-    --parçalık: 24;
+  [data-xs~="3p"], [data-xs~="7p"], [data-xs~="11p"],
+  [data-xs~="15p"], [data-xs~="19p"], [data-xs~="23p"] {
+    --b-b: 1;
   }
 
   [data-xs][data-xs] {
-    width: calc(100% / var(--parçalık) * var(--parça));
-    max-width: calc(100% / var(--parçalık) * var(--parça));
+    width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+    max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
   }
 
   [data-xs~="1g"] {
@@ -2528,201 +2362,113 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     max-width: calc(100% / 24);
   }
 
-  [data-sm~="1"] {
-    --parça: 1;
+  [data-sm~="1"], [data-sm~="2"],
+  [data-sm~="3"], [data-sm~="4"] {
+    --aaa: 1;
+    --a-a: 0;
   }
 
-  [data-sm~="1p"] {
-    --parçalık: 1;
+  [data-sm~="5"], [data-sm~="6"],
+  [data-sm~="7"], [data-sm~="8"] {
+    --aaa: 2;
+    --a-a: 0;
   }
 
-  [data-sm~="2"] {
-    --parça: 2;
+  [data-sm~="9"], [data-sm~="10"],
+  [data-sm~="11"], [data-sm~="12"] {
+    --aaa: 3;
+    --a-a: 0;
   }
 
-  [data-sm~="2p"] {
-    --parçalık: 2;
+  [data-sm~="13"], [data-sm~="14"],
+  [data-sm~="15"], [data-sm~="16"] {
+    --aaa: 4;
+    --a-a: 0;
   }
 
-  [data-sm~="3"] {
-    --parça: 3;
+  [data-sm~="17"], [data-sm~="18"],
+  [data-sm~="19"], [data-sm~="20"] {
+    --aaa: 5;
   }
 
-  [data-sm~="3p"] {
-    --parçalık: 3;
+  [data-sm~="21"], [data-sm~="22"],
+  [data-sm~="23"], [data-sm~="24"] {
+    --aaa: 6;
+    --a-a: 0;
   }
 
-  [data-sm~="4"] {
-    --parça: 4;
+  [data-sm~="1"], [data-sm~="5"],
+  [data-sm~="9"], [data-sm~="13"],
+  [data-sm~="17"], [data-sm~="21"] {
+    --a-a: 3;
   }
 
-  [data-sm~="4p"] {
-    --parçalık: 4;
+  [data-sm~="2"], [data-sm~="6"],
+  [data-sm~="10"], [data-sm~="14"],
+  [data-sm~="18"], [data-sm~="22"] {
+    --a-a: 2;
   }
 
-  [data-sm~="5"] {
-    --parça: 5;
+  [data-sm~="3"], [data-sm~="7"],
+  [data-sm~="11"], [data-sm~="15"],
+  [data-sm~="19"], [data-sm~="23"] {
+    --a-a: 1;
   }
 
-  [data-sm~="5p"] {
-    --parçalık: 5;
+  [data-sm~="1p"], [data-sm~="2p"],
+  [data-sm~="3p"], [data-sm~="4p"] {
+    --bbb: 1;
+    --b-b: 0;
   }
 
-  [data-sm~="6"] {
-    --parça: 6;
+  [data-sm~="5p"], [data-sm~="6p"],
+  [data-sm~="7p"], [data-sm~="8p"] {
+    --bbb: 2;
+    --b-b: 0;
   }
 
-  [data-sm~="6p"] {
-    --parçalık: 6;
+  [data-sm~="9p"], [data-sm~="10p"],
+  [data-sm~="11p"], [data-sm~="12p"] {
+    --bbb: 3;
+    --b-b: 0;
   }
 
-  [data-sm~="7"] {
-    --parça: 7;
+  [data-sm~="13p"], [data-sm~="14p"],
+  [data-sm~="15p"], [data-sm~="16p"] {
+    --bbb: 4;
+    --b-b: 0;
   }
 
-  [data-sm~="7p"] {
-    --parçalık: 7;
+  [data-sm~="17p"], [data-sm~="18p"],
+  [data-sm~="19p"], [data-sm~="20p"] {
+    --bbb: 5;
+    --b-b: 0;
   }
 
-  [data-sm~="8"] {
-    --parça: 8;
+  [data-sm~="21p"], [data-sm~="22p"],
+  [data-sm~="23p"], [data-sm~="24p"] {
+    --bbb: 6;
+    --b-b: 0;
   }
 
-  [data-sm~="8p"] {
-    --parçalık: 8;
+  [data-sm~="1p"], [data-sm~="5p"], [data-sm~="9p"],
+  [data-sm~="13p"], [data-sm~="17p"], [data-sm~="21p"] {
+    --b-b: 3;
   }
 
-  [data-sm~="9"] {
-    --parça: 9;
+  [data-sm~="2p"], [data-sm~="6p"], [data-sm~="10p"],
+  [data-sm~="14p"], [data-sm~="18p"], [data-sm~="22p"] {
+    --b-b: 2;
   }
 
-  [data-sm~="9p"] {
-    --parçalık: 9;
-  }
-
-  [data-sm~="10"] {
-    --parça: 10;
-  }
-
-  [data-sm~="10p"] {
-    --parçalık: 10;
-  }
-
-  [data-sm~="11"] {
-    --parça: 11;
-  }
-
-  [data-sm~="11p"] {
-    --parçalık: 11;
-  }
-
-  [data-sm~="12"] {
-    --parça: 12;
-  }
-
-  [data-sm~="12p"] {
-    --parçalık: 12;
-  }
-
-  [data-sm~="13"] {
-    --parça: 13;
-  }
-
-  [data-sm~="13p"] {
-    --parçalık: 13;
-  }
-
-  [data-sm~="14"] {
-    --parça: 14;
-  }
-
-  [data-sm~="14p"] {
-    --parçalık: 14;
-  }
-
-  [data-sm~="15"] {
-    --parça: 15;
-  }
-
-  [data-sm~="15p"] {
-    --parçalık: 15;
-  }
-
-  [data-sm~="16"] {
-    --parça: 16;
-  }
-
-  [data-sm~="16p"] {
-    --parçalık: 16;
-  }
-
-  [data-sm~="17"] {
-    --parça: 17;
-  }
-
-  [data-sm~="17p"] {
-    --parçalık: 17;
-  }
-
-  [data-sm~="18"] {
-    --parça: 18;
-  }
-
-  [data-sm~="18p"] {
-    --parçalık: 18;
-  }
-
-  [data-sm~="19"] {
-    --parça: 19;
-  }
-
-  [data-sm~="19p"] {
-    --parçalık: 19;
-  }
-
-  [data-sm~="20"] {
-    --parça: 20;
-  }
-
-  [data-sm~="20p"] {
-    --parçalık: 20;
-  }
-
-  [data-sm~="21"] {
-    --parça: 21;
-  }
-
-  [data-sm~="21p"] {
-    --parçalık: 21;
-  }
-
-  [data-sm~="22"] {
-    --parça: 22;
-  }
-
-  [data-sm~="22p"] {
-    --parçalık: 22;
-  }
-
-  [data-sm~="23"] {
-    --parça: 23;
-  }
-
-  [data-sm~="23p"] {
-    --parçalık: 23;
-  }
-
-  [data-sm~="24"] {
-    --parça: 24;
-  }
-
-  [data-sm~="24p"] {
-    --parçalık: 24;
+  [data-sm~="3p"], [data-sm~="7p"], [data-sm~="11p"],
+  [data-sm~="15p"], [data-sm~="19p"], [data-sm~="23p"] {
+    --b-b: 1;
   }
 
   [data-sm][data-sm] {
-    width: calc(100% / var(--parçalık) * var(--parça));
-    max-width: calc(100% / var(--parçalık) * var(--parça));
+    width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+    max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
   }
 
   [data-sm~="1g"] {
@@ -3326,201 +3072,113 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     max-width: calc(100% / 24);
   }
 
-  [data-md~="1"] {
-    --parça: 1;
+  [data-md~="1"], [data-md~="2"],
+  [data-md~="3"], [data-md~="4"] {
+    --aaa: 1;
+    --a-a: 0;
   }
 
-  [data-md~="1p"] {
-    --parçalık: 1;
+  [data-md~="5"], [data-md~="6"],
+  [data-md~="7"], [data-md~="8"] {
+    --aaa: 2;
+    --a-a: 0;
   }
 
-  [data-md~="2"] {
-    --parça: 2;
+  [data-md~="9"], [data-md~="10"],
+  [data-md~="11"], [data-md~="12"] {
+    --aaa: 3;
+    --a-a: 0;
   }
 
-  [data-md~="2p"] {
-    --parçalık: 2;
+  [data-md~="13"], [data-md~="14"],
+  [data-md~="15"], [data-md~="16"] {
+    --aaa: 4;
+    --a-a: 0;
   }
 
-  [data-md~="3"] {
-    --parça: 3;
+  [data-md~="17"], [data-md~="18"],
+  [data-md~="19"], [data-md~="20"] {
+    --aaa: 5;
   }
 
-  [data-md~="3p"] {
-    --parçalık: 3;
+  [data-md~="21"], [data-md~="22"],
+  [data-md~="23"], [data-md~="24"] {
+    --aaa: 6;
+    --a-a: 0;
   }
 
-  [data-md~="4"] {
-    --parça: 4;
+  [data-md~="1"], [data-md~="5"],
+  [data-md~="9"], [data-md~="13"],
+  [data-md~="17"], [data-md~="21"] {
+    --a-a: 3;
   }
 
-  [data-md~="4p"] {
-    --parçalık: 4;
+  [data-md~="2"], [data-md~="6"],
+  [data-md~="10"], [data-md~="14"],
+  [data-md~="18"], [data-md~="22"] {
+    --a-a: 2;
   }
 
-  [data-md~="5"] {
-    --parça: 5;
+  [data-md~="3"], [data-md~="7"],
+  [data-md~="11"], [data-md~="15"],
+  [data-md~="19"], [data-md~="23"] {
+    --a-a: 1;
   }
 
-  [data-md~="5p"] {
-    --parçalık: 5;
+  [data-md~="1p"], [data-md~="2p"],
+  [data-md~="3p"], [data-md~="4p"] {
+    --bbb: 1;
+    --b-b: 0;
   }
 
-  [data-md~="6"] {
-    --parça: 6;
+  [data-md~="5p"], [data-md~="6p"],
+  [data-md~="7p"], [data-md~="8p"] {
+    --bbb: 2;
+    --b-b: 0;
   }
 
-  [data-md~="6p"] {
-    --parçalık: 6;
+  [data-md~="9p"], [data-md~="10p"],
+  [data-md~="11p"], [data-md~="12p"] {
+    --bbb: 3;
+    --b-b: 0;
   }
 
-  [data-md~="7"] {
-    --parça: 7;
+  [data-md~="13p"], [data-md~="14p"],
+  [data-md~="15p"], [data-md~="16p"] {
+    --bbb: 4;
+    --b-b: 0;
   }
 
-  [data-md~="7p"] {
-    --parçalık: 7;
+  [data-md~="17p"], [data-md~="18p"],
+  [data-md~="19p"], [data-md~="20p"] {
+    --bbb: 5;
+    --b-b: 0;
   }
 
-  [data-md~="8"] {
-    --parça: 8;
+  [data-md~="21p"], [data-md~="22p"],
+  [data-md~="23p"], [data-md~="24p"] {
+    --bbb: 6;
+    --b-b: 0;
   }
 
-  [data-md~="8p"] {
-    --parçalık: 8;
+  [data-md~="1p"], [data-md~="5p"], [data-md~="9p"],
+  [data-md~="13p"], [data-md~="17p"], [data-md~="21p"] {
+    --b-b: 3;
   }
 
-  [data-md~="9"] {
-    --parça: 9;
+  [data-md~="2p"], [data-md~="6p"], [data-md~="10p"],
+  [data-md~="14p"], [data-md~="18p"], [data-md~="22p"] {
+    --b-b: 2;
   }
 
-  [data-md~="9p"] {
-    --parçalık: 9;
-  }
-
-  [data-md~="10"] {
-    --parça: 10;
-  }
-
-  [data-md~="10p"] {
-    --parçalık: 10;
-  }
-
-  [data-md~="11"] {
-    --parça: 11;
-  }
-
-  [data-md~="11p"] {
-    --parçalık: 11;
-  }
-
-  [data-md~="12"] {
-    --parça: 12;
-  }
-
-  [data-md~="12p"] {
-    --parçalık: 12;
-  }
-
-  [data-md~="13"] {
-    --parça: 13;
-  }
-
-  [data-md~="13p"] {
-    --parçalık: 13;
-  }
-
-  [data-md~="14"] {
-    --parça: 14;
-  }
-
-  [data-md~="14p"] {
-    --parçalık: 14;
-  }
-
-  [data-md~="15"] {
-    --parça: 15;
-  }
-
-  [data-md~="15p"] {
-    --parçalık: 15;
-  }
-
-  [data-md~="16"] {
-    --parça: 16;
-  }
-
-  [data-md~="16p"] {
-    --parçalık: 16;
-  }
-
-  [data-md~="17"] {
-    --parça: 17;
-  }
-
-  [data-md~="17p"] {
-    --parçalık: 17;
-  }
-
-  [data-md~="18"] {
-    --parça: 18;
-  }
-
-  [data-md~="18p"] {
-    --parçalık: 18;
-  }
-
-  [data-md~="19"] {
-    --parça: 19;
-  }
-
-  [data-md~="19p"] {
-    --parçalık: 19;
-  }
-
-  [data-md~="20"] {
-    --parça: 20;
-  }
-
-  [data-md~="20p"] {
-    --parçalık: 20;
-  }
-
-  [data-md~="21"] {
-    --parça: 21;
-  }
-
-  [data-md~="21p"] {
-    --parçalık: 21;
-  }
-
-  [data-md~="22"] {
-    --parça: 22;
-  }
-
-  [data-md~="22p"] {
-    --parçalık: 22;
-  }
-
-  [data-md~="23"] {
-    --parça: 23;
-  }
-
-  [data-md~="23p"] {
-    --parçalık: 23;
-  }
-
-  [data-md~="24"] {
-    --parça: 24;
-  }
-
-  [data-md~="24p"] {
-    --parçalık: 24;
+  [data-md~="3p"], [data-md~="7p"], [data-md~="11p"],
+  [data-md~="15p"], [data-md~="19p"], [data-md~="23p"] {
+    --b-b: 1;
   }
 
   [data-md][data-md] {
-    width: calc(100% / var(--parçalık) * var(--parça));
-    max-width: calc(100% / var(--parçalık) * var(--parça));
+    width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+    max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
   }
 
   [data-md~="1g"] {
@@ -4124,201 +3782,113 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     max-width: calc(100% / 24);
   }
 
-  [data-lg~="1"] {
-    --parça: 1;
+  [data-lg~="1"], [data-lg~="2"],
+  [data-lg~="3"], [data-lg~="4"] {
+    --aaa: 1;
+    --a-a: 0;
   }
 
-  [data-lg~="1p"] {
-    --parçalık: 1;
+  [data-lg~="5"], [data-lg~="6"],
+  [data-lg~="7"], [data-lg~="8"] {
+    --aaa: 2;
+    --a-a: 0;
   }
 
-  [data-lg~="2"] {
-    --parça: 2;
+  [data-lg~="9"], [data-lg~="10"],
+  [data-lg~="11"], [data-lg~="12"] {
+    --aaa: 3;
+    --a-a: 0;
   }
 
-  [data-lg~="2p"] {
-    --parçalık: 2;
+  [data-lg~="13"], [data-lg~="14"],
+  [data-lg~="15"], [data-lg~="16"] {
+    --aaa: 4;
+    --a-a: 0;
   }
 
-  [data-lg~="3"] {
-    --parça: 3;
+  [data-lg~="17"], [data-lg~="18"],
+  [data-lg~="19"], [data-lg~="20"] {
+    --aaa: 5;
   }
 
-  [data-lg~="3p"] {
-    --parçalık: 3;
+  [data-lg~="21"], [data-lg~="22"],
+  [data-lg~="23"], [data-lg~="24"] {
+    --aaa: 6;
+    --a-a: 0;
   }
 
-  [data-lg~="4"] {
-    --parça: 4;
+  [data-lg~="1"], [data-lg~="5"],
+  [data-lg~="9"], [data-lg~="13"],
+  [data-lg~="17"], [data-lg~="21"] {
+    --a-a: 3;
   }
 
-  [data-lg~="4p"] {
-    --parçalık: 4;
+  [data-lg~="2"], [data-lg~="6"],
+  [data-lg~="10"], [data-lg~="14"],
+  [data-lg~="18"], [data-lg~="22"] {
+    --a-a: 2;
   }
 
-  [data-lg~="5"] {
-    --parça: 5;
+  [data-lg~="3"], [data-lg~="7"],
+  [data-lg~="11"], [data-lg~="15"],
+  [data-lg~="19"], [data-lg~="23"] {
+    --a-a: 1;
   }
 
-  [data-lg~="5p"] {
-    --parçalık: 5;
+  [data-lg~="1p"], [data-lg~="2p"],
+  [data-lg~="3p"], [data-lg~="4p"] {
+    --bbb: 1;
+    --b-b: 0;
   }
 
-  [data-lg~="6"] {
-    --parça: 6;
+  [data-lg~="5p"], [data-lg~="6p"],
+  [data-lg~="7p"], [data-lg~="8p"] {
+    --bbb: 2;
+    --b-b: 0;
   }
 
-  [data-lg~="6p"] {
-    --parçalık: 6;
+  [data-lg~="9p"], [data-lg~="10p"],
+  [data-lg~="11p"], [data-lg~="12p"] {
+    --bbb: 3;
+    --b-b: 0;
   }
 
-  [data-lg~="7"] {
-    --parça: 7;
+  [data-lg~="13p"], [data-lg~="14p"],
+  [data-lg~="15p"], [data-lg~="16p"] {
+    --bbb: 4;
+    --b-b: 0;
   }
 
-  [data-lg~="7p"] {
-    --parçalık: 7;
+  [data-lg~="17p"], [data-lg~="18p"],
+  [data-lg~="19p"], [data-lg~="20p"] {
+    --bbb: 5;
+    --b-b: 0;
   }
 
-  [data-lg~="8"] {
-    --parça: 8;
+  [data-lg~="21p"], [data-lg~="22p"],
+  [data-lg~="23p"], [data-lg~="24p"] {
+    --bbb: 6;
+    --b-b: 0;
   }
 
-  [data-lg~="8p"] {
-    --parçalık: 8;
+  [data-lg~="1p"], [data-lg~="5p"], [data-lg~="9p"],
+  [data-lg~="13p"], [data-lg~="17p"], [data-lg~="21p"] {
+    --b-b: 3;
   }
 
-  [data-lg~="9"] {
-    --parça: 9;
+  [data-lg~="2p"], [data-lg~="6p"], [data-lg~="10p"],
+  [data-lg~="14p"], [data-lg~="18p"], [data-lg~="22p"] {
+    --b-b: 2;
   }
 
-  [data-lg~="9p"] {
-    --parçalık: 9;
-  }
-
-  [data-lg~="10"] {
-    --parça: 10;
-  }
-
-  [data-lg~="10p"] {
-    --parçalık: 10;
-  }
-
-  [data-lg~="11"] {
-    --parça: 11;
-  }
-
-  [data-lg~="11p"] {
-    --parçalık: 11;
-  }
-
-  [data-lg~="12"] {
-    --parça: 12;
-  }
-
-  [data-lg~="12p"] {
-    --parçalık: 12;
-  }
-
-  [data-lg~="13"] {
-    --parça: 13;
-  }
-
-  [data-lg~="13p"] {
-    --parçalık: 13;
-  }
-
-  [data-lg~="14"] {
-    --parça: 14;
-  }
-
-  [data-lg~="14p"] {
-    --parçalık: 14;
-  }
-
-  [data-lg~="15"] {
-    --parça: 15;
-  }
-
-  [data-lg~="15p"] {
-    --parçalık: 15;
-  }
-
-  [data-lg~="16"] {
-    --parça: 16;
-  }
-
-  [data-lg~="16p"] {
-    --parçalık: 16;
-  }
-
-  [data-lg~="17"] {
-    --parça: 17;
-  }
-
-  [data-lg~="17p"] {
-    --parçalık: 17;
-  }
-
-  [data-lg~="18"] {
-    --parça: 18;
-  }
-
-  [data-lg~="18p"] {
-    --parçalık: 18;
-  }
-
-  [data-lg~="19"] {
-    --parça: 19;
-  }
-
-  [data-lg~="19p"] {
-    --parçalık: 19;
-  }
-
-  [data-lg~="20"] {
-    --parça: 20;
-  }
-
-  [data-lg~="20p"] {
-    --parçalık: 20;
-  }
-
-  [data-lg~="21"] {
-    --parça: 21;
-  }
-
-  [data-lg~="21p"] {
-    --parçalık: 21;
-  }
-
-  [data-lg~="22"] {
-    --parça: 22;
-  }
-
-  [data-lg~="22p"] {
-    --parçalık: 22;
-  }
-
-  [data-lg~="23"] {
-    --parça: 23;
-  }
-
-  [data-lg~="23p"] {
-    --parçalık: 23;
-  }
-
-  [data-lg~="24"] {
-    --parça: 24;
-  }
-
-  [data-lg~="24p"] {
-    --parçalık: 24;
+  [data-lg~="3p"], [data-lg~="7p"], [data-lg~="11p"],
+  [data-lg~="15p"], [data-lg~="19p"], [data-lg~="23p"] {
+    --b-b: 1;
   }
 
   [data-lg][data-lg] {
-    width: calc(100% / var(--parçalık) * var(--parça));
-    max-width: calc(100% / var(--parçalık) * var(--parça));
+    width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+    max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
   }
 
   [data-lg~="1g"] {
@@ -4922,201 +4492,113 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     max-width: calc(100% / 24);
   }
 
-  [data-xl~="1"] {
-    --parça: 1;
+  [data-xl~="1"], [data-xl~="2"],
+  [data-xl~="3"], [data-xl~="4"] {
+    --aaa: 1;
+    --a-a: 0;
   }
 
-  [data-xl~="1p"] {
-    --parçalık: 1;
+  [data-xl~="5"], [data-xl~="6"],
+  [data-xl~="7"], [data-xl~="8"] {
+    --aaa: 2;
+    --a-a: 0;
   }
 
-  [data-xl~="2"] {
-    --parça: 2;
+  [data-xl~="9"], [data-xl~="10"],
+  [data-xl~="11"], [data-xl~="12"] {
+    --aaa: 3;
+    --a-a: 0;
   }
 
-  [data-xl~="2p"] {
-    --parçalık: 2;
+  [data-xl~="13"], [data-xl~="14"],
+  [data-xl~="15"], [data-xl~="16"] {
+    --aaa: 4;
+    --a-a: 0;
   }
 
-  [data-xl~="3"] {
-    --parça: 3;
+  [data-xl~="17"], [data-xl~="18"],
+  [data-xl~="19"], [data-xl~="20"] {
+    --aaa: 5;
   }
 
-  [data-xl~="3p"] {
-    --parçalık: 3;
+  [data-xl~="21"], [data-xl~="22"],
+  [data-xl~="23"], [data-xl~="24"] {
+    --aaa: 6;
+    --a-a: 0;
   }
 
-  [data-xl~="4"] {
-    --parça: 4;
+  [data-xl~="1"], [data-xl~="5"],
+  [data-xl~="9"], [data-xl~="13"],
+  [data-xl~="17"], [data-xl~="21"] {
+    --a-a: 3;
   }
 
-  [data-xl~="4p"] {
-    --parçalık: 4;
+  [data-xl~="2"], [data-xl~="6"],
+  [data-xl~="10"], [data-xl~="14"],
+  [data-xl~="18"], [data-xl~="22"] {
+    --a-a: 2;
   }
 
-  [data-xl~="5"] {
-    --parça: 5;
+  [data-xl~="3"], [data-xl~="7"],
+  [data-xl~="11"], [data-xl~="15"],
+  [data-xl~="19"], [data-xl~="23"] {
+    --a-a: 1;
   }
 
-  [data-xl~="5p"] {
-    --parçalık: 5;
+  [data-xl~="1p"], [data-xl~="2p"],
+  [data-xl~="3p"], [data-xl~="4p"] {
+    --bbb: 1;
+    --b-b: 0;
   }
 
-  [data-xl~="6"] {
-    --parça: 6;
+  [data-xl~="5p"], [data-xl~="6p"],
+  [data-xl~="7p"], [data-xl~="8p"] {
+    --bbb: 2;
+    --b-b: 0;
   }
 
-  [data-xl~="6p"] {
-    --parçalık: 6;
+  [data-xl~="9p"], [data-xl~="10p"],
+  [data-xl~="11p"], [data-xl~="12p"] {
+    --bbb: 3;
+    --b-b: 0;
   }
 
-  [data-xl~="7"] {
-    --parça: 7;
+  [data-xl~="13p"], [data-xl~="14p"],
+  [data-xl~="15p"], [data-xl~="16p"] {
+    --bbb: 4;
+    --b-b: 0;
   }
 
-  [data-xl~="7p"] {
-    --parçalık: 7;
+  [data-xl~="17p"], [data-xl~="18p"],
+  [data-xl~="19p"], [data-xl~="20p"] {
+    --bbb: 5;
+    --b-b: 0;
   }
 
-  [data-xl~="8"] {
-    --parça: 8;
+  [data-xl~="21p"], [data-xl~="22p"],
+  [data-xl~="23p"], [data-xl~="24p"] {
+    --bbb: 6;
+    --b-b: 0;
   }
 
-  [data-xl~="8p"] {
-    --parçalık: 8;
+  [data-xl~="1p"], [data-xl~="5p"], [data-xl~="9p"],
+  [data-xl~="13p"], [data-xl~="17p"], [data-xl~="21p"] {
+    --b-b: 3;
   }
 
-  [data-xl~="9"] {
-    --parça: 9;
+  [data-xl~="2p"], [data-xl~="6p"], [data-xl~="10p"],
+  [data-xl~="14p"], [data-xl~="18p"], [data-xl~="22p"] {
+    --b-b: 2;
   }
 
-  [data-xl~="9p"] {
-    --parçalık: 9;
-  }
-
-  [data-xl~="10"] {
-    --parça: 10;
-  }
-
-  [data-xl~="10p"] {
-    --parçalık: 10;
-  }
-
-  [data-xl~="11"] {
-    --parça: 11;
-  }
-
-  [data-xl~="11p"] {
-    --parçalık: 11;
-  }
-
-  [data-xl~="12"] {
-    --parça: 12;
-  }
-
-  [data-xl~="12p"] {
-    --parçalık: 12;
-  }
-
-  [data-xl~="13"] {
-    --parça: 13;
-  }
-
-  [data-xl~="13p"] {
-    --parçalık: 13;
-  }
-
-  [data-xl~="14"] {
-    --parça: 14;
-  }
-
-  [data-xl~="14p"] {
-    --parçalık: 14;
-  }
-
-  [data-xl~="15"] {
-    --parça: 15;
-  }
-
-  [data-xl~="15p"] {
-    --parçalık: 15;
-  }
-
-  [data-xl~="16"] {
-    --parça: 16;
-  }
-
-  [data-xl~="16p"] {
-    --parçalık: 16;
-  }
-
-  [data-xl~="17"] {
-    --parça: 17;
-  }
-
-  [data-xl~="17p"] {
-    --parçalık: 17;
-  }
-
-  [data-xl~="18"] {
-    --parça: 18;
-  }
-
-  [data-xl~="18p"] {
-    --parçalık: 18;
-  }
-
-  [data-xl~="19"] {
-    --parça: 19;
-  }
-
-  [data-xl~="19p"] {
-    --parçalık: 19;
-  }
-
-  [data-xl~="20"] {
-    --parça: 20;
-  }
-
-  [data-xl~="20p"] {
-    --parçalık: 20;
-  }
-
-  [data-xl~="21"] {
-    --parça: 21;
-  }
-
-  [data-xl~="21p"] {
-    --parçalık: 21;
-  }
-
-  [data-xl~="22"] {
-    --parça: 22;
-  }
-
-  [data-xl~="22p"] {
-    --parçalık: 22;
-  }
-
-  [data-xl~="23"] {
-    --parça: 23;
-  }
-
-  [data-xl~="23p"] {
-    --parçalık: 23;
-  }
-
-  [data-xl~="24"] {
-    --parça: 24;
-  }
-
-  [data-xl~="24p"] {
-    --parçalık: 24;
+  [data-xl~="3p"], [data-xl~="7p"], [data-xl~="11p"],
+  [data-xl~="15p"], [data-xl~="19p"], [data-xl~="23p"] {
+    --b-b: 1;
   }
 
   [data-xl][data-xl] {
-    width: calc(100% / var(--parçalık) * var(--parça));
-    max-width: calc(100% / var(--parçalık) * var(--parça));
+    width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+    max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
   }
 
   [data-xl~="1g"] {
@@ -5720,201 +5202,113 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     max-width: calc(100% / 24);
   }
 
-  [data-hg~="1"] {
-    --parça: 1;
+  [data-hg~="1"], [data-hg~="2"],
+  [data-hg~="3"], [data-hg~="4"] {
+    --aaa: 1;
+    --a-a: 0;
   }
 
-  [data-hg~="1p"] {
-    --parçalık: 1;
+  [data-hg~="5"], [data-hg~="6"],
+  [data-hg~="7"], [data-hg~="8"] {
+    --aaa: 2;
+    --a-a: 0;
   }
 
-  [data-hg~="2"] {
-    --parça: 2;
+  [data-hg~="9"], [data-hg~="10"],
+  [data-hg~="11"], [data-hg~="12"] {
+    --aaa: 3;
+    --a-a: 0;
   }
 
-  [data-hg~="2p"] {
-    --parçalık: 2;
+  [data-hg~="13"], [data-hg~="14"],
+  [data-hg~="15"], [data-hg~="16"] {
+    --aaa: 4;
+    --a-a: 0;
   }
 
-  [data-hg~="3"] {
-    --parça: 3;
+  [data-hg~="17"], [data-hg~="18"],
+  [data-hg~="19"], [data-hg~="20"] {
+    --aaa: 5;
   }
 
-  [data-hg~="3p"] {
-    --parçalık: 3;
+  [data-hg~="21"], [data-hg~="22"],
+  [data-hg~="23"], [data-hg~="24"] {
+    --aaa: 6;
+    --a-a: 0;
   }
 
-  [data-hg~="4"] {
-    --parça: 4;
+  [data-hg~="1"], [data-hg~="5"],
+  [data-hg~="9"], [data-hg~="13"],
+  [data-hg~="17"], [data-hg~="21"] {
+    --a-a: 3;
   }
 
-  [data-hg~="4p"] {
-    --parçalık: 4;
+  [data-hg~="2"], [data-hg~="6"],
+  [data-hg~="10"], [data-hg~="14"],
+  [data-hg~="18"], [data-hg~="22"] {
+    --a-a: 2;
   }
 
-  [data-hg~="5"] {
-    --parça: 5;
+  [data-hg~="3"], [data-hg~="7"],
+  [data-hg~="11"], [data-hg~="15"],
+  [data-hg~="19"], [data-hg~="23"] {
+    --a-a: 1;
   }
 
-  [data-hg~="5p"] {
-    --parçalık: 5;
+  [data-hg~="1p"], [data-hg~="2p"],
+  [data-hg~="3p"], [data-hg~="4p"] {
+    --bbb: 1;
+    --b-b: 0;
   }
 
-  [data-hg~="6"] {
-    --parça: 6;
+  [data-hg~="5p"], [data-hg~="6p"],
+  [data-hg~="7p"], [data-hg~="8p"] {
+    --bbb: 2;
+    --b-b: 0;
   }
 
-  [data-hg~="6p"] {
-    --parçalık: 6;
+  [data-hg~="9p"], [data-hg~="10p"],
+  [data-hg~="11p"], [data-hg~="12p"] {
+    --bbb: 3;
+    --b-b: 0;
   }
 
-  [data-hg~="7"] {
-    --parça: 7;
+  [data-hg~="13p"], [data-hg~="14p"],
+  [data-hg~="15p"], [data-hg~="16p"] {
+    --bbb: 4;
+    --b-b: 0;
   }
 
-  [data-hg~="7p"] {
-    --parçalık: 7;
+  [data-hg~="17p"], [data-hg~="18p"],
+  [data-hg~="19p"], [data-hg~="20p"] {
+    --bbb: 5;
+    --b-b: 0;
   }
 
-  [data-hg~="8"] {
-    --parça: 8;
+  [data-hg~="21p"], [data-hg~="22p"],
+  [data-hg~="23p"], [data-hg~="24p"] {
+    --bbb: 6;
+    --b-b: 0;
   }
 
-  [data-hg~="8p"] {
-    --parçalık: 8;
+  [data-hg~="1p"], [data-hg~="5p"], [data-hg~="9p"],
+  [data-hg~="13p"], [data-hg~="17p"], [data-hg~="21p"] {
+    --b-b: 3;
   }
 
-  [data-hg~="9"] {
-    --parça: 9;
+  [data-hg~="2p"], [data-hg~="6p"], [data-hg~="10p"],
+  [data-hg~="14p"], [data-hg~="18p"], [data-hg~="22p"] {
+    --b-b: 2;
   }
 
-  [data-hg~="9p"] {
-    --parçalık: 9;
-  }
-
-  [data-hg~="10"] {
-    --parça: 10;
-  }
-
-  [data-hg~="10p"] {
-    --parçalık: 10;
-  }
-
-  [data-hg~="11"] {
-    --parça: 11;
-  }
-
-  [data-hg~="11p"] {
-    --parçalık: 11;
-  }
-
-  [data-hg~="12"] {
-    --parça: 12;
-  }
-
-  [data-hg~="12p"] {
-    --parçalık: 12;
-  }
-
-  [data-hg~="13"] {
-    --parça: 13;
-  }
-
-  [data-hg~="13p"] {
-    --parçalık: 13;
-  }
-
-  [data-hg~="14"] {
-    --parça: 14;
-  }
-
-  [data-hg~="14p"] {
-    --parçalık: 14;
-  }
-
-  [data-hg~="15"] {
-    --parça: 15;
-  }
-
-  [data-hg~="15p"] {
-    --parçalık: 15;
-  }
-
-  [data-hg~="16"] {
-    --parça: 16;
-  }
-
-  [data-hg~="16p"] {
-    --parçalık: 16;
-  }
-
-  [data-hg~="17"] {
-    --parça: 17;
-  }
-
-  [data-hg~="17p"] {
-    --parçalık: 17;
-  }
-
-  [data-hg~="18"] {
-    --parça: 18;
-  }
-
-  [data-hg~="18p"] {
-    --parçalık: 18;
-  }
-
-  [data-hg~="19"] {
-    --parça: 19;
-  }
-
-  [data-hg~="19p"] {
-    --parçalık: 19;
-  }
-
-  [data-hg~="20"] {
-    --parça: 20;
-  }
-
-  [data-hg~="20p"] {
-    --parçalık: 20;
-  }
-
-  [data-hg~="21"] {
-    --parça: 21;
-  }
-
-  [data-hg~="21p"] {
-    --parçalık: 21;
-  }
-
-  [data-hg~="22"] {
-    --parça: 22;
-  }
-
-  [data-hg~="22p"] {
-    --parçalık: 22;
-  }
-
-  [data-hg~="23"] {
-    --parça: 23;
-  }
-
-  [data-hg~="23p"] {
-    --parçalık: 23;
-  }
-
-  [data-hg~="24"] {
-    --parça: 24;
-  }
-
-  [data-hg~="24p"] {
-    --parçalık: 24;
+  [data-hg~="3p"], [data-hg~="7p"], [data-hg~="11p"],
+  [data-hg~="15p"], [data-hg~="19p"], [data-hg~="23p"] {
+    --b-b: 1;
   }
 
   [data-hg][data-hg] {
-    width: calc(100% / var(--parçalık) * var(--parça));
-    max-width: calc(100% / var(--parçalık) * var(--parça));
+    width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+    max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
   }
 
   [data-hg~="1g"] {
