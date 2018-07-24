@@ -149,7 +149,7 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
   --aaa:24;
   --a-a:0;
   --bbb:24;
-  --b-b:24;
+  --b-b:0;
 }
 
 [data-gnl], [data-xs], [data-sm], [data-md], [data-lg], [data-xl], [data-hg] {
