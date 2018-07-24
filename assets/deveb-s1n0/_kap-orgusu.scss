@@ -4,7 +4,11 @@
 
 */
 
- /** @mixin parça-düzeni($ekran){
+
+/*** 
+◘ İPTAL ◘ 
+
+  @mixin parça-düzeni($ekran){
     @for $i from 1 through 24{
       [data-# {$ekran}~="# {$i}"]{--parça: # {$i};}
       [data-# {$ekran}~="# {$i}p"]{--parçalık: # {$i};}
@@ -13,86 +17,87 @@
       width: calc(100% / var(--parçalık) * var(--parça));
       max-width: calc(100% / var(--parçalık) * var(--parça));
     }
-  }  **/
+  }
+
+◘ İPTAL ◘ 
+***/
+
   @mixin parça-düzeni($ekran){
-    [data-#{$ekran}~="1"],[data-#{$ekran}~="2"],
-    [data-#{$ekran}~="3"],[data-#{$ekran}~="4"]
-    {--aaa: 1; --a-a: 0}
 
-    [data-#{$ekran}~="5"],[data-#{$ekran}~="6"],
-    [data-#{$ekran}~="7"],[data-#{$ekran}~="8"]
-    {--aaa: 2; --a-a: 0}
+  /**
 
-    [data-#{$ekran}~="9"],[data-#{$ekran}~="10"],
-    [data-#{$ekran}~="11"],[data-#{$ekran}~="12"]
-    {--aaa: 3; --a-a: 0}
+    A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
+    css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
+    4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
+    ----------------------------------------------------------------------------------
+    | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
+    | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
+    | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
+    | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
+    ----------------------------------------------------------------------------------
 
-    [data-#{$ekran}~="13"],[data-#{$ekran}~="14"],
-    [data-#{$ekran}~="15"],[data-#{$ekran}~="16"]
-    {--aaa: 4; --a-a: 0}
+  **/
 
-    [data-#{$ekran}~="17"],[data-#{$ekran}~="18"],
-    [data-#{$ekran}~="19"],[data-#{$ekran}~="20"]
-    {--aaa: 5}
 
-    [data-#{$ekran}~="21"],[data-#{$ekran}~="22"],
-    [data-#{$ekran}~="23"],[data-#{$ekran}~="24"]
-    {--aaa: 6; --a-a: 0}
+    /* Parça değişkenleri */
+    [data-#{$ekran}~="1"],[data-#{$ekran}~="2"],[data-#{$ekran}~="3"],[data-#{$ekran}~="4"]
+    {--a: 1; --c: 0}
 
-    [data-#{$ekran}~="1"],[data-#{$ekran}~="5"],
-    [data-#{$ekran}~="9"],[data-#{$ekran}~="13"],
-    [data-#{$ekran}~="17"],[data-#{$ekran}~="21"]
-    {--a-a: 3}
+    [data-#{$ekran}~="5"],[data-#{$ekran}~="6"],[data-#{$ekran}~="7"],[data-#{$ekran}~="8"]
+    {--a: 2; --c: 0}
 
-    [data-#{$ekran}~="2"],[data-#{$ekran}~="6"],
-    [data-#{$ekran}~="10"],[data-#{$ekran}~="14"],
-    [data-#{$ekran}~="18"],[data-#{$ekran}~="22"]
-    {--a-a: 2}
+    [data-#{$ekran}~="9"],[data-#{$ekran}~="10"],[data-#{$ekran}~="11"],[data-#{$ekran}~="12"]
+    {--a: 3; --c: 0}
 
-    [data-#{$ekran}~="3"],[data-#{$ekran}~="7"],
-    [data-#{$ekran}~="11"],[data-#{$ekran}~="15"],
-    [data-#{$ekran}~="19"],[data-#{$ekran}~="23"]
-    {--a-a: 1}
+    [data-#{$ekran}~="13"],[data-#{$ekran}~="14"],[data-#{$ekran}~="15"],[data-#{$ekran}~="16"]
+    {--a: 4; --c: 0}
 
-    [data-#{$ekran}~="1p"],[data-#{$ekran}~="2p"],
-    [data-#{$ekran}~="3p"],[data-#{$ekran}~="4p"]
-    {--bbb: 1; --b-b: 0}
+    [data-#{$ekran}~="17"],[data-#{$ekran}~="18"],[data-#{$ekran}~="19"],[data-#{$ekran}~="20"]
+    {--a: 5; --c: 0}
 
-    [data-#{$ekran}~="5p"],[data-#{$ekran}~="6p"],
-    [data-#{$ekran}~="7p"],[data-#{$ekran}~="8p"]
-    {--bbb: 2; --b-b: 0}
+    [data-#{$ekran}~="21"],[data-#{$ekran}~="22"],[data-#{$ekran}~="23"],[data-#{$ekran}~="24"]
+    {--a: 6; --c: 0}
 
-    [data-#{$ekran}~="9p"],[data-#{$ekran}~="10p"],
-    [data-#{$ekran}~="11p"],[data-#{$ekran}~="12p"]
-    {--bbb: 3; --b-b: 0}
+    [data-#{$ekran}~="1"],[data-#{$ekran}~="5"],[data-#{$ekran}~="9"],[data-#{$ekran}~="13"],[data-#{$ekran}~="17"],[data-#{$ekran}~="21"]
+    {--c: 3}
 
-    [data-#{$ekran}~="13p"],[data-#{$ekran}~="14p"],
-    [data-#{$ekran}~="15p"],[data-#{$ekran}~="16p"]
-    {--bbb: 4; --b-b: 0}
+    [data-#{$ekran}~="2"],[data-#{$ekran}~="6"],[data-#{$ekran}~="10"],[data-#{$ekran}~="14"],[data-#{$ekran}~="18"],[data-#{$ekran}~="22"]
+    {--c: 2}
 
-    [data-#{$ekran}~="17p"],[data-#{$ekran}~="18p"],
-    [data-#{$ekran}~="19p"],[data-#{$ekran}~="20p"]
-    {--bbb: 5; --b-b: 0}
+    [data-#{$ekran}~="3"],[data-#{$ekran}~="7"],[data-#{$ekran}~="11"],[data-#{$ekran}~="15"],[data-#{$ekran}~="19"],[data-#{$ekran}~="23"]
+    {--c: 1}
 
-    [data-#{$ekran}~="21p"],[data-#{$ekran}~="22p"],
-    [data-#{$ekran}~="23p"],[data-#{$ekran}~="24p"]
-    {--bbb: 6; --b-b: 0}
+    /* Parçalık değişkenleri */
+    [data-#{$ekran}~="1p"],[data-#{$ekran}~="2p"],[data-#{$ekran}~="3p"],[data-#{$ekran}~="4p"]
+    {--b: 1; --d: 0}
 
-    [data-#{$ekran}~="1p"],[data-#{$ekran}~="5p"],[data-#{$ekran}~="9p"],
-    [data-#{$ekran}~="13p"],[data-#{$ekran}~="17p"],[data-#{$ekran}~="21p"]
-    {--b-b: 3}
+    [data-#{$ekran}~="5p"],[data-#{$ekran}~="6p"],[data-#{$ekran}~="7p"],[data-#{$ekran}~="8p"]
+    {--b: 2; --d: 0}
 
-    [data-#{$ekran}~="2p"],[data-#{$ekran}~="6p"],[data-#{$ekran}~="10p"],
-    [data-#{$ekran}~="14p"],[data-#{$ekran}~="18p"],[data-#{$ekran}~="22p"]
-    {--b-b: 2}
+    [data-#{$ekran}~="9p"],[data-#{$ekran}~="10p"],[data-#{$ekran}~="11p"],[data-#{$ekran}~="12p"]
+    {--b: 3; --d: 0}
 
-    [data-#{$ekran}~="3p"],[data-#{$ekran}~="7p"],[data-#{$ekran}~="11p"],
-    [data-#{$ekran}~="15p"],[data-#{$ekran}~="19p"],[data-#{$ekran}~="23p"]
-    {--b-b: 1}
+    [data-#{$ekran}~="13p"],[data-#{$ekran}~="14p"],[data-#{$ekran}~="15p"],[data-#{$ekran}~="16p"]
+    {--b: 4; --d: 0}
+
+    [data-#{$ekran}~="17p"],[data-#{$ekran}~="18p"],[data-#{$ekran}~="19p"],[data-#{$ekran}~="20p"]
+    {--b: 5; --d: 0}
+
+    [data-#{$ekran}~="21p"],[data-#{$ekran}~="22p"],[data-#{$ekran}~="23p"],[data-#{$ekran}~="24p"]
+    {--b: 6; --d: 0}
+
+    [data-#{$ekran}~="1p"],[data-#{$ekran}~="5p"],[data-#{$ekran}~="9p"],[data-#{$ekran}~="13p"],[data-#{$ekran}~="17p"],[data-#{$ekran}~="21p"]
+    {--d: 3}
+
+    [data-#{$ekran}~="2p"],[data-#{$ekran}~="6p"],[data-#{$ekran}~="10p"],[data-#{$ekran}~="14p"],[data-#{$ekran}~="18p"],[data-#{$ekran}~="22p"]
+    {--d: 2}
+
+    [data-#{$ekran}~="3p"],[data-#{$ekran}~="7p"],[data-#{$ekran}~="11p"],[data-#{$ekran}~="15p"],[data-#{$ekran}~="19p"],[data-#{$ekran}~="23p"]
+    {--d: 1}
 
     [data-#{$ekran}][data-#{$ekran}]{
-      width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
-      max-width: calc(100% / (var(--bbb) * 4 - var(--b-b)) * (var(--aaa) * 4 - var(--a-a)));
+      width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+      max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
     }
   } 
 
@@ -438,8 +443,8 @@
 
     [data-#{$gnl}]{
       --parça: 1; --parçalık:1;
-      --aaa:24; --a-a:0;
-      --bbb:24; --b-b:0;
+      --a:24; --c:0;
+      --b:24; --c:0;
     }
     [data-#{$gnl}],[data-#{$ufk}],[data-#{$kçk}],[data-#{$ort}],[data-#{$byk}],[data-#{$kcm}],[data-#{$dev}]{
       display:flex;
