@@ -438,6 +438,8 @@
 
     [data-#{$gnl}]{
       --parça: 1; --parçalık:1;
+      --aaa:24; --a-a:0;
+      --bbb:24; --b-b:24;
     }
     [data-#{$gnl}],[data-#{$ufk}],[data-#{$kçk}],[data-#{$ort}],[data-#{$byk}],[data-#{$kcm}],[data-#{$dev}]{
       display:flex;
