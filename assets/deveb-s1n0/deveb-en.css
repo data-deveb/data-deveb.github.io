@@ -145,10 +145,34 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
 
 ◘ İPTAL ◘ 
 ***/
+/*** 
+◘ PARÇA DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
+***/
+/*** 
+◘ GENLEŞME DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
+***/
+/*** 
+◘ SIRALAMA DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
+***/
+/*** 
+◘ ARALIK DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
+***/
+/*** 
+◘ DİZEM DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
+***/
+/*** 
+◘ TAMEKRAN & SIĞ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
+***/
+/*** 
+◘ KONUMLAMA ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
+***/
+/*** 
+◘  ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
+***/
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/*  G00 GENEL | Ekran ölçeği: 0 ≤ * < ∞
+/*  GENEL | Ekran ölçeği: 0 ≤ * < ∞
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*  GS1 KAP ÖRGÜSÜ */
+/*  KAP ÖRGÜSÜ */
 [data-gnl] {
   --parça: 1;
   --parçalık:1;
@@ -163,14 +187,14 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
   flex-wrap: wrap;
 }
 
-[data-gnl~="col"] {
-  flex-direction: column;
-}
-
-[data-gnl~="row"] {
-  flex-direction: row;
-}
-
+/* Fazlalıksa iptal edilecek
+    [data-# {$gnl}~="# {$sütun}"]{
+      flex-direction: column
+    }
+    [data-# {$gnl}~="# {$satır}"]{
+      flex-direction: row
+    }
+*/
 [data-gnl~="fit"] {
   flex: 1 1 0 !important;
   overflow: auto;
@@ -310,19 +334,19 @@ body[data-gnl~="col"] > footer {
   max-width: calc(100% / 24);
 }
 
-  /**
+    /**
 
-    A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-    css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-    4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-    ----------------------------------------------------------------------------------
-    | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-    | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-    | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-    | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-    ----------------------------------------------------------------------------------
+      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
+      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
+      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
+      ----------------------------------------------------------------------------------
+      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
+      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
+      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
+      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
+      ----------------------------------------------------------------------------------
 
-  **/
+    **/
 /* Parça değişkenleri */
 [data-gnl~="1"], [data-gnl~="2"], [data-gnl~="3"], [data-gnl~="4"] {
   --a: 1;
@@ -414,7 +438,6 @@ body[data-gnl~="col"] > footer {
   max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
 }
 
-/* Kap Örgüsü Ek Etkiler */
 [data-gnl~="left-1"] {
   --parça-soldan: 1;
 }
@@ -1053,6 +1076,12 @@ body[data-gnl~="col"] > footer {
   margin-right: auto;
 }
 
+    /**
+
+      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+      kullanılır.
+
+    **/
 [data-gnl~="1g"] {
   flex: 1;
 }
@@ -1149,12 +1178,22 @@ body[data-gnl~="col"] > footer {
   flex: 24;
 }
 
+    /**
+
+      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+
+    **/
 [data-gnl~="0"][data-gnl~="0"] {
   flex-basis: auto;
   max-width: none;
   width: auto;
 }
 
+    /**
+
+      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
+
+    **/
 [data-gnl~="1th"] {
   order: 1;
 }
@@ -1514,7 +1553,7 @@ body[data-gnl~="col"] > footer {
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
+S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 300px) {
   :root {
@@ -1657,19 +1696,19 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     max-width: calc(100% / 24);
   }
 
-  /**
+    /**
 
-    A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-    css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-    4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-    ----------------------------------------------------------------------------------
-    | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-    | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-    | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-    | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-    ----------------------------------------------------------------------------------
+      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
+      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
+      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
+      ----------------------------------------------------------------------------------
+      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
+      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
+      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
+      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
+      ----------------------------------------------------------------------------------
 
-  **/
+    **/
   /* Parça değişkenleri */
   [data-xs~="1"], [data-xs~="2"], [data-xs~="3"], [data-xs~="4"] {
     --a: 1;
@@ -1761,6 +1800,12 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
+    /**
+
+      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+      kullanılır.
+
+    **/
   [data-xs~="1g"] {
     flex: 1;
   }
@@ -1857,12 +1902,22 @@ S01 [data-xs] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     flex: 24;
   }
 
+    /**
+
+      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+
+    **/
   [data-xs~="0"][data-xs~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
+    /**
+
+      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
+
+    **/
   [data-xs~="1th"] {
     order: 1;
   }
@@ -2362,19 +2417,19 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     max-width: calc(100% / 24);
   }
 
-  /**
+    /**
 
-    A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-    css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-    4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-    ----------------------------------------------------------------------------------
-    | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-    | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-    | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-    | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-    ----------------------------------------------------------------------------------
+      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
+      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
+      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
+      ----------------------------------------------------------------------------------
+      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
+      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
+      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
+      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
+      ----------------------------------------------------------------------------------
 
-  **/
+    **/
   /* Parça değişkenleri */
   [data-sm~="1"], [data-sm~="2"], [data-sm~="3"], [data-sm~="4"] {
     --a: 1;
@@ -2466,6 +2521,12 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
+    /**
+
+      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+      kullanılır.
+
+    **/
   [data-sm~="1g"] {
     flex: 1;
   }
@@ -2562,12 +2623,22 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     flex: 24;
   }
 
+    /**
+
+      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+
+    **/
   [data-sm~="0"][data-sm~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
+    /**
+
+      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
+
+    **/
   [data-sm~="1th"] {
     order: 1;
   }
@@ -3067,19 +3138,19 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     max-width: calc(100% / 24);
   }
 
-  /**
+    /**
 
-    A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-    css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-    4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-    ----------------------------------------------------------------------------------
-    | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-    | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-    | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-    | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-    ----------------------------------------------------------------------------------
+      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
+      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
+      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
+      ----------------------------------------------------------------------------------
+      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
+      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
+      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
+      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
+      ----------------------------------------------------------------------------------
 
-  **/
+    **/
   /* Parça değişkenleri */
   [data-md~="1"], [data-md~="2"], [data-md~="3"], [data-md~="4"] {
     --a: 1;
@@ -3171,6 +3242,12 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
+    /**
+
+      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+      kullanılır.
+
+    **/
   [data-md~="1g"] {
     flex: 1;
   }
@@ -3267,12 +3344,22 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     flex: 24;
   }
 
+    /**
+
+      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+
+    **/
   [data-md~="0"][data-md~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
+    /**
+
+      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
+
+    **/
   [data-md~="1th"] {
     order: 1;
   }
@@ -3772,19 +3859,19 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     max-width: calc(100% / 24);
   }
 
-  /**
+    /**
 
-    A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-    css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-    4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-    ----------------------------------------------------------------------------------
-    | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-    | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-    | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-    | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-    ----------------------------------------------------------------------------------
+      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
+      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
+      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
+      ----------------------------------------------------------------------------------
+      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
+      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
+      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
+      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
+      ----------------------------------------------------------------------------------
 
-  **/
+    **/
   /* Parça değişkenleri */
   [data-lg~="1"], [data-lg~="2"], [data-lg~="3"], [data-lg~="4"] {
     --a: 1;
@@ -3876,6 +3963,12 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
+    /**
+
+      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+      kullanılır.
+
+    **/
   [data-lg~="1g"] {
     flex: 1;
   }
@@ -3972,12 +4065,22 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     flex: 24;
   }
 
+    /**
+
+      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+
+    **/
   [data-lg~="0"][data-lg~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
+    /**
+
+      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
+
+    **/
   [data-lg~="1th"] {
     order: 1;
   }
@@ -4477,19 +4580,19 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     max-width: calc(100% / 24);
   }
 
-  /**
+    /**
 
-    A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-    css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-    4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-    ----------------------------------------------------------------------------------
-    | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-    | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-    | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-    | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-    ----------------------------------------------------------------------------------
+      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
+      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
+      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
+      ----------------------------------------------------------------------------------
+      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
+      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
+      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
+      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
+      ----------------------------------------------------------------------------------
 
-  **/
+    **/
   /* Parça değişkenleri */
   [data-xl~="1"], [data-xl~="2"], [data-xl~="3"], [data-xl~="4"] {
     --a: 1;
@@ -4581,6 +4684,12 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
+    /**
+
+      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+      kullanılır.
+
+    **/
   [data-xl~="1g"] {
     flex: 1;
   }
@@ -4677,12 +4786,22 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     flex: 24;
   }
 
+    /**
+
+      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+
+    **/
   [data-xl~="0"][data-xl~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
+    /**
+
+      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
+
+    **/
   [data-xl~="1th"] {
     order: 1;
   }
@@ -5182,19 +5301,19 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     max-width: calc(100% / 24);
   }
 
-  /**
+    /**
 
-    A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-    css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-    4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-    ----------------------------------------------------------------------------------
-    | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-    | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-    | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-    | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-    ----------------------------------------------------------------------------------
+      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
+      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
+      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
+      ----------------------------------------------------------------------------------
+      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
+      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
+      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
+      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
+      ----------------------------------------------------------------------------------
 
-  **/
+    **/
   /* Parça değişkenleri */
   [data-hg~="1"], [data-hg~="2"], [data-hg~="3"], [data-hg~="4"] {
     --a: 1;
@@ -5286,6 +5405,12 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
+    /**
+
+      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+      kullanılır.
+
+    **/
   [data-hg~="1g"] {
     flex: 1;
   }
@@ -5382,12 +5507,22 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     flex: 24;
   }
 
+    /**
+
+      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+
+    **/
   [data-hg~="0"][data-hg~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
+    /**
+
+      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
+
+    **/
   [data-hg~="1th"] {
     order: 1;
   }
