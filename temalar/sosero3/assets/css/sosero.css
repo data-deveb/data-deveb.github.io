@@ -6,6 +6,7 @@
     z-index: 999;
   }
   body{
+    position:relative !important;
     min-height: 100vh;
   }
 
