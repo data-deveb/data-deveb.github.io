@@ -1,5 +1,5 @@
 /*!
- * Kap Örgüsü s1.0.2
+ * Kap Örgüsü s1.0.3
  * 
  * Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",
  * "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.
@@ -50,7 +50,7 @@
     [data-#{$ekran}~="#{$i+2}"],[data-#{$ekran}~="#{$i+3}"]
     {--a: #{$j+1}; --c: 0}
     
-    $i: $i + 4;    $ix: $j + 1;
+    $i: $i + 4;    $j: $j + 1;
   }
 
   %c-3 {--c: 3}
@@ -82,7 +82,7 @@
     [data-#{$ekran}~="#{$i+2}p"],[data-#{$ekran}~="#{$i+3}p"]
     {--b: #{$j+1}; --d: 0}
     
-    $i: $i + 4;    $ix: $j + 1;
+    $i: $i + 4;    $j: $j + 1;
   }
 
   %d-3 {--d: 3}
