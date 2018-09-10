@@ -1,40 +1,43 @@
-/*!
- * Kap Örgüsü s1.0.4
- * 
- * Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",
- * "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.
- *
- */
+// !
+// * Kap Örgüsü s1.0.4
+// * 
+// * Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",
+// * "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.
+// *
+// */
 
+// AYARLAR
 
+$p: 24; // parça düzeni ayarı
 
-/* Parça Düzeni */
-$p: 24; /* parça düzeni ayarı */
+// PARÇA DÜZENİ
 
 @mixin parça-düzeni($ekran){
 
-  /***
-    Parça düzeni 1'den 24'e kadar düzenleri sağlayabilmek için özel yöntemlerle geliştirildi.
-    Temel birkaç matematik yönteminden yararlanılarak en yalın CSS satırları oluşturuldu.
+//  /***
+//    Parça düzeni 1'den 24'e kadar düzenleri sağlayabilmek için özel yöntemlerle geliştirildi.
+//    Temel birkaç matematik yönteminden yararlanılarak en yalın CSS satırları oluşturuldu.
+//
+//    Değişkenler: a, b, c, d
+//    Denklemler: (a * 4 - c), (b * 4 - d)
+//
+//    a ve b değişkenlerine [1,2,3,4,5,6] değerlerinden bir tanesi atanır.
+//    b ve d değişkenlerine [0,1,2,3] değerlerinden bir tanesi atanır.
+//
+//    Parça belirten sayıya erişmek için (a * 4 - c) denklemi kullanılır.
+//    Parçalık belirten sayıya erişmek için (b * 4 - d) denklemi kullanılır.
+//
+//    Genişliği belirlemek için denklem şöyledir;
+//    (100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)))
+//
+//    Not: Bu yöntemle daha önceden 24 satır parça, 24 satır parçalık ve 1 satırda genişlik 
+//    saydırmak için toplamda 49 satır CSS alanı kullanılırdı. Her ekran aralığı için bu 
+//    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum 
+//    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine 
+//    133 satır ile yerden kazanç sağlandı.
+//  ***/
 
-    Değişkenler: a, b, c, d
-    Denklemler: (a * 4 - c), (b * 4 - d)
-
-    a ve b değişkenlerine [1,2,3,4,5,6] değerlerinden bir tanesi atanır.
-    b ve d değişkenlerine [0,1,2,3] değerlerinden bir tanesi atanır.
-
-    Parça belirten sayıya erişmek için (a * 4 - c) denklemi kullanılır.
-    Parçalık belirten sayıya erişmek için (b * 4 - d) denklemi kullanılır.
-
-    Genişliği belirlemek için denklem şöyledir;
-    (100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)))
-
-    Not: Bu yöntemle daha önceden 24 satır parça, 24 satır parçalık ve 1 satırda genişlik 
-    saydırmak için toplamda 49 satır CSS alanı kullanılırdı. Her ekran aralığı için bu 
-    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum 
-    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine 
-    133 satır ile yerden kazanç sağlandı.
-  ***/
+  /* parça */
 
   $i: 1;  $j: 0;
 
@@ -105,13 +108,12 @@ $p: 24; /* parça düzeni ayarı */
 }
 
 
-/* Genleşme Düzeni */
+// GENLEŞME DÜZENİ
+
 @mixin genleşme-düzeni($ekran) {
 
-  /***
-    Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-    kullanılır.
-  ***/
+  // Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+  // kullanılır.
 
   @for $i from 1 through 24{
     [data-#{$ekran}~="#{$i}g"]{
@@ -119,9 +121,8 @@ $p: 24; /* parça düzeni ayarı */
     }
   }
 
-  /***
-    Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-  ***/
+
+  // Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
 
   [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
     flex-basis: auto;
@@ -132,437 +133,394 @@ $p: 24; /* parça düzeni ayarı */
 }
 
 
-/*** 
-◘ SIRALAMA DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
+// SIRALAMA DÜZENİ
 
+@mixin sıralama-düzeni($ekran) {
 
-  @mixin sıralama-düzeni($ekran) {
+  // 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır.
 
+  @for $i from 1 through 24{
 
-    /**
-
-      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
-
-    **/
-
-
-    @for $i from 1 through 24{
-
-      [data-#{$ekran}~="#{$i}#{$nc}"]{
-        order: #{$i};
-      }
-
-    }
-
-
-  }
-
-
-/*** 
-◘ ARALIK DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-
-
-  @mixin aralık-düzeni($ekran){
-
-
-    @for $i from 1 through 24{
-      [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
-      [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-soldan: #{$i};}
-      [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
-      [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
-    }
-
-
-    [data-#{$ekran}*="#{$soldan}-"]{
-      margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
-    }
-
-    [data-#{$ekran}*="#{$sağdan}-"]{
-      margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
-    }
-
-    [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-      margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
-    }
-
-    [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-      margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
-    }
-
-    [data-#{$ekran}*="#{$aralık}-1"]{margin: 10px}
-    [data-#{$ekran}*="#{$aralık}-2"]{margin: 15px}
-    [data-#{$ekran}*="#{$aralık}-3"]{margin: 20px}
-    [data-#{$ekran}*="#{$aralık}-l1"]{margin-left: 10px}
-    [data-#{$ekran}*="#{$aralık}-l2"]{margin-left: 15px}
-    [data-#{$ekran}*="#{$aralık}-l3"]{margin-left: 20px}
-    [data-#{$ekran}*="#{$aralık}-s1"]{margin-right: 10px}
-    [data-#{$ekran}*="#{$aralık}-s2"]{margin-right: 15px}
-    [data-#{$ekran}*="#{$aralık}-s3"]{margin-right: 20px}
-    [data-#{$ekran}*="#{$aralık}-t1"]{margin-top: 10px}
-    [data-#{$ekran}*="#{$aralık}-t2"]{margin-top: 15px}
-    [data-#{$ekran}*="#{$aralık}-t3"]{margin-top: 20px}
-    [data-#{$ekran}*="#{$aralık}-a1"]{margin-bottom: 10px}
-    [data-#{$ekran}*="#{$aralık}-a2"]{margin-bottom: 15px}
-    [data-#{$ekran}*="#{$aralık}-a3"]{margin-bottom: 20px}
-    [data-#{$ekran}*="#{$aralık}-ls1"]{margin-left: 10px;margin-right: 10px}
-    [data-#{$ekran}*="#{$aralık}-ls2"]{margin-left: 15px;margin-right: 15px}
-    [data-#{$ekran}*="#{$aralık}-ls3"]{margin-left: 20px;margin-right: 20px}
-    [data-#{$ekran}*="#{$aralık}-ta1"]{margin-top: 10px;margin-bottom: 10px}
-    [data-#{$ekran}*="#{$aralık}-ta2"]{margin-top: 15px;margin-bottom: 15px}
-    [data-#{$ekran}*="#{$aralık}-ta3"]{margin-top: 20px;margin-bottom: 20px}
-
-
-    [data-#{$ekran}~="#{$araları-aralık}-1"][data-#{$ekran}]{
-      width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
-      max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
-      margin: -10px 0 0 -10px;
-    }
-
-    [data-#{$ekran}~="#{$araları-aralık}-2"][data-#{$ekran}]{
-      width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 15px);
-      max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 15px);
-      margin: -15px 0 0 -15px;
-    }
-
-    [data-#{$ekran}~="#{$araları-aralık}-3"][data-#{$ekran}]{
-      width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 20px);
-      max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 20px);
-      margin: -20px 0 0 -20px;
-    }
-
-
-    [data-#{$ekran}~="#{$araları-aralık}-1"] > *{padding-left:10px;padding-top:10px;}
-    [data-#{$ekran}~="#{$araları-aralık}-2"] > *{padding-left:15px;padding-top:15px;}
-    [data-#{$ekran}~="#{$araları-aralık}-3"] > *{padding-left:20px;padding-top:20px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-1"] > *{padding:10px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-2"] > *{padding:15px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-3"] > *{padding:20px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-l1"] > *{padding-left: 10px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-l2"] > *{padding-left: 15px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-l3"] > *{padding-left: 20px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-s1"] > *{padding-right: 10px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-s2"] > *{padding-right: 15px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-s3"] > *{padding-right: 20px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-t1"] > *{padding-top: 10px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-t2"] > *{padding-top: 15px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-t3"] > *{padding-top: 20px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-a1"] > *{padding-bottom: 10px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-a2"] > *{padding-bottom: 15px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-a3"] > *{padding-bottom: 20px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
-    [data-#{$ekran}~="#{$dengeli-aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
-
-    [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
-      margin: var(--aralık);
-      flex-basis: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-      width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-      max-width:  calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-    }
-
-    [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
-      padding: var(--oluk);
-    }
-
-    [data-#{$gnl}~="#{$oluk}"] > [data-#{$gnl}]{
-      padding-left: var(--oluk);
-      padding-right: var(--oluk);
-    }
-
-    [data-#{$gnl}~="#{$oluk-yok}"] > [data-#{$gnl}]{
-      padding: 0
+    [data-#{$ekran}~="#{$i}#{$nc}"]{
+      order: #{$i};
     }
 
   }
 
-
-/*** 
-◘ DİZEM DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
+}
 
 
-  @mixin dizem-düzeni($ekran){
+// ARALIK DÜZENİ 
+@mixin aralık-düzeni($ekran){
+
+  @for $i from 1 through 24{
+    [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
+    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-soldan: #{$i};}
+    [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
+    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
+  }
 
 
-    [data-#{$ekran}~="1r"] > div, [data-#{$ekran}~="1r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 1); max-width: calc(100% / 1);    }
-    [data-#{$ekran}~="2r"] > div, [data-#{$ekran}~="2r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 2); max-width: calc(100% / 2);    }
-    [data-#{$ekran}~="3r"] > div, [data-#{$ekran}~="3r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 3); max-width: calc(100% / 3);    }
-    [data-#{$ekran}~="4r"] > div, [data-#{$ekran}~="4r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 4); max-width: calc(100% / 4);    }
-    [data-#{$ekran}~="5r"] > div, [data-#{$ekran}~="5r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 5); max-width: calc(100% / 5);    }
-    [data-#{$ekran}~="6r"] > div, [data-#{$ekran}~="6r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 6); max-width: calc(100% / 6);    }
-    [data-#{$ekran}~="7r"] > div, [data-#{$ekran}~="7r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 7); max-width: calc(100% / 7);    }
-    [data-#{$ekran}~="8r"] > div, [data-#{$ekran}~="8r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 8); max-width: calc(100% / 8);    }
-    [data-#{$ekran}~="9r"] > div, [data-#{$ekran}~="9r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 9); max-width: calc(100% / 9);    }
-    [data-#{$ekran}~="10r"] > div, [data-#{$ekran}~="10r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 10); max-width: calc(100% / 10);    }
-    [data-#{$ekran}~="11r"] > div, [data-#{$ekran}~="11r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 11); max-width: calc(100% / 11);    }
-    [data-#{$ekran}~="12r"] > div, [data-#{$ekran}~="12r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 12); max-width: calc(100% / 12);    }
-    [data-#{$ekran}~="13r"] > div, [data-#{$ekran}~="13r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 13); max-width: calc(100% / 13);    }
-    [data-#{$ekran}~="14r"] > div, [data-#{$ekran}~="14r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 14); max-width: calc(100% / 14);    }
-    [data-#{$ekran}~="15r"] > div, [data-#{$ekran}~="15r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 15); max-width: calc(100% / 15);    }
-    [data-#{$ekran}~="16r"] > div, [data-#{$ekran}~="16r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 16); max-width: calc(100% / 16);    }
-    [data-#{$ekran}~="17r"] > div, [data-#{$ekran}~="17r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 17); max-width: calc(100% / 17);    }
-    [data-#{$ekran}~="18r"] > div, [data-#{$ekran}~="18r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 18); max-width: calc(100% / 18);    }
-    [data-#{$ekran}~="19r"] > div, [data-#{$ekran}~="19r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 19); max-width: calc(100% / 19);    }
-    [data-#{$ekran}~="20r"] > div, [data-#{$ekran}~="20r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 20); max-width: calc(100% / 20);    }
-    [data-#{$ekran}~="21r"] > div, [data-#{$ekran}~="21r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 21); max-width: calc(100% / 21);    }
-    [data-#{$ekran}~="22r"] > div, [data-#{$ekran}~="22r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 22); max-width: calc(100% / 22);    }
-    [data-#{$ekran}~="23r"] > div, [data-#{$ekran}~="23r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 23); max-width: calc(100% / 23);    }
-    [data-#{$ekran}~="24r"] > div, [data-#{$ekran}~="24r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 24); max-width: calc(100% / 24);    }
+  [data-#{$ekran}*="#{$soldan}-"]{
+    margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
+  }
+
+  [data-#{$ekran}*="#{$sağdan}-"]{
+    margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
+  }
+
+  [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+    margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
+  }
+
+  [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+    margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
+  }
+
+  [data-#{$ekran}*="#{$aralık}-1"]{margin: 10px}
+  [data-#{$ekran}*="#{$aralık}-2"]{margin: 15px}
+  [data-#{$ekran}*="#{$aralık}-3"]{margin: 20px}
+  [data-#{$ekran}*="#{$aralık}-l1"]{margin-left: 10px}
+  [data-#{$ekran}*="#{$aralık}-l2"]{margin-left: 15px}
+  [data-#{$ekran}*="#{$aralık}-l3"]{margin-left: 20px}
+  [data-#{$ekran}*="#{$aralık}-s1"]{margin-right: 10px}
+  [data-#{$ekran}*="#{$aralık}-s2"]{margin-right: 15px}
+  [data-#{$ekran}*="#{$aralık}-s3"]{margin-right: 20px}
+  [data-#{$ekran}*="#{$aralık}-t1"]{margin-top: 10px}
+  [data-#{$ekran}*="#{$aralık}-t2"]{margin-top: 15px}
+  [data-#{$ekran}*="#{$aralık}-t3"]{margin-top: 20px}
+  [data-#{$ekran}*="#{$aralık}-a1"]{margin-bottom: 10px}
+  [data-#{$ekran}*="#{$aralık}-a2"]{margin-bottom: 15px}
+  [data-#{$ekran}*="#{$aralık}-a3"]{margin-bottom: 20px}
+  [data-#{$ekran}*="#{$aralık}-ls1"]{margin-left: 10px;margin-right: 10px}
+  [data-#{$ekran}*="#{$aralık}-ls2"]{margin-left: 15px;margin-right: 15px}
+  [data-#{$ekran}*="#{$aralık}-ls3"]{margin-left: 20px;margin-right: 20px}
+  [data-#{$ekran}*="#{$aralık}-ta1"]{margin-top: 10px;margin-bottom: 10px}
+  [data-#{$ekran}*="#{$aralık}-ta2"]{margin-top: 15px;margin-bottom: 15px}
+  [data-#{$ekran}*="#{$aralık}-ta3"]{margin-top: 20px;margin-bottom: 20px}
+
+
+  [data-#{$ekran}~="#{$araları-aralık}-1"][data-#{$ekran}]{
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
+    margin: -10px 0 0 -10px;
+  }
+
+  [data-#{$ekran}~="#{$araları-aralık}-2"][data-#{$ekran}]{
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 15px);
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 15px);
+    margin: -15px 0 0 -15px;
+  }
+
+  [data-#{$ekran}~="#{$araları-aralık}-3"][data-#{$ekran}]{
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 20px);
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 20px);
+    margin: -20px 0 0 -20px;
+  }
+
+
+  [data-#{$ekran}~="#{$araları-aralık}-1"] > *{padding-left:10px;padding-top:10px;}
+  [data-#{$ekran}~="#{$araları-aralık}-2"] > *{padding-left:15px;padding-top:15px;}
+  [data-#{$ekran}~="#{$araları-aralık}-3"] > *{padding-left:20px;padding-top:20px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-1"] > *{padding:10px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-2"] > *{padding:15px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-3"] > *{padding:20px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-l1"] > *{padding-left: 10px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-l2"] > *{padding-left: 15px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-l3"] > *{padding-left: 20px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-s1"] > *{padding-right: 10px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-s2"] > *{padding-right: 15px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-s3"] > *{padding-right: 20px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-t1"] > *{padding-top: 10px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-t2"] > *{padding-top: 15px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-t3"] > *{padding-top: 20px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-a1"] > *{padding-bottom: 10px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-a2"] > *{padding-bottom: 15px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-a3"] > *{padding-bottom: 20px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
+  [data-#{$ekran}~="#{$dengeli-aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
+
+  [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
+    margin: var(--aralık);
+    flex-basis: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
+    max-width:  calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
+  }
+
+  [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
+    padding: var(--oluk);
+  }
+
+  [data-#{$gnl}~="#{$oluk}"] > [data-#{$gnl}]{
+    padding-left: var(--oluk);
+    padding-right: var(--oluk);
+  }
+
+  [data-#{$gnl}~="#{$oluk-yok}"] > [data-#{$gnl}]{
+    padding: 0
+  }
+
+}
+
+
+// DİZEM DÜZENİ  
+@mixin dizem-düzeni($ekran){
+
+  [data-#{$ekran}~="1r"] > div, [data-#{$ekran}~="1r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 1); max-width: calc(100% / 1);    }
+  [data-#{$ekran}~="2r"] > div, [data-#{$ekran}~="2r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 2); max-width: calc(100% / 2);    }
+  [data-#{$ekran}~="3r"] > div, [data-#{$ekran}~="3r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 3); max-width: calc(100% / 3);    }
+  [data-#{$ekran}~="4r"] > div, [data-#{$ekran}~="4r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 4); max-width: calc(100% / 4);    }
+  [data-#{$ekran}~="5r"] > div, [data-#{$ekran}~="5r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 5); max-width: calc(100% / 5);    }
+  [data-#{$ekran}~="6r"] > div, [data-#{$ekran}~="6r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 6); max-width: calc(100% / 6);    }
+  [data-#{$ekran}~="7r"] > div, [data-#{$ekran}~="7r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 7); max-width: calc(100% / 7);    }
+  [data-#{$ekran}~="8r"] > div, [data-#{$ekran}~="8r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 8); max-width: calc(100% / 8);    }
+  [data-#{$ekran}~="9r"] > div, [data-#{$ekran}~="9r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 9); max-width: calc(100% / 9);    }
+  [data-#{$ekran}~="10r"] > div, [data-#{$ekran}~="10r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 10); max-width: calc(100% / 10);    }
+  [data-#{$ekran}~="11r"] > div, [data-#{$ekran}~="11r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 11); max-width: calc(100% / 11);    }
+  [data-#{$ekran}~="12r"] > div, [data-#{$ekran}~="12r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 12); max-width: calc(100% / 12);    }
+  [data-#{$ekran}~="13r"] > div, [data-#{$ekran}~="13r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 13); max-width: calc(100% / 13);    }
+  [data-#{$ekran}~="14r"] > div, [data-#{$ekran}~="14r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 14); max-width: calc(100% / 14);    }
+  [data-#{$ekran}~="15r"] > div, [data-#{$ekran}~="15r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 15); max-width: calc(100% / 15);    }
+  [data-#{$ekran}~="16r"] > div, [data-#{$ekran}~="16r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 16); max-width: calc(100% / 16);    }
+  [data-#{$ekran}~="17r"] > div, [data-#{$ekran}~="17r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 17); max-width: calc(100% / 17);    }
+  [data-#{$ekran}~="18r"] > div, [data-#{$ekran}~="18r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 18); max-width: calc(100% / 18);    }
+  [data-#{$ekran}~="19r"] > div, [data-#{$ekran}~="19r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 19); max-width: calc(100% / 19);    }
+  [data-#{$ekran}~="20r"] > div, [data-#{$ekran}~="20r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 20); max-width: calc(100% / 20);    }
+  [data-#{$ekran}~="21r"] > div, [data-#{$ekran}~="21r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 21); max-width: calc(100% / 21);    }
+  [data-#{$ekran}~="22r"] > div, [data-#{$ekran}~="22r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 22); max-width: calc(100% / 22);    }
+  [data-#{$ekran}~="23r"] > div, [data-#{$ekran}~="23r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 23); max-width: calc(100% / 23);    }
+  [data-#{$ekran}~="24r"] > div, [data-#{$ekran}~="24r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 24); max-width: calc(100% / 24);    }
+
+}
+
+
+
+// TAMEKRAN & SIĞ  
+@mixin sığ($ekran) {
+
+  [data-#{$ekran}~="#{$sığ}"]{
+    flex: 1 1 0 !important;
+    overflow: auto;
+    max-height: 100%;
+  }
+
+  body[data-#{$ekran}~="#{$tamekran}"]{
+    flex: 1 1 0 !important;
+    overflow: auto;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    position: fixed; 
+  }
+
+  body[data-#{$ekran}~="#{$sütun}"] > footer,
+  body[data-#{$ekran}~="#{$tamekran}"] > footer{
+    margin-top: auto
+  }
+
+}
+
+// KONUMLAMA 
+@mixin konumlama($ekran) {
+
+  [data-#{$ekran}~="#{$sütun}"]{flex-direction: column}
+  [data-#{$ekran}~="#{$ters-sütun}"]{flex-direction: column-reverse}
+
+  [data-#{$ekran}~="#{$satır}"]{flex-direction: row}
+  [data-#{$ekran}~="#{$ters-satır}"]{flex-direction: row-reverse}
+
+  [data-#{$ekran}~="#{$kaymadan}"]{overflow: hidden}
+  [data-#{$ekran}~="#{$yatay-kayma}"]{overflow-x: auto}
+
+  [data-#{$ekran}~="#{$dürmeden}"]{flex-wrap: nowrap !important}
+  [data-#{$ekran}~="#{$ters-dürme}"]{flex-wrap: wrap-reverse}
+
+
+
+  [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$solüst}"],
+  [data-#{$ekran}~="#{$solalt}"],
+  [data-#{$ekran}~="#{$sol}"]{
+    justify-content: flex-start
+  }
+
+  [data-#{$ekran}~="#{$üst}"],
+  [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$alt}"],
+  [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$orta}"]{
+    justify-content: center
+  }
+
+  [data-#{$ekran}~="#{$üstsağ}"],
+  [data-#{$ekran}~="#{$sağ}"],
+  [data-#{$ekran}~="#{$altsağ}"],
+  [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"]{
+    justify-content: flex-end
+  }
+
+  [data-#{$ekran}~="#{$solüst}"],
+  [data-#{$ekran}~="#{$üst}"],
+  [data-#{$ekran}~="#{$üstsağ}"],
+  [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"]{
+    align-content: flex-start;
+    align-items: flex-start
+  }
+
+  [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$sağ}"],
+  [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$sol}"]{
+    /*align-content: inherit;*/
+    align-items: center
+  }
+
+  [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
+  [data-#{$ekran}~="#{$altsağ}"],
+  [data-#{$ekran}~="#{$alt}"],
+  [data-#{$ekran}~="#{$solalt}"]{
+    align-content: flex-end;
+    align-items: flex-end
+  }
+
+  [data-#{$ekran}~="#{$orta}"]{
+    justify-content: center;
+    /*align-content: center;*/
+    align-items: center
+  }
+
+  [data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]){
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto
+  }
+
+  [data-#{$ekran}~="_#{$orta}"],
+  [data-#{$ekran}~="_#{$sol}"],
+  [data-#{$ekran}~="_#{$sağ}"]{
+    align-self: center
+  }
+
+  :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$üst}"],
+  [data-#{$ekran}~="_#{$solüst}"],
+  [data-#{$ekran}~="_#{$üstsağ}"]{
+    align-self: flex-start
+  } 
+
+  :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$alt}"],
+  [data-#{$ekran}~="_#{$solalt}"],
+  [data-#{$ekran}~="_#{$altsağ}"]{
+    align-self: flex-end
+  }
+
+  [data-#{$ekran}~="_#{$sol}"],
+  [data-#{$ekran}~="_#{$solüst}"],
+  [data-#{$ekran}~="_#{$solalt}"]{
+    margin-right: auto
+  }
+
+  [data-#{$ekran}~="_#{$sağ}"],
+  [data-#{$ekran}~="_#{$üstsağ}"],
+  [data-#{$ekran}~="_#{$altsağ}"]{
+    margin-left: auto
+  }
+
+  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üst}"],
+  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solüst}"],
+  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üstsağ}"]{
+    margin-bottom: auto
+  }
+  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$alt}"],
+  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solalt}"],
+  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$altsağ}"]{
+    margin-top: auto
+  }
+
+  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]){
+    margin-top: auto;
+    margin-bottom: auto
+  }
+
+  [data-#{$ekran}~="#{$üstalt}"]{
+    align-content: stretch !important;
+    align-items: stretch !important
+  }
+
+  [data-#{$ekran}~="#{$solsağ}"]{
+    justify-content: stretch !important
+  }
+
+  /********************************************************************************************/
+
+  [data-#{$ekran}~="#{$araları-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: space-between}
+
+  [data-#{$ekran}~="#{$dengeli-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: space-around}
+
+  [data-#{$ekran}~="#{$araları-aralık}"][data-#{$ekran}~="#{$sütun}"]{align-content: space-around}
+
+  [data-#{$ekran}~="#{$dengeli-aralık}"][data-#{$ekran}~="#{$sütun}"]{align-content: space-around}
+
+
+  [data-#{$ekran}~="#{$uzat}"]{align-items: stretch}
+
+  [data-#{$ekran}~="#{$uzun-ol}"]{align-self: stretch}
+
+
+  [data-#{$ekran}~="#{$satırda}"]{align-items: baseline}
+
+  [data-#{$ekran}~="#{$satırda-ol}"]{align-self: baseline}
+
+
+  [data-#{$ekran}~="#{$metin-sağda}"]{text-align: right}
+
+  [data-#{$ekran}~="#{$metin-ortada}"]{text-align: center}
+
+  [data-#{$ekran}~="#{$metin-solda}"]{text-align: left}
+
+
+  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$üstte}"],
+  /**/[data-#{$ekran}~="#{$solda}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: flex-start}
+
+  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$göbekte}"],
+  /**/[data-#{$ekran}~="#{$ortada}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: center}
+
+  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$altta}"],
+  /**/[data-#{$ekran}~="#{$sağda}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: flex-end}
+
+  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$solda}"],
+  /**/[data-#{$ekran}~="#{$üstte}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: flex-start}
+
+  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$ortada}"],
+  /**/[data-#{$ekran}~="#{$göbekte}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: center}
+
+  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$sağda}"],
+  /**/[data-#{$ekran}~="#{$altta}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: flex-end}
+
+
+  [data-#{$ekran}~="#{$merkezde}"]{align-items: center;justify-content: center}
+
+
+  [data-#{$ekran}~="#{$üstte-ol}"]{align-self: flex-start}
+
+  [data-#{$ekran}~="#{$göbekte-ol}"]{align-self: center}
+
+  [data-#{$ekran}~="#{$altta-ol}"]{margin-top: auto}
+
+  [data-#{$ekran}~="#{$sağda-ol}"]{margin-left: auto;align-self: flex-end}
+
+  [data-#{$ekran}~="#{$ortada-ol}"]{margin-left: auto;margin-right: auto;align-self: center}
+
+  [data-#{$ekran}~="#{$solda-ol}"]{margin-right: auto;align-self: flex-start}
   
-
-  }
-
-
-/*** 
-◘ TAMEKRAN & SIĞ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-
-
-  @mixin sığ($ekran) {
-
-
-    [data-#{$ekran}~="#{$sığ}"]{
-      flex: 1 1 0 !important;
-      overflow: auto;
-      max-height: 100%;
-    }
-
-    body[data-#{$ekran}~="#{$tamekran}"]{
-      flex: 1 1 0 !important;
-      overflow: auto;
-      width:100%;
-      height:100%;
-      flex-direction: column;
-      position: fixed; 
-    }
-
-    body[data-#{$ekran}~="#{$sütun}"] > footer,
-    body[data-#{$ekran}~="#{$tamekran}"] > footer{
-      margin-top: auto
-    }
-
-
-  }
-
-
-/*** 
-◘ KONUMLAMA ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-
-
-  @mixin konumlama($ekran) {
-
-
-    [data-#{$ekran}~="#{$sütun}"]{flex-direction: column}
-    [data-#{$ekran}~="#{$ters-sütun}"]{flex-direction: column-reverse}
-
-    [data-#{$ekran}~="#{$satır}"]{flex-direction: row}
-    [data-#{$ekran}~="#{$ters-satır}"]{flex-direction: row-reverse}
-
-    [data-#{$ekran}~="#{$kaymadan}"]{overflow: hidden}
-    [data-#{$ekran}~="#{$yatay-kayma}"]{overflow-x: auto}
-
-    [data-#{$ekran}~="#{$dürmeden}"]{flex-wrap: nowrap !important}
-    [data-#{$ekran}~="#{$ters-dürme}"]{flex-wrap: wrap-reverse}
-
-
-
-    [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$solüst}"],
-    [data-#{$ekran}~="#{$solalt}"],
-    [data-#{$ekran}~="#{$sol}"]{
-      justify-content: flex-start
-    }
-
-    [data-#{$ekran}~="#{$üst}"],
-    [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$alt}"],
-    [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$orta}"]{
-      justify-content: center
-    }
-
-    [data-#{$ekran}~="#{$üstsağ}"],
-    [data-#{$ekran}~="#{$sağ}"],
-    [data-#{$ekran}~="#{$altsağ}"],
-    [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"]{
-      justify-content: flex-end
-    }
-
-    [data-#{$ekran}~="#{$solüst}"],
-    [data-#{$ekran}~="#{$üst}"],
-    [data-#{$ekran}~="#{$üstsağ}"],
-    [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"]{
-      align-content: flex-start;
-      align-items: flex-start
-    }
-
-    [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$sağ}"],
-    [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$sol}"]{
-      /*align-content: inherit;*/
-      align-items: center
-    }
-
-    [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
-    [data-#{$ekran}~="#{$altsağ}"],
-    [data-#{$ekran}~="#{$alt}"],
-    [data-#{$ekran}~="#{$solalt}"]{
-      align-content: flex-end;
-      align-items: flex-end
-    }
-
-    [data-#{$ekran}~="#{$orta}"]{
-      justify-content: center;
-      /*align-content: center;*/
-      align-items: center
-    }
-
-    [data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]){
-      align-self: center;
-      margin-right: auto;
-      margin-left: auto
-    }
-
-    [data-#{$ekran}~="_#{$orta}"],
-    [data-#{$ekran}~="_#{$sol}"],
-    [data-#{$ekran}~="_#{$sağ}"]{
-      align-self: center
-    }
-
-    :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$üst}"],
-    [data-#{$ekran}~="_#{$solüst}"],
-    [data-#{$ekran}~="_#{$üstsağ}"]{
-      align-self: flex-start
-    } 
-
-    :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$alt}"],
-    [data-#{$ekran}~="_#{$solalt}"],
-    [data-#{$ekran}~="_#{$altsağ}"]{
-      align-self: flex-end
-    }
-
-    [data-#{$ekran}~="_#{$sol}"],
-    [data-#{$ekran}~="_#{$solüst}"],
-    [data-#{$ekran}~="_#{$solalt}"]{
-      margin-right: auto
-    }
-
-    [data-#{$ekran}~="_#{$sağ}"],
-    [data-#{$ekran}~="_#{$üstsağ}"],
-    [data-#{$ekran}~="_#{$altsağ}"]{
-      margin-left: auto
-    }
-
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üst}"],
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solüst}"],
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üstsağ}"]{
-      margin-bottom: auto
-    }
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$alt}"],
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solalt}"],
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$altsağ}"]{
-      margin-top: auto
-    }
-
-    [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]){
-      margin-top: auto;
-      margin-bottom: auto
-    }
-
-    [data-#{$ekran}~="#{$üstalt}"]{
-      align-content: stretch !important;
-      align-items: stretch !important
-    }
-
-    [data-#{$ekran}~="#{$solsağ}"]{
-      justify-content: stretch !important
-    }
-
-
-    /********************************************************************************************/
-
-    [data-#{$ekran}~="#{$araları-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: space-between}
-
-    [data-#{$ekran}~="#{$dengeli-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: space-around}
-
-    [data-#{$ekran}~="#{$araları-aralık}"][data-#{$ekran}~="#{$sütun}"]{align-content: space-around}
-
-    [data-#{$ekran}~="#{$dengeli-aralık}"][data-#{$ekran}~="#{$sütun}"]{align-content: space-around}
-
-
-    [data-#{$ekran}~="#{$uzat}"]{align-items: stretch}
-
-    [data-#{$ekran}~="#{$uzun-ol}"]{align-self: stretch}
-
-
-    [data-#{$ekran}~="#{$satırda}"]{align-items: baseline}
-
-    [data-#{$ekran}~="#{$satırda-ol}"]{align-self: baseline}
-
-
-    [data-#{$ekran}~="#{$metin-sağda}"]{text-align: right}
-
-    [data-#{$ekran}~="#{$metin-ortada}"]{text-align: center}
-
-    [data-#{$ekran}~="#{$metin-solda}"]{text-align: left}
-
-  
-    /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$üstte}"],
-    /**/[data-#{$ekran}~="#{$solda}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: flex-start}
-
-    /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$göbekte}"],
-    /**/[data-#{$ekran}~="#{$ortada}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: center}
-
-    /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$altta}"],
-    /**/[data-#{$ekran}~="#{$sağda}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: flex-end}
-
-    /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$solda}"],
-    /**/[data-#{$ekran}~="#{$üstte}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: flex-start}
-
-    /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$ortada}"],
-    /**/[data-#{$ekran}~="#{$göbekte}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: center}
-
-    /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$sağda}"],
-    /**/[data-#{$ekran}~="#{$altta}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: flex-end}
-
-
-    [data-#{$ekran}~="#{$merkezde}"]{align-items: center;justify-content: center}
-
-
-    [data-#{$ekran}~="#{$üstte-ol}"]{align-self: flex-start}
-
-    [data-#{$ekran}~="#{$göbekte-ol}"]{align-self: center}
-
-    [data-#{$ekran}~="#{$altta-ol}"]{margin-top: auto}
-
-    [data-#{$ekran}~="#{$sağda-ol}"]{margin-left: auto;align-self: flex-end}
-
-    [data-#{$ekran}~="#{$ortada-ol}"]{margin-left: auto;margin-right: auto;align-self: center}
-
-    [data-#{$ekran}~="#{$solda-ol}"]{margin-right: auto;align-self: flex-start}
-
-    /******************************************************************************/
-    
-  }
-
-
-
-/*** 
-◘  ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-
-
+}
  
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*  GENEL | Ekran ölçeği: 0 ≤ * < ∞
