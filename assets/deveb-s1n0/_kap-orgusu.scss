@@ -1,137 +1,207 @@
-/***
-◘ KAP ÖRGÜSÜ 1.0
-***/
+/*!
+ * Kap Örgüsü s1.0.2
+ * 
+ * Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",
+ * "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.
+ *
+ */
 
 
-/*** 
-◘ PARÇA DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-***/
 
-  @mixin parça-düzeni($ekran){
+/* Parça Düzeni */
+@mixin parça-düzeni($ekran){
 
+  /***
+    Parça düzeni 1'den 24'e kadar düzenleri sağlayabilmek için özel yöntemlerle geliştirildi.
+    Temel birkaç matematik yönteminden yararlanılarak en yalın CSS satırları oluşturuldu.
 
-    /**
+    Değişkenler: a, b, c, d
+    Denklemler: (a * 4 - c), (b * 4 - d)
 
-      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-      ----------------------------------------------------------------------------------
-      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-      ----------------------------------------------------------------------------------
+    a ve b değişkenlerine [1,2,3,4,5,6] değerlerinden bir tanesi atanır.
+    b ve d değişkenlerine [0,1,2,3] değerlerinden bir tanesi atanır.
 
-    **/
+    Parça belirten sayıya erişmek için (a * 4 - c) denklemi kullanılır.
+    Parçalık belirten sayıya erişmek için (b * 4 - d) denklemi kullanılır.
 
+    Genişliği belirlemek için denklem şöyledir;
+    (100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)))
 
-    /* Parça değişkenleri */
-
-    [data-#{$ekran}~="1"],[data-#{$ekran}~="2"],[data-#{$ekran}~="3"],[data-#{$ekran}~="4"]
-    {--a: 1; --c: 0}
-
-    [data-#{$ekran}~="5"],[data-#{$ekran}~="6"],[data-#{$ekran}~="7"],[data-#{$ekran}~="8"]
-    {--a: 2; --c: 0}
-
-    [data-#{$ekran}~="9"],[data-#{$ekran}~="10"],[data-#{$ekran}~="11"],[data-#{$ekran}~="12"]
-    {--a: 3; --c: 0}
-
-    [data-#{$ekran}~="13"],[data-#{$ekran}~="14"],[data-#{$ekran}~="15"],[data-#{$ekran}~="16"]
-    {--a: 4; --c: 0}
-
-    [data-#{$ekran}~="17"],[data-#{$ekran}~="18"],[data-#{$ekran}~="19"],[data-#{$ekran}~="20"]
-    {--a: 5; --c: 0}
-
-    [data-#{$ekran}~="21"],[data-#{$ekran}~="22"],[data-#{$ekran}~="23"],[data-#{$ekran}~="24"]
-    {--a: 6; --c: 0}
-
-    [data-#{$ekran}~="1"],[data-#{$ekran}~="5"],[data-#{$ekran}~="9"],[data-#{$ekran}~="13"],[data-#{$ekran}~="17"],[data-#{$ekran}~="21"]
-    {--c: 3}
-
-    [data-#{$ekran}~="2"],[data-#{$ekran}~="6"],[data-#{$ekran}~="10"],[data-#{$ekran}~="14"],[data-#{$ekran}~="18"],[data-#{$ekran}~="22"]
-    {--c: 2}
-
-    [data-#{$ekran}~="3"],[data-#{$ekran}~="7"],[data-#{$ekran}~="11"],[data-#{$ekran}~="15"],[data-#{$ekran}~="19"],[data-#{$ekran}~="23"]
-    {--c: 1}
+    Not: Bu yöntemle daha önceden 24 satır parça, 24 satır parçalık ve 1 satırda genişlik 
+    saydırmak için toplamda 49 satır CSS alanı kullanılırdı. Her ekran aralığı için bu 
+    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum 
+    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine 
+    133 satır ile yerden kazanç sağlandı.
+  ***/
 
 
-    /* Parçalık değişkenleri */
-
-    [data-#{$ekran}~="1p"],[data-#{$ekran}~="2p"],[data-#{$ekran}~="3p"],[data-#{$ekran}~="4p"]
-    {--b: 1; --d: 0}
-
-    [data-#{$ekran}~="5p"],[data-#{$ekran}~="6p"],[data-#{$ekran}~="7p"],[data-#{$ekran}~="8p"]
-    {--b: 2; --d: 0}
-
-    [data-#{$ekran}~="9p"],[data-#{$ekran}~="10p"],[data-#{$ekran}~="11p"],[data-#{$ekran}~="12p"]
-    {--b: 3; --d: 0}
-
-    [data-#{$ekran}~="13p"],[data-#{$ekran}~="14p"],[data-#{$ekran}~="15p"],[data-#{$ekran}~="16p"]
-    {--b: 4; --d: 0}
-
-    [data-#{$ekran}~="17p"],[data-#{$ekran}~="18p"],[data-#{$ekran}~="19p"],[data-#{$ekran}~="20p"]
-    {--b: 5; --d: 0}
-
-    [data-#{$ekran}~="21p"],[data-#{$ekran}~="22p"],[data-#{$ekran}~="23p"],[data-#{$ekran}~="24p"]
-    {--b: 6; --d: 0}
-
-    [data-#{$ekran}~="1p"],[data-#{$ekran}~="5p"],[data-#{$ekran}~="9p"],[data-#{$ekran}~="13p"],[data-#{$ekran}~="17p"],[data-#{$ekran}~="21p"]
-    {--d: 3}
-
-    [data-#{$ekran}~="2p"],[data-#{$ekran}~="6p"],[data-#{$ekran}~="10p"],[data-#{$ekran}~="14p"],[data-#{$ekran}~="18p"],[data-#{$ekran}~="22p"]
-    {--d: 2}
-
-    [data-#{$ekran}~="3p"],[data-#{$ekran}~="7p"],[data-#{$ekran}~="11p"],[data-#{$ekran}~="15p"],[data-#{$ekran}~="19p"],[data-#{$ekran}~="23p"]
-    {--d: 1}
+  /* Parça değişkenleri */
 
 
-    [data-#{$ekran}][data-#{$ekran}]{
-      width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-      max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-    }
- 
+  /*************************************************/
 
+  $p: 24; /* parça düzeni ayarı */
+
+  $i: 1;  $j: 0;
+
+  @while $i <= $p {
+
+    [data-#{$ekran}~="#{$i}"],[data-#{$ekran}~="#{$i+1}"],
+    [data-#{$ekran}~="#{$i+2}"],[data-#{$ekran}~="#{$i+3}"]
+    {--a: #{$j+1}; --c: 0}
+    
+    $i: $i + 4;    $ix: $j + 1;
   }
 
+  %c-3 {--c: 3}
+  %c-2 {--c: 2}
+  %c-1 {--c: 1}
 
-/*** 
-◘ GENLEŞME DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-
-
-  @mixin genleşme-düzeni($ekran) {
-
-
-    /**
-
-      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-      kullanılır.
-
-    **/
-
-
-    @for $i from 1 through 24{
-      [data-#{$ekran}~="#{$i}g"]{
-        flex: #{$i};
+  $i: 1;
+  @while $i <= $p {
+      [data-#{$ekran}~="#{$i}"], {
+          @extend %c-3;
       }
-    }
-
-
-    /**
-
-      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-
-    **/
-
-
-    [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
-      flex-basis: auto;
-      max-width: none;
-      width: auto;
-    }
-
-
+      [data-#{$ekran}~="#{$i+1}"], {
+          @extend %c-2;
+      }
+      [data-#{$ekran}~="#{$i+2}"], {
+          @extend %c-1;
+      }
+      $i: $i + 4;
   }
+
+
+  /* parçalık *************** */
+
+  $i: 1;  $j: 0;
+
+  @while $i <= $p {
+
+    [data-#{$ekran}~="#{$i}p"],[data-#{$ekran}~="#{$i+1}p"],
+    [data-#{$ekran}~="#{$i+2}p"],[data-#{$ekran}~="#{$i+3}p"]
+    {--b: #{$j+1}; --d: 0}
+    
+    $i: $i + 4;    $ix: $j + 1;
+  }
+
+  %d-3 {--d: 3}
+  %d-2 {--d: 2}
+  %d-1 {--d: 1}
+
+  $i: 1;
+  @while $i <= $p {
+      [data-#{$ekran}~="#{$i}p"], {
+          @extend %d-3;
+      }
+      [data-#{$ekran}~="#{$i+1}p"], {
+          @extend %d-2;
+      }
+      [data-#{$ekran}~="#{$i+2}p"], {
+          @extend %d-1;
+      }
+      $i: $i + 4;
+  }
+
+  /*************************************************/
+
+  [data-#{$ekran}~="1"],[data-#{$ekran}~="2"],[data-#{$ekran}~="3"],[data-#{$ekran}~="4"]
+  {--a: 1; --c: 0}
+
+  [data-#{$ekran}~="5"],[data-#{$ekran}~="6"],[data-#{$ekran}~="7"],[data-#{$ekran}~="8"]
+  {--a: 2; --c: 0}
+
+  [data-#{$ekran}~="9"],[data-#{$ekran}~="10"],[data-#{$ekran}~="11"],[data-#{$ekran}~="12"]
+  {--a: 3; --c: 0}
+
+  [data-#{$ekran}~="13"],[data-#{$ekran}~="14"],[data-#{$ekran}~="15"],[data-#{$ekran}~="16"]
+  {--a: 4; --c: 0}
+
+  [data-#{$ekran}~="17"],[data-#{$ekran}~="18"],[data-#{$ekran}~="19"],[data-#{$ekran}~="20"]
+  {--a: 5; --c: 0}
+
+  [data-#{$ekran}~="21"],[data-#{$ekran}~="22"],[data-#{$ekran}~="23"],[data-#{$ekran}~="24"]
+  {--a: 6; --c: 0}
+
+  [data-#{$ekran}~="1"],[data-#{$ekran}~="5"],[data-#{$ekran}~="9"],
+  [data-#{$ekran}~="13"],[data-#{$ekran}~="17"],[data-#{$ekran}~="21"]
+  {--c: 3}
+
+  [data-#{$ekran}~="2"],[data-#{$ekran}~="6"],[data-#{$ekran}~="10"],
+  [data-#{$ekran}~="14"],[data-#{$ekran}~="18"],[data-#{$ekran}~="22"]
+  {--c: 2}
+
+  [data-#{$ekran}~="3"],[data-#{$ekran}~="7"],[data-#{$ekran}~="11"],
+  [data-#{$ekran}~="15"],[data-#{$ekran}~="19"],[data-#{$ekran}~="23"]
+  {--c: 1}
+
+
+  /* Parçalık değişkenleri */
+
+  [data-#{$ekran}~="1p"],[data-#{$ekran}~="2p"],[data-#{$ekran}~="3p"],[data-#{$ekran}~="4p"]
+  {--b: 1; --d: 0}
+
+  [data-#{$ekran}~="5p"],[data-#{$ekran}~="6p"],[data-#{$ekran}~="7p"],[data-#{$ekran}~="8p"]
+  {--b: 2; --d: 0}
+
+  [data-#{$ekran}~="9p"],[data-#{$ekran}~="10p"],[data-#{$ekran}~="11p"],[data-#{$ekran}~="12p"]
+  {--b: 3; --d: 0}
+
+  [data-#{$ekran}~="13p"],[data-#{$ekran}~="14p"],[data-#{$ekran}~="15p"],[data-#{$ekran}~="16p"]
+  {--b: 4; --d: 0}
+
+  [data-#{$ekran}~="17p"],[data-#{$ekran}~="18p"],[data-#{$ekran}~="19p"],[data-#{$ekran}~="20p"]
+  {--b: 5; --d: 0}
+
+  [data-#{$ekran}~="21p"],[data-#{$ekran}~="22p"],[data-#{$ekran}~="23p"],[data-#{$ekran}~="24p"]
+  {--b: 6; --d: 0}
+
+  [data-#{$ekran}~="1p"],[data-#{$ekran}~="5p"],[data-#{$ekran}~="9p"],
+  [data-#{$ekran}~="13p"],[data-#{$ekran}~="17p"],[data-#{$ekran}~="21p"]
+  {--d: 3}
+
+  [data-#{$ekran}~="2p"],[data-#{$ekran}~="6p"],[data-#{$ekran}~="10p"],
+  [data-#{$ekran}~="14p"],[data-#{$ekran}~="18p"],[data-#{$ekran}~="22p"]
+  {--d: 2}
+
+  [data-#{$ekran}~="3p"],[data-#{$ekran}~="7p"],[data-#{$ekran}~="11p"],
+  [data-#{$ekran}~="15p"],[data-#{$ekran}~="19p"],[data-#{$ekran}~="23p"]
+  {--d: 1}
+
+
+  [data-#{$ekran}][data-#{$ekran}]{
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  }
+
+}
+
+
+/* Genleşme Düzeni */
+@mixin genleşme-düzeni($ekran) {
+
+  /***
+    Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+    kullanılır.
+  ***/
+
+  @for $i from 1 through 24{
+    [data-#{$ekran}~="#{$i}g"]{
+      flex: #{$i};
+    }
+  }
+
+  /***
+    Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+  ***/
+
+  [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
+    flex-basis: auto;
+    max-width: none;
+    width: auto;
+  }
+
+}
 
 
 /*** 
@@ -519,12 +589,7 @@
 
     [data-#{$ekran}~="#{$metin-solda}"]{text-align: left}
 
-
-
-
-
-
-    
+  
     /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$üstte}"],
     /**/[data-#{$ekran}~="#{$solda}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: flex-start}
 
@@ -559,17 +624,7 @@
 
     [data-#{$ekran}~="#{$solda-ol}"]{margin-right: auto;align-self: flex-start}
 
-
-
-
-
     /******************************************************************************/
-
-
-
-
-
-
     
   }
 
