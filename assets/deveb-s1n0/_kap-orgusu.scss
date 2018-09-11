@@ -121,7 +121,6 @@ $p: 24; // parça düzeni ayarı
     }
   }
 
-
   // Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
 
   [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
@@ -153,29 +152,138 @@ $p: 24; // parça düzeni ayarı
 // ARALIK DÜZENİ 
 @mixin aralık-düzeni($ekran){
 
-  @for $i from 1 through 24{
-    [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
-    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-soldan: #{$i};}
-    [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
-    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
+  // parça-soldan
+
+  $i: 1;  $j: 0;
+
+  @while $i <= $p {
+
+    [data-#{$ekran}~="#{$soldan}-#{$i}"],[data-#{$ekran}~="#{$soldan}-#{$i+1}"],
+    [data-#{$ekran}~="#{$soldan}-#{$i+2}"],[data-#{$ekran}~="#{$soldan}-#{$i+3}"]
+    {--soldan-a: #{$j+1}; --soldan-c: 0}
+    
+    $i: $i + 4;    $j: $j + 1;
+  }
+
+  %#{$ekran}-soldan-c-3 {--soldan-c: 3}
+  %#{$ekran}-soldan-c-2 {--soldan-c: 2}
+  %#{$ekran}-soldan-c-1 {--soldan-c: 1}
+
+  $i: 1;
+  @while $i <= $p {
+      [data-#{$ekran}~="#{$i}"], {
+          @extend %#{$ekran}-soldan-c-3;
+      }
+      [data-#{$ekran}~="#{$i+1}"], {
+          @extend %#{$ekran}-soldan-c-2;
+      }
+      [data-#{$ekran}~="#{$i+2}"], {
+          @extend %#{$ekran}-soldan-c-1;
+      }
+      $i: $i + 4;
+  }
+
+// parça-sağdan
+
+  $i: 1;  $j: 0;
+
+  @while $i <= $p {
+
+    [data-#{$ekran}~="#{$sağdan}-#{$i}"],[data-#{$ekran}~="#{$sağdan}-#{$i+1}"],
+    [data-#{$ekran}~="#{$sağdan}-#{$i+2}"],[data-#{$ekran}~="#{$sağdan}-#{$i+3}"]
+    {--sağdan-a: #{$j+1}; --sağdan-c: 0}
+    
+    $i: $i + 4;    $j: $j + 1;
+  }
+
+  %#{$ekran}-sağdan-c-3 {--sağdan-c: 3}
+  %#{$ekran}-sağdan-c-2 {--sağdan-c: 2}
+  %#{$ekran}-sağdan-c-1 {--sağdan-c: 1}
+
+  $i: 1;
+  @while $i <= $p {
+      [data-#{$ekran}~="#{$i}"], {
+          @extend %#{$ekran}-sağdan-c-3;
+      }
+      [data-#{$ekran}~="#{$i+1}"], {
+          @extend %#{$ekran}-sağdan-c-2;
+      }
+      [data-#{$ekran}~="#{$i+2}"], {
+          @extend %#{$ekran}-sağdan-c-1;
+      }
+      $i: $i + 4;
   }
 
 
-  [data-#{$ekran}*="#{$soldan}-"]{
-    margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
-  }
+  // parçalık-aralık
 
-  [data-#{$ekran}*="#{$sağdan}-"]{
-    margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
-  }
+  $i: 1;  $j: 0;
 
-  [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-    margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
-  }
+    @while $i <= $p {
 
-  [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-    margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
-  }
+      [data-#{$ekran}~="#{$i}p-#{$aralık}"],[data-#{$ekran}~="#{$i+1}p-#{$aralık}"],
+      [data-#{$ekran}~="#{$i+2}p-#{$aralık}"],[data-#{$ekran}~="#{$i+3}p-#{$aralık}"]
+      {--aralık-b: #{$j+1}; --aralık-d: 0}
+      
+      $i: $i + 4;    $j: $j + 1;
+    }
+
+    %#{$ekran}-soldan-d-3 {--aralık-d: 3}
+    %#{$ekran}-soldan-d-2 {--aralık-d: 2}
+    %#{$ekran}-soldan-d-1 {--aralık-d: 1}
+
+    $i: 1;
+    @while $i <= $p {
+        [data-#{$ekran}~="#{$i}p-#{$aralık}"], {
+            @extend %#{$ekran}-soldan-d-3;
+        }
+        [data-#{$ekran}~="#{$i+1}p-#{$aralık}"], {
+            @extend %#{$ekran}-soldan-d-2;
+        }
+        [data-#{$ekran}~="#{$i+2}p-#{$aralık}"], {
+            @extend %#{$ekran}-soldan-d-1;
+        }
+        $i: $i + 4;
+    }
+
+    [data-#{$ekran}*="#{$soldan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
+      margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+    }
+    [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+      margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+    }
+    [data-#{$ekran}*="#{$sağdan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
+      margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+    }
+    [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+      margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+    }
+
+
+
+//  @for $i from 1 through 24{
+//    [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
+//    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-soldan: #{$i};}
+//    [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
+//    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
+//  }
+
+
+//  [data-#{$ekran}*="#{$soldan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
+//    margin-left: calc(100% / (var(--b) * 4 - var(--d)) * var(--parça-soldan));
+//  }
+
+//  [data-#{$ekran}*="#{$sağdan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
+//    margin-right: calc(100% / (var(--b) * 4 - var(--d)) * var(--parça-sağdan));
+//  }
+
+//  [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+//    margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
+//  }
+
+//  [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+//    margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
+//  }
 
   [data-#{$ekran}*="#{$aralık}-1"]{margin: 10px}
   [data-#{$ekran}*="#{$aralık}-2"]{margin: 15px}
