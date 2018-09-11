@@ -129,7 +129,8 @@ $p: 24; // parça düzeni ayarı
 //    }
 //  }
 
-  [data-gnl*="0g"], [data-gnl*="1g"], [data-gnl*="2g"], [data-gnl*="3g"], [data-gnl*="4g"], [data-gnl*="5g"], [data-gnl*="6g"], [data-gnl*="7g"], [data-gnl*="8g"], [data-gnl*="9g"] {
+  [data-#{$ekran}*="0g"], [data-#{$ekran}*="1g"], [data-#{$ekran}*="2g"], [data-#{$ekran}*="3g"], [data-#{$ekran}*="4g"], 
+  [data-#{$ekran}*="5g"], [data-#{$ekran}*="6g"], [data-#{$ekran}*="7g"], [data-#{$ekran}*="8g"], [data-#{$ekran}*="9g"] {
     flex: calc(var(--a) * 4 - var(--c));
     width: auto;
     max-width:none;
