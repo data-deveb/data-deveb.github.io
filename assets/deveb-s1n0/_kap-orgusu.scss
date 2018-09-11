@@ -1,20 +1,18 @@
-// !
-// * Kap Örgüsü s1.0.4
-// * 
-// * Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",
-// * "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.
-// *
-// */
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                               //
+//   KAP ÖRGÜSÜ s1.0.5                                                                           //
+//                                                                                               //
+//   Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",              //
+//   "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.                                 //
+//                                                                                               //
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
-// AYARLAR
+// AYARLAR ////////////////////////////////////////////////////////////////////////////////////////
 
 $p: 24; // parça düzeni ayarı
 
-// PARÇA DÜZENİ
-
-@mixin parça-düzeni($ekran){
-
-//  /***
+// PARÇA DÜZENİ ///////////////////////////////////////////////////////////////////////////////////
+//  
 //    Parça düzeni 1'den 24'e kadar düzenleri sağlayabilmek için özel yöntemlerle geliştirildi.
 //    Temel birkaç matematik yönteminden yararlanılarak en yalın CSS satırları oluşturuldu.
 //
@@ -35,9 +33,11 @@ $p: 24; // parça düzeni ayarı
 //    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum 
 //    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine 
 //    133 satır ile yerden kazanç sağlandı.
-//  ***/
+//
 
-  /* parça */
+@mixin parça-düzeni($ekran){
+
+// Parça 
 
   $i: 1;  $j: 0;
 
@@ -68,7 +68,7 @@ $p: 24; // parça düzeni ayarı
       $i: $i + 4;
   }
 
-  /* parçalık */
+// Parçalık
 
   $i: 1;  $j: 0;
 
@@ -108,20 +108,21 @@ $p: 24; // parça düzeni ayarı
 }
 
 
-// GENLEŞME DÜZENİ
+// GENLEŞME DÜZENİ ////////////////////////////////////////////////////////////////////////////////
+//
+//    Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
+//    kullanılır.
+//
+//    Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
+//
 
 @mixin genleşme-düzeni($ekran) {
-
-  // Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-  // kullanılır.
 
   @for $i from 1 through 24{
     [data-#{$ekran}~="#{$i}g"]{
       flex: #{$i};
     }
   }
-
-  // Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
 
   [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
     flex-basis: auto;
@@ -132,32 +133,31 @@ $p: 24; // parça düzeni ayarı
 }
 
 
-// SIRALAMA DÜZENİ
+// SIRALAMA DÜZENİ ///////////////////////////////////////////////////////////////////////////////
+//
+//    1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır.
+//
 
 @mixin sıralama-düzeni($ekran) {
 
-  // 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır.
-
   @for $i from 1 through 24{
-
     [data-#{$ekran}~="#{$i}#{$nc}"]{
       order: #{$i};
     }
-
   }
 
 }
 
 
-// ARALIK DÜZENİ 
+// ARALIK DÜZENİ ////////////////////////////////////////////////////////////////////////////////
+//
+
 @mixin aralık-düzeni($ekran){
 
-  // parça-soldan
+// Parça-Soldan
 
   $i: 1;  $j: 0;
-
   @while $i <= $p {
-
     [data-#{$ekran}~="#{$soldan}-#{$i}"],[data-#{$ekran}~="#{$soldan}-#{$i+1}"],
     [data-#{$ekran}~="#{$soldan}-#{$i+2}"],[data-#{$ekran}~="#{$soldan}-#{$i+3}"]
     {--soldan-a: #{$j+1}; --soldan-c: 0}
@@ -183,12 +183,10 @@ $p: 24; // parça düzeni ayarı
       $i: $i + 4;
   }
 
-// parça-sağdan
+// Parça-Sağdan
 
   $i: 1;  $j: 0;
-
   @while $i <= $p {
-
     [data-#{$ekran}~="#{$sağdan}-#{$i}"],[data-#{$ekran}~="#{$sağdan}-#{$i+1}"],
     [data-#{$ekran}~="#{$sağdan}-#{$i+2}"],[data-#{$ekran}~="#{$sağdan}-#{$i+3}"]
     {--sağdan-a: #{$j+1}; --sağdan-c: 0}
@@ -214,51 +212,49 @@ $p: 24; // parça düzeni ayarı
       $i: $i + 4;
   }
 
-
-  // parçalık-aralık
+// Parçalık-Aralık
 
   $i: 1;  $j: 0;
+  @while $i <= $p {
+    [data-#{$ekran}~="#{$i}p-#{$aralık}"],[data-#{$ekran}~="#{$i+1}p-#{$aralık}"],
+    [data-#{$ekran}~="#{$i+2}p-#{$aralık}"],[data-#{$ekran}~="#{$i+3}p-#{$aralık}"]
+    {--aralık-b: #{$j+1}; --aralık-d: 0}
+    
+    $i: $i + 4;    $j: $j + 1;
+  }
 
-    @while $i <= $p {
+  %#{$ekran}-aralık-d-3 {--aralık-d: 3}
+  %#{$ekran}-aralık-d-2 {--aralık-d: 2}
+  %#{$ekran}-aralık-d-1 {--aralık-d: 1}
 
-      [data-#{$ekran}~="#{$i}p-#{$aralık}"],[data-#{$ekran}~="#{$i+1}p-#{$aralık}"],
-      [data-#{$ekran}~="#{$i+2}p-#{$aralık}"],[data-#{$ekran}~="#{$i+3}p-#{$aralık}"]
-      {--aralık-b: #{$j+1}; --aralık-d: 0}
-      
-      $i: $i + 4;    $j: $j + 1;
-    }
+  $i: 1;
+  @while $i <= $p {
+      [data-#{$ekran}~="#{$i}p-#{$aralık}"], {
+          @extend %#{$ekran}-aralık-d-3;
+      }
+      [data-#{$ekran}~="#{$i+1}p-#{$aralık}"], {
+          @extend %#{$ekran}-aralık-d-2;
+      }
+      [data-#{$ekran}~="#{$i+2}p-#{$aralık}"], {
+          @extend %#{$ekran}-aralık-d-1;
+      }
+      $i: $i + 4;
+  }
 
-    %#{$ekran}-soldan-d-3 {--aralık-d: 3}
-    %#{$ekran}-soldan-d-2 {--aralık-d: 2}
-    %#{$ekran}-soldan-d-1 {--aralık-d: 1}
+// Parça Düzeni Aralık Sayış
 
-    $i: 1;
-    @while $i <= $p {
-        [data-#{$ekran}~="#{$i}p-#{$aralık}"], {
-            @extend %#{$ekran}-soldan-d-3;
-        }
-        [data-#{$ekran}~="#{$i+1}p-#{$aralık}"], {
-            @extend %#{$ekran}-soldan-d-2;
-        }
-        [data-#{$ekran}~="#{$i+2}p-#{$aralık}"], {
-            @extend %#{$ekran}-soldan-d-1;
-        }
-        $i: $i + 4;
-    }
-
-    [data-#{$ekran}*="#{$soldan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
-      margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
-    }
-    [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-      margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
-    }
-    [data-#{$ekran}*="#{$sağdan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
-      margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
-    }
-    [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-      margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
-    }
-
+  [data-#{$ekran}*="#{$soldan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
+    margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+  }
+  [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+    margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+  }
+  [data-#{$ekran}*="#{$sağdan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
+    margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+  }
+  [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+    margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+  }
 
 
 //  @for $i from 1 through 24{
