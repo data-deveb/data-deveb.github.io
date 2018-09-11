@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                               //
-//   KAP ÖRGÜSÜ s1.0.5                                                                           //
+//   KAP ÖRGÜSÜ s1.0.6                                                                           //
 //                                                                                               //
 //   Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",              //
 //   "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.                                 //
@@ -33,6 +33,9 @@ $p: 24; // parça düzeni ayarı
 //    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum 
 //    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine 
 //    133 satır ile yerden kazanç sağlandı.
+//    
+//    Not: Parça düzeninde parça tanımları için kullanılan değişkenler, genleşme düzeni içinde
+//    kullanılmaktadır. Bu koşullar nedeniyle daha az CSS alanı kullanılmıştır.
 //
 
 @mixin parça-düzeni($ekran){
@@ -44,7 +47,9 @@ $p: 24; // parça düzeni ayarı
   @while $i <= $p {
 
     [data-#{$ekran}~="#{$i}"],[data-#{$ekran}~="#{$i+1}"],
-    [data-#{$ekran}~="#{$i+2}"],[data-#{$ekran}~="#{$i+3}"]
+    [data-#{$ekran}~="#{$i+2}"],[data-#{$ekran}~="#{$i+3}"],
+    [data-#{$ekran}~="#{$i}g"],[data-#{$ekran}~="#{$i+1}g"],  // genleşme düzeni için.
+    [data-#{$ekran}~="#{$i+2}g"],[data-#{$ekran}~="#{$i+3}g"] // genleşme düzeni için.
     {--a: #{$j+1}; --c: 0}
     
     $i: $i + 4;    $j: $j + 1;
@@ -99,8 +104,8 @@ $p: 24; // parça düzeni ayarı
       $i: $i + 4;
   }
 
-
-  [data-#{$ekran}][data-#{$ekran}]{
+  //[data-#{$ekran}][data-#{$ekran}] eziciliği etkisizleştirilerek incelemeye alındı.
+  [data-#{$ekran}]{
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
@@ -118,10 +123,16 @@ $p: 24; // parça düzeni ayarı
 
 @mixin genleşme-düzeni($ekran) {
 
-  @for $i from 1 through 24{
-    [data-#{$ekran}~="#{$i}g"]{
-      flex: #{$i};
-    }
+//  @for $i from 1 through 24{
+//    [data-#{$ekran}~="#{$i}g"]{
+//      flex: #{$i};
+//    }
+//  }
+
+  [data-gnl*="0g"], [data-gnl*="1g"], [data-gnl*="2g"], [data-gnl*="3g"], [data-gnl*="4g"], [data-gnl*="5g"], [data-gnl*="6g"], [data-gnl*="7g"], [data-gnl*="8g"], [data-gnl*="9g"] {
+    flex: calc(var(--a) * 4 - var(--c));
+    width: auto;
+    max-width:none;
   }
 
   [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
