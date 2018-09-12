@@ -33,9 +33,6 @@ $p: 24; // parça düzeni ayarı
 //    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum 
 //    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine 
 //    133 satır ile yerden kazanç sağlandı.
-//    
-//    Not: Parça düzeninde parça tanımları için kullanılan değişkenler, genleşme düzeni içinde
-//    kullanılmaktadır. Bu koşullar nedeniyle daha az CSS alanı kullanılmıştır.
 //
 
 @mixin parça-düzeni($ekran){
@@ -47,9 +44,7 @@ $p: 24; // parça düzeni ayarı
   @while $i <= $p {
 
     [data-#{$ekran}~="#{$i}"],[data-#{$ekran}~="#{$i+1}"],
-    [data-#{$ekran}~="#{$i+2}"],[data-#{$ekran}~="#{$i+3}"],
-    [data-#{$ekran}~="#{$i}g"],[data-#{$ekran}~="#{$i+1}g"],  // genleşme düzeni için.
-    [data-#{$ekran}~="#{$i+2}g"],[data-#{$ekran}~="#{$i+3}g"] // genleşme düzeni için.
+    [data-#{$ekran}~="#{$i+2}"],[data-#{$ekran}~="#{$i+3}"]
     {--a: #{$j+1}; --c: 0}
     
     $i: $i + 4;    $j: $j + 1;
@@ -104,8 +99,8 @@ $p: 24; // parça düzeni ayarı
       $i: $i + 4;
   }
 
-  //[data-#{$ekran}][data-#{$ekran}] eziciliği etkisizleştirilerek incelemeye alındı.
-  [data-#{$ekran}]{
+
+  [data-#{$ekran}][data-#{$ekran}]{
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
@@ -123,17 +118,10 @@ $p: 24; // parça düzeni ayarı
 
 @mixin genleşme-düzeni($ekran) {
 
-//  @for $i from 1 through 24{
-//    [data-#{$ekran}~="#{$i}g"]{
-//      flex: #{$i};
-//    }
-//  }
-
-  [data-#{$ekran}*="0g"], [data-#{$ekran}*="1g"], [data-#{$ekran}*="2g"], [data-#{$ekran}*="3g"], [data-#{$ekran}*="4g"], 
-  [data-#{$ekran}*="5g"], [data-#{$ekran}*="6g"], [data-#{$ekran}*="7g"], [data-#{$ekran}*="8g"], [data-#{$ekran}*="9g"] {
-    flex: calc(var(--a) * 4 - var(--c));
-    width: auto;
-    max-width:none;
+  @for $i from 1 through $p {
+    [data-#{$ekran}~="#{$i}g"]{
+      flex: #{$i};
+    }
   }
 
   [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
