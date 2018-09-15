@@ -171,13 +171,13 @@ $p: 24; // parça düzeni ayarı
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$ekran}~="#{$i}"], {
+      [data-#{$ekran}~="#{$soldan}-#{$i}"], {
           @extend %#{$ekran}-soldan-c-3;
       }
-      [data-#{$ekran}~="#{$i+1}"], {
+      [data-#{$ekran}~="#{$soldan}-#{$i+1}"], {
           @extend %#{$ekran}-soldan-c-2;
       }
-      [data-#{$ekran}~="#{$i+2}"], {
+      [data-#{$ekran}~="#{$soldan}-#{$i+2}"], {
           @extend %#{$ekran}-soldan-c-1;
       }
       $i: $i + 4;
@@ -200,13 +200,13 @@ $p: 24; // parça düzeni ayarı
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$ekran}~="#{$i}"], {
+      [data-#{$ekran}~="#{$sağdan}-#{$i}"], {
           @extend %#{$ekran}-sağdan-c-3;
       }
-      [data-#{$ekran}~="#{$i+1}"], {
+      [data-#{$ekran}~="#{$sağdan}-#{$i+1}"], {
           @extend %#{$ekran}-sağdan-c-2;
       }
-      [data-#{$ekran}~="#{$i+2}"], {
+      [data-#{$ekran}~="#{$sağdan}-#{$i+2}"], {
           @extend %#{$ekran}-sağdan-c-1;
       }
       $i: $i + 4;
@@ -250,10 +250,10 @@ $p: 24; // parça düzeni ayarı
     margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
   }
   [data-#{$ekran}*="#{$sağdan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
-    margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+    margin-right: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
   }
   [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-    margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+    margin-right: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
   }
 
 
