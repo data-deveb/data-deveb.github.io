@@ -256,31 +256,6 @@ $p: 24; // parça düzeni ayarı
     margin-right: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
   }
 
-
-//  @for $i from 1 through 24{
-//    [data-#{$ekran}~="#{$soldan}-#{$i}"]{--parça-soldan: #{$i};}
-//    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-soldan: #{$i};}
-//    [data-#{$ekran}~="#{$sağdan}-#{$i}"]{--parça-sağdan: #{$i};}
-//    [data-#{$ekran}~="#{$i}p-#{$aralık}"]{--parçalık-sağdan: #{$i};}
-//  }
-
-
-//  [data-#{$ekran}*="#{$soldan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
-//    margin-left: calc(100% / (var(--b) * 4 - var(--d)) * var(--parça-soldan));
-//  }
-
-//  [data-#{$ekran}*="#{$sağdan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
-//    margin-right: calc(100% / (var(--b) * 4 - var(--d)) * var(--parça-sağdan));
-//  }
-
-//  [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-//    margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
-//  }
-
-//  [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
-//    margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
-//  }
-
   [data-#{$ekran}*="#{$aralık}-1"]{margin: 10px}
   [data-#{$ekran}*="#{$aralık}-2"]{margin: 15px}
   [data-#{$ekran}*="#{$aralık}-3"]{margin: 20px}
