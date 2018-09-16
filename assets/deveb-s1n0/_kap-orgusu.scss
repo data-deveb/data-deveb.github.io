@@ -345,8 +345,9 @@ $p: 24; // parça düzeni ayarı
 
 }
 
+// DİZEM DÜZENİ ////////////////////////////////////////////////////////////////////////////////
+//
 
-// DİZEM DÜZENİ  
 @mixin dizem-düzeni($ekran){
 
   [data-#{$ekran}~="1r"] > div, [data-#{$ekran}~="1r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 1); max-width: calc(100% / 1);    }
@@ -378,7 +379,8 @@ $p: 24; // parça düzeni ayarı
 
 
 
-// TAMEKRAN & SIĞ  
+// TAM EKRAN & SIĞ ////////////////////////////////////////////////////////////////////////////////
+// 
 @mixin sığ($ekran) {
 
   [data-#{$ekran}~="#{$sığ}"]{
@@ -403,7 +405,9 @@ $p: 24; // parça düzeni ayarı
 
 }
 
-// KONUMLAMA 
+// KONUMLAMA ////////////////////////////////////////////////////////////////////////////////
+//
+
 @mixin konumlama($ekran) {
 
   [data-#{$ekran}~="#{$sütun}"]{flex-direction: column}
@@ -606,8 +610,6 @@ $p: 24; // parça düzeni ayarı
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 [data-#{$gnl}] {
-  --parça: 1;
-  --parçalık: 1;
   --a: 6;
   --b: 6;
   --c: 0;
