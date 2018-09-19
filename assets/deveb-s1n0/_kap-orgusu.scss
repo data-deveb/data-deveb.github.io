@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                               //
-//   KAP ÖRGÜSÜ s1.0.6                                                                           //
+//   KAP ÖRGÜSÜ s1.0.7                                                                           //
 //                                                                                               //
 //   Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",              //
 //   "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.                                 //
@@ -11,8 +11,29 @@
 
 $p: 24; // parça düzeni ayarı
 
+@mixin ayarlar(){
+
+  [data-#{$gnl}] {
+    --a: 6; // parça düzeni varsayılan ölçeği
+    --b: 6; // parça düzeni varsayılan ölçeği
+    --c: 0; // parça düzeni varsayılan ölçeği
+    --d: 0; // parça düzeni varsayılan ölçeği
+  }
+
+  [data-#{$gnl}],
+  [data-#{$ufk}],
+  [data-#{$kçk}],
+  [data-#{$ort}],
+  [data-#{$byk}],
+  [data-#{$kcm}],
+  [data-#{$dev}] {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 // PARÇA DÜZENİ ///////////////////////////////////////////////////////////////////////////////////
-//  
+//
 //    Parça düzeni 1'den 24'e kadar düzenleri sağlayabilmek için özel yöntemlerle geliştirildi.
 //    Temel birkaç matematik yönteminden yararlanılarak en yalın CSS satırları oluşturuldu.
 //
@@ -28,42 +49,42 @@ $p: 24; // parça düzeni ayarı
 //    Genişliği belirlemek için denklem şöyledir;
 //    (100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)))
 //
-//    Not: Bu yöntemle daha önceden 24 satır parça, 24 satır parçalık ve 1 satırda genişlik 
-//    saydırmak için toplamda 49 satır CSS alanı kullanılırdı. Her ekran aralığı için bu 
-//    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum 
-//    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine 
+//    Not: Bu yöntemle daha önceden 24 satır parça, 24 satır parçalık ve 1 satırda genişlik
+//    saydırmak için toplamda 49 satır CSS alanı kullanılırdı. Her ekran aralığı için bu
+//    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum
+//    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine
 //    133 satır ile yerden kazanç sağlandı.
 //
 
-@mixin parça-düzeni($ekran){
+@mixin parça-düzeni($görüntülük){
 
-// Parça 
+// Parça
 
   $i: 1;  $j: 0;
 
   @while $i <= $p {
 
-    [data-#{$ekran}~="#{$i}"],[data-#{$ekran}~="#{$i+1}"],
-    [data-#{$ekran}~="#{$i+2}"],[data-#{$ekran}~="#{$i+3}"]
+    [data-#{$görüntülük}~="#{$i}"],[data-#{$görüntülük}~="#{$i+1}"],
+    [data-#{$görüntülük}~="#{$i+2}"],[data-#{$görüntülük}~="#{$i+3}"]
     {--a: #{$j+1}; --c: 0}
-    
+
     $i: $i + 4;    $j: $j + 1;
   }
 
-  %#{$ekran}c-3 {--c: 3}
-  %#{$ekran}c-2 {--c: 2}
-  %#{$ekran}c-1 {--c: 1}
+  %#{$görüntülük}c-3 {--c: 3}
+  %#{$görüntülük}c-2 {--c: 2}
+  %#{$görüntülük}c-1 {--c: 1}
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$ekran}~="#{$i}"], {
-          @extend %#{$ekran}c-3;
+      [data-#{$görüntülük}~="#{$i}"], {
+          @extend %#{$görüntülük}c-3;
       }
-      [data-#{$ekran}~="#{$i+1}"], {
-          @extend %#{$ekran}c-2;
+      [data-#{$görüntülük}~="#{$i+1}"], {
+          @extend %#{$görüntülük}c-2;
       }
-      [data-#{$ekran}~="#{$i+2}"], {
-          @extend %#{$ekran}c-1;
+      [data-#{$görüntülük}~="#{$i+2}"], {
+          @extend %#{$görüntülük}c-1;
       }
       $i: $i + 4;
   }
@@ -74,33 +95,33 @@ $p: 24; // parça düzeni ayarı
 
   @while $i <= $p {
 
-    [data-#{$ekran}~="#{$i}p"],[data-#{$ekran}~="#{$i+1}p"],
-    [data-#{$ekran}~="#{$i+2}p"],[data-#{$ekran}~="#{$i+3}p"]
+    [data-#{$görüntülük}~="#{$i}p"],[data-#{$görüntülük}~="#{$i+1}p"],
+    [data-#{$görüntülük}~="#{$i+2}p"],[data-#{$görüntülük}~="#{$i+3}p"]
     {--b: #{$j+1}; --d: 0}
-    
+
     $i: $i + 4;    $j: $j + 1;
   }
 
-  %#{$ekran}d-3 {--d: 3}
-  %#{$ekran}d-2 {--d: 2}
-  %#{$ekran}d-1 {--d: 1}
+  %#{$görüntülük}d-3 {--d: 3}
+  %#{$görüntülük}d-2 {--d: 2}
+  %#{$görüntülük}d-1 {--d: 1}
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$ekran}~="#{$i}p"], {
-          @extend %#{$ekran}d-3;
+      [data-#{$görüntülük}~="#{$i}p"], {
+          @extend %#{$görüntülük}d-3;
       }
-      [data-#{$ekran}~="#{$i+1}p"], {
-          @extend %#{$ekran}d-2;
+      [data-#{$görüntülük}~="#{$i+1}p"], {
+          @extend %#{$görüntülük}d-2;
       }
-      [data-#{$ekran}~="#{$i+2}p"], {
-          @extend %#{$ekran}d-1;
+      [data-#{$görüntülük}~="#{$i+2}p"], {
+          @extend %#{$görüntülük}d-1;
       }
       $i: $i + 4;
   }
 
 
-  [data-#{$ekran}][data-#{$ekran}]{
+  [data-#{$görüntülük}][data-#{$görüntülük}]{
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
@@ -116,15 +137,15 @@ $p: 24; // parça düzeni ayarı
 //    Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
 //
 
-@mixin genleşme-düzeni($ekran) {
+@mixin genleşme-düzeni($görüntülük) {
 
   @for $i from 1 through $p {
-    [data-#{$ekran}~="#{$i}g"]{
+    [data-#{$görüntülük}~="#{$i}g"]{
       flex: #{$i};
     }
   }
 
-  [data-#{$ekran}~="0"][data-#{$ekran}~="0"]{
+  [data-#{$görüntülük}~="0"][data-#{$görüntülük}~="0"]{
     flex-basis: auto;
     max-width: none;
     width: auto;
@@ -138,10 +159,10 @@ $p: 24; // parça düzeni ayarı
 //    1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır.
 //
 
-@mixin sıralama-düzeni($ekran) {
+@mixin sıralama-düzeni($görüntülük) {
 
   @for $i from 1 through 24{
-    [data-#{$ekran}~="#{$i}#{$nc}"]{
+    [data-#{$görüntülük}~="#{$i}#{$nc}"]{
       order: #{$i};
     }
   }
@@ -152,33 +173,33 @@ $p: 24; // parça düzeni ayarı
 // ARALIK DÜZENİ ////////////////////////////////////////////////////////////////////////////////
 //
 
-@mixin aralık-düzeni($ekran){
+@mixin aralık-düzeni($görüntülük){
 
 // Parça-Soldan
 
   $i: 1;  $j: 0;
   @while $i <= $p {
-    [data-#{$ekran}~="#{$soldan}-#{$i}"],[data-#{$ekran}~="#{$soldan}-#{$i+1}"],
-    [data-#{$ekran}~="#{$soldan}-#{$i+2}"],[data-#{$ekran}~="#{$soldan}-#{$i+3}"]
+    [data-#{$görüntülük}~="#{$soldan}-#{$i}"],[data-#{$görüntülük}~="#{$soldan}-#{$i+1}"],
+    [data-#{$görüntülük}~="#{$soldan}-#{$i+2}"],[data-#{$görüntülük}~="#{$soldan}-#{$i+3}"]
     {--soldan-a: #{$j+1}; --soldan-c: 0}
-    
+
     $i: $i + 4;    $j: $j + 1;
   }
 
-  %#{$ekran}-soldan-c-3 {--soldan-c: 3}
-  %#{$ekran}-soldan-c-2 {--soldan-c: 2}
-  %#{$ekran}-soldan-c-1 {--soldan-c: 1}
+  %#{$görüntülük}-soldan-c-3 {--soldan-c: 3}
+  %#{$görüntülük}-soldan-c-2 {--soldan-c: 2}
+  %#{$görüntülük}-soldan-c-1 {--soldan-c: 1}
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$ekran}~="#{$soldan}-#{$i}"], {
-          @extend %#{$ekran}-soldan-c-3;
+      [data-#{$görüntülük}~="#{$soldan}-#{$i}"], {
+          @extend %#{$görüntülük}-soldan-c-3;
       }
-      [data-#{$ekran}~="#{$soldan}-#{$i+1}"], {
-          @extend %#{$ekran}-soldan-c-2;
+      [data-#{$görüntülük}~="#{$soldan}-#{$i+1}"], {
+          @extend %#{$görüntülük}-soldan-c-2;
       }
-      [data-#{$ekran}~="#{$soldan}-#{$i+2}"], {
-          @extend %#{$ekran}-soldan-c-1;
+      [data-#{$görüntülük}~="#{$soldan}-#{$i+2}"], {
+          @extend %#{$görüntülük}-soldan-c-1;
       }
       $i: $i + 4;
   }
@@ -187,27 +208,27 @@ $p: 24; // parça düzeni ayarı
 
   $i: 1;  $j: 0;
   @while $i <= $p {
-    [data-#{$ekran}~="#{$sağdan}-#{$i}"],[data-#{$ekran}~="#{$sağdan}-#{$i+1}"],
-    [data-#{$ekran}~="#{$sağdan}-#{$i+2}"],[data-#{$ekran}~="#{$sağdan}-#{$i+3}"]
+    [data-#{$görüntülük}~="#{$sağdan}-#{$i}"],[data-#{$görüntülük}~="#{$sağdan}-#{$i+1}"],
+    [data-#{$görüntülük}~="#{$sağdan}-#{$i+2}"],[data-#{$görüntülük}~="#{$sağdan}-#{$i+3}"]
     {--sağdan-a: #{$j+1}; --sağdan-c: 0}
-    
+
     $i: $i + 4;    $j: $j + 1;
   }
 
-  %#{$ekran}-sağdan-c-3 {--sağdan-c: 3}
-  %#{$ekran}-sağdan-c-2 {--sağdan-c: 2}
-  %#{$ekran}-sağdan-c-1 {--sağdan-c: 1}
+  %#{$görüntülük}-sağdan-c-3 {--sağdan-c: 3}
+  %#{$görüntülük}-sağdan-c-2 {--sağdan-c: 2}
+  %#{$görüntülük}-sağdan-c-1 {--sağdan-c: 1}
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$ekran}~="#{$sağdan}-#{$i}"], {
-          @extend %#{$ekran}-sağdan-c-3;
+      [data-#{$görüntülük}~="#{$sağdan}-#{$i}"], {
+          @extend %#{$görüntülük}-sağdan-c-3;
       }
-      [data-#{$ekran}~="#{$sağdan}-#{$i+1}"], {
-          @extend %#{$ekran}-sağdan-c-2;
+      [data-#{$görüntülük}~="#{$sağdan}-#{$i+1}"], {
+          @extend %#{$görüntülük}-sağdan-c-2;
       }
-      [data-#{$ekran}~="#{$sağdan}-#{$i+2}"], {
-          @extend %#{$ekran}-sağdan-c-1;
+      [data-#{$görüntülük}~="#{$sağdan}-#{$i+2}"], {
+          @extend %#{$görüntülük}-sağdan-c-1;
       }
       $i: $i + 4;
   }
@@ -216,112 +237,112 @@ $p: 24; // parça düzeni ayarı
 
   $i: 1;  $j: 0;
   @while $i <= $p {
-    [data-#{$ekran}~="#{$i}p-#{$aralık}"],[data-#{$ekran}~="#{$i+1}p-#{$aralık}"],
-    [data-#{$ekran}~="#{$i+2}p-#{$aralık}"],[data-#{$ekran}~="#{$i+3}p-#{$aralık}"]
+    [data-#{$görüntülük}~="#{$i}p-#{$aralık}"],[data-#{$görüntülük}~="#{$i+1}p-#{$aralık}"],
+    [data-#{$görüntülük}~="#{$i+2}p-#{$aralık}"],[data-#{$görüntülük}~="#{$i+3}p-#{$aralık}"]
     {--aralık-b: #{$j+1}; --aralık-d: 0}
-    
+
     $i: $i + 4;    $j: $j + 1;
   }
 
-  %#{$ekran}-aralık-d-3 {--aralık-d: 3}
-  %#{$ekran}-aralık-d-2 {--aralık-d: 2}
-  %#{$ekran}-aralık-d-1 {--aralık-d: 1}
+  %#{$görüntülük}-aralık-d-3 {--aralık-d: 3}
+  %#{$görüntülük}-aralık-d-2 {--aralık-d: 2}
+  %#{$görüntülük}-aralık-d-1 {--aralık-d: 1}
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$ekran}~="#{$i}p-#{$aralık}"], {
-          @extend %#{$ekran}-aralık-d-3;
+      [data-#{$görüntülük}~="#{$i}p-#{$aralık}"], {
+          @extend %#{$görüntülük}-aralık-d-3;
       }
-      [data-#{$ekran}~="#{$i+1}p-#{$aralık}"], {
-          @extend %#{$ekran}-aralık-d-2;
+      [data-#{$görüntülük}~="#{$i+1}p-#{$aralık}"], {
+          @extend %#{$görüntülük}-aralık-d-2;
       }
-      [data-#{$ekran}~="#{$i+2}p-#{$aralık}"], {
-          @extend %#{$ekran}-aralık-d-1;
+      [data-#{$görüntülük}~="#{$i+2}p-#{$aralık}"], {
+          @extend %#{$görüntülük}-aralık-d-1;
       }
       $i: $i + 4;
   }
 
 // Parça Düzeni Aralık Sayış
 
-  [data-#{$ekran}*="#{$soldan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
+  [data-#{$görüntülük}*="#{$soldan}-"]:not([data-#{$görüntülük}*="p-#{$aralık}"]){
     margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
   }
-  [data-#{$ekran}*="#{$soldan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+  [data-#{$görüntülük}*="#{$soldan}-"][data-#{$görüntülük}*="p-#{$aralık}"]{
     margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
   }
-  [data-#{$ekran}*="#{$sağdan}-"]:not([data-#{$ekran}*="p-#{$aralık}"]){
+  [data-#{$görüntülük}*="#{$sağdan}-"]:not([data-#{$görüntülük}*="p-#{$aralık}"]){
     margin-right: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
   }
-  [data-#{$ekran}*="#{$sağdan}-"][data-#{$ekran}*="p-#{$aralık}"]{
+  [data-#{$görüntülük}*="#{$sağdan}-"][data-#{$görüntülük}*="p-#{$aralık}"]{
     margin-right: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
   }
 
-  [data-#{$ekran}*="#{$aralık}-1"]{margin: 10px}
-  [data-#{$ekran}*="#{$aralık}-2"]{margin: 15px}
-  [data-#{$ekran}*="#{$aralık}-3"]{margin: 20px}
-  [data-#{$ekran}*="#{$aralık}-l1"]{margin-left: 10px}
-  [data-#{$ekran}*="#{$aralık}-l2"]{margin-left: 15px}
-  [data-#{$ekran}*="#{$aralık}-l3"]{margin-left: 20px}
-  [data-#{$ekran}*="#{$aralık}-s1"]{margin-right: 10px}
-  [data-#{$ekran}*="#{$aralık}-s2"]{margin-right: 15px}
-  [data-#{$ekran}*="#{$aralık}-s3"]{margin-right: 20px}
-  [data-#{$ekran}*="#{$aralık}-t1"]{margin-top: 10px}
-  [data-#{$ekran}*="#{$aralık}-t2"]{margin-top: 15px}
-  [data-#{$ekran}*="#{$aralık}-t3"]{margin-top: 20px}
-  [data-#{$ekran}*="#{$aralık}-a1"]{margin-bottom: 10px}
-  [data-#{$ekran}*="#{$aralık}-a2"]{margin-bottom: 15px}
-  [data-#{$ekran}*="#{$aralık}-a3"]{margin-bottom: 20px}
-  [data-#{$ekran}*="#{$aralık}-ls1"]{margin-left: 10px;margin-right: 10px}
-  [data-#{$ekran}*="#{$aralık}-ls2"]{margin-left: 15px;margin-right: 15px}
-  [data-#{$ekran}*="#{$aralık}-ls3"]{margin-left: 20px;margin-right: 20px}
-  [data-#{$ekran}*="#{$aralık}-ta1"]{margin-top: 10px;margin-bottom: 10px}
-  [data-#{$ekran}*="#{$aralık}-ta2"]{margin-top: 15px;margin-bottom: 15px}
-  [data-#{$ekran}*="#{$aralık}-ta3"]{margin-top: 20px;margin-bottom: 20px}
+  [data-#{$görüntülük}*="#{$aralık}-1"]{margin: 10px}
+  [data-#{$görüntülük}*="#{$aralık}-2"]{margin: 15px}
+  [data-#{$görüntülük}*="#{$aralık}-3"]{margin: 20px}
+  [data-#{$görüntülük}*="#{$aralık}-l1"]{margin-left: 10px}
+  [data-#{$görüntülük}*="#{$aralık}-l2"]{margin-left: 15px}
+  [data-#{$görüntülük}*="#{$aralık}-l3"]{margin-left: 20px}
+  [data-#{$görüntülük}*="#{$aralık}-s1"]{margin-right: 10px}
+  [data-#{$görüntülük}*="#{$aralık}-s2"]{margin-right: 15px}
+  [data-#{$görüntülük}*="#{$aralık}-s3"]{margin-right: 20px}
+  [data-#{$görüntülük}*="#{$aralık}-t1"]{margin-top: 10px}
+  [data-#{$görüntülük}*="#{$aralık}-t2"]{margin-top: 15px}
+  [data-#{$görüntülük}*="#{$aralık}-t3"]{margin-top: 20px}
+  [data-#{$görüntülük}*="#{$aralık}-a1"]{margin-bottom: 10px}
+  [data-#{$görüntülük}*="#{$aralık}-a2"]{margin-bottom: 15px}
+  [data-#{$görüntülük}*="#{$aralık}-a3"]{margin-bottom: 20px}
+  [data-#{$görüntülük}*="#{$aralık}-ls1"]{margin-left: 10px;margin-right: 10px}
+  [data-#{$görüntülük}*="#{$aralık}-ls2"]{margin-left: 15px;margin-right: 15px}
+  [data-#{$görüntülük}*="#{$aralık}-ls3"]{margin-left: 20px;margin-right: 20px}
+  [data-#{$görüntülük}*="#{$aralık}-ta1"]{margin-top: 10px;margin-bottom: 10px}
+  [data-#{$görüntülük}*="#{$aralık}-ta2"]{margin-top: 15px;margin-bottom: 15px}
+  [data-#{$görüntülük}*="#{$aralık}-ta3"]{margin-top: 20px;margin-bottom: 20px}
 
 
-  [data-#{$ekran}~="#{$araları-aralık}-1"][data-#{$ekran}]{
+  [data-#{$görüntülük}~="#{$araları-aralık}-1"][data-#{$görüntülük}]{
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
     margin: -10px 0 0 -10px;
   }
 
-  [data-#{$ekran}~="#{$araları-aralık}-2"][data-#{$ekran}]{
+  [data-#{$görüntülük}~="#{$araları-aralık}-2"][data-#{$görüntülük}]{
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 15px);
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 15px);
     margin: -15px 0 0 -15px;
   }
 
-  [data-#{$ekran}~="#{$araları-aralık}-3"][data-#{$ekran}]{
+  [data-#{$görüntülük}~="#{$araları-aralık}-3"][data-#{$görüntülük}]{
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 20px);
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 20px);
     margin: -20px 0 0 -20px;
   }
 
 
-  [data-#{$ekran}~="#{$araları-aralık}-1"] > *{padding-left:10px;padding-top:10px;}
-  [data-#{$ekran}~="#{$araları-aralık}-2"] > *{padding-left:15px;padding-top:15px;}
-  [data-#{$ekran}~="#{$araları-aralık}-3"] > *{padding-left:20px;padding-top:20px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-1"] > *{padding:10px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-2"] > *{padding:15px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-3"] > *{padding:20px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-l1"] > *{padding-left: 10px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-l2"] > *{padding-left: 15px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-l3"] > *{padding-left: 20px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-s1"] > *{padding-right: 10px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-s2"] > *{padding-right: 15px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-s3"] > *{padding-right: 20px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-t1"] > *{padding-top: 10px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-t2"] > *{padding-top: 15px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-t3"] > *{padding-top: 20px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-a1"] > *{padding-bottom: 10px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-a2"] > *{padding-bottom: 15px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-a3"] > *{padding-bottom: 20px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
-  [data-#{$ekran}~="#{$dengeli-aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
+  [data-#{$görüntülük}~="#{$araları-aralık}-1"] > *{padding-left:10px;padding-top:10px;}
+  [data-#{$görüntülük}~="#{$araları-aralık}-2"] > *{padding-left:15px;padding-top:15px;}
+  [data-#{$görüntülük}~="#{$araları-aralık}-3"] > *{padding-left:20px;padding-top:20px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-1"] > *{padding:10px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-2"] > *{padding:15px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-3"] > *{padding:20px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-l1"] > *{padding-left: 10px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-l2"] > *{padding-left: 15px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-l3"] > *{padding-left: 20px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-s1"] > *{padding-right: 10px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-s2"] > *{padding-right: 15px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-s3"] > *{padding-right: 20px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-t1"] > *{padding-top: 10px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-t2"] > *{padding-top: 15px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-t3"] > *{padding-top: 20px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-a1"] > *{padding-bottom: 10px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-a2"] > *{padding-bottom: 15px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-a3"] > *{padding-bottom: 20px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
 
   [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
     margin: var(--aralık);
@@ -345,61 +366,62 @@ $p: 24; // parça düzeni ayarı
 
 }
 
+
 // DİZEM DÜZENİ ////////////////////////////////////////////////////////////////////////////////
 //
 
-@mixin dizem-düzeni($ekran){
+@mixin dizem-düzeni($görüntülük){
 
-  [data-#{$ekran}~="1r"] > div, [data-#{$ekran}~="1r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 1); max-width: calc(100% / 1);    }
-  [data-#{$ekran}~="2r"] > div, [data-#{$ekran}~="2r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 2); max-width: calc(100% / 2);    }
-  [data-#{$ekran}~="3r"] > div, [data-#{$ekran}~="3r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 3); max-width: calc(100% / 3);    }
-  [data-#{$ekran}~="4r"] > div, [data-#{$ekran}~="4r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 4); max-width: calc(100% / 4);    }
-  [data-#{$ekran}~="5r"] > div, [data-#{$ekran}~="5r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 5); max-width: calc(100% / 5);    }
-  [data-#{$ekran}~="6r"] > div, [data-#{$ekran}~="6r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 6); max-width: calc(100% / 6);    }
-  [data-#{$ekran}~="7r"] > div, [data-#{$ekran}~="7r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 7); max-width: calc(100% / 7);    }
-  [data-#{$ekran}~="8r"] > div, [data-#{$ekran}~="8r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 8); max-width: calc(100% / 8);    }
-  [data-#{$ekran}~="9r"] > div, [data-#{$ekran}~="9r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 9); max-width: calc(100% / 9);    }
-  [data-#{$ekran}~="10r"] > div, [data-#{$ekran}~="10r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 10); max-width: calc(100% / 10);    }
-  [data-#{$ekran}~="11r"] > div, [data-#{$ekran}~="11r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 11); max-width: calc(100% / 11);    }
-  [data-#{$ekran}~="12r"] > div, [data-#{$ekran}~="12r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 12); max-width: calc(100% / 12);    }
-  [data-#{$ekran}~="13r"] > div, [data-#{$ekran}~="13r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 13); max-width: calc(100% / 13);    }
-  [data-#{$ekran}~="14r"] > div, [data-#{$ekran}~="14r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 14); max-width: calc(100% / 14);    }
-  [data-#{$ekran}~="15r"] > div, [data-#{$ekran}~="15r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 15); max-width: calc(100% / 15);    }
-  [data-#{$ekran}~="16r"] > div, [data-#{$ekran}~="16r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 16); max-width: calc(100% / 16);    }
-  [data-#{$ekran}~="17r"] > div, [data-#{$ekran}~="17r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 17); max-width: calc(100% / 17);    }
-  [data-#{$ekran}~="18r"] > div, [data-#{$ekran}~="18r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 18); max-width: calc(100% / 18);    }
-  [data-#{$ekran}~="19r"] > div, [data-#{$ekran}~="19r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 19); max-width: calc(100% / 19);    }
-  [data-#{$ekran}~="20r"] > div, [data-#{$ekran}~="20r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 20); max-width: calc(100% / 20);    }
-  [data-#{$ekran}~="21r"] > div, [data-#{$ekran}~="21r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 21); max-width: calc(100% / 21);    }
-  [data-#{$ekran}~="22r"] > div, [data-#{$ekran}~="22r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 22); max-width: calc(100% / 22);    }
-  [data-#{$ekran}~="23r"] > div, [data-#{$ekran}~="23r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 23); max-width: calc(100% / 23);    }
-  [data-#{$ekran}~="24r"] > div, [data-#{$ekran}~="24r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 24); max-width: calc(100% / 24);    }
+  [data-#{$görüntülük}~="1r"] > div, [data-#{$görüntülük}~="1r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 1); max-width: calc(100% / 1);    }
+  [data-#{$görüntülük}~="2r"] > div, [data-#{$görüntülük}~="2r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 2); max-width: calc(100% / 2);    }
+  [data-#{$görüntülük}~="3r"] > div, [data-#{$görüntülük}~="3r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 3); max-width: calc(100% / 3);    }
+  [data-#{$görüntülük}~="4r"] > div, [data-#{$görüntülük}~="4r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 4); max-width: calc(100% / 4);    }
+  [data-#{$görüntülük}~="5r"] > div, [data-#{$görüntülük}~="5r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 5); max-width: calc(100% / 5);    }
+  [data-#{$görüntülük}~="6r"] > div, [data-#{$görüntülük}~="6r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 6); max-width: calc(100% / 6);    }
+  [data-#{$görüntülük}~="7r"] > div, [data-#{$görüntülük}~="7r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 7); max-width: calc(100% / 7);    }
+  [data-#{$görüntülük}~="8r"] > div, [data-#{$görüntülük}~="8r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 8); max-width: calc(100% / 8);    }
+  [data-#{$görüntülük}~="9r"] > div, [data-#{$görüntülük}~="9r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 9); max-width: calc(100% / 9);    }
+  [data-#{$görüntülük}~="10r"] > div, [data-#{$görüntülük}~="10r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 10); max-width: calc(100% / 10);    }
+  [data-#{$görüntülük}~="11r"] > div, [data-#{$görüntülük}~="11r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 11); max-width: calc(100% / 11);    }
+  [data-#{$görüntülük}~="12r"] > div, [data-#{$görüntülük}~="12r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 12); max-width: calc(100% / 12);    }
+  [data-#{$görüntülük}~="13r"] > div, [data-#{$görüntülük}~="13r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 13); max-width: calc(100% / 13);    }
+  [data-#{$görüntülük}~="14r"] > div, [data-#{$görüntülük}~="14r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 14); max-width: calc(100% / 14);    }
+  [data-#{$görüntülük}~="15r"] > div, [data-#{$görüntülük}~="15r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 15); max-width: calc(100% / 15);    }
+  [data-#{$görüntülük}~="16r"] > div, [data-#{$görüntülük}~="16r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 16); max-width: calc(100% / 16);    }
+  [data-#{$görüntülük}~="17r"] > div, [data-#{$görüntülük}~="17r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 17); max-width: calc(100% / 17);    }
+  [data-#{$görüntülük}~="18r"] > div, [data-#{$görüntülük}~="18r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 18); max-width: calc(100% / 18);    }
+  [data-#{$görüntülük}~="19r"] > div, [data-#{$görüntülük}~="19r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 19); max-width: calc(100% / 19);    }
+  [data-#{$görüntülük}~="20r"] > div, [data-#{$görüntülük}~="20r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 20); max-width: calc(100% / 20);    }
+  [data-#{$görüntülük}~="21r"] > div, [data-#{$görüntülük}~="21r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 21); max-width: calc(100% / 21);    }
+  [data-#{$görüntülük}~="22r"] > div, [data-#{$görüntülük}~="22r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 22); max-width: calc(100% / 22);    }
+  [data-#{$görüntülük}~="23r"] > div, [data-#{$görüntülük}~="23r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 23); max-width: calc(100% / 23);    }
+  [data-#{$görüntülük}~="24r"] > div, [data-#{$görüntülük}~="24r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 24); max-width: calc(100% / 24);    }
 
 }
 
 
 
 // TAM EKRAN & SIĞ ////////////////////////////////////////////////////////////////////////////////
-// 
-@mixin sığ($ekran) {
+//
+@mixin sığ($görüntülük) {
 
-  [data-#{$ekran}~="#{$sığ}"]{
+  [data-#{$görüntülük}~="#{$sığ}"]{
     flex: 1 1 0 !important;
     overflow: auto;
     max-height: 100%;
   }
 
-  body[data-#{$ekran}~="#{$tamekran}"]{
+  body[data-#{$görüntülük}~="#{$tamekran}"]{
     flex: 1 1 0 !important;
     overflow: auto;
     width:100%;
     height:100%;
     flex-direction: column;
-    position: fixed; 
+    position: fixed;
   }
 
-  body[data-#{$ekran}~="#{$sütun}"] > footer,
-  body[data-#{$ekran}~="#{$tamekran}"] > footer{
+  body[data-#{$görüntülük}~="#{$sütun}"] > footer,
+  body[data-#{$görüntülük}~="#{$tamekran}"] > footer{
     margin-top: auto
   }
 
@@ -408,224 +430,208 @@ $p: 24; // parça düzeni ayarı
 // KONUMLAMA ////////////////////////////////////////////////////////////////////////////////
 //
 
-@mixin konumlama($ekran) {
+@mixin konumlama($görüntülük) {
 
-  [data-#{$ekran}~="#{$sütun}"]{flex-direction: column}
-  [data-#{$ekran}~="#{$ters-sütun}"]{flex-direction: column-reverse}
+  [data-#{$görüntülük}~="#{$sütun}"]{flex-direction: column}
+  [data-#{$görüntülük}~="#{$ters-sütun}"]{flex-direction: column-reverse}
 
-  [data-#{$ekran}~="#{$satır}"]{flex-direction: row}
-  [data-#{$ekran}~="#{$ters-satır}"]{flex-direction: row-reverse}
+  [data-#{$görüntülük}~="#{$satır}"]{flex-direction: row}
+  [data-#{$görüntülük}~="#{$ters-satır}"]{flex-direction: row-reverse}
 
-  [data-#{$ekran}~="#{$kaymadan}"]{overflow: hidden}
-  [data-#{$ekran}~="#{$yatay-kayma}"]{overflow-x: auto}
+  [data-#{$görüntülük}~="#{$kaymadan}"]{overflow: hidden}
+  [data-#{$görüntülük}~="#{$yatay-kayma}"]{overflow-x: auto}
 
-  [data-#{$ekran}~="#{$dürmeden}"]{flex-wrap: nowrap !important}
-  [data-#{$ekran}~="#{$ters-dürme}"]{flex-wrap: wrap-reverse}
+  [data-#{$görüntülük}~="#{$dürmeden}"]{flex-wrap: nowrap !important}
+  [data-#{$görüntülük}~="#{$ters-dürme}"]{flex-wrap: wrap-reverse}
 
 
 
-  [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$solüst}"],
-  [data-#{$ekran}~="#{$solalt}"],
-  [data-#{$ekran}~="#{$sol}"]{
+  [data-#{$görüntülük}~="#{$üst}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$üstsağ}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$solüst}"],
+  [data-#{$görüntülük}~="#{$solalt}"],
+  [data-#{$görüntülük}~="#{$sol}"]{
     justify-content: flex-start
   }
 
-  [data-#{$ekran}~="#{$üst}"],
-  [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$alt}"],
-  [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$orta}"]{
+  [data-#{$görüntülük}~="#{$üst}"],
+  [data-#{$görüntülük}~="#{$sağ}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$alt}"],
+  [data-#{$görüntülük}~="#{$sol}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$orta}"]{
     justify-content: center
   }
 
-  [data-#{$ekran}~="#{$üstsağ}"],
-  [data-#{$ekran}~="#{$sağ}"],
-  [data-#{$ekran}~="#{$altsağ}"],
-  [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"]{
+  [data-#{$görüntülük}~="#{$üstsağ}"],
+  [data-#{$görüntülük}~="#{$sağ}"],
+  [data-#{$görüntülük}~="#{$altsağ}"],
+  [data-#{$görüntülük}~="#{$alt}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$solalt}"][data-#{$görüntülük}~="#{$sütun}"]{
     justify-content: flex-end
   }
 
-  [data-#{$ekran}~="#{$solüst}"],
-  [data-#{$ekran}~="#{$üst}"],
-  [data-#{$ekran}~="#{$üstsağ}"],
-  [data-#{$ekran}~="#{$solalt}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$sol}"][data-#{$ekran}~="#{$sütun}"]{
+  [data-#{$görüntülük}~="#{$solüst}"],
+  [data-#{$görüntülük}~="#{$üst}"],
+  [data-#{$görüntülük}~="#{$üstsağ}"],
+  [data-#{$görüntülük}~="#{$solalt}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$sol}"][data-#{$görüntülük}~="#{$sütun}"]{
     align-content: flex-start;
     align-items: flex-start
   }
 
-  [data-#{$ekran}~="#{$üst}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$sağ}"],
-  [data-#{$ekran}~="#{$alt}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$sol}"]{
+  [data-#{$görüntülük}~="#{$üst}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$sağ}"],
+  [data-#{$görüntülük}~="#{$alt}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$sol}"]{
     /*align-content: inherit;*/
     align-items: center
   }
 
-  [data-#{$ekran}~="#{$üstsağ}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$sağ}"][data-#{$ekran}~="#{$sütun}"],
-  [data-#{$ekran}~="#{$altsağ}"],
-  [data-#{$ekran}~="#{$alt}"],
-  [data-#{$ekran}~="#{$solalt}"]{
+  [data-#{$görüntülük}~="#{$üstsağ}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$sağ}"][data-#{$görüntülük}~="#{$sütun}"],
+  [data-#{$görüntülük}~="#{$altsağ}"],
+  [data-#{$görüntülük}~="#{$alt}"],
+  [data-#{$görüntülük}~="#{$solalt}"]{
     align-content: flex-end;
     align-items: flex-end
   }
 
-  [data-#{$ekran}~="#{$orta}"]{
+  [data-#{$görüntülük}~="#{$orta}"]{
     justify-content: center;
     /*align-content: center;*/
     align-items: center
   }
 
-  [data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]){
+  [data-#{$görüntülük}~="_#{$orta}"]:not([data-#{$görüntülük}~="_#{$sol}"]):not([data-#{$görüntülük}~="_#{$sağ}"]):not([data-#{$görüntülük}~="_#{$üst}"]):not([data-#{$görüntülük}~="_#{$alt}"]){
     align-self: center;
     margin-right: auto;
     margin-left: auto
   }
 
-  [data-#{$ekran}~="_#{$orta}"],
-  [data-#{$ekran}~="_#{$sol}"],
-  [data-#{$ekran}~="_#{$sağ}"]{
+  [data-#{$görüntülük}~="_#{$orta}"],
+  [data-#{$görüntülük}~="_#{$sol}"],
+  [data-#{$görüntülük}~="_#{$sağ}"]{
     align-self: center
   }
 
-  :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$üst}"],
-  [data-#{$ekran}~="_#{$solüst}"],
-  [data-#{$ekran}~="_#{$üstsağ}"]{
+  :not([data-#{$görüntülük}~="#{$sütun}"]) > [data-#{$görüntülük}~="_#{$üst}"],
+  [data-#{$görüntülük}~="_#{$solüst}"],
+  [data-#{$görüntülük}~="_#{$üstsağ}"]{
     align-self: flex-start
-  } 
+  }
 
-  :not([data-#{$ekran}~="#{$sütun}"]) > [data-#{$ekran}~="_#{$alt}"],
-  [data-#{$ekran}~="_#{$solalt}"],
-  [data-#{$ekran}~="_#{$altsağ}"]{
+  :not([data-#{$görüntülük}~="#{$sütun}"]) > [data-#{$görüntülük}~="_#{$alt}"],
+  [data-#{$görüntülük}~="_#{$solalt}"],
+  [data-#{$görüntülük}~="_#{$altsağ}"]{
     align-self: flex-end
   }
 
-  [data-#{$ekran}~="_#{$sol}"],
-  [data-#{$ekran}~="_#{$solüst}"],
-  [data-#{$ekran}~="_#{$solalt}"]{
+  [data-#{$görüntülük}~="_#{$sol}"],
+  [data-#{$görüntülük}~="_#{$solüst}"],
+  [data-#{$görüntülük}~="_#{$solalt}"]{
     margin-right: auto
   }
 
-  [data-#{$ekran}~="_#{$sağ}"],
-  [data-#{$ekran}~="_#{$üstsağ}"],
-  [data-#{$ekran}~="_#{$altsağ}"]{
+  [data-#{$görüntülük}~="_#{$sağ}"],
+  [data-#{$görüntülük}~="_#{$üstsağ}"],
+  [data-#{$görüntülük}~="_#{$altsağ}"]{
     margin-left: auto
   }
 
-  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üst}"],
-  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solüst}"],
-  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$üstsağ}"]{
+  [data-#{$görüntülük}~="#{$sütun}"]>[data-#{$görüntülük}~="_#{$üst}"],
+  [data-#{$görüntülük}~="#{$sütun}"]>[data-#{$görüntülük}~="_#{$solüst}"],
+  [data-#{$görüntülük}~="#{$sütun}"]>[data-#{$görüntülük}~="_#{$üstsağ}"]{
     margin-bottom: auto
   }
-  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$alt}"],
-  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$solalt}"],
-  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$altsağ}"]{
+  [data-#{$görüntülük}~="#{$sütun}"]>[data-#{$görüntülük}~="_#{$alt}"],
+  [data-#{$görüntülük}~="#{$sütun}"]>[data-#{$görüntülük}~="_#{$solalt}"],
+  [data-#{$görüntülük}~="#{$sütun}"]>[data-#{$görüntülük}~="_#{$altsağ}"]{
     margin-top: auto
   }
 
-  [data-#{$ekran}~="#{$sütun}"]>[data-#{$ekran}~="_#{$orta}"]:not([data-#{$ekran}~="_#{$sol}"]):not([data-#{$ekran}~="_#{$sağ}"]):not([data-#{$ekran}~="_#{$üst}"]):not([data-#{$ekran}~="_#{$alt}"]){
+  [data-#{$görüntülük}~="#{$sütun}"]>[data-#{$görüntülük}~="_#{$orta}"]:not([data-#{$görüntülük}~="_#{$sol}"]):not([data-#{$görüntülük}~="_#{$sağ}"]):not([data-#{$görüntülük}~="_#{$üst}"]):not([data-#{$görüntülük}~="_#{$alt}"]){
     margin-top: auto;
     margin-bottom: auto
   }
 
-  [data-#{$ekran}~="#{$üstalt}"]{
+  [data-#{$görüntülük}~="#{$üstalt}"]{
     align-content: stretch !important;
     align-items: stretch !important
   }
 
-  [data-#{$ekran}~="#{$solsağ}"]{
+  [data-#{$görüntülük}~="#{$solsağ}"]{
     justify-content: stretch !important
   }
 
   /********************************************************************************************/
 
-  [data-#{$ekran}~="#{$araları-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: space-between}
+  [data-#{$görüntülük}~="#{$araları-aralık}"]:not([data-#{$görüntülük}~="#{$sütun}"]){justify-content: space-between}
 
-  [data-#{$ekran}~="#{$dengeli-aralık}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: space-around}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}"]:not([data-#{$görüntülük}~="#{$sütun}"]){justify-content: space-around}
 
-  [data-#{$ekran}~="#{$araları-aralık}"][data-#{$ekran}~="#{$sütun}"]{align-content: space-around}
+  [data-#{$görüntülük}~="#{$araları-aralık}"][data-#{$görüntülük}~="#{$sütun}"]{align-content: space-around}
 
-  [data-#{$ekran}~="#{$dengeli-aralık}"][data-#{$ekran}~="#{$sütun}"]{align-content: space-around}
-
-
-  [data-#{$ekran}~="#{$uzat}"]{align-items: stretch}
-
-  [data-#{$ekran}~="#{$uzun-ol}"]{align-self: stretch}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}"][data-#{$görüntülük}~="#{$sütun}"]{align-content: space-around}
 
 
-  [data-#{$ekran}~="#{$satırda}"]{align-items: baseline}
+  [data-#{$görüntülük}~="#{$uzat}"]{align-items: stretch}
 
-  [data-#{$ekran}~="#{$satırda-ol}"]{align-self: baseline}
-
-
-  [data-#{$ekran}~="#{$metin-sağda}"]{text-align: right}
-
-  [data-#{$ekran}~="#{$metin-ortada}"]{text-align: center}
-
-  [data-#{$ekran}~="#{$metin-solda}"]{text-align: left}
+  [data-#{$görüntülük}~="#{$uzun-ol}"]{align-self: stretch}
 
 
-  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$üstte}"],
-  /**/[data-#{$ekran}~="#{$solda}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: flex-start}
+  [data-#{$görüntülük}~="#{$satırda}"]{align-items: baseline}
 
-  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$göbekte}"],
-  /**/[data-#{$ekran}~="#{$ortada}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: center}
-
-  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$altta}"],
-  /**/[data-#{$ekran}~="#{$sağda}"]:not([data-#{$ekran}~="#{$sütun}"]){justify-content: flex-end}
-
-  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$solda}"],
-  /**/[data-#{$ekran}~="#{$üstte}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: flex-start}
-
-  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$ortada}"],
-  /**/[data-#{$ekran}~="#{$göbekte}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: center}
-
-  /**/[data-#{$ekran}~="#{$sütun}"][data-#{$ekran}~="#{$sağda}"],
-  /**/[data-#{$ekran}~="#{$altta}"]:not([data-#{$ekran}~="#{$sütun}"]){align-content: flex-end}
+  [data-#{$görüntülük}~="#{$satırda-ol}"]{align-self: baseline}
 
 
-  [data-#{$ekran}~="#{$merkezde}"]{align-items: center;justify-content: center}
+  [data-#{$görüntülük}~="#{$metin-sağda}"]{text-align: right}
+
+  [data-#{$görüntülük}~="#{$metin-ortada}"]{text-align: center}
+
+  [data-#{$görüntülük}~="#{$metin-solda}"]{text-align: left}
 
 
-  [data-#{$ekran}~="#{$üstte-ol}"]{align-self: flex-start}
+  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$üstte}"],
+  /**/[data-#{$görüntülük}~="#{$solda}"]:not([data-#{$görüntülük}~="#{$sütun}"]){justify-content: flex-start}
 
-  [data-#{$ekran}~="#{$göbekte-ol}"]{align-self: center}
+  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$göbekte}"],
+  /**/[data-#{$görüntülük}~="#{$ortada}"]:not([data-#{$görüntülük}~="#{$sütun}"]){justify-content: center}
 
-  [data-#{$ekran}~="#{$altta-ol}"]{margin-top: auto}
+  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$altta}"],
+  /**/[data-#{$görüntülük}~="#{$sağda}"]:not([data-#{$görüntülük}~="#{$sütun}"]){justify-content: flex-end}
 
-  [data-#{$ekran}~="#{$sağda-ol}"]{margin-left: auto;align-self: flex-end}
+  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$solda}"],
+  /**/[data-#{$görüntülük}~="#{$üstte}"]:not([data-#{$görüntülük}~="#{$sütun}"]){align-content: flex-start}
 
-  [data-#{$ekran}~="#{$ortada-ol}"]{margin-left: auto;margin-right: auto;align-self: center}
+  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$ortada}"],
+  /**/[data-#{$görüntülük}~="#{$göbekte}"]:not([data-#{$görüntülük}~="#{$sütun}"]){align-content: center}
 
-  [data-#{$ekran}~="#{$solda-ol}"]{margin-right: auto;align-self: flex-start}
-  
+  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$sağda}"],
+  /**/[data-#{$görüntülük}~="#{$altta}"]:not([data-#{$görüntülük}~="#{$sütun}"]){align-content: flex-end}
+
+
+  [data-#{$görüntülük}~="#{$merkezde}"]{align-items: center;justify-content: center}
+
+
+  [data-#{$görüntülük}~="#{$üstte-ol}"]{align-self: flex-start}
+
+  [data-#{$görüntülük}~="#{$göbekte-ol}"]{align-self: center}
+
+  [data-#{$görüntülük}~="#{$altta-ol}"]{margin-top: auto}
+
+  [data-#{$görüntülük}~="#{$sağda-ol}"]{margin-left: auto;align-self: flex-end}
+
+  [data-#{$görüntülük}~="#{$ortada-ol}"]{margin-left: auto;margin-right: auto;align-self: center}
+
+  [data-#{$görüntülük}~="#{$solda-ol}"]{margin-right: auto;align-self: flex-start}
+
 }
- 
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*  GENEL | Ekran ölçeği: 0 ≤ * < ∞
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-[data-#{$gnl}] {
-  --a: 6;
-  --b: 6;
-  --c: 0;
-  --d: 0;
-}
-
-[data-#{$gnl}],
-[data-#{$ufk}],
-[data-#{$kçk}],
-[data-#{$ort}],
-[data-#{$byk}],
-[data-#{$kcm}],
-[data-#{$dev}] {
-  display: flex;
-  flex-wrap: wrap;
-}
+@include ayarlar(); // CSS'in başında tanımlanan ayarlar.
 
 @include sığ($gnl);
 
@@ -1161,5 +1167,5 @@ kcm | Ekran ölçeği: 1200px ≤ * < 1900px
     display: none !important
   }
 
-  
+
 }
