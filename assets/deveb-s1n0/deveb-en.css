@@ -124,39 +124,10 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
   margin: 0;
 }
 
-/***
-◘ KAP ÖRGÜSÜ 1.0
-***/
-/*** 
-◘ PARÇA DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘
-***/
-/*** 
-◘ GENLEŞME DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-/*** 
-◘ SIRALAMA DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-/*** 
-◘ ARALIK DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-/*** 
-◘ DİZEM DÜZENİ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-/*** 
-◘ TAMEKRAN & SIĞ ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-/*** 
-◘ KONUMLAMA ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
-/*** 
-◘  ◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘◘ 
-***/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*  GENEL | Ekran ölçeği: 0 ≤ * < ∞
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 [data-gnl] {
-  --parça: 1;
-  --parçalık: 1;
   --a: 6;
   --b: 6;
   --c: 0;
@@ -314,46 +285,38 @@ body[data-gnl~="fullscreen"] > footer {
   max-width: calc(100% / 24);
 }
 
-    /**
-
-      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-      ----------------------------------------------------------------------------------
-      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-      ----------------------------------------------------------------------------------
-
-    **/
-/* Parça değişkenleri */
-[data-gnl~="1"], [data-gnl~="2"], [data-gnl~="3"], [data-gnl~="4"] {
+[data-gnl~="1"], [data-gnl~="2"],
+[data-gnl~="3"], [data-gnl~="4"] {
   --a: 1;
   --c: 0;
 }
 
-[data-gnl~="5"], [data-gnl~="6"], [data-gnl~="7"], [data-gnl~="8"] {
+[data-gnl~="5"], [data-gnl~="6"],
+[data-gnl~="7"], [data-gnl~="8"] {
   --a: 2;
   --c: 0;
 }
 
-[data-gnl~="9"], [data-gnl~="10"], [data-gnl~="11"], [data-gnl~="12"] {
+[data-gnl~="9"], [data-gnl~="10"],
+[data-gnl~="11"], [data-gnl~="12"] {
   --a: 3;
   --c: 0;
 }
 
-[data-gnl~="13"], [data-gnl~="14"], [data-gnl~="15"], [data-gnl~="16"] {
+[data-gnl~="13"], [data-gnl~="14"],
+[data-gnl~="15"], [data-gnl~="16"] {
   --a: 4;
   --c: 0;
 }
 
-[data-gnl~="17"], [data-gnl~="18"], [data-gnl~="19"], [data-gnl~="20"] {
+[data-gnl~="17"], [data-gnl~="18"],
+[data-gnl~="19"], [data-gnl~="20"] {
   --a: 5;
   --c: 0;
 }
 
-[data-gnl~="21"], [data-gnl~="22"], [data-gnl~="23"], [data-gnl~="24"] {
+[data-gnl~="21"], [data-gnl~="22"],
+[data-gnl~="23"], [data-gnl~="24"] {
   --a: 6;
   --c: 0;
 }
@@ -370,33 +333,38 @@ body[data-gnl~="fullscreen"] > footer {
   --c: 1;
 }
 
-/* Parçalık değişkenleri */
-[data-gnl~="1p"], [data-gnl~="2p"], [data-gnl~="3p"], [data-gnl~="4p"] {
+[data-gnl~="1p"], [data-gnl~="2p"],
+[data-gnl~="3p"], [data-gnl~="4p"] {
   --b: 1;
   --d: 0;
 }
 
-[data-gnl~="5p"], [data-gnl~="6p"], [data-gnl~="7p"], [data-gnl~="8p"] {
+[data-gnl~="5p"], [data-gnl~="6p"],
+[data-gnl~="7p"], [data-gnl~="8p"] {
   --b: 2;
   --d: 0;
 }
 
-[data-gnl~="9p"], [data-gnl~="10p"], [data-gnl~="11p"], [data-gnl~="12p"] {
+[data-gnl~="9p"], [data-gnl~="10p"],
+[data-gnl~="11p"], [data-gnl~="12p"] {
   --b: 3;
   --d: 0;
 }
 
-[data-gnl~="13p"], [data-gnl~="14p"], [data-gnl~="15p"], [data-gnl~="16p"] {
+[data-gnl~="13p"], [data-gnl~="14p"],
+[data-gnl~="15p"], [data-gnl~="16p"] {
   --b: 4;
   --d: 0;
 }
 
-[data-gnl~="17p"], [data-gnl~="18p"], [data-gnl~="19p"], [data-gnl~="20p"] {
+[data-gnl~="17p"], [data-gnl~="18p"],
+[data-gnl~="19p"], [data-gnl~="20p"] {
   --b: 5;
   --d: 0;
 }
 
-[data-gnl~="21p"], [data-gnl~="22p"], [data-gnl~="23p"], [data-gnl~="24p"] {
+[data-gnl~="21p"], [data-gnl~="22p"],
+[data-gnl~="23p"], [data-gnl~="24p"] {
   --b: 6;
   --d: 0;
 }
@@ -418,404 +386,164 @@ body[data-gnl~="fullscreen"] > footer {
   max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
 }
 
-[data-gnl~="left-1"] {
-  --parça-soldan: 1;
+[data-gnl~="left-1"], [data-gnl~="left-2"],
+[data-gnl~="left-3"], [data-gnl~="left-4"] {
+  --soldan-a: 1;
+  --soldan-c: 0;
 }
 
-[data-gnl~="1p-spacing"] {
-  --parçalık-soldan: 1;
+[data-gnl~="left-5"], [data-gnl~="left-6"],
+[data-gnl~="left-7"], [data-gnl~="left-8"] {
+  --soldan-a: 2;
+  --soldan-c: 0;
 }
 
-[data-gnl~="right-1"] {
-  --parça-sağdan: 1;
+[data-gnl~="left-9"], [data-gnl~="left-10"],
+[data-gnl~="left-11"], [data-gnl~="left-12"] {
+  --soldan-a: 3;
+  --soldan-c: 0;
 }
 
-[data-gnl~="1p-spacing"] {
-  --parçalık-sağdan: 1;
+[data-gnl~="left-13"], [data-gnl~="left-14"],
+[data-gnl~="left-15"], [data-gnl~="left-16"] {
+  --soldan-a: 4;
+  --soldan-c: 0;
 }
 
-[data-gnl~="left-2"] {
-  --parça-soldan: 2;
+[data-gnl~="left-17"], [data-gnl~="left-18"],
+[data-gnl~="left-19"], [data-gnl~="left-20"] {
+  --soldan-a: 5;
+  --soldan-c: 0;
 }
 
-[data-gnl~="2p-spacing"] {
-  --parçalık-soldan: 2;
+[data-gnl~="left-21"], [data-gnl~="left-22"],
+[data-gnl~="left-23"], [data-gnl~="left-24"] {
+  --soldan-a: 6;
+  --soldan-c: 0;
 }
 
-[data-gnl~="right-2"] {
-  --parça-sağdan: 2;
+[data-gnl~="left-1"], [data-gnl~="left-5"], [data-gnl~="left-9"], [data-gnl~="left-13"], [data-gnl~="left-17"], [data-gnl~="left-21"] {
+  --soldan-c: 3;
 }
 
-[data-gnl~="2p-spacing"] {
-  --parçalık-sağdan: 2;
+[data-gnl~="left-2"], [data-gnl~="left-6"], [data-gnl~="left-10"], [data-gnl~="left-14"], [data-gnl~="left-18"], [data-gnl~="left-22"] {
+  --soldan-c: 2;
 }
 
-[data-gnl~="left-3"] {
-  --parça-soldan: 3;
+[data-gnl~="left-3"], [data-gnl~="left-7"], [data-gnl~="left-11"], [data-gnl~="left-15"], [data-gnl~="left-19"], [data-gnl~="left-23"] {
+  --soldan-c: 1;
 }
 
-[data-gnl~="3p-spacing"] {
-  --parçalık-soldan: 3;
+[data-gnl~="right-1"], [data-gnl~="right-2"],
+[data-gnl~="right-3"], [data-gnl~="right-4"] {
+  --sağdan-a: 1;
+  --sağdan-c: 0;
 }
 
-[data-gnl~="right-3"] {
-  --parça-sağdan: 3;
+[data-gnl~="right-5"], [data-gnl~="right-6"],
+[data-gnl~="right-7"], [data-gnl~="right-8"] {
+  --sağdan-a: 2;
+  --sağdan-c: 0;
 }
 
-[data-gnl~="3p-spacing"] {
-  --parçalık-sağdan: 3;
+[data-gnl~="right-9"], [data-gnl~="right-10"],
+[data-gnl~="right-11"], [data-gnl~="right-12"] {
+  --sağdan-a: 3;
+  --sağdan-c: 0;
 }
 
-[data-gnl~="left-4"] {
-  --parça-soldan: 4;
+[data-gnl~="right-13"], [data-gnl~="right-14"],
+[data-gnl~="right-15"], [data-gnl~="right-16"] {
+  --sağdan-a: 4;
+  --sağdan-c: 0;
 }
 
-[data-gnl~="4p-spacing"] {
-  --parçalık-soldan: 4;
+[data-gnl~="right-17"], [data-gnl~="right-18"],
+[data-gnl~="right-19"], [data-gnl~="right-20"] {
+  --sağdan-a: 5;
+  --sağdan-c: 0;
 }
 
-[data-gnl~="right-4"] {
-  --parça-sağdan: 4;
+[data-gnl~="right-21"], [data-gnl~="right-22"],
+[data-gnl~="right-23"], [data-gnl~="right-24"] {
+  --sağdan-a: 6;
+  --sağdan-c: 0;
 }
 
-[data-gnl~="4p-spacing"] {
-  --parçalık-sağdan: 4;
+[data-gnl~="right-1"], [data-gnl~="right-5"], [data-gnl~="right-9"], [data-gnl~="right-13"], [data-gnl~="right-17"], [data-gnl~="right-21"] {
+  --sağdan-c: 3;
 }
 
-[data-gnl~="left-5"] {
-  --parça-soldan: 5;
+[data-gnl~="right-2"], [data-gnl~="right-6"], [data-gnl~="right-10"], [data-gnl~="right-14"], [data-gnl~="right-18"], [data-gnl~="right-22"] {
+  --sağdan-c: 2;
 }
 
-[data-gnl~="5p-spacing"] {
-  --parçalık-soldan: 5;
+[data-gnl~="right-3"], [data-gnl~="right-7"], [data-gnl~="right-11"], [data-gnl~="right-15"], [data-gnl~="right-19"], [data-gnl~="right-23"] {
+  --sağdan-c: 1;
 }
 
-[data-gnl~="right-5"] {
-  --parça-sağdan: 5;
+[data-gnl~="1p-spacing"], [data-gnl~="2p-spacing"],
+[data-gnl~="3p-spacing"], [data-gnl~="4p-spacing"] {
+  --aralık-b: 1;
+  --aralık-d: 0;
 }
 
-[data-gnl~="5p-spacing"] {
-  --parçalık-sağdan: 5;
+[data-gnl~="5p-spacing"], [data-gnl~="6p-spacing"],
+[data-gnl~="7p-spacing"], [data-gnl~="8p-spacing"] {
+  --aralık-b: 2;
+  --aralık-d: 0;
 }
 
-[data-gnl~="left-6"] {
-  --parça-soldan: 6;
+[data-gnl~="9p-spacing"], [data-gnl~="10p-spacing"],
+[data-gnl~="11p-spacing"], [data-gnl~="12p-spacing"] {
+  --aralık-b: 3;
+  --aralık-d: 0;
 }
 
-[data-gnl~="6p-spacing"] {
-  --parçalık-soldan: 6;
+[data-gnl~="13p-spacing"], [data-gnl~="14p-spacing"],
+[data-gnl~="15p-spacing"], [data-gnl~="16p-spacing"] {
+  --aralık-b: 4;
+  --aralık-d: 0;
 }
 
-[data-gnl~="right-6"] {
-  --parça-sağdan: 6;
+[data-gnl~="17p-spacing"], [data-gnl~="18p-spacing"],
+[data-gnl~="19p-spacing"], [data-gnl~="20p-spacing"] {
+  --aralık-b: 5;
+  --aralık-d: 0;
 }
 
-[data-gnl~="6p-spacing"] {
-  --parçalık-sağdan: 6;
+[data-gnl~="21p-spacing"], [data-gnl~="22p-spacing"],
+[data-gnl~="23p-spacing"], [data-gnl~="24p-spacing"] {
+  --aralık-b: 6;
+  --aralık-d: 0;
 }
 
-[data-gnl~="left-7"] {
-  --parça-soldan: 7;
+[data-gnl~="1p-spacing"], [data-gnl~="5p-spacing"], [data-gnl~="9p-spacing"], [data-gnl~="13p-spacing"], [data-gnl~="17p-spacing"], [data-gnl~="21p-spacing"] {
+  --aralık-d: 3;
 }
 
-[data-gnl~="7p-spacing"] {
-  --parçalık-soldan: 7;
+[data-gnl~="2p-spacing"], [data-gnl~="6p-spacing"], [data-gnl~="10p-spacing"], [data-gnl~="14p-spacing"], [data-gnl~="18p-spacing"], [data-gnl~="22p-spacing"] {
+  --aralık-d: 2;
 }
 
-[data-gnl~="right-7"] {
-  --parça-sağdan: 7;
+[data-gnl~="3p-spacing"], [data-gnl~="7p-spacing"], [data-gnl~="11p-spacing"], [data-gnl~="15p-spacing"], [data-gnl~="19p-spacing"], [data-gnl~="23p-spacing"] {
+  --aralık-d: 1;
 }
 
-[data-gnl~="7p-spacing"] {
-  --parçalık-sağdan: 7;
-}
-
-[data-gnl~="left-8"] {
-  --parça-soldan: 8;
-}
-
-[data-gnl~="8p-spacing"] {
-  --parçalık-soldan: 8;
-}
-
-[data-gnl~="right-8"] {
-  --parça-sağdan: 8;
-}
-
-[data-gnl~="8p-spacing"] {
-  --parçalık-sağdan: 8;
-}
-
-[data-gnl~="left-9"] {
-  --parça-soldan: 9;
-}
-
-[data-gnl~="9p-spacing"] {
-  --parçalık-soldan: 9;
-}
-
-[data-gnl~="right-9"] {
-  --parça-sağdan: 9;
-}
-
-[data-gnl~="9p-spacing"] {
-  --parçalık-sağdan: 9;
-}
-
-[data-gnl~="left-10"] {
-  --parça-soldan: 10;
-}
-
-[data-gnl~="10p-spacing"] {
-  --parçalık-soldan: 10;
-}
-
-[data-gnl~="right-10"] {
-  --parça-sağdan: 10;
-}
-
-[data-gnl~="10p-spacing"] {
-  --parçalık-sağdan: 10;
-}
-
-[data-gnl~="left-11"] {
-  --parça-soldan: 11;
-}
-
-[data-gnl~="11p-spacing"] {
-  --parçalık-soldan: 11;
-}
-
-[data-gnl~="right-11"] {
-  --parça-sağdan: 11;
-}
-
-[data-gnl~="11p-spacing"] {
-  --parçalık-sağdan: 11;
-}
-
-[data-gnl~="left-12"] {
-  --parça-soldan: 12;
-}
-
-[data-gnl~="12p-spacing"] {
-  --parçalık-soldan: 12;
-}
-
-[data-gnl~="right-12"] {
-  --parça-sağdan: 12;
-}
-
-[data-gnl~="12p-spacing"] {
-  --parçalık-sağdan: 12;
-}
-
-[data-gnl~="left-13"] {
-  --parça-soldan: 13;
-}
-
-[data-gnl~="13p-spacing"] {
-  --parçalık-soldan: 13;
-}
-
-[data-gnl~="right-13"] {
-  --parça-sağdan: 13;
-}
-
-[data-gnl~="13p-spacing"] {
-  --parçalık-sağdan: 13;
-}
-
-[data-gnl~="left-14"] {
-  --parça-soldan: 14;
-}
-
-[data-gnl~="14p-spacing"] {
-  --parçalık-soldan: 14;
-}
-
-[data-gnl~="right-14"] {
-  --parça-sağdan: 14;
-}
-
-[data-gnl~="14p-spacing"] {
-  --parçalık-sağdan: 14;
-}
-
-[data-gnl~="left-15"] {
-  --parça-soldan: 15;
-}
-
-[data-gnl~="15p-spacing"] {
-  --parçalık-soldan: 15;
-}
-
-[data-gnl~="right-15"] {
-  --parça-sağdan: 15;
-}
-
-[data-gnl~="15p-spacing"] {
-  --parçalık-sağdan: 15;
-}
-
-[data-gnl~="left-16"] {
-  --parça-soldan: 16;
-}
-
-[data-gnl~="16p-spacing"] {
-  --parçalık-soldan: 16;
-}
-
-[data-gnl~="right-16"] {
-  --parça-sağdan: 16;
-}
-
-[data-gnl~="16p-spacing"] {
-  --parçalık-sağdan: 16;
-}
-
-[data-gnl~="left-17"] {
-  --parça-soldan: 17;
-}
-
-[data-gnl~="17p-spacing"] {
-  --parçalık-soldan: 17;
-}
-
-[data-gnl~="right-17"] {
-  --parça-sağdan: 17;
-}
-
-[data-gnl~="17p-spacing"] {
-  --parçalık-sağdan: 17;
-}
-
-[data-gnl~="left-18"] {
-  --parça-soldan: 18;
-}
-
-[data-gnl~="18p-spacing"] {
-  --parçalık-soldan: 18;
-}
-
-[data-gnl~="right-18"] {
-  --parça-sağdan: 18;
-}
-
-[data-gnl~="18p-spacing"] {
-  --parçalık-sağdan: 18;
-}
-
-[data-gnl~="left-19"] {
-  --parça-soldan: 19;
-}
-
-[data-gnl~="19p-spacing"] {
-  --parçalık-soldan: 19;
-}
-
-[data-gnl~="right-19"] {
-  --parça-sağdan: 19;
-}
-
-[data-gnl~="19p-spacing"] {
-  --parçalık-sağdan: 19;
-}
-
-[data-gnl~="left-20"] {
-  --parça-soldan: 20;
-}
-
-[data-gnl~="20p-spacing"] {
-  --parçalık-soldan: 20;
-}
-
-[data-gnl~="right-20"] {
-  --parça-sağdan: 20;
-}
-
-[data-gnl~="20p-spacing"] {
-  --parçalık-sağdan: 20;
-}
-
-[data-gnl~="left-21"] {
-  --parça-soldan: 21;
-}
-
-[data-gnl~="21p-spacing"] {
-  --parçalık-soldan: 21;
-}
-
-[data-gnl~="right-21"] {
-  --parça-sağdan: 21;
-}
-
-[data-gnl~="21p-spacing"] {
-  --parçalık-sağdan: 21;
-}
-
-[data-gnl~="left-22"] {
-  --parça-soldan: 22;
-}
-
-[data-gnl~="22p-spacing"] {
-  --parçalık-soldan: 22;
-}
-
-[data-gnl~="right-22"] {
-  --parça-sağdan: 22;
-}
-
-[data-gnl~="22p-spacing"] {
-  --parçalık-sağdan: 22;
-}
-
-[data-gnl~="left-23"] {
-  --parça-soldan: 23;
-}
-
-[data-gnl~="23p-spacing"] {
-  --parçalık-soldan: 23;
-}
-
-[data-gnl~="right-23"] {
-  --parça-sağdan: 23;
-}
-
-[data-gnl~="23p-spacing"] {
-  --parçalık-sağdan: 23;
-}
-
-[data-gnl~="left-24"] {
-  --parça-soldan: 24;
-}
-
-[data-gnl~="24p-spacing"] {
-  --parçalık-soldan: 24;
-}
-
-[data-gnl~="right-24"] {
-  --parça-sağdan: 24;
-}
-
-[data-gnl~="24p-spacing"] {
-  --parçalık-sağdan: 24;
-}
-
-[data-gnl*="left-"] {
-  margin-left: calc(100% / var(--parçalık) * var(--parça-soldan));
-}
-
-[data-gnl*="right-"] {
-  margin-right: calc(100% / var(--parçalık) * var(--parça-sağdan));
+[data-gnl*="left-"]:not([data-gnl*="p-spacing"]) {
+  margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
 }
 
 [data-gnl*="left-"][data-gnl*="p-spacing"] {
-  margin-left: calc(100% / var(--parçalık-soldan) * var(--parça-soldan));
+  margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+}
+
+[data-gnl*="right-"]:not([data-gnl*="p-spacing"]) {
+  margin-right: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
 }
 
 [data-gnl*="right-"][data-gnl*="p-spacing"] {
-  margin-right: calc(100% / var(--parçalık-sağdan) * var(--parça-sağdan));
+  margin-right: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
 }
 
 [data-gnl*="spacing-1"] {
@@ -1051,12 +779,6 @@ body[data-gnl~="fullscreen"] > footer {
   padding: 0;
 }
 
-    /**
-
-      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-      kullanılır.
-
-    **/
 [data-gnl~="1g"] {
   flex: 1;
 }
@@ -1153,22 +875,12 @@ body[data-gnl~="fullscreen"] > footer {
   flex: 24;
 }
 
-    /**
-
-      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-
-    **/
 [data-gnl~="0"][data-gnl~="0"] {
   flex-basis: auto;
   max-width: none;
   width: auto;
 }
 
-    /**
-
-      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
-
-    **/
 [data-gnl~="1th"] {
   order: 1;
 }
@@ -1529,7 +1241,6 @@ body[data-gnl~="fullscreen"] > footer {
   align-self: flex-start;
 }
 
-/******************************************************************************/
 [data-gnl~="container"] {
   margin-left: auto;
   margin-right: auto;
@@ -1689,46 +1400,38 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     max-width: calc(100% / 24);
   }
 
-    /**
-
-      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-      ----------------------------------------------------------------------------------
-      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-      ----------------------------------------------------------------------------------
-
-    **/
-  /* Parça değişkenleri */
-  [data-xs~="1"], [data-xs~="2"], [data-xs~="3"], [data-xs~="4"] {
+  [data-xs~="1"], [data-xs~="2"],
+  [data-xs~="3"], [data-xs~="4"] {
     --a: 1;
     --c: 0;
   }
 
-  [data-xs~="5"], [data-xs~="6"], [data-xs~="7"], [data-xs~="8"] {
+  [data-xs~="5"], [data-xs~="6"],
+  [data-xs~="7"], [data-xs~="8"] {
     --a: 2;
     --c: 0;
   }
 
-  [data-xs~="9"], [data-xs~="10"], [data-xs~="11"], [data-xs~="12"] {
+  [data-xs~="9"], [data-xs~="10"],
+  [data-xs~="11"], [data-xs~="12"] {
     --a: 3;
     --c: 0;
   }
 
-  [data-xs~="13"], [data-xs~="14"], [data-xs~="15"], [data-xs~="16"] {
+  [data-xs~="13"], [data-xs~="14"],
+  [data-xs~="15"], [data-xs~="16"] {
     --a: 4;
     --c: 0;
   }
 
-  [data-xs~="17"], [data-xs~="18"], [data-xs~="19"], [data-xs~="20"] {
+  [data-xs~="17"], [data-xs~="18"],
+  [data-xs~="19"], [data-xs~="20"] {
     --a: 5;
     --c: 0;
   }
 
-  [data-xs~="21"], [data-xs~="22"], [data-xs~="23"], [data-xs~="24"] {
+  [data-xs~="21"], [data-xs~="22"],
+  [data-xs~="23"], [data-xs~="24"] {
     --a: 6;
     --c: 0;
   }
@@ -1745,33 +1448,38 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     --c: 1;
   }
 
-  /* Parçalık değişkenleri */
-  [data-xs~="1p"], [data-xs~="2p"], [data-xs~="3p"], [data-xs~="4p"] {
+  [data-xs~="1p"], [data-xs~="2p"],
+  [data-xs~="3p"], [data-xs~="4p"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-xs~="5p"], [data-xs~="6p"], [data-xs~="7p"], [data-xs~="8p"] {
+  [data-xs~="5p"], [data-xs~="6p"],
+  [data-xs~="7p"], [data-xs~="8p"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-xs~="9p"], [data-xs~="10p"], [data-xs~="11p"], [data-xs~="12p"] {
+  [data-xs~="9p"], [data-xs~="10p"],
+  [data-xs~="11p"], [data-xs~="12p"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-xs~="13p"], [data-xs~="14p"], [data-xs~="15p"], [data-xs~="16p"] {
+  [data-xs~="13p"], [data-xs~="14p"],
+  [data-xs~="15p"], [data-xs~="16p"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-xs~="17p"], [data-xs~="18p"], [data-xs~="19p"], [data-xs~="20p"] {
+  [data-xs~="17p"], [data-xs~="18p"],
+  [data-xs~="19p"], [data-xs~="20p"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-xs~="21p"], [data-xs~="22p"], [data-xs~="23p"], [data-xs~="24p"] {
+  [data-xs~="21p"], [data-xs~="22p"],
+  [data-xs~="23p"], [data-xs~="24p"] {
     --b: 6;
     --d: 0;
   }
@@ -1793,12 +1501,6 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
-    /**
-
-      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-      kullanılır.
-
-    **/
   [data-xs~="1g"] {
     flex: 1;
   }
@@ -1895,22 +1597,12 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     flex: 24;
   }
 
-    /**
-
-      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-
-    **/
   [data-xs~="0"][data-xs~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
-    /**
-
-      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
-
-    **/
   [data-xs~="1th"] {
     order: 1;
   }
@@ -2271,7 +1963,6 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     align-self: flex-start;
   }
 
-  /******************************************************************************/
   [data-xs~="hide"],
   [data-xs~="hide-with-bigger"],
   [data-mn~="hide-bigger"],
@@ -2423,46 +2114,38 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     max-width: calc(100% / 24);
   }
 
-    /**
-
-      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-      ----------------------------------------------------------------------------------
-      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-      ----------------------------------------------------------------------------------
-
-    **/
-  /* Parça değişkenleri */
-  [data-sm~="1"], [data-sm~="2"], [data-sm~="3"], [data-sm~="4"] {
+  [data-sm~="1"], [data-sm~="2"],
+  [data-sm~="3"], [data-sm~="4"] {
     --a: 1;
     --c: 0;
   }
 
-  [data-sm~="5"], [data-sm~="6"], [data-sm~="7"], [data-sm~="8"] {
+  [data-sm~="5"], [data-sm~="6"],
+  [data-sm~="7"], [data-sm~="8"] {
     --a: 2;
     --c: 0;
   }
 
-  [data-sm~="9"], [data-sm~="10"], [data-sm~="11"], [data-sm~="12"] {
+  [data-sm~="9"], [data-sm~="10"],
+  [data-sm~="11"], [data-sm~="12"] {
     --a: 3;
     --c: 0;
   }
 
-  [data-sm~="13"], [data-sm~="14"], [data-sm~="15"], [data-sm~="16"] {
+  [data-sm~="13"], [data-sm~="14"],
+  [data-sm~="15"], [data-sm~="16"] {
     --a: 4;
     --c: 0;
   }
 
-  [data-sm~="17"], [data-sm~="18"], [data-sm~="19"], [data-sm~="20"] {
+  [data-sm~="17"], [data-sm~="18"],
+  [data-sm~="19"], [data-sm~="20"] {
     --a: 5;
     --c: 0;
   }
 
-  [data-sm~="21"], [data-sm~="22"], [data-sm~="23"], [data-sm~="24"] {
+  [data-sm~="21"], [data-sm~="22"],
+  [data-sm~="23"], [data-sm~="24"] {
     --a: 6;
     --c: 0;
   }
@@ -2479,33 +2162,38 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     --c: 1;
   }
 
-  /* Parçalık değişkenleri */
-  [data-sm~="1p"], [data-sm~="2p"], [data-sm~="3p"], [data-sm~="4p"] {
+  [data-sm~="1p"], [data-sm~="2p"],
+  [data-sm~="3p"], [data-sm~="4p"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-sm~="5p"], [data-sm~="6p"], [data-sm~="7p"], [data-sm~="8p"] {
+  [data-sm~="5p"], [data-sm~="6p"],
+  [data-sm~="7p"], [data-sm~="8p"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-sm~="9p"], [data-sm~="10p"], [data-sm~="11p"], [data-sm~="12p"] {
+  [data-sm~="9p"], [data-sm~="10p"],
+  [data-sm~="11p"], [data-sm~="12p"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-sm~="13p"], [data-sm~="14p"], [data-sm~="15p"], [data-sm~="16p"] {
+  [data-sm~="13p"], [data-sm~="14p"],
+  [data-sm~="15p"], [data-sm~="16p"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-sm~="17p"], [data-sm~="18p"], [data-sm~="19p"], [data-sm~="20p"] {
+  [data-sm~="17p"], [data-sm~="18p"],
+  [data-sm~="19p"], [data-sm~="20p"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-sm~="21p"], [data-sm~="22p"], [data-sm~="23p"], [data-sm~="24p"] {
+  [data-sm~="21p"], [data-sm~="22p"],
+  [data-sm~="23p"], [data-sm~="24p"] {
     --b: 6;
     --d: 0;
   }
@@ -2527,12 +2215,6 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
-    /**
-
-      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-      kullanılır.
-
-    **/
   [data-sm~="1g"] {
     flex: 1;
   }
@@ -2629,22 +2311,12 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     flex: 24;
   }
 
-    /**
-
-      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-
-    **/
   [data-sm~="0"][data-sm~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
-    /**
-
-      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
-
-    **/
   [data-sm~="1th"] {
     order: 1;
   }
@@ -3005,7 +2677,6 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     align-self: flex-start;
   }
 
-  /******************************************************************************/
   [data-sm~="hide"],
   [data-sm~="hide-with-bigger"],
   [data-xs~="hide-bigger"],
@@ -3157,46 +2828,38 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     max-width: calc(100% / 24);
   }
 
-    /**
-
-      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-      ----------------------------------------------------------------------------------
-      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-      ----------------------------------------------------------------------------------
-
-    **/
-  /* Parça değişkenleri */
-  [data-md~="1"], [data-md~="2"], [data-md~="3"], [data-md~="4"] {
+  [data-md~="1"], [data-md~="2"],
+  [data-md~="3"], [data-md~="4"] {
     --a: 1;
     --c: 0;
   }
 
-  [data-md~="5"], [data-md~="6"], [data-md~="7"], [data-md~="8"] {
+  [data-md~="5"], [data-md~="6"],
+  [data-md~="7"], [data-md~="8"] {
     --a: 2;
     --c: 0;
   }
 
-  [data-md~="9"], [data-md~="10"], [data-md~="11"], [data-md~="12"] {
+  [data-md~="9"], [data-md~="10"],
+  [data-md~="11"], [data-md~="12"] {
     --a: 3;
     --c: 0;
   }
 
-  [data-md~="13"], [data-md~="14"], [data-md~="15"], [data-md~="16"] {
+  [data-md~="13"], [data-md~="14"],
+  [data-md~="15"], [data-md~="16"] {
     --a: 4;
     --c: 0;
   }
 
-  [data-md~="17"], [data-md~="18"], [data-md~="19"], [data-md~="20"] {
+  [data-md~="17"], [data-md~="18"],
+  [data-md~="19"], [data-md~="20"] {
     --a: 5;
     --c: 0;
   }
 
-  [data-md~="21"], [data-md~="22"], [data-md~="23"], [data-md~="24"] {
+  [data-md~="21"], [data-md~="22"],
+  [data-md~="23"], [data-md~="24"] {
     --a: 6;
     --c: 0;
   }
@@ -3213,33 +2876,38 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     --c: 1;
   }
 
-  /* Parçalık değişkenleri */
-  [data-md~="1p"], [data-md~="2p"], [data-md~="3p"], [data-md~="4p"] {
+  [data-md~="1p"], [data-md~="2p"],
+  [data-md~="3p"], [data-md~="4p"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-md~="5p"], [data-md~="6p"], [data-md~="7p"], [data-md~="8p"] {
+  [data-md~="5p"], [data-md~="6p"],
+  [data-md~="7p"], [data-md~="8p"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-md~="9p"], [data-md~="10p"], [data-md~="11p"], [data-md~="12p"] {
+  [data-md~="9p"], [data-md~="10p"],
+  [data-md~="11p"], [data-md~="12p"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-md~="13p"], [data-md~="14p"], [data-md~="15p"], [data-md~="16p"] {
+  [data-md~="13p"], [data-md~="14p"],
+  [data-md~="15p"], [data-md~="16p"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-md~="17p"], [data-md~="18p"], [data-md~="19p"], [data-md~="20p"] {
+  [data-md~="17p"], [data-md~="18p"],
+  [data-md~="19p"], [data-md~="20p"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-md~="21p"], [data-md~="22p"], [data-md~="23p"], [data-md~="24p"] {
+  [data-md~="21p"], [data-md~="22p"],
+  [data-md~="23p"], [data-md~="24p"] {
     --b: 6;
     --d: 0;
   }
@@ -3261,12 +2929,6 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
-    /**
-
-      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-      kullanılır.
-
-    **/
   [data-md~="1g"] {
     flex: 1;
   }
@@ -3363,22 +3025,12 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     flex: 24;
   }
 
-    /**
-
-      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-
-    **/
   [data-md~="0"][data-md~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
-    /**
-
-      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
-
-    **/
   [data-md~="1th"] {
     order: 1;
   }
@@ -3739,7 +3391,6 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     align-self: flex-start;
   }
 
-  /******************************************************************************/
   [data-md~="hide"],
   [data-md~="hide-with-bigger"],
   [data-sm~="hide-bigger"],
@@ -3891,46 +3542,38 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     max-width: calc(100% / 24);
   }
 
-    /**
-
-      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-      ----------------------------------------------------------------------------------
-      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-      ----------------------------------------------------------------------------------
-
-    **/
-  /* Parça değişkenleri */
-  [data-lg~="1"], [data-lg~="2"], [data-lg~="3"], [data-lg~="4"] {
+  [data-lg~="1"], [data-lg~="2"],
+  [data-lg~="3"], [data-lg~="4"] {
     --a: 1;
     --c: 0;
   }
 
-  [data-lg~="5"], [data-lg~="6"], [data-lg~="7"], [data-lg~="8"] {
+  [data-lg~="5"], [data-lg~="6"],
+  [data-lg~="7"], [data-lg~="8"] {
     --a: 2;
     --c: 0;
   }
 
-  [data-lg~="9"], [data-lg~="10"], [data-lg~="11"], [data-lg~="12"] {
+  [data-lg~="9"], [data-lg~="10"],
+  [data-lg~="11"], [data-lg~="12"] {
     --a: 3;
     --c: 0;
   }
 
-  [data-lg~="13"], [data-lg~="14"], [data-lg~="15"], [data-lg~="16"] {
+  [data-lg~="13"], [data-lg~="14"],
+  [data-lg~="15"], [data-lg~="16"] {
     --a: 4;
     --c: 0;
   }
 
-  [data-lg~="17"], [data-lg~="18"], [data-lg~="19"], [data-lg~="20"] {
+  [data-lg~="17"], [data-lg~="18"],
+  [data-lg~="19"], [data-lg~="20"] {
     --a: 5;
     --c: 0;
   }
 
-  [data-lg~="21"], [data-lg~="22"], [data-lg~="23"], [data-lg~="24"] {
+  [data-lg~="21"], [data-lg~="22"],
+  [data-lg~="23"], [data-lg~="24"] {
     --a: 6;
     --c: 0;
   }
@@ -3947,33 +3590,38 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     --c: 1;
   }
 
-  /* Parçalık değişkenleri */
-  [data-lg~="1p"], [data-lg~="2p"], [data-lg~="3p"], [data-lg~="4p"] {
+  [data-lg~="1p"], [data-lg~="2p"],
+  [data-lg~="3p"], [data-lg~="4p"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-lg~="5p"], [data-lg~="6p"], [data-lg~="7p"], [data-lg~="8p"] {
+  [data-lg~="5p"], [data-lg~="6p"],
+  [data-lg~="7p"], [data-lg~="8p"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-lg~="9p"], [data-lg~="10p"], [data-lg~="11p"], [data-lg~="12p"] {
+  [data-lg~="9p"], [data-lg~="10p"],
+  [data-lg~="11p"], [data-lg~="12p"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-lg~="13p"], [data-lg~="14p"], [data-lg~="15p"], [data-lg~="16p"] {
+  [data-lg~="13p"], [data-lg~="14p"],
+  [data-lg~="15p"], [data-lg~="16p"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-lg~="17p"], [data-lg~="18p"], [data-lg~="19p"], [data-lg~="20p"] {
+  [data-lg~="17p"], [data-lg~="18p"],
+  [data-lg~="19p"], [data-lg~="20p"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-lg~="21p"], [data-lg~="22p"], [data-lg~="23p"], [data-lg~="24p"] {
+  [data-lg~="21p"], [data-lg~="22p"],
+  [data-lg~="23p"], [data-lg~="24p"] {
     --b: 6;
     --d: 0;
   }
@@ -3995,12 +3643,6 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
-    /**
-
-      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-      kullanılır.
-
-    **/
   [data-lg~="1g"] {
     flex: 1;
   }
@@ -4097,22 +3739,12 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     flex: 24;
   }
 
-    /**
-
-      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-
-    **/
   [data-lg~="0"][data-lg~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
-    /**
-
-      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
-
-    **/
   [data-lg~="1th"] {
     order: 1;
   }
@@ -4473,7 +4105,6 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     align-self: flex-start;
   }
 
-  /******************************************************************************/
   [data-lg~="hide"],
   [data-lg~="hide-with-bigger"],
   [data-md~="hide-bigger"],
@@ -4625,46 +4256,38 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     max-width: calc(100% / 24);
   }
 
-    /**
-
-      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-      ----------------------------------------------------------------------------------
-      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-      ----------------------------------------------------------------------------------
-
-    **/
-  /* Parça değişkenleri */
-  [data-xl~="1"], [data-xl~="2"], [data-xl~="3"], [data-xl~="4"] {
+  [data-xl~="1"], [data-xl~="2"],
+  [data-xl~="3"], [data-xl~="4"] {
     --a: 1;
     --c: 0;
   }
 
-  [data-xl~="5"], [data-xl~="6"], [data-xl~="7"], [data-xl~="8"] {
+  [data-xl~="5"], [data-xl~="6"],
+  [data-xl~="7"], [data-xl~="8"] {
     --a: 2;
     --c: 0;
   }
 
-  [data-xl~="9"], [data-xl~="10"], [data-xl~="11"], [data-xl~="12"] {
+  [data-xl~="9"], [data-xl~="10"],
+  [data-xl~="11"], [data-xl~="12"] {
     --a: 3;
     --c: 0;
   }
 
-  [data-xl~="13"], [data-xl~="14"], [data-xl~="15"], [data-xl~="16"] {
+  [data-xl~="13"], [data-xl~="14"],
+  [data-xl~="15"], [data-xl~="16"] {
     --a: 4;
     --c: 0;
   }
 
-  [data-xl~="17"], [data-xl~="18"], [data-xl~="19"], [data-xl~="20"] {
+  [data-xl~="17"], [data-xl~="18"],
+  [data-xl~="19"], [data-xl~="20"] {
     --a: 5;
     --c: 0;
   }
 
-  [data-xl~="21"], [data-xl~="22"], [data-xl~="23"], [data-xl~="24"] {
+  [data-xl~="21"], [data-xl~="22"],
+  [data-xl~="23"], [data-xl~="24"] {
     --a: 6;
     --c: 0;
   }
@@ -4681,33 +4304,38 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     --c: 1;
   }
 
-  /* Parçalık değişkenleri */
-  [data-xl~="1p"], [data-xl~="2p"], [data-xl~="3p"], [data-xl~="4p"] {
+  [data-xl~="1p"], [data-xl~="2p"],
+  [data-xl~="3p"], [data-xl~="4p"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-xl~="5p"], [data-xl~="6p"], [data-xl~="7p"], [data-xl~="8p"] {
+  [data-xl~="5p"], [data-xl~="6p"],
+  [data-xl~="7p"], [data-xl~="8p"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-xl~="9p"], [data-xl~="10p"], [data-xl~="11p"], [data-xl~="12p"] {
+  [data-xl~="9p"], [data-xl~="10p"],
+  [data-xl~="11p"], [data-xl~="12p"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-xl~="13p"], [data-xl~="14p"], [data-xl~="15p"], [data-xl~="16p"] {
+  [data-xl~="13p"], [data-xl~="14p"],
+  [data-xl~="15p"], [data-xl~="16p"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-xl~="17p"], [data-xl~="18p"], [data-xl~="19p"], [data-xl~="20p"] {
+  [data-xl~="17p"], [data-xl~="18p"],
+  [data-xl~="19p"], [data-xl~="20p"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-xl~="21p"], [data-xl~="22p"], [data-xl~="23p"], [data-xl~="24p"] {
+  [data-xl~="21p"], [data-xl~="22p"],
+  [data-xl~="23p"], [data-xl~="24p"] {
     --b: 6;
     --d: 0;
   }
@@ -4729,12 +4357,6 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
-    /**
-
-      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-      kullanılır.
-
-    **/
   [data-xl~="1g"] {
     flex: 1;
   }
@@ -4831,22 +4453,12 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     flex: 24;
   }
 
-    /**
-
-      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-
-    **/
   [data-xl~="0"][data-xl~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
-    /**
-
-      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
-
-    **/
   [data-xl~="1th"] {
     order: 1;
   }
@@ -5207,7 +4819,6 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     align-self: flex-start;
   }
 
-  /******************************************************************************/
   [data-xl~="hide"],
   [data-xl~="hide-with-bigger"],
   [data-lg~="hide-bigger"],
@@ -5359,46 +4970,38 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     max-width: calc(100% / 24);
   }
 
-    /**
-
-      A: Bu çalışma parça düzeninde daha az CSS satırı kullanmak için yapılmıştır. İşlemler
-      css satırlarının sadeleştirilmesinin temelidir. Her sayı doğru şekilde tetiklenerek
-      4 işlem hesabı yapılır. 9 + 9 + 1 olmak üzere 19 satırda işlemler tamamlanır.
-      ----------------------------------------------------------------------------------
-      | parça için a & parçalık için b = 1, 2, 3, 4, 5, 6 değerlerinde olur.
-      | parça için c & parçalık için d = 0, 1, 2, 3 değerlerinde olur.
-      | parça için işlem = (a * 4 - c) ile 1'den 24'e kadar sayılar elde edilir.
-      | parçalık için işlem = (b * 4 - d) ile 1'den 24'e kadar sayılar elde edilir.
-      ----------------------------------------------------------------------------------
-
-    **/
-  /* Parça değişkenleri */
-  [data-hg~="1"], [data-hg~="2"], [data-hg~="3"], [data-hg~="4"] {
+  [data-hg~="1"], [data-hg~="2"],
+  [data-hg~="3"], [data-hg~="4"] {
     --a: 1;
     --c: 0;
   }
 
-  [data-hg~="5"], [data-hg~="6"], [data-hg~="7"], [data-hg~="8"] {
+  [data-hg~="5"], [data-hg~="6"],
+  [data-hg~="7"], [data-hg~="8"] {
     --a: 2;
     --c: 0;
   }
 
-  [data-hg~="9"], [data-hg~="10"], [data-hg~="11"], [data-hg~="12"] {
+  [data-hg~="9"], [data-hg~="10"],
+  [data-hg~="11"], [data-hg~="12"] {
     --a: 3;
     --c: 0;
   }
 
-  [data-hg~="13"], [data-hg~="14"], [data-hg~="15"], [data-hg~="16"] {
+  [data-hg~="13"], [data-hg~="14"],
+  [data-hg~="15"], [data-hg~="16"] {
     --a: 4;
     --c: 0;
   }
 
-  [data-hg~="17"], [data-hg~="18"], [data-hg~="19"], [data-hg~="20"] {
+  [data-hg~="17"], [data-hg~="18"],
+  [data-hg~="19"], [data-hg~="20"] {
     --a: 5;
     --c: 0;
   }
 
-  [data-hg~="21"], [data-hg~="22"], [data-hg~="23"], [data-hg~="24"] {
+  [data-hg~="21"], [data-hg~="22"],
+  [data-hg~="23"], [data-hg~="24"] {
     --a: 6;
     --c: 0;
   }
@@ -5415,33 +5018,38 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     --c: 1;
   }
 
-  /* Parçalık değişkenleri */
-  [data-hg~="1p"], [data-hg~="2p"], [data-hg~="3p"], [data-hg~="4p"] {
+  [data-hg~="1p"], [data-hg~="2p"],
+  [data-hg~="3p"], [data-hg~="4p"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-hg~="5p"], [data-hg~="6p"], [data-hg~="7p"], [data-hg~="8p"] {
+  [data-hg~="5p"], [data-hg~="6p"],
+  [data-hg~="7p"], [data-hg~="8p"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-hg~="9p"], [data-hg~="10p"], [data-hg~="11p"], [data-hg~="12p"] {
+  [data-hg~="9p"], [data-hg~="10p"],
+  [data-hg~="11p"], [data-hg~="12p"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-hg~="13p"], [data-hg~="14p"], [data-hg~="15p"], [data-hg~="16p"] {
+  [data-hg~="13p"], [data-hg~="14p"],
+  [data-hg~="15p"], [data-hg~="16p"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-hg~="17p"], [data-hg~="18p"], [data-hg~="19p"], [data-hg~="20p"] {
+  [data-hg~="17p"], [data-hg~="18p"],
+  [data-hg~="19p"], [data-hg~="20p"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-hg~="21p"], [data-hg~="22p"], [data-hg~="23p"], [data-hg~="24p"] {
+  [data-hg~="21p"], [data-hg~="22p"],
+  [data-hg~="23p"], [data-hg~="24p"] {
     --b: 6;
     --d: 0;
   }
@@ -5463,12 +5071,6 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
   }
 
-    /**
-
-      A: Flex özelliği ile oluşturulan genleşme düzeni 1'den 24'e kadar ölçeklenir. "g" harfiyle
-      kullanılır.
-
-    **/
   [data-hg~="1g"] {
     flex: 1;
   }
@@ -5565,22 +5167,12 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     flex: 24;
   }
 
-    /**
-
-      A: Doğal genişlikte olması istenilen kaplar "0" değeriyle belirtilir.
-
-    **/
   [data-hg~="0"][data-hg~="0"] {
     flex-basis: auto;
     max-width: none;
     width: auto;
   }
 
-    /**
-
-      A: 1'den 24'e kadar sıra sayısı vererek sıralamak için "nc" ile kullanılır. 
-
-    **/
   [data-hg~="1th"] {
     order: 1;
   }
@@ -5941,7 +5533,6 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     align-self: flex-start;
   }
 
-  /******************************************************************************/
   [data-gnl~="container"],
   [data-hg~="container"],
   [data-xl~="büyükleri-kap"],
