@@ -58,7 +58,12 @@
       <label for="kap-örgüsü"><span>▼</span></label>
       <ul>
         <li class="{% if page.url contains '/kap-orgusu/parca-duzeni' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/parca-duzeni">{{ parca_duzeni }}</a>
+          <a href="/1.0/{{ dil }}/kap-orgusu/parca-duzeni">{{ parca_duzeni }}</a>          
+          <ul>
+            <li class="{% if page.url contains '/kap-orgusu/olcekler' %}etkin{% endif %}">
+              <a href="/1.0/{{ dil }}/kap-orgusu/olcekler">{{ olcekler }}</a>
+            </li>
+          </ul>
         </li>
         <li class="{% if page.url contains '/kap-orgusu/dizem-duzeni' %}etkin{% endif %}">
           <a href="/1.0/{{ dil }}/kap-orgusu/dizem-duzeni">{{ dizem_duzeni }}</a>
@@ -77,10 +82,7 @@
         </li>
         <li class="{% if page.url contains '/kap-orgusu/siralama' %}etkin{% endif %}">
           <a href="/1.0/{{ dil }}/kap-orgusu/siralama">{{ siralama }}</a>
-        </li>
-        <li class="{% if page.url contains '/kap-orgusu/olcekler' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/olcekler">{{ olcekler }}</a>
-        </li>
+        </li>        
         <!--
         <li>
           <input id="kap-örgüsü-örnekler" type="checkbox" {% if page.url contains '/ornekler/' %}checked{% endif %} data-kapaç="sağda">
