@@ -5,6 +5,56 @@ title: Aralık Düzeni
 	<p class="girlik">
 	  Ögeler arası aralıklar bırakarak daha estetik görünüm oluşturun. Kendiliğinden hesaplanan aralık genişlikleri, sabit aralık genişlikleri gibi bir kaç seçenekten istediğinizi kullanın. Daha fazlası aşağıda.
 	</p>
+	<h3>Soldan Sağdan Aralık: SAYI-| |-SAYI SAYIp-| |-SAYIp</h3>
+	<p>
+		Bir ögeyi soldan veya sağdan parça düzenine göre öteleyerek aralıklamak istiyorsak bu özelliği kullanırız.
+		Diyelim ki 12p'lik düzende 3'lük parça genişliğinde bir div etiketi oluşturdunuz. Sol yanından 3 kadar ve sağ yanından 3 kadar öteleme yapmak istiyorsanız aşağıdaki örnek gibi kullanabilirsiniz. Bu belletiden yola çıkarak aşağıda ek olarak eklenmiş diğer kullanımları da inceleyebilirsiniz.
+		<br>
+		-: aralık anlamına gelir. <br>
+		|: yan anlamına gelir. <br>
+		|-: sağ yan anlamına gelir. <br>
+		-|: sol yan anlamına gelir. <br>
+
+		Bunlarla birlikte eğer SAYIp tanımlanmışsa aralık verme düzeninin hangi düzende olacağı tanımlanmıştır. Eğer bunlarla birlikte olmadan SAYIp düzeni tanımlanmışsa bu etiket için her şey SAYIp düzeninde oluşturulur.
+
+	</p>
+	<div class="örnek">
+	<h3>Önizleme</h3>
+	<div class="önizleme">
+	  <div data-gnl="3-| 3 |-3 12p">
+	    12'de 3 parça soldan öteler. 12'de 3 parça genişliği olur. 12'de 3 parça sağdan öteler. Bunlar 12p düzeninde oluşur.
+	  </div>
+	  <div data-gnl="3-| 3 |-3">
+	    24'de 3 parça soldan öteler. 24'de 3 parça genişliği olur. 24'de 3 parça sağdan öteler. Bunlar varsayılan tanımlı 24p düzeninde oluşur.
+	  </div>
+	  <div data-gnl="3-| 3 |-3 12p-| |-12p">
+	    12'de 3 parça soldan öteler. 24'de 3 parça genişliği olur. 12'de 3 parça sağdan öteler. Bunlar varsayılan tanımlı 24p düzeninde oluşur ancak yanlardan aralık vermeler 12p düzeninde oluşur.
+	  </div>
+	  <div data-gnl="3-| 1g |-3">
+	    24'de 3 parça soldan öteler. 1 oranında genleşme olur. 24'de 3 parça sağdan öteler. Bunlar varsayılan tanımlı 24p düzeninde oluşur.
+	  </div>
+	  <div data-gnl="3-| 2g |-3">
+	    24'de 3 parça soldan öteler. 2 oranında genleşme olur. Yani 1g tanımlı alanın 2 katı kadar genleşme sayımlaması yapılır. 24'de 3 parça sağdan öteler. Bunlar varsayılan tanımlı 24p düzeninde oluşur.
+	  </div>
+	</div>
+	</div>
+	{% highlight html %}
+	<div data-gnl="3-| 3 |-3 12p">
+		12'de 3 parça soldan öteler. 12'de 3 parça genişliği olur. 12'de 3 parça sağdan öteler. Bunlar 12p düzeninde oluşur.
+	</div>
+	<div data-gnl="3-| 3 |-3">
+		24'de 3 parça soldan öteler. 24'de 3 parça genişliği olur. 24'de 3 parça sağdan öteler. Bunlar varsayılan tanımlı 24p düzeninde oluşur.
+	</div>
+	<div data-gnl="3-| 3 |-3 12p-| |-12p">
+		12'de 3 parça soldan öteler. 24'de 3 parça genişliği olur. 12'de 3 parça sağdan öteler. Bunlar varsayılan tanımlı 24p düzeninde oluşur ancak yanlardan aralık vermeler 12p düzeninde oluşur.
+	</div>
+	<div data-gnl="3-| 1g |-3">
+		24'de 3 parça soldan öteler. 1 oranında genleşme olur. 24'de 3 parça sağdan öteler. Bunlar varsayılan tanımlı 24p düzeninde oluşur.
+	</div>
+	<div data-gnl="3-| 2g |-3">
+		24'de 3 parça soldan öteler. 2 oranında genleşme olur. Yani 1g tanımlı alanın 2 katı kadar genleşme sayımlaması yapılır. 24'de 3 parça sağdan öteler. Bunlar varsayılan tanımlı 24p düzeninde oluşur.
+	</div>
+	{% endhighlight %}
 
 	<h3>araları-aralık & dengeli-aralık</h3>
 	<p>
