@@ -386,164 +386,212 @@ body[data-gnl~="fullscreen"] > footer {
   max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
 }
 
-[data-gnl~="left-1"], [data-gnl~="left-2"],
-[data-gnl~="left-3"], [data-gnl~="left-4"] {
+[data-gnl~="1-|"], [data-gnl~="2-|"],
+[data-gnl~="3-|"], [data-gnl~="4-|"] {
   --soldan-a: 1;
   --soldan-c: 0;
 }
 
-[data-gnl~="left-5"], [data-gnl~="left-6"],
-[data-gnl~="left-7"], [data-gnl~="left-8"] {
+[data-gnl~="5-|"], [data-gnl~="6-|"],
+[data-gnl~="7-|"], [data-gnl~="8-|"] {
   --soldan-a: 2;
   --soldan-c: 0;
 }
 
-[data-gnl~="left-9"], [data-gnl~="left-10"],
-[data-gnl~="left-11"], [data-gnl~="left-12"] {
+[data-gnl~="9-|"], [data-gnl~="10-|"],
+[data-gnl~="11-|"], [data-gnl~="12-|"] {
   --soldan-a: 3;
   --soldan-c: 0;
 }
 
-[data-gnl~="left-13"], [data-gnl~="left-14"],
-[data-gnl~="left-15"], [data-gnl~="left-16"] {
+[data-gnl~="13-|"], [data-gnl~="14-|"],
+[data-gnl~="15-|"], [data-gnl~="16-|"] {
   --soldan-a: 4;
   --soldan-c: 0;
 }
 
-[data-gnl~="left-17"], [data-gnl~="left-18"],
-[data-gnl~="left-19"], [data-gnl~="left-20"] {
+[data-gnl~="17-|"], [data-gnl~="18-|"],
+[data-gnl~="19-|"], [data-gnl~="20-|"] {
   --soldan-a: 5;
   --soldan-c: 0;
 }
 
-[data-gnl~="left-21"], [data-gnl~="left-22"],
-[data-gnl~="left-23"], [data-gnl~="left-24"] {
+[data-gnl~="21-|"], [data-gnl~="22-|"],
+[data-gnl~="23-|"], [data-gnl~="24-|"] {
   --soldan-a: 6;
   --soldan-c: 0;
 }
 
-[data-gnl~="left-1"], [data-gnl~="left-5"], [data-gnl~="left-9"], [data-gnl~="left-13"], [data-gnl~="left-17"], [data-gnl~="left-21"] {
+[data-gnl~="1-|"], [data-gnl~="5-|"], [data-gnl~="9-|"], [data-gnl~="13-|"], [data-gnl~="17-|"], [data-gnl~="21-|"] {
   --soldan-c: 3;
 }
 
-[data-gnl~="left-2"], [data-gnl~="left-6"], [data-gnl~="left-10"], [data-gnl~="left-14"], [data-gnl~="left-18"], [data-gnl~="left-22"] {
+[data-gnl~="2-|"], [data-gnl~="6-|"], [data-gnl~="10-|"], [data-gnl~="14-|"], [data-gnl~="18-|"], [data-gnl~="22-|"] {
   --soldan-c: 2;
 }
 
-[data-gnl~="left-3"], [data-gnl~="left-7"], [data-gnl~="left-11"], [data-gnl~="left-15"], [data-gnl~="left-19"], [data-gnl~="left-23"] {
+[data-gnl~="3-|"], [data-gnl~="7-|"], [data-gnl~="11-|"], [data-gnl~="15-|"], [data-gnl~="19-|"], [data-gnl~="23-|"] {
   --soldan-c: 1;
 }
 
-[data-gnl~="right-1"], [data-gnl~="right-2"],
-[data-gnl~="right-3"], [data-gnl~="right-4"] {
+[data-gnl~="|-1"], [data-gnl~="|-2"],
+[data-gnl~="|-3"], [data-gnl~="|-4"] {
   --sağdan-a: 1;
   --sağdan-c: 0;
 }
 
-[data-gnl~="right-5"], [data-gnl~="right-6"],
-[data-gnl~="right-7"], [data-gnl~="right-8"] {
+[data-gnl~="|-5"], [data-gnl~="|-6"],
+[data-gnl~="|-7"], [data-gnl~="|-8"] {
   --sağdan-a: 2;
   --sağdan-c: 0;
 }
 
-[data-gnl~="right-9"], [data-gnl~="right-10"],
-[data-gnl~="right-11"], [data-gnl~="right-12"] {
+[data-gnl~="|-9"], [data-gnl~="|-10"],
+[data-gnl~="|-11"], [data-gnl~="|-12"] {
   --sağdan-a: 3;
   --sağdan-c: 0;
 }
 
-[data-gnl~="right-13"], [data-gnl~="right-14"],
-[data-gnl~="right-15"], [data-gnl~="right-16"] {
+[data-gnl~="|-13"], [data-gnl~="|-14"],
+[data-gnl~="|-15"], [data-gnl~="|-16"] {
   --sağdan-a: 4;
   --sağdan-c: 0;
 }
 
-[data-gnl~="right-17"], [data-gnl~="right-18"],
-[data-gnl~="right-19"], [data-gnl~="right-20"] {
+[data-gnl~="|-17"], [data-gnl~="|-18"],
+[data-gnl~="|-19"], [data-gnl~="|-20"] {
   --sağdan-a: 5;
   --sağdan-c: 0;
 }
 
-[data-gnl~="right-21"], [data-gnl~="right-22"],
-[data-gnl~="right-23"], [data-gnl~="right-24"] {
+[data-gnl~="|-21"], [data-gnl~="|-22"],
+[data-gnl~="|-23"], [data-gnl~="|-24"] {
   --sağdan-a: 6;
   --sağdan-c: 0;
 }
 
-[data-gnl~="right-1"], [data-gnl~="right-5"], [data-gnl~="right-9"], [data-gnl~="right-13"], [data-gnl~="right-17"], [data-gnl~="right-21"] {
+[data-gnl~="|-1"], [data-gnl~="|-5"], [data-gnl~="|-9"], [data-gnl~="|-13"], [data-gnl~="|-17"], [data-gnl~="|-21"] {
   --sağdan-c: 3;
 }
 
-[data-gnl~="right-2"], [data-gnl~="right-6"], [data-gnl~="right-10"], [data-gnl~="right-14"], [data-gnl~="right-18"], [data-gnl~="right-22"] {
+[data-gnl~="|-2"], [data-gnl~="|-6"], [data-gnl~="|-10"], [data-gnl~="|-14"], [data-gnl~="|-18"], [data-gnl~="|-22"] {
   --sağdan-c: 2;
 }
 
-[data-gnl~="right-3"], [data-gnl~="right-7"], [data-gnl~="right-11"], [data-gnl~="right-15"], [data-gnl~="right-19"], [data-gnl~="right-23"] {
+[data-gnl~="|-3"], [data-gnl~="|-7"], [data-gnl~="|-11"], [data-gnl~="|-15"], [data-gnl~="|-19"], [data-gnl~="|-23"] {
   --sağdan-c: 1;
 }
 
-[data-gnl~="1p-spacing"], [data-gnl~="2p-spacing"],
-[data-gnl~="3p-spacing"], [data-gnl~="4p-spacing"] {
-  --aralık-b: 1;
-  --aralık-d: 0;
+[data-gnl*="|-"],
+[data-gnl*="-|"] {
+  --solara-b: var(--b);
+  --solara-d: var(--d);
+  --sağara-b: var(--b);
+  --sağara-d: var(--d);
 }
 
-[data-gnl~="5p-spacing"], [data-gnl~="6p-spacing"],
-[data-gnl~="7p-spacing"], [data-gnl~="8p-spacing"] {
-  --aralık-b: 2;
-  --aralık-d: 0;
+[data-gnl~="1p-|"], [data-gnl~="2p-|"],
+[data-gnl~="3p-|"], [data-gnl~="4p-|"] {
+  --solara-b: 1;
+  --solara-d: 0;
 }
 
-[data-gnl~="9p-spacing"], [data-gnl~="10p-spacing"],
-[data-gnl~="11p-spacing"], [data-gnl~="12p-spacing"] {
-  --aralık-b: 3;
-  --aralık-d: 0;
+[data-gnl~="5p-|"], [data-gnl~="6p-|"],
+[data-gnl~="7p-|"], [data-gnl~="8p-|"] {
+  --solara-b: 2;
+  --solara-d: 0;
 }
 
-[data-gnl~="13p-spacing"], [data-gnl~="14p-spacing"],
-[data-gnl~="15p-spacing"], [data-gnl~="16p-spacing"] {
-  --aralık-b: 4;
-  --aralık-d: 0;
+[data-gnl~="9p-|"], [data-gnl~="10p-|"],
+[data-gnl~="11p-|"], [data-gnl~="12p-|"] {
+  --solara-b: 3;
+  --solara-d: 0;
 }
 
-[data-gnl~="17p-spacing"], [data-gnl~="18p-spacing"],
-[data-gnl~="19p-spacing"], [data-gnl~="20p-spacing"] {
-  --aralık-b: 5;
-  --aralık-d: 0;
+[data-gnl~="13p-|"], [data-gnl~="14p-|"],
+[data-gnl~="15p-|"], [data-gnl~="16p-|"] {
+  --solara-b: 4;
+  --solara-d: 0;
 }
 
-[data-gnl~="21p-spacing"], [data-gnl~="22p-spacing"],
-[data-gnl~="23p-spacing"], [data-gnl~="24p-spacing"] {
-  --aralık-b: 6;
-  --aralık-d: 0;
+[data-gnl~="17p-|"], [data-gnl~="18p-|"],
+[data-gnl~="19p-|"], [data-gnl~="20p-|"] {
+  --solara-b: 5;
+  --solara-d: 0;
 }
 
-[data-gnl~="1p-spacing"], [data-gnl~="5p-spacing"], [data-gnl~="9p-spacing"], [data-gnl~="13p-spacing"], [data-gnl~="17p-spacing"], [data-gnl~="21p-spacing"] {
-  --aralık-d: 3;
+[data-gnl~="21p-|"], [data-gnl~="22p-|"],
+[data-gnl~="23p-|"], [data-gnl~="24p-|"] {
+  --solara-b: 6;
+  --solara-d: 0;
 }
 
-[data-gnl~="2p-spacing"], [data-gnl~="6p-spacing"], [data-gnl~="10p-spacing"], [data-gnl~="14p-spacing"], [data-gnl~="18p-spacing"], [data-gnl~="22p-spacing"] {
-  --aralık-d: 2;
+[data-gnl~="1p-|"], [data-gnl~="5p-|"], [data-gnl~="9p-|"], [data-gnl~="13p-|"], [data-gnl~="17p-|"], [data-gnl~="21p-|"] {
+  --solara-d: 3;
 }
 
-[data-gnl~="3p-spacing"], [data-gnl~="7p-spacing"], [data-gnl~="11p-spacing"], [data-gnl~="15p-spacing"], [data-gnl~="19p-spacing"], [data-gnl~="23p-spacing"] {
-  --aralık-d: 1;
+[data-gnl~="2p-|"], [data-gnl~="6p-|"], [data-gnl~="10p-|"], [data-gnl~="14p-|"], [data-gnl~="18p-|"], [data-gnl~="22p-|"] {
+  --solara-d: 2;
 }
 
-[data-gnl*="left-"]:not([data-gnl*="p-spacing"]) {
-  margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+[data-gnl~="3p-|"], [data-gnl~="7p-|"], [data-gnl~="11p-|"], [data-gnl~="15p-|"], [data-gnl~="19p-|"], [data-gnl~="23p-|"] {
+  --solara-d: 1;
 }
 
-[data-gnl*="left-"][data-gnl*="p-spacing"] {
-  margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+[data-gnl~="|-1p"], [data-gnl~="|-2p"],
+[data-gnl~="|-3p"], [data-gnl~="|-4p"] {
+  --sağara-b: 1;
+  --sağara-d: 0;
 }
 
-[data-gnl*="right-"]:not([data-gnl*="p-spacing"]) {
-  margin-right: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+[data-gnl~="|-5p"], [data-gnl~="|-6p"],
+[data-gnl~="|-7p"], [data-gnl~="|-8p"] {
+  --sağara-b: 2;
+  --sağara-d: 0;
 }
 
-[data-gnl*="right-"][data-gnl*="p-spacing"] {
-  margin-right: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+[data-gnl~="|-9p"], [data-gnl~="|-10p"],
+[data-gnl~="|-11p"], [data-gnl~="|-12p"] {
+  --sağara-b: 3;
+  --sağara-d: 0;
+}
+
+[data-gnl~="|-13p"], [data-gnl~="|-14p"],
+[data-gnl~="|-15p"], [data-gnl~="|-16p"] {
+  --sağara-b: 4;
+  --sağara-d: 0;
+}
+
+[data-gnl~="|-17p"], [data-gnl~="|-18p"],
+[data-gnl~="|-19p"], [data-gnl~="|-20p"] {
+  --sağara-b: 5;
+  --sağara-d: 0;
+}
+
+[data-gnl~="|-21p"], [data-gnl~="|-22p"],
+[data-gnl~="|-23p"], [data-gnl~="|-24p"] {
+  --sağara-b: 6;
+  --sağara-d: 0;
+}
+
+[data-gnl~="|-1p"], [data-gnl~="|-5p"], [data-gnl~="|-9p"], [data-gnl~="|-13p"], [data-gnl~="|-17p"], [data-gnl~="|-21p"] {
+  --sağara-d: 3;
+}
+
+[data-gnl~="|-2p"], [data-gnl~="|-6p"], [data-gnl~="|-10p"], [data-gnl~="|-14p"], [data-gnl~="|-18p"], [data-gnl~="|-22p"] {
+  --sağara-d: 2;
+}
+
+[data-gnl~="|-3p"], [data-gnl~="|-7p"], [data-gnl~="|-11p"], [data-gnl~="|-15p"], [data-gnl~="|-19p"], [data-gnl~="|-23p"] {
+  --sağara-d: 1;
+}
+
+[data-gnl*="-|"] {
+  margin-left: calc(100% / (var(--solara-b) * 4 - var(--solara-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+}
+
+[data-gnl*="|-"] {
+  margin-right: calc(100% / (var(--sağara-b) * 4 - var(--sağara-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
 }
 
 [data-gnl*="spacing-1"] {

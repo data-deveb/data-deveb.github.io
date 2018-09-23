@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                               //
-//   KAP ÖRGÜSÜ s1.0.7                                                                           //
+//   KAP ÖRGÜSÜ s1.0.8                                                                           //
 //                                                                                               //
 //   Bu örgü "parça düzeni", "genleşme düzeni", "sıralama düzeni", "aralık düzeni",              //
 //   "dizem düzeni", "konumlama" özellikleriyle oluşturulmuştur.                                 //
@@ -179,8 +179,8 @@ $p: 24; // parça düzeni ayarı
 
   $i: 1;  $j: 0;
   @while $i <= $p {
-    [data-#{$görüntülük}~="#{$soldan}-#{$i}"],[data-#{$görüntülük}~="#{$soldan}-#{$i+1}"],
-    [data-#{$görüntülük}~="#{$soldan}-#{$i+2}"],[data-#{$görüntülük}~="#{$soldan}-#{$i+3}"]
+    [data-#{$görüntülük}~="#{$i}-|"],[data-#{$görüntülük}~="#{$i+1}-|"],
+    [data-#{$görüntülük}~="#{$i+2}-|"],[data-#{$görüntülük}~="#{$i+3}-|"]
     {--soldan-a: #{$j+1}; --soldan-c: 0}
 
     $i: $i + 4;    $j: $j + 1;
@@ -192,13 +192,13 @@ $p: 24; // parça düzeni ayarı
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$görüntülük}~="#{$soldan}-#{$i}"], {
+      [data-#{$görüntülük}~="#{$i}-|"], {
           @extend %#{$görüntülük}-soldan-c-3;
       }
-      [data-#{$görüntülük}~="#{$soldan}-#{$i+1}"], {
+      [data-#{$görüntülük}~="#{$i+1}-|"], {
           @extend %#{$görüntülük}-soldan-c-2;
       }
-      [data-#{$görüntülük}~="#{$soldan}-#{$i+2}"], {
+      [data-#{$görüntülük}~="#{$i+2}-|"], {
           @extend %#{$görüntülük}-soldan-c-1;
       }
       $i: $i + 4;
@@ -208,8 +208,8 @@ $p: 24; // parça düzeni ayarı
 
   $i: 1;  $j: 0;
   @while $i <= $p {
-    [data-#{$görüntülük}~="#{$sağdan}-#{$i}"],[data-#{$görüntülük}~="#{$sağdan}-#{$i+1}"],
-    [data-#{$görüntülük}~="#{$sağdan}-#{$i+2}"],[data-#{$görüntülük}~="#{$sağdan}-#{$i+3}"]
+    [data-#{$görüntülük}~="|-#{$i}"],[data-#{$görüntülük}~="|-#{$i+1}"],
+    [data-#{$görüntülük}~="|-#{$i+2}"],[data-#{$görüntülük}~="|-#{$i+3}"]
     {--sağdan-a: #{$j+1}; --sağdan-c: 0}
 
     $i: $i + 4;    $j: $j + 1;
@@ -221,13 +221,13 @@ $p: 24; // parça düzeni ayarı
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$görüntülük}~="#{$sağdan}-#{$i}"], {
+      [data-#{$görüntülük}~="|-#{$i}"], {
           @extend %#{$görüntülük}-sağdan-c-3;
       }
-      [data-#{$görüntülük}~="#{$sağdan}-#{$i+1}"], {
+      [data-#{$görüntülük}~="|-#{$i+1}"], {
           @extend %#{$görüntülük}-sağdan-c-2;
       }
-      [data-#{$görüntülük}~="#{$sağdan}-#{$i+2}"], {
+      [data-#{$görüntülük}~="|-#{$i+2}"], {
           @extend %#{$görüntülük}-sağdan-c-1;
       }
       $i: $i + 4;
@@ -235,46 +235,75 @@ $p: 24; // parça düzeni ayarı
 
 // Parçalık-Aralık
 
+  [data-#{$görüntülük}*="|-"],
+  [data-#{$görüntülük}*="-|"]{
+    --solara-b: var(--b);
+    --solara-d: var(--d);
+    --sağara-b: var(--b);
+    --sağara-d: var(--d);
+  }
+
   $i: 1;  $j: 0;
   @while $i <= $p {
-    [data-#{$görüntülük}~="#{$i}p-#{$aralık}"],[data-#{$görüntülük}~="#{$i+1}p-#{$aralık}"],
-    [data-#{$görüntülük}~="#{$i+2}p-#{$aralık}"],[data-#{$görüntülük}~="#{$i+3}p-#{$aralık}"]
-    {--aralık-b: #{$j+1}; --aralık-d: 0}
+    [data-#{$görüntülük}~="#{$i}p-|"],[data-#{$görüntülük}~="#{$i+1}p-|"],
+    [data-#{$görüntülük}~="#{$i+2}p-|"],[data-#{$görüntülük}~="#{$i+3}p-|"]
+    {--solara-b: #{$j+1}; --solara-d: 0}
 
     $i: $i + 4;    $j: $j + 1;
   }
 
-  %#{$görüntülük}-aralık-d-3 {--aralık-d: 3}
-  %#{$görüntülük}-aralık-d-2 {--aralık-d: 2}
-  %#{$görüntülük}-aralık-d-1 {--aralık-d: 1}
+  %#{$görüntülük}-solara-d-3 {--solara-d: 3}
+  %#{$görüntülük}-solara-d-2 {--solara-d: 2}
+  %#{$görüntülük}-solara-d-1 {--solara-d: 1}
 
   $i: 1;
   @while $i <= $p {
-      [data-#{$görüntülük}~="#{$i}p-#{$aralık}"], {
-          @extend %#{$görüntülük}-aralık-d-3;
+      [data-#{$görüntülük}~="#{$i}p-|"], {
+          @extend %#{$görüntülük}-solara-d-3;
       }
-      [data-#{$görüntülük}~="#{$i+1}p-#{$aralık}"], {
-          @extend %#{$görüntülük}-aralık-d-2;
+      [data-#{$görüntülük}~="#{$i+1}p-|"], {
+          @extend %#{$görüntülük}-solara-d-2;
       }
-      [data-#{$görüntülük}~="#{$i+2}p-#{$aralık}"], {
-          @extend %#{$görüntülük}-aralık-d-1;
+      [data-#{$görüntülük}~="#{$i+2}p-|"], {
+          @extend %#{$görüntülük}-solara-d-1;
+      }
+      $i: $i + 4;
+  }
+
+  $i: 1;  $j: 0;
+  @while $i <= $p {
+    [data-#{$görüntülük}~="|-#{$i}p"],[data-#{$görüntülük}~="|-#{$i+1}p"],
+    [data-#{$görüntülük}~="|-#{$i+2}p"],[data-#{$görüntülük}~="|-#{$i+3}p"]
+    {--sağara-b: #{$j+1}; --sağara-d: 0}
+
+    $i: $i + 4;    $j: $j + 1;
+  }
+
+  %#{$görüntülük}-sağara-d-3 {--sağara-d: 3}
+  %#{$görüntülük}-sağara-d-2 {--sağara-d: 2}
+  %#{$görüntülük}-sağara-d-1 {--sağara-d: 1}
+
+  $i: 1;
+  @while $i <= $p {
+      [data-#{$görüntülük}~="|-#{$i}p"], {
+          @extend %#{$görüntülük}-sağara-d-3;
+      }
+      [data-#{$görüntülük}~="|-#{$i+1}p"], {
+          @extend %#{$görüntülük}-sağara-d-2;
+      }
+      [data-#{$görüntülük}~="|-#{$i+2}p"], {
+          @extend %#{$görüntülük}-sağara-d-1;
       }
       $i: $i + 4;
   }
 
 // Parça Düzeni Aralık Sayış
 
-  [data-#{$görüntülük}*="#{$soldan}-"]:not([data-#{$görüntülük}*="p-#{$aralık}"]){
-    margin-left: calc(100% / (var(--b) * 4 - var(--d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
+  [data-#{$görüntülük}*="-|"]{
+    margin-left: calc(100% / (var(--solara-b) * 4 - var(--solara-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
   }
-  [data-#{$görüntülük}*="#{$soldan}-"][data-#{$görüntülük}*="p-#{$aralık}"]{
-    margin-left: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--soldan-a) * 4 - var(--soldan-c)));
-  }
-  [data-#{$görüntülük}*="#{$sağdan}-"]:not([data-#{$görüntülük}*="p-#{$aralık}"]){
-    margin-right: calc(100% / (var(--b) * 4 - var(--d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
-  }
-  [data-#{$görüntülük}*="#{$sağdan}-"][data-#{$görüntülük}*="p-#{$aralık}"]{
-    margin-right: calc(100% / (var(--aralık-b) * 4 - var(--aralık-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
+  [data-#{$görüntülük}*="|-"]{
+    margin-right: calc(100% / (var(--sağara-b) * 4 - var(--sağara-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
   }
 
   [data-#{$görüntülük}*="#{$aralık}-1"]{margin: 10px}
