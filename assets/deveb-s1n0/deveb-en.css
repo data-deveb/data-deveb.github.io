@@ -817,6 +817,10 @@ body[data-gnl~="fullscreen"] > footer {
   padding-bottom: 20px;
 }
 
+[data-gnl~="oluk-çevre"] > [data-gnl] {
+  padding: var(--oluk);
+}
+
 [data-gnl~="0"][data-gnl~="0"] {
   flex-basis: auto;
   max-width: none;

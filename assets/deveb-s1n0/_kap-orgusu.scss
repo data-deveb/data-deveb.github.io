@@ -391,9 +391,9 @@ $p: 24; // parça düzeni ayarı
 //    max-width:  calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
 //  }
 
-//  [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
-//    padding: var(--oluk);
-//  }
+  [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
+    padding: var(--oluk);
+  }
 
 //  [data-#{$gnl}~="#{$oluk}"] > [data-#{$gnl}]{
 //    padding-left: var(--oluk);
