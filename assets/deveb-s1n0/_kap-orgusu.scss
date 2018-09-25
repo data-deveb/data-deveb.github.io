@@ -32,6 +32,20 @@ $p: 24; // parça düzeni ayarı
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))); // Parça düzeni sayıştırma ayarları.
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))); // Parça düzeni sayıştırma ayarları.
   }
+
+  [data-#{$gnl}~="%"],
+  [data-#{$ufk}~="%"],
+  [data-#{$kçk}~="%"],
+  [data-#{$ort}~="%"],
+  [data-#{$byk}~="%"],
+  [data-#{$kcm}~="%"],
+  [data-#{$dev}~="%"]{
+    width:auto;
+    max-width:100%;
+    flex: calc(var(--a) * 4 - var(--c)); // Esnek düzen sayıştırma ayarları
+  }
+
+
 }
 
 // PARÇA DÜZENİ ///////////////////////////////////////////////////////////////////////////////////
@@ -135,11 +149,11 @@ $p: 24; // parça düzeni ayarı
 
 @mixin genleşme-düzeni($görüntülük) {
 
-  @for $i from 1 through $p {
-    [data-#{$görüntülük}~="#{$i}g"]{
-      flex: #{$i};
-    }
-  }
+//  @for $i from 1 through $p {
+//    [data-#{$görüntülük}~="#{$i}g"]{
+//      flex: #{$i};
+//    }
+//  }
 
   [data-#{$görüntülük}~="0"][data-#{$görüntülük}~="0"]{
     flex-basis: auto;
