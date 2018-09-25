@@ -13,7 +13,8 @@ $p: 24; // parça düzeni ayarı
 
 @mixin ayarlar(){
 
-  :root {
+  :root,
+  [data-#{$gnl}]{
     --a: 3; // parça düzeni varsayılan ölçeği
     --b: 3; // parça düzeni varsayılan ölçeği
     --c: 0; // parça düzeni varsayılan ölçeği
