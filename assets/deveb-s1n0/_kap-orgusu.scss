@@ -396,34 +396,15 @@ $p: 24; // parça düzeni ayarı
 //
 
 @mixin dizem-düzeni($görüntülük){
-
-  [data-#{$görüntülük}~="1r"] > div, [data-#{$görüntülük}~="1r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 1); max-width: calc(100% / 1);    }
-  [data-#{$görüntülük}~="2r"] > div, [data-#{$görüntülük}~="2r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 2); max-width: calc(100% / 2);    }
-  [data-#{$görüntülük}~="3r"] > div, [data-#{$görüntülük}~="3r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 3); max-width: calc(100% / 3);    }
-  [data-#{$görüntülük}~="4r"] > div, [data-#{$görüntülük}~="4r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 4); max-width: calc(100% / 4);    }
-  [data-#{$görüntülük}~="5r"] > div, [data-#{$görüntülük}~="5r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 5); max-width: calc(100% / 5);    }
-  [data-#{$görüntülük}~="6r"] > div, [data-#{$görüntülük}~="6r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 6); max-width: calc(100% / 6);    }
-  [data-#{$görüntülük}~="7r"] > div, [data-#{$görüntülük}~="7r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 7); max-width: calc(100% / 7);    }
-  [data-#{$görüntülük}~="8r"] > div, [data-#{$görüntülük}~="8r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 8); max-width: calc(100% / 8);    }
-  [data-#{$görüntülük}~="9r"] > div, [data-#{$görüntülük}~="9r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 9); max-width: calc(100% / 9);    }
-  [data-#{$görüntülük}~="10r"] > div, [data-#{$görüntülük}~="10r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 10); max-width: calc(100% / 10);    }
-  [data-#{$görüntülük}~="11r"] > div, [data-#{$görüntülük}~="11r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 11); max-width: calc(100% / 11);    }
-  [data-#{$görüntülük}~="12r"] > div, [data-#{$görüntülük}~="12r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 12); max-width: calc(100% / 12);    }
-  [data-#{$görüntülük}~="13r"] > div, [data-#{$görüntülük}~="13r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 13); max-width: calc(100% / 13);    }
-  [data-#{$görüntülük}~="14r"] > div, [data-#{$görüntülük}~="14r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 14); max-width: calc(100% / 14);    }
-  [data-#{$görüntülük}~="15r"] > div, [data-#{$görüntülük}~="15r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 15); max-width: calc(100% / 15);    }
-  [data-#{$görüntülük}~="16r"] > div, [data-#{$görüntülük}~="16r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 16); max-width: calc(100% / 16);    }
-  [data-#{$görüntülük}~="17r"] > div, [data-#{$görüntülük}~="17r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 17); max-width: calc(100% / 17);    }
-  [data-#{$görüntülük}~="18r"] > div, [data-#{$görüntülük}~="18r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 18); max-width: calc(100% / 18);    }
-  [data-#{$görüntülük}~="19r"] > div, [data-#{$görüntülük}~="19r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 19); max-width: calc(100% / 19);    }
-  [data-#{$görüntülük}~="20r"] > div, [data-#{$görüntülük}~="20r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 20); max-width: calc(100% / 20);    }
-  [data-#{$görüntülük}~="21r"] > div, [data-#{$görüntülük}~="21r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 21); max-width: calc(100% / 21);    }
-  [data-#{$görüntülük}~="22r"] > div, [data-#{$görüntülük}~="22r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 22); max-width: calc(100% / 22);    }
-  [data-#{$görüntülük}~="23r"] > div, [data-#{$görüntülük}~="23r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 23); max-width: calc(100% / 23);    }
-  [data-#{$görüntülük}~="24r"] > div, [data-#{$görüntülük}~="24r"] > [data-gnl]:not([data-gnl*="p"]){   width: calc(100% / 24); max-width: calc(100% / 24);    }
-
+  $i: 1;
+  @while $i <= $p {
+      $genişlik: 100% / $i;
+      [data-#{$görüntülük}~="#{$i}r"] > div {
+          width: #{$genişlik}; max-width: #{$genişlik};
+      }      
+      $i: $i + 1;
+  }
 }
-
 
 
 // TAM EKRAN & SIĞ ////////////////////////////////////////////////////////////////////////////////
