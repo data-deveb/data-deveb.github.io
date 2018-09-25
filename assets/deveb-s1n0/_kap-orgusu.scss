@@ -29,6 +29,8 @@ $p: 24; // parça düzeni ayarı
   [data-#{$dev}] {
     display: flex;
     flex-wrap: wrap;
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))); // Parça düzeni sayıştırma ayarları.
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))); // Parça düzeni sayıştırma ayarları.
   }
 }
 
