@@ -369,25 +369,25 @@ $p: 24; // parça düzeni ayarı
   [data-#{$görüntülük}~="#{$dengeli-aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
   [data-#{$görüntülük}~="#{$dengeli-aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
 
-  [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
-    margin: var(--aralık);
-    flex-basis: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-    max-width:  calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-  }
+//  [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
+//    margin: var(--aralık);
+//    flex-basis: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
+//    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
+//    max-width:  calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
+//  }
 
-  [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
-    padding: var(--oluk);
-  }
+//  [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
+//    padding: var(--oluk);
+//  }
 
-  [data-#{$gnl}~="#{$oluk}"] > [data-#{$gnl}]{
-    padding-left: var(--oluk);
-    padding-right: var(--oluk);
-  }
+//  [data-#{$gnl}~="#{$oluk}"] > [data-#{$gnl}]{
+//    padding-left: var(--oluk);
+//    padding-right: var(--oluk);
+//  }
 
-  [data-#{$gnl}~="#{$oluk-yok}"] > [data-#{$gnl}]{
-    padding: 0
-  }
+//  [data-#{$gnl}~="#{$oluk-yok}"] > [data-#{$gnl}]{
+//    padding: 0
+//  }
 
 }
 
