@@ -13,6 +13,7 @@ $p: 24; // parça düzeni ayarı
 
 @mixin ayarlar(){
 
+  :root {
     --a: 6; // parça düzeni varsayılan ölçeği
     --b: 6; // parça düzeni varsayılan ölçeği
     --c: 0; // parça düzeni varsayılan ölçeği
@@ -118,7 +119,6 @@ $p: 24; // parça düzeni ayarı
       }
       $i: $i + 4;
   }
-
 
 }
 
