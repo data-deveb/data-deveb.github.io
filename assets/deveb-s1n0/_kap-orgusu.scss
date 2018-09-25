@@ -120,11 +120,6 @@ $p: 24; // parça düzeni ayarı
   }
 
 
-  [data-#{$görüntülük}][data-#{$görüntülük}]{
-    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-  }
-
 }
 
 
