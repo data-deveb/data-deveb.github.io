@@ -135,31 +135,6 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
   --d: 0;
 }
 
-[data-gnl],
-[data-xs],
-[data-sm],
-[data-md],
-[data-lg],
-[data-xl],
-[data-hg] {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-  max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-}
-
-[data-gnl~="%"],
-[data-xs~="%"],
-[data-sm~="%"],
-[data-md~="%"],
-[data-lg~="%"],
-[data-xl~="%"],
-[data-hg~="%"] {
-  width: auto;
-  max-width: 100%;
-  flex: calc(var(--a) * 4 - var(--c));
-}
-
 [data-gnl~="fit"] {
   flex: 1 1 0 !important;
   overflow: auto;
@@ -348,51 +323,51 @@ body[data-gnl~="fullscreen"] > footer {
   --c: 1;
 }
 
-[data-gnl~="1p"], [data-gnl~="2p"],
-[data-gnl~="3p"], [data-gnl~="4p"] {
+[data-gnl~="/1"], [data-gnl~="/2"],
+[data-gnl~="/3"], [data-gnl~="/4"] {
   --b: 1;
   --d: 0;
 }
 
-[data-gnl~="5p"], [data-gnl~="6p"],
-[data-gnl~="7p"], [data-gnl~="8p"] {
+[data-gnl~="/5"], [data-gnl~="/6"],
+[data-gnl~="/7"], [data-gnl~="/8"] {
   --b: 2;
   --d: 0;
 }
 
-[data-gnl~="9p"], [data-gnl~="10p"],
-[data-gnl~="11p"], [data-gnl~="12p"] {
+[data-gnl~="/9"], [data-gnl~="/10"],
+[data-gnl~="/11"], [data-gnl~="/12"] {
   --b: 3;
   --d: 0;
 }
 
-[data-gnl~="13p"], [data-gnl~="14p"],
-[data-gnl~="15p"], [data-gnl~="16p"] {
+[data-gnl~="/13"], [data-gnl~="/14"],
+[data-gnl~="/15"], [data-gnl~="/16"] {
   --b: 4;
   --d: 0;
 }
 
-[data-gnl~="17p"], [data-gnl~="18p"],
-[data-gnl~="19p"], [data-gnl~="20p"] {
+[data-gnl~="/17"], [data-gnl~="/18"],
+[data-gnl~="/19"], [data-gnl~="/20"] {
   --b: 5;
   --d: 0;
 }
 
-[data-gnl~="21p"], [data-gnl~="22p"],
-[data-gnl~="23p"], [data-gnl~="24p"] {
+[data-gnl~="/21"], [data-gnl~="/22"],
+[data-gnl~="/23"], [data-gnl~="/24"] {
   --b: 6;
   --d: 0;
 }
 
-[data-gnl~="1p"], [data-gnl~="5p"], [data-gnl~="9p"], [data-gnl~="13p"], [data-gnl~="17p"], [data-gnl~="21p"] {
+[data-gnl~="/1"], [data-gnl~="/5"], [data-gnl~="/9"], [data-gnl~="/13"], [data-gnl~="/17"], [data-gnl~="/21"] {
   --d: 3;
 }
 
-[data-gnl~="2p"], [data-gnl~="6p"], [data-gnl~="10p"], [data-gnl~="14p"], [data-gnl~="18p"], [data-gnl~="22p"] {
+[data-gnl~="/2"], [data-gnl~="/6"], [data-gnl~="/10"], [data-gnl~="/14"], [data-gnl~="/18"], [data-gnl~="/22"] {
   --d: 2;
 }
 
-[data-gnl~="3p"], [data-gnl~="7p"], [data-gnl~="11p"], [data-gnl~="15p"], [data-gnl~="19p"], [data-gnl~="23p"] {
+[data-gnl~="/3"], [data-gnl~="/7"], [data-gnl~="/11"], [data-gnl~="/15"], [data-gnl~="/19"], [data-gnl~="/23"] {
   --d: 1;
 }
 
@@ -500,99 +475,99 @@ body[data-gnl~="fullscreen"] > footer {
   --sağara-d: var(--d);
 }
 
-[data-gnl~="1p-|"], [data-gnl~="2p-|"],
-[data-gnl~="3p-|"], [data-gnl~="4p-|"] {
+[data-gnl~="/1-|"], [data-gnl~="/2-|"],
+[data-gnl~="/3-|"], [data-gnl~="/4-|"] {
   --solara-b: 1;
   --solara-d: 0;
 }
 
-[data-gnl~="5p-|"], [data-gnl~="6p-|"],
-[data-gnl~="7p-|"], [data-gnl~="8p-|"] {
+[data-gnl~="/5-|"], [data-gnl~="/6-|"],
+[data-gnl~="/7-|"], [data-gnl~="/8-|"] {
   --solara-b: 2;
   --solara-d: 0;
 }
 
-[data-gnl~="9p-|"], [data-gnl~="10p-|"],
-[data-gnl~="11p-|"], [data-gnl~="12p-|"] {
+[data-gnl~="/9-|"], [data-gnl~="/10-|"],
+[data-gnl~="/11-|"], [data-gnl~="/12-|"] {
   --solara-b: 3;
   --solara-d: 0;
 }
 
-[data-gnl~="13p-|"], [data-gnl~="14p-|"],
-[data-gnl~="15p-|"], [data-gnl~="16p-|"] {
+[data-gnl~="/13-|"], [data-gnl~="/14-|"],
+[data-gnl~="/15-|"], [data-gnl~="/16-|"] {
   --solara-b: 4;
   --solara-d: 0;
 }
 
-[data-gnl~="17p-|"], [data-gnl~="18p-|"],
-[data-gnl~="19p-|"], [data-gnl~="20p-|"] {
+[data-gnl~="/17-|"], [data-gnl~="/18-|"],
+[data-gnl~="/19-|"], [data-gnl~="/20-|"] {
   --solara-b: 5;
   --solara-d: 0;
 }
 
-[data-gnl~="21p-|"], [data-gnl~="22p-|"],
-[data-gnl~="23p-|"], [data-gnl~="24p-|"] {
+[data-gnl~="/21-|"], [data-gnl~="/22-|"],
+[data-gnl~="/23-|"], [data-gnl~="/24-|"] {
   --solara-b: 6;
   --solara-d: 0;
 }
 
-[data-gnl~="1p-|"], [data-gnl~="5p-|"], [data-gnl~="9p-|"], [data-gnl~="13p-|"], [data-gnl~="17p-|"], [data-gnl~="21p-|"] {
+[data-gnl~="/1-|"], [data-gnl~="/5-|"], [data-gnl~="/9-|"], [data-gnl~="/13-|"], [data-gnl~="/17-|"], [data-gnl~="/21-|"] {
   --solara-d: 3;
 }
 
-[data-gnl~="2p-|"], [data-gnl~="6p-|"], [data-gnl~="10p-|"], [data-gnl~="14p-|"], [data-gnl~="18p-|"], [data-gnl~="22p-|"] {
+[data-gnl~="/2-|"], [data-gnl~="/6-|"], [data-gnl~="/10-|"], [data-gnl~="/14-|"], [data-gnl~="/18-|"], [data-gnl~="/22-|"] {
   --solara-d: 2;
 }
 
-[data-gnl~="3p-|"], [data-gnl~="7p-|"], [data-gnl~="11p-|"], [data-gnl~="15p-|"], [data-gnl~="19p-|"], [data-gnl~="23p-|"] {
+[data-gnl~="/3-|"], [data-gnl~="/7-|"], [data-gnl~="/11-|"], [data-gnl~="/15-|"], [data-gnl~="/19-|"], [data-gnl~="/23-|"] {
   --solara-d: 1;
 }
 
-[data-gnl~="|-1p"], [data-gnl~="|-2p"],
-[data-gnl~="|-3p"], [data-gnl~="|-4p"] {
+[data-gnl~="|-/1"], [data-gnl~="|-/2"],
+[data-gnl~="|-/3"], [data-gnl~="|-/4"] {
   --sağara-b: 1;
   --sağara-d: 0;
 }
 
-[data-gnl~="|-5p"], [data-gnl~="|-6p"],
-[data-gnl~="|-7p"], [data-gnl~="|-8p"] {
+[data-gnl~="|-/5"], [data-gnl~="|-/6"],
+[data-gnl~="|-/7"], [data-gnl~="|-/8"] {
   --sağara-b: 2;
   --sağara-d: 0;
 }
 
-[data-gnl~="|-9p"], [data-gnl~="|-10p"],
-[data-gnl~="|-11p"], [data-gnl~="|-12p"] {
+[data-gnl~="|-/9"], [data-gnl~="|-/10"],
+[data-gnl~="|-/11"], [data-gnl~="|-/12"] {
   --sağara-b: 3;
   --sağara-d: 0;
 }
 
-[data-gnl~="|-13p"], [data-gnl~="|-14p"],
-[data-gnl~="|-15p"], [data-gnl~="|-16p"] {
+[data-gnl~="|-/13"], [data-gnl~="|-/14"],
+[data-gnl~="|-/15"], [data-gnl~="|-/16"] {
   --sağara-b: 4;
   --sağara-d: 0;
 }
 
-[data-gnl~="|-17p"], [data-gnl~="|-18p"],
-[data-gnl~="|-19p"], [data-gnl~="|-20p"] {
+[data-gnl~="|-/17"], [data-gnl~="|-/18"],
+[data-gnl~="|-/19"], [data-gnl~="|-/20"] {
   --sağara-b: 5;
   --sağara-d: 0;
 }
 
-[data-gnl~="|-21p"], [data-gnl~="|-22p"],
-[data-gnl~="|-23p"], [data-gnl~="|-24p"] {
+[data-gnl~="|-/21"], [data-gnl~="|-/22"],
+[data-gnl~="|-/23"], [data-gnl~="|-/24"] {
   --sağara-b: 6;
   --sağara-d: 0;
 }
 
-[data-gnl~="|-1p"], [data-gnl~="|-5p"], [data-gnl~="|-9p"], [data-gnl~="|-13p"], [data-gnl~="|-17p"], [data-gnl~="|-21p"] {
+[data-gnl~="|-/1"], [data-gnl~="|-/5"], [data-gnl~="|-/9"], [data-gnl~="|-/13"], [data-gnl~="|-/17"], [data-gnl~="|-/21"] {
   --sağara-d: 3;
 }
 
-[data-gnl~="|-2p"], [data-gnl~="|-6p"], [data-gnl~="|-10p"], [data-gnl~="|-14p"], [data-gnl~="|-18p"], [data-gnl~="|-22p"] {
+[data-gnl~="|-/2"], [data-gnl~="|-/6"], [data-gnl~="|-/10"], [data-gnl~="|-/14"], [data-gnl~="|-/18"], [data-gnl~="|-/22"] {
   --sağara-d: 2;
 }
 
-[data-gnl~="|-3p"], [data-gnl~="|-7p"], [data-gnl~="|-11p"], [data-gnl~="|-15p"], [data-gnl~="|-19p"], [data-gnl~="|-23p"] {
+[data-gnl~="|-/3"], [data-gnl~="|-/7"], [data-gnl~="|-/11"], [data-gnl~="|-/15"], [data-gnl~="|-/19"], [data-gnl~="|-/23"] {
   --sağara-d: 1;
 }
 
@@ -823,8 +798,8 @@ body[data-gnl~="fullscreen"] > footer {
 
 [data-gnl~="0"][data-gnl~="0"] {
   flex-basis: auto;
-  max-width: none;
-  width: auto;
+  max-width: none !important;
+  width: auto !important;
 }
 
 [data-gnl~="1th"] {
@@ -1394,58 +1369,58 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     --c: 1;
   }
 
-  [data-xs~="1p"], [data-xs~="2p"],
-  [data-xs~="3p"], [data-xs~="4p"] {
+  [data-xs~="/1"], [data-xs~="/2"],
+  [data-xs~="/3"], [data-xs~="/4"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-xs~="5p"], [data-xs~="6p"],
-  [data-xs~="7p"], [data-xs~="8p"] {
+  [data-xs~="/5"], [data-xs~="/6"],
+  [data-xs~="/7"], [data-xs~="/8"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-xs~="9p"], [data-xs~="10p"],
-  [data-xs~="11p"], [data-xs~="12p"] {
+  [data-xs~="/9"], [data-xs~="/10"],
+  [data-xs~="/11"], [data-xs~="/12"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-xs~="13p"], [data-xs~="14p"],
-  [data-xs~="15p"], [data-xs~="16p"] {
+  [data-xs~="/13"], [data-xs~="/14"],
+  [data-xs~="/15"], [data-xs~="/16"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-xs~="17p"], [data-xs~="18p"],
-  [data-xs~="19p"], [data-xs~="20p"] {
+  [data-xs~="/17"], [data-xs~="/18"],
+  [data-xs~="/19"], [data-xs~="/20"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-xs~="21p"], [data-xs~="22p"],
-  [data-xs~="23p"], [data-xs~="24p"] {
+  [data-xs~="/21"], [data-xs~="/22"],
+  [data-xs~="/23"], [data-xs~="/24"] {
     --b: 6;
     --d: 0;
   }
 
-  [data-xs~="1p"], [data-xs~="5p"], [data-xs~="9p"], [data-xs~="13p"], [data-xs~="17p"], [data-xs~="21p"] {
+  [data-xs~="/1"], [data-xs~="/5"], [data-xs~="/9"], [data-xs~="/13"], [data-xs~="/17"], [data-xs~="/21"] {
     --d: 3;
   }
 
-  [data-xs~="2p"], [data-xs~="6p"], [data-xs~="10p"], [data-xs~="14p"], [data-xs~="18p"], [data-xs~="22p"] {
+  [data-xs~="/2"], [data-xs~="/6"], [data-xs~="/10"], [data-xs~="/14"], [data-xs~="/18"], [data-xs~="/22"] {
     --d: 2;
   }
 
-  [data-xs~="3p"], [data-xs~="7p"], [data-xs~="11p"], [data-xs~="15p"], [data-xs~="19p"], [data-xs~="23p"] {
+  [data-xs~="/3"], [data-xs~="/7"], [data-xs~="/11"], [data-xs~="/15"], [data-xs~="/19"], [data-xs~="/23"] {
     --d: 1;
   }
 
   [data-xs~="0"][data-xs~="0"] {
     flex-basis: auto;
-    max-width: none;
-    width: auto;
+    max-width: none !important;
+    width: auto !important;
   }
 
   [data-xs~="1th"] {
@@ -2007,58 +1982,58 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     --c: 1;
   }
 
-  [data-sm~="1p"], [data-sm~="2p"],
-  [data-sm~="3p"], [data-sm~="4p"] {
+  [data-sm~="/1"], [data-sm~="/2"],
+  [data-sm~="/3"], [data-sm~="/4"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-sm~="5p"], [data-sm~="6p"],
-  [data-sm~="7p"], [data-sm~="8p"] {
+  [data-sm~="/5"], [data-sm~="/6"],
+  [data-sm~="/7"], [data-sm~="/8"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-sm~="9p"], [data-sm~="10p"],
-  [data-sm~="11p"], [data-sm~="12p"] {
+  [data-sm~="/9"], [data-sm~="/10"],
+  [data-sm~="/11"], [data-sm~="/12"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-sm~="13p"], [data-sm~="14p"],
-  [data-sm~="15p"], [data-sm~="16p"] {
+  [data-sm~="/13"], [data-sm~="/14"],
+  [data-sm~="/15"], [data-sm~="/16"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-sm~="17p"], [data-sm~="18p"],
-  [data-sm~="19p"], [data-sm~="20p"] {
+  [data-sm~="/17"], [data-sm~="/18"],
+  [data-sm~="/19"], [data-sm~="/20"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-sm~="21p"], [data-sm~="22p"],
-  [data-sm~="23p"], [data-sm~="24p"] {
+  [data-sm~="/21"], [data-sm~="/22"],
+  [data-sm~="/23"], [data-sm~="/24"] {
     --b: 6;
     --d: 0;
   }
 
-  [data-sm~="1p"], [data-sm~="5p"], [data-sm~="9p"], [data-sm~="13p"], [data-sm~="17p"], [data-sm~="21p"] {
+  [data-sm~="/1"], [data-sm~="/5"], [data-sm~="/9"], [data-sm~="/13"], [data-sm~="/17"], [data-sm~="/21"] {
     --d: 3;
   }
 
-  [data-sm~="2p"], [data-sm~="6p"], [data-sm~="10p"], [data-sm~="14p"], [data-sm~="18p"], [data-sm~="22p"] {
+  [data-sm~="/2"], [data-sm~="/6"], [data-sm~="/10"], [data-sm~="/14"], [data-sm~="/18"], [data-sm~="/22"] {
     --d: 2;
   }
 
-  [data-sm~="3p"], [data-sm~="7p"], [data-sm~="11p"], [data-sm~="15p"], [data-sm~="19p"], [data-sm~="23p"] {
+  [data-sm~="/3"], [data-sm~="/7"], [data-sm~="/11"], [data-sm~="/15"], [data-sm~="/19"], [data-sm~="/23"] {
     --d: 1;
   }
 
   [data-sm~="0"][data-sm~="0"] {
     flex-basis: auto;
-    max-width: none;
-    width: auto;
+    max-width: none !important;
+    width: auto !important;
   }
 
   [data-sm~="1th"] {
@@ -2620,58 +2595,58 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     --c: 1;
   }
 
-  [data-md~="1p"], [data-md~="2p"],
-  [data-md~="3p"], [data-md~="4p"] {
+  [data-md~="/1"], [data-md~="/2"],
+  [data-md~="/3"], [data-md~="/4"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-md~="5p"], [data-md~="6p"],
-  [data-md~="7p"], [data-md~="8p"] {
+  [data-md~="/5"], [data-md~="/6"],
+  [data-md~="/7"], [data-md~="/8"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-md~="9p"], [data-md~="10p"],
-  [data-md~="11p"], [data-md~="12p"] {
+  [data-md~="/9"], [data-md~="/10"],
+  [data-md~="/11"], [data-md~="/12"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-md~="13p"], [data-md~="14p"],
-  [data-md~="15p"], [data-md~="16p"] {
+  [data-md~="/13"], [data-md~="/14"],
+  [data-md~="/15"], [data-md~="/16"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-md~="17p"], [data-md~="18p"],
-  [data-md~="19p"], [data-md~="20p"] {
+  [data-md~="/17"], [data-md~="/18"],
+  [data-md~="/19"], [data-md~="/20"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-md~="21p"], [data-md~="22p"],
-  [data-md~="23p"], [data-md~="24p"] {
+  [data-md~="/21"], [data-md~="/22"],
+  [data-md~="/23"], [data-md~="/24"] {
     --b: 6;
     --d: 0;
   }
 
-  [data-md~="1p"], [data-md~="5p"], [data-md~="9p"], [data-md~="13p"], [data-md~="17p"], [data-md~="21p"] {
+  [data-md~="/1"], [data-md~="/5"], [data-md~="/9"], [data-md~="/13"], [data-md~="/17"], [data-md~="/21"] {
     --d: 3;
   }
 
-  [data-md~="2p"], [data-md~="6p"], [data-md~="10p"], [data-md~="14p"], [data-md~="18p"], [data-md~="22p"] {
+  [data-md~="/2"], [data-md~="/6"], [data-md~="/10"], [data-md~="/14"], [data-md~="/18"], [data-md~="/22"] {
     --d: 2;
   }
 
-  [data-md~="3p"], [data-md~="7p"], [data-md~="11p"], [data-md~="15p"], [data-md~="19p"], [data-md~="23p"] {
+  [data-md~="/3"], [data-md~="/7"], [data-md~="/11"], [data-md~="/15"], [data-md~="/19"], [data-md~="/23"] {
     --d: 1;
   }
 
   [data-md~="0"][data-md~="0"] {
     flex-basis: auto;
-    max-width: none;
-    width: auto;
+    max-width: none !important;
+    width: auto !important;
   }
 
   [data-md~="1th"] {
@@ -3233,58 +3208,58 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     --c: 1;
   }
 
-  [data-lg~="1p"], [data-lg~="2p"],
-  [data-lg~="3p"], [data-lg~="4p"] {
+  [data-lg~="/1"], [data-lg~="/2"],
+  [data-lg~="/3"], [data-lg~="/4"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-lg~="5p"], [data-lg~="6p"],
-  [data-lg~="7p"], [data-lg~="8p"] {
+  [data-lg~="/5"], [data-lg~="/6"],
+  [data-lg~="/7"], [data-lg~="/8"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-lg~="9p"], [data-lg~="10p"],
-  [data-lg~="11p"], [data-lg~="12p"] {
+  [data-lg~="/9"], [data-lg~="/10"],
+  [data-lg~="/11"], [data-lg~="/12"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-lg~="13p"], [data-lg~="14p"],
-  [data-lg~="15p"], [data-lg~="16p"] {
+  [data-lg~="/13"], [data-lg~="/14"],
+  [data-lg~="/15"], [data-lg~="/16"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-lg~="17p"], [data-lg~="18p"],
-  [data-lg~="19p"], [data-lg~="20p"] {
+  [data-lg~="/17"], [data-lg~="/18"],
+  [data-lg~="/19"], [data-lg~="/20"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-lg~="21p"], [data-lg~="22p"],
-  [data-lg~="23p"], [data-lg~="24p"] {
+  [data-lg~="/21"], [data-lg~="/22"],
+  [data-lg~="/23"], [data-lg~="/24"] {
     --b: 6;
     --d: 0;
   }
 
-  [data-lg~="1p"], [data-lg~="5p"], [data-lg~="9p"], [data-lg~="13p"], [data-lg~="17p"], [data-lg~="21p"] {
+  [data-lg~="/1"], [data-lg~="/5"], [data-lg~="/9"], [data-lg~="/13"], [data-lg~="/17"], [data-lg~="/21"] {
     --d: 3;
   }
 
-  [data-lg~="2p"], [data-lg~="6p"], [data-lg~="10p"], [data-lg~="14p"], [data-lg~="18p"], [data-lg~="22p"] {
+  [data-lg~="/2"], [data-lg~="/6"], [data-lg~="/10"], [data-lg~="/14"], [data-lg~="/18"], [data-lg~="/22"] {
     --d: 2;
   }
 
-  [data-lg~="3p"], [data-lg~="7p"], [data-lg~="11p"], [data-lg~="15p"], [data-lg~="19p"], [data-lg~="23p"] {
+  [data-lg~="/3"], [data-lg~="/7"], [data-lg~="/11"], [data-lg~="/15"], [data-lg~="/19"], [data-lg~="/23"] {
     --d: 1;
   }
 
   [data-lg~="0"][data-lg~="0"] {
     flex-basis: auto;
-    max-width: none;
-    width: auto;
+    max-width: none !important;
+    width: auto !important;
   }
 
   [data-lg~="1th"] {
@@ -3846,58 +3821,58 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     --c: 1;
   }
 
-  [data-xl~="1p"], [data-xl~="2p"],
-  [data-xl~="3p"], [data-xl~="4p"] {
+  [data-xl~="/1"], [data-xl~="/2"],
+  [data-xl~="/3"], [data-xl~="/4"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-xl~="5p"], [data-xl~="6p"],
-  [data-xl~="7p"], [data-xl~="8p"] {
+  [data-xl~="/5"], [data-xl~="/6"],
+  [data-xl~="/7"], [data-xl~="/8"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-xl~="9p"], [data-xl~="10p"],
-  [data-xl~="11p"], [data-xl~="12p"] {
+  [data-xl~="/9"], [data-xl~="/10"],
+  [data-xl~="/11"], [data-xl~="/12"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-xl~="13p"], [data-xl~="14p"],
-  [data-xl~="15p"], [data-xl~="16p"] {
+  [data-xl~="/13"], [data-xl~="/14"],
+  [data-xl~="/15"], [data-xl~="/16"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-xl~="17p"], [data-xl~="18p"],
-  [data-xl~="19p"], [data-xl~="20p"] {
+  [data-xl~="/17"], [data-xl~="/18"],
+  [data-xl~="/19"], [data-xl~="/20"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-xl~="21p"], [data-xl~="22p"],
-  [data-xl~="23p"], [data-xl~="24p"] {
+  [data-xl~="/21"], [data-xl~="/22"],
+  [data-xl~="/23"], [data-xl~="/24"] {
     --b: 6;
     --d: 0;
   }
 
-  [data-xl~="1p"], [data-xl~="5p"], [data-xl~="9p"], [data-xl~="13p"], [data-xl~="17p"], [data-xl~="21p"] {
+  [data-xl~="/1"], [data-xl~="/5"], [data-xl~="/9"], [data-xl~="/13"], [data-xl~="/17"], [data-xl~="/21"] {
     --d: 3;
   }
 
-  [data-xl~="2p"], [data-xl~="6p"], [data-xl~="10p"], [data-xl~="14p"], [data-xl~="18p"], [data-xl~="22p"] {
+  [data-xl~="/2"], [data-xl~="/6"], [data-xl~="/10"], [data-xl~="/14"], [data-xl~="/18"], [data-xl~="/22"] {
     --d: 2;
   }
 
-  [data-xl~="3p"], [data-xl~="7p"], [data-xl~="11p"], [data-xl~="15p"], [data-xl~="19p"], [data-xl~="23p"] {
+  [data-xl~="/3"], [data-xl~="/7"], [data-xl~="/11"], [data-xl~="/15"], [data-xl~="/19"], [data-xl~="/23"] {
     --d: 1;
   }
 
   [data-xl~="0"][data-xl~="0"] {
     flex-basis: auto;
-    max-width: none;
-    width: auto;
+    max-width: none !important;
+    width: auto !important;
   }
 
   [data-xl~="1th"] {
@@ -4459,58 +4434,58 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     --c: 1;
   }
 
-  [data-hg~="1p"], [data-hg~="2p"],
-  [data-hg~="3p"], [data-hg~="4p"] {
+  [data-hg~="/1"], [data-hg~="/2"],
+  [data-hg~="/3"], [data-hg~="/4"] {
     --b: 1;
     --d: 0;
   }
 
-  [data-hg~="5p"], [data-hg~="6p"],
-  [data-hg~="7p"], [data-hg~="8p"] {
+  [data-hg~="/5"], [data-hg~="/6"],
+  [data-hg~="/7"], [data-hg~="/8"] {
     --b: 2;
     --d: 0;
   }
 
-  [data-hg~="9p"], [data-hg~="10p"],
-  [data-hg~="11p"], [data-hg~="12p"] {
+  [data-hg~="/9"], [data-hg~="/10"],
+  [data-hg~="/11"], [data-hg~="/12"] {
     --b: 3;
     --d: 0;
   }
 
-  [data-hg~="13p"], [data-hg~="14p"],
-  [data-hg~="15p"], [data-hg~="16p"] {
+  [data-hg~="/13"], [data-hg~="/14"],
+  [data-hg~="/15"], [data-hg~="/16"] {
     --b: 4;
     --d: 0;
   }
 
-  [data-hg~="17p"], [data-hg~="18p"],
-  [data-hg~="19p"], [data-hg~="20p"] {
+  [data-hg~="/17"], [data-hg~="/18"],
+  [data-hg~="/19"], [data-hg~="/20"] {
     --b: 5;
     --d: 0;
   }
 
-  [data-hg~="21p"], [data-hg~="22p"],
-  [data-hg~="23p"], [data-hg~="24p"] {
+  [data-hg~="/21"], [data-hg~="/22"],
+  [data-hg~="/23"], [data-hg~="/24"] {
     --b: 6;
     --d: 0;
   }
 
-  [data-hg~="1p"], [data-hg~="5p"], [data-hg~="9p"], [data-hg~="13p"], [data-hg~="17p"], [data-hg~="21p"] {
+  [data-hg~="/1"], [data-hg~="/5"], [data-hg~="/9"], [data-hg~="/13"], [data-hg~="/17"], [data-hg~="/21"] {
     --d: 3;
   }
 
-  [data-hg~="2p"], [data-hg~="6p"], [data-hg~="10p"], [data-hg~="14p"], [data-hg~="18p"], [data-hg~="22p"] {
+  [data-hg~="/2"], [data-hg~="/6"], [data-hg~="/10"], [data-hg~="/14"], [data-hg~="/18"], [data-hg~="/22"] {
     --d: 2;
   }
 
-  [data-hg~="3p"], [data-hg~="7p"], [data-hg~="11p"], [data-hg~="15p"], [data-hg~="19p"], [data-hg~="23p"] {
+  [data-hg~="/3"], [data-hg~="/7"], [data-hg~="/11"], [data-hg~="/15"], [data-hg~="/19"], [data-hg~="/23"] {
     --d: 1;
   }
 
   [data-hg~="0"][data-hg~="0"] {
     flex-basis: auto;
-    max-width: none;
-    width: auto;
+    max-width: none !important;
+    width: auto !important;
   }
 
   [data-hg~="1th"] {
@@ -5131,6 +5106,31 @@ kcm | Ekran ölçeği: 1200px ≤ * < 1900px
     display: none !important;
   }
 }
+[data-gnl][data-gnl],
+[data-xs][data-xs],
+[data-sm][data-sm],
+[data-md][data-md],
+[data-lg][data-lg],
+[data-xl][data-xl],
+[data-hg][data-hg] {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+}
+
+[data-gnl~="/"],
+[data-xs~="/"],
+[data-sm~="/"],
+[data-md~="/"],
+[data-lg~="/"],
+[data-xl~="/"],
+[data-hg~="/"] {
+  width: auto !important;
+  max-width: 100% !important;
+  flex: calc(var(--a) * 4 - var(--c));
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
