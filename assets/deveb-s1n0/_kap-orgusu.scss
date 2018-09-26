@@ -417,7 +417,7 @@ $p: 24; // parça düzeni ayarı
   $i: 1;
   @while $i <= $p {
       $genişlik: 100% / $i;
-      [data-#{$görüntülük}~="#{$i}r"] > div {
+      [data-#{$görüntülük}~="#{$i}-#{$i}"] > div {
           width: #{$genişlik}; max-width: #{$genişlik};
       }      
       $i: $i + 1;

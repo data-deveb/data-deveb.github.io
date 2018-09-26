@@ -155,122 +155,122 @@ body[data-gnl~="fullscreen"] > footer {
   margin-top: auto;
 }
 
-[data-gnl~="1r"] > div {
+[data-gnl~="1-1"] > div {
   width: 100%;
   max-width: 100%;
 }
 
-[data-gnl~="2r"] > div {
+[data-gnl~="2-2"] > div {
   width: 50%;
   max-width: 50%;
 }
 
-[data-gnl~="3r"] > div {
+[data-gnl~="3-3"] > div {
   width: 33.3333333333%;
   max-width: 33.3333333333%;
 }
 
-[data-gnl~="4r"] > div {
+[data-gnl~="4-4"] > div {
   width: 25%;
   max-width: 25%;
 }
 
-[data-gnl~="5r"] > div {
+[data-gnl~="5-5"] > div {
   width: 20%;
   max-width: 20%;
 }
 
-[data-gnl~="6r"] > div {
+[data-gnl~="6-6"] > div {
   width: 16.6666666667%;
   max-width: 16.6666666667%;
 }
 
-[data-gnl~="7r"] > div {
+[data-gnl~="7-7"] > div {
   width: 14.2857142857%;
   max-width: 14.2857142857%;
 }
 
-[data-gnl~="8r"] > div {
+[data-gnl~="8-8"] > div {
   width: 12.5%;
   max-width: 12.5%;
 }
 
-[data-gnl~="9r"] > div {
+[data-gnl~="9-9"] > div {
   width: 11.1111111111%;
   max-width: 11.1111111111%;
 }
 
-[data-gnl~="10r"] > div {
+[data-gnl~="10-10"] > div {
   width: 10%;
   max-width: 10%;
 }
 
-[data-gnl~="11r"] > div {
+[data-gnl~="11-11"] > div {
   width: 9.0909090909%;
   max-width: 9.0909090909%;
 }
 
-[data-gnl~="12r"] > div {
+[data-gnl~="12-12"] > div {
   width: 8.3333333333%;
   max-width: 8.3333333333%;
 }
 
-[data-gnl~="13r"] > div {
+[data-gnl~="13-13"] > div {
   width: 7.6923076923%;
   max-width: 7.6923076923%;
 }
 
-[data-gnl~="14r"] > div {
+[data-gnl~="14-14"] > div {
   width: 7.1428571429%;
   max-width: 7.1428571429%;
 }
 
-[data-gnl~="15r"] > div {
+[data-gnl~="15-15"] > div {
   width: 6.6666666667%;
   max-width: 6.6666666667%;
 }
 
-[data-gnl~="16r"] > div {
+[data-gnl~="16-16"] > div {
   width: 6.25%;
   max-width: 6.25%;
 }
 
-[data-gnl~="17r"] > div {
+[data-gnl~="17-17"] > div {
   width: 5.8823529412%;
   max-width: 5.8823529412%;
 }
 
-[data-gnl~="18r"] > div {
+[data-gnl~="18-18"] > div {
   width: 5.5555555556%;
   max-width: 5.5555555556%;
 }
 
-[data-gnl~="19r"] > div {
+[data-gnl~="19-19"] > div {
   width: 5.2631578947%;
   max-width: 5.2631578947%;
 }
 
-[data-gnl~="20r"] > div {
+[data-gnl~="20-20"] > div {
   width: 5%;
   max-width: 5%;
 }
 
-[data-gnl~="21r"] > div {
+[data-gnl~="21-21"] > div {
   width: 4.7619047619%;
   max-width: 4.7619047619%;
 }
 
-[data-gnl~="22r"] > div {
+[data-gnl~="22-22"] > div {
   width: 4.5454545455%;
   max-width: 4.5454545455%;
 }
 
-[data-gnl~="23r"] > div {
+[data-gnl~="23-23"] > div {
   width: 4.347826087%;
   max-width: 4.347826087%;
 }
 
-[data-gnl~="24r"] > div {
+[data-gnl~="24-24"] > div {
   width: 4.1666666667%;
   max-width: 4.1666666667%;
 }
@@ -1201,122 +1201,122 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     margin-top: auto;
   }
 
-  [data-xs~="1r"] > div {
+  [data-xs~="1-1"] > div {
     width: 100%;
     max-width: 100%;
   }
 
-  [data-xs~="2r"] > div {
+  [data-xs~="2-2"] > div {
     width: 50%;
     max-width: 50%;
   }
 
-  [data-xs~="3r"] > div {
+  [data-xs~="3-3"] > div {
     width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  [data-xs~="4r"] > div {
+  [data-xs~="4-4"] > div {
     width: 25%;
     max-width: 25%;
   }
 
-  [data-xs~="5r"] > div {
+  [data-xs~="5-5"] > div {
     width: 20%;
     max-width: 20%;
   }
 
-  [data-xs~="6r"] > div {
+  [data-xs~="6-6"] > div {
     width: 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  [data-xs~="7r"] > div {
+  [data-xs~="7-7"] > div {
     width: 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  [data-xs~="8r"] > div {
+  [data-xs~="8-8"] > div {
     width: 12.5%;
     max-width: 12.5%;
   }
 
-  [data-xs~="9r"] > div {
+  [data-xs~="9-9"] > div {
     width: 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  [data-xs~="10r"] > div {
+  [data-xs~="10-10"] > div {
     width: 10%;
     max-width: 10%;
   }
 
-  [data-xs~="11r"] > div {
+  [data-xs~="11-11"] > div {
     width: 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  [data-xs~="12r"] > div {
+  [data-xs~="12-12"] > div {
     width: 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  [data-xs~="13r"] > div {
+  [data-xs~="13-13"] > div {
     width: 7.6923076923%;
     max-width: 7.6923076923%;
   }
 
-  [data-xs~="14r"] > div {
+  [data-xs~="14-14"] > div {
     width: 7.1428571429%;
     max-width: 7.1428571429%;
   }
 
-  [data-xs~="15r"] > div {
+  [data-xs~="15-15"] > div {
     width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
 
-  [data-xs~="16r"] > div {
+  [data-xs~="16-16"] > div {
     width: 6.25%;
     max-width: 6.25%;
   }
 
-  [data-xs~="17r"] > div {
+  [data-xs~="17-17"] > div {
     width: 5.8823529412%;
     max-width: 5.8823529412%;
   }
 
-  [data-xs~="18r"] > div {
+  [data-xs~="18-18"] > div {
     width: 5.5555555556%;
     max-width: 5.5555555556%;
   }
 
-  [data-xs~="19r"] > div {
+  [data-xs~="19-19"] > div {
     width: 5.2631578947%;
     max-width: 5.2631578947%;
   }
 
-  [data-xs~="20r"] > div {
+  [data-xs~="20-20"] > div {
     width: 5%;
     max-width: 5%;
   }
 
-  [data-xs~="21r"] > div {
+  [data-xs~="21-21"] > div {
     width: 4.7619047619%;
     max-width: 4.7619047619%;
   }
 
-  [data-xs~="22r"] > div {
+  [data-xs~="22-22"] > div {
     width: 4.5454545455%;
     max-width: 4.5454545455%;
   }
 
-  [data-xs~="23r"] > div {
+  [data-xs~="23-23"] > div {
     width: 4.347826087%;
     max-width: 4.347826087%;
   }
 
-  [data-xs~="24r"] > div {
+  [data-xs~="24-24"] > div {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
   }
@@ -1814,122 +1814,122 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     margin-top: auto;
   }
 
-  [data-sm~="1r"] > div {
+  [data-sm~="1-1"] > div {
     width: 100%;
     max-width: 100%;
   }
 
-  [data-sm~="2r"] > div {
+  [data-sm~="2-2"] > div {
     width: 50%;
     max-width: 50%;
   }
 
-  [data-sm~="3r"] > div {
+  [data-sm~="3-3"] > div {
     width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  [data-sm~="4r"] > div {
+  [data-sm~="4-4"] > div {
     width: 25%;
     max-width: 25%;
   }
 
-  [data-sm~="5r"] > div {
+  [data-sm~="5-5"] > div {
     width: 20%;
     max-width: 20%;
   }
 
-  [data-sm~="6r"] > div {
+  [data-sm~="6-6"] > div {
     width: 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  [data-sm~="7r"] > div {
+  [data-sm~="7-7"] > div {
     width: 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  [data-sm~="8r"] > div {
+  [data-sm~="8-8"] > div {
     width: 12.5%;
     max-width: 12.5%;
   }
 
-  [data-sm~="9r"] > div {
+  [data-sm~="9-9"] > div {
     width: 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  [data-sm~="10r"] > div {
+  [data-sm~="10-10"] > div {
     width: 10%;
     max-width: 10%;
   }
 
-  [data-sm~="11r"] > div {
+  [data-sm~="11-11"] > div {
     width: 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  [data-sm~="12r"] > div {
+  [data-sm~="12-12"] > div {
     width: 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  [data-sm~="13r"] > div {
+  [data-sm~="13-13"] > div {
     width: 7.6923076923%;
     max-width: 7.6923076923%;
   }
 
-  [data-sm~="14r"] > div {
+  [data-sm~="14-14"] > div {
     width: 7.1428571429%;
     max-width: 7.1428571429%;
   }
 
-  [data-sm~="15r"] > div {
+  [data-sm~="15-15"] > div {
     width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
 
-  [data-sm~="16r"] > div {
+  [data-sm~="16-16"] > div {
     width: 6.25%;
     max-width: 6.25%;
   }
 
-  [data-sm~="17r"] > div {
+  [data-sm~="17-17"] > div {
     width: 5.8823529412%;
     max-width: 5.8823529412%;
   }
 
-  [data-sm~="18r"] > div {
+  [data-sm~="18-18"] > div {
     width: 5.5555555556%;
     max-width: 5.5555555556%;
   }
 
-  [data-sm~="19r"] > div {
+  [data-sm~="19-19"] > div {
     width: 5.2631578947%;
     max-width: 5.2631578947%;
   }
 
-  [data-sm~="20r"] > div {
+  [data-sm~="20-20"] > div {
     width: 5%;
     max-width: 5%;
   }
 
-  [data-sm~="21r"] > div {
+  [data-sm~="21-21"] > div {
     width: 4.7619047619%;
     max-width: 4.7619047619%;
   }
 
-  [data-sm~="22r"] > div {
+  [data-sm~="22-22"] > div {
     width: 4.5454545455%;
     max-width: 4.5454545455%;
   }
 
-  [data-sm~="23r"] > div {
+  [data-sm~="23-23"] > div {
     width: 4.347826087%;
     max-width: 4.347826087%;
   }
 
-  [data-sm~="24r"] > div {
+  [data-sm~="24-24"] > div {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
   }
@@ -2427,122 +2427,122 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     margin-top: auto;
   }
 
-  [data-md~="1r"] > div {
+  [data-md~="1-1"] > div {
     width: 100%;
     max-width: 100%;
   }
 
-  [data-md~="2r"] > div {
+  [data-md~="2-2"] > div {
     width: 50%;
     max-width: 50%;
   }
 
-  [data-md~="3r"] > div {
+  [data-md~="3-3"] > div {
     width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  [data-md~="4r"] > div {
+  [data-md~="4-4"] > div {
     width: 25%;
     max-width: 25%;
   }
 
-  [data-md~="5r"] > div {
+  [data-md~="5-5"] > div {
     width: 20%;
     max-width: 20%;
   }
 
-  [data-md~="6r"] > div {
+  [data-md~="6-6"] > div {
     width: 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  [data-md~="7r"] > div {
+  [data-md~="7-7"] > div {
     width: 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  [data-md~="8r"] > div {
+  [data-md~="8-8"] > div {
     width: 12.5%;
     max-width: 12.5%;
   }
 
-  [data-md~="9r"] > div {
+  [data-md~="9-9"] > div {
     width: 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  [data-md~="10r"] > div {
+  [data-md~="10-10"] > div {
     width: 10%;
     max-width: 10%;
   }
 
-  [data-md~="11r"] > div {
+  [data-md~="11-11"] > div {
     width: 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  [data-md~="12r"] > div {
+  [data-md~="12-12"] > div {
     width: 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  [data-md~="13r"] > div {
+  [data-md~="13-13"] > div {
     width: 7.6923076923%;
     max-width: 7.6923076923%;
   }
 
-  [data-md~="14r"] > div {
+  [data-md~="14-14"] > div {
     width: 7.1428571429%;
     max-width: 7.1428571429%;
   }
 
-  [data-md~="15r"] > div {
+  [data-md~="15-15"] > div {
     width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
 
-  [data-md~="16r"] > div {
+  [data-md~="16-16"] > div {
     width: 6.25%;
     max-width: 6.25%;
   }
 
-  [data-md~="17r"] > div {
+  [data-md~="17-17"] > div {
     width: 5.8823529412%;
     max-width: 5.8823529412%;
   }
 
-  [data-md~="18r"] > div {
+  [data-md~="18-18"] > div {
     width: 5.5555555556%;
     max-width: 5.5555555556%;
   }
 
-  [data-md~="19r"] > div {
+  [data-md~="19-19"] > div {
     width: 5.2631578947%;
     max-width: 5.2631578947%;
   }
 
-  [data-md~="20r"] > div {
+  [data-md~="20-20"] > div {
     width: 5%;
     max-width: 5%;
   }
 
-  [data-md~="21r"] > div {
+  [data-md~="21-21"] > div {
     width: 4.7619047619%;
     max-width: 4.7619047619%;
   }
 
-  [data-md~="22r"] > div {
+  [data-md~="22-22"] > div {
     width: 4.5454545455%;
     max-width: 4.5454545455%;
   }
 
-  [data-md~="23r"] > div {
+  [data-md~="23-23"] > div {
     width: 4.347826087%;
     max-width: 4.347826087%;
   }
 
-  [data-md~="24r"] > div {
+  [data-md~="24-24"] > div {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
   }
@@ -3040,122 +3040,122 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     margin-top: auto;
   }
 
-  [data-lg~="1r"] > div {
+  [data-lg~="1-1"] > div {
     width: 100%;
     max-width: 100%;
   }
 
-  [data-lg~="2r"] > div {
+  [data-lg~="2-2"] > div {
     width: 50%;
     max-width: 50%;
   }
 
-  [data-lg~="3r"] > div {
+  [data-lg~="3-3"] > div {
     width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  [data-lg~="4r"] > div {
+  [data-lg~="4-4"] > div {
     width: 25%;
     max-width: 25%;
   }
 
-  [data-lg~="5r"] > div {
+  [data-lg~="5-5"] > div {
     width: 20%;
     max-width: 20%;
   }
 
-  [data-lg~="6r"] > div {
+  [data-lg~="6-6"] > div {
     width: 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  [data-lg~="7r"] > div {
+  [data-lg~="7-7"] > div {
     width: 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  [data-lg~="8r"] > div {
+  [data-lg~="8-8"] > div {
     width: 12.5%;
     max-width: 12.5%;
   }
 
-  [data-lg~="9r"] > div {
+  [data-lg~="9-9"] > div {
     width: 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  [data-lg~="10r"] > div {
+  [data-lg~="10-10"] > div {
     width: 10%;
     max-width: 10%;
   }
 
-  [data-lg~="11r"] > div {
+  [data-lg~="11-11"] > div {
     width: 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  [data-lg~="12r"] > div {
+  [data-lg~="12-12"] > div {
     width: 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  [data-lg~="13r"] > div {
+  [data-lg~="13-13"] > div {
     width: 7.6923076923%;
     max-width: 7.6923076923%;
   }
 
-  [data-lg~="14r"] > div {
+  [data-lg~="14-14"] > div {
     width: 7.1428571429%;
     max-width: 7.1428571429%;
   }
 
-  [data-lg~="15r"] > div {
+  [data-lg~="15-15"] > div {
     width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
 
-  [data-lg~="16r"] > div {
+  [data-lg~="16-16"] > div {
     width: 6.25%;
     max-width: 6.25%;
   }
 
-  [data-lg~="17r"] > div {
+  [data-lg~="17-17"] > div {
     width: 5.8823529412%;
     max-width: 5.8823529412%;
   }
 
-  [data-lg~="18r"] > div {
+  [data-lg~="18-18"] > div {
     width: 5.5555555556%;
     max-width: 5.5555555556%;
   }
 
-  [data-lg~="19r"] > div {
+  [data-lg~="19-19"] > div {
     width: 5.2631578947%;
     max-width: 5.2631578947%;
   }
 
-  [data-lg~="20r"] > div {
+  [data-lg~="20-20"] > div {
     width: 5%;
     max-width: 5%;
   }
 
-  [data-lg~="21r"] > div {
+  [data-lg~="21-21"] > div {
     width: 4.7619047619%;
     max-width: 4.7619047619%;
   }
 
-  [data-lg~="22r"] > div {
+  [data-lg~="22-22"] > div {
     width: 4.5454545455%;
     max-width: 4.5454545455%;
   }
 
-  [data-lg~="23r"] > div {
+  [data-lg~="23-23"] > div {
     width: 4.347826087%;
     max-width: 4.347826087%;
   }
 
-  [data-lg~="24r"] > div {
+  [data-lg~="24-24"] > div {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
   }
@@ -3653,122 +3653,122 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     margin-top: auto;
   }
 
-  [data-xl~="1r"] > div {
+  [data-xl~="1-1"] > div {
     width: 100%;
     max-width: 100%;
   }
 
-  [data-xl~="2r"] > div {
+  [data-xl~="2-2"] > div {
     width: 50%;
     max-width: 50%;
   }
 
-  [data-xl~="3r"] > div {
+  [data-xl~="3-3"] > div {
     width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  [data-xl~="4r"] > div {
+  [data-xl~="4-4"] > div {
     width: 25%;
     max-width: 25%;
   }
 
-  [data-xl~="5r"] > div {
+  [data-xl~="5-5"] > div {
     width: 20%;
     max-width: 20%;
   }
 
-  [data-xl~="6r"] > div {
+  [data-xl~="6-6"] > div {
     width: 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  [data-xl~="7r"] > div {
+  [data-xl~="7-7"] > div {
     width: 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  [data-xl~="8r"] > div {
+  [data-xl~="8-8"] > div {
     width: 12.5%;
     max-width: 12.5%;
   }
 
-  [data-xl~="9r"] > div {
+  [data-xl~="9-9"] > div {
     width: 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  [data-xl~="10r"] > div {
+  [data-xl~="10-10"] > div {
     width: 10%;
     max-width: 10%;
   }
 
-  [data-xl~="11r"] > div {
+  [data-xl~="11-11"] > div {
     width: 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  [data-xl~="12r"] > div {
+  [data-xl~="12-12"] > div {
     width: 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  [data-xl~="13r"] > div {
+  [data-xl~="13-13"] > div {
     width: 7.6923076923%;
     max-width: 7.6923076923%;
   }
 
-  [data-xl~="14r"] > div {
+  [data-xl~="14-14"] > div {
     width: 7.1428571429%;
     max-width: 7.1428571429%;
   }
 
-  [data-xl~="15r"] > div {
+  [data-xl~="15-15"] > div {
     width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
 
-  [data-xl~="16r"] > div {
+  [data-xl~="16-16"] > div {
     width: 6.25%;
     max-width: 6.25%;
   }
 
-  [data-xl~="17r"] > div {
+  [data-xl~="17-17"] > div {
     width: 5.8823529412%;
     max-width: 5.8823529412%;
   }
 
-  [data-xl~="18r"] > div {
+  [data-xl~="18-18"] > div {
     width: 5.5555555556%;
     max-width: 5.5555555556%;
   }
 
-  [data-xl~="19r"] > div {
+  [data-xl~="19-19"] > div {
     width: 5.2631578947%;
     max-width: 5.2631578947%;
   }
 
-  [data-xl~="20r"] > div {
+  [data-xl~="20-20"] > div {
     width: 5%;
     max-width: 5%;
   }
 
-  [data-xl~="21r"] > div {
+  [data-xl~="21-21"] > div {
     width: 4.7619047619%;
     max-width: 4.7619047619%;
   }
 
-  [data-xl~="22r"] > div {
+  [data-xl~="22-22"] > div {
     width: 4.5454545455%;
     max-width: 4.5454545455%;
   }
 
-  [data-xl~="23r"] > div {
+  [data-xl~="23-23"] > div {
     width: 4.347826087%;
     max-width: 4.347826087%;
   }
 
-  [data-xl~="24r"] > div {
+  [data-xl~="24-24"] > div {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
   }
@@ -4266,122 +4266,122 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     margin-top: auto;
   }
 
-  [data-hg~="1r"] > div {
+  [data-hg~="1-1"] > div {
     width: 100%;
     max-width: 100%;
   }
 
-  [data-hg~="2r"] > div {
+  [data-hg~="2-2"] > div {
     width: 50%;
     max-width: 50%;
   }
 
-  [data-hg~="3r"] > div {
+  [data-hg~="3-3"] > div {
     width: 33.3333333333%;
     max-width: 33.3333333333%;
   }
 
-  [data-hg~="4r"] > div {
+  [data-hg~="4-4"] > div {
     width: 25%;
     max-width: 25%;
   }
 
-  [data-hg~="5r"] > div {
+  [data-hg~="5-5"] > div {
     width: 20%;
     max-width: 20%;
   }
 
-  [data-hg~="6r"] > div {
+  [data-hg~="6-6"] > div {
     width: 16.6666666667%;
     max-width: 16.6666666667%;
   }
 
-  [data-hg~="7r"] > div {
+  [data-hg~="7-7"] > div {
     width: 14.2857142857%;
     max-width: 14.2857142857%;
   }
 
-  [data-hg~="8r"] > div {
+  [data-hg~="8-8"] > div {
     width: 12.5%;
     max-width: 12.5%;
   }
 
-  [data-hg~="9r"] > div {
+  [data-hg~="9-9"] > div {
     width: 11.1111111111%;
     max-width: 11.1111111111%;
   }
 
-  [data-hg~="10r"] > div {
+  [data-hg~="10-10"] > div {
     width: 10%;
     max-width: 10%;
   }
 
-  [data-hg~="11r"] > div {
+  [data-hg~="11-11"] > div {
     width: 9.0909090909%;
     max-width: 9.0909090909%;
   }
 
-  [data-hg~="12r"] > div {
+  [data-hg~="12-12"] > div {
     width: 8.3333333333%;
     max-width: 8.3333333333%;
   }
 
-  [data-hg~="13r"] > div {
+  [data-hg~="13-13"] > div {
     width: 7.6923076923%;
     max-width: 7.6923076923%;
   }
 
-  [data-hg~="14r"] > div {
+  [data-hg~="14-14"] > div {
     width: 7.1428571429%;
     max-width: 7.1428571429%;
   }
 
-  [data-hg~="15r"] > div {
+  [data-hg~="15-15"] > div {
     width: 6.6666666667%;
     max-width: 6.6666666667%;
   }
 
-  [data-hg~="16r"] > div {
+  [data-hg~="16-16"] > div {
     width: 6.25%;
     max-width: 6.25%;
   }
 
-  [data-hg~="17r"] > div {
+  [data-hg~="17-17"] > div {
     width: 5.8823529412%;
     max-width: 5.8823529412%;
   }
 
-  [data-hg~="18r"] > div {
+  [data-hg~="18-18"] > div {
     width: 5.5555555556%;
     max-width: 5.5555555556%;
   }
 
-  [data-hg~="19r"] > div {
+  [data-hg~="19-19"] > div {
     width: 5.2631578947%;
     max-width: 5.2631578947%;
   }
 
-  [data-hg~="20r"] > div {
+  [data-hg~="20-20"] > div {
     width: 5%;
     max-width: 5%;
   }
 
-  [data-hg~="21r"] > div {
+  [data-hg~="21-21"] > div {
     width: 4.7619047619%;
     max-width: 4.7619047619%;
   }
 
-  [data-hg~="22r"] > div {
+  [data-hg~="22-22"] > div {
     width: 4.5454545455%;
     max-width: 4.5454545455%;
   }
 
-  [data-hg~="23r"] > div {
+  [data-hg~="23-23"] > div {
     width: 4.347826087%;
     max-width: 4.347826087%;
   }
 
-  [data-hg~="24r"] > div {
+  [data-hg~="24-24"] > div {
     width: 4.1666666667%;
     max-width: 4.1666666667%;
   }
