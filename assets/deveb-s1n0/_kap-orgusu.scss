@@ -21,13 +21,17 @@ $p: 24; // parça düzeni ayarı
     --d: 0; // parça düzeni varsayılan ölçeği
   }
 
-  [data-#{$gnl}],
-  [data-#{$ufk}],
-  [data-#{$kçk}],
-  [data-#{$ort}],
-  [data-#{$byk}],
-  [data-#{$kcm}],
-  [data-#{$dev}] {
+}
+
+@mixin sondaki-ayarlar(){
+
+  [data-#{$gnl}][data-#{$gnl}],
+  [data-#{$ufk}][data-#{$ufk}],
+  [data-#{$kçk}][data-#{$kçk}],
+  [data-#{$ort}][data-#{$ort}],
+  [data-#{$byk}][data-#{$byk}],
+  [data-#{$kcm}][data-#{$kcm}],
+  [data-#{$dev}][data-#{$dev}] {
     display: flex;
     flex-wrap: wrap;
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))); // Parça düzeni sayıştırma ayarları.
