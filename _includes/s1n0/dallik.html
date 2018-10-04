@@ -6,6 +6,9 @@
 {% if page.url == yol %}
   {% assign baslangic-ise-etkin = "etkin" %}
 {% endif %}
+{% if page.url contains veri.gunce.url %}
+  {% assign gunce-ise-etkin = "etkin" %}
+{% endif %}
 {% if page.url contains veri.kurulum.url %}
   {% assign kurulum-ise-etkin = "etkin" %}
 {% endif %}
@@ -125,6 +128,11 @@
     <li class="{{dene-ise-etkin}}">
       <a href="{{veri.dene.url}}">
         {{ veri.dene.[dil] }}
+      </a>
+    </li>
+    <li class="{{gunce-ise-etkin}}">
+      <a href="/{{veri.gunce.url}}">
+        {{ veri.gunce.[dil] }}
       </a>
     </li>
   </ul>

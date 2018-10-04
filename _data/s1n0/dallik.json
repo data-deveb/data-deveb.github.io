@@ -4,6 +4,11 @@
 		"tr":"Başlangıç",
 		"en":"Start"
 	},
+	"gunce":{
+		"url":"gunce",
+		"tr":"Günce",
+		"en":"Blog"
+	},
 	"kurulum":{
 		"url":"kurulum",
 		"tr":"Kurulum",
