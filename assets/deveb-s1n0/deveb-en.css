@@ -135,13 +135,62 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
   --d: 0;
 }
 
-[data-gnl~="fit"] {
+[data-gnl],
+[data-xs],
+[data-sm],
+[data-md],
+[data-lg],
+[data-xl],
+[data-hg] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[data-gnl~="/"],
+[data-xs~="/"],
+[data-sm~="/"],
+[data-md~="/"],
+[data-lg~="/"],
+[data-xl~="/"],
+[data-hg~="/"] {
+  width: auto !important;
+  max-width: 100% !important;
+  flex: calc(var(--a) * 4 - var(--c));
+}
+
+[data-gnl~="%"],
+[data-xs~="%"],
+[data-sm~="%"],
+[data-md~="%"],
+[data-lg~="%"],
+[data-xl~="%"],
+[data-hg~="%"] {
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  flex: calc(var(--a) * 4 - var(--c));
+}
+
+[data-gnl~="&"],
+[data-xs~="&"],
+[data-sm~="&"],
+[data-md~="&"],
+[data-lg~="&"],
+[data-xl~="&"],
+[data-hg~="&"] {
+  width: auto !important;
+  max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  flex: calc(var(--a) * 4 - var(--c));
+}
+
+[data-gnl~="full"] {
   flex: 1 1 0 !important;
   overflow: auto;
   max-height: 100%;
 }
 
-body[data-gnl~="fullscreen"] {
+body[data-gnl~="full-screen"],
+body[data-gnl~="full"] {
   flex: 1 1 0 !important;
   overflow: auto;
   width: 100%;
@@ -151,7 +200,8 @@ body[data-gnl~="fullscreen"] {
 }
 
 body[data-gnl~="col"] > footer,
-body[data-gnl~="fullscreen"] > footer {
+body[data-gnl~="full-screen"] > footer,
+body[data-gnl~="full"] > footer {
   margin-top: auto;
 }
 
@@ -369,6 +419,11 @@ body[data-gnl~="fullscreen"] > footer {
 
 [data-gnl~="/3"], [data-gnl~="/7"], [data-gnl~="/11"], [data-gnl~="/15"], [data-gnl~="/19"], [data-gnl~="/23"] {
   --d: 1;
+}
+
+[data-gnl][data-gnl] {
+  width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
 }
 
 [data-gnl~="1-|"], [data-gnl~="2-|"],
@@ -798,8 +853,8 @@ body[data-gnl~="fullscreen"] > footer {
 
 [data-gnl~="0"][data-gnl~="0"] {
   flex-basis: auto;
-  max-width: none !important;
-  width: auto !important;
+  max-width: none;
+  width: auto;
 }
 
 [data-gnl~="1th"] {
@@ -1181,13 +1236,14 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     --ara: 10px;
   }
 
-  [data-xs~="fit"] {
+  [data-xs~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     max-height: 100%;
   }
 
-  body[data-xs~="fullscreen"] {
+  body[data-xs~="full-screen"],
+  body[data-xs~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     width: 100%;
@@ -1197,7 +1253,8 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
   }
 
   body[data-xs~="col"] > footer,
-  body[data-xs~="fullscreen"] > footer {
+  body[data-xs~="full-screen"] > footer,
+  body[data-xs~="full"] > footer {
     margin-top: auto;
   }
 
@@ -1417,10 +1474,15 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     --d: 1;
   }
 
+  [data-xs][data-xs] {
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  }
+
   [data-xs~="0"][data-xs~="0"] {
     flex-basis: auto;
-    max-width: none !important;
-    width: auto !important;
+    max-width: none;
+    width: auto;
   }
 
   [data-xs~="1th"] {
@@ -1794,13 +1856,14 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
 S02 kçk | Ekran ölçeği: 576px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 576px) {
-  [data-sm~="fit"] {
+  [data-sm~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     max-height: 100%;
   }
 
-  body[data-sm~="fullscreen"] {
+  body[data-sm~="full-screen"],
+  body[data-sm~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     width: 100%;
@@ -1810,7 +1873,8 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
   }
 
   body[data-sm~="col"] > footer,
-  body[data-sm~="fullscreen"] > footer {
+  body[data-sm~="full-screen"] > footer,
+  body[data-sm~="full"] > footer {
     margin-top: auto;
   }
 
@@ -2030,10 +2094,15 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     --d: 1;
   }
 
+  [data-sm][data-sm] {
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  }
+
   [data-sm~="0"][data-sm~="0"] {
     flex-basis: auto;
-    max-width: none !important;
-    width: auto !important;
+    max-width: none;
+    width: auto;
   }
 
   [data-sm~="1th"] {
@@ -2407,13 +2476,14 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
 S03 ort | Ekran ölçeği: 768px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 768px) {
-  [data-md~="fit"] {
+  [data-md~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     max-height: 100%;
   }
 
-  body[data-md~="fullscreen"] {
+  body[data-md~="full-screen"],
+  body[data-md~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     width: 100%;
@@ -2423,7 +2493,8 @@ S03 ort | Ekran ölçeği: 768px ≤ *
   }
 
   body[data-md~="col"] > footer,
-  body[data-md~="fullscreen"] > footer {
+  body[data-md~="full-screen"] > footer,
+  body[data-md~="full"] > footer {
     margin-top: auto;
   }
 
@@ -2643,10 +2714,15 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     --d: 1;
   }
 
+  [data-md][data-md] {
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  }
+
   [data-md~="0"][data-md~="0"] {
     flex-basis: auto;
-    max-width: none !important;
-    width: auto !important;
+    max-width: none;
+    width: auto;
   }
 
   [data-md~="1th"] {
@@ -3020,13 +3096,14 @@ S03 ort | Ekran ölçeği: 768px ≤ *
 S04 byk | Ekran ölçeği: 992px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 992px) {
-  [data-lg~="fit"] {
+  [data-lg~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     max-height: 100%;
   }
 
-  body[data-lg~="fullscreen"] {
+  body[data-lg~="full-screen"],
+  body[data-lg~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     width: 100%;
@@ -3036,7 +3113,8 @@ S04 byk | Ekran ölçeği: 992px ≤ *
   }
 
   body[data-lg~="col"] > footer,
-  body[data-lg~="fullscreen"] > footer {
+  body[data-lg~="full-screen"] > footer,
+  body[data-lg~="full"] > footer {
     margin-top: auto;
   }
 
@@ -3256,10 +3334,15 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     --d: 1;
   }
 
+  [data-lg][data-lg] {
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  }
+
   [data-lg~="0"][data-lg~="0"] {
     flex-basis: auto;
-    max-width: none !important;
-    width: auto !important;
+    max-width: none;
+    width: auto;
   }
 
   [data-lg~="1th"] {
@@ -3633,13 +3716,14 @@ S04 byk | Ekran ölçeği: 992px ≤ *
 S05 kcm | Ekran ölçeği: 1200px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1200px) {
-  [data-xl~="fit"] {
+  [data-xl~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     max-height: 100%;
   }
 
-  body[data-xl~="fullscreen"] {
+  body[data-xl~="full-screen"],
+  body[data-xl~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     width: 100%;
@@ -3649,7 +3733,8 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
   }
 
   body[data-xl~="col"] > footer,
-  body[data-xl~="fullscreen"] > footer {
+  body[data-xl~="full-screen"] > footer,
+  body[data-xl~="full"] > footer {
     margin-top: auto;
   }
 
@@ -3869,10 +3954,15 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     --d: 1;
   }
 
+  [data-xl][data-xl] {
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  }
+
   [data-xl~="0"][data-xl~="0"] {
     flex-basis: auto;
-    max-width: none !important;
-    width: auto !important;
+    max-width: none;
+    width: auto;
   }
 
   [data-xl~="1th"] {
@@ -4246,13 +4336,14 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
 S06 dev | Ekran ölçeği: 1900px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1900px) {
-  [data-hg~="fit"] {
+  [data-hg~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     max-height: 100%;
   }
 
-  body[data-hg~="fullscreen"] {
+  body[data-hg~="full-screen"],
+  body[data-hg~="full"] {
     flex: 1 1 0 !important;
     overflow: auto;
     width: 100%;
@@ -4262,7 +4353,8 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
   }
 
   body[data-hg~="col"] > footer,
-  body[data-hg~="fullscreen"] > footer {
+  body[data-hg~="full-screen"] > footer,
+  body[data-hg~="full"] > footer {
     margin-top: auto;
   }
 
@@ -4482,10 +4574,15 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     --d: 1;
   }
 
+  [data-hg][data-hg] {
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  }
+
   [data-hg~="0"][data-hg~="0"] {
     flex-basis: auto;
-    max-width: none !important;
-    width: auto !important;
+    max-width: none;
+    width: auto;
   }
 
   [data-hg~="1th"] {
@@ -5106,31 +5203,6 @@ kcm | Ekran ölçeği: 1200px ≤ * < 1900px
     display: none !important;
   }
 }
-[data-gnl][data-gnl],
-[data-xs][data-xs],
-[data-sm][data-sm],
-[data-md][data-md],
-[data-lg][data-lg],
-[data-xl][data-xl],
-[data-hg][data-hg] {
-  display: flex;
-  flex-wrap: wrap;
-  width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-  max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-}
-
-[data-gnl~="/"],
-[data-xs~="/"],
-[data-sm~="/"],
-[data-md~="/"],
-[data-lg~="/"],
-[data-xl~="/"],
-[data-hg~="/"] {
-  width: auto !important;
-  max-width: 100% !important;
-  flex: calc(var(--a) * 4 - var(--c));
-}
-
 nav {
   display: flex;
   flex-wrap: wrap;

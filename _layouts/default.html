@@ -1,37 +1,74 @@
+{% assign veri = site.data.s1n0.deveb %}{% assign dil = page.lang %}
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-{% include head.html %}
-</head>
-<body data-gnl="sütun sığdır">
+<html lang="{{ page.lang | default: site.lang | default: "tr" }}">
 
-  <div data-gnl="1 1p sığdır oluk-çevre">
-    <div id="sol-alan" data-gnl="1 1p üstte" data-kçk="4 22p sığdır oluk-çevre">
-      <div data-gnl="1 1p göbekte geniş-aralıklı" data-dev="2 3p sağda-ol göbekte-ol">
-        <a data-gnl="0" href="/" class="logo2">deveb</a><span class="birincil" data-gnl="0 göbekte-ol" data-imgelik="kapsül küçük">sürüm 0.1</span>
-        <input id="menü-ana-çapraz" checked type="radio" name="ana-menü" data-kapaç="sağda çaprazlama">
-        <label for="menü-ana">•••</label>
-        <label for="menü-ana-çapraz">///</label>
+  {%- include head.html -%}
+
+<body data-gnl="görüntülük-kaplamı">
+
+  <div data-gnl="kaplam oluk-çevre">
+
+    <div id="sol-alan" data-gnl="t" data-kçk="4 /22 kaplam oluk-çevre">
+
+      <div class="damga" data-gnl="o geniş-aralıklı" data-kçk="lt" data-dev="8 _s _o">
+
+        <div>
+          <a href="/" class="logo2" data-gnl="0">
+            deveb
+          </a>
+
+          <input id="menü-ana-çapraz" checked type="radio" name="ana-menü" data-kapaç="sağda çaprazlama">
+          <label for="menü-ana">•••</label>
+          <label for="menü-ana-çapraz">///</label>
+        </div>
+        <span class="birincil" data-imgelik="kapsül küçük" data-gnl="0 |-1" data-kçk="1 /">
+          {{ veri.on-surum[dil] }} 1.0.11 
+        </span>
+        <span class="birincil" data-imgelik="kapsül küçük" data-gnl="0">
+          {{ veri.dili[dil] }}
+        </span>
+
+        
+
       </div>
-      <div data-gnl="1 1p" data-dev="2 3p sağda-ol üstte-ol">
-        {% include icerik.html %}
+      <div data-gnl data-dev="8 _ts">
+        {% include s1n0/dallik.html %}
       </div>
     </div>
-    <div id="içerik" data-gnl="1 1p" data-kçk="18 22p sığdır oluk-çevre">
-      <div data-gnl="1 1p oluk üstte">
+    <main id="içerik" data-gnl data-kçk="18 /22 kaplam oluk-çevre">
+      <div class="dolgulama-ls-30" data-gnl="lt" data-kçk="10">
         {% if page.title %}
-        <div data-gnl="1 1p" data-kçk="20 24p" class="sayfa-başlığı">
-          <h1 data-gnl="24 24p">{{ page.title }}</h1>
-        </div>
+          <h1 class="sayfa">{{ page.title }}</h1>
         {% endif %}
-        <div data-gnl="24 24p" data-kçk="20 24p">
-          {{ content }}
-        </div>
+        {{ content }}
       </div>
-    </div>
+    </main>
   </div>
-  <footer data-gnl="24 24p">
-  {% include foot.html %}
+
+  <footer>
+  {% include s1n0/foot.html %}
   </footer>
+
+  <style type="text/css">
+  .dolgulama-ls-30,
+  [for~="menü-ana"],
+  [for~="menü-ana-çapraz"]{
+    padding-left:15px; padding-right:15px;
+  }
+  .damga{
+    border-bottom:1px solid rgba(114, 137, 218, .2); margin-bottom: 15px; padding-bottom: 15px;
+  }
+  .logo2{
+    padding:15px 15px 15px 0;
+  }
+
+  </style>
 </body>
 </html>
+
+
+
+
+
+
+

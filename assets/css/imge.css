@@ -115,6 +115,29 @@ p {
   margin-top: 5px;
   font-weight: 300;
 }
+
+[lang~="tr"] p.örnek::before{
+	content: "Örnek";
+}
+[lang~="en"] p.örnek::before{
+	content: "Example";
+}
+p.örnek::before{
+	
+	font-weight:700;
+	font-size: 1em;
+	text-decoration: underline;
+	color:rgba(114, 137, 218, 1);
+	width:100%;
+	display: block;
+}
+p.örnek{
+	margin:15px 0;
+	padding: 15px;
+	font-size: 0.9em;
+	border:1px solid rgba(114, 137, 218, .3);
+	background-color: rgba(114, 137, 218, .1);
+}
 .simget{
   font-family: 'Comfortaa', cursive;
   color: #2c2171 !important;

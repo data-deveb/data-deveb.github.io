@@ -1,0 +1,67 @@
+{
+	"baslangic":{
+		"url":"",
+		"tr":"Başlangıç",
+		"en":"Start"
+	},
+	"kurulum":{
+		"url":"kurulum",
+		"tr":"Kurulum",
+		"en":"Installiation"
+	},
+	"goruntuluk-orgusu":{
+		"url":"goruntuluk-orgusu",
+		"tr":"Görüntülük Örgüsü",
+		"en":"Screen System"
+	},
+	"kesitlik-orgusu":{
+		"url":"kesitlik-orgusu",
+		"tr":"Kesitlik Örgüsü",
+		"en":"Grid System",
+		"bolumleme-duzeni":{
+			"url":"kesitlik-orgusu/bolumleme-duzeni",
+			"tr":"Bölümleme Düzeni",
+			"en":"Partition Layout"
+		},
+		"yineleme-duzeni":{
+			"url":"kesitlik-orgusu/yineleme-duzeni",
+			"tr":"Yineleme Düzeni",
+			"en":"Repeating Layout"
+		},
+		"esnetme-duzeni":{
+			"url":"kesitlik-orgusu/esnetme-duzeni",
+			"tr":"Esnetme Düzeni",
+			"en":"Flexing Layout"
+		},
+		"aralama-duzeni":{
+			"url":"kesitlik-orgusu/aralama-duzeni",
+			"tr":"Aralama Düzeni",
+			"en":"Spacing Layout"
+		},
+		"bicimleme-duzeni":{
+			"url":"kesitlik-orgusu/bicimleme-duzeni",
+			"tr":"Biçimleme Düzeni",
+			"en":"Formating Layout"
+		},
+		"konumlama-duzeni":{
+			"url":"kesitlik-orgusu/konumlama-duzeni",
+			"tr":"Konumlama Düzeni",
+			"en":"Positioning Layout"
+		},
+		"siralama-duzeni":{
+			"url":"kesitlik-orgusu/siralama-duzeni",
+			"tr":"Sıralama Düzeni",
+			"en":"Ordering Layout"
+		},
+		"olcekler":{
+			"url":"kesitlik-orgusu/olcekler",
+			"tr":"Ölçekler",
+			"en":"Scales"
+		}
+	},
+	"dene":{
+		"url":"https://jsfiddle.net/deveb/1mwjkctx/",
+		"tr":"Sürümü Dene",
+		"en":"Try It Version"
+	}
+}

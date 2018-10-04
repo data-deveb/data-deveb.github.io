@@ -1,123 +1,131 @@
+{% assign veri = site.data.s1n0.dallik %}
+{% assign dil = page.lang %}
+{% assign surum = '1.0' %}
+{% assign yol = '/' | append: surum | append: '/' | append: dil | append: '/' %}
 
-{% if page.url contains '/1.0/tr/' %}
-  
-    {% assign dil = 'tr' %}
-    {% assign baslangic = 'Başlangıç' %}
-    {% assign kurulum = 'Kurulum' %}
-    {% assign goruntuluk_orgusu = 'Görüntülük Örgüsü' %}
-    {% assign kap_orgusu = 'Kap Örgüsü' %}
-      {% assign parca_duzeni = 'Parça Düzeni' %}
-      {% assign dizem_duzeni = 'Dizem Düzeni' %}
-      {% assign genlesme_duzeni = 'Genleşme Düzeni' %}
-      {% assign aralik_duzeni = 'Aralık Düzeni' %}
-      {% assign bicim_duzeni = 'Biçim Düzeni' %}
-      {% assign konumlama = 'Konumlama' %}
-      {% assign siralama = 'Sıralama' %}
-      {% assign olcekler = 'Ölçekler' %}
-    {% assign surumdene = 'Sürümü Dene' %}
-
+{% if page.url == yol %}
+  {% assign baslangic-ise-etkin = "etkin" %}
 {% endif %}
-{% if page.url contains '/1.0/en/' %}
-  
-    {% assign dil = 'en' %}
-    {% assign baslangic = 'Start' %}
-    {% assign kurulum = 'Installation' %}
-    {% assign goruntuluk_orgusu = 'Screen System' %}
-    {% assign kap_orgusu = 'Grid System' %}
-      {% assign parca_duzeni = 'Piece Layout' %}
-      {% assign dizem_duzeni = 'Rhythm Layout' %}
-      {% assign genlesme_duzeni = 'Grow Layout' %}
-      {% assign aralik_duzeni = 'Space Layout' %}
-      {% assign bicim_duzeni = 'Type Layout' %}
-      {% assign konumlama = 'Positioning' %}
-      {% assign siralama = 'Order' %}
-      {% assign olcekler = 'Scales' %}
-      {% assign surumdene = 'Try It Version' %}
-
+{% if page.url contains veri.kurulum.url %}
+  {% assign kurulum-ise-etkin = "etkin" %}
 {% endif %}
-
+{% if page.url contains veri.goruntuluk-orgusu.url %}
+  {% assign goruntuluk-orgusu-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.url %}
+  {% assign kesitlik-orgusu-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.bolumleme-duzeni.url %}
+  {% assign bolumleme-duzeni-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.yineleme-duzeni.url %}
+  {% assign yineleme-duzeni-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.esnetme-duzeni.url %}
+  {% assign esnetme-duzeni-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.aralama-duzeni.url %}
+  {% assign aralama-duzeni-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.bicimleme-duzeni.url %}
+  {% assign bicimleme-duzeni-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.konumlama-duzeni.url %}
+  {% assign konumlama-duzeni-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.siralama-duzeni.url %}
+  {% assign siralama-duzeni-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.kesitlik-orgusu.olcekler.url %}
+  {% assign olcekler-ise-etkin = "etkin" %}
+{% endif %}
+{% if page.url contains veri.dene.url %}
+  {% assign dene-ise-etkin = "etkin" %}
+{% endif %}
 
 <nav>
-  <input id="menü-ana" type="radio" name="ana-menü" data-kapaç="çaprazlama gizle">
-  <label for="menü-ana">•••</label>
-  <label for="menü-ana-çapraz">///</label>
+  <input  id="menü-ana" 
+          type="radio" 
+          name="ana-menü" 
+          data-kapaç="çaprazlama gizle">
+  <label for="menü-ana">
+    •••
+  </label>
+  <label for="menü-ana-çapraz">
+    ///
+  </label>
+
   <ul class="imge" data-menü="görünür dikey">
-    <li class="{% if page.url == '/1.0/tr/' or page.url == '/1.0/en/' %}etkin{% endif %}">
-      <a href="/1.0{% if page.url contains '/tr/' %}/tr/{% endif %}{% if page.url contains '/en/' %}/en/{% endif %}">{{ baslangic }}</a>
+    <li class="{{baslangic-ise-etkin}}">
+      <a href="{{yol}}{{veri.baslangic.url}}">
+        {{ veri.baslangic.[dil] }}
+      </a>
     </li>
-    <li class="{% if page.url contains '/kurulum' %}etkin{% endif %}">
-      <a href="/1.0/{{ dil }}/kurulum">{{ kurulum }}</a>
+    <li class="{{kurulum-ise-etkin}}">
+      <a href="{{yol}}{{veri.kurulum.url}}">
+        {{ veri.kurulum.[dil] }}
+      </a>
     </li>
-    <li class="{% if page.url contains '/goruntuluk-orgusu' %}etkin{% endif %}">
-      <a href="/1.0/{{ dil }}/goruntuluk-orgusu">{{ goruntuluk_orgusu }}</a>
+    <li class="{{goruntuluk-orgusu-ise-etkin}}">
+      <a href="{{yol}}{{veri.goruntuluk-orgusu.url}}">
+        {{ veri.goruntuluk-orgusu.[dil] }}
+      </a>
     </li>
-    <li class="{% if page.url contains '/kap-orgusu' %}etkin{% endif %}">
-      <a href="/1.0/{{ dil }}/kap-orgusu">{{ kap_orgusu }}</a>
-      <input id="kap-örgüsü" type="checkbox" {% if page.url contains '/kap-orgusu' or page.url contains '/ornekler/' %}checked{% endif %} data-kapaç="sağda">
-      <label for="kap-örgüsü"><span>▽</span></label>
-      <label for="kap-örgüsü"><span>▼</span></label>
+    <li class="{{kesitlik-orgusu-ise-etkin}}">
+      <a href="{{yol}}{{veri.kesitlik-orgusu.url}}">
+        {{ veri.kesitlik-orgusu.[dil] }}
+      </a>
+      <input id="kesitlik-örgüsü" type="checkbox" data-kapaç="sağda"
+             {% if page.url contains '/kesitlik-orgusu'%}checked{% endif %}>
+      <label for="kesitlik-örgüsü"><span>▽</span></label>
+      <label for="kesitlik-örgüsü"><span>▼</span></label>
       <ul>
-        <li class="{% if page.url contains '/kap-orgusu/parca-duzeni' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/parca-duzeni">{{ parca_duzeni }}</a>          
-          <ul>
-            <li class="{% if page.url contains '/kap-orgusu/olcekler' %}etkin{% endif %}">
-              <a href="/1.0/{{ dil }}/kap-orgusu/olcekler">{{ olcekler }}</a>
-            </li>
-          </ul>
+        <li class="{{bolumleme-duzeni-ise-etkin}}">
+          <a href="{{yol}}{{veri.kesitlik-orgusu.bolumleme-duzeni.url}}">
+            {{ veri.kesitlik-orgusu.bolumleme-duzeni.[dil] }}
+          </a>
         </li>
-        <li class="{% if page.url contains '/kap-orgusu/dizem-duzeni' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/dizem-duzeni">{{ dizem_duzeni }}</a>
+        <li class="{{yineleme-duzeni-ise-etkin}}">
+          <a href="{{yol}}{{veri.kesitlik-orgusu.yineleme-duzeni.url}}">
+            {{ veri.kesitlik-orgusu.yineleme-duzeni.[dil] }}
+          </a>
         </li>
-        <li class="{% if page.url contains '/kap-orgusu/genlesme-duzeni' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/genlesme-duzeni">{{ genlesme_duzeni }}</a>
+        <li class="{{esnetme-duzeni-ise-etkin}}">
+          <a href="{{yol}}{{veri.kesitlik-orgusu.esnetme-duzeni.url}}">
+            {{ veri.kesitlik-orgusu.esnetme-duzeni.[dil] }}
+          </a>
         </li>
-        <li class="{% if page.url contains '/kap-orgusu/aralik-duzeni' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/aralik-duzeni">{{ aralik_duzeni }}</a>
+        <li class="{{aralama-duzeni-ise-etkin}}">
+          <a href="{{yol}}{{veri.kesitlik-orgusu.aralama-duzeni.url}}">
+            {{ veri.kesitlik-orgusu.aralama-duzeni.[dil] }}
+          </a>
         </li>
-        <li class="{% if page.url contains '/kap-orgusu/bicim-duzeni' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/bicim-duzeni">{{ bicim_duzeni }}</a>
+        <li class="{{bicimleme-duzeni-ise-etkin}}">
+          <a href="{{yol}}{{veri.kesitlik-orgusu.bicimleme-duzeni.url}}">
+            {{ veri.kesitlik-orgusu.bicimleme-duzeni.[dil] }}
+          </a>
         </li>
-        <li class="{% if page.url contains '/kap-orgusu/konumlama' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/konumlama">{{ konumlama }}</a>
+        <li class="{{konumlama-duzeni-ise-etkin}}">
+          <a href="{{yol}}{{veri.kesitlik-orgusu.konumlama-duzeni.url}}">
+            {{ veri.kesitlik-orgusu.konumlama-duzeni.[dil] }}
+          </a>
         </li>
-        <li class="{% if page.url contains '/kap-orgusu/siralama' %}etkin{% endif %}">
-          <a href="/1.0/{{ dil }}/kap-orgusu/siralama">{{ siralama }}</a>
-        </li>        
-        <!--
-        <li>
-          <input id="kap-örgüsü-örnekler" type="checkbox" {% if page.url contains '/ornekler/' %}checked{% endif %} data-kapaç="sağda">
-          <label for="kap-örgüsü-örnekler"><a href="#">Örnekler</a><span>▽</span></label>
-          <label for="kap-örgüsü-örnekler"><a href="#">Örnekler</a><span>▼</span></label>
-          <ul>
-            <li class="{% if page.url contains '/ornekler/kap-orgusu-esit-bolme' %}etkin{% endif %}">
-              <a href="/1.0/{{ dil }}/ornekler/kap-orgusu-esit-bolme">Eşit Bölme #1</a>
-            </li>
-            <li class="{% if page.url contains '/ornekler/kap-orgusu-esit-bolme-2' %}etkin{% endif %}">
-              <a href="/1.0/{{ dil }}/ornekler/kap-orgusu-esit-bolme-2">Eşit Bölme #2</a>
-            </li>
-          </ul>
+        <li class="{{siralama-duzeni-ise-etkin}}">
+          <a href="{{yol}}{{veri.kesitlik-orgusu.siralama-duzeni.url}}">
+            {{ veri.kesitlik-orgusu.siralama-duzeni.[dil] }}
+          </a>
         </li>
-        -->
+        <li class="{{olcekler-ise-etkin}}">
+          <a href="{{yol}}{{veri.kesitlik-orgusu.olcekler.url}}">
+            {{ veri.kesitlik-orgusu.olcekler.[dil] }}
+          </a>
+        </li>
       </ul>
     </li>
-    <li>
-      <a href="https://jsfiddle.net/deveb/1mwjkctx/">{{ surumdene }}</a>
+    <li class="{{dene-ise-etkin}}">
+      <a href="{{veri.dene.url}}">
+        {{ veri.dene.[dil] }}
+      </a>
     </li>
-    <!--
-    <li class="{% if page.url contains '/sekme-orgusu' %}etkin{% endif %}">
-      <a href="/1.0/{{ dil }}/sekme-orgusu">Sekme Örgüsü</a>
-    </li>
-    <li class="{% if page.url contains '/renk-orgusu' %}etkin{% endif %}">
-      <a href="/1.0/{{ dil }}/renk-orgusu">Renk Örgüsü</a>
-    </li>
-    <li class="{% if page.url contains '/terimler' %}etkin{% endif %}">
-      <a href="/1.0/{{ dil }}/terimler">Terimler</a>
-    </li>
-    <li class="{% if page.url contains '/takim' %}etkin{% endif %}">
-      <a href="/1.0/{{ dil }}/takim">Takım</a>
-    </li>
-    <li class="{% if page.url contains '/tarayici-destegi' %}etkin{% endif %}">
-      <a href="/1.0/{{ dil }}/tarayici-destegi">Tarayıcı Desteği</a>
-    </li>-->
   </ul>
 </nav>

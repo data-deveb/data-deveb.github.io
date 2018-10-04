@@ -1,0 +1,11 @@
+{
+	"tr":{
+		"giris": "Kesitlik örgüsünün sıralama özelliği ögeleri yazım düzeni sırasından kopararak kendi aralarında yeniden sıralandırmaya yarar. \"inci, ıncı, uncu, üncü\" anlamına gelen nc birimiyle kullanılır.",
+		"baslik1": "Sıralama: 1nc~24nc",
+		"yazilik1": "Sıralama işlemi 1'den 24'e kadar aralığı barındırır. Bir HTML etiketine 1nc ve 2nc tanımlaması yaptığınızda birbirleri arasında sıralama yapılır. Görüntülük örgüsüyle uyumludur. Örneğin telefon görüntülüklerinde bir nesneyi ikinci sırada gösterebilirken geniş ekranlarda başka bir sırada gösterebilirsiniz.",
+		""
+	},
+	"en":{
+		"giris":""
+	}
+}
