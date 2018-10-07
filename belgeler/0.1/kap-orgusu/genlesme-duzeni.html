@@ -1,0 +1,187 @@
+---
+layout: b-default
+title: Kap Örgüsü Genleşme Düzeni
+permalink: 0.1/kap-orgusu/genlesme-duzeni
+---
+
+  <p>Basit şekilde genleşmeler belirterek kap alanları oluşturabilirsiniz. Genleşme düzeni "CSS FLEX" özelliği üzerine geliştirilmiştir. genleşme örgüsünün kullanımı için ekran özniteliklerine (data-gnl, data-mnk ...) "<span data-metin="ana">SAYIg</span>" sınıfını yazmanız yeterlidir. SAYI 1 ile 24 arasında değer alabilir. Örneğin sayfayı ikiye ayırıp sol tarafın sağ taraftan iki kat daha geniş olmasını istiyorsunuz. Bunun için data-gnl="2g" data-gnl="1g" öznitelikleri tanımlaybilirsiniz.</p>
+
+  <h3>Genleşme Düzeni Nasıl Kullanılır?</h3>
+  <p>Ekranların hepsinde üç sütun görünümünde bir düzen oluşturalım. Örnek olarak düzen dağılımını 1 4 2 şeklinde yapalım.</p>
+  <p></p>
+  <div data-gnl="1 1p" class="önizleme">
+    <h3>Önizleme</h3>
+    <div data-gnl="1g">
+      1g
+    </div>
+    <div data-gnl="4g">
+      4g
+    </div>
+    <div data-gnl="2g">
+      2g
+    </div>
+  </div>
+  <pre data-gnl="1 1p"><code class="language-html">
+  &lt;div data-gnl=&quot;1g&quot;&gt;
+    1o
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;4g&quot;&gt;
+    4o
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;2g&quot;&gt;
+    2o
+  &lt;/div&gt;
+  </code></pre>
+  <p></p>
+
+  <h3>Genleşme Düzenini Neden Kullanırız?</h3>
+
+  <p>Öncelikle <a href="/belgeler/kap-orgusu/parca-duzeni.html">parça düzenini</a> hatırlayalım. Parça düzeni yüzdesel olarak kararlı genişlikler tanımlamak için kullanılıyordu. Bu durum nedeniyle genişliğin içine dahil edilen parça genişlikler genişliğin sınırına dayandığında alt taraftan parçalar yer almaya devam ederler. Bu durumu göz önünde bulundurarak genleşme düzenine bakalım. Genleşme düzeni siz ne kadar genleşme kabı tanımlasanız tanımlayın alt satırdan devam etme söz konusu olmayacaktır. Yani her eklediğiniz bir genleşme kabı diğer kaplarla birlikte yeniden hesaplanıp genleşmelerin genişlikleri değişerek aynı satıra sıkışacaktır. Eğer alt satırdan devam eden genleşme kapları oluşturmak istiyorsanız burada 100% genişlikte boş bir parça kabı oluşturmanız gerekir. Böylelikle yeni genleşme kaplarınız alt satırdan devam edebilecektir.  </p>
+  <p>Bunların yanında parça düzeni ile genleşme düzenini iç içe kullanabilirsiniz. Ve yine özel genişliklerinizle birlikte dahi kullanabilirsiniz. Genleşme düzeni bulunduğu yapıya göre kendine bir yer edinecektir. Aşağıdaki karma kullanım örneğini inceleyin.</p>
+  <div data-gnl="1 1p" class="önizleme">
+    <h3>Önizleme</h3>
+    <div data-gnl="1 1p">
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="4g">
+        4g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+      <div data-gnl="1 1p">(bu alan alta geçirmek için oluşturulan 100% genişlik)</div>
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="4g">
+        4g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="4g">
+        4g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+      <div data-gnl="1 1p">(bu alan alta geçirmek için oluşturulan 100% genişlik)</div>
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="4g">
+        4g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+      <div data-gnl="1 2p">
+        1 2p
+      </div>
+    </div>
+  </div>
+  <pre data-gnl="1 1p"><code class="language-html">
+&lt;div data-gnl=&quot;1 1p&quot;&gt;
+  &lt;div data-gnl=&quot;1g&quot;&gt;
+    1g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;4g&quot;&gt;
+    4g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;2g&quot;&gt;
+    2g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;(bu alan alta geçirmek için oluşturulan 100% genişlik)&lt;/div&gt;
+  &lt;div data-gnl=&quot;1g&quot;&gt;
+    1g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;4g&quot;&gt;
+    4g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;2g&quot;&gt;
+    2g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1g&quot;&gt;
+    1g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;4g&quot;&gt;
+    4g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;2g&quot;&gt;
+    2g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;(bu alan alta geçirmek için oluşturulan 100% genişlik)&lt;/div&gt;
+  &lt;div data-gnl=&quot;1g&quot;&gt;
+    1g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;4g&quot;&gt;
+    4g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;2g&quot;&gt;
+    2g
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 2p&quot;&gt;
+    1 2p
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+  <p></p>
+
+
+  <h3>Genleşme Ve Parça Düzeni Kıyaslaması</h3>
+  <p>Genleşme düzeni ile parça düzeni aynı hesap dengeleriyle oluşturulmamaktadır. Genleşme düzeninde her genleşme birbiri arasında etkileşimli olup, parça düzeninde ise kararlı genişlik oluşturulur. Örnek ile daha iyi anlayalım.</p>
+  <p></p>
+  <div data-gnl="1 1p" class="önizleme">
+    <h3>Önizleme</h3>
+    <div data-gnl="1 1p">
+      <div data-gnl="1g">
+        1g
+      </div>
+      <div data-gnl="4g">
+        4g
+      </div>
+      <div data-gnl="2g">
+        2g
+      </div>
+    </div>
+    <div data-gnl="1 1p">
+      <div data-gnl="1 7p">
+        1 7p
+      </div>
+      <div data-gnl="4 7p">
+        4 7p
+      </div>
+      <div data-gnl="2 7p">
+        2 7p
+      </div>
+    </div>
+  </div>
+  <pre data-gnl="1 1p"><code class="language-html">
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;
+    &lt;div data-gnl=&quot;1g&quot;&gt;
+      1o
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;4g&quot;&gt;
+      4o
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;2g&quot;&gt;
+      2o
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div data-gnl=&quot;1 1p&quot;&gt;
+    &lt;div data-gnl=&quot;1 7p&quot;&gt;
+      1 7p
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;4 7p&quot;&gt;
+      4 7p
+    &lt;/div&gt;
+    &lt;div data-gnl=&quot;2 7p&quot;&gt;
+      2 7p
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+  <p></p>

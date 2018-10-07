@@ -1,0 +1,272 @@
+---
+layout: b-default
+title: Eşit Bölme Örneği - Kap Örgüsü
+permalink: 0.1/ornekler/kap-orgusu-esit-bolme
+---
+<style media="screen">
+  .özel-sınıf [data-gnl]{
+    border:1px solid red;
+    border: 1px solid #2c2171;
+    padding: 10px;
+    justify-content: center;
+    text-align: left;
+  }
+  .özel-sınıf > [data-gnl]{
+    border:0px solid red; margin-bottom:20px;
+    justify-content:flex-start;
+    padding:0;
+  }
+</style>
+<div data-gnl="24 24p" class="özel-sınıf">
+<h1>EŞİT BÖLME ÖRNEĞİ - KAP ÖRGÜSÜ</h1>
+<p>Kap örgüsünün özelliklerini kullanarak eşit genişliklerde bölme düzenini çok basit bir şekilde yapabilirsiniz. Bunun için aşağıdaki ilk 2 örneği HTML'i ile birlikte inceleyip ikisi arasındaki farkı bulduktan sonra aşağıya doğru devam eden örneklerin nasıl yapıldığını anlayacaksınız.</p>
+<div data-gnl="24 24p">
+  <div data-gnl="1 24p">1</div><div data-gnl="1 24p">2</div><div data-gnl="1 24p">3</div><div data-gnl="1 24p">4</div>
+  <div data-gnl="1 24p">5</div><div data-gnl="1 24p">6</div><div data-gnl="1 24p">7</div><div data-gnl="1 24p">8</div>
+  <div data-gnl="1 24p">9</div><div data-gnl="1 24p">10</div><div data-gnl="1 24p">11</div><div data-gnl="1 24p">12</div>
+  <div data-gnl="1 24p">13</div><div data-gnl="1 24p">14</div><div data-gnl="1 24p">15</div><div data-gnl="1 24p">16</div>
+  <div data-gnl="1 24p">17</div><div data-gnl="1 24p">18</div><div data-gnl="1 24p">19</div><div data-gnl="1 24p">20</div>
+  <div data-gnl="1 24p">21</div><div data-gnl="1 24p">22</div><div data-gnl="1 24p">23</div><div data-gnl="1 24p">24</div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+  &lt;div data-gnl=&quot;24 24p&quot;&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;1&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;2&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;3&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;4&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;5&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;6&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;7&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;8&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;9&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;10&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;11&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;12&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;13&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;14&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;15&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;16&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;17&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;18&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;19&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;20&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;21&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;22&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;23&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 24p&quot;&gt;24&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<div data-gnl="23 23p">
+  <div data-gnl="1 23p">1</div><div data-gnl="1 23p">2</div><div data-gnl="1 23p">3</div><div data-gnl="1 23p">4</div>
+  <div data-gnl="1 23p">5</div><div data-gnl="1 23p">6</div><div data-gnl="1 23p">7</div><div data-gnl="1 23p">8</div>
+  <div data-gnl="1 23p">9</div><div data-gnl="1 23p">10</div><div data-gnl="1 23p">11</div><div data-gnl="1 23p">12</div>
+  <div data-gnl="1 23p">13</div><div data-gnl="1 23p">14</div><div data-gnl="1 23p">15</div><div data-gnl="1 23p">16</div>
+  <div data-gnl="1 23p">17</div><div data-gnl="1 23p">18</div><div data-gnl="1 23p">19</div><div data-gnl="1 23p">20</div>
+  <div data-gnl="1 23p">21</div><div data-gnl="1 23p">22</div><div data-gnl="1 23p">23</div><div data-gnl="1 23p">24</div>
+</div>
+<pre data-gnl="1 1p"><code class="language-html">
+  &lt;div data-gnl=&quot;23 23p&quot;&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;1&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;2&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;3&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;4&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;5&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;6&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;7&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;8&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;9&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;10&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;11&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;12&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;13&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;14&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;15&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;16&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;17&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;18&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;19&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;20&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;21&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;22&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;23&lt;/div&gt;
+    &lt;div data-gnl=&quot;1 23p&quot;&gt;24&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<div data-gnl="22 22p">
+  <div data-gnl="1 22p">1</div><div data-gnl="1 22p">2</div><div data-gnl="1 22p">3</div><div data-gnl="1 22p">4</div>
+  <div data-gnl="1 22p">5</div><div data-gnl="1 22p">6</div><div data-gnl="1 22p">7</div><div data-gnl="1 22p">8</div>
+  <div data-gnl="1 22p">9</div><div data-gnl="1 22p">10</div><div data-gnl="1 22p">11</div><div data-gnl="1 22p">12</div>
+  <div data-gnl="1 22p">13</div><div data-gnl="1 22p">14</div><div data-gnl="1 22p">15</div><div data-gnl="1 22p">16</div>
+  <div data-gnl="1 22p">17</div><div data-gnl="1 22p">18</div><div data-gnl="1 22p">19</div><div data-gnl="1 22p">20</div>
+  <div data-gnl="1 22p">21</div><div data-gnl="1 22p">22</div><div data-gnl="1 22p">23</div><div data-gnl="1 22p">24</div>
+</div>
+<div data-gnl="21 21p">
+  <div data-gnl="1 21p">1</div><div data-gnl="1 21p">2</div><div data-gnl="1 21p">3</div><div data-gnl="1 21p">4</div>
+  <div data-gnl="1 21p">5</div><div data-gnl="1 21p">6</div><div data-gnl="1 21p">7</div><div data-gnl="1 21p">8</div>
+  <div data-gnl="1 21p">9</div><div data-gnl="1 21p">10</div><div data-gnl="1 21p">11</div><div data-gnl="1 21p">12</div>
+  <div data-gnl="1 21p">13</div><div data-gnl="1 21p">14</div><div data-gnl="1 21p">15</div><div data-gnl="1 21p">16</div>
+  <div data-gnl="1 21p">17</div><div data-gnl="1 21p">18</div><div data-gnl="1 21p">19</div><div data-gnl="1 21p">20</div>
+  <div data-gnl="1 21p">21</div><div data-gnl="1 21p">22</div><div data-gnl="1 21p">23</div><div data-gnl="1 21p">24</div>
+</div>
+<div data-gnl="20 20p">
+  <div data-gnl="1 20p">1</div><div data-gnl="1 20p">2</div><div data-gnl="1 20p">3</div><div data-gnl="1 20p">4</div>
+  <div data-gnl="1 20p">5</div><div data-gnl="1 20p">6</div><div data-gnl="1 20p">7</div><div data-gnl="1 20p">8</div>
+  <div data-gnl="1 20p">9</div><div data-gnl="1 20p">10</div><div data-gnl="1 20p">11</div><div data-gnl="1 20p">12</div>
+  <div data-gnl="1 20p">13</div><div data-gnl="1 20p">14</div><div data-gnl="1 20p">15</div><div data-gnl="1 20p">16</div>
+  <div data-gnl="1 20p">17</div><div data-gnl="1 20p">18</div><div data-gnl="1 20p">19</div><div data-gnl="1 20p">20</div>
+  <div data-gnl="1 20p">21</div><div data-gnl="1 20p">22</div><div data-gnl="1 20p">23</div><div data-gnl="1 20p">24</div>
+</div>
+<div data-gnl="19 19p">
+  <div data-gnl="1 19p">1</div><div data-gnl="1 19p">2</div><div data-gnl="1 19p">3</div><div data-gnl="1 19p">4</div>
+  <div data-gnl="1 19p">5</div><div data-gnl="1 19p">6</div><div data-gnl="1 19p">7</div><div data-gnl="1 19p">8</div>
+  <div data-gnl="1 19p">9</div><div data-gnl="1 19p">10</div><div data-gnl="1 19p">11</div><div data-gnl="1 19p">12</div>
+  <div data-gnl="1 19p">13</div><div data-gnl="1 19p">14</div><div data-gnl="1 19p">15</div><div data-gnl="1 19p">16</div>
+  <div data-gnl="1 19p">17</div><div data-gnl="1 19p">18</div><div data-gnl="1 19p">19</div><div data-gnl="1 19p">20</div>
+  <div data-gnl="1 19p">21</div><div data-gnl="1 19p">22</div><div data-gnl="1 19p">23</div><div data-gnl="1 19p">24</div>
+</div>
+<div data-gnl="18 18p">
+  <div data-gnl="1 18p">1</div><div data-gnl="1 18p">2</div><div data-gnl="1 18p">3</div><div data-gnl="1 18p">4</div>
+  <div data-gnl="1 18p">5</div><div data-gnl="1 18p">6</div><div data-gnl="1 18p">7</div><div data-gnl="1 18p">8</div>
+  <div data-gnl="1 18p">9</div><div data-gnl="1 18p">10</div><div data-gnl="1 18p">11</div><div data-gnl="1 18p">12</div>
+  <div data-gnl="1 18p">13</div><div data-gnl="1 18p">14</div><div data-gnl="1 18p">15</div><div data-gnl="1 18p">16</div>
+  <div data-gnl="1 18p">17</div><div data-gnl="1 18p">18</div><div data-gnl="1 18p">19</div><div data-gnl="1 18p">20</div>
+  <div data-gnl="1 18p">21</div><div data-gnl="1 18p">22</div><div data-gnl="1 18p">23</div><div data-gnl="1 18p">24</div>
+</div>
+<div data-gnl="17 17p">
+  <div data-gnl="1 17p">1</div><div data-gnl="1 17p">2</div><div data-gnl="1 17p">3</div><div data-gnl="1 17p">4</div>
+  <div data-gnl="1 17p">5</div><div data-gnl="1 17p">6</div><div data-gnl="1 17p">7</div><div data-gnl="1 17p">8</div>
+  <div data-gnl="1 17p">9</div><div data-gnl="1 17p">10</div><div data-gnl="1 17p">11</div><div data-gnl="1 17p">12</div>
+  <div data-gnl="1 17p">13</div><div data-gnl="1 17p">14</div><div data-gnl="1 17p">15</div><div data-gnl="1 17p">16</div>
+  <div data-gnl="1 17p">17</div><div data-gnl="1 17p">18</div><div data-gnl="1 17p">19</div><div data-gnl="1 17p">20</div>
+  <div data-gnl="1 17p">21</div><div data-gnl="1 17p">22</div><div data-gnl="1 17p">23</div><div data-gnl="1 17p">24</div>
+</div>
+<div data-gnl="16 16p">
+  <div data-gnl="1 16p">1</div><div data-gnl="1 16p">2</div><div data-gnl="1 16p">3</div><div data-gnl="1 16p">4</div>
+  <div data-gnl="1 16p">5</div><div data-gnl="1 16p">6</div><div data-gnl="1 16p">7</div><div data-gnl="1 16p">8</div>
+  <div data-gnl="1 16p">9</div><div data-gnl="1 16p">10</div><div data-gnl="1 16p">11</div><div data-gnl="1 16p">12</div>
+  <div data-gnl="1 16p">13</div><div data-gnl="1 16p">14</div><div data-gnl="1 16p">15</div><div data-gnl="1 16p">16</div>
+  <div data-gnl="1 16p">17</div><div data-gnl="1 16p">18</div><div data-gnl="1 16p">19</div><div data-gnl="1 16p">20</div>
+  <div data-gnl="1 16p">21</div><div data-gnl="1 16p">22</div><div data-gnl="1 16p">23</div><div data-gnl="1 16p">24</div>
+</div>
+<div data-gnl="15 15p">
+  <div data-gnl="1 15p">1</div><div data-gnl="1 15p">2</div><div data-gnl="1 15p">3</div><div data-gnl="1 15p">4</div>
+  <div data-gnl="1 15p">5</div><div data-gnl="1 15p">6</div><div data-gnl="1 15p">7</div><div data-gnl="1 15p">8</div>
+  <div data-gnl="1 15p">9</div><div data-gnl="1 15p">10</div><div data-gnl="1 15p">11</div><div data-gnl="1 15p">12</div>
+  <div data-gnl="1 15p">13</div><div data-gnl="1 15p">14</div><div data-gnl="1 15p">15</div><div data-gnl="1 15p">16</div>
+  <div data-gnl="1 15p">17</div><div data-gnl="1 15p">18</div><div data-gnl="1 15p">19</div><div data-gnl="1 15p">20</div>
+  <div data-gnl="1 15p">21</div><div data-gnl="1 15p">22</div><div data-gnl="1 15p">23</div><div data-gnl="1 15p">24</div>
+</div>
+<div data-gnl="14 14p">
+  <div data-gnl="1 14p">1</div><div data-gnl="1 14p">2</div><div data-gnl="1 14p">3</div><div data-gnl="1 14p">4</div>
+  <div data-gnl="1 14p">5</div><div data-gnl="1 14p">6</div><div data-gnl="1 14p">7</div><div data-gnl="1 14p">8</div>
+  <div data-gnl="1 14p">9</div><div data-gnl="1 14p">10</div><div data-gnl="1 14p">11</div><div data-gnl="1 14p">12</div>
+  <div data-gnl="1 14p">13</div><div data-gnl="1 14p">14</div><div data-gnl="1 14p">15</div><div data-gnl="1 14p">16</div>
+  <div data-gnl="1 14p">17</div><div data-gnl="1 14p">18</div><div data-gnl="1 14p">19</div><div data-gnl="1 14p">20</div>
+  <div data-gnl="1 14p">21</div><div data-gnl="1 14p">22</div><div data-gnl="1 14p">23</div><div data-gnl="1 14p">24</div>
+</div>
+<div data-gnl="13 13p">
+  <div data-gnl="1 13p">1</div><div data-gnl="1 13p">2</div><div data-gnl="1 13p">3</div><div data-gnl="1 13p">4</div>
+  <div data-gnl="1 13p">5</div><div data-gnl="1 13p">6</div><div data-gnl="1 13p">7</div><div data-gnl="1 13p">8</div>
+  <div data-gnl="1 13p">9</div><div data-gnl="1 13p">10</div><div data-gnl="1 13p">11</div><div data-gnl="1 13p">12</div>
+  <div data-gnl="1 13p">13</div><div data-gnl="1 13p">14</div><div data-gnl="1 13p">15</div><div data-gnl="1 13p">16</div>
+  <div data-gnl="1 13p">17</div><div data-gnl="1 13p">18</div><div data-gnl="1 13p">19</div><div data-gnl="1 13p">20</div>
+  <div data-gnl="1 13p">21</div><div data-gnl="1 13p">22</div><div data-gnl="1 13p">23</div><div data-gnl="1 13p">24</div>
+</div>
+<div data-gnl="12 12p">
+  <div data-gnl="1 12p">1</div><div data-gnl="1 12p">2</div><div data-gnl="1 12p">3</div><div data-gnl="1 12p">4</div>
+  <div data-gnl="1 12p">5</div><div data-gnl="1 12p">6</div><div data-gnl="1 12p">7</div><div data-gnl="1 12p">8</div>
+  <div data-gnl="1 12p">9</div><div data-gnl="1 12p">10</div><div data-gnl="1 12p">11</div><div data-gnl="1 12p">12</div>
+  <div data-gnl="1 12p">13</div><div data-gnl="1 12p">14</div><div data-gnl="1 12p">15</div><div data-gnl="1 12p">16</div>
+  <div data-gnl="1 12p">17</div><div data-gnl="1 12p">18</div><div data-gnl="1 12p">19</div><div data-gnl="1 12p">20</div>
+  <div data-gnl="1 12p">21</div><div data-gnl="1 12p">22</div><div data-gnl="1 12p">23</div><div data-gnl="1 12p">24</div>
+</div>
+<div data-gnl="11 11p">
+  <div data-gnl="1 11p">1</div><div data-gnl="1 11p">2</div><div data-gnl="1 11p">3</div><div data-gnl="1 11p">4</div>
+  <div data-gnl="1 11p">5</div><div data-gnl="1 11p">6</div><div data-gnl="1 11p">7</div><div data-gnl="1 11p">8</div>
+  <div data-gnl="1 11p">9</div><div data-gnl="1 11p">10</div><div data-gnl="1 11p">11</div><div data-gnl="1 11p">12</div>
+  <div data-gnl="1 11p">13</div><div data-gnl="1 11p">14</div><div data-gnl="1 11p">15</div><div data-gnl="1 11p">16</div>
+  <div data-gnl="1 11p">17</div><div data-gnl="1 11p">18</div><div data-gnl="1 11p">19</div><div data-gnl="1 11p">20</div>
+  <div data-gnl="1 11p">21</div><div data-gnl="1 11p">22</div><div data-gnl="1 11p">23</div><div data-gnl="1 11p">24</div>
+</div>
+<div data-gnl="10 10p">
+  <div data-gnl="1 10p">1</div><div data-gnl="1 10p">2</div><div data-gnl="1 10p">3</div><div data-gnl="1 10p">4</div>
+  <div data-gnl="1 10p">5</div><div data-gnl="1 10p">6</div><div data-gnl="1 10p">7</div><div data-gnl="1 10p">8</div>
+  <div data-gnl="1 10p">9</div><div data-gnl="1 10p">10</div><div data-gnl="1 10p">11</div><div data-gnl="1 10p">12</div>
+  <div data-gnl="1 10p">13</div><div data-gnl="1 10p">14</div><div data-gnl="1 10p">15</div><div data-gnl="1 10p">16</div>
+  <div data-gnl="1 10p">17</div><div data-gnl="1 10p">18</div><div data-gnl="1 10p">19</div><div data-gnl="1 10p">20</div>
+  <div data-gnl="1 10p">21</div><div data-gnl="1 10p">22</div><div data-gnl="1 10p">23</div><div data-gnl="1 10p">24</div>
+</div>
+<div data-gnl="9 9p">
+  <div data-gnl="1 9p">1</div><div data-gnl="1 9p">2</div><div data-gnl="1 9p">3</div><div data-gnl="1 9p">4</div>
+  <div data-gnl="1 9p">5</div><div data-gnl="1 9p">6</div><div data-gnl="1 9p">7</div><div data-gnl="1 9p">8</div>
+  <div data-gnl="1 9p">9</div><div data-gnl="1 9p">10</div><div data-gnl="1 9p">11</div><div data-gnl="1 9p">12</div>
+  <div data-gnl="1 9p">13</div><div data-gnl="1 9p">14</div><div data-gnl="1 9p">15</div><div data-gnl="1 9p">16</div>
+  <div data-gnl="1 9p">17</div><div data-gnl="1 9p">18</div><div data-gnl="1 9p">19</div><div data-gnl="1 9p">20</div>
+  <div data-gnl="1 9p">21</div><div data-gnl="1 9p">22</div><div data-gnl="1 9p">23</div><div data-gnl="1 9p">24</div>
+</div>
+<div data-gnl="8 8p">
+  <div data-gnl="1 8p">1</div><div data-gnl="1 8p">2</div><div data-gnl="1 8p">3</div><div data-gnl="1 8p">4</div>
+  <div data-gnl="1 8p">5</div><div data-gnl="1 8p">6</div><div data-gnl="1 8p">7</div><div data-gnl="1 8p">8</div>
+  <div data-gnl="1 8p">9</div><div data-gnl="1 8p">10</div><div data-gnl="1 8p">11</div><div data-gnl="1 8p">12</div>
+  <div data-gnl="1 8p">13</div><div data-gnl="1 8p">14</div><div data-gnl="1 8p">15</div><div data-gnl="1 8p">16</div>
+  <div data-gnl="1 8p">17</div><div data-gnl="1 8p">18</div><div data-gnl="1 8p">19</div><div data-gnl="1 8p">20</div>
+  <div data-gnl="1 8p">21</div><div data-gnl="1 8p">22</div><div data-gnl="1 8p">23</div><div data-gnl="1 8p">24</div>
+</div>
+<div data-gnl="7 7p">
+  <div data-gnl="1 7p">1</div><div data-gnl="1 7p">2</div><div data-gnl="1 7p">3</div><div data-gnl="1 7p">4</div>
+  <div data-gnl="1 7p">5</div><div data-gnl="1 7p">6</div><div data-gnl="1 7p">7</div><div data-gnl="1 7p">8</div>
+  <div data-gnl="1 7p">9</div><div data-gnl="1 7p">10</div><div data-gnl="1 7p">11</div><div data-gnl="1 7p">12</div>
+  <div data-gnl="1 7p">13</div><div data-gnl="1 7p">14</div><div data-gnl="1 7p">15</div><div data-gnl="1 7p">16</div>
+  <div data-gnl="1 7p">17</div><div data-gnl="1 7p">18</div><div data-gnl="1 7p">19</div><div data-gnl="1 7p">20</div>
+  <div data-gnl="1 7p">21</div><div data-gnl="1 7p">22</div><div data-gnl="1 7p">23</div><div data-gnl="1 7p">24</div>
+</div>
+<div data-gnl="6 6p">
+  <div data-gnl="1 6p">1</div><div data-gnl="1 6p">2</div><div data-gnl="1 6p">3</div><div data-gnl="1 6p">4</div>
+  <div data-gnl="1 6p">5</div><div data-gnl="1 6p">6</div><div data-gnl="1 6p">7</div><div data-gnl="1 6p">8</div>
+  <div data-gnl="1 6p">9</div><div data-gnl="1 6p">10</div><div data-gnl="1 6p">11</div><div data-gnl="1 6p">12</div>
+  <div data-gnl="1 6p">13</div><div data-gnl="1 6p">14</div><div data-gnl="1 6p">15</div><div data-gnl="1 6p">16</div>
+  <div data-gnl="1 6p">17</div><div data-gnl="1 6p">18</div><div data-gnl="1 6p">19</div><div data-gnl="1 6p">20</div>
+  <div data-gnl="1 6p">21</div><div data-gnl="1 6p">22</div><div data-gnl="1 6p">23</div><div data-gnl="1 6p">24</div>
+</div>
+<div data-gnl="5 5p">
+  <div data-gnl="1 5p">1</div><div data-gnl="1 5p">2</div><div data-gnl="1 5p">3</div><div data-gnl="1 5p">4</div>
+  <div data-gnl="1 5p">5</div><div data-gnl="1 5p">6</div><div data-gnl="1 5p">7</div><div data-gnl="1 5p">8</div>
+  <div data-gnl="1 5p">9</div><div data-gnl="1 5p">10</div><div data-gnl="1 5p">11</div><div data-gnl="1 5p">12</div>
+  <div data-gnl="1 5p">13</div><div data-gnl="1 5p">14</div><div data-gnl="1 5p">15</div><div data-gnl="1 5p">16</div>
+  <div data-gnl="1 5p">17</div><div data-gnl="1 5p">18</div><div data-gnl="1 5p">19</div><div data-gnl="1 5p">20</div>
+  <div data-gnl="1 5p">21</div><div data-gnl="1 5p">22</div><div data-gnl="1 5p">23</div><div data-gnl="1 5p">24</div>
+</div>
+<div data-gnl="4 4p">
+  <div data-gnl="1 4p">1</div><div data-gnl="1 4p">2</div><div data-gnl="1 4p">3</div><div data-gnl="1 4p">4</div>
+  <div data-gnl="1 4p">5</div><div data-gnl="1 4p">6</div><div data-gnl="1 4p">7</div><div data-gnl="1 4p">8</div>
+  <div data-gnl="1 4p">9</div><div data-gnl="1 4p">10</div><div data-gnl="1 4p">11</div><div data-gnl="1 4p">12</div>
+  <div data-gnl="1 4p">13</div><div data-gnl="1 4p">14</div><div data-gnl="1 4p">15</div><div data-gnl="1 4p">16</div>
+  <div data-gnl="1 4p">17</div><div data-gnl="1 4p">18</div><div data-gnl="1 4p">19</div><div data-gnl="1 4p">20</div>
+  <div data-gnl="1 4p">21</div><div data-gnl="1 4p">22</div><div data-gnl="1 4p">23</div><div data-gnl="1 4p">24</div>
+</div>
+<div data-gnl="3 3p">
+  <div data-gnl="1 3p">1</div><div data-gnl="1 3p">2</div><div data-gnl="1 3p">3</div><div data-gnl="1 3p">4</div>
+  <div data-gnl="1 3p">5</div><div data-gnl="1 3p">6</div><div data-gnl="1 3p">7</div><div data-gnl="1 3p">8</div>
+  <div data-gnl="1 3p">9</div><div data-gnl="1 3p">10</div><div data-gnl="1 3p">11</div><div data-gnl="1 3p">12</div>
+  <div data-gnl="1 3p">13</div><div data-gnl="1 3p">14</div><div data-gnl="1 3p">15</div><div data-gnl="1 3p">16</div>
+  <div data-gnl="1 3p">17</div><div data-gnl="1 3p">18</div><div data-gnl="1 3p">19</div><div data-gnl="1 3p">20</div>
+  <div data-gnl="1 3p">21</div><div data-gnl="1 3p">22</div><div data-gnl="1 3p">23</div><div data-gnl="1 3p">24</div>
+</div>
+<div data-gnl="2 2p">
+  <div data-gnl="1 2p">1</div><div data-gnl="1 2p">2</div><div data-gnl="1 2p">3</div><div data-gnl="1 2p">4</div>
+  <div data-gnl="1 2p">5</div><div data-gnl="1 2p">6</div><div data-gnl="1 2p">7</div><div data-gnl="1 2p">8</div>
+  <div data-gnl="1 2p">9</div><div data-gnl="1 2p">10</div><div data-gnl="1 2p">11</div><div data-gnl="1 2p">12</div>
+  <div data-gnl="1 2p">13</div><div data-gnl="1 2p">14</div><div data-gnl="1 2p">15</div><div data-gnl="1 2p">16</div>
+  <div data-gnl="1 2p">17</div><div data-gnl="1 2p">18</div><div data-gnl="1 2p">19</div><div data-gnl="1 2p">20</div>
+  <div data-gnl="1 2p">21</div><div data-gnl="1 2p">22</div><div data-gnl="1 2p">23</div><div data-gnl="1 2p">24</div>
+</div>
+<div data-gnl="1 1p">
+  <div data-gnl="1 1p">1</div><div data-gnl="1 1p">2</div><div data-gnl="1 1p">3</div><div data-gnl="1 1p">4</div>
+  <div data-gnl="1 1p">5</div><div data-gnl="1 1p">6</div><div data-gnl="1 1p">7</div><div data-gnl="1 1p">8</div>
+  <div data-gnl="1 1p">9</div><div data-gnl="1 1p">10</div><div data-gnl="1 1p">11</div><div data-gnl="1 1p">12</div>
+  <div data-gnl="1 1p">13</div><div data-gnl="1 1p">14</div><div data-gnl="1 1p">15</div><div data-gnl="1 1p">16</div>
+  <div data-gnl="1 1p">17</div><div data-gnl="1 1p">18</div><div data-gnl="1 1p">19</div><div data-gnl="1 1p">20</div>
+  <div data-gnl="1 1p">21</div><div data-gnl="1 1p">22</div><div data-gnl="1 1p">23</div><div data-gnl="1 1p">24</div>
+</div>
+
+</div>

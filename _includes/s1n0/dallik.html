@@ -2,8 +2,9 @@
 {% assign dil = page.lang %}
 {% assign surum = '1.0' %}
 {% assign yol = '/' | append: surum | append: '/' | append: dil | append: '/' %}
+{% assign anayol = '/' | append: surum | append: '/' | append: dil %}
 
-{% if page.url == yol %}
+{% if page.url == anayol %}
   {% assign baslangic-ise-etkin = "etkin" %}
 {% endif %}
 {% if page.url contains veri.gunce.url %}
