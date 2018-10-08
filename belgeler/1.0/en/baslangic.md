@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: 1.0/en
+permalink: 1.0/en/
 lang: en
 title: Start
 description: 

@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: 1.0/tr
+permalink: 1.0/tr/
 lang: tr
 title: Başlangıç
 description: 
