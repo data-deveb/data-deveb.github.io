@@ -12,7 +12,7 @@
 
       <div class="damga" data-gnl="o geniş-aralıklı" data-ort="lt" data-ulu="8 _s _o">
 
-        <div>
+        <div data-gnl="1 % /2" data-ort="1 /1">
           <a href="/" class="logo2" data-gnl="0">
             deveb
           </a>
@@ -21,12 +21,31 @@
           <label for="menü-ana">•••</label>
           <label for="menü-ana-çapraz">///</label>
         </div>
-        <span class="birincil" data-imgelik="kapsül küçük" data-gnl="0 |-1" data-ort="1 /">
-          {{ veri.on-surum[dil] }} 1.0.11 
-        </span>
-        <span class="birincil" data-imgelik="kapsül küçük" data-gnl="0">
-          {{ veri.dili[dil] }}
-        </span>
+
+        <div data-düğme="öbek" data-gnl="0" data-ort="1 /">
+          <div data-gnl="1 /" tabindex="0" data-düğüm>
+            {{ veri.on-surum[dil] }} 1.0
+          </div>
+          <ul>
+            <li>
+              <a href="/0.1/">{{ veri.on-surum[dil] }} 0.1</a>
+            </li>
+            <li>
+              <a href="/1.0/{{page.lang}}/">{{ veri.on-surum[dil] }} 1.0</a>
+            </li>
+          </ul>
+          <div data-gnl="0" tabindex="0" data-düğüm>
+            {{ veri.dili[dil] }}
+          </div>
+          <ul>
+            <li>
+              <a href="/1.0/tr/">{{ veri.dili.tr }}</a>
+            </li>
+            <li>
+              <a href="/1.0/en/">{{ veri.dili.en }}</a>
+            </li>
+          </ul>
+        </div>
 
         
 
@@ -53,7 +72,7 @@
   .dolgulama-ls-30,
   [for~="menü-ana"],
   [for~="menü-ana-çapraz"]{
-    padding-left:60px; padding-right:60px;
+    padding-left:15px; padding-right:15px;
   }
   .damga{
     border-bottom:1px solid rgba(114, 137, 218, .2); margin-bottom: 15px; padding-bottom: 15px;
