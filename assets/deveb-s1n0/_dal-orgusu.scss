@@ -10,7 +10,7 @@ nav {
 
 }
 .imge a{
-  color:navy;
+  color:darkslateblue;
 }
 
 .imge[data-menü] li {
@@ -21,15 +21,13 @@ nav {
   margin-left: 5px;
 }
 .imge[data-menü] li.etkin > a{
-  background-color: lightsteelblue;
-  border-radius: 8px;
+  border-radius: 4px;
+  font-weight:bold;
 }
-.imge[data-menü] li.etkin > a:hover{
-  background-color: lightsteelblue;
-}
+
 .imge[data-menü] li > a:hover{
   background-color:#ededed;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .imge[data-menü] li > a,
