@@ -8164,7 +8164,7 @@ a + [data-kapaç] + label + label {
 }
 
 /* GÖRÜNÜŞ TANIMLA **/
-[data-düğme] > div {
+[data-düğme] > a {
   padding: 3px 5px;
   display: block;
   border: 1px solid #953095;
@@ -8175,16 +8175,16 @@ a + [data-kapaç] + label + label {
   cursor: pointer;
 }
 
-[data-düğme] > div:hover,
-[data-düğme] > div:focus {
+[data-düğme] > a:hover,
+[data-düğme] > a:focus {
   background-color: #1e164f;
 }
 
-[data-düğme~="öbek"] > div:first-child {
+[data-düğme~="öbek"] > a:first-child {
   border-radius: 4px 0 0 4px;
 }
 
-[data-düğme~="öbek"] > div:nth-last-child(2) {
+[data-düğme~="öbek"] > a:last-of-type {
   border-radius: 0 4px 4px 0;
 }
 
