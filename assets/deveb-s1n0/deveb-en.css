@@ -146,43 +146,6 @@ ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
   flex-wrap: wrap;
 }
 
-[data-gnl~="/"],
-[data-xs~="/"],
-[data-sm~="/"],
-[data-md~="/"],
-[data-lg~="/"],
-[data-xl~="/"],
-[data-hg~="/"] {
-  width: auto !important;
-  max-width: 100% !important;
-  flex: calc(var(--a) * 4 - var(--c));
-}
-
-[data-gnl~="%"],
-[data-xs~="%"],
-[data-sm~="%"],
-[data-md~="%"],
-[data-lg~="%"],
-[data-xl~="%"],
-[data-hg~="%"] {
-  width: auto !important;
-  max-width: 100% !important;
-  min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-  flex: calc(var(--a) * 4 - var(--c));
-}
-
-[data-gnl~="&"],
-[data-xs~="&"],
-[data-sm~="&"],
-[data-md~="&"],
-[data-lg~="&"],
-[data-xl~="&"],
-[data-hg~="&"] {
-  width: auto !important;
-  max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-  flex: calc(var(--a) * 4 - var(--c));
-}
-
 [data-gnl~="full"] {
   flex: 1 1 0 !important;
   overflow: auto;
@@ -855,6 +818,25 @@ body[data-gnl~="full"] > footer {
   flex-basis: auto;
   max-width: none;
   width: auto;
+}
+
+[data-gnl~="/"] {
+  width: auto !important;
+  max-width: 100% !important;
+  flex: calc(var(--a) * 4 - var(--c));
+}
+
+[data-gnl~="%"] {
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  flex: calc(var(--a) * 4 - var(--c));
+}
+
+[data-gnl~="&"] {
+  width: auto !important;
+  max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+  flex: calc(var(--a) * 4 - var(--c));
 }
 
 [data-gnl~="1th"] {
@@ -1910,6 +1892,25 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
     width: auto;
   }
 
+  [data-xs~="/"] {
+    width: auto !important;
+    max-width: 100% !important;
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-xs~="%"] {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-xs~="&"] {
+    width: auto !important;
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
   [data-xs~="1th"] {
     order: 1;
   }
@@ -2953,6 +2954,25 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
     flex-basis: auto;
     max-width: none;
     width: auto;
+  }
+
+  [data-sm~="/"] {
+    width: auto !important;
+    max-width: 100% !important;
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-sm~="%"] {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-sm~="&"] {
+    width: auto !important;
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
   }
 
   [data-sm~="1th"] {
@@ -4000,6 +4020,25 @@ S03 ort | Ekran ölçeği: 768px ≤ *
     width: auto;
   }
 
+  [data-md~="/"] {
+    width: auto !important;
+    max-width: 100% !important;
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-md~="%"] {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-md~="&"] {
+    width: auto !important;
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
   [data-md~="1th"] {
     order: 1;
   }
@@ -5043,6 +5082,25 @@ S04 byk | Ekran ölçeği: 992px ≤ *
     flex-basis: auto;
     max-width: none;
     width: auto;
+  }
+
+  [data-lg~="/"] {
+    width: auto !important;
+    max-width: 100% !important;
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-lg~="%"] {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-lg~="&"] {
+    width: auto !important;
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
   }
 
   [data-lg~="1th"] {
@@ -6090,6 +6148,25 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
     width: auto;
   }
 
+  [data-xl~="/"] {
+    width: auto !important;
+    max-width: 100% !important;
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-xl~="%"] {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-xl~="&"] {
+    width: auto !important;
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
   [data-xl~="1th"] {
     order: 1;
   }
@@ -7135,6 +7212,25 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
     width: auto;
   }
 
+  [data-hg~="/"] {
+    width: auto !important;
+    max-width: 100% !important;
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-hg~="%"] {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
+  [data-hg~="&"] {
+    width: auto !important;
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c));
+  }
+
   [data-hg~="1th"] {
     order: 1;
   }
@@ -7981,6 +8077,140 @@ a + [data-kapaç] + label + label {
   opacity: 0;
   visibility: hidden;
   transition: visibility 0.1s;
+}
+
+[data-dallık] {
+  display: flex;
+  padding: 0;
+}
+
+[data-dallık] ul {
+  padding: 0;
+}
+
+[data-dallık] li {
+  list-style-type: none;
+}
+
+[data-dallık] li > a {
+  display: block;
+}
+
+[data-dallık] li > a + ul {
+  position: absolute;
+  z-index: 1;
+  /* anında geçiş yapmak için */
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.1s;
+}
+
+[data-düğüm][tabindex]:focus + ul {
+  opacity: 1;
+  visibility: visible;
+  /* işaretçi olaylarının alt öğeleri etkilemesine izin vermemek için auto yaz */
+  pointer-events: auto;
+  display: block;
+}
+
+[data-düğüm][tabindex]:focus {
+  /* etikete tıklayarak kapaç geçişi yapmalı */
+  pointer-events: none;
+}
+
+[data-düğüm][tabindex] + ul:hover {
+  opacity: 1;
+  visibility: visible;
+  /* işaretçi olaylarının alt öğeleri etkilemesine izin verme */
+  pointer-events: auto;
+  display: block;
+}
+
+/*******************************************/
+[data-dallık] li > a {
+  padding: 10px 20px;
+  background: orange;
+}
+
+[data-dallık] li > a:hover {
+  background: red;
+}
+
+/*****************************/
+[data-düğme~="öbek"] {
+  display: inline-flex;
+  position: relative;
+  font-size: 13px;
+}
+
+[data-düğme~="öbek"] > div:first-child {
+  margin-right: -1px;
+}
+
+[data-düğüm][tabindex] + ul {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  /* anında geçiş yapmak için */
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.1s;
+  margin: 0;
+  padding: 0;
+}
+
+[data-düğüm][tabindex] + ul li {
+  list-style-type: none;
+}
+
+/* GÖRÜNÜŞ TANIMLA **/
+[data-düğme] > div {
+  padding: 3px 5px;
+  display: block;
+  border: 1px solid #953095;
+  background-color: #2c2171;
+  color: #ffffff;
+  border-color: #1e164f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+[data-düğme] > div:hover,
+[data-düğme] > div:focus {
+  background-color: #1e164f;
+}
+
+[data-düğme~="öbek"] > div:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+[data-düğme~="öbek"] > div:nth-last-child(2) {
+  border-radius: 0 4px 4px 0;
+}
+
+[data-düğme~="öbek"] > [data-düğüm][tabindex] + ul {
+  background: #fff;
+  border-radius: .2rem;
+  box-shadow: 0.01rem 0.1rem 0.3rem rgba(70, 80, 90, 0.4);
+  list-style: none;
+  margin: 0;
+  min-width: 100%;
+  padding: .4rem;
+  transform: translateY(0.2rem);
+  z-index: 300;
+  border: 1px solid #1e164f;
+  background-color: whitesmoke;
+  color: #1e164f;
+  text-decoration: none;
+  top: 100%;
+  min-width: 100%;
+}
+
+[data-düğme~="öbek"] > [data-düğüm][tabindex] + ul a {
+  padding: 5px 12px;
+  display: block;
+  color: #1e164f;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=deveb-en.css.map */

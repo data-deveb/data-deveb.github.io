@@ -34,41 +34,9 @@
     flex-wrap: wrap;
   }
 
-  [data-#{$gnl}~="/"],
-  [data-#{$ufk}~="/"],
-  [data-#{$kçk}~="/"],
-  [data-#{$ort}~="/"],
-  [data-#{$byk}~="/"],
-  [data-#{$kcm}~="/"],
-  [data-#{$ulu}~="/"]{
-    width: auto !important;
-    max-width: 100% !important;
-    flex: calc(var(--a) * 4 - var(--c)); // Esnek düzen sayıştırma ayarları
-  }
 
-  [data-#{$gnl}~="%"],
-  [data-#{$ufk}~="%"],
-  [data-#{$kçk}~="%"],
-  [data-#{$ort}~="%"],
-  [data-#{$byk}~="%"],
-  [data-#{$kcm}~="%"],
-  [data-#{$ulu}~="%"]{
-    width: auto !important;
-    max-width: 100% !important;
-    min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-    flex: calc(var(--a) * 4 - var(--c)); // Esnek düzen sayıştırma ayarları
-  }
-  [data-#{$gnl}~="&"],
-  [data-#{$ufk}~="&"],
-  [data-#{$kçk}~="&"],
-  [data-#{$ort}~="&"],
-  [data-#{$byk}~="&"],
-  [data-#{$kcm}~="&"],
-  [data-#{$ulu}~="&"]{
-    width: auto !important;
-    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
-    flex: calc(var(--a) * 4 - var(--c)); // Esnek düzen sayıştırma ayarları
-  }
+
+
 
 }
 
@@ -188,6 +156,24 @@
     flex-basis: auto;
     max-width: none;
     width: auto;
+  }
+
+  [data-#{$görüntülük}~="/"]{
+    width: auto !important;
+    max-width: 100% !important;
+    flex: calc(var(--a) * 4 - var(--c)); // Esnek düzen sayıştırma ayarları
+  }
+
+  [data-#{$görüntülük}~="%"]{
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c)); // Esnek düzen sayıştırma ayarları
+  }
+  [data-#{$görüntülük}~="&"]{
+    width: auto !important;
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)));
+    flex: calc(var(--a) * 4 - var(--c)); // Esnek düzen sayıştırma ayarları
   }
 
 }
