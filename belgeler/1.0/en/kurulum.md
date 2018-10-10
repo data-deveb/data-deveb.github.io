@@ -1,8 +1,8 @@
 ---
 layout: default
-permalink: 1.0/en/install
+permalink: 1.0/en/installation
 lang: en
-title: Install
+title: Installation
 description: 
 ---
 

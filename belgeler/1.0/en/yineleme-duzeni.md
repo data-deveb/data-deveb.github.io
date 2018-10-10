@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: 1.0/en/repeating-layout
+permalink: 1.0/en/grid-system/repeating-layout
 lang: en
 title: Repeating Layout
 description: 

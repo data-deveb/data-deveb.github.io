@@ -1,72 +1,123 @@
 {
-	"baslangic":{
-		"url":"",
-		"tr":"Başlangıç",
-		"en":"Start"
-	},
-	"gunce":{
-		"url":"gunce",
-		"tr":"Günce",
-		"en":"Blog"
-	},
-	"kurulum":{
-		"url":"kurulum",
-		"tr":"Kurulum",
-		"en":"Installiation"
-	},
-	"goruntuluk-orgusu":{
-		"url":"goruntuluk-orgusu",
-		"tr":"Görüntülük Örgüsü",
-		"en":"Screen System"
-	},
-	"kesitlik-orgusu":{
-		"url":"kesitlik-orgusu",
-		"tr":"Kesitlik Örgüsü",
-		"en":"Grid System",
-		"bolumleme-duzeni":{
-			"url":"kesitlik-orgusu/bolumleme-duzeni",
-			"tr":"Bölümleme Düzeni",
-			"en":"Partition Layout"
+	"tr":{
+		"baslangic":{
+			"url":"",
+			"ad":"Başlangıç"
 		},
-		"yineleme-duzeni":{
-			"url":"kesitlik-orgusu/yineleme-duzeni",
-			"tr":"Yineleme Düzeni",
-			"en":"Repeating Layout"
+		"gunce":{
+			"url":"gunce",
+			"ad":"Günce"
 		},
-		"esnetme-duzeni":{
-			"url":"kesitlik-orgusu/esnetme-duzeni",
-			"tr":"Esnetme Düzeni",
-			"en":"Flexing Layout"
+		"kurulum":{
+			"url":"kurulum",
+			"ad":"Kurulum"
 		},
-		"aralama-duzeni":{
-			"url":"kesitlik-orgusu/aralama-duzeni",
-			"tr":"Aralama Düzeni",
-			"en":"Spacing Layout"
+		"goruntuluk-orgusu":{
+			"url":"goruntuluk-orgusu",
+			"ad":"Görüntülük Örgüsü"
 		},
-		"bicimleme-duzeni":{
-			"url":"kesitlik-orgusu/bicimleme-duzeni",
-			"tr":"Biçimleme Düzeni",
-			"en":"Formating Layout"
+		"kesitlik-orgusu":{
+			"url":"kesitlik-orgusu",
+			"ad":"Kesitlik Örgüsü",
+
+			"bolumleme-duzeni":{
+				"url":"kesitlik-orgusu/bolumleme-duzeni",
+				"ad":"Bölümleme Düzeni"
+			},
+			"yineleme-duzeni":{
+				"url":"kesitlik-orgusu/yineleme-duzeni",
+				"ad":"Yineleme Düzeni"
+			},
+			"esnetme-duzeni":{
+				"url":"kesitlik-orgusu/esnetme-duzeni",
+				"ad":"Esnetme Düzeni"
+			},
+			"aralama-duzeni":{
+				"url":"kesitlik-orgusu/aralama-duzeni",
+				"ad":"Aralama Düzeni"
+			},
+			"bicimleme-duzeni":{
+				"url":"kesitlik-orgusu/bicimleme-duzeni",
+				"ad":"Biçimleme Düzeni"
+			},
+			"konumlama-duzeni":{
+				"url":"kesitlik-orgusu/konumlama-duzeni",
+				"ad":"Konumlama Düzeni"
+			},
+			"siralama-duzeni":{
+				"url":"kesitlik-orgusu/siralama-duzeni",
+				"ad":"Sıralama Düzeni"
+			},
+			"olcekler":{
+				"url":"kesitlik-orgusu/olcekler",
+				"ad":"Ölçekler"
+			}
+
 		},
-		"konumlama-duzeni":{
-			"url":"kesitlik-orgusu/konumlama-duzeni",
-			"tr":"Konumlama Düzeni",
-			"en":"Positioning Layout"
-		},
-		"siralama-duzeni":{
-			"url":"kesitlik-orgusu/siralama-duzeni",
-			"tr":"Sıralama Düzeni",
-			"en":"Ordering Layout"
-		},
-		"olcekler":{
-			"url":"kesitlik-orgusu/olcekler",
-			"tr":"Ölçekler",
-			"en":"Scales"
+		"dene":{
+			"url":"https://jsfiddle.net/deveb/1mwjkctx/",
+			"ad":"Sürümü Dene!"
 		}
 	},
-	"dene":{
-		"url":"https://jsfiddle.net/deveb/1mwjkctx/",
-		"tr":"Sürümü Dene",
-		"en":"Try It Version"
+	"en":{
+		"baslangic":{
+			"url":"",
+			"ad":"Start"
+		},
+		"gunce":{
+			"url":"gunce",
+			"ad":"Blog"
+		},
+		"kurulum":{
+			"url":"installation",
+			"ad":"Installation"
+		},
+		"goruntuluk-orgusu":{
+			"url":"screen-system",
+			"ad":"Screen System"
+		},
+		"kesitlik-orgusu":{
+			"url":"grid-system",
+			"ad":"Grid System",
+
+			"bolumleme-duzeni":{
+				"url":"grid-system/partitioning-layout",
+				"ad":"Partitioning Layout"
+			},
+			"yineleme-duzeni":{
+				"url":"grid-system/repeating-layout",
+				"ad":"Repeating Layout"
+			},
+			"esnetme-duzeni":{
+				"url":"grid-system/flexing-layout",
+				"ad":"Flexing Layout"
+			},
+			"aralama-duzeni":{
+				"url":"grid-system/spacing-layout",
+				"ad":"Spacing Layout"
+			},
+			"bicimleme-duzeni":{
+				"url":"grid-system/formating-layout",
+				"ad":"Formating Layout"
+			},
+			"konumlama-duzeni":{
+				"url":"grid-system/positioning-layout",
+				"ad":"Positioning Layout"
+			},
+			"siralama-duzeni":{
+				"url":"grid-system/ordering-layout",
+				"ad":"Ordering Layout"
+			},
+			"olcekler":{
+				"url":"grid-system/scales",
+				"ad":"Scales"
+			}
+
+		},
+		"dene":{
+			"url":"https://jsfiddle.net/deveb/1mwjkctx/",
+			"ad":"Try It Version!"
+		}
 	}
 }
+
