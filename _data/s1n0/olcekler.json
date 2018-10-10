@@ -1,6 +1,0 @@
----
-layout: default
----
-
-{% assign veri = site.data.s1n0.kurulum %}
-{% assign dil = page.lang %}
