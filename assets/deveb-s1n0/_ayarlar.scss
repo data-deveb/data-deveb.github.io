@@ -12,5 +12,16 @@ $ulu-görüntülük: 1900px;
 
 
 // KESİTLİK ÖRGÜSÜ AYARLARI ////////////////////////////////////////////////////////////////
+//// Bölümleme düzeni varsayılanı
 
-$p: 24; // bölümleme düzeni varsayılan ölçek ayarı
+$p: 24;
+
+//// Kap ölçekleri
+
+$ulu-kap: 1600px;
+$kocaman-kap: 1140px;
+$büyük-kap: 960px;
+$orta-kap: 760px;
+$küçük-kap: 566px;
+$ufak-kap: calc("100% - 20px");
+$minik-kap: calc("100% - 10px");
