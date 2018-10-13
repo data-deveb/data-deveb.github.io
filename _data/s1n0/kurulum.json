@@ -4,11 +4,11 @@
         "indir": "İNDİR",
         "indir1": {
             "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0-tr/deveb-s1n0.zip",
-            "dosya": "deveb-s1n0.zip"
+            "dosya": "Deveb 1.0"
             },
         "indir2": {
             "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0/deveb-s1n0n10.zip",
-            "dosya": "deveb-s1n0n10.zip"
+            "dosya": "Deveb 1.0.10"
             },
         "baslik1": "<span class=\"simget\">deveb</span> Türkçe Sürüm",
         "baslik2": "<span class=\"simget\">deveb</span> İngilizce Sürüm (anık değil)",
