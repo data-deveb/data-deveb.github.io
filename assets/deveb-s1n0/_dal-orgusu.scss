@@ -350,3 +350,6 @@ border-color: #1e164f;
   color: #1e164f;
   text-decoration: none;
 }
+[data-düğme~="öbek"]>[data-düğüm][tabindex]+ul a:hover{
+  font-weight:bold;
+}
