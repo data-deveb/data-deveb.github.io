@@ -1,52 +1,50 @@
-{% assign veri = site.data.s1n0.dallik %}
-{% assign dil = page.lang %}
-{% assign surum = '1.0' %}
-{% assign yol = '/' | append: surum | append: '/' | append: dil | append: '/' %}
-{% assign anayol = '/' | append: surum | append: '/' | append: dil | append: '/' %}
-
-{% if page.url == anayol %}
-  {% assign baslangic-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].gunce.url %}
-  {% assign gunce-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kurulum.url %}
-  {% assign kurulum-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].goruntuluk-orgusu.url %}
-  {% assign goruntuluk-orgusu-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.url %}
-  {% assign kesitlik-orgusu-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.bolumleme-duzeni.url %}
-  {% assign bolumleme-duzeni-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.yineleme-duzeni.url %}
-  {% assign yineleme-duzeni-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.esnetme-duzeni.url %}
-  {% assign esnetme-duzeni-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.aralama-duzeni.url %}
-  {% assign aralama-duzeni-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.bicimleme-duzeni.url %}
-  {% assign bicimleme-duzeni-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.konumlama-duzeni.url %}
-  {% assign konumlama-duzeni-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.siralama-duzeni.url %}
-  {% assign siralama-duzeni-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].kesitlik-orgusu.olcekler.url %}
-  {% assign olcekler-ise-etkin = "etkin" %}
-{% endif %}
-{% if page.url contains veri.[page.lang].dene.url %}
-  {% assign dene-ise-etkin = "etkin" %}
-{% endif %}
-
+{%- assign veri = site.data.s1n0.dallik -%}
+{%- assign dil = page.lang -%}
+{%- assign surum = '1.0' -%}
+{%- assign yol = '/' | append: surum | append: '/' | append: dil | append: '/' -%}
+{%- assign anayol = '/' | append: surum | append: '/' | append: dil | append: '/' -%}
+{%- if page.url == anayol -%}
+  {%- assign baslangic-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].gunce.url -%}
+  {%- assign gunce-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kurulum.url -%}
+  {%- assign kurulum-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].goruntuluk-orgusu.url -%}
+  {% assign goruntuluk-orgusu-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.url -%}
+  {%- assign kesitlik-orgusu-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.bolumleme-duzeni.url -%}
+  {%- assign bolumleme-duzeni-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.yineleme-duzeni.url -%}
+  {%- assign yineleme-duzeni-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.esnetme-duzeni.url -%}
+  {%- assign esnetme-duzeni-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.aralama-duzeni.url -%}
+  {%- assign aralama-duzeni-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.bicimleme-duzeni.url -%}
+  {%- assign bicimleme-duzeni-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.konumlama-duzeni.url -%}
+  {%- assign konumlama-duzeni-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.siralama-duzeni.url -%}
+  {%- assign siralama-duzeni-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].kesitlik-orgusu.olcekler.url -%}
+  {%- assign olcekler-ise-etkin = "etkin" -%}
+{%- endif -%}
+{%- if page.url contains veri.[page.lang].dene.url -%}
+  {%- assign dene-ise-etkin = "etkin" -%}
+{%- endif -%}
 <nav>
   <input  id="menü-ana" 
           type="radio" 

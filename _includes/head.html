@@ -1,26 +1,26 @@
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!---->
-  {%- seo -%}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!---->
-  {% if page.lang == 'en' %}
-    <link rel="stylesheet" href="{{ "/assets/deveb-s1n0/deveb-en.css" | relative_url }}">
-  {% endif %}
-  <link rel="stylesheet" href="{{ "/assets/deveb-s1n0/deveb.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/imge.css" | relative_url }}">
+{%- seo -%}
+<!---->
+{% if page.lang == 'en' %}
+  <link rel="stylesheet" href="{{ "/assets/deveb-s1n0/deveb-en.css" | relative_url }}">
+{% endif %}
+<link rel="stylesheet" href="{{ "/assets/deveb-s1n0/deveb.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/imge.css" | relative_url }}">
 
-  <!-- Eklenti: Font Awesome -->
-  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-  <!-- Eklenti: highlight -->
-  <link rel="stylesheet" href="/assets/plugins/highlight.css">
+<!-- Eklenti: Font Awesome -->
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<!-- Eklenti: highlight -->
+<link rel="stylesheet" href="/assets/plugins/highlight.css">
 
-  <!---->
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
+<!---->
+{%- feed_meta -%}
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+{%- endif -%}
 <!---->
 </head>

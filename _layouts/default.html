@@ -1,93 +1,82 @@
-{% assign veri = site.data.s1n0.deveb %}{% assign dil = page.lang %}
+{%- assign veri = site.data.s1n0.deveb -%}
+{%- assign dil = page.lang -%}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "tr" }}">
+<html lang="{{ page.lang | default: site.lang | default: " tr " }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
 <body data-gnl="görüntülük-kaplamı">
 
-  <div data-gnl="kaplam oluk-çevre">
+<div data-gnl="kaplam oluk-çevre">
 
-    <div id="sol-alan" data-gnl="t" data-ort="4 /22 kaplam oluk-çevre">
+  <div id="sol-alan" data-gnl="t" data-ort="4 /22 kaplam oluk-çevre">
 
-      <div class="damga" data-gnl="o geniş-aralıklı" data-ort="lt" data-ulu="8 _s _o">
+    <div class="damga" data-gnl="o" data-ort="lt" data-ulu="8 _s">
 
-        <div data-gnl="1 % /2" data-ort="1 /1">
-          <a href="/" class="logo2" data-gnl="0">
-            deveb
-          </a>
-
-          <input id="menü-ana-çapraz" checked type="radio" name="ana-menü" data-kapaç="sağda çaprazlama">
-          <label for="menü-ana">•••</label>
-          <label for="menü-ana-çapraz">///</label>
-        </div>
-
-        <div data-düğme="öbek" data-gnl="0" data-ort="1 /">
-          <a data-gnl="1 /" tabindex="0" data-düğüm>
-            {{ veri.on-surum[dil] }} 1.0
-          </a>
-          <ul>
-            <li>
-              <a href="/0.1/">{{ veri.on-surum[dil] }} 0.1</a>
-            </li>
-            <li>
-              <a href="/1.0/{{page.lang}}/">{{ veri.on-surum[dil] }} 1.0</a>
-            </li>
-          </ul>
-          <a data-gnl="0" tabindex="0" data-düğüm>
-            {{ veri.dili[dil] }}
-          </a>
-          <ul>
-            <li>
-              <a href="/1.0/tr/">{{ veri.dili.tr }}</a>
-            </li>
-            <li>
-              <a href="/1.0/en/">{{ veri.dili.en }}</a>
-            </li>
-          </ul>
-        </div>
-
-        
-
+      <div data-gnl="6 %" data-ort="12">
+        <a href="/" class="logo2" data-gnl="0">deveb</a>
+        <input id="menü-ana-çapraz" checked type="radio" name="ana-menü" data-kapaç="sağda çaprazlama">
+        <label for="menü-ana">        •••  </label>
+        <label for="menü-ana-çapraz"> ///  </label>
       </div>
-      <div data-gnl data-dev="8 _ts">
-        {% include s1n0/dallik.html %}
+
+      <div data-düğme="öbek" data-gnl="0" data-ort="1 /">
+        <a data-düğüm tabindex="0" data-gnl="1 /">{{ veri.on-surum[dil] }} 1.0</a>
+        <ul>
+          <li>
+            <a href="/0.1/">{{ veri.on-surum[dil] }} 0.1</a>
+          </li>
+          <li>
+            <a href="/1.0/{{page.lang}}/">{{ veri.on-surum[dil] }} 1.0</a>
+          </li>
+        </ul>
+        <a data-düğüm tabindex="0" data-gnl="0">{{ veri.dili[dil] }}</a>
+        <ul>
+          <li>
+            <a href="/1.0/tr/">{{ veri.dili.tr }}</a>
+          </li>
+          <li>
+            <a href="/1.0/en/">{{ veri.dili.en }}</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <main id="içerik" data-gnl data-ort="1 / kaplam oluk-çevre">
-      <div data-gnl="lt" data-ort="1-| 13 /16" data-byk="12">
-        {% if page.title %}
-          <h1 class="sayfa">{{ page.title }}</h1>
-        {% endif %}
-        {{ content }}
-      </div>
-    </main>
+    <div data-gnl data-ulu="8 _ts">
+      {%- include s1n0/dallik.html -%}
+    </div>
   </div>
+  <main id="içerik" data-gnl data-ort="1 / kaplam oluk-çevre">
+    <div data-gnl="lt" data-ort="1-| 13 /16" data-byk="12 /16">
+{% if page.title %}
+<h1 class="sayfa">{{ page.title }}</h1>
+{% endif %}
+{{ content }}
+    </div>
+  </main>
+</div>
 
-  <footer>
-  {% include s1n0/foot.html %}
-  </footer>
+<footer>
+    {%- include s1n0/foot.html -%}
+</footer>
 
-  <style type="text/css">
+<style type="text/css">
   .dolgulama-ls-30,
   [for~="menü-ana"],
-  [for~="menü-ana-çapraz"]{
-    padding-left:15px; padding-right:15px;
-  }
-  .damga{
-    border-bottom:1px solid rgba(114, 137, 218, .2); margin-bottom: 15px; padding-bottom: 15px;
-  }
-  .logo2{
-    padding:15px 15px 15px 0;
+  [for~="menü-ana-çapraz"] {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  </style>
-</body>
+  .damga {
+    border-bottom: 1px solid rgba(114, 137, 218, .2);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .logo2 {
+    padding: 15px 15px 15px 0;
+  }
+
+</style>
+  </body>
 </html>
-
-
-
-
-
-
-

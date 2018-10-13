@@ -12,22 +12,22 @@ description:
 <h2>Bütün Görüntülük</h2>
 <p>
   Tasarımlarınızı bütün görüntülük düzeninde yapmak istiyorsanız <span class="simget">deveb</span>
-  tarafından hazırlanan "bütünce" değiştirgesini kullanacaksınız demektir. HTML body etiketine
-  istediğiniz ekran aralığını belirterek kullanabilirsiniz.
+  tarafından hazırlanan "görüntülük-kaplamı" değiştirgesini kullanacaksınız demektir. HTML body etiketine
+  istediğiniz görüntülüğü belirterek kullanabilirsiniz.
 </p>
 
 <div class="örnek">
   <h3>Örnek</h3>
   <a href="#">Bu örneğin canlı durumunu görmek için tıklayın.</a> <br><br>
   {% highlight html %}
-  <body data-gnl="tamekran">
-    Bu alanda bulunan her şey tam ekran düzeni içerisinde kalır.
+  <body data-gnl="görüntülük-kaplamı">
+    Bu alanda bulunan her şey tam görüntülük düzeni içerisinde kalır.
   </body>
   {% endhighlight %}
 </div>
 <h2>Kap</h2>
 <p>
-  Tasarımlarınızı yaparken ekranlara göre sabit genişlikler kullanın. Bunun için "kap" değiştirgesini kullanmanız yeterlidir.
+  Tasarımlarınızı yaparken görüntülüklere göre sabit genişlikler kullanın. Bunun için "kap" değiştirgesini kullanmanız yeterlidir.
 </p>
 <div class="örnek">
   <h3>Örnek</h3>
@@ -59,7 +59,7 @@ description:
   {% endhighlight %}
 </div>
 
-<h2>Sığ</h2>
+<h2>Kaplam</h2>
 <p>
   Enine boyuna bir alanı bulunduğu yere sığdırmak istediğiniz tasarımlarınız olabilir. O zaman "sığ" değiştirgesini kullanmanız yeterli olur. Bazı durumlarda "sütun" değiştirgesiyle birlikte kullanmanız gerebilir. Daha iyi anlamak için örnekleri inceleyiniz.
 </p>
@@ -68,9 +68,9 @@ description:
   <h3>Örnek</h3>
   <a href="#">Bu örneğin canlı durumunu görmek için tıklayın.</a> <br><br>
   {% highlight html %}
-  <body data-gnl="tamekran">
-    <div data-gnl="sığ">
-      Bu alan tam ekrana göre sığdırılmıştır.
+  <body data-gnl="görüntülük-kaplamı">
+    <div data-gnl="kaplam">
+      Bu alan görüntülüğe göre tam kaplama yapılmıştır.
     </div>
   </body>
   {% endhighlight %}
