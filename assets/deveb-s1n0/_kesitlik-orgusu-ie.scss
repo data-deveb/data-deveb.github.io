@@ -1,305 +1,305 @@
 
 @mixin parça-düzeni($görüntülük){
   [data-#{$görüntülük}]{width: 100%;max-width: 100%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="24p"] {width: 4.1666666667%;max-width: 4.1666666667%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="23p"] {width: 4.347826087%;max-width: 4.347826087%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="22p"] {width: 4.5454545455%;max-width: 4.5454545455%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="21p"] {width: 4.7619047619%;max-width: 4.7619047619%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="19p"] {width: 5.2631578947%;max-width: 5.2631578947%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="20p"] {width: 5%;max-width: 5%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="18p"] {width: 5.5555555556%;max-width: 5.5555555556%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="17p"] {width: 5.8823529412%;max-width: 5.8823529412%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="16p"] {width: 6.25%;max-width: 6.25%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="15p"] {width: 6.6666666667%;max-width: 6.6666666667%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="14p"] {width: 7.1428571429%;max-width: 7.1428571429%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="13p"] {width: 7.6923076923%;max-width: 7.6923076923%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="24p"] {width: 8.3333333333%;max-width: 8.3333333333%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="23p"] {width: 8.6956521739%;max-width: 8.6956521739%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="22p"] {width: 9.0909090909%;max-width: 9.0909090909%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="21p"] {width: 9.5238095238%;max-width: 9.5238095238%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="20p"] {width: 10%;max-width: 10%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="19p"] {width: 10.5263157895%;max-width: 10.5263157895%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="9p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="18p"] {width: 11.1111111111%;max-width: 11.1111111111%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="17p"] {width: 11.7647058824%;max-width: 11.7647058824%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="8p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="16p"],
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="24p"] {width: 12.5%;max-width: 12.5%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="15p"] {width: 13.3333333333%;max-width: 13.3333333333%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="23p"] {width: 13.0434782609%;max-width: 13.0434782609%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="22p"] {width: 13.6363636364%;max-width: 13.6363636364%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="7p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="14p"],
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="21p"] {width: 14.2857142857%;max-width: 14.2857142857%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="20p"] {width: 15%;max-width: 15%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="13p"] {width: 15.3846153846%;max-width: 15.3846153846%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="19p"] {width: 15.7894736842%;max-width: 15.7894736842%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="6p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="18p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="24p"] {width: 16.6666666667%;max-width: 16.6666666667%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="23p"] {width: 17.3913043478%;max-width: 17.3913043478%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="17p"] {width: 17.6470588235%;max-width: 17.6470588235%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="11p"]
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="22p"] {width: 18.1818181818%;max-width: 18.1818181818%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="16p"] {width: 18.75%;max-width: 18.75%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="21p"] {width: 19.0476190476%;max-width: 19.0476190476%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="5p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="15p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="20p"] {width: 20%;max-width: 20%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="24p"] {width: 20.8333333333%;max-width: 20.8333333333%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="19p"] {width: 21.0526315789%;max-width: 21.0526315789%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="14p"] {width: 21.4285714286%;max-width: 21.4285714286%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="23p"] {width: 21.7391304348%;max-width: 21.7391304348%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="18p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="9p"] {width: 22.2222222222%;max-width: 22.2222222222%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="22p"] {width: 22.7272727273%;max-width: 22.7272727273%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="13p"] {width: 23.0769230769%;max-width: 23.0769230769%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="17p"] {width: 23.5294117647%;max-width: 23.5294117647%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="21p"] {width: 23.8095238095%;max-width: 23.8095238095%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="4p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="8p"],
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="16p"],
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="20p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="24p"] {width: 25%;max-width: 25%;}
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="23p"] {width: 26.0869565217%;max-width: 26.0869565217%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="19p"] {width: 26.3157894737%;max-width: 26.3157894737%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="15p"] {width: 26.6666666667%;max-width: 26.6666666667%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="22p"] {width: 27.2727272727%;max-width: 27.2727272727%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="18p"] {width: 27.7777777778%;max-width: 27.7777777778%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="7p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="14p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="21p"] {width: 28.5714285714%;max-width: 28.5714285714%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="24p"] {width: 29.1666666667%;max-width: 29.1666666667%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="17p"] {width: 29.4117647059%;max-width: 29.4117647059%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="20p"] {width: 30%;max-width: 30%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="23p"] {width: 30.4347826087%;max-width: 30.4347826087%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="13p"] {width: 30.7692307692%;max-width: 30.7692307692%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="16p"] {width: 31.25%;max-width: 31.25%;}
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="19p"] {width: 31.5789473684%;max-width: 31.5789473684%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="22p"] {width: 31.8181818182%;max-width: 31.8181818182%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="3p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="6p"],
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="9p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="15p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="18p"],
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="21p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="24p"] {width: 33.3333333333%;max-width: 33.3333333333%;}
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="23p"] {width: 34.7826086957%;max-width: 34.7826086957%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="20p"] {width: 35%;max-width: 35%;}
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="17p"] {width: 35.2941176471%;max-width: 35.2941176471%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="14p"] {width: 35.7142857143%;max-width: 35.7142857143%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="22p"] {width: 36.3636363636%;max-width: 36.3636363636%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="19p"] {width: 36.8421052632%;max-width: 36.8421052632%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="8p"]
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="16p"]
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="24p"] {width: 37.5%;max-width: 37.5%;}
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="21p"] {width: 38.0952380952%;max-width: 38.0952380952%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="13p"] {width: 38.4615384615%;max-width: 38.4615384615%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="18p"] {width: 38.8888888889%;max-width: 38.8888888889%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="23p"] {width: 39.1304347826%;max-width: 39.1304347826%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="5p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="15p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="20p"] {width: 40%;max-width: 40%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="22p"] {width: 40.9090909091%;max-width: 40.9090909091%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="17p"] {width: 41.1764705882%;max-width: 41.1764705882%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="24p"] {width: 41.6666666667%;max-width: 41.6666666667%;}
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="19p"] {width: 42.1052631579%;max-width: 42.1052631579%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="7p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="14p"],
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="21p"] {width: 42.8571428571%;max-width: 42.8571428571%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="16p"] {width: 43.75%;max-width: 43.75%;}
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="23p"] {width: 43.4782608696%;max-width: 43.4782608696%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="9p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="18p"] {width: 44.4444444444%;max-width: 44.4444444444%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="20p"] {width: 45%;max-width: 45%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="22p"] {width: 45.4545454545%;max-width: 45.4545454545%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="24p"] {width: 45.8333333333%;max-width: 45.8333333333%;}
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="13p"] {width: 46.1538461538%;max-width: 46.1538461538%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="15p"] {width: 46.6666666667%;max-width: 46.6666666667%;}
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="17p"] {width: 47.0588235294%;max-width: 47.0588235294%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="19p"] {width: 47.3684210526%;max-width: 47.3684210526%;}
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="21p"] {width: 47.619047619%;max-width: 47.619047619%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="23p"] {width: 47.8260869565%;max-width: 47.8260869565%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="2p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="4p"],
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="6p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="8p"],
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="14p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="16p"],
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="18p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="20p"],
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="22p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="24p"] {width: 50%;max-width: 50%;}
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="23p"] {width: 52.1739130435%;max-width: 52.1739130435%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="21p"] {width: 52.380952381%;max-width: 52.380952381%;}
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="19p"] {width: 52.6315789474%;max-width: 52.6315789474%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="17p"] {width: 52.9411764706%;max-width: 52.9411764706%;}
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="15p"] {width: 53.3333333333%;max-width: 53.3333333333%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="13p"] {width: 53.8461538462%;max-width: 53.8461538462%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="24p"] {width: 54.1666666667%;max-width: 54.1666666667%;}
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="22p"] {width: 54.5454545455%;max-width: 54.5454545455%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="20p"] {width: 55%;max-width: 55%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="9p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="18p"] {width: 55.5555555556%;max-width: 55.5555555556%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="16p"] {width: 56.25%;max-width: 56.25%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="23p"] {width: 56.5217391304%;max-width: 56.5217391304%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="19p"] {width: 57.8947368421%;max-width: 57.8947368421%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="24p"] {width: 58.3333333333%;max-width: 58.3333333333%;}
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="17p"] {width: 58.8235294118%;max-width: 58.8235294118%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="22p"] {width: 59.0909090909%;max-width: 59.0909090909%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="5p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="15p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="20p"] {width: 60%;max-width: 60%;}
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="23p"] {width: 60.8695652174%;max-width: 60.8695652174%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="18p"] {width: 61.1111111111%;max-width: 61.1111111111%;}
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="13p"] {width: 61.5384615385%;max-width: 61.5384615385%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="21p"] {width: 61.9047619048%;max-width: 61.9047619048%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="8p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="16p"],
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="24p"] {width: 62.5%;max-width: 62.5%;}
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="19p"] {width: 63.1578947368%;max-width: 63.1578947368%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="22p"] {width: 63.6363636364%;max-width: 63.6363636364%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="14p"] {width: 64.2857142857%;max-width: 64.2857142857%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="17p"] {width: 64.7058823529%;max-width: 64.7058823529%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="20p"] {width: 65%;max-width: 65%;}
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="23p"] {width: 65.2173913043%;max-width: 65.2173913043%;}
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="3p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="6p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="9p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="15p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="18p"],
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="21p"],
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="24p"] {width: 66.6666666667%;max-width: 66.6666666667%;}
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="22p"] {width: 68.1818181818%;max-width: 68.1818181818%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="19p"] {width: 68.4210526316%;max-width: 68.4210526316%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="16p"] {width: 68.75%;max-width: 68.75%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="13p"] {width: 69.2307692308%;max-width: 69.2307692308%;}
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="23p"] {width: 69.5652173913%;max-width: 69.5652173913%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="10p"]
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="20p"] {width: 70%;max-width: 70%;}
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="17p"] {width: 70.5882352941%;max-width: 70.5882352941%;}
-  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="24p"] {width: 70.8333333333%;max-width: 70.8333333333%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="7p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="14p"],
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="21p"] {width: 71.4285714286%;max-width: 71.4285714286%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="18p"] {width: 72.2222222222%;max-width: 72.2222222222%;}
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="22p"] {width: 72.7272727273%;max-width: 72.7272727273%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="15p"] {width: 73.3333333333%;max-width: 73.3333333333%;}
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="19p"] {width: 73.6842105263%;max-width: 73.6842105263%;}
-  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="23p"] {width: 73.9130434783%;max-width: 73.9130434783%;}
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="4p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="8p"],
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="16p"],
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="20p"],
-  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="24p"] {width: 75%;max-width: 75%;}
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="13p"] {width: 92.3076923077%;max-width: 92.3076923077%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="7p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="14p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="21p"] {width: 57.1428571429%;max-width: 57.1428571429%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="14p"] {width: 92.8571428571%;max-width: 92.8571428571%;}
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="21p"] {width: 76.1904761905%;max-width: 76.1904761905%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="17p"] {width: 76.4705882353%;max-width: 76.4705882353%;}
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="13p"] {width: 76.9230769231%;max-width: 76.9230769231%;}
-  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="22p"] {width: 77.2727272727%;max-width: 77.2727272727%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="9p"],
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="18p"] {width: 77.7777777778%;max-width: 77.7777777778%;}
-  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="23p"] {width: 78.2608695652%;max-width: 78.2608695652%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="14p"] {width: 78.5714285714%;max-width: 78.5714285714%;}
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="19p"] {width: 78.9473684211%;max-width: 78.9473684211%;}
-  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="24p"] {width: 79.1666666667%;max-width: 79.1666666667%;}
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="5p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="15p"],
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="20p"] {width: 80%;max-width: 80%;}
-  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="21p"] {width: 80.9523809524%;max-width: 80.9523809524%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="16p"] {width: 81.25%;max-width: 81.25%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="22p"] {width: 81.8181818182%;max-width: 81.8181818182%;}
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="17p"] {width: 82.3529411765%;max-width: 82.3529411765%;}
-  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="23p"] {width: 82.6086956522%;max-width: 82.6086956522%;}
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="6p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="18p"],
-  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="24p"] {width: 83.3333333333%;max-width: 83.3333333333%;}
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="19p"] {width: 84.2105263158%;max-width: 84.2105263158%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="13p"] {width: 84.6153846154%;max-width: 84.6153846154%;}
-  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="20p"] {width: 85%;max-width: 85%;}
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="7p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="14p"],
-  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="21p"] {width: 85.7142857143%;max-width: 85.7142857143%;}
-  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="22p"] {width: 86.3636363636%;max-width: 86.3636363636%;}
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="15p"] {width: 86.6666666667%;max-width: 86.6666666667%;}
-  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="23p"] {width: 86.9565217391%;max-width: 86.9565217391%;}
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="8p"],
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="16p"],
-  [data-#{$görüntülük}~="21"][data-#{$görüntülük}~="24p"] {width: 87.5%;max-width: 87.5%;}
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="17p"] {width: 88.2352941176%;max-width: 88.2352941176%;}
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="9p"],
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="18p"] {width: 88.8888888889%;max-width: 88.8888888889%;}
-  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="19p"] {width: 89.4736842105%;max-width: 89.4736842105%;}
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="20p"] {width: 90%;max-width: 90%;}
-  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="21p"] {width: 90.4761904762%;max-width: 90.4761904762%;}
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="22p"] {width: 90.9090909091%;max-width: 90.9090909091%;}
-  [data-#{$görüntülük}~="21"][data-#{$görüntülük}~="23p"] {width: 91.3043478261%;max-width: 91.3043478261%;}
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="22"][data-#{$görüntülük}~="24p"] {width: 91.6666666667%;max-width: 91.6666666667%;}
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="15p"] {width: 93.3333333333%;max-width: 93.3333333333%;}
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="16p"] {width: 93.75%;max-width: 93.75%;}
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="17p"] {width: 94.1176470588%;max-width: 94.1176470588%;}
-  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="18p"] {width: 94.4444444444%;max-width: 94.4444444444%;}
-  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="19p"] {width: 94.7368421053%;max-width: 94.7368421053%;}
-  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="20p"] {width: 95%;max-width: 95%;}
-  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="21p"] {width: 95.2380952381%;max-width: 95.2380952381%;}
-  [data-#{$görüntülük}~="21"][data-#{$görüntülük}~="22p"] {width: 95.4545454545%;max-width: 95.4545454545%;}
-  [data-#{$görüntülük}~="22"][data-#{$görüntülük}~="23p"] {width: 95.652173913%;max-width: 95.652173913%;}
-  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="1p"],
-  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="2p"],
-  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="3p"],
-  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="4p"],
-  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="5p"],
-  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="6p"],
-  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="7p"],
-  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="8p"],
-  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="9p"],
-  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="10p"],
-  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="11p"],
-  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="12p"],
-  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="13p"],
-  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="14p"],
-  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="15p"],
-  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="16p"],
-  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="17p"],
-  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="18p"],
-  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="19p"],
-  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="20p"],
-  [data-#{$görüntülük}~="21"][data-#{$görüntülük}~="21p"],
-  [data-#{$görüntülük}~="22"][data-#{$görüntülük}~="22p"],
-  [data-#{$görüntülük}~="23"][data-#{$görüntülük}~="23p"],
-  [data-#{$görüntülük}~="24"][data-#{$görüntülük}~="24p"] {width: 100%;max-width: 100%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/24"] {width: 4.1666666667%;max-width: 4.1666666667%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/23"] {width: 4.347826087%;max-width: 4.347826087%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/22"] {width: 4.5454545455%;max-width: 4.5454545455%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/21"] {width: 4.7619047619%;max-width: 4.7619047619%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/19"] {width: 5.2631578947%;max-width: 5.2631578947%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/20"] {width: 5%;max-width: 5%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/18"] {width: 5.5555555556%;max-width: 5.5555555556%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/17"] {width: 5.8823529412%;max-width: 5.8823529412%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/16"] {width: 6.25%;max-width: 6.25%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/15"] {width: 6.6666666667%;max-width: 6.6666666667%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/14"] {width: 7.1428571429%;max-width: 7.1428571429%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/13"] {width: 7.6923076923%;max-width: 7.6923076923%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/24"] {width: 8.3333333333%;max-width: 8.3333333333%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/23"] {width: 8.6956521739%;max-width: 8.6956521739%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/22"] {width: 9.0909090909%;max-width: 9.0909090909%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/21"] {width: 9.5238095238%;max-width: 9.5238095238%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/20"] {width: 10%;max-width: 10%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/19"] {width: 10.5263157895%;max-width: 10.5263157895%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/9"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/18"] {width: 11.1111111111%;max-width: 11.1111111111%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/17"] {width: 11.7647058824%;max-width: 11.7647058824%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/8"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/16"],
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/24"] {width: 12.5%;max-width: 12.5%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/15"] {width: 13.3333333333%;max-width: 13.3333333333%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/23"] {width: 13.0434782609%;max-width: 13.0434782609%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/22"] {width: 13.6363636364%;max-width: 13.6363636364%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/7"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/14"],
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/21"] {width: 14.2857142857%;max-width: 14.2857142857%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/20"] {width: 15%;max-width: 15%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/13"] {width: 15.3846153846%;max-width: 15.3846153846%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/19"] {width: 15.7894736842%;max-width: 15.7894736842%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/6"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/18"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/24"] {width: 16.6666666667%;max-width: 16.6666666667%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/23"] {width: 17.3913043478%;max-width: 17.3913043478%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/17"] {width: 17.6470588235%;max-width: 17.6470588235%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/11"]
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/22"] {width: 18.1818181818%;max-width: 18.1818181818%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/16"] {width: 18.75%;max-width: 18.75%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/21"] {width: 19.0476190476%;max-width: 19.0476190476%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/5"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/15"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/20"] {width: 20%;max-width: 20%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/24"] {width: 20.8333333333%;max-width: 20.8333333333%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/19"] {width: 21.0526315789%;max-width: 21.0526315789%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/14"] {width: 21.4285714286%;max-width: 21.4285714286%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/23"] {width: 21.7391304348%;max-width: 21.7391304348%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/18"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/9"] {width: 22.2222222222%;max-width: 22.2222222222%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/22"] {width: 22.7272727273%;max-width: 22.7272727273%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/13"] {width: 23.0769230769%;max-width: 23.0769230769%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/17"] {width: 23.5294117647%;max-width: 23.5294117647%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/21"] {width: 23.8095238095%;max-width: 23.8095238095%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/4"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/8"],
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/16"],
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/20"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/24"] {width: 25%;max-width: 25%;}
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/23"] {width: 26.0869565217%;max-width: 26.0869565217%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/19"] {width: 26.3157894737%;max-width: 26.3157894737%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/15"] {width: 26.6666666667%;max-width: 26.6666666667%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/22"] {width: 27.2727272727%;max-width: 27.2727272727%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/18"] {width: 27.7777777778%;max-width: 27.7777777778%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/7"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/14"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/21"] {width: 28.5714285714%;max-width: 28.5714285714%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/24"] {width: 29.1666666667%;max-width: 29.1666666667%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/17"] {width: 29.4117647059%;max-width: 29.4117647059%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/20"] {width: 30%;max-width: 30%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/23"] {width: 30.4347826087%;max-width: 30.4347826087%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/13"] {width: 30.7692307692%;max-width: 30.7692307692%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/16"] {width: 31.25%;max-width: 31.25%;}
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/19"] {width: 31.5789473684%;max-width: 31.5789473684%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/22"] {width: 31.8181818182%;max-width: 31.8181818182%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/3"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/6"],
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/9"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/15"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/18"],
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/21"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/24"] {width: 33.3333333333%;max-width: 33.3333333333%;}
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/23"] {width: 34.7826086957%;max-width: 34.7826086957%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/20"] {width: 35%;max-width: 35%;}
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/17"] {width: 35.2941176471%;max-width: 35.2941176471%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/14"] {width: 35.7142857143%;max-width: 35.7142857143%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/22"] {width: 36.3636363636%;max-width: 36.3636363636%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/19"] {width: 36.8421052632%;max-width: 36.8421052632%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/8"]
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/16"]
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/24"] {width: 37.5%;max-width: 37.5%;}
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/21"] {width: 38.0952380952%;max-width: 38.0952380952%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/13"] {width: 38.4615384615%;max-width: 38.4615384615%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/18"] {width: 38.8888888889%;max-width: 38.8888888889%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/23"] {width: 39.1304347826%;max-width: 39.1304347826%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/5"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/15"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/20"] {width: 40%;max-width: 40%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/22"] {width: 40.9090909091%;max-width: 40.9090909091%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/17"] {width: 41.1764705882%;max-width: 41.1764705882%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/24"] {width: 41.6666666667%;max-width: 41.6666666667%;}
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/19"] {width: 42.1052631579%;max-width: 42.1052631579%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/7"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/14"],
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/21"] {width: 42.8571428571%;max-width: 42.8571428571%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/16"] {width: 43.75%;max-width: 43.75%;}
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/23"] {width: 43.4782608696%;max-width: 43.4782608696%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/9"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/18"] {width: 44.4444444444%;max-width: 44.4444444444%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/20"] {width: 45%;max-width: 45%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/22"] {width: 45.4545454545%;max-width: 45.4545454545%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/24"] {width: 45.8333333333%;max-width: 45.8333333333%;}
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/13"] {width: 46.1538461538%;max-width: 46.1538461538%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/15"] {width: 46.6666666667%;max-width: 46.6666666667%;}
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/17"] {width: 47.0588235294%;max-width: 47.0588235294%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/19"] {width: 47.3684210526%;max-width: 47.3684210526%;}
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/21"] {width: 47.619047619%;max-width: 47.619047619%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/23"] {width: 47.8260869565%;max-width: 47.8260869565%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/2"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/4"],
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/6"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/8"],
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/14"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/16"],
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/18"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/20"],
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/22"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/24"] {width: 50%;max-width: 50%;}
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/23"] {width: 52.1739130435%;max-width: 52.1739130435%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/21"] {width: 52.380952381%;max-width: 52.380952381%;}
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/19"] {width: 52.6315789474%;max-width: 52.6315789474%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/17"] {width: 52.9411764706%;max-width: 52.9411764706%;}
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/15"] {width: 53.3333333333%;max-width: 53.3333333333%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/13"] {width: 53.8461538462%;max-width: 53.8461538462%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/24"] {width: 54.1666666667%;max-width: 54.1666666667%;}
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/22"] {width: 54.5454545455%;max-width: 54.5454545455%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/20"] {width: 55%;max-width: 55%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/9"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/18"] {width: 55.5555555556%;max-width: 55.5555555556%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/16"] {width: 56.25%;max-width: 56.25%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/23"] {width: 56.5217391304%;max-width: 56.5217391304%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/19"] {width: 57.8947368421%;max-width: 57.8947368421%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/24"] {width: 58.3333333333%;max-width: 58.3333333333%;}
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/17"] {width: 58.8235294118%;max-width: 58.8235294118%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/22"] {width: 59.0909090909%;max-width: 59.0909090909%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/5"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/15"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/20"] {width: 60%;max-width: 60%;}
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/23"] {width: 60.8695652174%;max-width: 60.8695652174%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/18"] {width: 61.1111111111%;max-width: 61.1111111111%;}
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/13"] {width: 61.5384615385%;max-width: 61.5384615385%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/21"] {width: 61.9047619048%;max-width: 61.9047619048%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/8"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/16"],
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/24"] {width: 62.5%;max-width: 62.5%;}
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/19"] {width: 63.1578947368%;max-width: 63.1578947368%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/22"] {width: 63.6363636364%;max-width: 63.6363636364%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/14"] {width: 64.2857142857%;max-width: 64.2857142857%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/17"] {width: 64.7058823529%;max-width: 64.7058823529%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/20"] {width: 65%;max-width: 65%;}
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/23"] {width: 65.2173913043%;max-width: 65.2173913043%;}
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/3"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/6"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/9"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/15"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/18"],
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/21"],
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/24"] {width: 66.6666666667%;max-width: 66.6666666667%;}
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/22"] {width: 68.1818181818%;max-width: 68.1818181818%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/19"] {width: 68.4210526316%;max-width: 68.4210526316%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/16"] {width: 68.75%;max-width: 68.75%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/13"] {width: 69.2307692308%;max-width: 69.2307692308%;}
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/23"] {width: 69.5652173913%;max-width: 69.5652173913%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/10"]
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/20"] {width: 70%;max-width: 70%;}
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/17"] {width: 70.5882352941%;max-width: 70.5882352941%;}
+  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="/24"] {width: 70.8333333333%;max-width: 70.8333333333%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/7"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/14"],
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/21"] {width: 71.4285714286%;max-width: 71.4285714286%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/18"] {width: 72.2222222222%;max-width: 72.2222222222%;}
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/22"] {width: 72.7272727273%;max-width: 72.7272727273%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/15"] {width: 73.3333333333%;max-width: 73.3333333333%;}
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/19"] {width: 73.6842105263%;max-width: 73.6842105263%;}
+  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="/23"] {width: 73.9130434783%;max-width: 73.9130434783%;}
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/4"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/8"],
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/16"],
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/20"],
+  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="/24"] {width: 75%;max-width: 75%;}
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/13"] {width: 92.3076923077%;max-width: 92.3076923077%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/7"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/14"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/21"] {width: 57.1428571429%;max-width: 57.1428571429%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/14"] {width: 92.8571428571%;max-width: 92.8571428571%;}
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/21"] {width: 76.1904761905%;max-width: 76.1904761905%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/17"] {width: 76.4705882353%;max-width: 76.4705882353%;}
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/13"] {width: 76.9230769231%;max-width: 76.9230769231%;}
+  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="/22"] {width: 77.2727272727%;max-width: 77.2727272727%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/9"],
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/18"] {width: 77.7777777778%;max-width: 77.7777777778%;}
+  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="/23"] {width: 78.2608695652%;max-width: 78.2608695652%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/14"] {width: 78.5714285714%;max-width: 78.5714285714%;}
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/19"] {width: 78.9473684211%;max-width: 78.9473684211%;}
+  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="/24"] {width: 79.1666666667%;max-width: 79.1666666667%;}
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/5"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/15"],
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/20"] {width: 80%;max-width: 80%;}
+  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="/21"] {width: 80.9523809524%;max-width: 80.9523809524%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/16"] {width: 81.25%;max-width: 81.25%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="/22"] {width: 81.8181818182%;max-width: 81.8181818182%;}
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/17"] {width: 82.3529411765%;max-width: 82.3529411765%;}
+  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="/23"] {width: 82.6086956522%;max-width: 82.6086956522%;}
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/6"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/18"],
+  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="/24"] {width: 83.3333333333%;max-width: 83.3333333333%;}
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/19"] {width: 84.2105263158%;max-width: 84.2105263158%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/13"] {width: 84.6153846154%;max-width: 84.6153846154%;}
+  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="/20"] {width: 85%;max-width: 85%;}
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/7"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/14"],
+  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="/21"] {width: 85.7142857143%;max-width: 85.7142857143%;}
+  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="/22"] {width: 86.3636363636%;max-width: 86.3636363636%;}
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/15"] {width: 86.6666666667%;max-width: 86.6666666667%;}
+  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="/23"] {width: 86.9565217391%;max-width: 86.9565217391%;}
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/8"],
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/16"],
+  [data-#{$görüntülük}~="21"][data-#{$görüntülük}~="/24"] {width: 87.5%;max-width: 87.5%;}
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/17"] {width: 88.2352941176%;max-width: 88.2352941176%;}
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/9"],
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/18"] {width: 88.8888888889%;max-width: 88.8888888889%;}
+  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="/19"] {width: 89.4736842105%;max-width: 89.4736842105%;}
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="/20"] {width: 90%;max-width: 90%;}
+  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="/21"] {width: 90.4761904762%;max-width: 90.4761904762%;}
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="/22"] {width: 90.9090909091%;max-width: 90.9090909091%;}
+  [data-#{$görüntülük}~="21"][data-#{$görüntülük}~="/23"] {width: 91.3043478261%;max-width: 91.3043478261%;}
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="22"][data-#{$görüntülük}~="/24"] {width: 91.6666666667%;max-width: 91.6666666667%;}
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/15"] {width: 93.3333333333%;max-width: 93.3333333333%;}
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/16"] {width: 93.75%;max-width: 93.75%;}
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/17"] {width: 94.1176470588%;max-width: 94.1176470588%;}
+  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="/18"] {width: 94.4444444444%;max-width: 94.4444444444%;}
+  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="/19"] {width: 94.7368421053%;max-width: 94.7368421053%;}
+  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="/20"] {width: 95%;max-width: 95%;}
+  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="/21"] {width: 95.2380952381%;max-width: 95.2380952381%;}
+  [data-#{$görüntülük}~="21"][data-#{$görüntülük}~="/22"] {width: 95.4545454545%;max-width: 95.4545454545%;}
+  [data-#{$görüntülük}~="22"][data-#{$görüntülük}~="/23"] {width: 95.652173913%;max-width: 95.652173913%;}
+  [data-#{$görüntülük}~="1"][data-#{$görüntülük}~="/1"],
+  [data-#{$görüntülük}~="2"][data-#{$görüntülük}~="/2"],
+  [data-#{$görüntülük}~="3"][data-#{$görüntülük}~="/3"],
+  [data-#{$görüntülük}~="4"][data-#{$görüntülük}~="/4"],
+  [data-#{$görüntülük}~="5"][data-#{$görüntülük}~="/5"],
+  [data-#{$görüntülük}~="6"][data-#{$görüntülük}~="/6"],
+  [data-#{$görüntülük}~="7"][data-#{$görüntülük}~="/7"],
+  [data-#{$görüntülük}~="8"][data-#{$görüntülük}~="/8"],
+  [data-#{$görüntülük}~="9"][data-#{$görüntülük}~="/9"],
+  [data-#{$görüntülük}~="10"][data-#{$görüntülük}~="/10"],
+  [data-#{$görüntülük}~="11"][data-#{$görüntülük}~="/11"],
+  [data-#{$görüntülük}~="12"][data-#{$görüntülük}~="/12"],
+  [data-#{$görüntülük}~="13"][data-#{$görüntülük}~="/13"],
+  [data-#{$görüntülük}~="14"][data-#{$görüntülük}~="/14"],
+  [data-#{$görüntülük}~="15"][data-#{$görüntülük}~="/15"],
+  [data-#{$görüntülük}~="16"][data-#{$görüntülük}~="/16"],
+  [data-#{$görüntülük}~="17"][data-#{$görüntülük}~="/17"],
+  [data-#{$görüntülük}~="18"][data-#{$görüntülük}~="/18"],
+  [data-#{$görüntülük}~="19"][data-#{$görüntülük}~="/19"],
+  [data-#{$görüntülük}~="20"][data-#{$görüntülük}~="/20"],
+  [data-#{$görüntülük}~="21"][data-#{$görüntülük}~="/21"],
+  [data-#{$görüntülük}~="22"][data-#{$görüntülük}~="/22"],
+  [data-#{$görüntülük}~="23"][data-#{$görüntülük}~="/23"],
+  [data-#{$görüntülük}~="24"][data-#{$görüntülük}~="/24"] {width: 100%;max-width: 100%;}
   [data-#{$görüntülük}~="sağdan-1"][data-#{$görüntülük}~="24p-aralık"] {margin-right: 4.1666666667%;}
   [data-#{$görüntülük}~="sağdan-1"][data-#{$görüntülük}~="23p-aralık"] {margin-right: 4.347826087%;}
   [data-#{$görüntülük}~="sağdan-1"][data-#{$görüntülük}~="22p-aralık"] {margin-right: 4.5454545455%;}
@@ -939,10 +939,10 @@ S05 [data-#{$kcm}] | Ekran ölçeği: 1200px ≤ *
       @include parça-düzeni($kcm);
     }
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S06 [data-#{$dev}] | Ekran ölçeği: 1900px ≤ *
+S06 [data-#{$ulu}] | Ekran ölçeği: 1900px ≤ *
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     @media screen and (min-width:1900px) {
-      @include parça-düzeni($dev);
+      @include parça-düzeni($ulu);
     }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

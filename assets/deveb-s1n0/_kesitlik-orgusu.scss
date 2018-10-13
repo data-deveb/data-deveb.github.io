@@ -58,7 +58,7 @@
 //    (100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)))
 //
 //    Not: Bu yöntemle daha önceden 24 satır bölüm, 24 satır bölümlük ve 1 satırda genişlik
-//    saydırmak için toplamda 49 satır CSS alanı kullanılırdı. Her ekran aralığı için bu
+//    saydırmak için toplamda 49 satır CSS alanı kullanılırdı. Her görüntülük aralığı için bu
 //    satırlar yeniden oluşturulur ve 343 satır gibi bir alan kullanılmış olurdu. Bu durum
 //    yeni yöntemle 49 satıdan 19 satıra indirgendi. Böylelikle toplamda 343 satır yerine
 //    133 satır ile yerden kazanç sağlandı.
@@ -665,7 +665,7 @@
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/*  GENEL | Ekran ölçeği: 0 ≤ * < ∞
+/*  GENEL | Görüntülük ölçeği: 0 ≤ * < ∞
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @include ayarlar(); // CSS'in başında tanımlanan ayarlar.
@@ -735,7 +735,7 @@ S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S02 kçk | Ekran ölçeği: 576px ≤ *
+S02 kçk | Görüntülük ölçeği: 576px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$küçük-görüntülük) {
@@ -767,7 +767,7 @@ S02 kçk | Ekran ölçeği: 576px ≤ *
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S03 ort | Ekran ölçeği: 768px ≤ *
+S03 ort | Görüntülük ölçeği: 768px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$orta-görüntülük) {
@@ -799,7 +799,7 @@ S03 ort | Ekran ölçeği: 768px ≤ *
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S04 byk | Ekran ölçeği: 992px ≤ *
+S04 byk | Görüntülük ölçeği: 992px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$büyük-görüntülük) {
@@ -831,7 +831,7 @@ S04 byk | Ekran ölçeği: 992px ≤ *
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S05 kcm | Ekran ölçeği: 1200px ≤ *
+S05 kcm | Görüntülük ölçeği: 1200px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$kocaman-görüntülük) {
@@ -863,7 +863,7 @@ S05 kcm | Ekran ölçeği: 1200px ≤ *
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S06 dev | Ekran ölçeği: 1900px ≤ *
+S06 ulu | Görüntülük ölçeği: 1900px ≤ *
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$ulu-görüntülük) {
@@ -897,7 +897,7 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
   [data-#{$ufk}~="#{$büyükleriyle-kap}"],
   [data-#{$mnk}~="#{$büyükleri-kap}"],
   [data-#{$mnk}~="#{$büyükleriyle-kap}"] {
-    max-width: 1890px !important
+    max-width: #{$ulu-kap} !important
   }
 
 
@@ -912,7 +912,7 @@ S06 dev | Ekran ölçeği: 1900px ≤ *
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-kcm | Ekran ölçeği: 0 < 1900px
+kcm | Görüntülük ölçeği: 0 < 1900px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (max-width:$ulu-görüntülük) {
@@ -928,7 +928,7 @@ kcm | Ekran ölçeği: 0 < 1900px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-byk | Ekran ölçeği: 0 < 1200px
+byk | Görüntülük ölçeği: 0 < 1200px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (max-width:$kocaman-görüntülük) {
@@ -944,7 +944,7 @@ byk | Ekran ölçeği: 0 < 1200px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ort | Ekran ölçeği: 0 < 992px
+ort | Görüntülük ölçeği: 0 < 992px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (max-width:$büyük-görüntülük) {
@@ -960,7 +960,7 @@ ort | Ekran ölçeği: 0 < 992px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-kçk | Ekran ölçeği: 0 < 768px
+kçk | Görüntülük ölçeği: 0 < 768px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (max-width:$orta-görüntülük) {
@@ -972,7 +972,7 @@ kçk | Ekran ölçeği: 0 < 768px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ufk | Ekran ölçeği: 0 < 576px
+ufk | Görüntülük ölçeği: 0 < 576px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (max-width:$küçük-görüntülük) {
@@ -988,7 +988,7 @@ ufk | Ekran ölçeği: 0 < 576px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-mnk | Ekran ölçeği: 0 < 300px
+mnk | Görüntülük ölçeği: 0 < 300px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (max-width:$ufak-görüntülük) {
@@ -1007,7 +1007,7 @@ mnk | Ekran ölçeği: 0 < 300px
 /*  DUYARLI TİP - YALIN |< * >| */
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-mnk | Ekran ölçeği: 0 ≤ * < 300px
+mnk | Görüntülük ölçeği: 0 ≤ * < 300px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (max-width:$minik-görüntülük) {
@@ -1030,7 +1030,7 @@ mnk | Ekran ölçeği: 0 ≤ * < 300px
   [data-#{$ulu}~="#{$küçükleri-kap}"],
   [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
     width: 100%;
-    max-width: 100% !important
+    max-width: #{$minik-kap} !important
   }
 
 
@@ -1043,7 +1043,7 @@ mnk | Ekran ölçeği: 0 ≤ * < 300px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ufk | Ekran ölçeği: 300px ≤ * < 576px
+ufk | Görüntülük ölçeği: 300px ≤ * < 576px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$ufak-görüntülük) and (max-width:$küçük-görüntülük) {
@@ -1066,7 +1066,7 @@ ufk | Ekran ölçeği: 300px ≤ * < 576px
   [data-#{$ulu}~="#{$küçükleri-kap}"],
   [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
     width: 100%;
-    max-width: calc(100% - 20px) !important
+    max-width: #{$ufak-kap} !important
   }
 
 
@@ -1079,7 +1079,7 @@ ufk | Ekran ölçeği: 300px ≤ * < 576px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-kçk | Ekran ölçeği: 576px ≤ * < 768px
+kçk | Görüntülük ölçeği: 576px ≤ * < 768px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$küçük-görüntülük) and (max-width:$orta-görüntülük) {
@@ -1102,7 +1102,7 @@ kçk | Ekran ölçeği: 576px ≤ * < 768px
   [data-#{$ulu}~="#{$küçükleri-kap}"],
   [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
     width: 100%;
-    max-width: 566px !important
+    max-width: #{$küçük-kap} !important
   }
 
 
@@ -1115,7 +1115,7 @@ kçk | Ekran ölçeği: 576px ≤ * < 768px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ort | Ekran ölçeği: 768px ≤ * < 992px
+ort | Görüntülük ölçeği: 768px ≤ * < 992px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$orta-görüntülük) and (max-width:$büyük-görüntülük) {
@@ -1138,7 +1138,7 @@ ort | Ekran ölçeği: 768px ≤ * < 992px
   [data-#{$ulu}~="#{$küçükleri-kap}"],
   [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
     width: 100%;
-    max-width: 760px !important
+    max-width: #{$orta-kap} !important
   }
 
 
@@ -1151,7 +1151,7 @@ ort | Ekran ölçeği: 768px ≤ * < 992px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-byk | Ekran ölçeği: 992px ≤ * < 1200px
+byk | Görüntülük ölçeği: 992px ≤ * < 1200px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$büyük-görüntülük) and (max-width:$kocaman-görüntülük) {
@@ -1174,7 +1174,7 @@ byk | Ekran ölçeği: 992px ≤ * < 1200px
   [data-#{$ulu}~="#{$küçükleri-kap}"],
   [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
     width: 100%;
-    max-width: 960px !important;
+    max-width: #{$büyük-kap} !important;
   }
 
 
@@ -1187,7 +1187,7 @@ byk | Ekran ölçeği: 992px ≤ * < 1200px
 }
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-kcm | Ekran ölçeği: 1200px ≤ * < 1900px
+kcm | Görüntülük ölçeği: 1200px ≤ * < 1900px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @media screen and (min-width:$kocaman-görüntülük) and (max-width:$ulu-görüntülük) {
@@ -1208,7 +1208,7 @@ kcm | Ekran ölçeği: 1200px ≤ * < 1900px
   [data-#{$kcm}~="#{$bunu-kap}"],
   [data-#{$kcm}~="#{$küçükleriyle-kap}"] {
     width: 100%;
-    max-width: 1140px !important
+    max-width: #{$kocaman-kap} !important
   }
 
 
