@@ -267,59 +267,59 @@
     --sağara-d: var(--d);
   }
 
-  $i: 1;  $j: 0;
-  @while $i <= $p {
-    [data-#{$görüntülük}~="/#{$i}-|"],[data-#{$görüntülük}~="/#{$i+1}-|"],
-    [data-#{$görüntülük}~="/#{$i+2}-|"],[data-#{$görüntülük}~="/#{$i+3}-|"]
-    {--solara-b: #{$j+1}; --solara-d: 0}
+//  $i: 1;  $j: 0;
+//  @while $i <= $p {
+//    [data-#{$görüntülük}~="/#{$i}-|"],[data-#{$görüntülük}~="/#{$i+1}-|"],
+//    [data-#{$görüntülük}~="/#{$i+2}-|"],[data-#{$görüntülük}~="/#{$i+3}-|"]
+//    {--solara-b: #{$j+1}; --solara-d: 0}
+//
+//   $i: $i + 4;    $j: $j + 1;
+//  }
+//
+//  %#{$görüntülük}-solara-d-3 {--solara-d: 3}
+//  %#{$görüntülük}-solara-d-2 {--solara-d: 2}
+//  %#{$görüntülük}-solara-d-1 {--solara-d: 1}
+//
+//  $i: 1;
+//  @while $i <= $p {
+//      [data-#{$görüntülük}~="/#{$i}-|"], {
+//          @extend %#{$görüntülük}-solara-d-3;
+//      }
+//      [data-#{$görüntülük}~="/#{$i+1}-|"], {
+//          @extend %#{$görüntülük}-solara-d-2;
+//      }
+//     [data-#{$görüntülük}~="/#{$i+2}-|"], {
+//          @extend %#{$görüntülük}-solara-d-1;
+//      }
+//      $i: $i + 4;
+//  }
+//
+//  $i: 1;  $j: 0;
+//  @while $i <= $p {
+//    [data-#{$görüntülük}~="|-/#{$i}"],[data-#{$görüntülük}~="|-/#{$i+1}"],
+//    [data-#{$görüntülük}~="|-/#{$i+2}"],[data-#{$görüntülük}~="|-/#{$i+3}"]
+//    {--sağara-b: #{$j+1}; --sağara-d: 0}
+//
+//    $i: $i + 4;    $j: $j + 1;
+//  }
 
-    $i: $i + 4;    $j: $j + 1;
-  }
+//  %#{$görüntülük}-sağara-d-3 {--sağara-d: 3}
+//  %#{$görüntülük}-sağara-d-2 {--sağara-d: 2}
+//  %#{$görüntülük}-sağara-d-1 {--sağara-d: 1}
 
-  %#{$görüntülük}-solara-d-3 {--solara-d: 3}
-  %#{$görüntülük}-solara-d-2 {--solara-d: 2}
-  %#{$görüntülük}-solara-d-1 {--solara-d: 1}
-
-  $i: 1;
-  @while $i <= $p {
-      [data-#{$görüntülük}~="/#{$i}-|"], {
-          @extend %#{$görüntülük}-solara-d-3;
-      }
-      [data-#{$görüntülük}~="/#{$i+1}-|"], {
-          @extend %#{$görüntülük}-solara-d-2;
-      }
-      [data-#{$görüntülük}~="/#{$i+2}-|"], {
-          @extend %#{$görüntülük}-solara-d-1;
-      }
-      $i: $i + 4;
-  }
-
-  $i: 1;  $j: 0;
-  @while $i <= $p {
-    [data-#{$görüntülük}~="|-/#{$i}"],[data-#{$görüntülük}~="|-/#{$i+1}"],
-    [data-#{$görüntülük}~="|-/#{$i+2}"],[data-#{$görüntülük}~="|-/#{$i+3}"]
-    {--sağara-b: #{$j+1}; --sağara-d: 0}
-
-    $i: $i + 4;    $j: $j + 1;
-  }
-
-  %#{$görüntülük}-sağara-d-3 {--sağara-d: 3}
-  %#{$görüntülük}-sağara-d-2 {--sağara-d: 2}
-  %#{$görüntülük}-sağara-d-1 {--sağara-d: 1}
-
-  $i: 1;
-  @while $i <= $p {
-      [data-#{$görüntülük}~="|-/#{$i}"], {
-          @extend %#{$görüntülük}-sağara-d-3;
-      }
-      [data-#{$görüntülük}~="|-/#{$i+1}"], {
-          @extend %#{$görüntülük}-sağara-d-2;
-      }
-      [data-#{$görüntülük}~="|-/#{$i+2}"], {
-          @extend %#{$görüntülük}-sağara-d-1;
-      }
-      $i: $i + 4;
-  }
+//  $i: 1;
+//  @while $i <= $p {
+//      [data-#{$görüntülük}~="|-/#{$i}"], {
+//          @extend %#{$görüntülük}-sağara-d-3;
+//      }
+//      [data-#{$görüntülük}~="|-/#{$i+1}"], {
+//          @extend %#{$görüntülük}-sağara-d-2;
+//      }
+//      [data-#{$görüntülük}~="|-/#{$i+2}"], {
+//          @extend %#{$görüntülük}-sağara-d-1;
+//      }
+//      $i: $i + 4;
+//  }
 
 // Bölümleme Düzeni Aralık Sayışı
 
@@ -333,25 +333,6 @@
   [data-#{$görüntülük}*="#{$aralık}-1"]{margin: 10px}
   [data-#{$görüntülük}*="#{$aralık}-2"]{margin: 15px}
   [data-#{$görüntülük}*="#{$aralık}-3"]{margin: 20px}
-  [data-#{$görüntülük}*="#{$aralık}-l1"]{margin-left: 10px}
-  [data-#{$görüntülük}*="#{$aralık}-l2"]{margin-left: 15px}
-  [data-#{$görüntülük}*="#{$aralık}-l3"]{margin-left: 20px}
-  [data-#{$görüntülük}*="#{$aralık}-s1"]{margin-right: 10px}
-  [data-#{$görüntülük}*="#{$aralık}-s2"]{margin-right: 15px}
-  [data-#{$görüntülük}*="#{$aralık}-s3"]{margin-right: 20px}
-  [data-#{$görüntülük}*="#{$aralık}-t1"]{margin-top: 10px}
-  [data-#{$görüntülük}*="#{$aralık}-t2"]{margin-top: 15px}
-  [data-#{$görüntülük}*="#{$aralık}-t3"]{margin-top: 20px}
-  [data-#{$görüntülük}*="#{$aralık}-a1"]{margin-bottom: 10px}
-  [data-#{$görüntülük}*="#{$aralık}-a2"]{margin-bottom: 15px}
-  [data-#{$görüntülük}*="#{$aralık}-a3"]{margin-bottom: 20px}
-  [data-#{$görüntülük}*="#{$aralık}-ls1"]{margin-left: 10px;margin-right: 10px}
-  [data-#{$görüntülük}*="#{$aralık}-ls2"]{margin-left: 15px;margin-right: 15px}
-  [data-#{$görüntülük}*="#{$aralık}-ls3"]{margin-left: 20px;margin-right: 20px}
-  [data-#{$görüntülük}*="#{$aralık}-ta1"]{margin-top: 10px;margin-bottom: 10px}
-  [data-#{$görüntülük}*="#{$aralık}-ta2"]{margin-top: 15px;margin-bottom: 15px}
-  [data-#{$görüntülük}*="#{$aralık}-ta3"]{margin-top: 20px;margin-bottom: 20px}
-
 
   [data-#{$görüntülük}~="#{$araları-aralık}-1"][data-#{$görüntülük}]{
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
@@ -377,25 +358,7 @@
   [data-#{$görüntülük}~="#{$araları-aralık}-3"] > *{padding-left:20px;padding-top:20px;}
   [data-#{$görüntülük}~="#{$dengeli-aralık}-1"] > *{padding:10px;}
   [data-#{$görüntülük}~="#{$dengeli-aralık}-2"] > *{padding:15px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-3"] > *{padding:20px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-l1"] > *{padding-left: 10px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-l2"] > *{padding-left: 15px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-l3"] > *{padding-left: 20px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-s1"] > *{padding-right: 10px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-s2"] > *{padding-right: 15px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-s3"] > *{padding-right: 20px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-t1"] > *{padding-top: 10px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-t2"] > *{padding-top: 15px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-t3"] > *{padding-top: 20px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-a1"] > *{padding-bottom: 10px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-a2"] > *{padding-bottom: 15px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-a3"] > *{padding-bottom: 20px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-ls1"] > *{padding-left: 10px;padding-right: 10px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-ls2"] > *{padding-left: 15px;padding-right: 15px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-ls3"] > *{padding-left: 20px;padding-right: 20px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-ta1"] > *{padding-top: 10px;padding-bottom: 10px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-ta2"] > *{padding-top: 15px;padding-bottom: 15px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-ta3"] > *{padding-top: 20px;padding-bottom: 20px;}
+  [data-#{$görüntülük}~="#{$dengeli-aralık}-3"] > *{padding:20px;}  
 
 //  [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
 //    margin: var(--aralık);
@@ -625,42 +588,6 @@
   [data-#{$görüntülük}~="#{$metin-ortada}"]{text-align: center}
 
   [data-#{$görüntülük}~="#{$metin-solda}"]{text-align: left}
-
-
-  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$üstte}"],
-  /**/[data-#{$görüntülük}~="#{$solda}"]:not([data-#{$görüntülük}~="#{$sütun}"]){justify-content: flex-start}
-
-  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$göbekte}"],
-  /**/[data-#{$görüntülük}~="#{$ortada}"]:not([data-#{$görüntülük}~="#{$sütun}"]){justify-content: center}
-
-  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$altta}"],
-  /**/[data-#{$görüntülük}~="#{$sağda}"]:not([data-#{$görüntülük}~="#{$sütun}"]){justify-content: flex-end}
-
-  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$solda}"],
-  /**/[data-#{$görüntülük}~="#{$üstte}"]:not([data-#{$görüntülük}~="#{$sütun}"]){align-content: flex-start}
-
-  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$ortada}"],
-  /**/[data-#{$görüntülük}~="#{$göbekte}"]:not([data-#{$görüntülük}~="#{$sütun}"]){align-content: center}
-
-  /**/[data-#{$görüntülük}~="#{$sütun}"][data-#{$görüntülük}~="#{$sağda}"],
-  /**/[data-#{$görüntülük}~="#{$altta}"]:not([data-#{$görüntülük}~="#{$sütun}"]){align-content: flex-end}
-
-
-  [data-#{$görüntülük}~="#{$merkezde}"]{align-items: center;justify-content: center}
-
-
-  [data-#{$görüntülük}~="#{$üstte-ol}"]{align-self: flex-start}
-
-  [data-#{$görüntülük}~="#{$göbekte-ol}"]{align-self: center}
-
-  [data-#{$görüntülük}~="#{$altta-ol}"]{margin-top: auto}
-
-  [data-#{$görüntülük}~="#{$sağda-ol}"]{margin-left: auto;align-self: flex-end}
-
-  [data-#{$görüntülük}~="#{$ortada-ol}"]{margin-left: auto;margin-right: auto;align-self: center}
-
-  [data-#{$görüntülük}~="#{$solda-ol}"]{margin-right: auto;align-self: flex-start}
-
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
