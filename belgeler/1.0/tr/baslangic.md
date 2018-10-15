@@ -68,6 +68,7 @@ description:
     <th class="tg-1wig">Microsoft Edge</th>
     <th class="tg-1wig">Opera</th>
     <th class="tg-1wig">Safari</th>
+    <th class="tg-1wig">Diğer</th>
   </tr>
   <tr>
     <td class="tg-1wig">Mac</td>
@@ -77,6 +78,7 @@ description:
     <td class="tg-9s94">Uygulama Dışı<br></td>
     <td class="tg-yi9q">Destekler</td>
     <td class="tg-yi9q">Destekler</td>
+    <td class="tg-wh2g">Belirsiz</td>
   </tr>
   <tr>
     <td class="tg-1wig">Linux</td>
@@ -86,6 +88,7 @@ description:
     <td class="tg-9s94">Uygulama Dışı</td>
     <td class="tg-yi9q">Destekler</td>
     <td class="tg-yi9q">Destekler</td>
+    <td class="tg-wh2g">Belirsiz</td>
   </tr>
   <tr>
     <td class="tg-1wig">Windows</td>
@@ -94,6 +97,37 @@ description:
     <td class="tg-viqs">Desteklemez</td>
     <td class="tg-yi9q">Destekler</td>
     <td class="tg-yi9q">Destekler</td>
+    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-wh2g">Belirsiz</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">Android</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-9s94">Uygulama Dışı</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-wh2g">Belirsiz</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">iOS</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-9s94">Uygulama Dışı</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-9s94">Uygulama Dışı</td>
+    <td class="tg-wh2g">Belirsiz</td>
+  </tr>
+  <tr>
+    <td class="tg-1wig">WMP</td>
+    <td class="tg-9s94">Uygulama Dışı</td>
+    <td class="tg-9s94">Uygulama Dışı</td>
+    <td class="tg-9s94">Uygulama Dışı</td>
+    <td class="tg-yi9q">Destekler</td>
+    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-9s94">Uygulama Dışı</td>
     <td class="tg-wh2g">Belirsiz</td>
   </tr>
 </table>
