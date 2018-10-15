@@ -11,7 +11,12 @@
 @mixin ayarlar(){
 
   :root,
-  [data-#{$gnl}]{
+  [data-#{$gnl}],
+  [data-#{$kçk}]:not([data-#{$gnl}]),
+  [data-#{$ort}]:not([data-#{$kçk}]):not([data-#{$gnl}]),
+  [data-#{$byk}]:not([data-#{$ort}]):not([data-#{$kçk}]):not([data-#{$gnl}]),
+  [data-#{$kcm}]:not([data-#{$byk}]):not([data-#{$ort}]):not([data-#{$kçk}]):not([data-#{$gnl}]),
+  [data-#{$ulu}]:not([data-#{$kcm}]):not([data-#{$byk}]):not([data-#{$ort}]):not([data-#{$kçk}]):not([data-#{$gnl}]){
     // bölümleme düzeni 12'li varsayılan ölçek ayarı
     --a: 3;
     --b: 3;
@@ -33,11 +38,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-
-
-
-
 }
 
 // BÖLÜMLEME DÜZENİ ///////////////////////////////////////////////////////////////////////////////////
