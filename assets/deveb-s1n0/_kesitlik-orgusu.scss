@@ -132,7 +132,12 @@
     width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))); // Bölümleme düzeni sayıştırma ayarları.
     max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))); // Bölümleme düzeni sayıştırma ayarları.
   }
-
+  @supports (-ms-ime-align:auto) {
+    [data-#{$görüntülük}][data-#{$görüntülük}] {
+      width: calc((100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))) - 0.009999%); // Bölümleme düzeni sayıştırma ayarları.
+      max-width: calc((100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c))) - 0.009999%); // Bölümleme düzeni sayıştırma ayarları.
+    }
+  }
 
 }
 
@@ -145,12 +150,6 @@
 //
 
 @mixin esnetme-düzeni($görüntülük) {
-
-//  @for $i from 1 through $p {
-//    [data-#{$görüntülük}~="#{$i}g"]{
-//      flex: #{$i};
-//    }
-//  } 
 
   [data-#{$görüntülük}~="0"][data-#{$görüntülük}~="0"]{
     flex-basis: auto;
