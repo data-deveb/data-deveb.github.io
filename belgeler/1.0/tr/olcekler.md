@@ -5,6 +5,7 @@ lang: tr
 title: Ölçekler
 description: 
 ---
+
 <p class="girlik">
   Bölümleme düzeniyle elde edebileceğiniz genişlik ölçekleri aşağıda anlaşılır bir biçimde gösterilmiştir. 1'den 24'e kadar olan bölümlüklerle oluşturulmuş öbekleri bir bir inceleyebilirsiniz. Bölümler içinde yazan değerleri görüntülük örgüsüyle birlikte kullanarak elde edebilirsiniz.
 </p>
@@ -501,6 +502,7 @@ description:
     <div data-gnl="2 /15"><div class="kutu kutu-genel gri">2 /15</div></div>
     <div data-gnl="2 /15"><div class="kutu kutu-genel gri">2 /15</div></div>
     <div data-gnl="2 /15"><div class="kutu kutu-genel gri">2 /15</div></div>
+    <div data-gnl="2 /15"><div class="kutu kutu-genel gri">2 /15</div></div>
     <div data-gnl="1 /15"><div class="kutu kutu-genel gri">1 /15</div></div>
 
     <div data-gnl="3 /15"><div class="kutu kutu-genel">3 /15</div></div>
@@ -962,6 +964,7 @@ description:
 
     <div data-gnl="8 /20"><div class="kutu kutu-genel">8 /20</div></div>
     <div data-gnl="8 /20"><div class="kutu kutu-genel gri">8 /20</div></div>
+    <div data-gnl="2 /20"><div class="kutu kutu-genel gri">2 /20</div></div>
     <div data-gnl="2 /20"><div class="kutu kutu-genel gri">2 /20</div></div>
 
     <div data-gnl="9 /20"><div class="kutu kutu-genel">9 /20</div></div>
