@@ -124,6 +124,7 @@
 
 /* Genel Özellikler */
 
+
 body {
   background-color: #f7fafc;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -184,6 +185,7 @@ p.örnek {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .örnek .önizleme div {
   border: 1px solid #2c2171;
@@ -448,6 +450,15 @@ a.logo2 {
 .beri-alt-2 {
   margin-bottom: 30px
 }
+@media screen and (max-width:760px){
+  .örnek .önizleme{
+    padding:.6rem;
+  }
+  .girlik {
+  font-size: 1.1em;
+  }
+}
+
 
 /* ==========================================================================
     MENÜLER
