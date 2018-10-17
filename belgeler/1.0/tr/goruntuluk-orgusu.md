@@ -6,7 +6,7 @@ title: Görüntülük Örgüsü
 description: 
 ---
 <p class="girlik">
-  Saat kadar minik görüntülükleri (ekranları), telefon görüntülükleri, elüstü görüntülükleri, dizüstü görüntülükleri, masaüstü görüntülükleri, kocaman görüntülükleri ve ulu görüntülükleri olarak öbeklendirilmiş 8 ayrı görüntülük ölçeği uyarlamalı olarak
+  Saat kadar minik görüntülükleri (ekranları), telefon görüntülükleri, elüstü görüntülükleri, dizüstü görüntülükleri, masaüstü görüntülükleri, kocaman görüntülükleri ve ulu görüntülükleri olarak öbeklendirilmiş 7 ayrı görüntülük ölçeği uyarlamalı olarak
   kullanılır.
 </p>
 <p>
@@ -21,13 +21,13 @@ description:
         Genel <br>
         <i class="fa fa-minus-square-o" aria-hidden="true"></i> »
         <i class="fa fa-window-maximize" aria-hidden="true"></i>
-        <br><span data-metin="olumlu ince">saat » ulu</span>
+        <br><span data-metin="olumlu ince">0 » ulu</span>
       </th>
-      <th>
+      <!--<th>
         Minik <br>
         <i class="fa fa-minus-square-o" aria-hidden="true"></i>
         <br><span data-metin="olumlu ince">saat</span>
-      </th>
+      </th>-->
       <th>
         Ufak <br>
         <i class="fa fa-mobile" aria-hidden="true"></i>
@@ -64,7 +64,7 @@ description:
     <tr>
       <th>Birimleri</th>
       <td>data-gnl</td>
-      <td>data-mnk</td>
+      <!--<td>data-mnk</td>-->
       <td>data-ufk</td>
       <td>data-kçk</td>
       <td>data-ort</td>
@@ -75,7 +75,7 @@ description:
     <tr>
       <th>Ölçekler</th>
       <td>0 »</td>
-      <td>0 » 300px</td>
+      <!--<td>0 » 300px</td>-->
       <td>300px »</td>
       <td>576px »</td>
       <td>768px »</td>
@@ -85,11 +85,14 @@ description:
     </tr>
     <tr>
       <th>Görüntülük Seçme</th>
-      <td><span data-metin="ana gri">sınıf</span></td>
-      <td>bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span><br>büyükleriyle-<span data-metin="ana gri">sınıf</span><br>büyükleri-<span data-metin="ana gri">sınıf</span></td>
-      <td colspan="5">küçükleri-<span data-metin="ana gri">sınıf</span><br>küçükleriyle-<span data-metin="ana gri">sınıf</span><br>bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span><br>büyükleriyle-<span data-metin="ana gri">sınıf</span><br>büyükleri-
-        <span
-          data-metin="ana gri">sınıf</span>
+      <td>
+        <span data-metin="ana gri">sınıf</span>
+      </td>
+      <!--<td>
+        bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span><br>büyükleriyle-<span data-metin="ana gri">sınıf</span><br>büyükleri-<span data-metin="ana gri">sınıf</span>
+      </td>-->
+      <td colspan="5">
+        küçükleri-<span data-metin="ana gri">sınıf</span><br>küçükleriyle-<span data-metin="ana gri">sınıf</span><br>bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span><br>büyükleriyle-<span data-metin="ana gri">sınıf</span><br>büyükleri-<span data-metin="ana gri">sınıf</span>
       </td>
       <td>küçükleri-<span data-metin="ana gri">sınıf</span><br>küçükleriyle-<span data-metin="ana gri">sınıf</span><br>bunu-<span data-metin="ana gri">sınıf</span><br><span data-metin="ana gri">sınıf</span></td>
     </tr>
