@@ -143,63 +143,61 @@ description:
       <div data-gnl="3 /10 _ts">_ts: kendisi üstsağ</div>
     </div>
   {% endhighlight %}
-
   <h3>Konumlama: <span data-metin="dikkat">uzat | uzun-ol</span></h3>
   <p>"uzat" sınıfı bir HTML etiketindeki içeriği aşağıdan yukarıya uzatarak gösterir.</p>
   <p>"uzun-ol" sınıfı bir tanımlandığı etiketi içinde bulunduğu etiketin durumuna göre uzatır.</p>
   <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
-      <div data-gnl="1 /2 uzat" style="height:500px;">
-        <div data-gnl="0">
+      <div data-gnl="uzat" data-byk="1 /2" style="height:300px;">
+        <div data-gnl="1 /3">
           uzat
         </div>
-        <div data-gnl="0">
+        <div data-gnl="1 /3">
           uzat
         </div>
-        <div data-gnl="0">
+        <div data-gnl="1 /3">
           uzat
         </div>
       </div>
-      <div data-gnl="1 /2" style="height:500px;">
-        <div data-gnl="0 üstte-ol">
-          üstte-ol
+      <div data-gnl="uzat" data-byk="1 /2" style="height:300px;">
+        <div data-gnl="1 /3 _t">
+          _t
         </div>
-        <div data-gnl="0">
+        <div data-gnl="1 /3">
           varsayılan (uzat)
         </div>
-        <div data-gnl="0 üstte-ol">
-          üstte-ol
+        <div data-gnl="1 /3 _t">
+          _t
         </div>
       </div>
     </div>
   </div>
   {% highlight html %}
-    <div data-gnl="1 /2 uzat" style="height:500px;">
-      <div data-gnl="0">
+    <div data-gnl="uzat" data-byk="1 /2" style="height:300px;">
+      <div data-gnl="1 /3">
         uzat
       </div>
-      <div data-gnl="0">
+      <div data-gnl="1 /3">
         uzat
       </div>
-      <div data-gnl="0">
+      <div data-gnl="1 /3">
         uzat
       </div>
     </div>
-    <div data-gnl="1 /2" style="height:500px;">
-      <div data-gnl="0 üstte-ol">
-        üstte-ol
+    <div data-gnl="uzat" data-byk="1 /2" style="height:300px;">
+      <div data-gnl="1 /3 _t">
+        _t
       </div>
-      <div data-gnl="0">
+      <div data-gnl="1 /3">
         varsayılan (uzat)
       </div>
-      <div data-gnl="0 üstte-ol">
-        üstte-ol
+      <div data-gnl="1 /3 _t">
+        _t
       </div>
     </div>
   {% endhighlight %}
   <p></p>
-
   <h3>Konumlama: <span data-metin="dikkat">satırda | satırda-ol</span></h3>
   <p>"satırda" sınıfı bir HTML etiketindeki içeriği bir çizgiye dizerek gösterir.</p>
   <p>"satırda-ol" sınıfı bir buldunduğu etiketi bir çizgi konumuna dizerek gösterir.</p>
@@ -259,7 +257,6 @@ description:
     </div>
   {% endhighlight %}
   <p></p>
-
   <h3>Konumlama: <span data-metin="dikkat">ters-dürme | ters-satır | ters-sütun</span></h3>
   <p>"ters-dürme" sınıfı bir HTML etiketindeki içeriği ters yönde dürerek gösterir.</p>
   <p>"ters-satır" sınıfı bir HTML etiketindeki satırları aynalı olarak gösterir.</p>
