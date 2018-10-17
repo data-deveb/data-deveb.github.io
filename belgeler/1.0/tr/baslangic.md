@@ -7,11 +7,15 @@ description:
 ---
 
 <p class="girlik">
-  Ağ geliştiricileri için geliştirilen, alışılmış olanın ötesinde, yepyeni özellikleriyle,
-  yepyeni bir soluk getiren, günümüzün uyarlamalı önyüz çatısı <span class="simget">deveb</span>'e hoş geldiniz.
+  Ağ geliştiricileri için geliştirilen, hızlı yanıt veren, alışılmışın ötesinde,
+  yeni bir solukta, günümüzün uyarlamalı ve çağdaş önyüz çatısı <span class="simget">deveb</span>'e hoş geldiniz.
 </p>
 
-<div data-gnl="ortada metin-ortada" data-byk="dengeli-aralık">
+<p>
+  Esnek kutu (flexbox) tabanlı özellikleriyle tasarımcıların işini kolaylaştırır. 
+</p>
+
+<div data-gnl="o dengeli-aralık metin-ortada">
   <div data-kart>
     <p style="font-size:23px;">
     <i class="fa fa-mobile" aria-hidden="true" style="font-size:1em;"></i>
@@ -53,82 +57,82 @@ description:
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-9s94{color:#9b9b9b;text-align:left;vertical-align:top}
-.tg .tg-wh2g{color:#f56b00;text-align:left;vertical-align:top}
-.tg .tg-viqs{color:#fe0000;text-align:left;vertical-align:top}
-.tg .tg-yi9q{color:#009901;text-align:left;vertical-align:top}
+.tg .tg-t7us{background-color:#efefef;color:#9b9b9b;border-color:#c0c0c0;text-align:left;vertical-align:top}
+.tg .tg-iwjk{font-weight:bold;background-color:#dae8fc;border-color:#c0c0c0;text-align:left;vertical-align:top}
+.tg .tg-4hvh{background-color:#ffce93;color:#f56b00;border-color:#c0c0c0;text-align:left;vertical-align:top}
+.tg .tg-19wx{background-color:#9aff99;color:#009901;border-color:#c0c0c0;text-align:left;vertical-align:top}
+.tg .tg-bk4l{background-color:#ffccc9;color:#fe0000;border-color:#c0c0c0;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
   <tr>
-    <th class="tg-1wig"></th>
-    <th class="tg-1wig">Chrome</th>
-    <th class="tg-1wig">Firefox</th>
-    <th class="tg-1wig">Internet Explorer</th>
-    <th class="tg-1wig">Microsoft Edge</th>
-    <th class="tg-1wig">Opera</th>
-    <th class="tg-1wig">Safari</th>
-    <th class="tg-1wig">Diğer</th>
+    <th class="tg-iwjk"></th>
+    <th class="tg-iwjk">Chrome</th>
+    <th class="tg-iwjk">Firefox</th>
+    <th class="tg-iwjk">Internet Explorer</th>
+    <th class="tg-iwjk">Microsoft Edge</th>
+    <th class="tg-iwjk">Opera</th>
+    <th class="tg-iwjk">Safari</th>
+    <th class="tg-iwjk">Diğer</th>
   </tr>
   <tr>
-    <td class="tg-1wig">Mac</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-9s94">Uygulama Dışı<br></td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-iwjk">Mac</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-t7us">Uygulama Dışı<br></td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-4hvh">Belirsiz</td>
   </tr>
   <tr>
-    <td class="tg-1wig">Linux</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-iwjk">Linux</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-4hvh">Belirsiz</td>
   </tr>
   <tr>
-    <td class="tg-1wig">Windows</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-viqs">Desteklemez</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-wh2g">Belirsiz</td>
-    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-iwjk">Windows</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-bk4l">Desteklemez</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-4hvh">Belirsiz</td>
+    <td class="tg-4hvh">Belirsiz</td>
   </tr>
   <tr>
-    <td class="tg-1wig">Android</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-iwjk">Android</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-4hvh">Belirsiz</td>
   </tr>
   <tr>
-    <td class="tg-1wig">iOS</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-wh2g">Belirsiz</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-iwjk">iOS</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-4hvh">Belirsiz</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-4hvh">Belirsiz</td>
   </tr>
   <tr>
-    <td class="tg-1wig">WMP</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-yi9q">Destekler</td>
-    <td class="tg-wh2g">Belirsiz</td>
-    <td class="tg-9s94">Uygulama Dışı</td>
-    <td class="tg-wh2g">Belirsiz</td>
+    <td class="tg-iwjk">WMP</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-19wx">Destekler</td>
+    <td class="tg-4hvh">Belirsiz</td>
+    <td class="tg-t7us">Uygulama Dışı</td>
+    <td class="tg-4hvh">Belirsiz</td>
   </tr>
 </table>
 
