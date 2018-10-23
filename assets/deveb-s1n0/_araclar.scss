@@ -1,0 +1,196 @@
+// Arka yüzey
+
+[data-arka~="birincil"],
+.arka-birincil{
+	background-color: var(--birincil);
+}
+
+[data-arka~="ikincil"],
+.arka-ikincil{
+	background-color: var(--ikincil);
+}
+
+[data-arka~="başarı"],
+.arka-başarı{
+	background-color: var(--başarı);
+}
+
+[data-arka~="tehlike"],
+.arka-tehlike{
+	background-color: var(--tehlike);
+}
+
+[data-arka~="uyarı"],
+.arka-uyarı{
+	background-color: var(--uyarı);
+}
+
+[data-arka~="sorun"],
+.arka-sorun{
+	background-color: var(--sorun);
+}
+
+[data-arka~="bilgi"],
+.arka-bilgi{
+	background-color: var(--bilgi);
+}
+
+[data-arka~="aydın"],
+.arka-aydın{
+	background-color: var(--aydın);
+}
+
+[data-arka~="koyu"],
+.arka-koyu{
+	background-color: var(--koyu);
+}
+
+[data-arka~="sönük"],
+.arka-sönük{
+	background-color: var(--sönük);
+}
+
+[data-arka~="beyaz"],
+.arka-beyaz{
+	background-color: var(--beyaz);
+}
+
+// YAZI
+// l, o, s, y, dürmesiz, abc, Abc, ABC, gölge, kk, k, d, i, ii, e, 3n
+// renk: birincil, ikincil, başarı, tehlike, uyarı, sorun, bilgi, aydın, koyu, sönük, beyaz
+
+[data-yazı~="birincil"],
+.yazı-birincil{
+	color: var(--birincil);
+}
+
+[data-yazı~="ikincil"],
+.yazı-ikincil{
+	color: var(--ikincil);
+}
+
+[data-yazı~="başarı"],
+.yazı-başarı{
+	color: var(--başarı);
+}
+
+[data-yazı~="tehlike"],
+.yazı-tehlike{
+	color: var(--tehlike);
+}
+
+[data-yazı~="uyarı"],
+.yazı-uyarı{
+	color: var(--uyarı);
+}
+
+[data-yazı~="sorun"],
+.yazı-sorun{
+	color: var(--sorun);
+}
+
+[data-yazı~="bilgi"],
+.yazı-bilgi{
+	color: var(--bilgi);
+}
+
+[data-yazı~="aydın"],
+.yazı-aydın{
+	color: var(--aydın);
+}
+
+[data-yazı~="koyu"],
+.yazı-koyu{
+	color: var(--koyu);
+}
+
+[data-yazı~="sönük"],
+.yazı-sönük{
+	color: var(--sönük);
+}
+
+[data-yazı~="beyaz"],
+.yazı-beyaz{
+	color: var(--beyaz);
+}
+
+[data-yazı~="l"],
+.yazı-l{
+	text-align: left;
+}
+
+[data-yazı~="o"],
+.yazı-o{
+	text-align: center;
+}
+
+[data-yazı~="s"],
+.yazı-s{
+	text-align: right;
+}
+
+[data-yazı~="y"],
+.yazı-y{
+	text-align: justify;
+}
+
+[data-yazı~="dürmesiz"],
+.yazı-dürmesiz{
+	white-space: nowrap;
+}
+
+[data-yazı~="abc"],
+.yazı-abc{
+	text-transform: lowercase;
+}
+
+[data-yazı~="Abc"],
+.yazı-Abc{
+	text-transform: capitalize;
+}
+
+[data-yazı~="ABC"],
+.yazı-ABC{
+	text-transform: uppercase;
+}
+
+[data-yazı~="gölge"],
+.yazı-gölge{
+	text-shadow: 1px 1px rgba(255,255,255,.3);
+}
+
+[data-yazı~="kk"],
+.yazı-kk{
+	font-weight: 700;
+}
+
+[data-yazı~="k"],
+.yazı-k{
+	font-weight: 600;
+}
+
+[data-yazı~="d"],
+.yazı-d{
+	font-weight: 500;
+}
+
+[data-yazı~="i"],
+.yazı-i{
+	font-weight: 400;
+}
+
+[data-yazı~="ii"],
+.yazı-ii{
+	font-weight: 300;
+}
+
+[data-yazı~="e"],
+.yazı-e{
+	font-style: italic;
+}
+
+[data-yazı~="3n"],
+.yazı-3n{
+	text-overflow: ellipsis; 
+}
+
