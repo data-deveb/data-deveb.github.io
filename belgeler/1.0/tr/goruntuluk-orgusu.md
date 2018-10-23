@@ -99,6 +99,115 @@ description:
   </tbody>
 </table>
 
+<p></p>
+
+<h2>Görüntülük Etki Alanları</h2>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-dgm7{font-weight:bold;font-size:16px;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;color:#343434;border-color:#efefef;text-align:left;vertical-align:top}
+.tg .tg-3mc6{font-weight:bold;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;background-color:#ecf4ff;color:#343434;border-color:#efefef;text-align:center;vertical-align:top}
+.tg .tg-fk29{font-weight:bold;font-size:16px;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;color:#343434;border-color:#efefef;text-align:center;vertical-align:top}
+.tg .tg-d0bf{font-weight:bold;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;color:#656565;border-color:#efefef;text-align:center;vertical-align:top}
+.tg .tg-5a6q{font-weight:bold;background-color:#ffffff;color:#009901;border-color:#efefef;text-align:center;vertical-align:top}
+.tg .tg-jedj{font-weight:bold;color:#009901;border-color:#efefef;text-align:center;vertical-align:top}
+.tg .tg-0wg1{background-color:#ffffff;color:#efefef;border-color:#efefef;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-d0bf">Görüntülük / Benek</th>
+    <th class="tg-fk29">  0  </th>
+    <th class="tg-fk29"> 300 </th>
+    <th class="tg-fk29"> 576 </th>
+    <th class="tg-fk29"> 768 </th>
+    <th class="tg-fk29"> 992 </th>
+    <th class="tg-fk29">1200</th>
+    <th class="tg-fk29">1900</th>
+    <th class="tg-fk29">  ∞  </th>
+  </tr>
+  <tr>
+    <td class="tg-3mc6">data-gnl</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-jedj">✔</td>
+  </tr>
+  <tr>
+    <td class="tg-3mc6">data-ufk</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-jedj">✔</td>
+  </tr>
+  <tr>
+    <td class="tg-3mc6">data-kçk</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-jedj">✔</td>
+  </tr>
+  <tr>
+    <td class="tg-3mc6">data-ort</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-jedj">✔</td>
+  </tr>
+  <tr>
+    <td class="tg-3mc6">data-byk</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-jedj">✔</td>
+  </tr>
+  <tr>
+    <td class="tg-3mc6">data-kcm</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-jedj">✔</td>
+  </tr>
+  <tr>
+    <td class="tg-3mc6">data-ulu</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-0wg1">✘</td>
+    <td class="tg-5a6q">✔</td>
+    <td class="tg-jedj">✔</td>
+  </tr>
+</table>
+
+<p></p>
+
 <h3>Görüntülük Yönergeleri</h3>
 
 <p>
