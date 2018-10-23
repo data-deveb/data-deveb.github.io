@@ -1,0 +1,11 @@
+{%- assign veri = site.data.s1n0.deveb -%}
+{%- assign dil = page.lang -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " tr " }}">
+
+{%- include head.html -%}
+
+<body>
+{{content}}
+</body>
+</html>
