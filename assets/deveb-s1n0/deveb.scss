@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                               //
-//   KESİTLİK ÖRGÜSÜ s1.0.30                                                                      //
+//   DEVEB s1.0.30                                                                               //
 //                                                                                               //
 //   Bu örgü "bölümleme düzeni", "esnetme düzeni", "sıralama düzeni", "aralama düzeni",          //
 //   "yineleme düzeni", "konumlama düzeni", "biçimleme düzeni" özellikleriyle oluşturulmuştur.   //
@@ -13,4 +13,13 @@
 @import "capraz-tarayici";
 @import "kesitlik-orgusu";
 @import "dal-orgusu";
+@import "araclar"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// NOTLAR
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ARAÇLAR:::
+// renkler: birincil, ikincil, başarı, tehlike, uyarı, bilgi, aydın, koyu, sönük, beyaz
+// renk-alanı: yazı- , ay- (arka yüzeyi),
 
