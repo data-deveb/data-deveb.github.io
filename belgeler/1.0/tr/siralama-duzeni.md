@@ -6,7 +6,7 @@ title: Sıralama Düzeni
 description: 
 ---
 <p class="girlik">
-    Kesitlik örgüsünün sıralama özelliği ögeleri yazım düzeni sırasından kopararak kendi aralarında yeniden sıralandırmaya yarar. \"inci, ıncı, uncu, üncü\" anlamına gelen nc birimiyle kullanılır.
+    Kesitlik örgüsünün sıralama özelliği ögeleri yazım düzeni sırasından kopararak kendi aralarında yeniden sıralandırmaya yarar. "inci, ıncı, uncu, üncü" anlamına gelen nc birimiyle kullanılır.
   </p>
 
   <h3>Sıralama: 1nc ~ 24nc</h3>
