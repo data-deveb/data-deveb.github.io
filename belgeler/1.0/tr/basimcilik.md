@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: 1.0/tr/basimcilik
+permalink: 1.0/tr/ogeler/basimcilik
 lang: tr
 title: Basımcılık
 description: 
@@ -12,6 +12,10 @@ description:
 <h2>Genel Ayarlar</h2>
 <p>
   Yazılar varsayılan değere göre boyutlarını kazanırlar. Yazı boyutu geniş görüntülükler için 16 benek olarak ayarlıyken, dar görüntülükler için 14 benek olarak ayarlanmıştır. İsteğe bağlı olarak bu değerler değiştirilebilir. Tüm yazılar bu değerlere göre ölçeklenecektir. Eğer dış css dosyalarında doğrudan bir ölçü tanımlarsanız bu ölçüler etki dışında kalır. Ayarları değiştirmek için _ayarlar.scss dosyasında :root içinde tanımlı font-size değerlerini değiştirmeniz yeterlidir.
+</p>
+<h2>Biçitler</h2>
+<p>
+  Biçitler, yazıların görünüş biçimleridir. Yazı biçiti veya yalnızca biçit sözcüğüyle anılır. Her işletim örgüsü için deveb'de olabilecek en iyi özellikteki biçiti geriye dönük olarak sunan düzen kuruludur.
 </p>
 <h2>Başlıklar</h2>
 <p>

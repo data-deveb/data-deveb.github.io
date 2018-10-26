@@ -32,5 +32,4 @@ CSS, ağ sayfalarının sunumunu renkleri, düzeni ve yazı tiplerini içererek 
 ## Ağ-Biçitleri Nedir?
 
 Ağ-Biçitleri, kullanıcıların işletim örgüsüne yüklemeyi gerektirmeden ağ üzerinde istek üzerine biçitleri kullanmalarını sağlayan bir teknolojidir.
-
 Biçit: Biçimleyerek oluşturulan biçim benizi anlamına gelir. Yazıların görünüşleri biçit sözcüğüyle anılır.
