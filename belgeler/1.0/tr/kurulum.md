@@ -48,3 +48,5 @@ description:
 <p>
 {{ veri[dil].yazilik1 }}
 </p>
+
+
