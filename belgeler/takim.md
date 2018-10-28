@@ -6,81 +6,68 @@ title: Takım
 description: 
 ---
 {% assign github = site.github %}
-{% for takim in github.contributors %}
-<div>
-	<div class="movie_card" id="">
-	  <div class="info_section">
-	    <div data-gnl="lt" class="movie_header">
-	      <img class="locandina" src="{{takim.avatar_url}}" alt="{{ takim.login }}"/>
-	      <a href="{{takim.html_url}}">
-	      	<h1>{{ takim.login }}</h1>
-	      	<h4>Deveb Takımdaşı</h4>
-	      </a>
-	      <div>
-	      	<span class="minutes">{{ takim.id }}</span>
-	      </div>
-	      <div class="movie_social">
-	      <a href="{{takim.html_url}}">
-	      	<p class="type">{{ takim.html_url }}</p>
-	      </a>
-	      </div>	      
-	    </div>
-	  </div>
-	  <div class="blur_back" style="background: url('{{takim.avatar_url}}')"></div>
-	</div>	
 
-</div>  
+{% for takim in github.contributors %}
+<div class="takımdaş-deriti">
+  <div class="bilgi-alanı">
+    <div data-gnl="lt" class="bilgi-başı">
+      <img class="locandina" src="{{takim.avatar_url}}" alt="{{ takim.login }}"/>
+      <a href="{{takim.html_url}}">
+      	<h1>{{ takim.login }}</h1>
+      	<h4>Deveb Takımdaşı</h4>
+      </a>
+      <div>
+      	<span class="benzersiz">{{ takim.id }}</span>
+      </div>
+      <div class="alt-alan">
+      <a href="{{takim.html_url}}">
+      	<p class="type">{{ takim.html_url }}</p>
+      </a>
+      </div>	      
+    </div>
+  </div>
+  <div class="alt-deri" style="background: url('{{takim.avatar_url}}')"></div>
+</div>
 {% endfor %}
 
 <style type="text/css">
-.link {
-  display: block;
-  text-align: center;
-  color: #777;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.movie_card {
-  position: relative;
+.takımdaş-deriti {
+	position: relative;
   max-width: 800px;
-  height: 300px;
-  margin: 60px auto;
+  height: 250px;
+  margin: 50px auto;
   overflow: hidden;
   border-radius: 10px;
   transition: all 0.4s;
   box-shadow: 0px 0px 120px -25px rgba(0, 0, 0, 0.5);
 }
-.movie_card:hover {
+.takımdaş-deriti:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   box-shadow: 0px 0px 80px -25px rgba(0, 0, 0, 0.5);
   transition: all 0.4s;
 }
-.movie_card .info_section {
-  position: relative;
-  width: 100%;
+.takımdaş-deriti .bilgi-alanı {
   height: 100%;
   background-blend-mode: multiply;
   z-index: 2;
   border-radius: 10px;
 }
-.movie_card .info_section .movie_header {
+.takımdaş-deriti .bilgi-alanı .bilgi-başı {
   position: relative;
   padding: 25px;
   height: 100%;
-
 }
-.movie_card .info_section .movie_header h1 {
+.takımdaş-deriti .bilgi-alanı .bilgi-başı h1 {
 	font-size: 1.8rem;
-  color: black;
+  color: #2c2171;
   font-weight: 400;
 }
-.movie_card .info_section .movie_header h4 {
+.takımdaş-deriti .bilgi-alanı .bilgi-başı h4 {
   color: #555;
   font-weight: 400;
 }
-.movie_card .info_section .movie_header .minutes {
+.takımdaş-deriti .bilgi-alanı .bilgi-başı .benzersiz {
   display: inline-block;
   margin-top: 15px;
   color: #555;
@@ -88,11 +75,11 @@ description:
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.05);
 }
-.movie_card .info_section .movie_header .type {
+.takımdaş-deriti .bilgi-alanı .bilgi-başı .type {
   display: inline-block;
   color: #959595;
 }
-.movie_card .info_section .movie_header .locandina {
+.takımdaş-deriti .bilgi-alanı .bilgi-başı .locandina {
   position: relative;
   margin-right: 15px;
   height: 100%;
@@ -102,12 +89,12 @@ max-height: 100px;
 }
 
 
-.movie_card .info_section .movie_social {
+.takımdaş-deriti .bilgi-alanı .alt-alan {
   min-height: 10%;
   padding-bottom: 20px;
 }
 
-.movie_card .blur_back {
+.takımdaş-deriti .alt-deri {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -117,52 +104,21 @@ max-height: 100px;
   border-radius: 11px;
 }
 
-@media screen and (min-width: 768px) {
-  .movie_header {
-    width: 65%;
+
+  .bilgi-alanı {
+    background: linear-gradient(to right, #ffffff 75%, transparent 120%);
   }
 
-  .movie_desc {
-    width: 50%;
-  }
-
-  .info_section {
-    background: linear-gradient(to right, #e5e6e6 50%, transparent 100%);
-  }
-
-  .blur_back {
+  .alt-deri {
     width: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
 	background-position-x: right !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .movie_card {
-    width: 95%;
-    margin: 70px auto;
-    min-height: 350px;
-    height: auto;
+	background-position:center right fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  background-size: auto 100% !important;
   }
 
-  .blur_back {
-    width: 100%;
-    background-position-x: right !important;
-    background-position-y: top !important;
-    background-repeat: no-repeat;
-  }
-
-  .movie_header {
-    width: 100%;
-    margin-top: 35px;
-  }
-
-  .movie_desc {
-    width: 100%;
-  }
-
-  .info_section {
-    background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
-    display: inline-grid;
-  }
-}
 </style>
