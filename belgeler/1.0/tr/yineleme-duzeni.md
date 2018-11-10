@@ -13,38 +13,38 @@ description:
     <div class="önizleme">
       <div data-gnl="2-2" style="padding:0; border:0px solid red;">
         <div>
-          2-2
+          <div class="kutu">2-2</div>
         </div>
         <div>
-          2-2
+          <div class="kutu">2-2</div>
         </div>
         <div>
-          2-2
+          <div class="kutu">2-2</div>
         </div>
         <div>
-          2-2
+          <div class="kutu">2-2</div>
         </div>
         <div>
-          2-2
+          <div class="kutu">2-2</div>
         </div>
       </div>
     </div>
     {% highlight html %}
     <div data-gnl="2-2">
       <div>
-        2-2
+        <!-- içerik alanı -->
       </div>
       <div>
-        2-2
+        <!-- içerik alanı -->
       </div>
       <div>
-        2-2
+        <!-- içerik alanı -->
       </div>
       <div>
-        2-2
+        <!-- içerik alanı -->
       </div>
       <div>
-        2-2
+        <!-- içerik alanı -->
       </div>
     </div>
     {% endhighlight %}
@@ -59,50 +59,50 @@ description:
     <div class="önizleme">
       <div data-gnl="4-4" style="padding:0; border:0px solid red; background-color: transparent;">
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div data-gnl="2 /4">
-          2 /4
+          <div class="kutu">2 /4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
       </div>
     </div>
     {% highlight html %}
     <div data-gnl="4-4">
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div data-gnl="2 /4">
-        2 /4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
     </div>
     {% endhighlight %}
@@ -117,50 +117,50 @@ description:
     <div class="önizleme">
       <div data-gnl="4-4" style="padding:0; border:0px solid red;  background-color: transparent;">
         <div data-gnl="1 /">
-          1 /
+          <div class="kutu">1 /</div>
         </div>
         <div data-gnl="2 /">
-          2 /
+          <div class="kutu">2 /</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
       </div>
     </div>
     {% highlight html %}
     <div data-gnl="4-4">
       <div data-gnl="1 /">
-        1 /
+        <!-- içerik alanı -->
       </div>
       <div data-gnl="2 /">
-        2 /
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
     </div>
     {% endhighlight %}
@@ -174,50 +174,50 @@ description:
     <div class="önizleme">
       <div data-gnl="4-4" style="padding:0; border:0px solid red; background-color: transparent;">
         <div data-gnl="1 /">
-          1 /
+          <div class="kutu">1 /</div>
         </div>
         <div data-gnl="2 /">
-          2 /
+          <div class="kutu">2 /</div>
         </div>
         <div data-gnl="2 /4">
-          2 /4
+          <div class="kutu">2 /4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
         <div>
-          4-4
+          <div class="kutu">4-4</div>
         </div>
       </div>
     </div>
     {% highlight html %}
     <div data-gnl="4-4">
       <div data-gnl="1 /">
-        1 /
+        <!-- içerik alanı -->
       </div>
       <div data-gnl="2 /">
-        2 /
+        <!-- içerik alanı -->
       </div>
       <div data-gnl="2 /4">
-        2 /4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
       <div>
-        4-4
+        <!-- içerik alanı -->
       </div>
     </div>
     {% endhighlight %}

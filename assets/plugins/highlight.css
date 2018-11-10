@@ -5,7 +5,8 @@ padding-top: 15px;
 border: 2px solid #f0f0f0;
 font-family: inherit;
 font-size: 14px;
-overflow:auto; }
+overflow: auto; 
+line-height: 1.3rem;}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */

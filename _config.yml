@@ -62,4 +62,5 @@ defaults:
     values:
       lang: "de"
 
-
+livereload: true
+verbose: true

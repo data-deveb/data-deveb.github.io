@@ -6,9 +6,14 @@ title: Görüntülük Örgüsü
 description: 
 ---
 <p class="girlik">
-  Saat kadar minik görüntülükleri (ekranları), telefon görüntülükleri, elüstü görüntülükleri, dizüstü görüntülükleri, masaüstü görüntülükleri, kocaman görüntülükleri ve ulu görüntülükleri olarak öbeklendirilmiş 7 ayrı görüntülük ölçeği uyarlamalı olarak
-  kullanılır.
+  En küçükten en büyük görüntülüğe doğru 7 ayrı ölçekte öbeklendirilmiş görüntülükleri uyarlamalı olarak kullanın. Telefon, elüstü, dizüstü, masaüstü ve daha büyük görüntülükler için ediklediğiniz tasarımları kolaylıkla gerçeğe dönüştürün.
 </p>
+<div data-gnl="o" style="background-color:#f8f9fa; color:#888; border:1px solid #f0f0f0; padding:20px; text-align: center;">
+  <img src="/assets/img/goruntuluk.png">
+  <p>
+    Görüntülük örgüsü küçük görüntülükler önce olmak üzere büyük görüntülüklere doğru etkileyen düzende ediklenmiştir. Tasarımlar bu özelliğin öze alınmasıyla yazılabilirler.
+  </p>
+</div>
 <p>
   Günümüzde, görüntülük ölçekleri ve görüntülük çözünürlükleri çok çeşitlidir. Bu nedenle uyarlamalı tasarım yapmak bir gerekliliktir. Minik ekranlar ise yakın gelecekte yaygınlaşacaktır. Bu koşullar altında ve doğrultusunda <span class="simget">deveb</span>  daha çok görüntülük aralığı içerir.
 </p>

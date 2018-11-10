@@ -25,37 +25,37 @@ description:
 <h3>Önizleme</h3>
 <div class="önizleme">
   <div data-gnl="3-| 3 |-3 /24">
-  	3-| 3 |-3 /24
+  	<div class="kutu">3-| 3 |-3 /24</div>
   </div>
   <div data-gnl="3-| 6 |-3">
-    3-| 6 |-3
+    <div class="kutu">3-| 6 |-3</div>
   </div>
   <div data-gnl="6-| 6">
-    6-| 6
+    <div class="kutu">6-| 6</div>
   </div>
   <div data-gnl="1-| 2 / |-1">
-	1-| 2 / |-1
+    <div class="kutu">1-| 2 / |-1</div>
   </div>
   <div data-gnl="1-| 3 / |-1">
-	1-| 3 / |-1
+    <div class="kutu">1-| 3 / |-1</div>
   </div>		
 </div>
 </div>
 {% highlight html %}
     <div data-gnl="3-| 3 |-3 /24">
-      3-| 3 |-3 /24
+      <!-- içerik alanı -->
     </div>
     <div data-gnl="3-| 6 |-3">
-      3-| 6 |-3
+      <!-- içerik alanı -->
     </div>
     <div data-gnl="6-| 6">
-      6-| 6
+      <!-- içerik alanı -->
     </div>
     <div data-gnl="1-| 2 / |-1">
-      1-| 2 / |-1
+      <!-- içerik alanı -->
     </div>
     <div data-gnl="1-| 3 / |-1">
-      1-| 3 / |-1
+      <!-- içerik alanı -->
     </div>
 {% endhighlight %}
 
@@ -73,24 +73,24 @@ description:
   <div class="önizleme">
     <div data-gnl="araları-aralık">
       <div data-gnl="1 /8">
-        araları-aralık
+        <div class="kutu">araları-aralık</div>
       </div>
       <div data-gnl="1 /8">
-        araları-aralık
+        <div class="kutu">araları-aralık</div>
       </div>
       <div data-gnl="1 /8">
-        araları-aralık
+        <div class="kutu">araları-aralık</div>
       </div>
     </div>
     <div data-gnl="dengeli-aralık">
       <div data-gnl="1 /8">
-        dengeli-aralık
+        <div class="kutu">dengeli-aralık</div>
       </div>
       <div data-gnl="1 /8">
-        dengeli-aralık
+        <div class="kutu">dengeli-aralık</div>
       </div>
       <div data-gnl="1 /8">
-        dengeli-aralık
+        <div class="kutu">dengeli-aralık</div>
       </div>
     </div>
   </div>
@@ -98,24 +98,24 @@ description:
 {% highlight html %}
     <div data-gnl="araları-aralık">
       <div data-gnl="1 /8">
-        araları-aralık
+        <!-- içerik alanı -->
       </div>
       <div data-gnl="1 /8">
-        araları-aralık
+        <!-- içerik alanı -->
       </div>
       <div data-gnl="1 /8">
-        araları-aralık
+        <!-- içerik alanı -->
       </div>
     </div>
     <div data-gnl="dengeli-aralık">
       <div data-gnl="1 /8">
-        dengeli-aralık
+        <!-- içerik alanı -->
       </div>
       <div data-gnl="1 /8">
-        dengeli-aralık
+        <!-- içerik alanı -->
       </div>
       <div data-gnl="1 /8">
-        dengeli-aralık
+        <!-- içerik alanı -->
       </div>
     </div>
 {% endhighlight %}

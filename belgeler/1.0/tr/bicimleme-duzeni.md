@@ -5,7 +5,6 @@ lang: tr
 title: Biçimleme Düzeni
 description: 
 ---
-
 <p class="girlik">
   Tasarımlarınızı kolaylıkla yapmanızı sağlayan biçimleme düzeninin özellikleriniz kullanın. Tam görüntülük, kap, sığ gibi özel amaçlı özellikleri yakından inceleyin.
 </p>
@@ -34,26 +33,26 @@ description:
   <div class="önizleme">
     <div data-gnl="kap">
       <div data-gnl="1 /3">
-        1 /3
+        <div class="kutu">1 /3</div>
       </div>
       <div data-gnl="1 /3">
-        1 /3
+        <div class="kutu">1 /3</div>
       </div>
       <div data-gnl="4">
-        4
+        <div class="kutu">4</div>
       </div>
     </div>
   </div>
   {% highlight html %}
   <div data-gnl="kap">
     <div data-gnl="1 /3">
-      1 /3
+      <!-- içerik alanı -->
     </div>
     <div data-gnl="1 /3">
-      1 /3
+      <!-- içerik alanı -->
     </div>
     <div data-gnl="4">
-      4
+      <!-- içerik alanı -->
     </div>
   </div>
   {% endhighlight %}
@@ -85,25 +84,25 @@ description:
   <h3>Örnek</h3>
   <div class="önizleme">
     <div data-gnl="0">
-      0
+      <div class="kutu">0</div>
     </div>
     <div data-gnl="4">
-      4
+      <div class="kutu">4</div>
     </div>
     <div data-gnl="6">
-      6
+      <div class="kutu">6</div>
     </div>
   </div>
 </div>  
 {% highlight html %}
   <div data-gnl="0">
-    0
+    <!-- içerik alanı -->
   </div>
   <div data-gnl="4">
-    4
+    <!-- içerik alanı -->
   </div>
   <div data-gnl="6">
-    6
+    <!-- içerik alanı -->
   </div>
 {% endhighlight %}
 
@@ -116,40 +115,40 @@ description:
     <h3>Önizleme</h3>
     <div class="önizleme">
       <div data-gnl="1 /24 kaymadan">
-        Taşmadan yazamadıklarımızdan mısınız?
+        <div class="kutu">Taşmadan yazamadıklarımızdan mısınız?</div>
       </div>
       <div data-gnl="dürmeden">
         <div>
-          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+          <div class="kutu">Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.</div>
         </div>
         <div>
-          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+          <div class="kutu">Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.</div>
         </div>
         <div>
-          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+          <div class="kutu">Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.</div>
         </div>
         <div>
-          Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+          <div class="kutu">Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.</div>
         </div>
       </div>
     </div>
   </div>
   {% highlight html %}
     <div data-gnl="1 /24 kaymadan">
-      Taşmadan yazamadıklarımızdan mısınız?
+      <!-- içerik alanı -->
     </div>
     <div data-gnl="dürmeden">
       <div>
-        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        <!-- içerik alanı -->
       </div>
       <div>
-        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        <!-- içerik alanı -->
       </div>
       <div>
-        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        <!-- içerik alanı -->
       </div>
       <div>
-        Buradaki içerikler dürmeden etkisi altında görüntülenmektedir.
+        <!-- içerik alanı -->
       </div>
     </div>
   {% endhighlight %}
