@@ -23,7 +23,35 @@
     --c: 0;
     --d: 0;
   }
- 
+
+  [data-#{$gnl}*="#{$aralık}-1"],
+  [data-#{$kçk}*="#{$aralık}-1"],
+  [data-#{$ort}*="#{$aralık}-1"],
+  [data-#{$byk}*="#{$aralık}-1"],
+  [data-#{$kcm}*="#{$aralık}-1"],
+  [data-#{$ulu}*="#{$aralık}-1"]{
+    --araara: 10px;
+    --araarae: -10px;
+  }
+  [data-#{$gnl}*="#{$aralık}-2"],
+  [data-#{$kçk}*="#{$aralık}-2"],
+  [data-#{$ort}*="#{$aralık}-2"],
+  [data-#{$byk}*="#{$aralık}-2"],
+  [data-#{$kcm}*="#{$aralık}-2"],
+  [data-#{$ulu}*="#{$aralık}-2"]{
+    --araara: 15px;
+    --araarae: -15px;
+  }
+  [data-#{$gnl}*="#{$aralık}-3"],
+  [data-#{$kçk}*="#{$aralık}-3"],
+  [data-#{$ort}*="#{$aralık}-3"],
+  [data-#{$byk}*="#{$aralık}-3"],
+  [data-#{$kcm}*="#{$aralık}-3"],
+  [data-#{$ulu}*="#{$aralık}-3"]{
+    --araara: 20px;
+    --araarae: -20px;
+  }
+
 }
 
 @mixin sondaki-ayarlar(){
@@ -267,60 +295,6 @@
     --sağara-d: var(--d);
   }
 
-//  $i: 1;  $j: 0;
-//  @while $i <= $p {
-//    [data-#{$görüntülük}~="/#{$i}-|"],[data-#{$görüntülük}~="/#{$i+1}-|"],
-//    [data-#{$görüntülük}~="/#{$i+2}-|"],[data-#{$görüntülük}~="/#{$i+3}-|"]
-//    {--solara-b: #{$j+1}; --solara-d: 0}
-//
-//   $i: $i + 4;    $j: $j + 1;
-//  }
-//
-//  %#{$görüntülük}-solara-d-3 {--solara-d: 3}
-//  %#{$görüntülük}-solara-d-2 {--solara-d: 2}
-//  %#{$görüntülük}-solara-d-1 {--solara-d: 1}
-//
-//  $i: 1;
-//  @while $i <= $p {
-//      [data-#{$görüntülük}~="/#{$i}-|"], {
-//          @extend %#{$görüntülük}-solara-d-3;
-//      }
-//      [data-#{$görüntülük}~="/#{$i+1}-|"], {
-//          @extend %#{$görüntülük}-solara-d-2;
-//      }
-//     [data-#{$görüntülük}~="/#{$i+2}-|"], {
-//          @extend %#{$görüntülük}-solara-d-1;
-//      }
-//      $i: $i + 4;
-//  }
-//
-//  $i: 1;  $j: 0;
-//  @while $i <= $p {
-//    [data-#{$görüntülük}~="|-/#{$i}"],[data-#{$görüntülük}~="|-/#{$i+1}"],
-//    [data-#{$görüntülük}~="|-/#{$i+2}"],[data-#{$görüntülük}~="|-/#{$i+3}"]
-//    {--sağara-b: #{$j+1}; --sağara-d: 0}
-//
-//    $i: $i + 4;    $j: $j + 1;
-//  }
-
-//  %#{$görüntülük}-sağara-d-3 {--sağara-d: 3}
-//  %#{$görüntülük}-sağara-d-2 {--sağara-d: 2}
-//  %#{$görüntülük}-sağara-d-1 {--sağara-d: 1}
-
-//  $i: 1;
-//  @while $i <= $p {
-//      [data-#{$görüntülük}~="|-/#{$i}"], {
-//          @extend %#{$görüntülük}-sağara-d-3;
-//      }
-//      [data-#{$görüntülük}~="|-/#{$i+1}"], {
-//          @extend %#{$görüntülük}-sağara-d-2;
-//      }
-//      [data-#{$görüntülük}~="|-/#{$i+2}"], {
-//          @extend %#{$görüntülük}-sağara-d-1;
-//      }
-//      $i: $i + 4;
-//  }
-
 // Bölümleme Düzeni Aralık Sayışı
 
   [data-#{$görüntülük}*="-|"]{
@@ -330,55 +304,23 @@
     margin-right: calc(100% / (var(--sağara-b) * 4 - var(--sağara-d)) * (var(--sağdan-a) * 4 - var(--sağdan-c)));
   }
 
-  [data-#{$görüntülük}*="#{$aralık}-1"]{margin: 10px}
-  [data-#{$görüntülük}*="#{$aralık}-2"]{margin: 15px}
-  [data-#{$görüntülük}*="#{$aralık}-3"]{margin: 20px}
-
-  [data-#{$görüntülük}~="#{$araları-aralık}-1"][data-#{$görüntülük}]{
-    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
-    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 10px);
-    margin: -10px 0 0 -10px;
+  [data-#{$görüntülük}*="#{$araları-aralık}-"][data-#{$görüntülük}]{
+    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + var(--araara));
+    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + var(--araara));
+    margin: var(--araarae) 0 0 var(--araarae);
   }
 
-  [data-#{$görüntülük}~="#{$araları-aralık}-2"][data-#{$görüntülük}]{
-    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 15px);
-    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 15px);
-    margin: -15px 0 0 -15px;
+  [data-#{$görüntülük}*="#{$araları-aralık}-"] > *{
+    padding-left: var(--araara); 
+    padding-top: var(--araara);
   }
-
-  [data-#{$görüntülük}~="#{$araları-aralık}-3"][data-#{$görüntülük}]{
-    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 20px);
-    max-width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) + 20px);
-    margin: -20px 0 0 -20px;
+  [data-#{$görüntülük}*="#{$dengeli-aralık}-"] > *{
+    padding: var(--araara);
   }
-
-
-  [data-#{$görüntülük}~="#{$araları-aralık}-1"] > *{padding-left:10px;padding-top:10px;}
-  [data-#{$görüntülük}~="#{$araları-aralık}-2"] > *{padding-left:15px;padding-top:15px;}
-  [data-#{$görüntülük}~="#{$araları-aralık}-3"] > *{padding-left:20px;padding-top:20px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-1"] > *{padding:10px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-2"] > *{padding:15px;}
-  [data-#{$görüntülük}~="#{$dengeli-aralık}-3"] > *{padding:20px;}  
-
-//  [data-#{$gnl}~="#{$aralık}"] > [data-#{$gnl}]{
-//    margin: var(--aralık);
-//    flex-basis: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-//    width: calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-//    max-width:  calc(100% / (var(--b) * 4 - var(--d)) * (var(--a) * 4 - var(--c)) - var(--ara) - var(--ara));
-//  }
 
   [data-#{$gnl}~="#{$oluk-çevre}"] > [data-#{$gnl}]{
     padding: var(--oluk);
   }
-
-//  [data-#{$gnl}~="#{$oluk}"] > [data-#{$gnl}]{
-//    padding-left: var(--oluk);
-//    padding-right: var(--oluk);
-//  }
-
-//  [data-#{$gnl}~="#{$oluk-yok}"] > [data-#{$gnl}]{
-//    padding: 0
-//  }
 
 }
 
