@@ -18,32 +18,32 @@ description:
   <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
-      <div style="height:300px; border:1px solid #eee; padding:0; background-color: transparent;">
-        <div data-gnl="4 lt">
+      <div style="height:300px; padding:0; background-color: transparent;">
+        <div data-gnl="4 lt" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">lt: solüst</div>
         </div>
-        <div data-gnl="4 t">
+        <div data-gnl="4 t" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">t: üst</div>
         </div>
-        <div data-gnl="4 ts">
+        <div data-gnl="4 ts" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">ts: üstsağ</div>
         </div>
-        <div data-gnl="4 l">
+        <div data-gnl="4 l" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">l: sol</div>
         </div>
-        <div data-gnl="4 o">
+        <div data-gnl="4 o" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">o: orta</div>
         </div>
-        <div data-gnl="4 s">
+        <div data-gnl="4 s" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">s: sağ</div>
         </div>
-        <div data-gnl="4 la">
+        <div data-gnl="4 la" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">la: solalt</div>
         </div>
-        <div data-gnl="4 a">
+        <div data-gnl="4 a" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">a: alt</div>
         </div>
-        <div data-gnl="4 as">
+        <div data-gnl="4 as" style="border:1px dashed #ddd;">
           <div class="kutu" data-gnl="0">as: altsağ</div>
         </div>
       </div>
@@ -84,13 +84,13 @@ description:
   <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
-      <div data-gnl="l" style="border:1px solid #eee;">
+      <div data-gnl="l" style="border:1px dashed #ddd; margin-bottom:10px">
         <div class="kutu" data-gnl="1 /3">l: sol</div>
       </div>
-      <div data-gnl="o" style="border:1px solid #eee;">
+      <div data-gnl="o" style="border:1px dashed #ddd; margin-bottom:10px">
         <div class="kutu" data-gnl="1 /3">o: orta</div>
       </div>
-      <div data-gnl="s" style="border:1px solid #eee;">
+      <div data-gnl="s" style="border:1px dashed #ddd;">
         <div class="kutu" data-gnl="1 /3">s: sağ</div>
       </div>
     </div>
@@ -115,13 +115,13 @@ description:
   <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
-      <div data-gnl="1 /3 t" style="height:300px; border:1px solid #eee;">
+      <div data-gnl="1 /3 t" style="height:300px; border:1px solid #ddd;">
         <div class="kutu" data-gnl="0">t: üst</div>
       </div>
-      <div data-gnl="1 /3 o" style="height:300px; border:1px solid #eee;">
+      <div data-gnl="1 /3 o" style="height:300px; border:1px solid #ddd;">
         <div class="kutu" data-gnl="0">o: orta</div>
       </div>
-      <div data-gnl="1 /3 a" style="height:300px; border:1px solid #eee;">
+      <div data-gnl="1 /3 a" style="height:300px; border:1px solid #ddd;">
         <div class="kutu" data-gnl="0">a: alt</div>
       </div>
     </div>
@@ -145,7 +145,7 @@ description:
   <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
-      <div style="height:150px;">
+      <div style="height:150px; border:1px dashed #ddd;">
         <div data-gnl="3 /10 _t">
           <div class="kutu">_t: kendisi üst</div>
         </div>
@@ -156,7 +156,7 @@ description:
           <div class="kutu">_a: kendisi alt</div>
         </div>
       </div>
-      <div style="height:150px;">
+      <div style="height:150px; border:1px dashed #ddd;">
         <div data-gnl="3 /10 _l">
           <div class="kutu">_l: kendisi sol</div>
         </div>
@@ -167,7 +167,7 @@ description:
           <div class="kutu">_s: kendisi sağ</div>
         </div>
       </div>
-      <div style="height:150px;">
+      <div style="height:150px; border:1px dashed #ddd;">
         <div data-gnl="3 /10 _lt">
           <div class="kutu">_lt: kendisi solüst</div>
         </div>
@@ -175,7 +175,7 @@ description:
           <div class="kutu">_as: kendisi altsağ</div>
         </div>
       </div>
-      <div style="height:150px;">
+      <div style="height:150px; border:1px dashed #ddd;">
         <div data-gnl="3 /10 _la">
           <div class="kutu">_la: kendisi solalt</div>
         </div>
@@ -231,7 +231,7 @@ description:
   <div class="örnek">
     <h3>Önizleme</h3>
     <div class="önizleme">
-      <div data-gnl="uzat" data-byk="1 /2" style="height:300px;">
+      <div data-gnl="uzat" data-byk="1 /2" style="min-height:300px; border:1px dashed #ddd;">
         <div data-gnl="1 /3">
           <div class="kutu">uzat</div>
         </div>
@@ -242,12 +242,13 @@ description:
           <div class="kutu">uzat</div>
         </div>
       </div>
-      <div data-gnl="uzat" data-byk="1 /2" style="height:300px;">
+      <div data-gnl="lt" data-byk="1 /2" style="min-height:300px; border:1px dashed #ddd;">
         <div data-gnl="1 /3 _t">
           <div class="kutu">_t</div>
+          <div class="kutu">_t</div>
         </div>
-        <div data-gnl="1 /3">
-          <div class="kutu">varsayılan (uzat)</div>
+        <div data-gnl="1 /3 uzun-ol">
+          <div class="kutu">uzun-ol</div>
         </div>
         <div data-gnl="1 /3 _t">
           <div class="kutu">_t</div>
@@ -267,11 +268,11 @@ description:
         <!-- içerik alanı -->
       </div>
     </div>
-    <div data-gnl="uzat" data-byk="1 /2" style="height:300px;">
+    <div data-gnl="lt" data-byk="1 /2" style="height:300px;">
       <div data-gnl="1 /3 _t">
         <!-- içerik alanı -->
       </div>
-      <div data-gnl="1 /3">
+      <div data-gnl="1 /3 uzun-ol">
         <!-- içerik alanı -->
       </div>
       <div data-gnl="1 /3 _t">

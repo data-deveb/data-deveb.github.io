@@ -6,7 +6,7 @@ title: Bölümleme Düzeni
 description: 
 ---
 <p class="girlik">
-  Görüntülüklere göre uyarlanabilir, eş ende 1'den 24'e dek özgürce kullanılabilir, varsayılan ölçeği 12 bölümlük olarak tanımlı, yüzdesel oranda bölümleme, özelleştirilebilir kesitlik örgüsü düzeni.
+  Görüntülüklere göre uyarlanabilir, eş ende 1'den 24 ölçeğe dek kullanılabilir, varsayılan ölçeği 12 bölümlük olarak tanımlı, yüzdesel oran bölümlü ve en özgür.
 </p>
 <div data-gnl="o" style="margin: 20px 0;">
   <div data-gnl="11 araları-aralık-1">
