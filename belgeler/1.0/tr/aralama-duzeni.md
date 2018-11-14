@@ -24,37 +24,79 @@ description:
 <div class="örnek">
 <h3>Önizleme</h3>
 <div class="önizleme">
+  <div data-gnl="1">
+    <div class="kutu">1</div>
+  </div>
+  <div data-gnl="2-| 6 |-1">
+    <div class="kutu">2-| 6 |-1</div>
+  </div>
+  <div data-gnl="2">
+    <div class="kutu">2</div>
+  </div>
+  <div data-gnl="3 /24">
+    <div class="kutu">3 /24</div>
+  </div>
   <div data-gnl="3-| 3 |-3 /24">
   	<div class="kutu">3-| 3 |-3 /24</div>
   </div>
-  <div data-gnl="3-| 6 |-3">
-    <div class="kutu">3-| 6 |-3</div>
+  <div data-gnl="3 /24">
+    <div class="kutu">3 /24</div>
+  </div>
+  <div data-gnl="3 /24">
+    <div class="kutu">3 /24</div>
+  </div>
+  <div data-gnl="3 /24">
+    <div class="kutu">3 /24</div>
+  </div>
+  <div data-gnl="3 /24">
+    <div class="kutu">3 /24</div>
   </div>
   <div data-gnl="6-| 6">
     <div class="kutu">6-| 6</div>
   </div>
-  <div data-gnl="1-| 2 / |-1">
-    <div class="kutu">1-| 2 / |-1</div>
+  <div data-gnl="2 /">
+    <div class="kutu">2 /</div>
   </div>
-  <div data-gnl="1-| 3 / |-1">
-    <div class="kutu">1-| 3 / |-1</div>
+  <div data-gnl="1-| 2 / |-1 /24">
+    <div class="kutu">1-| 2 / |-1 /24</div>
   </div>		
 </div>
 </div>
 {% highlight html %}
+    <div data-gnl="1">
+      <!-- içerik alanı -->
+    </div>
+    <div data-gnl="2-| 6 |-1">
+      <!-- içerik alanı -->
+    </div>
+    <div data-gnl="2">
+      <!-- içerik alanı -->
+    </div>
+    <div data-gnl="3 /24">
+      <!-- içerik alanı -->
+    </div>
     <div data-gnl="3-| 3 |-3 /24">
       <!-- içerik alanı -->
     </div>
-    <div data-gnl="3-| 6 |-3">
+    <div data-gnl="3 /24">
+      <!-- içerik alanı -->
+    </div>
+    <div data-gnl="3 /24">
+      <!-- içerik alanı -->
+    </div>
+    <div data-gnl="3 /24">
+      <!-- içerik alanı -->
+    </div>
+    <div data-gnl="3 /24">
       <!-- içerik alanı -->
     </div>
     <div data-gnl="6-| 6">
       <!-- içerik alanı -->
     </div>
-    <div data-gnl="1-| 2 / |-1">
+    <div data-gnl="2 /">
       <!-- içerik alanı -->
     </div>
-    <div data-gnl="1-| 3 / |-1">
+    <div data-gnl="1-| 2 / |-1 /24">
       <!-- içerik alanı -->
     </div>
 {% endhighlight %}
