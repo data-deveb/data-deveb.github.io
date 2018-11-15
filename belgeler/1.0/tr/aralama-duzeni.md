@@ -144,7 +144,7 @@ description:
   </div>
 </div>
 {% highlight html %}
-    <div data-gnl="araları-aralık-1 5-5">
+    <div data-gnl="dengeli-aralık-1 5-5">
       <div>
         <!-- içerik alanı -->
       </div>

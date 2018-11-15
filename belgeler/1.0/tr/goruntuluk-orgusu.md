@@ -26,7 +26,7 @@ description:
         Genel <br>
         <i class="fa fa-minus-square-o" aria-hidden="true"></i> »
         <i class="fa fa-window-maximize" aria-hidden="true"></i>
-        <br><span data-metin="olumlu ince">0 » ulu</span>
+        <br><span data-metin="olumlu ince">tümü</span>
       </th>
       <!--<th>
         Minik <br>
