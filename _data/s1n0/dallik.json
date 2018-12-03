@@ -54,6 +54,14 @@
 			}
 
 		},
+		"bilesenler":{
+			"url":"bilesenler/sekme-orgusu",
+			"ad":"Bileşenler (YENİ GELİŞME)",
+			"sekme-orgusu":{
+				"url":"bilesenler/sekme-orgusu",
+				"ad":"Sekme Örgüsü"
+			}
+		},
 		"dene":{
 			"url":"https://jsfiddle.net/deveb/1mwjkctx/",
 			"ad":"Sürümü Dene!"
