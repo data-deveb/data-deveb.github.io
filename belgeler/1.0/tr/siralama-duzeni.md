@@ -20,7 +20,7 @@ description:
     <div data-gnl="2nc">
       <div class="kutu">2nc: kaynağında birinci sırada, görüntülükte ikinci sırada.</div>
     </div>
-    <div data-gnl="1nc" data-kçk="3nc">
+    <div data-gnl="3nc">
       <div class="kutu">3nc: kaynağında ikinci sırada, görüntülükte üçüncü sırada. Telefon görüntülüklerinde ise birinci sırada.</div>
     </div>
     <div data-gnl="1nc">
@@ -32,7 +32,7 @@ description:
     <div data-gnl="2nc">
       <!-- içerik alanı -->
     </div>
-    <div data-gnl="1nc" data-kçk="3nc">
+    <div data-gnl="3nc">
       <!-- içerik alanı -->
     </div>
     <div data-gnl="1nc">

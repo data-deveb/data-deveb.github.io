@@ -1,27 +1,18 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                               //
-//   DEVEB s1.0.30                                                                               //
+//   deveb 1.0                                                                                  //
 //                                                                                               //
 //   Bu örgü "bölümleme düzeni", "esnetme düzeni", "sıralama düzeni", "aralama düzeni",          //
 //   "yineleme düzeni", "konumlama düzeni", "biçimleme düzeni" özellikleriyle oluşturulmuştur.   //
 //                                                                                               //
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-@import "dil-tr";
-@import "ayarlar";
-@import "sifirlama";
-@import "capraz-tarayici";
-@import "kesitlik-orgusu";
-@import "dal-orgusu";
-@import "sekme-orgusu";
-@import "bet-orgusu";
-@import "araclar"
+@import "diller/dil-tr";
+@import "altlik/ayarlar";
+@import "altlik/sifirlama";
+@import "altlik/capraz-tarayici";
+@import "orguler/kesitlik-orgusu";
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // NOTLAR
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-// ARAÇLAR:::
-// renkler: birincil, ikincil, başarı, tehlike, uyarı, bilgi, aydın, koyu, sönük, beyaz
-// renk-alanı: yazı- , ay- (arka yüzeyi),
-

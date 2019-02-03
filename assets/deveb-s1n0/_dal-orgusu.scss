@@ -54,7 +54,7 @@ ul[data-menü],
 [data-menü] li>label,
 [data-menü] li>a{
   display: flex;
-  flex-grow:1;
+  flex:1;
   cursor: pointer;
 }
 [data-kapaç]+label{

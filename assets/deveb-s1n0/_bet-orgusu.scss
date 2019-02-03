@@ -1,0 +1,259 @@
+/* ==========================================================================
+    RENK ÖRGÜSÜ s1.0
+    Ayırt etmek için önceden belirlenmiş bet öbekleri.
+    data-bet | data-yazı
+    Betler: birincil, ikincil, başarı, sorun, uyarı, bilgi, aydınlık, karanlık, sönük, beyaz
+    Parlaklık: +0 ~ +1;
+    Koyuluk: -0 ~ -1;    
+-------------------------------------------------------------------------- */
+:root{
+--bet-koyuluk: 50%;
+--bet-açıklık: 50%;
+--bet-saydamlık: 1.0;
+--yazı-koyuluk: 50%;
+--yazı-açıklık: 50%;
+--yazı-saydamlık: 1.0;
+}
+.anabet,[data-bet~="anabet"]{
+  background-color:#a31621;
+  --bet:355;
+  --bet-koyuluk: 76%;
+  --bet-açıklık: 36%;
+  }
+.ilkbet,[data-bet~="ilkbet"]{
+  background-color:#bfdbf7;
+  --bet:210;
+  --bet-koyuluk: 78%;
+  --bet-açıklık: 86%;
+  }
+.arabet,[data-bet~="arabet"]{
+  background-color:#18365f;
+  --bet:215;
+  --bet-koyuluk: 60%;
+  --bet-açıklık: 23%;
+  }
+.sonbet,[data-bet~="sonbet"]{
+  background-color:#1f7a8c;
+  --bet:190;
+  --bet-koyuluk: 64%;
+  --bet-açıklık: 34%;
+  }
+.bekbet,[data-bet~="bekbet"]{
+  background-color:#031c3b;
+  --bet:213;
+  --bet-koyuluk: 90%;
+  --bet-açıklık: 12%;
+  }
+
+.birincil,[data-bet~="birincil"]{
+  background-color:#007bff;
+  --bet:211;
+  --bet-koyuluk: 100%;
+  --bet-açıklık: 50%;
+}
+.ikincil,[data-bet~="ikincil"]{
+  background-color:#6d757d;
+  --bet:210;
+  --bet-koyuluk: 7%;
+  --bet-açıklık: 46%;
+  }
+.başarı,[data-bet~="başarı"]{
+  background-color:#33aa44;
+  --bet:129;
+  --bet-koyuluk: 54%;
+  --bet-açıklık: 43%;
+}
+.sorun,[data-bet~="sorun"]{
+  background-color:#cc3344;
+  --bet:353;
+  --bet-koyuluk: 60%;
+  --bet-açıklık: 50%;
+}
+.uyarı,[data-bet~="uyarı"]{
+  background-color:#ffcc00;
+  --bet:48;
+  --bet-koyuluk: 100%;
+  --bet-açıklık: 50%;
+}
+.bilgi,[data-bet~="bilgi"]{
+  background-color:#22aabb;
+  --bet:187;
+  --bet-koyuluk: 69%;
+  --bet-açıklık: 43%;
+}
+.aydın,[data-bet~="aydın"]{
+  background-color:#fafafa;
+  --bet:0;
+  --bet-koyuluk: 0%;
+  --bet-açıklık: 98%;
+}
+.sönük,[data-bet~="sönük"]{
+  background-color:#6c7788;
+  --bet:216;
+  --bet-koyuluk: 11%;
+  --bet-açıklık: 48%;
+}
+.beyaz,[data-bet~="beyaz"]{
+  background-color:#ffffff;
+  --bet:0;
+  --bet-koyuluk: 0%;
+  --bet-açıklık: 100%;
+}
+.karan,[data-bet~="karan"]{
+  background-color:#333333;
+  --bet:0;
+  --bet-koyuluk: 0%;
+  --bet-açıklık: 20%;
+}
+
+.yazı-anabet,[data-yazı~="anabet"]{
+  background-color:#a31621;
+  --bet:355;
+  --bet-koyuluk: 76%;
+  --bet-açıklık: 36%;
+  }
+.yazı-ilkbet,[data-yazı~="ilkbet"]{
+  background-color:#bfdbf7;
+  --bet:210;
+  --bet-koyuluk: 78%;
+  --bet-açıklık: 86%;
+  }
+.yazı-arabet,[data-yazı~="arabet"]{
+  background-color:#18365f;
+  --bet:215;
+  --bet-koyuluk: 60%;
+  --bet-açıklık: 23%;
+  }
+.yazı-sonbet,[data-yazı~="sonbet"]{
+  background-color:#1f7a8c;
+  --bet:190;
+  --bet-koyuluk: 64%;
+  --bet-açıklık: 34%;
+  }
+.yazı-bekbet,[data-yazı~="bekbet"]{
+  background-color:#031c3b;
+  --bet:213;
+  --bet-koyuluk: 90%;
+  --bet-açıklık: 12%;
+  }
+
+.yazı-birincil,[data-yazı~="birincil"]{
+  background-color:#007bff;
+  --bet:211;
+  --bet-koyuluk: 100%;
+  --bet-açıklık: 50%;
+}
+.yazı-ikincil,[data-yazı~="ikincil"]{
+  background-color:#6d757d;
+  --bet:210;
+  --bet-koyuluk: 7%;
+  --bet-açıklık: 46%;
+  }
+.yazı-başarı,[data-yazı~="başarı"]{
+  background-color:#33aa44;
+  --bet:129;
+  --bet-koyuluk: 54%;
+  --bet-açıklık: 43%;
+}
+.yazı-sorun,[data-yazı~="sorun"]{
+  background-color:#cc3344;
+  --bet:353;
+  --bet-koyuluk: 60%;
+  --bet-açıklık: 50%;
+}
+.yazı-uyarı,[data-yazı~="uyarı"]{
+  background-color:#ffcc00;
+  --bet:48;
+  --bet-koyuluk: 100%;
+  --bet-açıklık: 50%;
+}
+.yazı-bilgi,[data-yazı~="bilgi"]{
+  background-color:#22aabb;
+  --bet:187;
+  --bet-koyuluk: 69%;
+  --bet-açıklık: 43%;
+}
+.yazı-aydın,[data-yazı~="aydın"]{
+  background-color:#fafafa;
+  --bet:0;
+  --bet-koyuluk: 0%;
+  --bet-açıklık: 98%;
+}
+.yazı-sönük,[data-yazı~="sönük"]{
+  background-color:#6c7788;
+  --bet:216;
+  --bet-koyuluk: 11%;
+  --bet-açıklık: 48%;
+}
+.yazı-beyaz,[data-yazı~="beyaz"]{
+  background-color:#ffffff;
+  --bet:0;
+  --bet-koyuluk: 0%;
+  --bet-açıklık: 100%;
+}
+.yazı-karan,[data-yazı~="karan"]{
+  background-color:#333333;
+  --bet:0;
+  --bet-koyuluk: 0%;
+  --bet-açıklık: 20%;
+}
+
+[data-bet~="+0"]{--bet-açıklık: 90%}
+[data-bet~="+1"]{--bet-açıklık: 80%}
+[data-bet~="+2"]{--bet-açıklık: 70%}
+[data-bet~="+3"]{--bet-açıklık: 60%}
+[data-bet~="+4"]{--bet-açıklık: 50%}
+[data-bet~="+5"]{--bet-açıklık: 40%}
+[data-bet~="+6"]{--bet-açıklık: 30%}
+[data-bet~="+7"]{--bet-açıklık: 20%}
+[data-bet~="+8"]{--bet-açıklık: 10%}
+[data-bet~="+9"]{--bet-açıklık: 0%}
+[data-bet~="-0"]{--bet-koyuluk: 90%}
+[data-bet~="-1"]{--bet-koyuluk: 80%}
+[data-bet~="-2"]{--bet-koyuluk: 70%}
+[data-bet~="-3"]{--bet-koyuluk: 60%}
+[data-bet~="-4"]{--bet-koyuluk: 50%}
+[data-bet~="-5"]{--bet-koyuluk: 40%}
+[data-bet~="-6"]{--bet-koyuluk: 30%}
+[data-bet~="-7"]{--bet-koyuluk: 20%}
+[data-bet~="-8"]{--bet-koyuluk: 10%}
+[data-bet~="-9"]{--bet-koyuluk: 0%}
+[data-bet~=".0"]{--bet-saydamlık: 0.0}
+[data-bet~=".1"]{--bet-saydamlık: 0.1}
+[data-bet~=".2"]{--bet-saydamlık: 0.2}
+[data-bet~=".3"]{--bet-saydamlık: 0.3}
+[data-bet~=".4"]{--bet-saydamlık: 0.4}
+[data-bet~=".5"]{--bet-saydamlık: 0.5}
+[data-bet~=".6"]{--bet-saydamlık: 0.6}
+[data-bet~=".7"]{--bet-saydamlık: 0.7}
+[data-bet~=".8"]{--bet-saydamlık: 0.8}
+[data-bet~=".9"]{--bet-saydamlık: 0.9}
+
+[data-yazı~="+0"]{--yazı-açıklık: 90%}
+[data-yazı~="+1"]{--yazı-açıklık: 80%}
+[data-yazı~="+2"]{--yazı-açıklık: 70%}
+[data-yazı~="+3"]{--yazı-açıklık: 60%}
+[data-yazı~="+4"]{--yazı-açıklık: 50%}
+[data-yazı~="+5"]{--yazı-açıklık: 40%}
+[data-yazı~="+6"]{--yazı-açıklık: 30%}
+[data-yazı~="+7"]{--yazı-açıklık: 20%}
+[data-yazı~="+8"]{--yazı-açıklık: 10%}
+[data-yazı~="+9"]{--yazı-açıklık: 0%}
+[data-yazı~="-0"]{--yazı-koyuluk: 90%}
+[data-yazı~="-1"]{--yazı-koyuluk: 80%}
+[data-yazı~="-2"]{--yazı-koyuluk: 70%}
+[data-yazı~="-3"]{--yazı-koyuluk: 60%}
+[data-yazı~="-4"]{--yazı-koyuluk: 50%}
+[data-yazı~="-5"]{--yazı-koyuluk: 40%}
+[data-yazı~="-6"]{--yazı-koyuluk: 30%}
+[data-yazı~="-7"]{--yazı-koyuluk: 20%}
+[data-yazı~="-8"]{--yazı-koyuluk: 10%}
+[data-yazı~="-9"]{--yazı-koyuluk: 0%}
+
+
+[data-bet]{
+  background-color: hsla(var(--bet),var(--bet-açıklık),var(--bet-koyuluk),var(--bet-saydamlık));
+}
+[data-yazı]{
+  color: hsla(var(--bet),var(--bet-açıklık),var(--bet-koyuluk),var(--bet-saydamlık));
+}
