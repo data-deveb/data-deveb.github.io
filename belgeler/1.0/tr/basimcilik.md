@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: 1.0/tr/ogeler/basimcilik
+permalink: 1.0/tr/icerik/basimcilik
 lang: tr
 title: Basımcılık
 description: 
@@ -39,27 +39,42 @@ description:
     <h5>Başlık H5 Etiketi</h5>
     <h6>Başlık H6 Etiketi</h6>
 {% endhighlight %}
+<br>
+<div class="örnek">
+<div class="önizleme">
+  <p>Yazıyı <mark>vurgulama</mark>k için im etiketini kullanabilirsiniz.</p>
+  <p><del>Bir dizedeki yazıyı silinmiş olarak belirtmek için sil etiketini kullanabilirsiniz.</del></p>
+  <p><s>Artık doğru olduğu düşünülmeyen yazıyı belli etmek için kullanılır.</s></p>
+  <p><ins>Bu yazıya vurgulama belgeye ek olarak eklendiği belli olması amacıyla yapılmıştır.</ins></p>
+  <p><u>Bu yazıya vurgulama altı çizili olarak yapılmıştır.</u></p>
+  <p><small>Bu yazıya vurgulama küçük olarak yapılmıştır.</small></p>
+  <p><strong>Bu yazıya vurgulama kalın olarak yapılmıştır.</strong></p>
+  <p><em>Bu yazıya vurgulama eğik olarak yapılmıştır.</em></p>
+</div>
+</div>
+{% highlight html %}
+    <p>Yazıyı <mark>vurgulama</mark>k için im etiketini kullanabilirsiniz.</p>
+    <p><del>Bir dizedeki yazıyı silinmiş olarak belirtmek için sil etiketini kullanabilirsiniz.</del></p>
+    <p><s>Artık doğru olduğu düşünülmeyen yazıyı belli etmek için kullanılır.</s></p>
+    <p><ins>Bu yazıya vurgulama belgeye ek olarak eklendiği belli olması amacıyla yapılmıştır.</ins></p>
+    <p><u>Bu yazıya vurgulama altı çizili olarak yapılmıştır.</u></p>
+    <p><small>Bu yazıya vurgulama küçük olarak yapılmıştır.</small></p>
+    <p><strong>Bu yazıya vurgulama kalın olarak yapılmıştır.</strong></p>
+    <p><em>Bu yazıya vurgulama eğik olarak yapılmıştır.</em></p>
+{% endhighlight %}
 
-<blockquote>
-  <p>The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life. </p>
-  <cite>- Bill Gates</cite>
-</blockquote>
-
-<!-- unordered list -->
-<ul>
-  <li>list item 1</li>
-  <li>list item 2
-    <ul>
-      <li>list item 2.1</li>
-      <li>list item 2.2</li>
-      <li>list item 2.3</li>
-    </ul>
-  </li>
-  <li>list item 3</li>
-</ul>
-
-<!-- description list -->
-<dl>
-  <dt>description list term</dt>
-  <dd>description list description</dd>
-</dl>
+<br>
+<div class="örnek">
+<div class="önizleme">
+  <blockquote>
+    <p>Gençler, bilim için akıllarını matematiğe sarılarak, gönüllerini ise Türkçeye sarılarak geliştireceklerdir. </p>
+    <cite>- Oktay Sinanoğlu</cite>
+  </blockquote>
+</div>
+</div>
+{% highlight html %}
+    <blockquote>
+      <p>Gençler, bilim için akıllarını matematiğe sarılarak, gönüllerini ise Türkçeye sarılarak geliştireceklerdir. </p>
+      <cite>- Oktay Sinanoğlu</cite>
+    </blockquote>
+{% endhighlight %}

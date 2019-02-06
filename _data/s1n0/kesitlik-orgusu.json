@@ -52,11 +52,21 @@
     },
     "bilesenler":{
       "url":"bilesenler/sekme-orgusu",
-      "ad":"Bileşenler (YENİ GELİŞME)",
+      "ad":"Bileşenler",
       "alt":{
         "sekme-orgusu":{
           "url":"bilesenler/sekme-orgusu",
           "ad":"Sekme Örgüsü"
+        }
+      }
+    },
+    "icerik":{
+      "url":"icerik/basimcilik",
+      "ad":"İçerik",
+      "alt":{
+        "basimcilik":{
+          "url":"icerik/basimcilik",
+          "ad":"Basımcılık"
         }
       }
     },
