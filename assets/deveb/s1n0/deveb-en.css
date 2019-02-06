@@ -1,7 +1,7 @@
 /*
 Error: File to import not found or unreadable: dil-en.
-       Load path: C:/Users/keskinlik/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/deveb/data-deveb.github.io/assets/deveb/s1n0
-        on line 2 of C:\Users\keskinlik\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\deveb\data-deveb.github.io\assets\deveb\s1n0\deveb-en.scss
+       Load path: C:/Users/Keskinlik/jekyll/data-deveb.github.io/assets/deveb/s1n0
+        on line 2 of C:\Users\Keskinlik\jekyll\data-deveb.github.io\assets\deveb\s1n0\deveb-en.scss
 
 1: 
 2: @import "dil-en";
@@ -11,7 +11,7 @@ Error: File to import not found or unreadable: dil-en.
 6: @import "kesitlik-orgusu";
 
 Backtrace:
-C:\Users\keskinlik\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\deveb\data-deveb.github.io\assets\deveb\s1n0\deveb-en.scss:2
+C:\Users\Keskinlik\jekyll\data-deveb.github.io\assets\deveb\s1n0\deveb-en.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -49,4 +49,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: dil-en.\A        Load path: C:/Users/keskinlik/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc/LocalState/rootfs/home/deveb/data-deveb.github.io/assets/deveb/s1n0\A         on line 2 of C:\Users\keskinlik\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc\LocalState\rootfs\home\deveb\data-deveb.github.io\assets\deveb\s1n0\deveb-en.scss\A \A 1: \A 2: @import \"dil-en\";\A 3: @import \"ayarlar\";\A 4: @import \"sifirlama\";\A 5: @import \"capraz-tarayici\";\A 6: @import \"kesitlik-orgusu\";"; }
+  content: "Error: File to import not found or unreadable: dil-en.\A        Load path: C:/Users/Keskinlik/jekyll/data-deveb.github.io/assets/deveb/s1n0\A         on line 2 of C:\Users\Keskinlik\jekyll\data-deveb.github.io\assets\deveb\s1n0\deveb-en.scss\A \A 1: \A 2: @import \"dil-en\";\A 3: @import \"ayarlar\";\A 4: @import \"sifirlama\";\A 5: @import \"capraz-tarayici\";\A 6: @import \"kesitlik-orgusu\";"; }

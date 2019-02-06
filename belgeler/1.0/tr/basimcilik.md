@@ -39,10 +39,26 @@ description:
     <h5>Başlık H5 Etiketi</h5>
     <h6>Başlık H6 Etiketi</h6>
 {% endhighlight %}
+
+<br>
+<h2>Yazmıklar</h2>
+<div class="örnek">
+<div class="önizleme">
+  <p>
+    Yazmık, bir yazının bir başından öteki başına kadar olan bölümüne denir. Daha ayrıntılı bir anlatımla yazmık bir duyguyu, bir düşünceyi, bir isteği, bir öneriyi, bir olayı yalnızca bir yönüyle anlatmaya yarayan yazı türüdür.
+  </p>
+</div>
+</div>
+{% highlight html %}
+    <p>
+      Yazmık, bir yazının bir başından öteki başına kadar olan bölümüne denir. Daha ayrıntılı bir anlatımla yazmık bir duyguyu, bir düşünceyi, bir isteği, bir öneriyi, bir olayı yalnızca bir yönüyle anlatmaya yarayan yazı türüdür.
+    </p>
+{% endhighlight %}
+
 <br>
 <div class="örnek">
 <div class="önizleme">
-  <p>Yazıyı <mark>vurgulama</mark>k için im etiketini kullanabilirsiniz.</p>
+  <p>Yazıyı <mark>vurgulama</mark>k için im etiketini &#60;mark&#62; kullanabilirsiniz.</p>
   <p><del>Bir dizedeki yazıyı silinmiş olarak belirtmek için sil etiketini kullanabilirsiniz.</del></p>
   <p><s>Artık doğru olduğu düşünülmeyen yazıyı belli etmek için kullanılır.</s></p>
   <p><ins>Bu yazıya vurgulama belgeye ek olarak eklendiği belli olması amacıyla yapılmıştır.</ins></p>
