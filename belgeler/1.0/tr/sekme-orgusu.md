@@ -140,23 +140,23 @@ description:
 </div>
 {% highlight html %}
   <div data-sekme="">
-    <input id="im11" type="radio" name="sekme1" checked="checked">
-    <label for="im11">Birinci Sekme</label>
+    <input id="im1" type="radio" name="sekme1" checked="checked">
+    <label for="im1">Birinci Sekme</label>
     <div>
       <!-- içerik alanı -->
     </div>
-    <input id="im21" type="radio" name="sekme1">
-    <label for="im21">Birinci Sekme</label>
+    <input id="im2" type="radio" name="sekme1">
+    <label for="im2">İkinci Sekme</label>
     <div>
       <!-- içerik alanı -->
     </div>
-    <input id="im31" type="radio" name="sekme1">
-    <label for="im31">Birinci Sekme</label>
+    <input id="im3" type="radio" name="sekme1">
+    <label for="im3">Üçüncü Sekme</label>
     <div>
 	  <!-- içerik alanı -->
     </div>
-    <input id="im11" type="radio" name="sekme1">
-    <label for="im11">Birinci Sekme</label>
+    <input id="im4" type="radio" name="sekme1">
+    <label for="im4">Dördüncü Sekme</label>
     <div>
 	  <!-- içerik alanı -->
     </div>

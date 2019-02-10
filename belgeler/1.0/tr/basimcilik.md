@@ -7,15 +7,7 @@ description:
 ---
 
 <p class="girlik">
-  Başlıklar, paragraflar, düz yazılar, liste öğeleri gibi yazıya dayalı olan her türlü ögeler için basımcılık ayarları.
-</p>
-<h2>Genel Ayarlar</h2>
-<p>
-  Yazılar varsayılan değere göre boyutlarını kazanırlar. Yazı boyutu geniş görüntülükler için 16 benek olarak ayarlıyken, dar görüntülükler için 14 benek olarak ayarlanmıştır. İsteğe bağlı olarak bu değerler değiştirilebilir. Tüm yazılar bu değerlere göre ölçeklenecektir. Eğer dış css dosyalarında doğrudan bir ölçü tanımlarsanız bu ölçüler etki dışında kalır. Ayarları değiştirmek için _ayarlar.scss dosyasında :root içinde tanımlı font-size değerlerini değiştirmeniz yeterlidir.
-</p>
-<h2>Biçitler</h2>
-<p>
-  Biçitler, yazıların görünüş biçimleridir. Yazı biçiti veya yalnızca biçit sözcüğüyle anılır. Her işletim örgüsü için deveb'de olabilecek en iyi özellikteki biçiti geriye dönük olarak sunan düzen kuruludur.
+  Başlıklar, yazmıklar, düz yazılar, liste öğeleri gibi yazıya dayalı olan her türlü ögeler için basımcılık ayarları.
 </p>
 <h2>Başlıklar</h2>
 <p>
@@ -81,7 +73,7 @@ description:
 {% endhighlight %}
 
 <br>
-<h2>Alıntılık</h2>
+<h2>Öbek Alıntı</h2>
 <div class="örnek">
 <div class="önizleme">
   <blockquote>
@@ -93,7 +85,7 @@ description:
 {% highlight html %}
     <blockquote>
       <p>Gençler, bilim için akıllarını matematiğe sarılarak, gönüllerini ise Türkçeye sarılarak geliştireceklerdir. </p>
-      <cite>- Oktay Sinanoğlu</cite>
+      <cite>Oktay Sinanoğlu</cite>
     </blockquote>
 {% endhighlight %}
 
@@ -133,3 +125,12 @@ description:
       <li>Sıralanmış liste ögesi 2</li>
     </ol>
 {% endhighlight %}
+
+<h2>Genel Ayarlar</h2>
+<p>
+  Yazılar varsayılan değere göre boyutlarını kazanırlar. Yazı boyutu geniş görüntülükler için 16 benek olarak ayarlıyken, dar görüntülükler için 14 benek olarak ayarlanmıştır. İsteğe bağlı olarak bu değerler değiştirilebilir. Tüm yazılar bu değerlere göre ölçeklenecektir. Eğer dış css dosyalarında doğrudan bir ölçü tanımlarsanız bu ölçüler etki dışında kalır. Ayarları değiştirmek için _ayarlar.scss dosyasında :root içinde tanımlı font-size değerlerini değiştirmeniz yeterlidir.
+</p>
+<h2>Biçitler</h2>
+<p>
+  Biçitler, yazıların görünüş biçimleridir. Yazı biçiti veya yalnızca biçit sözcüğüyle anılır. Her işletim örgüsü için deveb'de olabilecek en iyi özellikteki biçiti geriye dönük olarak sunan düzen kuruludur.
+</p>

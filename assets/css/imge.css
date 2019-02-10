@@ -132,6 +132,7 @@ body {
 
 /* Yazı Özellikleri */
 
+/*
 #içerik * + h1,
 #içerik * + h2,
 #içerik * + h3,
@@ -139,6 +140,7 @@ body {
   margin-top:.8rem;
   margin-bottom:.4rem;
 }
+*/
 p {
   line-height: 1.5;
 }
