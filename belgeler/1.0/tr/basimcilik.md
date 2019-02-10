@@ -41,21 +41,22 @@ description:
 {% endhighlight %}
 
 <br>
-<h2>Yazmıklar</h2>
+<h2>Yazmıklar (Paragraflar)</h2>
 <div class="örnek">
 <div class="önizleme">
   <p>
-    Yazmık, bir yazının bir başından öteki başına kadar olan bölümüne denir. Daha ayrıntılı bir anlatımla yazmık bir duyguyu, bir düşünceyi, bir isteği, bir öneriyi, bir olayı yalnızca bir yönüyle anlatmaya yarayan yazı türüdür.
+    Yazmık, bir yazının bir dize ucundan öteki dize ucuna kadar olan bütün bölüme denir. Her yazmıkta, tek bir ana düşünce çevresinde öbeklenmiş birçok tümce bulunabilir. Bu tümceler yazmıkta bir anlam bütünlüğü sağlar. Daha ayrıntılı bir anlatımla yazmık bir duyguyu, bir düşünceyi, bir isteği, bir öneriyi, bir olayı yalnızca bir yönüyle anlatmaya yarayan yazı türüdür.
   </p>
 </div>
 </div>
 {% highlight html %}
     <p>
-      Yazmık, bir yazının bir başından öteki başına kadar olan bölümüne denir. Daha ayrıntılı bir anlatımla yazmık bir duyguyu, bir düşünceyi, bir isteği, bir öneriyi, bir olayı yalnızca bir yönüyle anlatmaya yarayan yazı türüdür.
+      Yazmık, bir yazının bir dize ucundan öteki dize ucuna kadar olan bütün bölüme denir. Her yazmıkta, tek bir ana düşünce çevresinde öbeklenmiş birçok tümce bulunabilir. Bu tümceler yazmıkta bir anlam bütünlüğü sağlar. Daha ayrıntılı bir anlatımla yazmık bir duyguyu, bir düşünceyi, bir isteği, bir öneriyi, bir olayı yalnızca bir yönüyle anlatmaya yarayan yazı türüdür.
     </p>
 {% endhighlight %}
 
 <br>
+<h2>Vurgulamalar</h2>
 <div class="örnek">
 <div class="önizleme">
   <p>Yazıyı <mark>vurgulama</mark>k için im etiketini &#60;mark&#62; kullanabilirsiniz.</p>
@@ -80,6 +81,7 @@ description:
 {% endhighlight %}
 
 <br>
+<h2>Alıntılık</h2>
 <div class="örnek">
 <div class="önizleme">
   <blockquote>
@@ -93,4 +95,41 @@ description:
       <p>Gençler, bilim için akıllarını matematiğe sarılarak, gönüllerini ise Türkçeye sarılarak geliştireceklerdir. </p>
       <cite>- Oktay Sinanoğlu</cite>
     </blockquote>
+{% endhighlight %}
+
+<br>
+<h2>Liste</h2>
+<div class="örnek">
+<div class="önizleme">
+  <dl>
+    <dt>Açıklanan liste ögesi 1</dt>
+    <dd>Açıklanan liste ögesi 1.1</dd>
+  </dl>
+
+  <ul>
+    <li>Sıralanmamış liste ögesi 1</li>
+    <li>Sıralanmamış liste ögesi 2</li>
+  </ul>
+
+  <ol>
+    <li>Sıralanmış liste ögesi 1</li>
+    <li>Sıralanmış liste ögesi 2</li>
+  </ol>
+</div>
+</div>
+{% highlight html %}
+    <dl>
+      <dt>Açıklanan liste ögesi 1</dt>
+      <dd>Açıklanan liste ögesi 1.1</dd>
+    </dl>
+
+    <ul>
+      <li>Sıralanmamış liste ögesi 1</li>
+      <li>Sıralanmamış liste ögesi 2</li>
+    </ul>
+
+    <ol>
+      <li>Sıralanmış liste ögesi 1</li>
+      <li>Sıralanmış liste ögesi 2</li>
+    </ol>
 {% endhighlight %}
