@@ -48,28 +48,96 @@ description:
 {% endhighlight %}
 
 <br>
-<h2>Vurgulamalar</h2>
+<h2>Anlamsal Yazı Ögeleri</h2>
 <div class="örnek">
 <div class="önizleme">
-  <p>Yazıyı <mark>vurgulama</mark>k için im etiketini &#60;mark&#62; kullanabilirsiniz.</p>
-  <p><del>Bir dizedeki yazıyı silinmiş olarak belirtmek için sil etiketini kullanabilirsiniz.</del></p>
-  <p><s>Artık doğru olduğu düşünülmeyen yazıyı belli etmek için kullanılır.</s></p>
-  <p><ins>Bu yazıya vurgulama belgeye ek olarak eklendiği belli olması amacıyla yapılmıştır.</ins></p>
-  <p><u>Bu yazıya vurgulama altı çizili olarak yapılmıştır.</u></p>
-  <p><small>Bu yazıya vurgulama küçük olarak yapılmıştır.</small></p>
-  <p><strong>Bu yazıya vurgulama kalın olarak yapılmıştır.</strong></p>
-  <p><em>Bu yazıya vurgulama eğik olarak yapılmıştır.</em></p>
+  <p>
+    <b>&#60;mark&#62;&#60;/mark&#62;</b>
+    <br>
+    <mark>İmlenmiş yazı.</mark> Yazıyı vurgulamak için im etiketini kullanabilirsiniz.
+  </p>
+  <p>
+    <b>&#60;del&#62;&#60;/del&#62;</b>
+    <br>
+    <del>Silinmiş yazı.</del> Bir dizedeki yazıyı silinmiş olarak belirtmek için sil etiketini kullanabilirsiniz.
+  </p>
+  <p>
+    <b>&#60;s&#62;&#60;/s&#62;</b>
+    <br>
+    <s>Doğru olmayan yazı.</s> Artık doğru olduğu düşünülmeyen yazıyı belli etmek için kullanılır.
+  </p>
+  <p>
+    <b>&#60;ins&#62;&#60;/ins&#62;</b>
+    <br>
+    <ins>Ek yazı.</ins> Bu yazıya vurgulama belgeye ek olarak eklendiği belli olması amacıyla yapılmıştır.
+  </p>
+  <p>
+    <b>&#60;u&#62;&#60;/u&#62;</b>
+    <br>
+    <u>Altı çizili yazı.</u> Bu yazıya vurgulama altı çizili olarak yapılmıştır.
+  </p>
+  <p>
+    <b>&#60;small&#62;&#60;/small&#62;</b>
+    <br>
+    <small>Küçük yazı.</small> Bu yazıya küçüklük vurgulaması yapılmıştır.
+  </p>
+  <p>
+    <b>&#60;strong&#62;&#60;/strong&#62;</b>
+    <br>
+    <strong>Kaba yazı.</strong> Bu yazıya vurgulama kaba olarak yapılmıştır.
+  </p>
+    <p>
+    <b>&#60;b&#62;&#60;/b&#62;</b>
+    <br>
+    <b>Kalın yazı.</b> Bu yazıya vurgulama kalın olarak yapılmıştır.
+  </p>
+  <p>
+    <b>&#60;em&#62;&#60;/em&#62;</b>
+    <br>
+    <em>Vurgulanan eğik yazı.</em> Bu yazıya vurgulama eğik olarak yapılmıştır.
+  </p>
+  <p>
+    <b>&#60;i&#62;&#60;/i&#62;</b>
+    <br>
+    <i>Eğik yazı.</i> Bu yazıya bir anlamı olmaksızın vurgulama eğik olarak yapılmıştır.
+  </p>
+  <p>
+    <b>&#60;abbr&#62;&#60;/abbr&#62;</b>
+    <br>
+    <abbr title="Yığmaşık Duysu Yığası">YDY</abbr> Bu yazı kısaltma olduğu için açıklama eklenmiştir.
+  </p>
+  <p>
+    <b>&#60;sup&#62;&#60;/sup&#62;</b>
+    <br>
+    <sup>Üst yazı.</sup> Bu yazıya vurgulama üstte olarak yapılmıştır.
+  </p>
+  <p>
+    <b>&#60;sub&#62;&#60;/sub&#62;</b>
+    <br>
+    <sub>Alt yazı.</sub> Bu yazıya vurgulama altta olarak yapılmıştır.
+  </p>
+  <p>
+    <b>&#60;kbd&#62;&#60;/kbd&#62;</b>
+    <br>
+    <kbd>CTRL + C</kbd> Tuşlukta basılarak uygulanabilecek yazıdır.
+  </p>
 </div>
 </div>
 {% highlight html %}
-    <p>Yazıyı <mark>vurgulama</mark>k için im etiketini kullanabilirsiniz.</p>
-    <p><del>Bir dizedeki yazıyı silinmiş olarak belirtmek için sil etiketini kullanabilirsiniz.</del></p>
-    <p><s>Artık doğru olduğu düşünülmeyen yazıyı belli etmek için kullanılır.</s></p>
-    <p><ins>Bu yazıya vurgulama belgeye ek olarak eklendiği belli olması amacıyla yapılmıştır.</ins></p>
-    <p><u>Bu yazıya vurgulama altı çizili olarak yapılmıştır.</u></p>
-    <p><small>Bu yazıya vurgulama küçük olarak yapılmıştır.</small></p>
-    <p><strong>Bu yazıya vurgulama kalın olarak yapılmıştır.</strong></p>
-    <p><em>Bu yazıya vurgulama eğik olarak yapılmıştır.</em></p>
+    <mark>İmlenmiş yazı.</mark>
+    <del>Silinmiş yazı.</del>
+    <s>Doğru olmayan yazı.</s>
+    <ins>Ek yazı.</ins>
+    <u>Altı çizili yazı.</u>
+    <small>Küçük yazı.</small>
+    <strong>Kaba yazı.</strong>
+    <b>Kalın yazı.</b>
+    <em>Vurgulanan eğik yazı.</em>
+    <i>Eğik yazı.</i>
+    <abbr title="Yığmaşık Duysu Yığası">YDY</abbr>
+    <sup>Üst yazı.</sup>
+    <sub>Alt yazı.</sub>
+    <kbd>CTRL + C</kbd>
 {% endhighlight %}
 
 <br>
@@ -114,18 +182,16 @@ description:
       <dt>Açıklanan liste ögesi 1</dt>
       <dd>Açıklanan liste ögesi 1.1</dd>
     </dl>
-
     <ul>
       <li>Sıralanmamış liste ögesi 1</li>
       <li>Sıralanmamış liste ögesi 2</li>
     </ul>
-
     <ol>
       <li>Sıralanmış liste ögesi 1</li>
       <li>Sıralanmış liste ögesi 2</li>
     </ol>
 {% endhighlight %}
-
+<br>
 <h2>Genel Ayarlar</h2>
 <p>
   Yazılar varsayılan değere göre boyutlarını kazanırlar. Yazı boyutu geniş görüntülükler için 16 benek olarak ayarlıyken, dar görüntülükler için 14 benek olarak ayarlanmıştır. İsteğe bağlı olarak bu değerler değiştirilebilir. Tüm yazılar bu değerlere göre ölçeklenecektir. Eğer dış css dosyalarında doğrudan bir ölçü tanımlarsanız bu ölçüler etki dışında kalır. Ayarları değiştirmek için _ayarlar.scss dosyasında :root içinde tanımlı font-size değerlerini değiştirmeniz yeterlidir.

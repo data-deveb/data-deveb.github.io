@@ -1,3 +1,19 @@
 del{
   text-decoration: line-through wavy;
 }
+ins{
+	text-decoration: underline wavy;
+}
+strong{
+	font-weight: 900;
+}
+em{
+	letter-spacing: 1px;
+}
+kbd{
+	border:1px solid #333;
+	background-color:#222;
+	color:#eee;
+	padding:4px 8px;
+	border-radius: 4px;
+}
