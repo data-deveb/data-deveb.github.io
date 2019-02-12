@@ -11,9 +11,25 @@ em{
 	letter-spacing: 1px;
 }
 kbd{
-	border:1px solid #333;
-	background-color:#222;
-	color:#eee;
-	padding:4px 8px;
-	border-radius: 4px;
+	display: inline-block;
+  border: none;
+  border-radius: .3em;
+  -webkit-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.1),inset 0px -0.15em 0 3px rgba(0,0,0,0.25),0 0.25em 0.25em rgba(0,0,0,0.05);
+          box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.1),inset 0px -0.15em 0 3px rgba(0,0,0,0.25),0 0.25em 0.25em rgba(0,0,0,0.05);
+  color: #222;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding: .3em .8em .5em;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+	user-select: none;
+	background-color: #eee;
 }

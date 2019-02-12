@@ -119,7 +119,12 @@ description:
   <p>
     <b>&#60;kbd&#62;&#60;/kbd&#62;</b>
     <br>
-    <kbd>CTRL + C</kbd> Tuşlukta basılarak uygulanabilecek yazıdır.
+    <kbd>CTRL + C</kbd> Tuşlukta basılarak oluşturulacak tuşluk girdisinin yazısıdır.
+  </p>
+  <p>
+    <b>&#60;code&#62;&#60;/code&#62;</b>
+    <br>
+    <code>&#60;p&#62;Burası yazmık alanıdır.&#60;/p&#62;</code> Yazılan buyrukları vurgulamak için kullanılan etikettir.
   </p>
 </div>
 </div>
