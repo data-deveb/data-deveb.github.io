@@ -3,17 +3,17 @@
 <head>
 {% include ilker/baslangic.html %}
 </head>
-<body data-gnl="sütun">
-  <header data-gnl="1 1p">
-    <div data-gnl="kaplama">
+<body data-gnl="kaplam">
+  <header>
+    <div data-gnl="kap">
       <nav>
-        <div class="" data-gnl="0 göbekte">
+        <div data-gnl="0 o">
           İLKER
         </div>
         <input id="menü-0by" type="checkbox" data-kapaç="sağda">
         <label for="menü-0by">•••</label>
         <label for="menü-0by">✕</label>
-        <ul data-menü="basit yatay" data-gnl="solda" data-kçk="sağda">
+        <ul data-menü="basit yatay" data-gnl="l" data-kçk="s">
           <li><a href="#">Anasayfa</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Hakkımızda</a></li>
@@ -23,20 +23,20 @@
     </div>
   </header>
 
-  <div data-gnl="1 1p" class="alan">
-    <div data-gnl="kaplama">
+  <div class="alan">
+    <div data-gnl="kap">
       {{ page.alan }}
       <p>{{ page.alan-alt }}</p>
     </div>
   </div>
 
-  <article data-gnl="1 1p">
-    <div data-gnl="kaplama">
+  <main>
+    <div data-gnl="kap">
     {{ content }}
     </div>
-  </article>
-  <footer data-gnl="1 1p">
-    <div data-gnl="kaplama">
+  </main>
+  <footer>
+    <div data-gnl="kap">
       {% include ilker/taban.html %}
     </div>
   </footer>
