@@ -70,8 +70,9 @@
 
     /* Paragraf ayarları */
     p{
-      display: block;
-      width: 100%;  }
+      display: block !important;
+      width: 100%;  
+    }
 
     p + p{
         /* İki paragraf arasına mesafe verme ayarı */
