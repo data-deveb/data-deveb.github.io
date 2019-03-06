@@ -19,11 +19,11 @@ description:
 	{{ veri[dil].giris }}
 </p>
 
-<p data-gnl>
-	<a data-basmal data-gnl="_o 0" class="birincil" 
+<p>
+	<!--<a data-basmal data-gnl="_o 0" class="birincil" 
      href="{{ veri[dil].indir1.url }}">
 		{{ veri[dil].indir }}: {{ veri[dil].indir1.dosya }}
-	</a>
+	</a>-->
   <a data-basmal data-gnl="_o 0" class="birincil" 
      href="{{ veri[dil].indir2.url }}">
   	{{ veri[dil].indir }}: {{ veri[dil].indir2.dosya }}
@@ -33,9 +33,7 @@ description:
 <h2>{{ veri[dil].baslik1 }}</h2>
 {% highlight html %}
   <link href="/css/deveb-s1n0/deveb.css" rel="stylesheet">
-  <!-- Edge 15 ve Internet Explorer'ın eski sürümleri -->
-  <link href="/css/deveb-s1n0/deveb-ie.css" rel="stylesheet">
-  
+
 {% endhighlight %}
 
 <h2>{{ veri[dil].baslik2 }}</h2>
