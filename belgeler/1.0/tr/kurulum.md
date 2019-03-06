@@ -29,13 +29,14 @@ description:
   	{{ veri[dil].indir }}: {{ veri[dil].indir2.dosya }}
   </a>
 </p>
+<br>
 
 <h2>{{ veri[dil].baslik1 }}</h2>
 {% highlight html %}
   <link href="/css/deveb-s1n0/deveb.css" rel="stylesheet">
 
 {% endhighlight %}
-
+<br>
 <h2>{{ veri[dil].baslik2 }}</h2>
 {% highlight html %}
   <link href="/css/deveb-s1n0/deveb-en.css" rel="stylesheet">
