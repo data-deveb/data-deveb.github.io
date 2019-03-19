@@ -8,36 +8,35 @@ description:
 
 <p class="girlik">
   İşte bu! İstediğiniz yerde, istediğiniz anda, istediğiniz ölçekte
-  çalışın. Ağ sitesi tasarımlarını yaparken güçlendirilmiş ve uyarlamalı çoklu-kesitlik örgüsünü kullanın.
-  Artık tek düzene bağlı kalmak yok. Her şey elinizin altında hazır.
+  çalışın. Tasarımlarınızı yaparken güçlendirilmiş ve uyarlamalı çoklu-kesitlik örgüsünü kullanın.
+  Artık tek düzene bağlı kalmak yok. Her şey elinizin altında.
 </p>
 
 <h1>Nasıl İşler?</h1>
 <p>
   <span class="simget">deveb</span> kesitlik örgüsü 12'li, 16'lı, 24'lü gibi
   1'li düzenden 24'lü düzene kadar olan tüm düzenleri aynı anda, aynı çalışma
-  sayfasında kullanabilmeyi sağlar. Diğer önyüz çatılarındaki kesitlik örgüleri (grid system)
+  alanında kullanabilmeyi sağlar. Diğer önyüz çatılarındaki kesitlik örgüleri (grid system)
   gibi tek düzende değildir. Ellerinizi bağlı tutmaz, özgürleştirir.
 </p>
 <p>
-  Satır ve sütun düzeninde kapsayıcı serileri ve diziliş özelliklerine sahiptir.
-  Esnekkutuyla uyarlamalı olarak yapılandırılmıştır. Belleti sayfasının aşağısında örnekleri
-  ve ayrıntıları inceleyebilirsiniz. Esnekkutu ingilizcedeki karşılığı flexbox örgüsüne
-  yabancı olanlara gelince, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Mozilla'nın esnekkutu belletileri</a>nden faydalanabilirler.
+  Satır ve sütun düzeninde kapsayıcı serileri ve diziliş özellikleri barındırır.
+  Esnek-kutuyla uyumlu olarak yapılandırılmıştır. Betiğin sarkasında örnekleri
+  ve ayrıntıları inceleyebilirsiniz. Esnek-kutu İngilizce'deki karşılığı flexbox olarak yazılır. Esnek-kutu örgüsüne yabancı olanlara gelince, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Mozilla'nın esnek-kutu belletileri</a>nden daha çok bilgi edinebilirler.
 </p>
 
 <h2>Nedir, Nasıl Kullanılır?</h2>
 <p>
-  Kesitlik örgüsü, kullanıldığı sayfanın içinde çeşitli yöntemlerle genişlikler
+  Kesitlik örgüsü, kullanılan yerin içinde çeşitli yöntemlerle genişlikler
   tanımlamaya yarayan, konumlama ve sıralama gibi işleri yapabilen örgüdür.
   <span class="simget">deveb</span> kesitlik örgüsü, kendisine özgü kullanımıyla
   ilk başta zorlasa bile oldukça kolay yapılandırılmıştır.
 </p>
 <p>
-  Bölümleme düzeni, esnetme düzeni olmak üzere iki ana bölüm
+  Bölümleme düzeni, esnetme düzeni olmak üzere bilinmesi gereken ilk iki ana bölüm
   düzeninden oluşan bir kesitlik örgüsüdür. Tasarımcı istediği düzeni anında seçip
   kullanmaya başlayabilir. Bunların yanında sıralama özelliği, konumlama
-  özelliği, gizleme özelliği gibi özellikler de kesitlik örgüsüne dahildir. Daha çok
+  özelliği, gizleme özelliği gibi özellikler de kesitlik örgüsüne katıktır. Daha çok
   ayrıntılı bilgi için aşağıdaki başlıkları inceleyin.
 </p>
 <h3>Bölümleme Düzeni</h3>
@@ -56,11 +55,6 @@ description:
   alt satırdan devam edilmesi istenildiğinde özel yöntemlere başvurulur.
   Daha iyi bellemek için <a href="/1.0/tr/kesitlik-orgusu/esnetme-duzeni.html">genleşme düzeni
   belleti sayfalarını</a> inceleyin.
-</p>
-<h3>Sıklaşma Düzeni</h3>
-<p>
-  Daha iyi bellemek için <a href="/1.0/tr/kesitlik-orgusu/siklasma-duzeni.html">sıklaşma düzeni
-  belleti sayfaları</a> hazırlık aşamasındadır.
 </p>
 
 <h3>Konumlama Düzeni</h3>
