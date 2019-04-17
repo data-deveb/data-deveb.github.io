@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                               //
-//   KESİTLİK ÖRGÜSÜ s1.1.8                                                                      //
+//   KESİTLİK ÖRGÜSÜ s1.2                                                                     //
 //                                                                                               //
 //   Bu örgü "bölümleme düzeni", "esnetme düzeni", "sıralama düzeni", "aralama düzeni",          //
 //   "yineleme düzeni", "konumlama düzeni", "biçimleme düzeni" özellikleriyle oluşturulmuştur.   //
@@ -10,13 +10,17 @@
  
 @mixin ayarlar(){
 
+  :root {
+    --oluk: 10px;
+    --ara: 10px;
+  }
+
   :root,
   [data-#{$gnl}],
   [data-#{$kçk}]:not([data-#{$gnl}]),
   [data-#{$ort}]:not([data-#{$kçk}]):not([data-#{$gnl}]),
   [data-#{$byk}]:not([data-#{$ort}]):not([data-#{$kçk}]):not([data-#{$gnl}]),
-  [data-#{$kcm}]:not([data-#{$byk}]):not([data-#{$ort}]):not([data-#{$kçk}]):not([data-#{$gnl}]),
-  [data-#{$ulu}]:not([data-#{$kcm}]):not([data-#{$byk}]):not([data-#{$ort}]):not([data-#{$kçk}]):not([data-#{$gnl}]){
+  [data-#{$kcm}]:not([data-#{$byk}]):not([data-#{$ort}]):not([data-#{$kçk}]):not([data-#{$gnl}]){
     // bölümleme düzeni için varsayılan değer 12 olarak tanımlandı.
     --a: 3;
     --b: 3;
@@ -28,8 +32,7 @@
   [data-#{$kçk}*="#{$aralık}-1"],
   [data-#{$ort}*="#{$aralık}-1"],
   [data-#{$byk}*="#{$aralık}-1"],
-  [data-#{$kcm}*="#{$aralık}-1"],
-  [data-#{$ulu}*="#{$aralık}-1"]{
+  [data-#{$kcm}*="#{$aralık}-1"]{
     --araara: 10px;
     --araarae: -10px;
   }
@@ -37,8 +40,7 @@
   [data-#{$kçk}*="#{$aralık}-2"],
   [data-#{$ort}*="#{$aralık}-2"],
   [data-#{$byk}*="#{$aralık}-2"],
-  [data-#{$kcm}*="#{$aralık}-2"],
-  [data-#{$ulu}*="#{$aralık}-2"]{
+  [data-#{$kcm}*="#{$aralık}-2"]{
     --araara: 15px;
     --araarae: -15px;
   }
@@ -46,8 +48,7 @@
   [data-#{$kçk}*="#{$aralık}-3"],
   [data-#{$ort}*="#{$aralık}-3"],
   [data-#{$byk}*="#{$aralık}-3"],
-  [data-#{$kcm}*="#{$aralık}-3"],
-  [data-#{$ulu}*="#{$aralık}-3"]{
+  [data-#{$kcm}*="#{$aralık}-3"]{
     --araara: 20px;
     --araarae: -20px;
   }
@@ -57,12 +58,10 @@
 @mixin sondaki-ayarlar(){
 
   [data-#{$gnl}],
-  [data-#{$ufk}],
   [data-#{$kçk}],
   [data-#{$ort}],
   [data-#{$byk}],
-  [data-#{$kcm}],
-  [data-#{$ulu}] {
+  [data-#{$kcm}] {
     display: flex;
     flex-wrap: wrap;
   }
@@ -563,43 +562,6 @@
   display: none !important
 }
 
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S01 [data-ufk] UFAK-BÜYÜKLERİYLE | 300px ≤ *
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-@media screen and (min-width:$ufak-görüntülük) {
-
-
-  :root {
-    --oluk: 10px;
-    --ara: 10px;
-  }
-
-
-//  @include kaplam($ufk);
-
-//  @include yineleme-düzeni($ufk);
-
-//  @include bölümleme-düzeni($ufk);
-
-//  @include aralama-düzeni($ufk);
-
-//  @include esnetme-düzeni($ufk);
-
-//  @include sıralama-düzeni($ufk);
-
-//  @include konumlama($ufk);
-
-
-//  [data-#{$ufk}~="#{$gizle}"],
-//  [data-#{$ufk}~="#{$büyükleriyle-gizle}"],
-//  [data-#{$mnk}~="#{$büyükleri-gizle}"],
-//  [data-#{$mnk}~="#{$diğerlerini-gizle}"] {
-//    display: none !important
-//  }
-
-
-}
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 S02 kçk | Görüntülük ölçeği: 576px ≤ *
@@ -729,70 +691,6 @@ S05 kcm | Görüntülük ölçeği: 1200px ≤ *
 
 }
 
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-S06 ulu | Görüntülük ölçeği: 1900px ≤ *
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-//@media screen and (min-width:$ulu-görüntülük) {
-
-//  @include kaplam($ulu);
-
-//  @include yineleme-düzeni($ulu);
-
-//  @include bölümleme-düzeni($ulu);
-
- // @include aralama-düzeni($ulu);
-
-//  @include esnetme-düzeni($ulu);
-
-//  @include sıralama-düzeni($ulu);
-
-//  @include konumlama($ulu);
-
-
-//  [data-#{$gnl}~="#{$kap}"],
-//  [data-#{$ulu}~="#{$kap}"],
-//  [data-#{$kcm}~="#{$büyükleri-kap}"],
-//  [data-#{$kcm}~="#{$büyükleriyle-kap}"],
-//  [data-#{$byk}~="#{$büyükleri-kap}"],
-//  [data-#{$byk}~="#{$büyükleriyle-kap}"],
-//  [data-#{$ort}~="#{$büyükleri-kap}"],
-//  [data-#{$ort}~="#{$büyükleriyle-kap}"],
-//  [data-#{$kçk}~="#{$büyükleri-kap}"],
-//  [data-#{$kçk}~="#{$büyükleriyle-kap}"],
-//  [data-#{$ufk}~="#{$büyükleri-kap}"],
-//  [data-#{$ufk}~="#{$büyükleriyle-kap}"],
-//  [data-#{$mnk}~="#{$büyükleri-kap}"],
-//  [data-#{$mnk}~="#{$büyükleriyle-kap}"] {
-//    max-width: #{$ulu-kap} !important
-//  }
-
-
-//  [data-#{$ulu}~="#{$gizle}"],
-//  [data-#{$ulu}~="#{$büyükleriyle-gizle}"],
-//  [data-#{$kcm}~="#{$büyükleri-gizle}"],
-//  [data-#{$kcm}~="#{$diğerlerini-gizle}"] {
-//    display: none !important
-//  }
-
-
-//}
-
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-kcm | Görüntülük ölçeği: 0 < 1900px
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-@media screen and (max-width:$ulu-görüntülük) {
-
-
-  [data-#{$ulu}~="#{$küçükleri-gizle}"],
-  [data-#{$ulu}~="#{$diğerlerini-gizle}"],
-  [data-#{$kcm}~="#{$küçükleriyle-gizle}"] {
-    display: none !important
-  }
-
-
-}
 
 /*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 byk | Görüntülük ölçeği: 0 < 1200px
@@ -893,9 +791,7 @@ ufk | Görüntülük ölçeği: 300px ≤ * < 576px
   [data-#{$byk}~="#{$küçükleri-kap}"],
   [data-#{$byk}~="#{$küçükleriyle-kap}"],
   [data-#{$kcm}~="#{$küçükleri-kap}"],
-  [data-#{$kcm}~="#{$küçükleriyle-kap}"],
-  [data-#{$ulu}~="#{$küçükleri-kap}"],
-  [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
+  [data-#{$kcm}~="#{$küçükleriyle-kap}"]{
     width: 100%;
     max-width: #{$ufak-kap} !important
   }
@@ -929,9 +825,7 @@ kçk | Görüntülük ölçeği: 576px ≤ * < 768px
   [data-#{$byk}~="#{$küçükleri-kap}"],
   [data-#{$byk}~="#{$küçükleriyle-kap}"],
   [data-#{$kcm}~="#{$küçükleri-kap}"],
-  [data-#{$kcm}~="#{$küçükleriyle-kap}"],
-  [data-#{$ulu}~="#{$küçükleri-kap}"],
-  [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
+  [data-#{$kcm}~="#{$küçükleriyle-kap}"]{
     width: 100%;
     max-width: #{$küçük-kap} !important
   }
@@ -965,9 +859,7 @@ ort | Görüntülük ölçeği: 768px ≤ * < 992px
   [data-#{$byk}~="#{$küçükleri-kap}"],
   [data-#{$byk}~="#{$küçükleriyle-kap}"],
   [data-#{$kcm}~="#{$küçükleri-kap}"],
-  [data-#{$kcm}~="#{$küçükleriyle-kap}"],
-  [data-#{$ulu}~="#{$küçükleri-kap}"],
-  [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
+  [data-#{$kcm}~="#{$küçükleriyle-kap}"] {
     width: 100%;
     max-width: #{$orta-kap} !important
   }
@@ -1001,9 +893,7 @@ byk | Görüntülük ölçeği: 992px ≤ * < 1200px
   [data-#{$byk}~="#{$bunu-kap}"],
   [data-#{$byk}~="#{$küçükleriyle-kap}"],
   [data-#{$kcm}~="#{$küçükleri-kap}"],
-  [data-#{$kcm}~="#{$küçükleriyle-kap}"],
-  [data-#{$ulu}~="#{$küçükleri-kap}"],
-  [data-#{$ulu}~="#{$küçükleriyle-kap}"] {
+  [data-#{$kcm}~="#{$küçükleriyle-kap}"] {
     width: 100%;
     max-width: #{$büyük-kap} !important;
   }
@@ -1021,7 +911,7 @@ byk | Görüntülük ölçeği: 992px ≤ * < 1200px
 kcm | Görüntülük ölçeği: 1200px ≤ * < 1900px
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@media screen and (min-width:$kocaman-görüntülük) and (max-width:$ulu-görüntülük) {
+@media screen and (min-width:$kocaman-görüntülük){
 
 
   [data-#{$gnl}~="#{$kap}"],
@@ -1035,7 +925,6 @@ kcm | Görüntülük ölçeği: 1200px ≤ * < 1900px
   [data-#{$ort}~="#{$büyükleriyle-kap}"],
   [data-#{$byk}~="#{$büyükleri-kap}"],
   [data-#{$byk}~="#{$büyükleriyle-kap}"],
-  [data-#{$kcm}~="#{$büyükleriyle-kap}"],
   [data-#{$kcm}~="#{$bunu-kap}"],
   [data-#{$kcm}~="#{$küçükleriyle-kap}"] {
     width: 100%;
