@@ -1,5 +1,4 @@
-{%- assign veri = site.data.s1n0.dallik -%}
-{%- assign veri2 = site.data.s1n0.ana-dallik -%}
+{%- assign dallik = site.data.s1n0.ana-dallik -%}
 {%- assign dil = page.lang -%}
 {%- assign surum = '1.0' -%}
 {%- assign yol = '/' | append: surum | append: '/' | append: dil | append: '/' -%}
@@ -17,7 +16,7 @@
   </label>
   <ul class="imge" data-menü="görünür dikey">    
 
-    {% for dal in veri2[dil] %}
+    {% for dal in dallik[dil] %}
       {%- assign anayol = yol | append: dal[1].url -%}
       <li class="
       {%- if yol == anayol and page.url == anayol -%}

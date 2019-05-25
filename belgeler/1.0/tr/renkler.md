@@ -50,7 +50,9 @@ description:
     </p>
 {% endhighlight %}
 
-<h3>Yazı Renkleri</h3>
+<br>
+
+<h3>Bağlantı Renkleri</h3>
 
 <div class="örnek">
   <div class="önizleme">
@@ -101,6 +103,7 @@ description:
     </p>
 {% endhighlight %}
 
+<br>
 <h3>Arkaplan Renkleri</h3>
 
 <div class="örnek">
