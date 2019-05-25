@@ -1,27 +1,26 @@
+<head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.title %}{{ page.title }}{% endif %}</title>
 
-<meta name="title" content="{% if page.title %}{{ page.title }}{% endif %}">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% endif %}">
-<meta name="keywords" content="frontend framework, türkçe önyüz çatısı, flex responsive">
-<meta name="robots" content="index, follow">	
-<meta name="language" content="Turkish">
-<meta name="revisit-after" content="1 days">
-<meta name="author" content="deveb"> 
+<!-- AMU -->
+{%- seo -%}
+<!---->
+{% if page.lang == 'en' %}
+	<link rel="stylesheet" href="{{ "/assets/deveb/s1n0/deveb-en.css" | relative_url }}">
+{% endif %}
+<link rel="stylesheet" href="{{ "/assets/deveb/s1n0/deveb.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/imge.css" | relative_url }}">
 
-<!-- Kök -->
-<link href="/assets/deveb-s1n0/deveb.css" rel="stylesheet">
-<link href="/assets/css/imge.css" rel="stylesheet">
+<!-- Eklenti: Font Awesome -->
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<!-- Eklenti: highlight -->
+<link rel="stylesheet" href="/assets/plugins/highlight.css">
 
-<!-- Yardımcı -->
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
-	<!-- highlight -->
-	<link rel="stylesheet" href="/assets/plugins/highlight.css">
-
+<!-- Meta Besleme -->
+{%- feed_meta -%}
+<!---->
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,3 +28,5 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+</head>
+	

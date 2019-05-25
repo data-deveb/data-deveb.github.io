@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " tr " }}">
 
-{%- include head.html -%}
+{%- include s1n0/head.html -%}
 
 <body data-gnl="görüntülük-kaplamı">
 
@@ -47,10 +47,10 @@
   </div>
   <main id="içerik" data-gnl data-ort="1 / kaplam oluk-çevre">
     <div data-gnl="lt" data-ort="1-| 13 /16" data-byk="12 /16">
-{% if page.title %}
-<h1 class="sayfa">{{ page.title }}</h1>
-{% endif %}
-{{ content }}
+      {% if page.title %}
+      <h1 class="sayfa">{{ page.title }}</h1>
+      {% endif %}
+      {{ content }}
     </div>
   </main>
 </div>
