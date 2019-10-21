@@ -32,44 +32,44 @@ $ters-dürme: wrap-reverse;
 $ters-satır: row-reverse;
 $ters-sütun: col-reverse;
 
-$solda: solda;
-$ortada: ortada;
-$sağda: sağda;
-$merkezde: merkezde;
-$üstte:üstte;
+$solda: left;
+$ortada: middle;
+$sağda: right;
+$merkezde: center;
+$üstte:top;
 $göbekte:göbekte;
-$altta: altta;
+$altta: bottom;
 
-$üstte-ol: üstte-ol;
+$üstte-ol: be-top;
 $göbekte-ol: göbekte-ol;
-$altta-ol: altta-ol;
-$sağda-ol: sağda-ol;
-$ortada-ol: ortada-ol;
-$solda-ol: solda-ol;
+$altta-ol: be-bottom;
+$sağda-ol: be-right;
+$ortada-ol: be-center;
+$solda-ol: be-left;
 
 $araları-aralık: space-between;
 $dengeli-aralık: space-around;
 $uzat: uzat;
 $uzun-ol: uzun-ol;
 
-$satırda: satırda;
-$satırda-ol: satırda-ol;
+$satırda: overline;
+$satırda-ol: be-overline;
 
-$metin-sağda: metin-sağda;
-$metin-ortada: metin-ortada;
-$metin-solda: metin-solda;
+$yazı-sağda: text-right;
+$yazı-ortada: text-center;
+$yazı-solda: text-left;
 
-$sol: f;
-$sağ: h;
+$sol: l;
+$sağ: r;
 $üst: t;
 $alt: b;
-$solüst: ft;
-$üstsağ: th;
-$altsağ: bh;
-$solalt: fb;
-$orta: g;
+$solüst: lt;
+$üstsağ: rt;
+$altsağ: rb;
+$solalt: lb;
+$orta: c;
 $üstalt: tb;
-$solsağ: fh;
+$solsağ: lr;
 
 /* Durumlama - Kap Örgüsü */
 $gizle: hide;
