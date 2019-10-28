@@ -1,0 +1,131 @@
+{
+	"tr":{
+		"baslangic":{
+			"url":"",
+			"ad":"Başlangıç"
+		},
+		"gunce":{
+			"url":"gunce",
+			"ad":"Günce"
+		},
+		"kurulum":{
+			"url":"kurulum",
+			"ad":"Kurulum"
+		},
+		"goruntuluk-orgusu":{
+			"url":"goruntuluk-orgusu",
+			"ad":"Görüntülük Örgüsü"
+		},
+		"kesitlik-orgusu":{
+			"url":"kesitlik-orgusu",
+			"ad":"Kesitlik Örgüsü",
+
+			"bolumleme-duzeni":{
+				"url":"kesitlik-orgusu/bolumleme-duzeni",
+				"ad":"Bölümleme Düzeni"
+			},
+			"yineleme-duzeni":{
+				"url":"kesitlik-orgusu/yineleme-duzeni",
+				"ad":"Yineleme Düzeni"
+			},
+			"esnetme-duzeni":{
+				"url":"kesitlik-orgusu/esnetme-duzeni",
+				"ad":"Esnetme Düzeni"
+			},
+			"aralama-duzeni":{
+				"url":"kesitlik-orgusu/aralama-duzeni",
+				"ad":"Aralama Düzeni"
+			},
+			"bicimleme-duzeni":{
+				"url":"kesitlik-orgusu/bicimleme-duzeni",
+				"ad":"Biçimleme Düzeni"
+			},
+			"konumlama-duzeni":{
+				"url":"kesitlik-orgusu/konumlama-duzeni",
+				"ad":"Konumlama Düzeni"
+			},
+			"siralama-duzeni":{
+				"url":"kesitlik-orgusu/siralama-duzeni",
+				"ad":"Sıralama Düzeni"
+			},
+			"olcekler":{
+				"url":"kesitlik-orgusu/olcekler",
+				"ad":"Ölçekler"
+			}
+
+		},
+		"bilesenler":{
+			"url":"bilesenler/sekme-orgusu",
+			"ad":"Bileşenler (YENİ GELİŞME)",
+			"sekme-orgusu":{
+				"url":"bilesenler/sekme-orgusu",
+				"ad":"Sekme Örgüsü"
+			}
+		},
+		"dene":{
+			"url":"https://jsfiddle.net/deveb/1mwjkctx/",
+			"ad":"Sürümü Dene!"
+		}
+	},
+	"en":{
+		"baslangic":{
+			"url":"",
+			"ad":"Start"
+		},
+		"gunce":{
+			"url":"gunce",
+			"ad":"Blog"
+		},
+		"kurulum":{
+			"url":"installation",
+			"ad":"Installation"
+		},
+		"goruntuluk-orgusu":{
+			"url":"screen-system",
+			"ad":"Screen System"
+		},
+		"kesitlik-orgusu":{
+			"url":"grid-system",
+			"ad":"Grid System",
+
+			"bolumleme-duzeni":{
+				"url":"grid-system/partitioning-layout",
+				"ad":"Partitioning Layout"
+			},
+			"yineleme-duzeni":{
+				"url":"grid-system/repeating-layout",
+				"ad":"Repeating Layout"
+			},
+			"esnetme-duzeni":{
+				"url":"grid-system/flexing-layout",
+				"ad":"Flexing Layout"
+			},
+			"aralama-duzeni":{
+				"url":"grid-system/spacing-layout",
+				"ad":"Spacing Layout"
+			},
+			"bicimleme-duzeni":{
+				"url":"grid-system/formating-layout",
+				"ad":"Formating Layout"
+			},
+			"konumlama-duzeni":{
+				"url":"grid-system/positioning-layout",
+				"ad":"Positioning Layout"
+			},
+			"siralama-duzeni":{
+				"url":"grid-system/ordering-layout",
+				"ad":"Ordering Layout"
+			},
+			"olcekler":{
+				"url":"grid-system/scales",
+				"ad":"Scales"
+			}
+
+		},
+		"dene":{
+			"url":"https://jsfiddle.net/deveb/1mwjkctx/",
+			"ad":"Try It Version!"
+		}
+	}
+}
+

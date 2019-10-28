@@ -1,0 +1,14 @@
+{
+	"on-surum":{
+		"tr":"Ön-sürüm",
+		"en":"Pre-version"
+	},
+	"surum":{
+		"tr":"Sürüm",
+		"en":"Version"
+	},
+	"dili":{
+		"tr":"Türkçe",
+		"en":"English"
+	}
+}

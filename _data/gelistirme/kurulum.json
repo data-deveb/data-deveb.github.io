@@ -1,0 +1,32 @@
+{
+    "tr":{
+        "giris": "<span class=\"simget\">deveb</span> günümüz yöntemleriyle geliştirilen önyüz çatısıdır. Çalışma dizinlerinin arasında gerek duyacağınız dosyaları ekleyin. Ve kullanmak istediğiniz html dosyaları içinde çağırın. Hepsi bu!",
+        "indir": "İNDİR",
+        "indir1": {
+            "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0-tr/deveb-s1n0.zip",
+            "dosya": "Deveb 1.0"
+            },
+        "indir2": {
+            "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0.36/deveb.zip",
+            "dosya": "Deveb 1.0.36"
+            },
+        "baslik1": "<span class=\"simget\">deveb</span> Türkçe Sürüm",
+        "baslik2": "<span class=\"simget\">deveb</span> İngilizce Sürüm (Hazır değil)",
+        "yazilik1": "Not: İngilizce diliyle geliştirilen sürüm, türkçe sürümü geriden takip etmektedir. Türkçe sürüme göre daha az özelliğe sahip olabilir ve hata görülebilir."
+    },
+    "en":{
+        "giris": "<span class=\"simget\">deveb</span> is a frontend framework that can be easily imported into your projects. Add the files to the correct place in your projects. You can use any version which is developed in Turkish or English language.",
+        "indir": "DOWNLOAD",
+        "indir1": {
+            "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0-tr/deveb-s1n0.zip",
+            "dosya":"deveb-s1n0.zip"
+            },
+        "indir2": {
+            "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0/deveb-s1n0n10.zip",
+            "dosya": "deveb-s1n0n10.zip"
+            },
+        "baslik1": "<span class=\"simget\">deveb</span> Turkish Version",
+        "baslik2": "<span class=\"simget\">deveb</span> English Version (not ready)",
+        "yazilik1": "Note: The version developed in English language is followed by the Turkish version. Turkish may have fewer features than the drag and error may be seen."
+    }
+}

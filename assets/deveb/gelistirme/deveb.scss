@@ -1,0 +1,25 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                               //
+//   deveb 1.0                                                                                  //
+//                                                                                               //
+//   Bu örgü "bölümleme düzeni", "esnetme düzeni", "sıralama düzeni", "aralama düzeni",          //
+//   "yineleme düzeni", "konumlama düzeni", "biçimleme düzeni" özellikleriyle oluşturulmuştur.   //
+//                                                                                               //
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+@import "diller/dil-tr";
+
+@import "altlik/ayarlar";
+@import "altlik/sifirlama";
+@import "altlik/capraz-tarayici";
+
+@import "orguler/kesitlik-orgusu";
+@import "orguler/icerik-orgusu";
+@import "orguler/dal-orgusu";
+@import "orguler/sekme-orgusu";
+@import "orguler/renk-orgusu";
+@import "orguler/konumlama";
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// NOTLAR
+///////////////////////////////////////////////////////////////////////////////////////////////////

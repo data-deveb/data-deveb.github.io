@@ -1,0 +1,102 @@
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/*  AYARLAR & TEMİZLEME
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    *,
+    *:before,
+    *:after{
+      box-sizing: border-box; }
+
+    html{
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%; }
+
+    body{
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      }
+
+    article, aside, details, figcaption, figure,
+    hgroup, section, menu, nav{
+      display: block; }
+
+    div, footer, main, header{
+      display: flex;
+      flex-wrap: wrap;
+      width:100%;
+      max-width: 100%;
+    }
+
+    a, button, input, textarea{
+      outline: 0; }
+
+    a{
+      text-decoration: none;
+    }
+
+    /*  Başlık ayarları */
+    h1, h2, h3, h4, h5, h6{
+      width: 100%;
+      display: block;
+      -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+      margin: 0 0 .5rem 0;
+      color: #333;
+      font-weight: 500;  }
+
+
+    h1{ font-size: 2.5rem }
+    h2{ font-size: 2.0rem }
+    h3{ font-size: 1.75rem }
+    h4{ font-size: 1.5rem }
+    h5{ font-size: 1.25rem }
+    h6{ font-size: 1rem }
+
+
+    h1 + p, h2 + p, h3 + p, h4 + p, h5 + p{
+      margin-top: 0 }
+
+
+    img{
+      border: 0;
+      max-width: 100%;  }
+
+    table{
+      display: table !important;
+      width: 100%;  }
+
+    /* Paragraf ayarları */
+    p{
+      display: block !important;
+      width: 100%;  
+    }
+
+    p + p{
+        /* İki paragraf arasına mesafe verme ayarı */
+        margin-top: 14px;
+        margin-top: 1rem; }
+
+    /* Liste ayarları */
+    ul{
+
+      li{
+        padding:0;
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      h1, h2, h3, h4, h5, h6
+      {margin: 0;}
+
+    }
+
+    blockquote {
+        border-left: .2rem solid #e7e9ed;
+        margin-left: 0;
+        padding: .8rem 1.6rem;
+    }

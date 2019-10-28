@@ -1,0 +1,42 @@
+:root{
+	font-size: 16px;
+}
+
+@media screen and (max-width:760px){
+	:root{
+		font-size: 14px;
+	}
+}
+
+
+// GÖRÜNTÜLÜK ÖRGÜSÜ AYARLARI ////////////////////////////////////////////////////////////////
+
+$minik-görüntülük: 300px;
+$ufak-görüntülük: 300px;
+$küçük-görüntülük: 576px;
+$orta-görüntülük: 768px;
+$büyük-görüntülük: 992px;
+$kocaman-görüntülük: 1200px;
+$ulu-görüntülük: 1900px;
+
+
+
+// KESİTLİK ÖRGÜSÜ AYARLARI ////////////////////////////////////////////////////////////////
+//// Bölümleme düzeni varsayılanı
+
+$p: 24;
+
+//// Sıralama düzeni
+
+$sıralama: 10;
+
+//// Kap ölçekleri
+
+$ulu-kap: 1600px;
+$kocaman-kap: 1140px;
+$büyük-kap: 960px;
+$orta-kap: 760px;
+$küçük-kap: 566px;
+$ufak-kap: calc("100% - 20px");
+$minik-kap: calc("100% - 10px");
+

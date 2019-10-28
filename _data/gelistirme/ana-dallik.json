@@ -1,0 +1,248 @@
+{
+  "tr":{
+    "baslangic":{
+      "url":"",
+      "ad":"Başlangıç"
+    },
+    "kurulum":{
+      "url":"kurulum",
+      "ad":"Kurulum"
+    },
+    "goruntuluk-orgusu":{
+      "url":"goruntuluk-orgusu",
+      "ad":"Görüntülük Örgüsü"
+    },
+    "kesitlik-orgusu":{
+      "url":"kesitlik-orgusu",
+      "ad":"Kesitlik Örgüsü",
+      "alt":{
+        "bolumleme-duzeni":{
+          "url":"kesitlik-orgusu/bolumleme-duzeni",
+          "ad":"Bölümleme Düzeni"
+        },
+        "yineleme-duzeni":{
+          "url":"kesitlik-orgusu/yineleme-duzeni",
+          "ad":"Yineleme Düzeni"
+        },
+        "esnetme-duzeni":{
+          "url":"kesitlik-orgusu/esnetme-duzeni",
+          "ad":"Esnetme Düzeni"
+        },
+        "aralama-duzeni":{
+          "url":"kesitlik-orgusu/aralama-duzeni",
+          "ad":"Aralama Düzeni"
+        },
+        "bicimleme-duzeni":{
+          "url":"kesitlik-orgusu/bicimleme-duzeni",
+          "ad":"Biçimleme Düzeni"
+        },
+        "konumlama-duzeni":{
+          "url":"kesitlik-orgusu/konumlama-duzeni",
+          "ad":"Konumlama Düzeni"
+        },
+        "siralama-duzeni":{
+          "url":"kesitlik-orgusu/siralama-duzeni",
+          "ad":"Sıralama Düzeni"
+        },
+        "olcekler":{
+          "url":"kesitlik-orgusu/olcekler",
+          "ad":"Ölçekler"
+        }
+      }
+    },
+    "bilesenler":{
+      "url":"bilesenler/sekme-orgusu",
+      "ad":"Bileşenler",
+      "alt":{
+        "sekme-orgusu":{
+          "url":"bilesenler/sekme-orgusu",
+          "ad":"Sekme Örgüsü"
+        },
+        "avatar":{
+          "url":"bilesenler/avatar",
+          "ad":"Avatar"
+        },
+        "badges":{
+          "url":"bilesenler/badges",
+          "ad":"Badges"
+        },
+        "cubuklar":{
+          "url":"bilesenler/cubuklar",
+          "ad":"Çubuklar"
+        },
+        "yolizi":{
+          "url":"bilesenler/yolizi",
+          "ad":"Yolizi"
+        },
+        "kartlar":{
+          "url":"bilesenler/kartlar",
+          "ad":"Kartlar"
+        },
+        "chips":{
+          "url":"bilesenler/chips",
+          "ad":"Chips"
+        },
+        "dal-orgusu":{
+          "url":"bilesenler/dal-orgusu",
+          "ad":"Dal Örgüsü"
+        },
+        "gelgit":{
+          "url":"bilesenler/gelgit",
+          "ad":"Gelgit"
+        },
+        "nav":{
+          "url":"bilesenler/nav",
+          "ad":"Nav"
+        },
+        "Sayfalama":{
+          "url":"bilesenler/sayfalama",
+          "ad":"Sayfalama"
+        },
+        "paneller":{
+          "url":"bilesenler/paneller",
+          "ad":"Paneller"
+        },
+        "popoverlar":{
+          "url":"bilesenler/popoverlar",
+          "ad":"Popoverlar"
+        },
+        "adimlar":{
+          "url":"bilesenler/adimlar",
+          "ad":"Adımlar"
+        },
+        "tileler":{
+          "url":"bilesenler/tileler",
+          "ad":"Tileler"
+        },
+        "toastlar":{
+          "url":"bilesenler/toastlar",
+          "ad":"Toastlar"
+        },
+        "aracipuclari":{
+          "url":"bilesenler/aracipuclari",
+          "ad":"Araçipuçları"
+        }
+      }
+    },
+    "araclar":{
+      "url":"araclar",
+      "ad":"Araçlar",
+      "alt":{
+        "renkler":{
+          "url":"araclar/renkler",
+          "ad":"Renkler"
+        },
+        "imlecler":{
+          "url":"araclar/imlecler",
+          "ad":"İmleçler"
+        },
+        "goruntu":{
+          "url":"araclar/goruntu",
+          "ad":"Görüntü"
+        },
+        "bolucu":{
+          "url":"araclar/bolucu",
+          "ad":"Bölücü"
+        },
+        "yukleniyor":{
+          "url":"araclar/yukleniyor",
+          "ad":"Yükleniyor"
+        },
+        "konumlama":{
+          "url":"araclar/konumlama",
+          "ad":"Konumlama"
+        },
+        "bicimler":{
+          "url":"araclar/bicimler",
+          "ad":"Biçimler"
+        },
+        "yazi":{
+          "url":"araclar/yazi",
+          "ad":"Yazı"
+        }
+      }
+    },
+    "icerik":{
+      "url":"icerik/basimcilik",
+      "ad":"İçerik",
+      "alt":{
+        "basimcilik":{
+          "url":"icerik/basimcilik",
+          "ad":"Basımcılık"
+        }
+      }
+    },
+    "gunce":{
+      "url":"/gunce",
+      "urletkin": 1,
+      "ad":"Günce"
+    },
+    "dene":{
+      "url":"https://jsfiddle.net/deveb/1mwjkctx/",
+      "urletkin": 1,
+      "ad":"DENEME YAP"
+    }
+  },
+  "en":{
+    "baslangic":{
+      "url":"",
+      "ad":"Start"
+    },
+    "gunce":{
+      "url":"gunce",
+      "urletkin": 1,
+      "ad":"Blog"
+    },
+    "kurulum":{
+      "url":"installation",
+      "ad":"Installation"
+    },
+    "goruntuluk-orgusu":{
+      "url":"screen-system",
+      "ad":"Screen System"
+    },
+    "kesitlik-orgusu":{
+      "url":"grid-system",
+      "ad":"Grid System",
+
+      "bolumleme-duzeni":{
+        "url":"grid-system/partitioning-layout",
+        "ad":"Partitioning Layout"
+      },
+      "yineleme-duzeni":{
+        "url":"grid-system/repeating-layout",
+        "ad":"Repeating Layout"
+      },
+      "esnetme-duzeni":{
+        "url":"grid-system/flexing-layout",
+        "ad":"Flexing Layout"
+      },
+      "aralama-duzeni":{
+        "url":"grid-system/spacing-layout",
+        "ad":"Spacing Layout"
+      },
+      "bicimleme-duzeni":{
+        "url":"grid-system/formating-layout",
+        "ad":"Formating Layout"
+      },
+      "konumlama-duzeni":{
+        "url":"grid-system/positioning-layout",
+        "ad":"Positioning Layout"
+      },
+      "siralama-duzeni":{
+        "url":"grid-system/ordering-layout",
+        "ad":"Ordering Layout"
+      },
+      "olcekler":{
+        "url":"grid-system/scales",
+        "ad":"Scales"
+      }
+
+    },
+    "dene":{
+      "url":"https://jsfiddle.net/deveb/1mwjkctx/",
+      "ad":"Try It!"
+    }
+  }
+}
+
