@@ -6,7 +6,7 @@ title: Bölümleme Düzeni
 description: 
 ---
 <p class="girlik">
-  Duyarlı (responsive) yapıda olup 1 ile 24 arası tüm bölümlemeleri bir arada kullanabileceğiniz yüzdesel oranla çalışan bölümleme düzeniyle tanışın.
+  Duyarlı (responsive) yapıda olan, yüzdesel oranla çalışan ve 1 ile 24 arası tüm bölümlemeleri bir arada kullanabileceğiniz bölümleme düzeniyle tanışın.
 </p>
 <div data-gnl="o" style="margin: 20px 0;">
   <div data-gnl="11 araları-aralık-1">
@@ -152,9 +152,9 @@ description:
   </div>
   {% endhighlight %}
 </div>
-
+<p></p>
 <div class="örnek">
-  <h3>Önizleme: Örnek 2</h3>
+  <h4>Önizleme: Örnek 2</h4>
   <div class="önizleme">
     <div data-gnl="3 /20">
       <div class="kutu">3 /20</div>
@@ -178,7 +178,7 @@ description:
   </div>
   {% endhighlight %}
 </div>
-
+<p></p>
 <div class="örnek">
   <h4>Önizleme: Örnek 3</h4>
   <p>

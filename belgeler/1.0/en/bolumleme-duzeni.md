@@ -8,13 +8,35 @@ description:
 <p class="girlik">
     The most used feature of the grid system is the piece layout. The piece layout is designed for you to create templates with stable percentage width. It offers use of all part layouts from 1 piece to 24 pieces. 
   </p>
+  <div data-gnl="o" style="margin: 20px 0;">
+    <div data-gnl="11 araları-aralık-1">
+      <div data-gnl="4 araları-aralık-1">
+        <div>
+          <div style="background-color: #e0e0e0; min-height: 150px; height: 100%;"></div>
+        </div>
+        <div>
+          <div style="background-color: #e0e0e0; min-height: 150px; height: 100%;"></div>
+        </div>
+      </div>
+      <div data-gnl="4">
+        <div style="background-color: #e0e0e0; min-height: 150px; height: 100%;"></div>
+      </div>
+      <div data-gnl="4">
+        <div style="background-color: #e0e0e0; min-height: 150px; height: 100%;"></div>
+      </div>
+      <div data-gnl="8">
+        <div style="background-color: #e0e0e0; min-height: 150px; height: 100%;"></div>
+      </div>
+      <div data-gnl="4">
+        <div style="background-color: #e0e0e0; min-height: 150px; height: 100%;"></div>
+      </div>
+    </div>
+  </div>
   <p>
     "NUMBER /NUMBER" values are used in the html file by writing to the desired display system. NUMBER can be between 1 and 24. For example, you want to divide the page into two and make the left side twice as wide as the right side. For this you can define the values data-gnl="2 /3" data-gnl="1 /3".
   </p> 
   <p></p>
-  <div data-gnl="1 /1 ortada">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/NKGZ8HWdnFw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
+  
 
   <h3>Piece Layout "NUMBER /NUMBER" Usage</h3>
 
@@ -29,24 +51,27 @@ description:
     <h3>Preview: Example 1</h3>
     <div class="önizleme">
       <div data-gnl="1 /3">
-        1 /3
+        <div class="kutu">1 /3</div>
       </div>
-      <div data-gnl="1 /3">
-        1 /3
+      <div data-gnl="2 /3">
+        <div class="kutu">2 /3</div>
       </div>
-      <div data-gnl="1 /3">
-        1 /3
+      <div data-gnl="4">
+        <div class="kutu">4</div>
+      </div>
+      <div data-gnl="8">
+        <div class="kutu">8</div>
       </div>
     </div>
     {% highlight html %}
     <div data-gnl="1 /3">
-      1 /3
+      <!-- content area -->
     </div>
     <div data-gnl="1 /3">
-      1 /3
+      <!-- content area -->
     </div>
     <div data-gnl="1 /3">
-      1 /3
+      <!-- content area -->
     </div>
     {% endhighlight %}
   </div>
