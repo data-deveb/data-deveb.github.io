@@ -58,7 +58,7 @@
     "dene":{
       "url":"https://jsfiddle.net/deveb/1mwjkctx/",
       "urletkin": 1,
-      "ad":"DENEME YAP"
+      "ad":"DENE!"
     }
   },
   "en":{
@@ -67,7 +67,7 @@
       "ad":"Start"
     },
     "gunce":{
-      "url":"gunce",
+      "url":"/gunce",
       "urletkin": 1,
       "ad":"Blog"
     },
@@ -119,7 +119,8 @@
     },
     "dene":{
       "url":"https://jsfiddle.net/deveb/1mwjkctx/",
-      "ad":"Try It!"
+      "urletkin": 1,
+      "ad":"TRY IT!"
     }
   }
 }
