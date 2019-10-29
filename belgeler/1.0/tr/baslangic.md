@@ -8,7 +8,7 @@ description:
 
 <p class="girlik">
   Ağ geliştiricileri için geliştirilen, hızlı yanıt veren, alışılmışın ötesinde,
-  yeni bir solukta, günümüzün uyarlamalı ve çağdaş önyüz çatısı <span class="simget">deveb</span>'e hoş geldiniz.
+  yeni bir solukta, günümüzün duyarlı (responsive) ve çağdaş önyüz çatısı <span class="simget">deveb</span>'e hoş geldiniz.
 </p>
 
 <p>
@@ -23,7 +23,7 @@ description:
     <i class="fa fa-laptop" aria-hidden="true" style="font-size:1.7em;"></i>
     <i class="fa fa-desktop" aria-hidden="true" style="font-size:2em;"></i>
     </p>
-    <h1>UYARLAMALI</h1>
+    <h1>DUYARLI</h1>
     <p>Küçük görüntülük öncelikli tasarla</p>
   </div>
   <div data-kart>

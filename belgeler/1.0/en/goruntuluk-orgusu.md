@@ -7,7 +7,7 @@ description:
 ---
 
 <p class="girlik">
-  8 different pieces of screen scales are grouped as small screens, mobile screens, tablet screens, laptop screens, desktop screens, tv screens and huge screens.
+  5 different pieces of screen scales are grouped as small screens, mobile screens, tablet screens, laptop screens, desktop screens, tv screens and huge screens.
 </p>
 <p>
   Today, screen scales and screen resolutions are very diverse. For this reason, adaptive design is a necessity. Small screens will become popular in the near future. <span class="simget">deveb</span> has more screen range than other frameworks.

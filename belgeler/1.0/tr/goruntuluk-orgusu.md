@@ -15,7 +15,7 @@ description:
   }
 </style>
 <p class="girlik">
-  En küçükten en büyük görüntülüğe doğru 5 ayrı ölçek aralığında öbeklendirilmiş görüntülük örgüsünü uyarlamalı olarak kullanın. Telefon, elüstü, dizüstü, masaüstü ve daha büyük görüntülükler için hazırladığınız tasarımları kolaylıkla gerçeğe dönüştürün.
+  En küçükten en büyük görüntülüğe doğru 5 ayrı ölçek aralığında öbeklendirilmiş görüntülük örgüsünü duyarlı (responsive) olarak kullanın. Telefon, elüstü, dizüstü, masaüstü ve daha büyük görüntülükler için hazırladığınız tasarımları kolaylıkla gerçeğe dönüştürün.
 </p>
 <div class="yazı-alanı" data-gnl="o">
   <img src="/assets/img/goruntuluk.png">
