@@ -13,7 +13,7 @@ deveb ise bu tür zorlukları ortadan kaldırmıştır. Artık dilediğiniz an d
 
 Deveb başladığı günden bu yana birçok değişikliğe uğrayarak gelişti demiştik. CSS değişkenlerini çok daha etkin ve yaygın biçimde kullanan geliştiricilerimiz birçok yararlı işi kullanıma sundular. Değindiğimiz üzere çoklu-bölüm düzeniyle tasarımcılara büyük kolaylık sağlayan deveb'in kesitlik örgüsü bugün daha güçlü yapıda.
 
-Eğer sizde bir tasarımcıysanız deveb'i çok seveceksiniz. Getirmiş olduğu yenilikler ve kolaylıklar sizde hayranlık bırakacak.
+Eğer sizde bir geliştiriciyseniz deveb'i çok seveceksiniz. Getirmiş olduğu yenilikler ve kolaylıklar sizde hayranlık bırakacak.
 
 Her şey bu anlatıklarımızla sınırlı değil.
 
