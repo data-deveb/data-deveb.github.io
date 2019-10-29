@@ -19,20 +19,10 @@ description:
       <th>Screens</th>
       <th>
         General <br>
-        <i class="fa fa-minus-square-o" aria-hidden="true"></i>
-        »
-        <i class="fa fa-window-maximize" aria-hidden="true"></i>
-        <br><span data-metin="olumlu ince">mini » huge</span>
-      </th>
-      <th>
-        Mini <br>
-        <i class="fa fa-minus-square-o" aria-hidden="true"></i>
-        <br><span data-metin="olumlu ince">Watches</span>
-      </th>
-      <th>
-        x-Small <br>
         <i class="fa fa-mobile" aria-hidden="true"></i>
-        <br><span data-metin="olumlu ince">Mobiles</span>
+        »
+        <i class="fa fa-television" aria-hidden="true"></i>
+        <br><span data-metin="olumlu ince">All</span>
       </th>
       <th>
         Small <br>
@@ -54,46 +44,29 @@ description:
         <i class="fa fa-television" aria-hidden="true"></i>
         <br><span data-metin="olumlu ince">Televisions</span>
       </th>
-      <th>
-        Huge <br>
-        <i class="fa fa-window-maximize" aria-hidden="true"></i>
-        <br><span data-metin="olumlu ince">Huge screens</span>
-      </th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Units</th>
       <td>data-gnl</td>
-      <td>data-mn</td>
-      <td>data-xs</td>
       <td>data-sm</td>
       <td>data-md</td>
       <td>data-lg</td>
       <td>data-xl</td>
-      <td>data-hg</td>
     </tr>
     <tr>
       <th>Scales</th>
       <td>0 »</td>
-      <td>0 » 300px</td>
-      <td>300px »</td>
       <td>576px »</td>
       <td>768px »</td>
       <td>992px »</td>
       <td>1200px »</td>
-      <td>1900px »</td>
     </tr>
     <tr>
       <th>Select Screen</th>
       <td><span data-metin="ana gri">class</span></td>
-      <td>
-        <span data-metin="ana gri">class</span>-this<br>
-        <span data-metin="ana gri">class</span><br>
-        <span data-metin="ana gri">class</span>-width-bigger<br>
-        <span data-metin="ana gri">class</span>-bigger
-      </td>
-      <td colspan="5">
+      <td colspan="3">
         <span data-metin="ana gri">class</span>-smaller<br>
         <span data-metin="ana gri">class</span>-width-smaller<br>
         <span data-metin="ana gri">class</span>-this<br>

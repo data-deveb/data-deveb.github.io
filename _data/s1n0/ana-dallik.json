@@ -82,40 +82,40 @@
     "kesitlik-orgusu":{
       "url":"grid-system",
       "ad":"Grid System",
-
-      "bolumleme-duzeni":{
-        "url":"grid-system/partitioning-layout",
-        "ad":"Partitioning Layout"
-      },
-      "yineleme-duzeni":{
-        "url":"grid-system/repeating-layout",
-        "ad":"Repeating Layout"
-      },
-      "esnetme-duzeni":{
-        "url":"grid-system/flexing-layout",
-        "ad":"Flexing Layout"
-      },
-      "aralama-duzeni":{
-        "url":"grid-system/spacing-layout",
-        "ad":"Spacing Layout"
-      },
-      "bicimleme-duzeni":{
-        "url":"grid-system/formating-layout",
-        "ad":"Formating Layout"
-      },
-      "konumlama-duzeni":{
-        "url":"grid-system/positioning-layout",
-        "ad":"Positioning Layout"
-      },
-      "siralama-duzeni":{
-        "url":"grid-system/ordering-layout",
-        "ad":"Ordering Layout"
-      },
-      "olcekler":{
-        "url":"grid-system/scales",
-        "ad":"Scales"
+      "alt":{
+        "bolumleme-duzeni":{
+          "url":"grid-system/partitioning-layout",
+          "ad":"Partitioning Layout"
+        },
+        "yineleme-duzeni":{
+          "url":"grid-system/repeating-layout",
+          "ad":"Repeating Layout"
+        },
+        "esnetme-duzeni":{
+          "url":"grid-system/flexing-layout",
+          "ad":"Flexing Layout"
+        },
+        "aralama-duzeni":{
+          "url":"grid-system/spacing-layout",
+          "ad":"Spacing Layout"
+        },
+        "bicimleme-duzeni":{
+          "url":"grid-system/formating-layout",
+          "ad":"Formating Layout"
+        },
+        "konumlama-duzeni":{
+          "url":"grid-system/positioning-layout",
+          "ad":"Positioning Layout"
+        },
+        "siralama-duzeni":{
+          "url":"grid-system/ordering-layout",
+          "ad":"Ordering Layout"
+        },
+        "olcekler":{
+          "url":"grid-system/scales",
+          "ad":"Scales"
+        }
       }
-
     },
     "dene":{
       "url":"https://jsfiddle.net/deveb/1mwjkctx/",
