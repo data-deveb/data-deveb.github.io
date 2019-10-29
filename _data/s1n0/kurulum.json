@@ -7,11 +7,11 @@
             "dosya": "Deveb 1.0"
             },
         "indir2": {
-            "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0.36/deveb.zip",
-            "dosya": "Deveb 1.0.36"
+            "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0.40/deveb-s1n0n40.zip",
+            "dosya": "Deveb 1.0.40"
             },
         "baslik1": "<span class=\"simget\">deveb</span> Türkçe Sürüm",
-        "baslik2": "<span class=\"simget\">deveb</span> İngilizce Sürüm (Hazır değil)",
+        "baslik2": "<span class=\"simget\">deveb</span> İngilizce Sürüm",
         "yazilik1": "Not: İngilizce diliyle geliştirilen sürüm, türkçe sürümü geriden takip etmektedir. Türkçe sürüme göre daha az özelliğe sahip olabilir ve hata görülebilir."
     },
     "en":{
@@ -19,14 +19,14 @@
         "indir": "DOWNLOAD",
         "indir1": {
             "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0-tr/deveb-s1n0.zip",
-            "dosya":"deveb-s1n0.zip"
+            "dosya":"Deveb 1.0"
             },
         "indir2": {
-            "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0/deveb-s1n0n10.zip",
-            "dosya": "deveb-s1n0n10.zip"
+            "url": "https://github.com/data-deveb/data-deveb.github.io/releases/download/deveb-1.0.40/deveb-s1n0n40.zip",
+            "dosya": "Deveb 1.0.40"
             },
         "baslik1": "<span class=\"simget\">deveb</span> Turkish Version",
-        "baslik2": "<span class=\"simget\">deveb</span> English Version (not ready)",
+        "baslik2": "<span class=\"simget\">deveb</span> English Version",
         "yazilik1": "Note: The version developed in English language is followed by the Turkish version. Turkish may have fewer features than the drag and error may be seen."
     }
 }
