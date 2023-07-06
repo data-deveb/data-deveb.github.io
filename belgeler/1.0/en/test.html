@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <!--
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+-->
+<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <style>
+html, body {margin:0;padding:0;}
+html {
+  height: -webkit-fill-available;
+}
+body {
+  background-color:#F2F2F2
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+#site {
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+  max-height:-webkit-fill-available;
+}
+
+header {
+  background-color:#FFF;
+  height:50px;
+  border-bottom:2px solid #E9E9E9;
+  flex:0 0 auto;
+}
+.container {
+  padding:10px;
+  flex:1 1 auto;
+  overflow:auto;
+}
+.toolbox {
+  flex:0 0 auto;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+button {
+  color:#d9ddff;
+  background-color:#29369F;
+  border:none;
+  border-radius:50px;
+  padding:10px 25px;
+}
+
+.mock-content {
+  display:flex;
+  justify-content:center;
+}
+
+.mock-content .mock-item {
+  width:100px;
+  height:500px;
+  border-radius:5px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+  background-color:#FFF;
+  margin:10px;
+}
+    </style>
+  </head>
+  <body>
+  <div id="site">
+  <header></header>
+  <div class="container">
+    <div class="mock-content">
+      <div class="mock-item"></div>
+      <div class="mock-item"></div>
+    </div>
+        <div class="mock-content">
+      <div class="mock-item"></div>
+      <div class="mock-item"></div>
+    </div>
+        <div class="mock-content">
+      <div class="mock-item"></div>
+      <div class="mock-item"></div>
+    </div>
+            <div class="mock-content">
+      <div class="mock-item"></div>
+      <div class="mock-item"></div>
+    </div>
+            <div class="mock-content">
+      <div class="mock-item"></div>
+      <div class="mock-item"></div>
+    </div>
+  </div>
+  <div class="toolbox">
+    <button>Next</button>
+  </div>
+</div>
+  </body>
+</html>
+
+
