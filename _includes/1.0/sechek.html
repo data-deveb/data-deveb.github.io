@@ -1,0 +1,47 @@
+{%- assign dallik = site.data.s1n0.ana-dallik -%}
+{%- assign dil = page.lang -%}
+{%- assign surum = '1.0' -%}
+{%- assign yol = '/' | append: surum | append: '/' | append: dil | append: '/' -%}
+
+<nav>
+  <input  id="açık-seçek" 
+          type="radio" 
+          name="seçek" 
+          data-kapaç="çaprazlama gizle">
+  <ul class="imge" data-menü="görünür dikey">    
+
+    {% for dal in dallik[dil] %}
+      {%- assign anayol = yol | append: dal[1].url -%}
+      <li class="
+      {%- if yol == anayol and page.url == anayol -%}
+        etkin
+      {%- elsif page.url contains anayol and yol != anayol -%}
+        etkin
+      {%- endif -%}">
+        <a href="{%- if dal[1].urletkin == 1 -%}{%- else -%}{{yol}}{%- endif -%}{{dal[1].url}}">
+          {{dal[1].ad}}</a>
+
+        {%- if dal[1].alt -%}
+
+          <input id="{{dal[1].url}}" type="checkbox" data-kapaç="sağda"
+                 {%- if page.url contains anayol -%}checked{% endif %}>
+          <label for="{{dal[1].url}}"><span>▽</span></label>
+          <label for="{{dal[1].url}}"><span>▼</span></label>
+
+          <ul>
+          {% for altta in dal[1].alt %}
+            <li class="{%- if page.url contains altta[1].url -%}etkin{%- endif -%}">
+              <a href="{%- if altta[1].urletkin == 1 -%}{%- else -%}{{yol}}{%- endif -%}{{altta[1].url}}">
+              {{altta[1].ad}}</a>            
+            </li>
+          {% endfor %}
+          </ul>
+
+        {%- endif -%}
+      </li>
+
+    {% endfor %}    
+
+  </ul>
+</nav>
+

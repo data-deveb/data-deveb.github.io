@@ -1,8 +1,8 @@
 --- 
 layout: default 
-permalink: 1.0/tr/goruntuluk-orgusu 
+permalink: 1.0/tr/germe-duzeni
 lang: tr 
-title: Görüntülük Örgüsü 
+title: Germe Düzeni
 description: 
 ---
 <style type="text/css">

@@ -1,19 +1,15 @@
 ---
-layout: default
+layout: yeni/default
 permalink: 1.0/tr/
 lang: tr
 title: Başlangıç
 description: 
 ---
 
-<p class="girlik">
-  Ağ geliştiricileri için geliştirilen, hızlı yanıt veren, alışılmışın ötesinde,
-  yeni bir solukta, günümüzün duyarlı (responsive) ve çağdaş önyüz çatısı <span class="simget">deveb</span>'e hoş geldiniz.
-</p>
+<span class="simget">deveb</span>, ağ tasarımları geliştirmekte iş bitirici, yardımcı, hızlı, kolay, anlaşılır, çağdaş, açık kaynak önyaka frameworküdür. Tasarımlarınızı yapar iken CSS'in karmaşası içinde boğulmaktan bıktınız mı? Öyle ise doğru yerdesiniz. Sunduğumuz yöntemler ile çıkmazlarınız açılıp işiniz yoluna girecek. Birazcık inceleyince **deveb.css**'i indirip kurmak isteyeceksiniz.
+{: .girlik }
 
-<p>
-  Esnek kutu (flexbox) tabanlı özellikleriyle tasarımcıların işini kolaylaştırır. 
-</p>
+Esnek kutu (flexbox) tabanlı özellikleriyle tasarımcıların işini kolaylaştırır. 
 
 <div data-gnl="o dengeli-aralık metin-ortada">
   <div data-kart>

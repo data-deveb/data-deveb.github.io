@@ -1,8 +1,8 @@
 ---
 layout: default
-permalink: 1.0/tr/kurulum
+permalink: 1.0/tr/indirme-kurma
 lang: tr
-title: Kurulum
+title: İndirme Kurma
 description: 
 ---
 

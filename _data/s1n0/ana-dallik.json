@@ -5,16 +5,16 @@
       "ad":"Başlangıç"
     },
     "kurulum":{
-      "url":"kurulum",
-      "ad":"Kurulum"
+      "url":"indirme-kurma",
+      "ad":"İndirme Kurma"
     },
     "goruntuluk-orgusu":{
-      "url":"goruntuluk-orgusu",
-      "ad":"Görüntülük Örgüsü"
+      "url":"germe-duzeni",
+      "ad":"Germe Düzeni"
     },
     "kesitlik-orgusu":{
-      "url":"kesitlik-orgusu",
-      "ad":"Kesitlik Örgüsü",
+      "url":"dosenek-düzeni",
+      "ad":"Döşenek Düzeni",
       "alt":{
         "bolumleme-duzeni":{
           "url":"kesitlik-orgusu/bolumleme-duzeni",

@@ -1,0 +1,36 @@
+{%- assign veri = site.data.s1n0.deveb -%}
+{%- assign dil = page.lang -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " tr " }}">
+
+{%- include s1n0/head.html -%}
+
+<body>
+aaaa
+  <div id="sol-alan" class="(1/1)" -orta="(4/22)">
+    <div class="damga">
+      <div>
+        <a href="/">deveb</a>
+        <input id="kapalı-seçek" type="radio" name="seçek" checked>
+        <label for="açık-seçek">☰</label>
+        <label for="kapalı-seçek">❌</label>
+      </div>
+    </div>
+    <div>
+      {%- include 1.0/sechek.html -%}
+    </div>
+  </div>
+  <main id="içerik" -orta="(1/)">
+    <div -orta="(13/16)" -büyük="(12/16)">
+      {% if page.title %}
+      <h1 class="sayfa">{{ page.title }}</h1>
+      {% endif %}
+      {{ content }}
+    </div>
+  </main>
+  <footer>
+    {%- include 1.0/ayak.html -%}
+</footer>
+</body>
+
+</html>

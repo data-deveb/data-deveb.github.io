@@ -25,3 +25,4 @@ pkg/
 site/_site/
 test/dest
 tmp/*
+.jekyll-cache
