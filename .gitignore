@@ -12,8 +12,8 @@
 .sass-cache
 /test/source/file_name.txt
 /vendor
-Gemfile
-Gemfile.lock
+# Gemfile
+# Gemfile.lock
 _site/
 bin/
 bbin/
