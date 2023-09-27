@@ -1,34 +1,355 @@
 ---
-layout: home
-title: deveb
+layout: deveb/default
+title: Anabet
 ---
-<div data-gnl="8 8p göbekte" data-ort="8 8p" class="beri-üst-2">
-  <div data-gnl="8 8p uzun-ol göbekte" data-ort="4 8p">
-    <div data-gnl="1 1p göbekte" data-etki="havada">
-      <h1 class="metin-deveb" style="font-size:60pt; margin:0; justify-content:center; font-family: 'Comfortaa', cursive; color:#eee !important; display:flex;">deveb</h1>
-      <p class="metin-gri-3 beri-1" style="font-size:13pt; text-align:center;">
-        İşte bu! Yepyeni bir önyüz çatısı buldunuz. Ağ (web) sayfalarınızı tasarlarken deveb'in oluşturduğu özelliklerden faydalanın. Tüm uygulamalarınızı kapsamlı bileşenleri ile kolayca yapmaya başlayın.
-        Ekran örgüsü, kap örgüsü, renk örgüsü ve dahası İngilizce ve Türkçe olmak üzere iki dil desteği ile keşfedilmeyi bekliyor.
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../assets/img/bg.png), linear-gradient(to top left, #255760, rgba(219, 105, 102, 0), #2c2171), linear-gradient(to top right, #2c2171, rgba(255, 153, 150, 0), black) rgb(64, 126, 140);
+    background-size: cover;
+    overflow: auto;
+    -webkit-animation: havada 40s infinite;
+    -moz-animation: havada 40s infinite;
+    -ms-animation: havada 40s infinite;
+  }
+
+  @-webkit-keyframes havada {
+    0% {
+      background-position: 25% 33%;
+    }
+
+    25% {
+      background-position: 56% 48%;
+    }
+
+    50% {
+      background-position: 50% 50%;
+    }
+
+    75% {
+      background-position: 66% 60%;
+    }
+
+    100% {
+      background-position: 25% 33%;
+    }
+  }
+
+  @-moz-keyframes havada {
+    0% {
+      background-position: 25% 33%;
+    }
+
+    25% {
+      background-position: 56% 48%;
+    }
+
+    50% {
+      background-position: 50% 50%;
+    }
+
+    75% {
+      background-position: 66% 60%;
+    }
+
+    100% {
+      background-position: 25% 33%;
+    }
+  }
+
+  @-ms-keyframes havada {
+    0% {
+      background-position: 25% 33%;
+    }
+
+    25% {
+      background-position: 56% 48%;
+    }
+
+    50% {
+      background-position: 50% 50%;
+    }
+
+    75% {
+      background-position: 66% 60%;
+    }
+
+    100% {
+      background-position: 25% 33%;
+    }
+  }
+
+
+  intro {
+    font-family: var(--damga-biçimi);
+    color: var(--damga-tüsü);
+    font-size: 13pt;        
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .2px;
+  }
+
+  intro h1 {
+    font-size: 62pt;
+    color: var(--damga-tüsü);
+    margin: 0;
+  }
+
+  intro h2 {
+    font-size: 18pt;
+    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
+
+
+  .sunum {
+    max-width: 940px;
+    margin: 20px 16.6666666666%;
+    align-self: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .sunum>div {
+    min-height: 5px;
+    border: 1px dashed rgba(255, 255, 255, .6);
+  }
+
+  .tepelik {
+    padding: 4px 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: .8em;
+    font-weight: 400;
+  }
+
+  .bölümcükler div > div{
+    text-align: center;
+    color: #fff;
+    font-size: .7em;
+    font-weight: 300;
+  }
+
+  .bölümcükler img {
+    height: 18px;
+  }
+  .bölümcükler .fa-brands{
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+  @media screen and (max-width: 1000px) {
+    .sunum {
+      margin: 20px 11.1111111%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .sunum {
+      margin: 20px 5.555555%;
+    }
+
+    .sekmeler ul li a {
+      font-size: .8em;
+    }
+
+    .tepelik {
+      gap: 3px;
+    }
+
+    intro h1 {
+      font-size: 48pt;
+    }
+
+    intro h2 {
+      font-size: 12pt;
+    }
+
+    intro p {
+      font-size: 10pt;
+    }
+  }
+
+  .tepelik img {
+    height: 18px;
+  }
+
+  .tepelik>div {
+    gap: 10px;
+  }
+
+  .ilk-alan {
+    padding: 5%;
+  }
+
+  .ayakçı {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #eee;
+    font-size: 9pt;
+  }
+
+  .bölümcükler {
+    display: flex;
+    --gap: 10px;
+    gap: var(--gap);
+    border: 0px solid #fff !important;
+  }
+
+  .bölümcükler a {
+    text-decoration: none;
+    color: #42d392;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .bölümcükler>div {
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed rgba(255, 255, 255, .6);
+    padding: 10px 25px;
+  }
+
+  .sekmeler {
+    padding: 0;
+    margin: 0;
+    border: 0px dashed rgba(255, 255, 255, .6) !important;
+  }
+
+  .sekmeler ul {
+    display: flex;
+    gap: 3px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -8px;
+  }
+
+  .sekmeler ul li {
+    list-style: none;
+    border: 1px dashed rgba(255, 255, 255, .6);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    font-size: 9pt;
+  }
+
+  .sekmeler ul li:hover {
+    margin-top: -5px;
+    padding-top: 5px;
+  }
+
+  .sekmeler ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #eee;
+    height: 100%;
+    padding: 5px 8px;
+  }
+
+  .sekmeler ul li a:hover {
+    color: #42d392;
+
+  }
+
+
+</style>
+
+<div class="sunum (1/1)">
+  <div class="sekmeler">
+    <ul>
+      <li>
+        <a href="https://discord.gg/GeaYaCb"><i class="fa-brands fa-discord"></i> Discord</a>
+      </li>
+      <li>
+        <a href="https://github.com/data-deveb"><i class="fa-brands fa-github"></i> Github</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/datadeveb/"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/groups/1818283228485179/"><i class="fa-brands fa-facebook"></i> Facebook Grubu</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/datadeveb"><i class="fa-brands fa-twitter"></i> Twitter</a>
+      </li>
+    </ul>
+  </div>
+  <div class="tepelik (1/1)">
+    <img src="/assets/img/icons8-left-80.png" alt="">
+    <img src="/assets/img/icons8-right-80.png" alt="">
+    <img src="/assets/img/icons8-refresh-80.png" alt="" style="margin-right: auto;">
+    <img src="/assets/img/icons8-minimize-window-80.png" alt="">
+    <img src="/assets/img/icons8-restore-window-80.png" alt="">
+    <img src="/assets/img/icons8-close-window-80.png" alt="">
+  </div>
+  <div class="ilk-alan">
+    <intro class="ortalı yazı">
+      <h1>deveb</h1>
+      <h2>Çığır Açan Html Css Çatısı</h2>
+      <p>
+        Tasarımlarda kullanılabilen; çeviklik, kolaylık ve yeğnilik katan; esnek, işleğen, erişilebilir bir css.
       </p>
-      <p class="metin-gri-3 beri-2" data-gnl="1 1p ortada göbekte">
-        <a data-bağ="genel" href="/belgeler/deveb.html">DEVEB 0.1</a>&nbsp;
-        <a data-bağ="genel" href="/1.0/tr/">DEVEB öncü.1.0</a>&nbsp;
-        <a data-bağ="genel" href="https://www.facebook.com/groups/1818283228485179/">KATIL</a>
-      </p>
+    </intro>
+  </div>
+
+  <div class="bölümcükler (1/1)">
+    <div class="(1/2) {1}" küçük="(1/3)" orta="(1/4)">
+      <a href="#">Niye <span style="color: white; font-weight: bold;">deveb</span>?</a>
+    </div>
+    <div class="(1/2) {1}" küçük="(1/3) {1}" orta="(1/4)">
+      <a href="/kılavuz">Başlayıver</a>
+    </div>
+    <div class="(1/2) {1}" küçük="(2/3)" orta="(1/4)">
+      <a href="#">Ağılla</a>
+    </div>
+    <div class="(1/2) {1}" küçük="(1/3)" orta="(1/4) {1}">
+      <a href="#">Daha Daha</a>
     </div>
   </div>
-  <div data-gnl="8 8p uzat" data-ort="4 8p">
-    <div data-gnl="6 8p" style="padding-left:2%">
-        <div data-gnl="8 8p" class="beri-alt-1" style="font-size:500%;background-color:#ccc; height:200px;"></div>
-        <div data-gnl="8 8p" class="ap-deveb beri-alt-1" style="height:60px;"></div>
-        <div data-gnl="1 5p" class="ap-deveb beri-alt-1" style="height:80px;"></div>
-        <div data-gnl="4 5p uzun-ol">
-          <div data-gnl="5 5p uzun-ol" class="beri-sol-1 beri-alt-1" style="background-color:#ccc;"></div>
-        </div>
-        <div data-gnl="8 8p" class="ap-deveb" style="height:60px;"></div>
+  <div class="bölümcükler (1/1)">
+    <div class="(1/3) {1}" orta="({1})">
+      <div>
+        <i class="fa-brands fa-html5" style="color: #f06529;"></i><br>HTML5
+      </div>
     </div>
-    <div data-gnl="2 8p">
-      <div data-gnl="6 8p uzun-ol" class="beri-sol-1 ap-deveb"></div>
+    <div class="(1/3) {1}" orta="({1})">
+      <div>
+        <i class="fa-brands fa-css3-alt" style="color: #3c99dc;"></i><br>CSS3
+      </div>
     </div>
+    <div class="(1/3) {1}" orta="({1})">
+      <div>
+        <i class="fa-brands fa-firefox-browser" style="color: #ff6611;"></i><br>Firefox
+      </div>
+    </div>
+    <div class="(1/3) {1}" orta="({1})">
+      <div>
+        <i class="fa-brands fa-edge" style="color: #20b4bf;"></i><br>Edge
+      </div>
+    </div>
+    <div class="(1/3) {1}" orta="({1})">
+      <div>
+        <i class="fa-brands fa-chrome" style="color: #ffcd46;"></i><br>Chrome
+      </div>
+    </div>
+    <div class="(1/3) {1}" orta="({1})">
+      <div>
+        <i class="fa-brands fa-opera" style="color: #cb0b1e;"></i><br>Opera
+      </div>
+    </div>
+  </div>
+  <div class="ayakçı (1/1)">
+    data-deveb©2017-2023
   </div>
 </div>

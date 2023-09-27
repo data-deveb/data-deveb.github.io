@@ -38,5 +38,5 @@ Sayfalarımızı takip edebilirsiniz.
 https://www.facebook.com/datadeveb
 https://www.twitter.com/datadeveb
 
-# Resmi Site
+# Resmî Ağbeti
 https://data-deveb.github.io

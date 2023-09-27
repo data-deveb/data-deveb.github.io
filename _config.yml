@@ -1,11 +1,22 @@
 # basic options
-title: Deveb 0.1
-author: deveb
-email: your-email@domain.com
-description: Bu proje CSS'nin tüm imkanlarını zorlayarak daha gelişmiş bir önyüz iskeleti oluşturmak için geliştirilmektedir.
+title: deveb
+author: Volkan TAŞ
+email: belirtilmemiş@e-posta.yeradı
+description: Yalnızca HTML, yalnızca CSS yeter. Çeviklik, çabukluk, yeğnilik, kolaylık ve dahasını barındıran bir çatı.
 twitter_username: datadeveb
 github_username:  data-deveb
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
+
+encoding: UTF-8
+
+collections_dir: collections
+collections:
+  kylavuz:
+    output: true
+    permalink: /:name
+  # kylavuz1:
+  #   output: true
+  #   permalink: /1.0/:name # (işlemiyor)

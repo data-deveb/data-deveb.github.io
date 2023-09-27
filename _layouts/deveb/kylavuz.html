@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    {% include deveb/bash.html %}
+</head>
+
+<body class="(1/1)">
+    <tepelik class="(1/1) gizli">
+
+    </tepelik>
+    <başlık class="(1/1)">
+        {% include deveb/bashlyk.html %}
+    </başlık>
+    <boyunluk class="(1/1) gizli">
+
+    </boyunluk>
+    <gövdelik class="{1} ortalı" küçük="" orta="{1}">
+        <solkolluk class="} gizli" büyük="görünür">
+            <omuzluk class="(1/1)">
+                <ul>
+                    {% for kylavuz in site.kylavuz %}
+                        {% if kylavuz.kategori == "getting-started" %}
+                    <li><a href="{{ kylavuz.url }}">{{ kylavuz.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>                
+            </omuzluk>
+            <dirseklik class="(1/1)">
+                {% contentblock soldirseklik %}
+            </dirseklik>
+            <bileklik>
+
+            </bileklik>
+        </solkolluk>
+        <ortalık class="{6}">
+            <döşlük>
+
+            </döşlük>
+            <bağırlık>
+                {{content}}
+            </bağırlık>
+            <karınlık>
+
+            </karınlık>
+        </ortalık>
+        <sağkolluk class="{2}">
+            <omuzluk>
+
+            </omuzluk>
+            <dirseklik>
+
+            </dirseklik>
+            <bileklik>
+
+            </bileklik>
+        </sağkolluk>
+    </gövdelik>
+
+    <ayaklık class="(1/1)">
+
+    </ayaklık>
+    <tabanlık class="(1/1)">
+
+    </tabanlık>
+</body>
+
+</html>
