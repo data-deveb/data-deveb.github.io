@@ -61,7 +61,7 @@ Dilediğiniz ende bölmeleri oluşturmaya çok yakınsınız. Hadi başlayalım.
 
 Bölme düzeninin baş özelliği bölmenin genişliğini belirtilen ölçüler ile bulunduğu yere göre oranlayabilmesidir. 0'dan 100'e dek olan sayılar ile pay payda değeri oluşturulabilir. "(SAYI/SAYI)" biçiminde yazılır.
 
-### Örnek
+### 1. Örnek
 Bir genişlikte iki ayrı bölme oluşturup soldaki bölmeyi sağdaki bölmenin yarı genişliğinde ayarlamak istiyoruz. Bunun için soldaki bölmenin değeri (1/3), sağdaki bölmenin değeri (2/3) olarak ayarlanmalıdır. Paydası 12 olan bir değer kullanmak istenmiş ise soldaki bölmenin değerini (4/12), sağdaki bölmenin değerini (8/12) olarak yazabiliriz. 
 {: .örnek}
 
@@ -96,270 +96,116 @@ Bir genişlikte iki ayrı bölme oluşturup soldaki bölmeyi sağdaki bölmenin 
   {% endhighlight %}
 </div>
 
-<p>
-  Bölümler oluşturmak amacıyla bölümleme yazdığınızda tarayıcılara özetle şöyle demiş olursunuz; "<i>Yer aldığım genişliği <b>/SAYI</b> ölçeğince eşit bölüme bölerek <b>SAYI</b> toplamınca bölüm genişliğini kullanacağım</i>". Şöyle ki; <b>SAYI</b> bölüm, <b>/SAYI</b> bölen anlamına gelir. Her kullanımda genişliğin kullanılabilecek kadar boş bölümleri doldurulur. Genişliği taşacak durumda bir bölüm geldiğinde kendiliğinden alta dürülürek kayar.
-</p>
-<p class="örnek">
-  Oluşturduğunuz öğenin bulunduğu yerdeki genişliğin yarısı kadar bir genişlik kullanmak istiyorsanız "1 /2", "2 /4", "3 /6", "4 /8", "5 /10", "6 /12", "7 /14", "8 /16", "9 /18", "10 /20", "11 /22" veya "12 /24" bölümlemelerinden dilediğinizi kullanmanız yeterlidir.
-</p>
-<div class="örnek">
-  <div class="önizleme">
-    <div data-gnl="6">
-      <div class="kutu">6</div>
+Bölmeler oluşturmak amacı ile değerler yazdığınızda ağ tarayıcılarına özetle şöyle demiş oluruz: *"Yer alınmış genişliği payda ölçüsünde eşit bölmüş ol. Bölme genişliğini bu paydada belirtilen pay ölçüsüne göre düz."*
+
+Böylece **(SAYI/SAYI)** ile oranlı bölmeler var edip dilediğimiz döşeneği oluşturabiliriz. Yeni bir bölme oluşturduğumuzda genişlik satırında boş bir yere sığan bir bölme değil ise alta kaydırılıp derilecektir.
+
+
+### 2. Örnek
+
+Bir genişliğin yarısı kadar genişliği olan öğeler oluşturalım. Her öğenin değerlerini birbirine eşit olmayan pay paydalar ile yazalım. Sırası ile **"(1/2)"**, **"(2/4)"**, **"(3/6)"**, **"(4/8)"**, **"(5/10)"** ve **"(6/12)"** değerlerini kullanalım.
+{: .örnek}
+
+<div class="(1/1) örnek">
+  <div class="(1/1) önizleme">
+    <div class="(1/2)">
+      <div class="kutu">(1/2)</div>
     </div>
-    <div data-gnl="1 /2">
-      <div class="kutu">1 /2</div>
+    <div class="(2/4)">
+      <div class="kutu">(2/4)</div>
     </div>
-    <div data-gnl="3 /6">
-      <div class="kutu">3 /6</div>
+    <div class="(3/6)">
+      <div class="kutu">(3/6)</div>
     </div>
-    <div data-gnl="5 /10">
-      <div class="kutu">5 /10</div>
+    <div class="(4/8)">
+      <div class="kutu">(4/8)</div>
     </div>
-    <div data-gnl="8 /16">
-      <div class="kutu">8 /16</div>
+    <div class="(5/10)">
+      <div class="kutu">(5/10)</div>
     </div>
-    <div data-gnl="11 /22">
-      <div class="kutu">11 /22</div>
+    <div class="(6/12)">
+      <div class="kutu">(6/12)</div>
     </div>
   </div>
   {% highlight html %}
-  <div data-gnl="6">
+  <div class="(1/2)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="1 /2">
+  <div class="(2/4)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="3 /6">
+  <div class="(3/6)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="5 /10">
+  <div class="(4/8)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="8 /16">
+  <div class="(5/10)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="11 /22">
+  <div class="(6/12)">
     <!-- içerik alanı -->
   </div>
   {% endhighlight %}
 </div>
 
-<p>
-  Bölümleme düzeni kullanımının nasıl olduğunu doğrudan göstermeden önce bir kurgulama yapalım. <i>Bir çalışmamız 3 eşit genişliğe bölünecek olsun. Diğer bir çalışmamızda 20 bölümlük kullanılarak kendi aralarında 3 ayrı genişlikte olsun.</i> İlk kurgumuzu gerçekleştirmek için "<b>1 /3</b>" değerlerini uygun yerlere yazabiliriz. Diğerini ise "<b>3 /20</b>", "<b>10 /20</b>", "<b>7 /20</b>" olarak yazabiliriz.
-</p>
+### 3. Örnek
 
-<p></p>
-<div class="örnek">
-  <h4>Önizleme: Örnek 1</h4>
-  <div class="önizleme">
-    <div data-gnl="1 /3">
-      <div class="kutu">1 /3</div>
+Bölme düzenini kullanmayı biraz daha iyi anlamak için başka bir örnek yapalım. Bir tasarımda birbirine eşit olmayan genişliği olan 3 bölme oluşturacağız. Bu kez 30luk bir bölme düzeni kurmak istiyoruz. Değerlerimiz şöyle yazabiliriz: **"(6/30)"**, **"(15/30)"**, **"(9/30)"**.
+{: .örnek}
+
+<div class="(1/1) örnek">
+  <div class="(1/1) önizleme">
+    <div class="(6/30)">
+      <div class="kutu">(6/30)</div>
     </div>
-    <div data-gnl="1 /3">
-      <div class="kutu">1 /3</div>
+    <div class="(15/30)">
+      <div class="kutu">(15/30)</div>
     </div>
-    <div data-gnl="1 /3">
-      <div class="kutu">1 /3</div>
-    </div>
-  </div>
-  {% highlight html %}
-  <div data-gnl="1 /3">
-    <!-- içerik alanı -->
-  </div>
-  <div data-gnl="1 /3">
-    <!-- içerik alanı -->
-  </div>
-  <div data-gnl="1 /3">
-    <!-- içerik alanı -->
-  </div>
-  {% endhighlight %}
-</div>
-<p></p>
-<div class="örnek">
-  <h4>Önizleme: Örnek 2</h4>
-  <div class="önizleme">
-    <div data-gnl="3 /20">
-      <div class="kutu">3 /20</div>
-    </div>
-    <div data-gnl="10 /20">
-      <div class="kutu">10 /20</div>
-    </div>
-    <div data-gnl="7 /20">
-      <div class="kutu">7 /20</div>
+    <div class="(9/30)">
+      <div class="kutu">(9/30)</div>
     </div>
   </div>
   {% highlight html %}
-  <div data-gnl="3 /20">
+  <div class="(6/30)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="10 /20">
+  <div class="(15/30)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="7 /20">
-    <!-- içerik alanı -->
-  </div>
-  {% endhighlight %}
-</div>
-<p></p>
-<div class="örnek">
-  <h4>Önizleme: Örnek 3</h4>
-  <p>
-    Örnek 1 ve 2'yi bir arada işlemek
-  </p>
-  <div class="önizleme">
-    <div data-gnl="1 /3">
-      <div class="kutu">1 /3</div>
-    </div>
-    <div data-gnl="1 /3">
-      <div class="kutu">1 /3</div>
-    </div>
-    <div data-gnl="1 /3">
-      <div class="kutu">1 /3</div>
-    </div>
-    <div data-gnl="3 /20">
-      <div class="kutu">3 /20</div>
-    </div>
-    <div data-gnl="10 /20">
-      <div class="kutu">10 /20</div>
-    </div>
-    <div data-gnl="7 /20">
-      <div class="kutu">7 /20</div>
-    </div>
-  </div>
-  {% highlight html %}
-  <div data-gnl="1 /3">
-    <!-- içerik alanı -->
-  </div>
-  <div data-gnl="1 /3">
-    <!-- içerik alanı -->
-  </div>
-  <div data-gnl="1 /3">
-    <!-- içerik alanı -->
-  </div>
-  <div data-gnl="3 /20">
-    <!-- içerik alanı -->
-  </div>
-  <div data-gnl="10 /20">
-    <!-- içerik alanı -->
-  </div>
-  <div data-gnl="7 /20">
+  <div class="(9/30)">
     <!-- içerik alanı -->
   </div>
   {% endhighlight %}
 </div>
 
-<p></p>
+## Bölme Düzeni İle Esneme Düzeni Bir Arada
 
-<h3>"SAYI /SAYI" >> "SAYI /SAYI" Kullanımı</h3>
+Esneme düzeninde her bir öğe birbirinden etkilenir. Bölme düzeninde her bir öğenin belirtilen oranda eni olur. 
 
-<p>
-  Bu düzeni kullanarak bir bölüm açtığınızda tarayıcıya şunu dersiniz; <i>"Kapsayan html etiketinde belirttiğim <b>/SAYI</b> kapsayan etiketin bölümlüğüdür. Kapsanan etiketlerde belirttiğim <b>/SAYI</b> kapsanan etiketlerin bölümlüğüdür. Kapsanan etiketlerde yalnızca <b>SAYI</b> yazarak genişliklerimi belirtebilirsem bölümlük değeri varsayılan değer olan 12 olacaktır."</i>
-</p>
+Esnetme düzeninde yanları içten öteleme ölçüleri sayıştan sayılmaz. Size bir örnek gösterelim. Göreceğiniz üzere birbirleriyle eşit genişlikte olmuyorlar. Bunlarla birlikte esnetme düzeni bulunduğu yerdeki kapların sayısı arttırkça aynı yerde esnemeye devam ederler.
 
-<p></p>
+### 1. Örnek
 
-<div class="örnek">
-  <h4>Önizleme</h4>
-  <div class="önizleme">
-    <div class="kutu" data-gnl="2 /2">
-      <p>
-        Bulunduğu genişliği 2/2 oranında kapla.
-      </p>
-      <div data-gnl="1 /4">
-        <div class="kutu">Bulunduğu genişliği 1/4 oranında kapla.</div>
-      </div>
-      <div data-gnl="1 /4">
-        <div class="kutu">Bulunduğu genişliği 1/4 oranında kapla.</div>
-      </div>
-      <div data-gnl="3">
-        <div class="kutu">Bulunduğu genişliği 3/12 oranında kapla.</div>
-      </div>
-      <div data-gnl="3">
-        <div class="kutu">Bulunduğu genişliği 3/12 oranında kapla.</div>
-      </div>
+Temel bir örnek ile bir genişlikte **(1/3)** ölçüsünde bir öğe ile **{1}** esnem ölçüsünde bir öğe oluşturalım ve genişliği dolduruşunu görelim.
+{: .örnek}
+
+<div class="(1/1) örnek">
+  <div class="(1/1) önizleme">
+    <div class="(1/3)">
+      <div class="kutu">(1/3)</div>
     </div>
-  </div>
+    <div class="{1}">
+      <div class="kutu">{1}</div>
+    </div>
+  </div>    
   {% highlight html %}
-  <div data-gnl="2 /2">
-    <p>
-      <!-- içerik alanı -->
-    </p>
-    <div data-gnl="1 /4">
-      <!-- içerik alanı -->
-    </div>
-    <div data-gnl="1 /4">
-      <!-- içerik alanı -->
-    </div>
-    <div data-gnl="3">
-      <!-- içerik alanı -->
-    </div>
-    <div data-gnl="3">
-      <!-- içerik alanı -->
-    </div>
+  <div class="(1/3)">
+    <!-- içerik alanı -->
   </div>
+  <div class="{1}">
+    <!-- içerik alanı -->
+  </div>
+ 
   {% endhighlight %}
 </div>
-
-<p></p>
-
-<h3>Bölümleme Düzeni & Esnetme Düzeni Tasımlama</h3>
-<p>
-  Esnetme düzeni ile bölümleme düzeni aynı şey demek değildir. Esnetme düzeninde her esneme birbiri arasında etkileşimli olup, bölümleme düzeninde ise yüzdesel genişlik oluşturulur. Esnetme düzeninde yanları içten öteleme ölçüleri sayıştan sayılmaz. Size bir örnek gösterelim. Göreceğiniz üzere birbirleriyle eşit genişlikte olmuyorlar. Bunlarla birlikte esnetme düzeni bulunduğu yerdeki kapların sayısı arttırkça aynı yerde esnemeye devam ederler.
-</p>
-
-<p></p>
-
-<div class="örnek">
-  <h4>Önizleme</h4>
-  <div class="önizleme">
-    <div>
-      <div class="kutu" data-gnl="1 /">
-        1 /
-      </div>
-      <div class="kutu" data-gnl="4 /">
-        4 /
-      </div>
-      <div class="kutu" data-gnl="2 /">
-        2 /
-      </div>
-    </div>
-    <div>
-      <div class="kutu" data-gnl="1 /7">
-        1 /7
-      </div>
-      <div class="kutu" data-gnl="4 /7">
-        4 /7
-      </div>
-      <div class="kutu" data-gnl="2 /7">
-        2 /7
-      </div>
-    </div>
-  </div>
-  {% highlight html %}
-  <div>
-    <div data-gnl="1 /">
-      <!-- içerik alanı -->
-    </div>
-    <div data-gnl="4 /">
-      <!-- içerik alanı -->
-    </div>
-    <div data-gnl="2 /">
-      <!-- içerik alanı -->
-    </div>
-  </div>
-  <div>
-    <div data-gnl="1 /7">
-      <!-- içerik alanı -->
-    </div>
-    <div data-gnl="4 /7">
-      <!-- içerik alanı -->
-    </div>
-    <div data-gnl="2 /7">
-      <!-- içerik alanı -->
-    </div>
-  </div>
-  {% endhighlight %}
-</div>
-<p></p>
-<p></p>
