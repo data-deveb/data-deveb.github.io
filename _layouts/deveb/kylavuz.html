@@ -19,8 +19,9 @@
         <solkolluk class="} gizli" büyük="görünür">
             <omuzluk class="(1/1)">
                 <ul>
-                    {% for kylavuz in site.kylavuz %}
-                        {% if kylavuz.kategori == "getting-started" %}
+                    {% assign kylavuz = site.kylavuz | sort: 'order' %}
+                    {% for kylavuz in kylavuz %}
+                        {% if kylavuz.kategori contains "deveb" %}
                     <li><a href="{{ kylavuz.url }}">{{ kylavuz.title }}</a></li>
                         {% endif %}
                     {% endfor %}

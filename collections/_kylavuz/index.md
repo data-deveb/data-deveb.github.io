@@ -2,7 +2,7 @@
 layout: deveb/kylavuz
 title: Başlangıç
 permalink: kılavuz
-kategori: getting-started
+kategori: [deveb, başlangıç]
 order: 1
 ---
 b

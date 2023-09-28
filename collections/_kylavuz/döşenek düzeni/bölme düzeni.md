@@ -2,8 +2,8 @@
 layout: deveb/kylavuz
 title: Bölme Düzeni
 permalink: bölme-düzeni
-kategori: ["deveb", "döşenek düzeni"]
-order: 1
+kategori: [deveb, Döşenek Düzeni]
+order: 2
 ---
 
 # Bölme Düzeni - deveb.css
