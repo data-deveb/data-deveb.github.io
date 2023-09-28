@@ -6,47 +6,91 @@ kategori: ["deveb", "döşenek düzeni"]
 order: 1
 ---
 
-Duyarlı (responsive) yapıda olan, yüzdesel oranla çalışan ve 1 ile 24 arası tüm bölümlemeleri bir arada kullanabileceğiniz bölümleme düzeniyle tanışın.
+# Bölme Düzeni - deveb.css
+
+Bölme düzenimiz ile sizin için en en bölmeler oluşturmanızı kolaylaştırdık. Elinizi CSS'ye sürmeden HTML üzerinden bölmelere nece ölçü vereceğinizi ve nece döşeyeceğinizi öğrenin. Kullanılışı pek kolay olan deveb.css'in bölme düzeni bildiğiniz işittiğiniz sığ yöntemlerden uzaktır. 
 {: .girmece}
+
+
+<style>
+  .girmece-örneği{
+    gap: 10px;
+  }
+  .girmece-örneği > div{
+    background-color: #ddd; 
+    height: 150px; 
+    --gap: 10px;
+  }
+  .örnek{
+    border: 1px dashed #ccc;
+    padding: 20px;
+    background-color: #60a5fa1a;
+    background-image: linear-gradient(135deg,#3b82f680 10%,#0000 0,#0000 50%,#3b82f680 0,#3b82f680 60%,#0000 0,#0000);
+    background-size: 7.07px 7.07px;
+  }
+  .örnek .önizleme{
+    
+  }
+  .örnek .önizleme .kutu{
+    width:100%;
+    padding: 20px;
+    border: 1px solid #f55;
+    background-color: #112;
+    color: #fff;
+  }
+</style>
+
+<div class="(4/4) girmece-örneği">
+  <div class="(2/4)"></div>
+  <div class="(1/4)"></div>
+  <div class="(1/4)"></div>
+  <div class="(1/4)" style="height: 50px;"></div>
+  <div class="(3/4)" style="height: 50px;"></div>
+</div>
+
+Duyarlı nitelikte olan, 0-100 arası pay payda oranı ile işleyen bölme düzenini ilk kullanışta öğreneceksiniz. HTML'de belirttiğiniz ölçüleri yansıtmak için ikinci bir işlem yapmanıza gerek yok!
+
+Dilediğiniz ende bölmeleri oluşturmaya çok yakınsınız. Hadi başlayalım.
+
+
 
 <!-- Bölmeyi anlatacak görsel örnek eklenecek -->
 <!-- -->
 
-Kullanımı çok kolay olacak biçimde oluşturulmuş bölümleme düzeni, çalışmalarınızı yazarken kendini gösterecektir. Diğer çatıların yaptığı gibi sizi tek bir düzene bağımlı bırakmaz. Dilediğiniz ende dilediğiniz ölçeği kullanarak bu kolaylığı tatmış olacaksınız. Üsteklik bir tek altyapı ayarını bile değiştirmeden...
+## Bir Bölme Nasıl Yapılır?
 
-## Bölme Nasıl Yapılır?
+Bölme düzeninin baş özelliği bölmenin genişliğini belirtilen ölçüler ile bulunduğu yere göre oranlayabilmesidir. 0'dan 100'e dek olan sayılar ile pay payda değeri oluşturulabilir. "(SAYI/SAYI)" biçiminde yazılır.
 
-Bölümleme düzeninin ana özelliği bulunduğu yerin genişliğine göre belirtilen ölçülerle yüzdesel oranlı bölüm oluşturmasıdır. Bu düzen en çok kullanılmak istenen genişlik tanımlama yöntemlerinden biridir. 1'den 24 bölümlüğe dek kullanılabilir ölçüler tek bir ayarı değiştirmeden kullanıma sunulur. Söz dizimi "<b>SAYI /SAYI</b>" biçiminde yazılarak kullanılır. Söz dizimini yalnızca "<b>SAYI</b>" biçiminde de kullanabilirsiniz. Bu durumda bölüm genişlikleri varsayılan ölçek değeri olan 12'lik düzene göre tanımlanacaktır.
+### Örnek
+Bir genişlikte iki ayrı bölme oluşturup soldaki bölmeyi sağdaki bölmenin yarı genişliğinde ayarlamak istiyoruz. Bunun için soldaki bölmenin değeri (1/3), sağdaki bölmenin değeri (2/3) olarak ayarlanmalıdır. Paydası 12 olan bir değer kullanmak istenmiş ise soldaki bölmenin değerini (4/12), sağdaki bölmenin değerini (8/12) olarak yazabiliriz. 
+{: .örnek}
 
-<p class="örnek">
-  Bir genişliği iki ayrı bölüme bölüp soldakini sağdaki bölümün yarısı kadar ayarlamak istiyorsanız birinci bölüm için "1 /3" ve ikinci bölüm için "2 /3" değerlerini yazabilirsiniz. Varsayılan 12 bölümlüğü kullanmayı düşünüyorsanız birinci bölüm için "4" ikinci bölüm için "8" değerini tanımlamanız yeterli olacaktır.
-</p>
-<div class="örnek">
-  <div class="önizleme">
-    <div data-gnl="1 /3">
-      <div class="kutu">1 /3</div>
+<div class="(1/1) örnek">
+  <div class="(1/1) önizleme">
+    <div class="(1/3)">
+      <div class="kutu">(1/3)</div>
     </div>
-    <div data-gnl="2 /3">
-      <div class="kutu">2 /3</div>
+    <div class="(2/3)">
+      <div class="kutu">(2/3)</div>
     </div>
-    <div data-gnl="4">
-      <div class="kutu">4</div>
+    <div class="(4/12)">
+      <div class="kutu">(4/12)</div>
     </div>
-    <div data-gnl="8">
-      <div class="kutu">8</div>
+    <div class="(8/12)">
+      <div class="kutu">(8/12)</div>
     </div>
   </div>
   {% highlight html %}
-  <div data-gnl="1 /3">
+  <div class="(1/3)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="2 /3">
+  <div class="(2/3)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="4">
+  <div class="(4/12)">
     <!-- içerik alanı -->
   </div>
-  <div data-gnl="8">
+  <div class="(8/12)">
     <!-- içerik alanı -->
   </div>
   {% endhighlight %}

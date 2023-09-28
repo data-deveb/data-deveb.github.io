@@ -8,6 +8,10 @@ github_username:  data-deveb
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
 # theme: minima
 
 encoding: UTF-8
