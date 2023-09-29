@@ -2,10 +2,10 @@
 layout: deveb/kylavuz
 title: Başlangıç
 permalink: kılavuz
-kategori: [deveb, başlangıç]
+kategori: {alan: "kılavuz", bölüm: "Başlangıç"}
 order: 1
 ---
-b
+
 Ağ tasarımlarını çarçabuk HTML'de yazabilmeniz için geliştirilen deveb.css'e hoş geldiniz. Alıştıklarınızdan daha iyi ve çığır açan yapısına bayılacaksınız. Önyaka işçilerine yeni bir soluk kazandıran özelliklerini tanımaya başlayalım.
 
 # UYARLAMALI

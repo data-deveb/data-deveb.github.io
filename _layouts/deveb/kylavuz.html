@@ -19,11 +19,25 @@
         <solkolluk class="} gizli" büyük="görünür">
             <omuzluk class="(1/1)">
                 <ul>
-                    {% assign kylavuz = site.kylavuz | sort: 'order' %}
-                    {% for kylavuz in kylavuz %}
-                        {% if kylavuz.kategori contains "deveb" %}
-                    <li><a href="{{ kylavuz.url }}">{{ kylavuz.title }}</a></li>
-                        {% endif %}
+                    {% assign kylavuz2 = site.kylavuz | sort: 'order' %}
+
+                    {% assign kylavuz = site.kylavuz | group_by: 'kategori' %}
+
+                    <!-- {{kylavuz[0]["items"][0].title}} -->
+
+                    {% for nesneler in kylavuz %}
+                        <li> 
+                        <!-- {{nesneler["items"][0].kategori["bölüm"]}} -->
+                            <strong>{{ nesneler["items"][0].kategori["bölüm"] }}</strong>
+                            <ul>
+                            {% for nesne in nesneler["items"] %}
+                            <!-- {{nesne.title}} -->
+                                {% if nesne.kategori["alan"] contains "kılavuz" %}                                
+                                <li><a href="{{ nesne.url }}">{{ nesne.title }}</a></li>                                
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        </li>
                     {% endfor %}
                 </ul>                
             </omuzluk>
