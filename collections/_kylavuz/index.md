@@ -39,8 +39,3 @@ deveb geliştirilirken takip olarak güncel kalın ve aşağıdaki bağlardan to
 - Twitter'da datadeveb hesabını takip edin.
 - Discord odamıza katılın canlı iletişim kurun.
 
-{% contentfor soldirseklik %}
-
-yeni
-
-{% endcontentfor %}
