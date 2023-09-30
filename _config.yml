@@ -16,6 +16,10 @@ kramdown:
 
 encoding: UTF-8
 
+kategori-syrasy:
+ - Başlangıç
+ - Döşenek Düzeni
+
 collections_dir: collections
 collections:
   kylavuz:

@@ -21,7 +21,7 @@
                 <ul>
                     {% assign kylavuz2 = site.kylavuz | sort: 'order' %}
 
-                    {% assign kylavuz = site.kylavuz | group_by: 'kategori' %}
+                    {% assign kylavuz = site.kylavuz | group_by: 'kategori' | sort: "site.kategori-syrasy" %}
 
                     <!-- {{kylavuz[0]["items"][0].title}} -->
 
