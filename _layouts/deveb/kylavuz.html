@@ -23,16 +23,16 @@
 
                     {% assign kylavuz = site.kylavuz | group_by: 'kategori' | sort: "site.kategori-syrasy" %}
 
-                    <!-- {{kylavuz[0]["items"][0].title}} -->
+                    <!-- {"{ kylavuz[0]["items"][0].title }"} -->
 
                     {% for nesneler in kylavuz %}
                         <li> 
-                        <!-- {{nesneler["items"][0].kategori["bölüm"]}} -->
+                        <!-- {"{ nesneler["items"][0].kategori["bölüm"] }"} -->
                         
                             <strong>{{nesneler.items.first.kategori.bolum}}</strong>
                             <ul>
                             {% for nesne in nesneler.items %}
-                            <!-- {{nesne.title}} -->
+                            <!-- {"{nesne.title}"} -->
                                 {% if nesne.kategori.alan contains "kılavuz" %}                                
                                 <li><a href="{{ nesne.url }}">{{ nesne.title }}</a></li>                                
                                 {% endif %}
