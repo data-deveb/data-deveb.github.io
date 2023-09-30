@@ -2,7 +2,7 @@
 layout: deveb/kylavuz
 title: Başlangıç
 permalink: kılavuz
-kategori: {alan: "kılavuz", bölüm: "Başlangıç"}
+kategori: {alan: "kılavuz", bolum: "Başlangıç"}
 order: 1
 ---
 

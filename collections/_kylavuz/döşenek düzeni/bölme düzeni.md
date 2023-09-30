@@ -2,7 +2,7 @@
 layout: deveb/kylavuz
 title: Bölme Düzeni
 permalink: bölme-düzeni
-kategori: {alan: "kılavuz", bölüm: "Döşenek Düzeni"}
+kategori: {alan: "kılavuz", bolum: "Döşenek Düzeni"}
 order: 2
 ---
 
