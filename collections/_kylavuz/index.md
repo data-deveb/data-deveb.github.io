@@ -10,7 +10,7 @@ Ağ tasarımlarını çarçabuk HTML'de yazabilmeniz için geliştirilen deveb.c
 
 # UYARLAMALI
 
-Küçük görüntülük öncelikli tasarla
+Küçük germelerden başlayarak tasarla!
 
 # ÖZGÜR
 
