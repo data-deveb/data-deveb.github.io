@@ -8,7 +8,7 @@ order: 2
 
 # Bölme Düzeni - deveb.css
 
-Bölme düzenimiz ile sizin için en en bölmeler oluşturmanızı kolaylaştırdık. Elinizi CSS'ye sürmeden HTML üzerinden bölmelere nece ölçü vereceğinizi ve nece döşeyeceğinizi öğrenin. Kullanılışı pek kolay olan deveb.css'in bölme düzeni bildiğiniz işittiğiniz sığ yöntemlerden uzaktır. 
+Bölme düzenimiz ile en en bölmeler oluşturmanızı kolaylaştırdık. Elinizi CSS'ye sürmeden HTML üzerinden bölmelere nasıl ölçü vereceğinizi ve nasıl döşeyeceğinizi öğrenin. Kullanılışı pek kolay olan deveb.css'in bölme düzeni bildiğiniz işittiğiniz sığ yöntemlerden uzaktır. 
 {: .girmece}
 
 
