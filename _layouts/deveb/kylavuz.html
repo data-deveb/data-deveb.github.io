@@ -19,9 +19,9 @@
         <solkolluk class="} gizli" büyük="görünür">
             <omuzluk class="(1/1)">
                 <ul>
-                    {% assign kylavuz2 = site.kylavuz | sort: 'order' %}
+                    {% assign kylavuz2 = site.kylavuz | sort: order %}
 
-                    {% assign kylavuz = site.kylavuz | group_by: 'kategori' | sort: "site.kategori-syrasy" %}
+                    {% assign kylavuz = site.kylavuz | group_by: kategori | sort: site.kategori-syrasy %}
 
                     <!-- kylavuz[0]["items"][0].title -->
 
@@ -29,7 +29,7 @@
                         <li> 
                         <!-- nesneler["items"][0].kategori["bölüm"] -->
                         
-                            <strong>{{nesneler.items.first.kategori.bolum}}</strong>
+                            <strong>{{ nesneler.items.first.kategori.bolum }}</strong>
                             <ul>
                             {% for nesne in nesneler.items %}
                             <!-- nesne.title -->
