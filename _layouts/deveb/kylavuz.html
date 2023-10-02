@@ -18,7 +18,7 @@
     <gövdelik class="{1} ortalı" küçük="" orta="{1}">
         <solkolluk class="} gizli" büyük="görünür">
             <omuzluk class="(1/1)">
-                <ul>
+                <ul class="seçek (1/1)">
 
                     {% assign kylavuz = site.kylavuz | group_by: "kategori" | sort: site.kategori-syrasy %}
 
@@ -26,15 +26,15 @@
                     
                     {% for nesneler in kylavuz %}
                     
-                        <li> 
+                        <li class="(1/1)"> 
                         <!-- nesneler["items"][0].kategori["bölüm"] -->
                         
                             <strong>{{ nesneler.items.first.kategori.bolum }}</strong>
-                            <ul>
+                            <ul class="seçek (1/1)">
                             {% for nesne in nesneler.items %}
                             <!-- nesne.title -->
                                 {% if nesne.kategori.alan contains "kılavuz" %}                                
-                                <li><a href="{{ nesne.url }}">{{ nesne.title }}</a></li>                                
+                                <li class="(1/1)"><a href="{{ nesne.url }}">{{ nesne.title }}</a></li>                                
                                 {% endif %}
                             {% endfor %}
                             </ul>

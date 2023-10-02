@@ -125,3 +125,16 @@ ortalık p{
     line-height: 27.2px;
     letter-spacing: 0.3px;
 }
+.seçek{
+  gap:5px;
+  align-content: flex-start;
+  margin-top:5px;
+  margin-bottom: 20px;
+}
+.seçek li{
+  list-style: none;
+}
+
+.seçek, .seçek ul{
+  padding: 0;
+}
