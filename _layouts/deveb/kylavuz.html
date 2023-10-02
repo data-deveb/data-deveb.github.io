@@ -19,13 +19,13 @@
         <solkolluk class="} gizli" büyük="görünür">
             <omuzluk class="(1/1)">
                 <ul>
-                    {% assign kylavuz2 = site.kylavuz | sort: order %}
 
-                    {% assign kylavuz = site.kylavuz | group_by: kategori | sort: site.kategori-syrasy %}
+                    {% assign kylavuz = site.kylavuz | group_by: "kategori" | sort: site.kategori-syrasy %}
 
                     <!-- kylavuz[0]["items"][0].title -->
-
+                    
                     {% for nesneler in kylavuz %}
+                    
                         <li> 
                         <!-- nesneler["items"][0].kategori["bölüm"] -->
                         
