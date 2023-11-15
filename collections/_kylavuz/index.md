@@ -6,36 +6,39 @@ kategori: {alan: "kılavuz", bolum: "İlkin"}
 order: 1
 ---
 
-Ağ tasarımlarını çarçabuk HTML'de yazabilmeniz için geliştirilen deveb.css'e hoş geldiniz. Alıştıklarınızdan daha iyi ve çığır açan yapısına bayılacaksınız. Önyaka işçilerine yeni bir soluk kazandıran özelliklerini tanımaya başlayalım.
+Ağ tasarımlarını HTML'den ayrılmadan yazabileceğiniz **[deveb.css](https://data-deveb.github.io)**'e hoş geldiniz. Alıştıklarınızdan daha iyi ve çığır açan yapısına bayılacaksınız. Önyaka işçilerine yeni bir soluk kazandıran özelliklerini tanımaya başlayalım.
 
-# UYARLAMALI
+# BOY BOY EKRANLARA AYAK UYDUR 
 
-Küçük germelerden başlayarak tasarla!
+Akıllı telefon ekranlarına, tablet bilgisayar ekranlarına, dizüstü bilgisayar ekranlarına, masaüstü bilgisayar ekranlarına, türlü büyüklükte olan ekranlara ayak uyduran alt düzeni ile ağ tasarımlarınızı yapın. 
 
-# ÖZGÜR
+# ÖZGÜRCE KULLAN, ÖZGÜRCE GELİŞTİR
 
-Github düzleminde açık kaynak
+[deveb.css](https://data-deveb.github.io) açık kaynaklı bir yapıttır. Ağ tasarımcısı olan kişilerin kullanabilmesi için geliştirilmektedir.
 
-# OKUNABİLİR
+# OKUR OKUMAZ KOLAYCA ANLAŞILIR
 
-Kolay okunur & yazılır
+HTML satırları arasında yerini bulan deveb.css'in sunduğu özellikler ile HTML satırlarınız okunur okunmaz kolayca anlaşılır.
 
-# ÇAĞDAŞ
+# ÇAĞDAŞ VE ÇIĞIR AÇAN
 
-Elverişli en iyi olanaklarla
+HTML CSS ikilisinin elverdiği olanakları ile engelleri aşan **deveb.css** günümüzdeki tasarım anlayışlarına uygun olup en iyi özellikler sunarak çağdaş kalmakta ve çığırlar açmakta.
 
-# Nasıl Kurulur?
+# DEVEB.CSS NASIL KURULUR, NASIL KULLANILIR?
 
-deveb kurulumu oldukça basittir. En son yayınlanmış kararlı sürümü indirin ve çalışmanıza gömün. Yapmanız gerekenler kurulum sayfasında anlatılmıştır.
-Yeni Şeyler Var!
+Kurulması pek kolay olan [deveb.css](https://data-deveb.github.io) şu aşamalardan sonra kullanmak için hazır olur:
 
-HTML sınıfları yerine HTML veri-öznitelikleri ile çalışmaktadır. Bazı özellikleri uyarlamalı olabilmesi için görüntülük örgüsüyle iliştirilmiş olarak çalışır. Çoklu parça düzenine sahip kap örgüsü kullanıma hazırdır. Sadece bu özelliği olmayıp genleşme, konumlama gibi yararlı özellikleri de barındırır. Küçük görüntülük öncelikli çalışan özelliklerimizi yakından incelemek için belleti sayfalarını inceleyin.
-Topluluk
+- [deveb.css](https://data-deveb.github.io)'i indirip tasarım dosyalarınız ile ağıllayın.
+- Ağılladıktan sonra kullanabilmek için HTML'in baş bölgesinde CSS yolunu belirterek tasarımınıza gömülü kılın.
+- Daha çok bilgi için kılavuzu gezebilirsiniz.
 
-deveb geliştirilirken takip olarak güncel kalın ve aşağıdaki bağlardan topluluğa ulaşın.
+# YENİ OLAN NELER VAR?
 
-- Facebook sayfamızı takip edin.
-- Facebook grubumuza katılın.
-- Twitter'da datadeveb hesabını takip edin.
-- Discord odamıza katılın canlı iletişim kurun.
+HTML'de ağırlıklı olarak sınıf ile tasarım yapılmaktadır. [deveb.css](https://data-deveb.github.io)'i sınıf altında kullanabileceksiniz. Ancak bir şeyleri ekranlara göre başka türlü yapmak istediğinizde öznitelikler ile işinizi göreceksiniz. Daha önce kullandığınız frontend frameworklerdeki gibi sizi belli bir ölçüye bağlı bırakmayan yapı geliştirdik. Böylece 0'dan 100'e dek dilediğiniz ölçüleri pay payda değerleri yazarak atayabilirsiniz. 
+
+# BİZİM TOPLULUĞUMUZ
+
+[deveb.css](https://data-deveb.github.io) geliştirilirken bizi izleyip her türlü katkıyı sağlayın, duyurulan bilgileri edinin, biraz da yoğun ve derin düşünerek beyin ağrısı çekin. Aşağıdaki yerlere tıklayarak topluluğa gelmenizi bekliyoruz.
+
+(...YAKINDA...)
 

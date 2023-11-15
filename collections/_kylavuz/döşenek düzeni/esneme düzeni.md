@@ -30,7 +30,8 @@ Esneme düzenimiz ile esnek bölmeler oluşturmayı kolaylaştırdık. CSS'ye el
   .örnek .önizleme{
     
   }
-  .örnek .önizleme .kutu{
+  .örnek .önizleme > div::before{
+    content: attr(class);
     width:100%;
     padding: 20px;
     border: 1px solid #f55;
@@ -60,12 +61,8 @@ Bir genişlikte iki ayrı bölme oluşturup soldaki bölmeyi sağdaki bölmenin 
 
 <div class="(1/1) örnek">
   <div class="(1/1) önizleme">
-    <div class="{1}">
-      <div class="kutu">{1}</div>
-    </div>
-    <div class="{2}">
-      <div class="kutu">{2}</div>
-    </div>
+    <div class="{1}"></div>
+    <div class="{2}"></div>
   </div>
   {% highlight html %}
   <div class="{1}">

@@ -6,10 +6,9 @@ kategori: {alan: "kılavuz", bolum: "Döşenek Düzeni"}
 order: 2
 ---
 
-# Bölme Düzeni - deveb.css
+# Bölme Düzeni
 
-Bölme düzenimiz ile en en bölmeler oluşturmayı kolaylaştırdık. CSS'ye el sürmeden, bölme ölçüsünü HTML üzerinden belirlemeyi ve nasıl döşeyeceğinizi öğrenin. Kullanılışı pek kolay olan **deveb.css**'in bölme düzeni bildiğiniz işittiğiniz sığ yöntemlerden uzaktır. 
-{: .girmece}
+Türlü genişlikte bölmeler oluşturmayı **bölme düzeni** ile kolaylaştırdık. HTML satırlarınızı yazıyorken CSS'ye el sürmeden bir bölme oluşturmayı ve bu bölme için genişlik belirtmeyi öğrenmeniz için kılavuz yazdık. Pek kolay kullanılabilen **[deveb.css](https://data-deveb.github.io)**'in bölme düzeni, ağ tasarımcısı olan kişileri belli ölçüler ile kısıtlamadan özgür kılar.
 
 
 <style>
@@ -31,7 +30,8 @@ Bölme düzenimiz ile en en bölmeler oluşturmayı kolaylaştırdık. CSS'ye el
   .örnek .önizleme{
     
   }
-  .örnek .önizleme .kutu{
+  .örnek .önizleme > div::before{
+    content: attr(class);
     width:100%;
     padding: 20px;
     border: 1px solid #f55;
@@ -67,18 +67,10 @@ Bir genişlikte iki ayrı bölme oluşturup soldaki bölmeyi sağdaki bölmenin 
 
 <div class="(1/1) örnek">
   <div class="(1/1) önizleme">
-    <div class="(1/3)">
-      <div class="kutu">(1/3)</div>
-    </div>
-    <div class="(2/3)">
-      <div class="kutu">(2/3)</div>
-    </div>
-    <div class="(4/12)">
-      <div class="kutu">(4/12)</div>
-    </div>
-    <div class="(8/12)">
-      <div class="kutu">(8/12)</div>
-    </div>
+    <div class="(1/3)">    </div>
+    <div class="(2/3)">    </div>
+    <div class="(4/12)">    </div>
+    <div class="(8/12)">    </div>
   </div>
   {% highlight html %}
   <div class="(1/3)">
@@ -109,22 +101,16 @@ Bir genişliğin yarısı kadar genişliği olan öğeler oluşturalım. Her ö�
 <div class="(1/1) örnek">
   <div class="(1/1) önizleme">
     <div class="(1/2)">
-      <div class="kutu">(1/2)</div>
     </div>
     <div class="(2/4)">
-      <div class="kutu">(2/4)</div>
     </div>
     <div class="(3/6)">
-      <div class="kutu">(3/6)</div>
     </div>
     <div class="(4/8)">
-      <div class="kutu">(4/8)</div>
     </div>
     <div class="(5/10)">
-      <div class="kutu">(5/10)</div>
     </div>
     <div class="(6/12)">
-      <div class="kutu">(6/12)</div>
     </div>
   </div>
   {% highlight html %}
@@ -157,13 +143,10 @@ Bölme düzenini kullanmayı biraz daha iyi anlamak için başka bir örnek yapa
 <div class="(1/1) örnek">
   <div class="(1/1) önizleme">
     <div class="(6/30)">
-      <div class="kutu">(6/30)</div>
     </div>
     <div class="(15/30)">
-      <div class="kutu">(15/30)</div>
     </div>
     <div class="(9/30)">
-      <div class="kutu">(9/30)</div>
     </div>
   </div>
   {% highlight html %}
@@ -193,10 +176,8 @@ Temel bir örnek ile bir genişlikte **(1/3)** ölçüsünde bir öğe ile **{1}
 <div class="(1/1) örnek">
   <div class="(1/1) önizleme">
     <div class="(1/3)">
-      <div class="kutu">(1/3)</div>
     </div>
     <div class="{1}">
-      <div class="kutu">{1}</div>
     </div>
   </div>    
   {% highlight html %}

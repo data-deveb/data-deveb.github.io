@@ -31,3 +31,13 @@ collections:
   #   permalink: /1.0/:name # (işlemiyor)
 
 
+lsi: false
+safe: true
+source: 
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
