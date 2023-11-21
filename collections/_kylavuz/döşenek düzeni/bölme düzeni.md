@@ -8,7 +8,7 @@ order: 2
 
 # Bölme Düzeni
 
-Türlü genişlikte bölmeler oluşturmayı **bölme düzeni** ile kolaylaştırdık. HTML satırlarınızı yazıyorken CSS'ye el sürmeden bir bölme oluşturmayı ve bu bölme için genişlik belirtmeyi öğrenmeniz için kılavuz yazdık. Pek kolay kullanılabilen **[deveb.css](https://data-deveb.github.io)**'in bölme düzeni, ağ tasarımcısı olan kişileri belli ölçüler ile kısıtlamadan özgür kılar.
+Türlü türlü genişlikte HTML bölmesi oluşturmayı **bölme düzeni** ile kolay kıldık. HTML satırlarınızı yazıyorken CSS'ye el sürmeden bir bölme oluşturmayı ve bu bölme için genişlik belirtmeyi öğrenmeniz için kılavuz yazdık. Pek kolay kullanılabilen **[deveb.css](https://data-deveb.github.io)**'in bölme düzeni, ağ tasarımcısı olan kişileri belli ölçüler ile kısıtlamadan özgür kılar.
 
 
 <style>
@@ -24,7 +24,7 @@ Türlü genişlikte bölmeler oluşturmayı **bölme düzeni** ile kolaylaştır
     border: 1px dashed #ccc;
     padding: 20px;
     background-color: #60a5fa1a;
-    background-image: linear-gradient(135deg,#3b82f680 10%,#0000 0,#0000 50%,#3b82f680 0,#3b82f680 60%,#0000 0,#0000);
+    background-image: linear-gradient(135deg, #3b82f680 10%,#0000 0,#0000 50%,#3b82f680 0,#3b82f680 60%,#0000 0,#0000);
     background-size: 7.07px 7.07px;
   }
   .örnek .önizleme{
