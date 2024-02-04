@@ -1,0 +1,46 @@
+{
+    "ana": [
+        {
+            "title": "Niye&nbsp;<span style='color: white; font-weight: bold;'>deveb?</span>",
+            "url": "https://data-deveb.github.io/niye-deveb",
+            "icon": "<i class='fa-regular fa-circle-question' style='color: rgba(255,255,255,.8);'></i>"
+        },
+        {
+            "title": "Kılavuz<span>u oku</span>",
+            "url": "https://data-deveb.github.io/kılavuz",
+            "icon": "<i class='fa-solid fa-book-open-reader' style='color: rgba(255,255,255,.8);'></i>"
+        },
+        {
+            "title": "Ağılla<span>yıp kullan</span>",
+            "url": "https://data-deveb.github.io/ağılla",
+            "icon": "<i class='fa-solid fa-download' style='color: rgba(255,255,255,.8);'></i>"
+        },
+        {
+            "title": "Dahası<span>na göz at</span>",
+            "url": "https://data-deveb.github.io/dahası",
+            "icon": "<i class='fa-solid fa-ellipsis' style='color: rgba(255,255,255,.8);'></i>"
+        }
+    ],
+    "deveb": [
+        {
+            "title": "Bölme Düzeni",
+            "url": "https://data-deveb.github.io/bölme-düzeni",
+            "icon": ""
+        },
+        {
+            "title": "Esneme Düzeni",
+            "url": "https://data-deveb.github.io/esneme-düzeni",
+            "icon": ""
+        },
+        {
+            "title": "Düğmeler",
+            "url": "https://data-deveb.github.io/düğmeler",
+            "icon": ""
+        },
+        {
+            "title": "Yakında...",
+            "url": "https://data-deveb.github.io/",
+            "icon": ""
+        }
+    ]
+}

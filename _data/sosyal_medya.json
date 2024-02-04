@@ -1,0 +1,24 @@
+[
+   {
+      "title": "Github",
+      "url": "https://github.com/data-deveb",
+      "icon": "<i class='fa-brands fa-github'></i>"
+   },
+   {
+      "title": "Discord",
+      "url": "https://discord.gg/GeaYaCb",
+      "icon": "<i class='fa-brands fa-discord'></i>"
+   },{
+      "title": "Facebook",
+      "url": "https://www.facebook.com/datadeveb/",
+      "icon": "<i class='fa-brands fa-facebook'></i>"
+   },{
+      "title": "Fb Grubu",
+      "url": "https://www.facebook.com/groups/1818283228485179/",
+      "icon": "<i class='fa-brands fa-facebook'></i>"
+   },{
+      "title": "Twitter",
+      "url": "https://twitter.com/datadeveb",
+      "icon": "<i class='fa-brands fa-twitter'></i>"
+   }
+]

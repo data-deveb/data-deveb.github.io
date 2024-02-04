@@ -80,8 +80,16 @@ body {
     font-family: "Inter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
+damga{
+  font-family: 'Comfortaa', cursive;
+}
+
 p {
     line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
 }
 
 a.logo {
@@ -90,6 +98,7 @@ a.logo {
     color: #fff !important;
     font-weight: bold !important;
     opacity: 1 !important;
+    
 }
 
 a.logo2 {
