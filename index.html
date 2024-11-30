@@ -104,7 +104,7 @@ title: Anabet
 
   .sekmelik,
   .alan,
-  .sol-direk {
+  .direk {
     border: 0 !important;
   }
 
@@ -136,17 +136,21 @@ title: Anabet
   }
 
   intro h1 {
-    font-size: 62pt;
+    font-size: clamp(12pt, 9vw, 62pt);
     color: var(--damga-tüsü);
     margin: 0;
   }
 
   intro h2 {
-    font-size: 18pt;
+    font-size: clamp(11pt, 3vw, 18pt);
     background: -webkit-linear-gradient(315deg, #f1ee0b 25%, #0be6db);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  intro p{
+    font-size: clamp(11pt, 3vw, 18pt);
   }
 
   .bölümcükler {
@@ -214,20 +218,20 @@ title: Anabet
     margin: 0;
   }
 
-  .sol-direk .sekmeler {
+  .direk .sekmeler {
     flex-direction: column;
   }
 
-  .sol-direk .sekmeler li {
+  .direk .sekmeler li {
     border-radius: 0;
     justify-content: center;
   }
 
-  .sol-direk .sekmeler:hover li {
+  .direk .sekmeler:hover li {
     justify-content: start;
   }
 
-  .sol-direk .sekmeler li i {
+  .direk .sekmeler li i {
     margin-left: 5px;
     margin-right: 5px;
     width: 22px;
@@ -235,11 +239,11 @@ title: Anabet
     line-height: 24px;
   }
 
-  .sol-direk .sekmeler li span {
+  .direk .sekmeler li span {
     display: none;
   }
 
-  .sol-direk .sekmeler:hover li span {
+  .direk .sekmeler:hover li span {
     display: inherit;
   }
 
@@ -287,7 +291,7 @@ title: Anabet
   </div>
   <div class="alan {1}">
     <div class="gövde (1/1)">
-      <intro class="{1} ortalı yazı">
+      <intro class="{1} block ortalı yazı">
         <h1>deveb.css</h1>
         <h2>HTML için CSS ile çığırlar aça aça geliştirilir!</h2>
         <p>
@@ -295,8 +299,8 @@ title: Anabet
         </p>
       </intro>
     </div>
-    <div class="sol-direk {0}">
-      <ul class="sekmeler">
+    <div class="direk (1/1)" orta="{0}">
+      <ul class="sekmeler (1/1)">
         {% for oege in site.data.boeluemler.ana %}
         <li>
           <a class="{1}" href="{{oege.url}}">
@@ -334,7 +338,7 @@ title: Anabet
         </a>
       </div>
     </div>
-    <div class="sol-direk {0}">
+    <div class="direk {0}">
       <ul class="sekmeler">
         {% for oege in site.data.sosyal_medya %}
         <li>
