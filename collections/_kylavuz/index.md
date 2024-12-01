@@ -6,21 +6,21 @@ kategori: {alan: "kılavuz", bolum: "İlkin"}
 order: 1
 ---
 
-CSS'den bağımsız olarak HTML ile ağ tasarımları yazmanın kapısını aralayan **[deveb.css](https://data-deveb.github.io)** dünyasına hoş geldiniz. Elleri kolları bağlayan düzenlerin ötesinde ve çığır açıcı yapılar ile işler daha kolay olacak. Uzmanlık alanınız ağ tasarımında önyaka ise, yeni bir soluğu buradan yakalayıp almaya başlayabilirsiniz.
+CSS'e el değdirmeden HTML ile ağ tasarımları yazmanın kapısını aralayan **[deveb.css](https://data-deveb.github.io)** dünyasına hoş geldiniz. Sığ düzenlerin ötesinde ve çığır açıcı yapılar ile işler daha kolay! Uzmanlık alanınız ağ tasarımında önyaka ise, yeni bir soluk ile tanışacaksınız.
 
-### BOY BOY EKRANLAR İÇİN
+### BİR ÇIRPIDA TASARLAYIN
 
-Akıllı telefonlardan tablet bilgisayarlara, dizüstü bilgisayarlardan masaüstü bilgisayarlara kadar olan her ekran için uyumlu alt yapı ile ağ tasarımlarınızı özelleştirin.
+Boy boy ekranlar karşısında boğuşmayın. Akıllı telefonlardan tablet bilgisayarlara, dizüstü bilgisayarlara, masaüstü bilgisayarlara ve daha büyük ekranlı ürünlere kadar olan her türlü ekran için uyumlu alt yapı ile ağ tasarımlarınızı özelleştirin. Kolayca ve bir çırpıda tasarımınızı aktarın.
 
-### ÖZGÜRCE KULLAN
+### ÖZGÜRCE KULLANIN
 
-[deveb.css](https://data-deveb.github.io), ağ tasarımcılarının yaratıcılığını bozmamak amacı ile özel olarak geliştirilmiş, özgür ve açık kaynaklı yazılımlık bir yapıttır!
+[deveb.css](https://data-deveb.github.io), ağ tasarımcılarının yaratıcılığını bozmamak amacı ile özel olarak geliştirilmiş, özgür ve açık kaynaklı yazılımlık bir araçtır!
 
-### OKUR OKUMAZ ANLA
+### OKUR OKUMAZ ANLAYIN
 
 HTML satırları arasında gizlenen deveb.css'in benzersiz özellikleri, HTML kodlarınızı kolay ve çabuk okunabilir kılar. Anlaşıklığı arttırır. Çağdaşlıktan uzaklaştırmaz.
 
-### NASIL KURULUR?
+### DEVEB.CSS NASIL KURULUR?
 
 Kurulması pek kolay olan [deveb.css](https://data-deveb.github.io) şu aşamalardan sonra kullanmak için hazır olur:
 
@@ -30,11 +30,15 @@ Kurulması pek kolay olan [deveb.css](https://data-deveb.github.io) şu aşamala
 
 ### YENİLİKLERDE NE VAR?
 
-HTML'de ağırlıklı olarak sınıf ile tasarım yapılmaktadır. [deveb.css](https://data-deveb.github.io)'i sınıf altında kullanabileceksiniz. Ancak bir şeyleri ekranlara göre başka türlü yapmak istediğinizde öznitelikler ile işinizi göreceksiniz. Daha önce kullandığınız frontend frameworklerdeki gibi sizi belli bir ölçüye bağlı bırakmayan yapı geliştirdik. Böylece 0'dan 100'e dek dilediğiniz ölçüleri pay payda değerleri yazarak atayabilirsiniz. 
+- HTML'de ağırlıklı olarak sınıf ile tasarım yapılmaktadır. 
+- [deveb.css](https://data-deveb.github.io)'i sınıf altında kullanabileceksiniz.
+- Ekranlara göre etki vermek isterseniz öznitelikleri kullanabileceksiniz. 
+- Başka önyaka frameworklerde olduğu gibi belli ölçülere bağlık bırakmayan yapı kullanabileceksiniz.
+- Bir bölme oluşturmayı 0'dan 100'e dek dilediğiniz pay payda değerleri yazarak atayabilirsiniz. 
 
 ### TOPLULUĞUMUZ
 
 [deveb.css](https://data-deveb.github.io) geliştirilirken bizi izleyip her türlü katkıyı sağlayın, duyurulan bilgileri edinin, biraz da yoğun ve derin düşünerek beyin ağrısı çekin. Aşağıdaki yerlere tıklayarak topluluğa gelmenizi bekliyoruz.
 
-(...YAKINDA...)
+[Topluluğumuzun buluştuğu yere varmak için tıklayınız](https://github.com/orgs/data-deveb/discussions)
 
